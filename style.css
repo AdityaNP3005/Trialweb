@@ -53,7 +53,7 @@ h1 {
 
 #connection-status {
     position: fixed; /* Tetap di pojok saat di-scroll */
-    top: 700px;
+    bottom: 10px;
     right: 10px;
     background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan */
     border: 1px solid #ccc;
