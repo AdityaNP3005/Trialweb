@@ -51,6 +51,44 @@ h1 {
     text-align: center;
 }
 
+#connection-status {
+    position: fixed; /* Tetap di pojok saat di-scroll */
+    top: 700px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.9em; /* Ukuran font lebih kecil untuk topik */
+    z-index: 100; /* Pastikan di atas elemen lain */
+    width: auto; /* Lebar sesuai konten */
+    height: auto; /* Tinggi sesuai konten */
+    text-align: center;
+    color: #555; /* Warna teks topik */
+}
+
+#connection-status.connected {
+    border-color: #5cb85c;
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+#connection-status.disconnected {
+    border-color: #d9534f;
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+#connection-status.reconnecting {
+    border-color: #f0ad4e;
+    background-color: #fcf8e3;
+    color: #8a6d3b;
+}
+
+#connection-status strong {
+    font-weight: bold;
+}
+
 .sensor-container {
     display: flex;
     align-items: center;
@@ -150,41 +188,4 @@ span {
     margin: 5px 0;
     line-height: 1.4;
     color: #555;
-}
-
-nav {
-    background-color: #333;
-    color: #fff;
-    width: 100%;
-    padding: 10px 0;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #eee;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-nav ul li a.active {
-    background-color: #5cb85c;
-    color: #fff;
 }
