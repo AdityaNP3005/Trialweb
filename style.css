@@ -1,55 +1,190 @@
 body {
-  font-family: sans-serif;
-  text-align: center;
-  padding: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    background-color: #f4f4f4;
+    margin: 0;
 }
 
-.gauges {
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-  margin-top: 30px;
+nav {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
 
-.bar-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 200px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li a.active {
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.sensor-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 80%;
+    max-width: 500px;
+}
+
+label {
+    width: 120px;
+    text-align: left;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
 }
 
 progress {
-  width: 100%;
-  height: 30px;
-  -webkit-appearance: none;
-  appearance: none;
+    flex-grow: 1;
+    height: 20px;
+    border-radius: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    margin-right: 10px;
+    border: none;
+    background-color: #eee;
 }
 
 progress::-webkit-progress-bar {
-  background-color: #eee;
-  border-radius: 10px;
+    background-color: #eee;
+    border-radius: 10px;
 }
 
 progress::-webkit-progress-value {
-  background-color: #4CAF50;
-  border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(160, 221, 165), rgb(170, 255, 181));
+    border-radius: 10px;
 }
 
-.bar-value {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 16px;
+progress::-moz-progress-bar {
+    background-image: linear-gradient(to right, rgb(160, 221, 165), rgb(170, 255, 181));
+    border-radius: 10px;
 }
 
-#messages {
-  margin-top: 40px;
-  border-top: 1px solid #ccc;
-  padding-top: 20px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-  height: 150px;
-  overflow-y: auto;
+span {
+    margin-left: 10px;
+    width: 50px;
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
+
+#warnings-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ffcc00;
+    background-color: #fff8e1;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+#warnings-container h2 {
+    margin-top: 0;
+    color: #d39e00;
+    font-size: 1.1em;
+}
+
+#warnings-container p {
+    color: #d39e00;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.log-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 0.9em;
+    white-space: pre-wrap;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+.log-container h2 {
+    margin-top: 15px;
+    color: #444;
+    font-size: 1em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.log-container p {
+    margin: 5px 0;
+    line-height: 1.4;
+    color: #555;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li a.active {
+    background-color: #5cb85c;
+    color: #fff;
 }

@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>MQTT Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembaca Data MQTT</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>MQTT Monitoring</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Halaman Utama</a></li>
+            <li><a href="halaman2.html">Halaman Kedua</a></li>
+            <li><a href="#">Halaman Lain</a></li>
+        </ul>
+    </nav>
 
-  <div class="gauges">
-    <div class="bar-container">
-      <label for="suhuBar">Suhu</label>
-      <progress id="suhuBar" value="0" max="60"></progress>
-      <div id="suhuValue" class="bar-value">0°C</div>
+    <h1>Data Sensor MQTT</h1>
+
+    <div class="sensor-container">
+        <label for="suhuBar">Suhu:</label>
+        <progress id="suhuBar" value="0" max="100"></progress>
+        <span id="suhuValue">0°C</span>
     </div>
 
-    <div class="bar-container">
-      <label for="humBar">Kelembapan</label>
-      <progress id="humBar" value="0" max="100"></progress>
-      <div id="humValue" class="bar-value">0%</div>
+    <div class="sensor-container">
+        <label for="humBar">Kelembaban:</label>
+        <progress id="humBar" value="0" max="100"></progress>
+        <span id="humValue">0%</span>
     </div>
 
-    <div class="bar-container">
-      <label for="airBar">Tinggi Air</label>
-      <progress id="airBar" value="0" max="200"></progress>
-      <div id="airValue" class="bar-value">0cm</div>
+    <div class="sensor-container">
+        <label for="airBar">Ketinggian Air:</label>
+        <progress id="airBar" value="0" max="100"></progress>
+        <span id="airValue">0cm</span>
     </div>
-  </div>
 
-  <div id="messages"></div>
+    <div id="warnings-container">
+        <h2>Peringatan:</h2>
+        <div id="warnings"></div>
+    </div>
 
-  <script src="script.js"></script>
+    <h2>Log Pesan:</h2>
+    <div id="messages" class="log-container"></div>
+
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
