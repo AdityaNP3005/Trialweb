@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MQTT Web Client</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>MQTT Web Client Demo</h1>
+
+  <div>Status: <span id="status">Disconnected</span></div>
+
+  <label for="topic">Topik:</label>
+  <input id="topic" type="text" value="adit/webdemo" style="width: 200px" />
+  <br/>
+
+  <label for="message">Pesan:</label>
+  <input id="message" type="text" value="Halo dari web!" style="width: 200px" />
+  <br/>
+
+  <button id="connectBtn">Connect</button>
+  <button id="subscribeBtn" disabled>Subscribe</button>
+  <button id="publishBtn" disabled>Publish</button>
+
+  <div id="messages"></div>
+
+  <!-- Import MQTT.js dari CDN -->
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
