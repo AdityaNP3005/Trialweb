@@ -2,33 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MQTT Web Client</title>
+  <title>MQTT Dashboard</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 </head>
 <body>
+  <h1>MQTT Monitoring</h1>
 
-  <h1>MQTT Web Client Demo</h1>
+  <div class="gauges">
+    <div class="bar-container">
+      <label for="suhuBar">Suhu</label>
+      <progress id="suhuBar" value="0" max="60"></progress>
+      <div id="suhuValue" class="bar-value">0°C</div>
+    </div>
 
-  <div>Status: <span id="status">Disconnected</span></div>
+    <div class="bar-container">
+      <label for="humBar">Kelembapan</label>
+      <progress id="humBar" value="0" max="100"></progress>
+      <div id="humValue" class="bar-value">0%</div>
+    </div>
 
-  <label for="topic">Topik:</label>
-  <input id="topic" type="text" value="adit/webdemo" style="width: 200px" />
-  <br/>
-
-  <label for="message">Pesan:</label>
-  <input id="message" type="text" value="Halo dari web!" style="width: 200px" />
-  <br/>
-
-  <button id="connectBtn">Connect</button>
-  <button id="subscribeBtn" disabled>Subscribe</button>
-  <button id="publishBtn" disabled>Publish</button>
+    <div class="bar-container">
+      <label for="airBar">Tinggi Air</label>
+      <progress id="airBar" value="0" max="200"></progress>
+      <div id="airValue" class="bar-value">0cm</div>
+    </div>
+  </div>
 
   <div id="messages"></div>
 
-  <!-- Import MQTT.js dari CDN -->
-  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
   <script src="script.js"></script>
-
 </body>
 </html>
