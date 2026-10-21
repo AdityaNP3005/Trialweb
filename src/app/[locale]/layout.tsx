@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
-import { IBM_Plex_Mono, Inter, Source_Serif_4 } from "next/font/google";
+import { IBM_Plex_Mono, Inter, Noto_Sans_TC, Source_Serif_4 } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -19,6 +19,13 @@ const display = Source_Serif_4({
     display: "swap",
     variable: "--font-display-face",
     weight: ["400", "500", "600", "700"],
+});
+
+const cjk = Noto_Sans_TC({
+    weight: ["400", "500", "700"],
+    display: "swap",
+    preload: false,
+    variable: "--font-cjk-face",
 });
 
 const plexMono = IBM_Plex_Mono({
@@ -66,7 +73,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
     return (
         <html lang={locale} suppressHydrationWarning>
             <body
-                className={`${sans.variable} ${display.variable} ${plexMono.variable} min-h-dvh bg-bg text-fg antialiased`}
+                className={`${sans.variable} ${display.variable} ${plexMono.variable} ${cjk.variable} min-h-dvh bg-bg text-fg antialiased`}
             >
                 <Script id="theme-bootstrap" strategy="beforeInteractive">
                     {themeScript}

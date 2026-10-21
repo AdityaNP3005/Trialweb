@@ -72,14 +72,17 @@
     --color-de: var(--course-de);
     --color-zh: var(--course-zh);
 
-    --font-sans: var(--font-sans-face), ui-sans-serif, system-ui, -apple-system,
-        "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --font-display: var(--font-display-face), "Iowan Old Style", "Palatino Linotype",
-        Palatino, Georgia, ui-serif, serif;
-    --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, "SF Mono",
-        Menlo, monospace;
-    /* Traditional Chinese: platform CJK font, never the display serif. */
-    --font-cjk: "Noto Sans TC", "Noto Sans CJK TC", "PingFang TC",
+    /* Hanzi never renders in Inter/Source Serif 4: both stacks fall through to
+       the self-hosted Noto Sans TC (traditional forms, unambiguous strokes). */
+    --font-sans: var(--font-sans-face), var(--font-cjk-face), ui-sans-serif,
+        system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+        sans-serif;
+    --font-display: var(--font-display-face), var(--font-cjk-face),
+        "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, ui-serif,
+        serif;
+    --font-mono: var(--font-plex-mono), var(--font-cjk-face), ui-monospace,
+        SFMono-Regular, "SF Mono", Menlo, monospace;
+    --font-cjk: var(--font-cjk-face), "Noto Sans CJK TC", "PingFang TC",
         "Microsoft JhengHei", "Hiragino Sans CNS", ui-sans-serif, system-ui,
         sans-serif;
 }
@@ -97,13 +100,15 @@
         /* next/font puts its variables on <body>, so the stacks resolve here.
            Declared on :root they would be invalid by inheritance and silently
            fall back to the system sans. */
-        --font-sans: var(--font-sans-face), ui-sans-serif, system-ui, -apple-system,
-            "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        --font-display: var(--font-display-face), "Iowan Old Style",
-            "Palatino Linotype", Palatino, Georgia, ui-serif, serif;
-        --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular,
-            "SF Mono", Menlo, monospace;
-        --font-cjk: "Noto Sans TC", "Noto Sans CJK TC", "PingFang TC",
+        --font-sans: var(--font-sans-face), var(--font-cjk-face), ui-sans-serif,
+            system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+            Arial, sans-serif;
+        --font-display: var(--font-display-face), var(--font-cjk-face),
+            "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, ui-serif,
+            serif;
+        --font-mono: var(--font-plex-mono), var(--font-cjk-face), ui-monospace,
+            SFMono-Regular, "SF Mono", Menlo, monospace;
+        --font-cjk: var(--font-cjk-face), "Noto Sans CJK TC", "PingFang TC",
             "Microsoft JhengHei", "Hiragino Sans CNS", ui-sans-serif, system-ui,
             sans-serif;
 
