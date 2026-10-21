@@ -16,7 +16,7 @@
    "title": "Angka, tanggal & waktu",
    "icon": "🔢",
    "order": 2,
-   "cardCount": 57
+   "cardCount": 55
   },
   {
    "id": "de-a1-family-people",
@@ -32,7 +32,7 @@
    "title": "Makanan & minuman",
    "icon": "🍎",
    "order": 4,
-   "cardCount": 31
+   "cardCount": 29
   },
   {
    "id": "de-a1-home-daily",
@@ -40,7 +40,7 @@
    "title": "Rumah & benda sehari-hari",
    "icon": "🏠",
    "order": 5,
-   "cardCount": 19
+   "cardCount": 18
   },
   {
    "id": "de-a1-colors-shapes",
@@ -56,7 +56,7 @@
    "title": "Tubuh & kesehatan",
    "icon": "🩺",
    "order": 7,
-   "cardCount": 15
+   "cardCount": 14
   },
   {
    "id": "de-a1-directions-places",
@@ -64,7 +64,7 @@
    "title": "Arah & tempat",
    "icon": "🧭",
    "order": 8,
-   "cardCount": 30
+   "cardCount": 26
   },
   {
    "id": "de-a1-travel-transport",
@@ -72,7 +72,7 @@
    "title": "Perjalanan & transportasi",
    "icon": "🚆",
    "order": 9,
-   "cardCount": 11
+   "cardCount": 10
   },
   {
    "id": "de-a1-work-school",
@@ -80,47 +80,55 @@
    "title": "Kerja & sekolah",
    "icon": "🏫",
    "order": 10,
-   "cardCount": 14
+   "cardCount": 13
+  },
+  {
+   "id": "de-a1-function-words-1",
+   "key": "function-words-1",
+   "title": "Kata fungsi & penghubung (1/2)",
+   "icon": "🔗",
+   "order": 11,
+   "cardCount": 80
+  },
+  {
+   "id": "de-a1-function-words-2",
+   "key": "function-words-2",
+   "title": "Kata fungsi & penghubung (2/2)",
+   "icon": "🔗",
+   "order": 12,
+   "cardCount": 22
   },
   {
    "id": "de-a1-verbs-basic",
    "key": "verbs-basic",
    "title": "Kata kerja dasar",
    "icon": "🔁",
-   "order": 11,
-   "cardCount": 76
+   "order": 13,
+   "cardCount": 77
   },
   {
    "id": "de-a1-adjectives-basic",
    "key": "adjectives-basic",
    "title": "Kata sifat dasar",
    "icon": "✨",
-   "order": 12,
-   "cardCount": 64
+   "order": 14,
+   "cardCount": 65
   },
   {
    "id": "de-a1-general-1",
    "key": "general-1",
-   "title": "Kosakata umum (1/3)",
+   "title": "Kosakata umum (1/2)",
    "icon": "📚",
-   "order": 13,
+   "order": 15,
    "cardCount": 80
   },
   {
    "id": "de-a1-general-2",
    "key": "general-2",
-   "title": "Kosakata umum (2/3)",
+   "title": "Kosakata umum (2/2)",
    "icon": "📚",
-   "order": 14,
-   "cardCount": 80
-  },
-  {
-   "id": "de-a1-general-3",
-   "key": "general-3",
-   "title": "Kosakata umum (3/3)",
-   "icon": "📚",
-   "order": 15,
-   "cardCount": 51
+   "order": 16,
+   "cardCount": 39
   }
  ],
  "cards": [
@@ -1025,17 +1033,6 @@
    "topic": "numbers-time"
   },
   {
-   "front": "lange",
-   "meaningId": "jam",
-   "meaningEn": "long · for a long time",
-   "wordType": "adverb",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
    "front": "Drei",
    "meaningId": "tiga",
    "meaningEn": "three",
@@ -1171,17 +1168,6 @@
    "front": "Sechs",
    "meaningId": "enam",
    "meaningEn": "six",
-   "wordType": "noun",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "Stelle",
-   "meaningId": "angka",
-   "meaningEn": "job",
    "wordType": "noun",
    "tags": [
     "numbers-time"
@@ -1813,32 +1799,10 @@
    "plural": "die Speisekarten"
   },
   {
-   "front": "essen",
-   "meaningId": "makan",
-   "meaningEn": "to eat",
-   "wordType": "verb",
-   "tags": [
-    "food-drink"
-   ],
-   "level": "A1",
-   "topic": "food-drink"
-  },
-  {
    "front": "trinken",
    "meaningId": "minum",
    "meaningEn": "to drink",
    "wordType": "verb",
-   "tags": [
-    "food-drink"
-   ],
-   "level": "A1",
-   "topic": "food-drink"
-  },
-  {
-   "front": "Essen",
-   "meaningId": "makan",
-   "meaningEn": "food · food supplies",
-   "wordType": "noun",
    "tags": [
     "food-drink"
    ],
@@ -2074,17 +2038,6 @@
    "meaningId": "tinggal / bermukim",
    "meaningEn": "to live / to reside",
    "wordType": "verb",
-   "tags": [
-    "home-daily"
-   ],
-   "level": "A1",
-   "topic": "home-daily"
-  },
-  {
-   "front": "rein",
-   "meaningId": "bersih",
-   "meaningEn": "pure · sheer · mere",
-   "wordType": "adjective",
    "tags": [
     "home-daily"
    ],
@@ -2388,17 +2341,6 @@
    "plural": "die Medikamente"
   },
   {
-   "front": "gar",
-   "meaningId": "matang",
-   "meaningEn": "done · cooked",
-   "wordType": "adjective",
-   "tags": [
-    "body-health"
-   ],
-   "level": "A1",
-   "topic": "body-health"
-  },
-  {
    "front": "Gesicht",
    "meaningId": "muka · wajah",
    "meaningEn": "face",
@@ -2547,19 +2489,6 @@
    "plural": "die Apotheken"
   },
   {
-   "front": "die Bank",
-   "meaningId": "bank",
-   "meaningEn": "bank",
-   "wordType": "noun",
-   "tags": [
-    "directions-places"
-   ],
-   "level": "A1",
-   "topic": "directions-places",
-   "gender": "die",
-   "plural": "die Banken"
-  },
-  {
    "front": "der Park",
    "meaningId": "taman",
    "meaningEn": "park",
@@ -2590,17 +2519,6 @@
    "meaningId": "sini",
    "meaningEn": "here",
    "wordType": "adverb",
-   "tags": [
-    "directions-places"
-   ],
-   "level": "A1",
-   "topic": "directions-places"
-  },
-  {
-   "front": "an",
-   "meaningId": "atas",
-   "meaningEn": "on",
-   "wordType": "other",
    "tags": [
     "directions-places"
    ],
@@ -2674,17 +2592,6 @@
    "topic": "directions-places"
   },
   {
-   "front": "recht",
-   "meaningId": "kanan",
-   "meaningEn": "right",
-   "wordType": "adjective",
-   "tags": [
-    "directions-places"
-   ],
-   "level": "A1",
-   "topic": "directions-places"
-  },
-  {
    "front": "unter",
    "meaningId": "bawah",
    "meaningEn": "below · under",
@@ -2733,17 +2640,6 @@
    "meaningId": "diatas",
    "meaningEn": "above · upstairs",
    "wordType": "adverb",
-   "tags": [
-    "directions-places"
-   ],
-   "level": "A1",
-   "topic": "directions-places"
-  },
-  {
-   "front": "Ort",
-   "meaningId": "tempat",
-   "meaningEn": "place · site · spot",
-   "wordType": "noun",
    "tags": [
     "directions-places"
    ],
@@ -2817,19 +2713,6 @@
    "topic": "travel-transport",
    "gender": "der",
    "plural": "die Züge"
-  },
-  {
-   "front": "der Bus",
-   "meaningId": "bus",
-   "meaningEn": "bus",
-   "wordType": "noun",
-   "tags": [
-    "travel-transport"
-   ],
-   "level": "A1",
-   "topic": "travel-transport",
-   "gender": "der",
-   "plural": "die Busse"
   },
   {
    "front": "das Auto",
@@ -3084,17 +2967,6 @@
    "topic": "work-school"
   },
   {
-   "front": "Schaffen",
-   "meaningId": "kerja",
-   "meaningEn": "job",
-   "wordType": "noun",
-   "tags": [
-    "work-school"
-   ],
-   "level": "A1",
-   "topic": "work-school"
-  },
-  {
    "front": "Lernen",
    "meaningId": "kajian",
    "meaningEn": "learning · study",
@@ -3111,13 +2983,1124 @@
    "meaningEn": "to be",
    "wordType": "verb",
    "tags": [
-    "verbs-basic"
+    "function-words-1"
    ],
    "level": "A1",
-   "topic": "verbs-basic",
+   "topic": "function-words-1",
    "exampleDe": "Ich bin müde.",
    "exampleId": "Saya lelah.",
    "exampleEn": "I am tired."
+  },
+  {
+   "front": "Du",
+   "meaningId": "kamu",
+   "meaningEn": "you",
+   "wordType": "noun",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "nicht",
+   "meaningId": "tidak · bukan",
+   "meaningEn": "not",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "die",
+   "meaningId": "-nya",
+   "meaningEn": "the",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "und",
+   "meaningId": "dan · serta",
+   "meaningEn": "and",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "der",
+   "meaningId": "-nya",
+   "meaningEn": "the",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "was",
+   "meaningId": "apa",
+   "meaningEn": "what · which",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "zu",
+   "meaningId": "tertutup",
+   "meaningEn": "closed",
+   "wordType": "adjective",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "zu",
+   "meaningId": "tertutup",
+   "meaningEn": "closed",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "zu",
+   "meaningId": "banding",
+   "meaningEn": "to",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "ein",
+   "meaningId": "pakai",
+   "meaningEn": "on",
+   "wordType": "adjective",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "ein",
+   "meaningId": "satu",
+   "meaningEn": "a · an",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "in",
+   "meaningId": "di · di dalam",
+   "meaningEn": "in",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "mit",
+   "meaningId": "dengan",
+   "meaningEn": "with",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "dass",
+   "meaningId": "bahwa",
+   "meaningEn": "that",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "aber",
+   "meaningId": "tetapi",
+   "meaningEn": "but · however",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "so",
+   "meaningId": "berikutnya",
+   "meaningEn": "then",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "so",
+   "meaningId": "begini",
+   "meaningEn": "as",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "für",
+   "meaningId": "buat",
+   "meaningEn": "for",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "von",
+   "meaningId": "dari",
+   "meaningEn": "from · of · about",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "wenn",
+   "meaningId": "jika",
+   "meaningEn": "if",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "an",
+   "meaningId": "pakai",
+   "meaningEn": "on",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "an",
+   "meaningId": "atas",
+   "meaningEn": "on",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "noch",
+   "meaningId": "masih",
+   "meaningEn": "still · yet",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "da",
+   "meaningId": "situ",
+   "meaningEn": "there",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "da",
+   "meaningId": "karena",
+   "meaningEn": "since · because · as",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "auch",
+   "meaningId": "juga · pula",
+   "meaningEn": "also · too · as well",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "schon",
+   "meaningId": "sudah · telah",
+   "meaningEn": "already",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "als",
+   "meaningId": "daripada",
+   "meaningEn": "than",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "Sein",
+   "meaningId": "ada",
+   "meaningEn": "being · existence · essence",
+   "wordType": "noun",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "Mal",
+   "meaningId": "kali",
+   "meaningEn": "time",
+   "wordType": "noun",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "mal",
+   "meaningId": "kali",
+   "meaningEn": "times",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "aus",
+   "meaningId": "dari",
+   "meaningEn": "out of · from",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "um",
+   "meaningId": "tentang",
+   "meaningEn": "at · around",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "oder",
+   "meaningId": "atau",
+   "meaningEn": "or · either",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "nach",
+   "meaningId": "ke",
+   "meaningEn": "after · behind · past",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "wo",
+   "meaningId": "di mana · dimana",
+   "meaningEn": "where",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "mehr",
+   "meaningId": "lebih",
+   "meaningEn": "more · rather",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "bei",
+   "meaningId": "sebelah",
+   "meaningEn": "by · near · with",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "also",
+   "meaningId": "jadi",
+   "meaningEn": "therefore · so",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "warum",
+   "meaningId": "kenapa",
+   "meaningEn": "why · wherefore",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "los",
+   "meaningId": "menjadi",
+   "meaningEn": "come on · go · get moving",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "wieder",
+   "meaningId": "lagi",
+   "meaningEn": "again",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "denn",
+   "meaningId": "karena",
+   "meaningEn": "because · since#Konjunktion",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "hey",
+   "meaningId": "saluir",
+   "meaningEn": "hey",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "weil",
+   "meaningId": "karena",
+   "meaningEn": "because",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "damit",
+   "meaningId": "begini",
+   "meaningEn": "with it · with that",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "damit",
+   "meaningId": "agar",
+   "meaningEn": "so that · in order that · in order to",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "nun",
+   "meaningId": "sekarang",
+   "meaningEn": "now",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "zurück",
+   "meaningId": "kembali",
+   "meaningEn": "back",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "ab",
+   "meaningId": "dari",
+   "meaningEn": "from",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "wohl",
+   "meaningId": "baik",
+   "meaningEn": "well",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "durch",
+   "meaningId": "lewat",
+   "meaningEn": "through · by",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "ob",
+   "meaningId": "balik halaman",
+   "meaningEn": "because of · due to · on account of",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "raus",
+   "meaningId": "keluar",
+   "meaningEn": "out",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "wieso",
+   "meaningId": "mengapa",
+   "meaningEn": "why",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "selbst",
+   "meaningId": "bahkan",
+   "meaningEn": "even · -self",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "ohne",
+   "meaningId": "tanpa",
+   "meaningEn": "without",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "her",
+   "meaningId": "kemari",
+   "meaningEn": "ago · since",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "lange",
+   "meaningId": "jam",
+   "meaningEn": "long · for a long time",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "seit",
+   "meaningId": "dari · mulai",
+   "meaningEn": "since",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "wegen",
+   "meaningId": "karena",
+   "meaningEn": "because of · on account of",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "zusammen",
+   "meaningId": "bersama",
+   "meaningEn": "together",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "erst",
+   "meaningId": "pertama",
+   "meaningEn": "only · not before",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "Scheiße",
+   "meaningId": "tahi",
+   "meaningEn": "shit · fuck · bugger",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "gegen",
+   "meaningId": "kontra",
+   "meaningEn": "against · into",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "sonst",
+   "meaningId": "bila tidak",
+   "meaningEn": "otherwise · or else",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "sofort",
+   "meaningId": "segera",
+   "meaningEn": "immediately · instantly",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "wann",
+   "meaningId": "kapan · bila",
+   "meaningEn": "when",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "halt",
+   "meaningId": "benar",
+   "meaningEn": "simply",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "dank",
+   "meaningId": "berkat",
+   "meaningEn": "thanks to",
+   "wordType": "other",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "lieber",
+   "meaningId": "ketimbang",
+   "meaningEn": "preferably",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "hi",
+   "meaningId": "ke",
+   "meaningEn": "to",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "fast",
+   "meaningId": "hampir · nyaris",
+   "meaningEn": "almost · nearly · all but",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "vorbei",
+   "meaningId": "balik halaman",
+   "meaningEn": "past",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "darum",
+   "meaningId": "karena itu",
+   "meaningEn": "therefore · eo ipso · hence",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "sogar",
+   "meaningId": "bahkan",
+   "meaningEn": "even · including",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "woher",
+   "meaningId": "dari mana",
+   "meaningEn": "from where",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "überhaupt",
+   "meaningId": "sama sekali",
+   "meaningEn": "at all",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "etwa",
+   "meaningId": "kira-kira",
+   "meaningEn": "about · approximately",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-1"
+   ],
+   "level": "A1",
+   "topic": "function-words-1"
+  },
+  {
+   "front": "anders",
+   "meaningId": "beda · lain",
+   "meaningEn": "different · other · distinct",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "niemals",
+   "meaningId": "tidak pernah",
+   "meaningEn": "never",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "eben",
+   "meaningId": "kini",
+   "meaningEn": "just",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "während",
+   "meaningId": "sementara",
+   "meaningEn": "while · as",
+   "wordType": "other",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "falls",
+   "meaningId": "kalau",
+   "meaningEn": "in case · if",
+   "wordType": "other",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "dies",
+   "meaningId": "ini",
+   "meaningEn": "this",
+   "wordType": "other",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "wen",
+   "meaningId": "yang mana",
+   "meaningEn": "who · whom",
+   "wordType": "other",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "sondern",
+   "meaningId": "namun",
+   "meaningEn": "but · but rather",
+   "wordType": "other",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "außer",
+   "meaningId": "selain",
+   "meaningEn": "except · besides · apart from",
+   "wordType": "other",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "zuerst",
+   "meaningId": "pertama",
+   "meaningEn": "first",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "hierher",
+   "meaningId": "kemari",
+   "meaningEn": "hither",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "bereits",
+   "meaningId": "sudah · telah",
+   "meaningEn": "already · just",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "leider",
+   "meaningId": "sayang",
+   "meaningEn": "unfortunately · alas",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "überall",
+   "meaningId": "di mana-mana",
+   "meaningEn": "everywhere · anywhere · all over",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "wem",
+   "meaningId": "yang",
+   "meaningEn": "whom",
+   "wordType": "other",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "danach",
+   "meaningId": "lalu",
+   "meaningEn": "afterwards · subsequently · after",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "damals",
+   "meaningId": "saat itu",
+   "meaningEn": "then · at that time",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "nachdem",
+   "meaningId": "sesudah",
+   "meaningEn": "after",
+   "wordType": "other",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "irgendwo",
+   "meaningId": "di mana pun",
+   "meaningEn": "somewhere",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "drüben",
+   "meaningId": "di sana",
+   "meaningEn": "on the other side · over there",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "laut",
+   "meaningId": "menurut",
+   "meaningEn": "according",
+   "wordType": "other",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
+  },
+  {
+   "front": "eher",
+   "meaningId": "agak",
+   "meaningEn": "sooner · earlier",
+   "wordType": "adverb",
+   "tags": [
+    "function-words-2"
+   ],
+   "level": "A1",
+   "topic": "function-words-2"
   },
   {
    "front": "haben",
@@ -3954,6 +4937,28 @@
    "topic": "verbs-basic"
   },
   {
+   "front": "vorstellen",
+   "meaningId": "memperkenalkan",
+   "meaningEn": "present",
+   "wordType": "verb",
+   "tags": [
+    "verbs-basic"
+   ],
+   "level": "A1",
+   "topic": "verbs-basic"
+  },
+  {
+   "front": "heißen",
+   "meaningId": "bernama",
+   "meaningEn": "be called · be named",
+   "wordType": "verb",
+   "tags": [
+    "verbs-basic"
+   ],
+   "level": "A1",
+   "topic": "verbs-basic"
+  },
+  {
    "front": "gut",
    "meaningId": "baik / bagus",
    "meaningEn": "good",
@@ -4097,28 +5102,6 @@
    "topic": "adjectives-basic"
   },
   {
-   "front": "zu",
-   "meaningId": "tertutup",
-   "meaningEn": "closed",
-   "wordType": "adjective",
-   "tags": [
-    "adjectives-basic"
-   ],
-   "level": "A1",
-   "topic": "adjectives-basic"
-  },
-  {
-   "front": "ein",
-   "meaningId": "pakai",
-   "meaningEn": "on",
-   "wordType": "adjective",
-   "tags": [
-    "adjectives-basic"
-   ],
-   "level": "A1",
-   "topic": "adjectives-basic"
-  },
-  {
    "front": "viel",
    "meaningId": "banyak",
    "meaningEn": "much · many · a lot",
@@ -4196,9 +5179,31 @@
    "topic": "adjectives-basic"
   },
   {
+   "front": "gar",
+   "meaningId": "matang",
+   "meaningEn": "done · cooked",
+   "wordType": "adjective",
+   "tags": [
+    "adjectives-basic"
+   ],
+   "level": "A1",
+   "topic": "adjectives-basic"
+  },
+  {
    "front": "gleich",
    "meaningId": "mirip",
    "meaningEn": "equal · similar · like",
+   "wordType": "adjective",
+   "tags": [
+    "adjectives-basic"
+   ],
+   "level": "A1",
+   "topic": "adjectives-basic"
+  },
+  {
+   "front": "recht",
+   "meaningId": "kanan",
+   "meaningEn": "right",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
@@ -4221,6 +5226,17 @@
    "front": "tot",
    "meaningId": "mati",
    "meaningEn": "dead",
+   "wordType": "adjective",
+   "tags": [
+    "adjectives-basic"
+   ],
+   "level": "A1",
+   "topic": "adjectives-basic"
+  },
+  {
+   "front": "rein",
+   "meaningId": "bersih",
+   "meaningEn": "pure · sheer · mere",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
@@ -4254,17 +5270,6 @@
    "front": "fertig",
    "meaningId": "siap",
    "meaningEn": "ready · done",
-   "wordType": "adjective",
-   "tags": [
-    "adjectives-basic"
-   ],
-   "level": "A1",
-   "topic": "adjectives-basic"
-  },
-  {
-   "front": "allein",
-   "meaningId": "sendiri",
-   "meaningEn": "alone",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
@@ -4658,6 +5663,17 @@
    "topic": "adjectives-basic"
   },
   {
+   "front": "böse",
+   "meaningId": "jahat",
+   "meaningEn": "evil · bad · wicked",
+   "wordType": "adjective",
+   "tags": [
+    "adjectives-basic"
+   ],
+   "level": "A1",
+   "topic": "adjectives-basic"
+  },
+  {
    "front": "der Computer",
    "meaningId": "komputer",
    "meaningEn": "computer",
@@ -4700,248 +5716,6 @@
    "plural": "die Antworten"
   },
   {
-   "front": "Du",
-   "meaningId": "kamu",
-   "meaningEn": "you",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "nicht",
-   "meaningId": "tidak · bukan",
-   "meaningEn": "not",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "die",
-   "meaningId": "-nya",
-   "meaningEn": "the",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "und",
-   "meaningId": "dan · serta",
-   "meaningEn": "and",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "der",
-   "meaningId": "-nya",
-   "meaningEn": "the",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "was",
-   "meaningId": "apa",
-   "meaningEn": "what · which",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "zu",
-   "meaningId": "tertutup",
-   "meaningEn": "closed",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "zu",
-   "meaningId": "banding",
-   "meaningEn": "to",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "ein",
-   "meaningId": "satu",
-   "meaningEn": "a · an",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "in",
-   "meaningId": "di · di dalam",
-   "meaningEn": "in",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "mit",
-   "meaningId": "dengan",
-   "meaningEn": "with",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "dass",
-   "meaningId": "bahwa",
-   "meaningEn": "that",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "aber",
-   "meaningId": "tetapi",
-   "meaningEn": "but · however",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "so",
-   "meaningId": "berikutnya",
-   "meaningEn": "then",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "so",
-   "meaningId": "begini",
-   "meaningEn": "as",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "für",
-   "meaningId": "buat",
-   "meaningEn": "for",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "von",
-   "meaningId": "dari",
-   "meaningEn": "from · of · about",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "wenn",
-   "meaningId": "jika",
-   "meaningEn": "if",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "an",
-   "meaningId": "pakai",
-   "meaningEn": "on",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "noch",
-   "meaningId": "masih",
-   "meaningEn": "still · yet",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "da",
-   "meaningId": "situ",
-   "meaningEn": "there",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "da",
-   "meaningId": "karena",
-   "meaningEn": "since · because · as",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
    "front": "Hast",
    "meaningId": "ketergesaan",
    "meaningEn": "haste · hurry",
@@ -4953,230 +5727,10 @@
    "topic": "general-1"
   },
   {
-   "front": "Gut",
-   "meaningId": "harta benda",
-   "meaningEn": "property · good",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "auch",
-   "meaningId": "juga · pula",
-   "meaningEn": "also · too · as well",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "schon",
-   "meaningId": "sudah · telah",
-   "meaningEn": "already",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "als",
-   "meaningId": "daripada",
-   "meaningEn": "than",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Sein",
-   "meaningId": "ada",
-   "meaningEn": "being · existence · essence",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Mal",
-   "meaningId": "kali",
-   "meaningEn": "time",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "mal",
-   "meaningId": "kali",
-   "meaningEn": "times",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "aus",
-   "meaningId": "dari",
-   "meaningEn": "out of · from",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "um",
-   "meaningId": "tentang",
-   "meaningEn": "at · around",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "oder",
-   "meaningId": "atau",
-   "meaningEn": "or · either",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "nach",
-   "meaningId": "ke",
-   "meaningEn": "after · behind · past",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "wo",
-   "meaningId": "di mana · dimana",
-   "meaningEn": "where",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Etwas",
-   "meaningId": "barang",
-   "meaningEn": "affair",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "mehr",
-   "meaningId": "lebih",
-   "meaningEn": "more · rather",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "bei",
-   "meaningId": "sebelah",
-   "meaningEn": "by · near · with",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "also",
-   "meaningId": "jadi",
-   "meaningEn": "therefore · so",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "warum",
-   "meaningId": "kenapa",
-   "meaningEn": "why · wherefore",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
    "front": "Los",
    "meaningId": "nasib",
    "meaningEn": "ticket",
    "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "los",
-   "meaningId": "menjadi",
-   "meaningEn": "come on · go · get moving",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "wieder",
-   "meaningId": "lagi",
-   "meaningEn": "again",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "denn",
-   "meaningId": "karena",
-   "meaningEn": "because · since#Konjunktion",
-   "wordType": "other",
    "tags": [
     "general-1"
    ],
@@ -5206,17 +5760,6 @@
    "topic": "general-1"
   },
   {
-   "front": "hey",
-   "meaningId": "saluir",
-   "meaningEn": "hey",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
    "front": "Würde",
    "meaningId": "martabat",
    "meaningEn": "dignity",
@@ -5232,50 +5775,6 @@
    "meaningId": "hidup · kehidupan",
    "meaningEn": "life",
    "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "weil",
-   "meaningId": "karena",
-   "meaningEn": "because",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "damit",
-   "meaningId": "begini",
-   "meaningEn": "with it · with that",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "damit",
-   "meaningId": "agar",
-   "meaningEn": "so that · in order that · in order to",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "nun",
-   "meaningId": "sekarang",
-   "meaningEn": "now",
-   "wordType": "adverb",
    "tags": [
     "general-1"
    ],
@@ -5305,31 +5804,9 @@
    "topic": "general-1"
   },
   {
-   "front": "zurück",
-   "meaningId": "kembali",
-   "meaningEn": "back",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
    "front": "Gott",
    "meaningId": "Tuhan · Allah",
    "meaningEn": "God",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Seine",
-   "meaningId": "Seine",
-   "meaningEn": "Seine",
    "wordType": "noun",
    "tags": [
     "general-1"
@@ -5349,32 +5826,10 @@
    "topic": "general-1"
   },
   {
-   "front": "ab",
-   "meaningId": "dari",
-   "meaningEn": "from",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
    "front": "Wohl",
    "meaningId": "kesejahteraan",
    "meaningEn": "well-being · prosperity · welfare",
    "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "wohl",
-   "meaningId": "baik",
-   "meaningEn": "well",
-   "wordType": "adverb",
    "tags": [
     "general-1"
    ],
@@ -5393,65 +5848,10 @@
    "topic": "general-1"
   },
   {
-   "front": "durch",
-   "meaningId": "lewat",
-   "meaningEn": "through · by",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Ob",
-   "meaningId": "Ob",
-   "meaningEn": "Ob",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "ob",
-   "meaningId": "balik halaman",
-   "meaningEn": "because of · due to · on account of",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "raus",
-   "meaningId": "keluar",
-   "meaningEn": "out",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
    "front": "Paar",
    "meaningId": "pasangan",
    "meaningEn": "pair · couple",
    "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "wieso",
-   "meaningId": "mengapa",
-   "meaningEn": "why",
-   "wordType": "adverb",
    "tags": [
     "general-1"
    ],
@@ -5470,76 +5870,10 @@
    "topic": "general-1"
   },
   {
-   "front": "selbst",
-   "meaningId": "bahkan",
-   "meaningEn": "even · -self",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "ohne",
-   "meaningId": "tanpa",
-   "meaningEn": "without",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "her",
-   "meaningId": "kemari",
-   "meaningEn": "ago · since",
-   "wordType": "adverb",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "seit",
-   "meaningId": "dari · mulai",
-   "meaningEn": "since",
-   "wordType": "other",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
    "front": "Recht",
    "meaningId": "hak",
    "meaningEn": "right · law",
    "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Ordnung",
-   "meaningId": "aturan",
-   "meaningEn": "order · tidiness",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "wegen",
-   "meaningId": "karena",
-   "meaningEn": "because of · on account of",
-   "wordType": "other",
    "tags": [
     "general-1"
    ],
@@ -5552,21 +5886,10 @@
    "meaningEn": "anxiety · fear",
    "wordType": "noun",
    "tags": [
-    "general-2"
+    "general-1"
    ],
    "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "zusammen",
-   "meaningId": "bersama",
-   "meaningEn": "together",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
+   "topic": "general-1"
   },
   {
    "front": "Welt",
@@ -5574,37 +5897,675 @@
    "meaningEn": "world · Earth",
    "wordType": "noun",
    "tags": [
-    "general-2"
+    "general-1"
    ],
    "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "erst",
-   "meaningId": "pertama",
-   "meaningEn": "only · not before",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Scheiße",
-   "meaningId": "tahi",
-   "meaningEn": "shit · fuck · bugger",
-   "wordType": "other",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
+   "topic": "general-1"
   },
   {
    "front": "Scheiße",
    "meaningId": "tahi",
    "meaningEn": "shit · bullshit",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Musik",
+   "meaningId": "musik",
+   "meaningEn": "music",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Herr",
+   "meaningId": "tuan",
+   "meaningEn": "Lord",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Problem",
+   "meaningId": "masalah",
+   "meaningEn": "problem · trouble",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Halt",
+   "meaningId": "bantu",
+   "meaningEn": "stop",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Sprechen",
+   "meaningId": "berbicara",
+   "meaningEn": "speaking",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Sache",
+   "meaningId": "hal",
+   "meaningEn": "thing",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Hilfe",
+   "meaningId": "pertolongan",
+   "meaningEn": "help · aid",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Denken",
+   "meaningId": "pikiran",
+   "meaningEn": "thinking · thought",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Dank",
+   "meaningId": "pengakuan",
+   "meaningEn": "thanks · thank",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Fall",
+   "meaningId": "perkara",
+   "meaningEn": "case · event",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Mache",
+   "meaningId": "bikin",
+   "meaningEn": "pretense",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Glück",
+   "meaningId": "kebahagiaan",
+   "meaningEn": "luck · fortune",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Ende",
+   "meaningId": "akhir",
+   "meaningEn": "end · ending",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Treffen",
+   "meaningId": "pertemuan",
+   "meaningEn": "meeting · date",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Idee",
+   "meaningId": "ide",
+   "meaningEn": "idea",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Kerl",
+   "meaningId": "bung",
+   "meaningEn": "fellow · bloke · dude",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Teufel",
+   "meaningId": "hantu · setan",
+   "meaningEn": "devil",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Grund",
+   "meaningId": "alasan",
+   "meaningEn": "reason · cause",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Mama",
+   "meaningId": "mami",
+   "meaningEn": "Mom",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Ruhe",
+   "meaningId": "istirahat",
+   "meaningEn": "rest · relaxation · privacy",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Tod",
+   "meaningId": "kematian · mati",
+   "meaningEn": "death",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Art",
+   "meaningId": "spesies",
+   "meaningEn": "species · kind",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Schatz",
+   "meaningId": "harta",
+   "meaningEn": "treasure · hoard",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Miss",
+   "meaningId": "nona",
+   "meaningEn": "Miss",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Geschichte",
+   "meaningId": "sejarah",
+   "meaningEn": "history · story",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Alter",
+   "meaningId": "umur",
+   "meaningEn": "age",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Schau",
+   "meaningId": "firasat",
+   "meaningEn": "exhibition · exposition",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Spaß",
+   "meaningId": "atraksi",
+   "meaningEn": "fun · entertainment · amusement",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Schuld",
+   "meaningId": "utang",
+   "meaningEn": "debt · arrearage",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Ernst",
+   "meaningId": "talangan",
+   "meaningEn": "seriousness · earnestness · austerity",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Ort",
+   "meaningId": "tempat",
+   "meaningEn": "place · site · spot",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Spiel",
+   "meaningId": "permainan",
+   "meaningEn": "game · play",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Chance",
+   "meaningId": "kesempatan",
+   "meaningEn": "chance · opportunity · prospect",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Krieg",
+   "meaningId": "perang",
+   "meaningEn": "war · warfare",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Wort",
+   "meaningId": "kata",
+   "meaningEn": "word · expression · term",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Teil",
+   "meaningId": "bagian",
+   "meaningEn": "part · piece · deal",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Sorge",
+   "meaningId": "acuh",
+   "meaningEn": "worry · concern · anxiety",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Kriegen",
+   "meaningId": "sergap",
+   "meaningEn": "tag · catch · tig",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Fest",
+   "meaningId": "festival",
+   "meaningEn": "festival · party · feast",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Waffe",
+   "meaningId": "senjata · amunisi",
+   "meaningEn": "weapon · arm",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Rede",
+   "meaningId": "wacana",
+   "meaningEn": "speech · address · talk",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Nummer",
+   "meaningId": "nomor",
+   "meaningEn": "number",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Arsch",
+   "meaningId": "pantat",
+   "meaningEn": "ass · arse · butt",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Telefon",
+   "meaningId": "telepon",
+   "meaningEn": "telephone · phone",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Plan",
+   "meaningId": "denah",
+   "meaningEn": "plan · map",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Fehler",
+   "meaningId": "kesalahan",
+   "meaningEn": "error · mistake · fault",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Dollar",
+   "meaningId": "dolar",
+   "meaningEn": "dollar",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Menge",
+   "meaningId": "himpunan",
+   "meaningEn": "set",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Ruf",
+   "meaningId": "bayang-bayang",
+   "meaningEn": "call · summons",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Schaffen",
+   "meaningId": "kerja",
+   "meaningEn": "job",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Scheiß",
+   "meaningId": "tahi",
+   "meaningEn": "shit",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Hölle",
+   "meaningId": "neraka",
+   "meaningEn": "hell · inferno",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Doktor",
+   "meaningId": "doktor",
+   "meaningEn": "doctor · physican",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Tat",
+   "meaningId": "babak",
+   "meaningEn": "act · deed · action",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Feuer",
+   "meaningId": "api",
+   "meaningEn": "fire",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Stelle",
+   "meaningId": "angka",
+   "meaningEn": "job",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Kumpel",
+   "meaningId": "kawan",
+   "meaningEn": "buddy · mate · homie",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Luft",
+   "meaningId": "udara",
+   "meaningEn": "air · atmosphere",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Suche",
+   "meaningId": "pencarian",
+   "meaningEn": "search · quest",
+   "wordType": "noun",
+   "tags": [
+    "general-1"
+   ],
+   "level": "A1",
+   "topic": "general-1"
+  },
+  {
+   "front": "Wert",
+   "meaningId": "bobot",
+   "meaningEn": "value · worth · price",
    "wordType": "noun",
    "tags": [
     "general-2"
@@ -5613,10 +6574,262 @@
    "topic": "general-2"
   },
   {
-   "front": "gegen",
-   "meaningId": "kontra",
-   "meaningEn": "against · into",
-   "wordType": "other",
+   "front": "Party",
+   "meaningId": "pesta",
+   "meaningEn": "party · do",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Wahl",
+   "meaningId": "Wahl",
+   "meaningEn": "election · adoption",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Vertrauen",
+   "meaningId": "kepercayaan",
+   "meaningEn": "confidence · trust",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Gefühl",
+   "meaningId": "emosi",
+   "meaningEn": "feeling · emotion · affection",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Stück",
+   "meaningId": "potong",
+   "meaningEn": "piece",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Zukunft",
+   "meaningId": "masa depan",
+   "meaningEn": "future · futurity",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Licht",
+   "meaningId": "cahaya",
+   "meaningEn": "light",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Nachricht",
+   "meaningId": "pesan · berita · kabar",
+   "meaningEn": "message · news",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Laut",
+   "meaningId": "bunyi",
+   "meaningEn": "sound",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Erde",
+   "meaningId": "bumi",
+   "meaningEn": "Earth",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Rest",
+   "meaningId": "bekas",
+   "meaningEn": "remainder · rest",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Opfer",
+   "meaningId": "kurban",
+   "meaningEn": "sacrifice · victim",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Mist",
+   "meaningId": "pupuk",
+   "meaningEn": "dung · manure",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Schreiben",
+   "meaningId": "kepenulisan",
+   "meaningEn": "writing",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Versuch",
+   "meaningId": "upaya",
+   "meaningEn": "attempt · try",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Sex",
+   "meaningId": "seks",
+   "meaningEn": "sex",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Weh",
+   "meaningId": "sakit",
+   "meaningEn": "ache · pain · woe",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "die Rechnung",
+   "meaningId": "tagihan",
+   "meaningEn": "bill",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2",
+   "gender": "die",
+   "plural": "die Rechnungen",
+   "exampleDe": "Die Rechnung, bitte!",
+   "exampleId": "Tagihannya, tolong!",
+   "exampleEn": "The bill, please!"
+  },
+  {
+   "front": "das Geld",
+   "meaningId": "uang",
+   "meaningEn": "money",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2",
+   "gender": "das",
+   "plural": "die Gelder",
+   "exampleDe": "Ich habe kein Geld.",
+   "exampleId": "Saya tidak punya uang.",
+   "exampleEn": "I have no money."
+  },
+  {
+   "front": "kaufen",
+   "meaningId": "membeli",
+   "meaningEn": "to buy",
+   "wordType": "verb",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "bezahlen",
+   "meaningId": "membayar",
+   "meaningEn": "to pay",
+   "wordType": "verb",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "teuer",
+   "meaningId": "mahal",
+   "meaningEn": "expensive",
+   "wordType": "adjective",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "billig",
+   "meaningId": "murah",
+   "meaningEn": "cheap",
+   "wordType": "adjective",
    "tags": [
     "general-2"
    ],
@@ -5635,230 +6848,10 @@
    "topic": "general-2"
   },
   {
-   "front": "sonst",
-   "meaningId": "bila tidak",
-   "meaningEn": "otherwise · or else",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Musik",
-   "meaningId": "musik",
-   "meaningEn": "music",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Herr",
-   "meaningId": "tuan",
-   "meaningEn": "Lord",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "sofort",
-   "meaningId": "segera",
-   "meaningEn": "immediately · instantly",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Problem",
-   "meaningId": "masalah",
-   "meaningEn": "problem · trouble",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "wann",
-   "meaningId": "kapan · bila",
-   "meaningEn": "when",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Halt",
-   "meaningId": "bantu",
-   "meaningEn": "stop",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "halt",
-   "meaningId": "benar",
-   "meaningEn": "simply",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Sprechen",
-   "meaningId": "berbicara",
-   "meaningEn": "speaking",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Sache",
-   "meaningId": "hal",
-   "meaningEn": "thing",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Hilfe",
-   "meaningId": "pertolongan",
-   "meaningEn": "help · aid",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Denken",
-   "meaningId": "pikiran",
-   "meaningEn": "thinking · thought",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Dank",
-   "meaningId": "pengakuan",
-   "meaningEn": "thanks · thank",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "dank",
-   "meaningId": "berkat",
-   "meaningEn": "thanks to",
-   "wordType": "other",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "lieber",
-   "meaningId": "ketimbang",
-   "meaningEn": "preferably",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Fall",
-   "meaningId": "perkara",
-   "meaningEn": "case · event",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Mache",
-   "meaningId": "bikin",
-   "meaningEn": "pretense",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "hi",
-   "meaningId": "ke",
-   "meaningEn": "to",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Glück",
-   "meaningId": "kebahagiaan",
-   "meaningEn": "luck · fortune",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Ende",
-   "meaningId": "akhir",
-   "meaningEn": "end · ending",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Ahnung",
-   "meaningId": "ide",
-   "meaningEn": "idea",
-   "wordType": "noun",
+   "front": "allein",
+   "meaningId": "sendiri",
+   "meaningEn": "alone",
+   "wordType": "adjective",
    "tags": [
     "general-2"
    ],
@@ -5869,501 +6862,6 @@
    "front": "Polizei",
    "meaningId": "polisi",
    "meaningEn": "police",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "fast",
-   "meaningId": "hampir · nyaris",
-   "meaningEn": "almost · nearly · all but",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "vorbei",
-   "meaningId": "balik halaman",
-   "meaningEn": "past",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Treffen",
-   "meaningId": "pertemuan",
-   "meaningEn": "meeting · date",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "darum",
-   "meaningId": "karena itu",
-   "meaningEn": "therefore · eo ipso · hence",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Idee",
-   "meaningId": "ide",
-   "meaningEn": "idea",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "sogar",
-   "meaningId": "bahkan",
-   "meaningEn": "even · including",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Kerl",
-   "meaningId": "bung",
-   "meaningEn": "fellow · bloke · dude",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "woher",
-   "meaningId": "dari mana",
-   "meaningEn": "from where",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "überhaupt",
-   "meaningId": "sama sekali",
-   "meaningEn": "at all",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Teufel",
-   "meaningId": "hantu · setan",
-   "meaningEn": "devil",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Grund",
-   "meaningId": "alasan",
-   "meaningEn": "reason · cause",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Mama",
-   "meaningId": "mami",
-   "meaningEn": "Mom",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Ruhe",
-   "meaningId": "istirahat",
-   "meaningEn": "rest · relaxation · privacy",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Tod",
-   "meaningId": "kematian · mati",
-   "meaningEn": "death",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Art",
-   "meaningId": "spesies",
-   "meaningEn": "species · kind",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Schatz",
-   "meaningId": "harta",
-   "meaningEn": "treasure · hoard",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "etwa",
-   "meaningId": "kira-kira",
-   "meaningEn": "about · approximately",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "anders",
-   "meaningId": "beda · lain",
-   "meaningEn": "different · other · distinct",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Miss",
-   "meaningId": "nona",
-   "meaningEn": "Miss",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Geschichte",
-   "meaningId": "sejarah",
-   "meaningEn": "history · story",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Wahrheit",
-   "meaningId": "kebenaran",
-   "meaningEn": "truth · fact",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Alter",
-   "meaningId": "umur",
-   "meaningEn": "age",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Schau",
-   "meaningId": "firasat",
-   "meaningEn": "exhibition · exposition",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Spaß",
-   "meaningId": "atraksi",
-   "meaningEn": "fun · entertainment · amusement",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "niemals",
-   "meaningId": "tidak pernah",
-   "meaningEn": "never",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Schuld",
-   "meaningId": "utang",
-   "meaningEn": "debt · arrearage",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Ernst",
-   "meaningId": "talangan",
-   "meaningEn": "seriousness · earnestness · austerity",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "eben",
-   "meaningId": "kini",
-   "meaningEn": "just",
-   "wordType": "adverb",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "während",
-   "meaningId": "sementara",
-   "meaningEn": "while · as",
-   "wordType": "other",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Spiel",
-   "meaningId": "permainan",
-   "meaningEn": "game · play",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Chance",
-   "meaningId": "kesempatan",
-   "meaningEn": "chance · opportunity · prospect",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Krieg",
-   "meaningId": "perang",
-   "meaningEn": "war · warfare",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Wort",
-   "meaningId": "kata",
-   "meaningEn": "word · expression · term",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "falls",
-   "meaningId": "kalau",
-   "meaningEn": "in case · if",
-   "wordType": "other",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Teil",
-   "meaningId": "bagian",
-   "meaningEn": "part · piece · deal",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Sorge",
-   "meaningId": "acuh",
-   "meaningEn": "worry · concern · anxiety",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "dies",
-   "meaningId": "ini",
-   "meaningEn": "this",
-   "wordType": "other",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Ding",
-   "meaningId": "barang",
-   "meaningEn": "thing",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Kriegen",
-   "meaningId": "sergap",
-   "meaningEn": "tag · catch · tig",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "wen",
-   "meaningId": "yang mana",
-   "meaningEn": "who · whom",
-   "wordType": "other",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Fest",
-   "meaningId": "festival",
-   "meaningEn": "festival · party · feast",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Waffe",
-   "meaningId": "senjata · amunisi",
-   "meaningEn": "weapon · arm",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Rede",
-   "meaningId": "wacana",
-   "meaningEn": "speech · address · talk",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "sondern",
-   "meaningId": "namun",
-   "meaningEn": "but · but rather",
-   "wordType": "other",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Nummer",
-   "meaningId": "nomor",
-   "meaningEn": "number",
    "wordType": "noun",
    "tags": [
     "general-2"
@@ -6383,10 +6881,10 @@
    "topic": "general-2"
   },
   {
-   "front": "außer",
-   "meaningId": "selain",
-   "meaningEn": "except · besides · apart from",
-   "wordType": "other",
+   "front": "König",
+   "meaningId": "raja",
+   "meaningEn": "king",
+   "wordType": "noun",
    "tags": [
     "general-2"
    ],
@@ -6394,10 +6892,54 @@
    "topic": "general-2"
   },
   {
-   "front": "zuerst",
-   "meaningId": "pertama",
-   "meaningEn": "first",
-   "wordType": "adverb",
+   "front": "Hund",
+   "meaningId": "anjing",
+   "meaningEn": "dog · hound",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Himmel",
+   "meaningId": "langit",
+   "meaningEn": "sky · firmament · heaven",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Gut",
+   "meaningId": "harta benda",
+   "meaningEn": "property · good",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Etwas",
+   "meaningId": "barang",
+   "meaningEn": "affair",
+   "wordType": "noun",
+   "tags": [
+    "general-2"
+   ],
+   "level": "A1",
+   "topic": "general-2"
+  },
+  {
+   "front": "Ding",
+   "meaningId": "barang",
+   "meaningEn": "thing",
+   "wordType": "noun",
    "tags": [
     "general-2"
    ],
@@ -6416,9 +6958,9 @@
    "topic": "general-2"
   },
   {
-   "front": "Arsch",
-   "meaningId": "pantat",
-   "meaningEn": "ass · arse · butt",
+   "front": "Ordnung",
+   "meaningId": "aturan",
+   "meaningEn": "order · tidiness",
    "wordType": "noun",
    "tags": [
     "general-2"
@@ -6427,466 +6969,26 @@
    "topic": "general-2"
   },
   {
-   "front": "Telefon",
-   "meaningId": "telepon",
-   "meaningEn": "telephone · phone",
+   "front": "Ahnung",
+   "meaningId": "ide",
+   "meaningEn": "idea",
    "wordType": "noun",
    "tags": [
-    "general-3"
+    "general-2"
    ],
    "level": "A1",
-   "topic": "general-3"
+   "topic": "general-2"
   },
   {
-   "front": "Plan",
-   "meaningId": "denah",
-   "meaningEn": "plan · map",
+   "front": "Wahrheit",
+   "meaningId": "kebenaran",
+   "meaningEn": "truth · fact",
    "wordType": "noun",
    "tags": [
-    "general-3"
+    "general-2"
    ],
    "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "hierher",
-   "meaningId": "kemari",
-   "meaningEn": "hither",
-   "wordType": "adverb",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Fehler",
-   "meaningId": "kesalahan",
-   "meaningEn": "error · mistake · fault",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Dollar",
-   "meaningId": "dolar",
-   "meaningEn": "dollar",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Menge",
-   "meaningId": "himpunan",
-   "meaningEn": "set",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "bereits",
-   "meaningId": "sudah · telah",
-   "meaningEn": "already · just",
-   "wordType": "adverb",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Ruf",
-   "meaningId": "bayang-bayang",
-   "meaningEn": "call · summons",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "leider",
-   "meaningId": "sayang",
-   "meaningEn": "unfortunately · alas",
-   "wordType": "adverb",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Scheiß",
-   "meaningId": "tahi",
-   "meaningEn": "shit",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Hölle",
-   "meaningId": "neraka",
-   "meaningEn": "hell · inferno",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Doktor",
-   "meaningId": "doktor",
-   "meaningEn": "doctor · physican",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Film",
-   "meaningId": "film",
-   "meaningEn": "film · movie · motion picture",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "überall",
-   "meaningId": "di mana-mana",
-   "meaningEn": "everywhere · anywhere · all over",
-   "wordType": "adverb",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Hund",
-   "meaningId": "anjing",
-   "meaningEn": "dog · hound",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Tat",
-   "meaningId": "babak",
-   "meaningEn": "act · deed · action",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "wem",
-   "meaningId": "yang",
-   "meaningEn": "whom",
-   "wordType": "other",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "König",
-   "meaningId": "raja",
-   "meaningEn": "king",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "danach",
-   "meaningId": "lalu",
-   "meaningEn": "afterwards · subsequently · after",
-   "wordType": "adverb",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Feuer",
-   "meaningId": "api",
-   "meaningEn": "fire",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Kumpel",
-   "meaningId": "kawan",
-   "meaningEn": "buddy · mate · homie",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Luft",
-   "meaningId": "udara",
-   "meaningEn": "air · atmosphere",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Suche",
-   "meaningId": "pencarian",
-   "meaningEn": "search · quest",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Wert",
-   "meaningId": "bobot",
-   "meaningEn": "value · worth · price",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Party",
-   "meaningId": "pesta",
-   "meaningEn": "party · do",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Wahl",
-   "meaningId": "Wahl",
-   "meaningEn": "election · adoption",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Vertrauen",
-   "meaningId": "kepercayaan",
-   "meaningEn": "confidence · trust",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "damals",
-   "meaningId": "saat itu",
-   "meaningEn": "then · at that time",
-   "wordType": "adverb",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "nachdem",
-   "meaningId": "sesudah",
-   "meaningEn": "after",
-   "wordType": "other",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Gefühl",
-   "meaningId": "emosi",
-   "meaningEn": "feeling · emotion · affection",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "irgendwo",
-   "meaningId": "di mana pun",
-   "meaningEn": "somewhere",
-   "wordType": "adverb",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Stück",
-   "meaningId": "potong",
-   "meaningEn": "piece",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Zukunft",
-   "meaningId": "masa depan",
-   "meaningEn": "future · futurity",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Licht",
-   "meaningId": "cahaya",
-   "meaningEn": "light",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Himmel",
-   "meaningId": "langit",
-   "meaningEn": "sky · firmament · heaven",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Nachricht",
-   "meaningId": "pesan · berita · kabar",
-   "meaningEn": "message · news",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "drüben",
-   "meaningId": "di sana",
-   "meaningEn": "on the other side · over there",
-   "wordType": "adverb",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Laut",
-   "meaningId": "bunyi",
-   "meaningEn": "sound",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "laut",
-   "meaningId": "menurut",
-   "meaningEn": "according",
-   "wordType": "other",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Erde",
-   "meaningId": "bumi",
-   "meaningEn": "Earth",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Rest",
-   "meaningId": "bekas",
-   "meaningEn": "remainder · rest",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "eher",
-   "meaningId": "agak",
-   "meaningEn": "sooner · earlier",
-   "wordType": "adverb",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
+   "topic": "general-2"
   },
   {
    "front": "Gefängnis",
@@ -6894,108 +6996,10 @@
    "meaningEn": "prison · jail · penitentiary",
    "wordType": "noun",
    "tags": [
-    "general-3"
+    "general-2"
    ],
    "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Opfer",
-   "meaningId": "kurban",
-   "meaningEn": "sacrifice · victim",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "Mist",
-   "meaningId": "pupuk",
-   "meaningEn": "dung · manure",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "die Rechnung",
-   "meaningId": "tagihan",
-   "meaningEn": "bill",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3",
-   "gender": "die",
-   "plural": "die Rechnungen",
-   "exampleDe": "Die Rechnung, bitte!",
-   "exampleId": "Tagihannya, tolong!",
-   "exampleEn": "The bill, please!"
-  },
-  {
-   "front": "das Geld",
-   "meaningId": "uang",
-   "meaningEn": "money",
-   "wordType": "noun",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3",
-   "gender": "das",
-   "plural": "die Gelder",
-   "exampleDe": "Ich habe kein Geld.",
-   "exampleId": "Saya tidak punya uang.",
-   "exampleEn": "I have no money."
-  },
-  {
-   "front": "kaufen",
-   "meaningId": "membeli",
-   "meaningEn": "to buy",
-   "wordType": "verb",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "bezahlen",
-   "meaningId": "membayar",
-   "meaningEn": "to pay",
-   "wordType": "verb",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "teuer",
-   "meaningId": "mahal",
-   "meaningEn": "expensive",
-   "wordType": "adjective",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
-  },
-  {
-   "front": "billig",
-   "meaningId": "murah",
-   "meaningEn": "cheap",
-   "wordType": "adjective",
-   "tags": [
-    "general-3"
-   ],
-   "level": "A1",
-   "topic": "general-3"
+   "topic": "general-2"
   }
  ]
 }

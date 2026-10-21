@@ -1,9 +1,4 @@
-import {
-    deleteDoc,
-    getDocs,
-    setDoc,
-    writeBatch,
-} from "firebase/firestore";
+import { deleteDoc, getDocs, setDoc, writeBatch } from "firebase/firestore";
 import type { CardProgress, DeckCycle, Profile } from "@/types";
 import { getDb } from "@/lib/firebase/client";
 import {
@@ -16,85 +11,123 @@ import {
 import { getContentDeck } from "@/lib/content/registry";
 import { emptyCycle } from "@/lib/study/session";
 
-const OLD_DECK_PATTERN = /^de-[a-z0-9]+-core$/;
-
 /**
- * One-time remap from the old per-level decks (`de-a1-core-0001`) to the topic
- * decks (`de-a1-greetings-0001`).
+ * Remaps progress to the currently shipped topic card ids.
  *
- * Cards that were marked as known are kept as `pending` for their new topic, so
- * they are shown first in the next session instead of being silently dropped.
- * Old progress/cycle documents are removed afterwards.
+ * Handles both generations at once:
+ * - `migration-map.json`: `de-a1-core-0001` → old topic id
+ * - `topic-map.json`:     old topic id      → current topic id
+ *
+ * Cards that were marked as known stay in the pending list of their new topic,
+ * so they are shown first instead of being dropped. Cards that no longer exist
+ * in the content (removed names, trimmed levels) lose their progress.
  */
 export async function migrateTopicProgress(
     uid: string,
     profile: Profile | null,
 ): Promise<boolean> {
-    if (!profile || profile.topicsV3 === true) return false;
+    if (!profile || profile.topicsV4 === true) return false;
 
     const snapshot = await getDocs(progressColRef(uid));
     if (snapshot.empty) {
-        await setDoc(userDocRef(uid), { topicsV3: true }, { merge: true });
+        await setDoc(
+            userDocRef(uid),
+            { topicsV3: true, topicsV4: true },
+            { merge: true },
+        );
         return false;
     }
 
-    const map = (await import("@/content/migration-map.json"))
-        .default as Record<string, string>;
+    const [topicMap, coreMap] = await Promise.all([
+        import("@/content/topic-map.json").then(
+            (module) => module.default as Record<string, string>,
+        ),
+        import("@/content/migration-map.json").then(
+            (module) => module.default as Record<string, string>,
+        ),
+    ]);
 
-    const knownByDeck = new Map<string, string[]>();
-    const newProgress: CardProgress[] = [];
-    const staleRefs = snapshot.docs.map((entry) => entry.ref);
+    const entries = new Map<string, CardProgress>();
+    const stale = new Set<string>();
 
-    for (const entry of snapshot.docs) {
-        const data = entry.data() as CardProgress;
-        const newId = map[entry.id];
-        if (!newId) {
-            // Card belongs to a user deck: keep its progress untouched.
-            if (!getContentDeck(data.deckId)) {
-                staleRefs.splice(staleRefs.indexOf(entry.ref), 1);
+    for (const doc of snapshot.docs) {
+        const data = doc.data() as CardProgress;
+        const target =
+            topicMap[doc.id] ??
+            (coreMap[doc.id] ? (topicMap[coreMap[doc.id]] ?? null) : null);
+
+        if (!target) {
+            if (getContentDeck(data.deckId)) {
+                // Card disappeared from the bundled content.
+                stale.add(doc.id);
+            } else {
+                // User deck: keep untouched.
+                entries.set(doc.id, data);
             }
             continue;
         }
 
-        const deckId = newId.replace(/-\d{4}$/, "");
-        newProgress.push({ ...data, cardId: newId, deckId, cycle: 1 });
-        if (data.known) {
-            const list = knownByDeck.get(deckId) ?? [];
-            list.push(newId);
-            knownByDeck.set(deckId, list);
-        }
+        const deckId = target.replace(/-\d{4}$/, "");
+        entries.set(target, { ...data, cardId: target, deckId });
+        if (doc.id !== target) stale.add(doc.id);
     }
 
-    for (let index = 0; index < newProgress.length; index += 400) {
+    for (let index = 0; index < entries.size; index += 400) {
+        const chunk = [...entries.values()].slice(index, index + 400);
         const batch = writeBatch(getDb());
-        for (const entry of newProgress.slice(index, index + 400)) {
+        for (const entry of chunk) {
             batch.set(progressDocRef(uid, entry.cardId), entry, { merge: true });
         }
         await batch.commit();
     }
 
-    for (const [deckId, knownIds] of knownByDeck) {
+    const staleIds = [...stale];
+    for (let index = 0; index < staleIds.length; index += 400) {
+        const batch = writeBatch(getDb());
+        for (const id of staleIds.slice(index, index + 400)) {
+            batch.delete(progressDocRef(uid, id));
+        }
+        await batch.commit();
+    }
+
+    const knownByDeck = new Map<string, number>();
+    const pendingByDeck = new Map<string, string[]>();
+    const seenByDeck = new Map<string, number>();
+
+    for (const entry of entries.values()) {
+        const deck = getContentDeck(entry.deckId);
+        if (!deck) continue;
+        seenByDeck.set(deck.id, (seenByDeck.get(deck.id) ?? 0) + 1);
+        if (entry.known) {
+            knownByDeck.set(deck.id, (knownByDeck.get(deck.id) ?? 0) + 1);
+        } else {
+            const list = pendingByDeck.get(deck.id) ?? [];
+            list.push(entry.cardId);
+            pendingByDeck.set(deck.id, list);
+        }
+    }
+
+    const cycles = await getDocs(deckCyclesColRef(uid));
+    for (const doc of cycles.docs) {
+        if (doc.id.startsWith("de-")) await deleteDoc(doc.ref);
+    }
+
+    for (const deckId of seenByDeck.keys()) {
         const deck = getContentDeck(deckId);
         if (!deck) continue;
         const cycle: DeckCycle = {
             ...emptyCycle(deckId),
-            pendingCardIds: knownIds.slice(0, 200),
+            cursor: Math.min(deck.cardCount, seenByDeck.get(deckId) ?? 0),
+            knownInCycle: Math.min(deck.cardCount, knownByDeck.get(deckId) ?? 0),
+            pendingCardIds: (pendingByDeck.get(deckId) ?? []).slice(0, 200),
         };
         await setDoc(deckCycleDocRef(uid, deckId), cycle, { merge: true });
     }
 
-    // Remove the old per-level progress documents and cycle cursors.
-    for (let index = 0; index < staleRefs.length; index += 400) {
-        const batch = writeBatch(getDb());
-        for (const ref of staleRefs.slice(index, index + 400)) batch.delete(ref);
-        await batch.commit();
-    }
-
-    const cycles = await getDocs(deckCyclesColRef(uid));
-    for (const entry of cycles.docs) {
-        if (OLD_DECK_PATTERN.test(entry.id)) await deleteDoc(entry.ref);
-    }
-
-    await setDoc(userDocRef(uid), { topicsV3: true }, { merge: true });
+    await setDoc(
+        userDocRef(uid),
+        { topicsV3: true, topicsV4: true },
+        { merge: true },
+    );
     return true;
 }

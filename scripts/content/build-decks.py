@@ -24,7 +24,7 @@ CACHE = ROOT / ".content-cache"
 CONTENT = ROOT / "src" / "content" / "de"
 CURATED = CONTENT / "source" / "curated-a1.json"
 TOPICS = Path(__file__).resolve().parent / "topics.json"
-ID_KEYWORDS = Path(__file__).resolve().parent / "topic-id-keywords.json"
+PROPER_NAMES = Path(__file__).resolve().parent / "proper-names.json"
 
 LEVEL_SIZES = [
     ("A1", 600),
@@ -154,7 +154,7 @@ def curated_cards() -> list[dict]:
 
 
 class TopicIndex:
-    def __init__(self, config: dict, id_keywords: dict[str, list[str]]):
+    def __init__(self, config: dict):
         self.catalog: dict = config["catalog"]
         self.bands: dict[str, list[str]] = config["bands"]
         self.tag_aliases: dict[str, str] = config.get("tagAliases", {})
@@ -165,13 +165,27 @@ class TopicIndex:
         self._id_patterns = {
             key: [
                 re.compile(rf"\b{re.escape(word.lower())}", re.IGNORECASE)
-                for word in words
+                for word in entry.get("idKeywords", [])
             ]
-            for key, words in id_keywords.items()
+            for key, entry in self.catalog.items()
+        }
+        self._suffixes = {
+            key: tuple(suffix.lower() for suffix in entry.get("suffixes", []))
+            for key, entry in self.catalog.items()
+        }
+        self._fallbacks = {
+            key: tuple(entry.get("fallbackWordTypes", []))
+            for key, entry in self.catalog.items()
         }
 
     def topics_for(self, level: str) -> list[str]:
         return self.bands[level]
+
+    def _matches_suffix(self, lemma: str, suffixes: tuple[str, ...]) -> bool:
+        return any(
+            len(lemma) > len(suffix) + 2 and lemma.endswith(suffix)
+            for suffix in suffixes
+        )
 
     def assign(self, level: str, card: dict, word_type: str) -> str:
         order = self.topics_for(level)
@@ -191,14 +205,13 @@ class TopicIndex:
             if any(pattern.search(meaning) for pattern in self._id_patterns.get(key, [])):
                 return key
 
-        if word_type == "verb":
-            for key in ("verbs-basic", "verbs-advanced"):
-                if key in order:
-                    return key
-        if word_type == "adjective":
-            for key in ("adjectives-basic", "adjectives-advanced"):
-                if key in order:
-                    return key
+        for key in order:
+            if self._matches_suffix(lemma, self._suffixes.get(key, ())):
+                return key
+
+        for key in order:
+            if word_type in self._fallbacks.get(key, ()):
+                return key
 
         return "general"
 
@@ -218,6 +231,18 @@ def to_card(entry: dict, level: str) -> dict:
     }
 
 
+def is_proper_name(
+    word: str, meaning_id: str, meaning_en: str, names: set[str]
+) -> bool:
+    """Names are either listed explicitly or translate to themselves."""
+    lemma = normalize(word)
+    if lemma in names:
+        return True
+    first_id = normalize((meaning_id or "").split(" · ")[0])
+    first_en = normalize((meaning_en or "").split(" · ")[0])
+    return lemma == first_id and (not first_en or first_en == lemma)
+
+
 def legacy_ids() -> dict[tuple[str, str], str]:
     """Old `de-<level>-core` card ids keyed by lemma + word type."""
     mapping: dict[tuple[str, str], str] = {}
@@ -228,6 +253,28 @@ def legacy_ids() -> dict[tuple[str, str], str]:
         for index, card in enumerate(data["cards"], start=1):
             key = (normalize(card["front"]), card.get("wordType", "other"))
             mapping.setdefault(key, f"{deck_id}-{index:04d}")
+    return mapping
+
+
+def current_topic_ids() -> dict[tuple[str, str], str]:
+    """Card ids of the currently shipped topic decks (for progress remaps)."""
+    mapping: dict[tuple[str, str], str] = {}
+    for path in sorted(CONTENT.glob("*.json")):
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            continue
+        level = data.get("level")
+        if not level or not isinstance(data.get("cards"), list):
+            continue
+        counters: dict[str, int] = {}
+        for card in data["cards"]:
+            topic = card.get("topic")
+            if not topic:
+                continue
+            counters[topic] = counters.get(topic, 0) + 1
+            key = (normalize(card["front"]), card.get("wordType", "other"))
+            mapping.setdefault(key, f"de-{level.lower()}-{topic}-{counters[topic]:04d}")
     return mapping
 
 
@@ -251,9 +298,13 @@ def main() -> int:
             return 1
 
     config = json.loads(TOPICS.read_text(encoding="utf-8"))
-    id_keywords = json.loads(ID_KEYWORDS.read_text(encoding="utf-8"))
-    index = TopicIndex(config, id_keywords)
+    proper_names = {
+        normalize(name)
+        for name in json.loads(PROPER_NAMES.read_text(encoding="utf-8"))["names"]
+    }
+    index = TopicIndex(config)
     old_ids = legacy_ids()
+    old_topic_ids = current_topic_ids()
 
     indo = load_translations(CACHE / "de-id.sqlite3")
     english = load_translations(CACHE / "de-en.sqlite3")
@@ -286,13 +337,18 @@ def main() -> int:
         if rank > MAX_RANK:
             continue
 
+        meaning_id = " · ".join(glosses)
+        meaning_en = " · ".join(en_entry[1][:3])
+        if is_proper_name(word, meaning_id, meaning_en, proper_names):
+            continue
+
         candidates.append(
             {
                 "word": word,
                 "rank": rank,
                 "wordType": word_type,
-                "meaningId": " · ".join(glosses),
-                "meaningEn": " · ".join(en_entry[1][:3]),
+                "meaningId": meaning_id,
+                "meaningEn": meaning_en,
             }
         )
 
@@ -308,13 +364,23 @@ def main() -> int:
 
     manifest_levels = []
     migration: dict[str, str] = {}
+    topic_remap: dict[str, str] = {}
     total_cards = 0
 
     cursor = 0
     for level_index, (level, size) in enumerate(LEVEL_SIZES, start=1):
         level_cards: list[dict] = []
         if level == "A1":
-            level_cards.extend(dict(card) for card in curated)
+            level_cards.extend(
+                dict(card)
+                for card in curated
+                if not is_proper_name(
+                    card["front"],
+                    card.get("meaningId", ""),
+                    card.get("meaningEn", ""),
+                    proper_names,
+                )
+            )
         while len(level_cards) < size and cursor < len(ordered):
             level_cards.append(to_card(ordered[cursor], level))
             cursor += 1
@@ -371,6 +437,9 @@ def main() -> int:
                     old_id = old_ids.get(old_key)
                     if old_id:
                         migration[old_id] = card_id
+                    previous_id = old_topic_ids.get(old_key)
+                    if previous_id:
+                        topic_remap[previous_id] = card_id
 
                 topics_payload.append(
                     {
@@ -410,8 +479,14 @@ def main() -> int:
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
 
-    (ROOT / "src" / "content" / "migration-map.json").write_text(
-        json.dumps(migration, ensure_ascii=False, indent=0, sort_keys=True) + "\n",
+    if migration:
+        (ROOT / "src" / "content" / "migration-map.json").write_text(
+            json.dumps(migration, ensure_ascii=False, indent=0, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
+
+    (ROOT / "src" / "content" / "topic-map.json").write_text(
+        json.dumps(topic_remap, ensure_ascii=False, indent=0, sort_keys=True) + "\n",
         encoding="utf-8",
     )
 

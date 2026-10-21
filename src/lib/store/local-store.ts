@@ -112,7 +112,7 @@ export class GuestStore implements StudyStore {
         } else {
             this.db = {
                 version: 2,
-                contentVersion: 3,
+                contentVersion: 4,
                 profile: defaultProfileFor({
                     displayName: null,
                     email: null,
@@ -127,7 +127,7 @@ export class GuestStore implements StudyStore {
             };
         }
 
-        if (this.db.contentVersion !== 3) {
+        if (this.db.contentVersion !== 4) {
             await remapTopics(this.db);
         }
         this.persist();
@@ -474,23 +474,39 @@ function deckCardCount(db: GuestDb, deckId: string): number {
  * user decks is left untouched.
  */
 async function remapTopics(db: GuestDb): Promise<void> {
-    const map = (await import("@/content/migration-map.json"))
-        .default as Record<string, string>;
+    const [topicMap, coreMap] = await Promise.all([
+        import("@/content/topic-map.json").then(
+            (module) => module.default as Record<string, string>,
+        ),
+        import("@/content/migration-map.json").then(
+            (module) => module.default as Record<string, string>,
+        ),
+    ]);
 
     const progress: Record<string, CardProgress> = {};
     const knownByDeck = new Map<string, number>();
+    const pendingByDeck = new Map<string, string[]>();
+    const seenByDeck = new Map<string, number>();
 
     for (const [oldId, entry] of Object.entries(db.progress)) {
-        const newId = map[oldId];
-        if (!newId) {
+        const target =
+            topicMap[oldId] ??
+            (coreMap[oldId] ? (topicMap[coreMap[oldId]] ?? null) : null);
+        if (!target) {
             // User-deck card: keep as is.
             if (!getContentDeck(entry.deckId)) progress[oldId] = entry;
             continue;
         }
-        const deckId = newId.replace(/-\d{4}$/, "");
-        progress[newId] = { ...entry, cardId: newId, deckId };
+
+        const deckId = target.replace(/-\d{4}$/, "");
+        progress[target] = { ...entry, cardId: target, deckId };
+        seenByDeck.set(deckId, (seenByDeck.get(deckId) ?? 0) + 1);
         if (entry.known) {
             knownByDeck.set(deckId, (knownByDeck.get(deckId) ?? 0) + 1);
+        } else {
+            const list = pendingByDeck.get(deckId) ?? [];
+            list.push(target);
+            pendingByDeck.set(deckId, list);
         }
     }
 
@@ -498,20 +514,20 @@ async function remapTopics(db: GuestDb): Promise<void> {
     for (const [deckId, cycle] of Object.entries(db.cycles)) {
         if (!getContentDeck(deckId)) cycles[deckId] = cycle;
     }
-    for (const [deckId, known] of knownByDeck) {
+    for (const [deckId, seen] of seenByDeck) {
         const deck = getContentDeck(deckId);
         if (!deck) continue;
         cycles[deckId] = {
             ...emptyCycle(deckId),
-            cursor: deck.cardCount,
-            knownInCycle: Math.min(known, deck.cardCount),
-            pendingCardIds: [],
+            cursor: Math.min(deck.cardCount, seen),
+            knownInCycle: Math.min(deck.cardCount, knownByDeck.get(deckId) ?? 0),
+            pendingCardIds: (pendingByDeck.get(deckId) ?? []).slice(0, 200),
         };
     }
 
     db.progress = progress;
     db.cycles = cycles;
-    db.contentVersion = 3;
+    db.contentVersion = 4;
 }
 
 /** Converts the FSRS-era snapshot (v1) into the cycle model (v2). */

@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import manifest from "@/content/manifest.json";
 import migration from "@/content/migration-map.json";
+import topicMap from "@/content/topic-map.json";
 import { summarizeBand } from "@/content/courses";
 import { getContentDeck, topicsForLevel } from "@/lib/content/registry";
 import type { Deck, DeckProgress } from "@/types";
@@ -111,6 +112,18 @@ describe("migration map", () => {
 
         for (const [oldId, newId] of entries.slice(0, 500)) {
             expect(oldId).toMatch(/^de-[a-z0-9]+-core-\d{4}$/);
+            const target = topicMap[newId as keyof typeof topicMap] ?? newId;
+            const deckId = target.replace(/-\d{4}$/, "");
+            expect(getContentDeck(deckId), `${target} has no topic`).not.toBeNull();
+        }
+    });
+
+    it("maps the previous topic ids to the current ones", () => {
+        const entries = Object.entries(topicMap);
+        expect(entries.length).toBeGreaterThan(9000);
+
+        for (const [oldId, newId] of entries.slice(0, 500)) {
+            expect(oldId).toMatch(/^de-[a-z0-9-]+-\d{4}$/);
             const deckId = newId.replace(/-\d{4}$/, "");
             expect(getContentDeck(deckId), `${newId} has no topic`).not.toBeNull();
         }

@@ -1,7 +1,7 @@
 # GoAbroad
 
 Flashcard web app untuk belajar bahasa asing — mulai dari **Bahasa Jerman A1 sampai C2**
-(10.200 kartu dalam **174 topik**), dengan engine **siklus per topik**: pilih **band** (A1–C2),
+(9.688 kartu dalam **177 topik**), dengan engine **siklus per topik**: pilih **band** (A1–C2),
 lalu pilih **topik** (mis. "Sapaan & perkenalan"). Satu sesi menyelesaikan satu topik penuh,
 kartu dijawab **Ulangi** atau **Sudah paham**, dan topik direset otomatis setelah semua kartunya
 ditampilkan. Band tidak pernah dicampur dalam satu sesi.
@@ -105,14 +105,21 @@ GEMINI_MODEL=gemini-2.5-flash # opsional
 
 Deck dibundel dari data terbuka (lihat [`NOTICE.md`](./NOTICE.md)) dan dipecah menjadi topik:
 
-| Band | Topik | Kartu | Contoh topik pertama |
+| Band | Topik | Kartu | Topik pertama |
 | --- | --- | --- | --- |
-| A1 | 15 | 600 | Sapaan & perkenalan, Angka & waktu |
-| A2 | 24 | 1.200 | Angka & waktu, Sapaan |
-| B1 | 31 | 1.800 | Umum tingkat lanjut, Pekerjaan & ekonomi |
-| B2 | 32 | 2.000 | Pekerjaan & ekonomi, Masyarakat & politik |
-| C1 | 38 | 2.400 | Masyarakat & politik, Pekerjaan & ekonomi |
-| C2 | 34 | 2.200 | Pendidikan & ilmu, Masyarakat & politik |
+| A1 | 16 | 600 | Sapaan & perkenalan, Angka & waktu |
+| A2 | 27 | 1.200 | Angka & waktu, Kata fungsi & penghubung |
+| B1 | 32 | 1.800 | Pekerjaan & ekonomi, Media & teknologi |
+| B2 | 33 | 2.000 | Pekerjaan & ekonomi, Hukum & kriminal |
+| C1 | 40 | 2.400 | Hukum & kriminal, Media & teknologi |
+| C2 | 29 | 1.688 | Pendidikan & ilmu, Masyarakat & politik |
+
+Topik tambahan di luar tema lama: **Kata fungsi & penghubung**, **Orang & profesi**,
+**Nomina abstrak**, **Alam & hewan**, **Tempat & geografi**, **Benda & teknologi**,
+**Hukum & kriminal**, dan **Olahraga & hobi**. Klasifikasi memakai kata kunci Jerman,
+arti Indonesia, lalu aturan sufiks (`-ung`, `-heit`, `-schaft`, `-platz`, `-zeug`, …).
+**Nama diri** (negara, kota, nama orang) dibuang lewat `scripts/content/proper-names.json`
++ aturan "arti sama dengan lemma".
 
 - `src/content/manifest.json` = level → topik berurutan (id, ikon, jumlah kartu, file).
 - `src/content/de/{a1..c2}.json` = daftar topik + semua kartu level itu (tiap kartu punya `topic`).
@@ -197,8 +204,8 @@ progress `(deckId)`, reviews `(deckId, createdAt)`.
 
 1. **FSRS → siklus** (`engineV2`): kartu lama yang pernah direview dianggap "paham" dan dipetakan
 ke `progress` + `deckCycles`.
-2. **Per-level → per-topik** (`topicsV3`): `src/lib/data/migrate-topics.ts` memakai
-`migration-map.json` untuk memindahkan progres `de-a1-core-0001` ke `de-a1-greetings-0007`.
+2. **Per-level → per-topik** (`topicsV3`/`topicsV4`): `src/lib/data/migrate-topics.ts` memakai
+`migration-map.json` (core → topik lama) dan `topic-map.json` (topik lama → topik sekarang).
 Kartu yang dulu "paham" dimasukkan sebagai **pending** topik barunya agar tampil dulu, lalu
 dokumen progres/cycle lama dihapus. Snapshot tamu (`goabroad.guest.v2`) di-remap saat dibuka.
 

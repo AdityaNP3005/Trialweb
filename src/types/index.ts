@@ -191,6 +191,8 @@ export type Profile = {
     engineV2?: boolean;
     /** Set once progress has been remapped to topic deck ids. */
     topicsV3?: boolean;
+    /** Set once progress has been remapped to the current topic ids. */
+    topicsV4?: boolean;
     /** Legacy per-band settings, kept so old documents still load. */
     bands?: BandSettings;
     /** Legacy fields, kept optional so old documents still load. */
