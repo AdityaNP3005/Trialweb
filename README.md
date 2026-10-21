@@ -157,6 +157,9 @@ di mesin lab.
    | `GEMINI_MODEL` | Production | opsional |
 
 3. Variabel `NEXT_PUBLIC_*` di-*inline* saat build → **redeploy** setelah mengubahnya.
+   Repo ini sudah menyertakan `.env.production` berisi konfigurasi web Firebase
+   publik, jadi build produksi selalu punya config meski dashboard kosong.
+   Nilai yang diisi di dashboard Vercel tetap **menang** atas file tersebut.
 4. Tambahkan domain Vercel (`*.vercel.app` dan domain kustom) ke Firebase Console →
    Authentication → Settings → **Authorized domains**.
 5. Deploy rules & index dari mesin lokal: `npm run deploy:rules` (perlu `npx firebase login`).
