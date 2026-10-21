@@ -152,11 +152,7 @@ export default async function LandingPage() {
                             position="01 / 29"
                             word="der Apfel"
                             phonetic="[ˈapfl̩]"
-                            meaning={
-                                <>
-                                    apel <span className="text-muted">· apple</span>
-                                </>
-                            }
+                            meaning={t("previewDeMeaning")}
                             script="latin"
                         />
                         <PreviewCard

@@ -7,7 +7,7 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import type { Deck, DeckProgress } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
-import { getCourseForSection, summarizeSection } from "@/content/courses";import { getSection } from "@/lib/content/registry";
+import { getCourseForSection, summarizeSection } from "@/content/courses"; import { getSection } from "@/lib/content/registry";
 import { sectionLabelFor, unitLabelFor } from "@/lib/content/labels";
 import { Badge } from "@/components/ui/badge";
 import { buttonStyles } from "@/components/ui/button";

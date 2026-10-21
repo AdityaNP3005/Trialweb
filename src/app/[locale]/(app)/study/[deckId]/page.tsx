@@ -267,16 +267,16 @@ export default function StudyPage() {
                         <h1 className="display mt-1 truncate text-xl leading-tight">
                             {deck
                                 ? `${sectionLabelFor(
-                                      deck.level,
-                                      getCourse(deck.courseId).unitNoun,
-                                      tc,
-                                  )} · ${unitLabelFor(
-                                      deck.topicOrder,
-                                      deck.name,
-                                      getCourse(deck.courseId).unitNoun,
-                                      tc,
-                                      locale,
-                                  )}`
+                                    deck.level,
+                                    getCourse(deck.courseId).unitNoun,
+                                    tc,
+                                )} · ${unitLabelFor(
+                                    deck.topicOrder,
+                                    deck.name,
+                                    getCourse(deck.courseId).unitNoun,
+                                    tc,
+                                    locale,
+                                )}`
                                 : t("sessionTitle")}
                         </h1>
                     </div>
@@ -353,10 +353,10 @@ export default function StudyPage() {
                         badgeLabel={
                             deck
                                 ? sectionLabelFor(
-                                      deck.level,
-                                      getCourse(deck.courseId).unitNoun,
-                                      tc,
-                                  )
+                                    deck.level,
+                                    getCourse(deck.courseId).unitNoun,
+                                    tc,
+                                )
                                 : undefined
                         }
                     />
@@ -374,10 +374,10 @@ export default function StudyPage() {
                         badgeLabel={
                             deck
                                 ? sectionLabelFor(
-                                      deck.level,
-                                      getCourse(deck.courseId).unitNoun,
-                                      tc,
-                                  )
+                                    deck.level,
+                                    getCourse(deck.courseId).unitNoun,
+                                    tc,
+                                )
                                 : undefined
                         }
                         repeatCount={repeatCounts[current.id] ?? 0}

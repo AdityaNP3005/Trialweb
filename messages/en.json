@@ -73,7 +73,7 @@
         "badgeDe": "Deutsch A1–C2",
         "badgeZh": "華語 Books 1–4",
         "previewZhBadge": "Book 1 · Chapter 3",
-        "previewZhMeaning": "weekend · akhir pekan",
+        "previewZhMeaning": "weekend",
         "featureSrsTitle": "Cycles per topic & chapter",
         "featureSrsBody": "One session finishes one topic or chapter. Repeated cards come back a few cards later, and a new cycle starts once every card has been shown.",
         "featureAudioTitle": "Hear the pronunciation",
@@ -83,7 +83,8 @@
         "featureMultiTitle": "Two languages, one app",
         "featureMultiBody": "German and Mandarin share the same engine, so a new language never touches the schema.",
         "footerNote": "Topic cycles · UI: ID / EN · Languages: Deutsch · 華語",
-        "notePrefix": "Note:"
+        "notePrefix": "Note:",
+        "previewDeMeaning": "apple"
     },
     "auth": {
         "loginTitle": "Sign in to your account",

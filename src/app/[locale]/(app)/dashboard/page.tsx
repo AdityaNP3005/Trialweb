@@ -192,12 +192,12 @@ export default function DashboardPage() {
                                                 : t("bandTopics", { count: summary.topics })}
                                             {summary.nextTopic
                                                 ? ` · ${t("continueWith")}: ${unitLabelFor(
-                                                      summary.nextTopic.topicOrder,
-                                                      summary.nextTopic.name,
-                                                      course.unitNoun,
-                                                      tc,
-                                                      locale,
-                                                  )}`
+                                                    summary.nextTopic.topicOrder,
+                                                    summary.nextTopic.name,
+                                                    course.unitNoun,
+                                                    tc,
+                                                    locale,
+                                                )}`
                                                 : ""}
                                         </p>
                                     </div>

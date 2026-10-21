@@ -83,7 +83,8 @@
         "featureMultiTitle": "Dua bahasa, satu aplikasi",
         "featureMultiBody": "Jerman dan Mandarin berbagi engine yang sama, jadi bahasa baru bisa ditambah tanpa mengubah skema.",
         "footerNote": "Siklus per topik · UI: ID / EN · Bahasa: Deutsch · 華語",
-        "notePrefix": "Catatan:"
+        "notePrefix": "Catatan:",
+        "previewDeMeaning": "apel · apple"
     },
     "auth": {
         "loginTitle": "Masuk ke akunmu",
