@@ -76,7 +76,9 @@ export function buildSession(input: {
         .slice(0, size)
         .map((id) => byId.get(id)!)
         .filter(Boolean);
-    const pendingLeft = pending.slice(chosen.length);
+    // Pending cards stay pending until they are answered with "next"; building
+    // a session must not remove them (the user may leave before answering).
+    const pendingLeft = pending;
 
     const introduced: Card[] = [];
     while (chosen.length + introduced.length < size && cursor + introduced.length < total) {

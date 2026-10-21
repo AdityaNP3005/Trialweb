@@ -70,10 +70,10 @@ describe("buildSession", () => {
             cards[11].id,
         ]);
         expect(plan.nextCursor).toBe(12);
-        expect(plan.pendingLeft).toEqual([]);
+        expect(plan.pendingLeft).toEqual([cards[2].id, cards[4].id]);
     });
 
-    it("keeps pending cards that do not fit into the session for later", () => {
+    it("keeps every pending card until it is answered", () => {
         const cards = makeCards(30);
         const plan = buildSession({
             deckId: "de-a1-core",
@@ -83,7 +83,7 @@ describe("buildSession", () => {
         });
 
         expect(plan.cards).toHaveLength(1);
-        expect(plan.pendingLeft).toEqual([cards[1].id]);
+        expect(plan.pendingLeft).toEqual([cards[0].id, cards[1].id]);
         expect(plan.cycleReset).toBe(false);
     });
 
