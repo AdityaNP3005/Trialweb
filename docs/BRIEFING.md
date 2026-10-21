@@ -241,6 +241,11 @@ npm run content:build && npm run seed:validate
   dengan `var(--font-fraunces)` yang belum ada, nilainya invalid-by-inheritance dan
   seluruh UI diam-diam jatuh ke sans sistem. Hanzi tetap `font-cjk`, tidak pernah
   `display`.
+- **Font CJK**: Noto Sans TC di-self-host lewat `next/font` (`--font-cjk-face`),
+  dipecah ratusan potongan `unicode-range` (~5 MB total di `.next/static/media`),
+  tapi browser hanya mengunduh potongan yang dipakai. Stack `sans`/`display`/`mono`
+  semuanya jatuh ke `var(--font-cjk-face)` supaya hanzi tidak pernah dirender
+  Inter/Source Serif 4 atau font sistem (yang di sebagian mesin berupa serif Jepang).
 - **Label konten**: manifest menyimpan satu judul (`Buku 1`, `Bab 3`, `Sapaan &
   perkenalan`). Jangan render `deck.name` / `section.label` langsung — pakai
   `sectionLabelFor` / `unitLabelFor` dari `src/lib/content/labels.ts`, kalau tidak
