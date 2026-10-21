@@ -40,12 +40,15 @@ diganti. Jangan menambah warna baru di luar tabel ini.
 
 | Peran | Font | Kelas |
 | --- | --- | --- |
-| Judul, angka besar, label section | Fraunces (variable) | `display` |
-| Teks UI | Inter Tight | default `font-sans` |
+| Judul, angka besar, label section | Source Serif 4 (600) | `display` |
+| Teks UI | Inter | default `font-sans` |
 | Metadata, kode rute, keycap | IBM Plex Mono | `meta`, `eyebrow`, `font-mono` |
 | Hanzi | font sistem CJK | `font-cjk` |
 
-- **Hanzi tidak pernah memakai `display`.** Fraunces tidak punya glif CJK.
+- **Hanzi tidak pernah memakai `display`.** Source Serif 4 tidak punya glif CJK.
+- **Kenapa bukan Fraunces/Inter Tight**: garis Fraunces bernuansa WONK dan `J` yang
+  turun ke bawah baseline terbaca ambigu di ukuran display; Inter Tight terlalu rapat
+  untuk teks kecil. Source Serif 4 + Inter menjaga karakter editorial tapi jelas.
 - `.eyebrow` = mono 11px, tracking `0.16em`, uppercase, muted. Dipakai untuk label
   section, bukan untuk setiap judul.
 - `.meta` = mono 11px, tracking `0.06em`, tabular. Untuk hitungan dan status.

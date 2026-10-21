@@ -86,7 +86,7 @@ loader + entri manifest (dihasilkan otomatis oleh script) lalu jalankan `npm run
 
 - Next.js 16 (App Router, Turbopack) + React 19 + TypeScript strict
 - Tailwind CSS 4 (token warna di `src/app/globals.css`, dark mode berbasis class)
-- Font lewat `next/font/google`: Fraunces (display), Inter Tight (UI), IBM Plex Mono
+- Font lewat `next/font/google`: Source Serif 4 (display), Inter (UI), IBM Plex Mono
   (metadata). Hanzi tetap memakai font sistem CJK (`--font-cjk`) tanpa unduhan.
 - next-intl 4 (routing `/[locale]`, `src/proxy.ts`, `next/root-params`)
 - Firebase 13 (Auth: Google + email/password, Firestore dengan cache persisten)
