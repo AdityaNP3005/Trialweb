@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { getAdminAuth } from "@/lib/firebase/admin";
+import { verifyFirebaseIdToken } from "@/lib/firebase/verify-token";
 import { buildCardPrompt } from "@/lib/ai/prompt";
 import { aiRequestSchema, aiResponseSchema } from "@/lib/validation/schemas";
 
@@ -36,9 +36,8 @@ function extractJson(text: string): unknown {
 export async function POST(request: NextRequest) {
     const apiKey = process.env.GEMINI_API_KEY;
     const model = process.env.GEMINI_MODEL ?? "gemini-2.5-flash";
-    const adminAuth = getAdminAuth();
 
-    if (!apiKey || !adminAuth) {
+    if (!apiKey) {
         return NextResponse.json(
             { error: "AI is not configured on this deployment." },
             { status: 503 },
@@ -51,12 +50,11 @@ export async function POST(request: NextRequest) {
         return NextResponse.json({ error: "Missing token" }, { status: 401 });
     }
 
-    let uid: string;
-    try {
-        uid = (await adminAuth.verifyIdToken(token)).uid;
-    } catch {
+    const identity = await verifyFirebaseIdToken(token);
+    if (!identity) {
         return NextResponse.json({ error: "Invalid token" }, { status: 401 });
     }
+    const uid = identity.uid;
 
     const body = await request.json().catch(() => null);
     const parsed = aiRequestSchema.safeParse(body);

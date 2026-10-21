@@ -76,12 +76,13 @@ npm run dev
 
 ```bash
 GEMINI_API_KEY=...            # server-only
-GEMINI_MODEL=gemini-2.5-flash
-FIREBASE_SERVICE_ACCOUNT_JSON={"type":"service_account",...}   # satu baris JSON
+GEMINI_MODEL=gemini-2.5-flash # opsional
 ```
 
-- `FIREBASE_SERVICE_ACCOUNT_JSON` dipakai `/api/ai/generate` untuk memverifikasi ID token.
-- Tanpa variabel tersebut endpoint mengembalikan **503** dan UI menampilkan pesan "AI belum aktif".
+- `/api/ai/generate` memverifikasi Firebase ID token memakai JWKS publik Google
+  (`jose`), jadi **tidak perlu service account**. Cukup `NEXT_PUBLIC_FIREBASE_PROJECT_ID`
+  (sudah ada di blok Firebase) untuk mencocokkan `aud`/`iss` token.
+- Tanpa `GEMINI_API_KEY` endpoint mengembalikan **503** dan UI menampilkan pesan "AI belum aktif".
 - Limit sederhana: 20 request/user/hari (in-memory, cocok untuk single instance; pindah ke
   Firestore/Redis bila perlu multi-instance).
 
@@ -154,7 +155,6 @@ di mesin lab.
    | `NEXT_PUBLIC_FIREBASE_*` | Production + Preview | Di-inline saat build |
    | `GEMINI_API_KEY` | Production | server-only |
    | `GEMINI_MODEL` | Production | opsional |
-   | `FIREBASE_SERVICE_ACCOUNT_JSON` | Production | server-only, satu baris JSON |
 
 3. Variabel `NEXT_PUBLIC_*` di-*inline* saat build → **redeploy** setelah mengubahnya.
 4. Tambahkan domain Vercel (`*.vercel.app` dan domain kustom) ke Firebase Console →
