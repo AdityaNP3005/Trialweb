@@ -16,6 +16,7 @@ import { fetchProfile } from "@/lib/data/profile";
 import { migrateLegacyEngine } from "@/lib/data/migrate-legacy";
 import { migrateTopicProgress } from "@/lib/data/migrate-topics";
 import { migrateReviewedVocab } from "@/lib/data/migrate-reviewed-vocab";
+import { migrateSemanticTopics } from "@/lib/data/migrate-semantic-topics";
 import { CloudStore } from "@/lib/store/cloud-store";
 import { GuestStore } from "@/lib/store/local-store";
 import { migrateGuestData, migrateGuestVideos } from "@/lib/store/migrate";
@@ -57,12 +58,14 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
                     // Video progress merges first: the deck migration clears the
                     // guest snapshot when it finishes.
                     await migrateGuestVideos(user.uid, storedProfile).catch(() => false);
-                    await migrateGuestData(user.uid, decks.length).catch(() => false);
                     await migrateLegacyEngine(user.uid, storedProfile).catch(() => false);
                     const afterEngine = await fetchProfile(user.uid).catch(() => null);
                     await migrateTopicProgress(user.uid, afterEngine).catch(() => false);
                     const afterTopics = await fetchProfile(user.uid).catch(() => null);
                     await migrateReviewedVocab(user.uid, afterTopics).catch(() => false);
+                    const afterVocab = await fetchProfile(user.uid).catch(() => null);
+                    await migrateSemanticTopics(user.uid, afterVocab).catch(() => false);
+                    await migrateGuestData(user.uid, decks.length).catch(() => false);
                 }
             } catch {
                 // Migration is best-effort.

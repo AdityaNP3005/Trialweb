@@ -2,6 +2,8 @@ import { describe, expect, it } from "vitest";
 import manifest from "@/content/manifest.json";
 import migration from "@/content/migration-map.json";
 import topicMap from "@/content/topic-map.json";
+import aliases from "@/content/de/review-aliases.json";
+import { loadReviewedGermanCards } from "@/lib/content/review-progress";
 import { summarizeBand } from "@/content/courses";
 import { getContentDeck, topicsForLevel } from "@/lib/content/registry";
 import type { Deck, DeckProgress } from "@/types";
@@ -132,26 +134,33 @@ describe("topic manifest", () => {
 });
 
 describe("migration map", () => {
-    it("maps every old per-level card to an existing topic card", () => {
+    it("resolves retained core-card histories through the historical topic and duplicate maps", async () => {
         const entries = Object.entries(migration);
+        const cards = new Map((await loadReviewedGermanCards()).map((card) => [card.id, card]));
         expect(entries.length).toBeGreaterThan(9000);
 
-        for (const [oldId, newId] of entries.slice(0, 500)) {
+        for (const [oldId, newId] of entries) {
             expect(oldId).toMatch(/^de-[a-z0-9]+-core-\d{4}$/);
-            const target = topicMap[newId as keyof typeof topicMap] ?? newId;
-            const deckId = target.replace(/-\d{4}$/, "");
-            expect(getContentDeck(deckId), `${target} has no topic`).not.toBeNull();
+            const target = topicMap[newId as keyof typeof topicMap];
+            // Earlier releases deliberately retired names/trimmed candidates
+            // absent from the v3→v4 map; the migration has always skipped them.
+            if (!target) continue;
+            const current = aliases[target as keyof typeof aliases] ?? target;
+            expect(cards.has(current), `${current} has no bundled card`).toBe(true);
         }
     });
 
-    it("maps the previous topic ids to the current ones", () => {
+    it("maps every previous topic-card id to an existing card independent of its current deck", async () => {
         const entries = Object.entries(topicMap);
+        const cards = new Map((await loadReviewedGermanCards()).map((card) => [card.id, card]));
         expect(entries.length).toBeGreaterThan(9000);
 
-        for (const [oldId, newId] of entries.slice(0, 500)) {
+        for (const [oldId, newId] of entries) {
             expect(oldId).toMatch(/^de-[a-z0-9-]+-\d{4}$/);
-            const deckId = newId.replace(/-\d{4}$/, "");
-            expect(getContentDeck(deckId), `${newId} has no topic`).not.toBeNull();
+            const current = aliases[newId as keyof typeof aliases] ?? newId;
+            const card = cards.get(current);
+            expect(card, `${current} has no bundled card`).toBeDefined();
+            expect(getContentDeck(card!.deckId)).not.toBeNull();
         }
     });
 });

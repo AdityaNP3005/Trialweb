@@ -10,10 +10,10 @@
         {
           "id": "de-a1-greetings",
           "key": "greetings",
-          "title": "Sapaan & perkenalan",
+          "title": "Sapaan & kesantunan",
           "icon": "👋",
           "order": 1,
-          "cardCount": 24
+          "cardCount": 15
         },
         {
           "id": "de-a1-numbers-time",
@@ -21,119 +21,255 @@
           "title": "Angka, tanggal & waktu",
           "icon": "🔢",
           "order": 2,
-          "cardCount": 44
+          "cardCount": 53
         },
         {
           "id": "de-a1-family-people",
           "key": "family-people",
-          "title": "Keluarga & orang",
+          "title": "Keluarga & hubungan pribadi",
           "icon": "👨‍👩‍👧",
           "order": 3,
-          "cardCount": 21
+          "cardCount": 27
+        },
+        {
+          "id": "de-a1-travel-transport",
+          "key": "travel-transport",
+          "title": "Perjalanan, transportasi & arah",
+          "icon": "🚆",
+          "order": 4,
+          "cardCount": 26
         },
         {
           "id": "de-a1-food-drink",
           "key": "food-drink",
           "title": "Makanan & minuman",
           "icon": "🍎",
-          "order": 4,
-          "cardCount": 28
+          "order": 5,
+          "cardCount": 30
         },
         {
           "id": "de-a1-home-daily",
           "key": "home-daily",
-          "title": "Rumah & benda sehari-hari",
+          "title": "Rumah & kegiatan rumah tangga",
           "icon": "🏠",
-          "order": 5,
-          "cardCount": 18
+          "order": 6,
+          "cardCount": 16
+        },
+        {
+          "id": "de-a1-clothes-shopping",
+          "key": "clothes-shopping",
+          "title": "Pakaian, penampilan & belanja",
+          "icon": "👕",
+          "order": 7,
+          "cardCount": 6
         },
         {
           "id": "de-a1-colors-shapes",
           "key": "colors-shapes",
-          "title": "Warna & bentuk",
+          "title": "Warna, bentuk & ukuran",
           "icon": "🎨",
-          "order": 6,
-          "cardCount": 13
+          "order": 8,
+          "cardCount": 17
         },
         {
           "id": "de-a1-body-health",
           "key": "body-health",
-          "title": "Tubuh & kesehatan",
-          "icon": "🩺",
-          "order": 7,
+          "title": "Tubuh & pancaindra",
+          "icon": "🧍",
+          "order": 9,
           "cardCount": 14
         },
         {
-          "id": "de-a1-directions-places",
-          "key": "directions-places",
-          "title": "Arah & tempat",
-          "icon": "🧭",
-          "order": 8,
-          "cardCount": 25
-        },
-        {
-          "id": "de-a1-travel-transport",
-          "key": "travel-transport",
-          "title": "Perjalanan & transportasi",
-          "icon": "🚆",
-          "order": 9,
-          "cardCount": 10
-        },
-        {
-          "id": "de-a1-work-school",
-          "key": "work-school",
-          "title": "Kerja & sekolah",
-          "icon": "🏫",
+          "id": "de-a1-health-psychology",
+          "key": "health-psychology",
+          "title": "Kesehatan & perawatan",
+          "icon": "🩺",
           "order": 10,
           "cardCount": 12
         },
         {
+          "id": "de-a1-directions-places",
+          "key": "directions-places",
+          "title": "Bangunan, kota & tempat umum",
+          "icon": "🏙️",
+          "order": 11,
+          "cardCount": 5
+        },
+        {
+          "id": "de-a1-places-geography",
+          "key": "places-geography",
+          "title": "Geografi, negara & bahasa",
+          "icon": "🌍",
+          "order": 12,
+          "cardCount": 3
+        },
+        {
+          "id": "de-a1-nature-animals",
+          "key": "nature-animals",
+          "title": "Alam, hewan & tumbuhan",
+          "icon": "🌿",
+          "order": 13,
+          "cardCount": 1
+        },
+        {
+          "id": "de-a1-environment-nature",
+          "key": "environment-nature",
+          "title": "Lingkungan, cuaca & geologi",
+          "icon": "🌦️",
+          "order": 14,
+          "cardCount": 3
+        },
+        {
+          "id": "de-a1-work-economy",
+          "key": "work-economy",
+          "title": "Pekerjaan, uang & ekonomi",
+          "icon": "💼",
+          "order": 15,
+          "cardCount": 11
+        },
+        {
+          "id": "de-a1-education-science",
+          "key": "education-science",
+          "title": "Pendidikan, sains & pengetahuan",
+          "icon": "🔬",
+          "order": 16,
+          "cardCount": 13
+        },
+        {
+          "id": "de-a1-culture-arts",
+          "key": "culture-arts",
+          "title": "Seni, hiburan & budaya",
+          "icon": "🎭",
+          "order": 17,
+          "cardCount": 5
+        },
+        {
+          "id": "de-a1-religion-mythology",
+          "key": "religion-mythology",
+          "title": "Agama, mitologi & kepercayaan",
+          "icon": "🕊️",
+          "order": 18,
+          "cardCount": 5
+        },
+        {
+          "id": "de-a1-law-crime",
+          "key": "law-crime",
+          "title": "Hukum, kejahatan & keselamatan",
+          "icon": "⚖️",
+          "order": 19,
+          "cardCount": 7
+        },
+        {
+          "id": "de-a1-conflict-military",
+          "key": "conflict-military",
+          "title": "Militer, perang & persenjataan",
+          "icon": "🛡️",
+          "order": 20,
+          "cardCount": 2
+        },
+        {
+          "id": "de-a1-society-politics",
+          "key": "society-politics",
+          "title": "Masyarakat, negara & politik",
+          "icon": "🏛️",
+          "order": 21,
+          "cardCount": 4
+        },
+        {
+          "id": "de-a1-media-tech",
+          "key": "media-tech",
+          "title": "Media, komunikasi digital & teknologi",
+          "icon": "💻",
+          "order": 22,
+          "cardCount": 4
+        },
+        {
+          "id": "de-a1-sports-hobby",
+          "key": "sports-hobby",
+          "title": "Olahraga, permainan & hobi",
+          "icon": "⚽",
+          "order": 23,
+          "cardCount": 3
+        },
+        {
+          "id": "de-a1-emotions-opinion",
+          "key": "emotions-opinion",
+          "title": "Perasaan, pikiran & sikap",
+          "icon": "💬",
+          "order": 24,
+          "cardCount": 21
+        },
+        {
+          "id": "de-a1-language-communication",
+          "key": "language-communication",
+          "title": "Bahasa, percakapan & tulisan",
+          "icon": "🗣️",
+          "order": 25,
+          "cardCount": 23
+        },
+        {
+          "id": "de-a1-objects-tech",
+          "key": "objects-tech",
+          "title": "Perkakas & benda sehari-hari",
+          "icon": "🧰",
+          "order": 26,
+          "cardCount": 4
+        },
+        {
+          "id": "de-a1-materials-measures",
+          "key": "materials-measures",
+          "title": "Bahan, zat & satuan ukur",
+          "icon": "⚗️",
+          "order": 27,
+          "cardCount": 4
+        },
+        {
+          "id": "de-a1-persons",
+          "key": "persons",
+          "title": "Orang, identitas & profesi",
+          "icon": "👥",
+          "order": 28,
+          "cardCount": 5
+        },
+        {
           "id": "de-a1-function-words-1",
           "key": "function-words-1",
-          "title": "Kata fungsi & penghubung (1/2)",
+          "title": "Kata fungsi, penghubung & keterangan (1/2)",
           "icon": "🔗",
-          "order": 11,
-          "cardCount": 70
+          "order": 29,
+          "cardCount": 80
         },
         {
           "id": "de-a1-function-words-2",
           "key": "function-words-2",
-          "title": "Kata fungsi & penghubung (2/2)",
+          "title": "Kata fungsi, penghubung & keterangan (2/2)",
           "icon": "🔗",
-          "order": 12,
-          "cardCount": 22
+          "order": 30,
+          "cardCount": 10
         },
         {
           "id": "de-a1-verbs-basic",
           "key": "verbs-basic",
-          "title": "Kata kerja dasar",
+          "title": "Tindakan & kata kerja umum",
           "icon": "🔁",
-          "order": 13,
-          "cardCount": 75
+          "order": 31,
+          "cardCount": 42
         },
         {
           "id": "de-a1-adjectives-basic",
           "key": "adjectives-basic",
-          "title": "Kata sifat dasar",
+          "title": "Sifat & keadaan umum",
           "icon": "✨",
-          "order": 14,
-          "cardCount": 62
+          "order": 32,
+          "cardCount": 51
         },
         {
-          "id": "de-a1-general-1",
-          "key": "general-1",
-          "title": "Kosakata umum (1/2)",
-          "icon": "📚",
-          "order": 15,
-          "cardCount": 62
-        },
-        {
-          "id": "de-a1-general-2",
-          "key": "general-2",
-          "title": "Kosakata umum (2/2)",
-          "icon": "📚",
-          "order": 16,
-          "cardCount": 34
+          "id": "de-a1-abstract-nouns",
+          "key": "abstract-nouns",
+          "title": "Konsep, proses & hubungan abstrak",
+          "icon": "💡",
+          "order": 33,
+          "cardCount": 12
         }
       ]
     },
@@ -143,220 +279,276 @@
       "file": "a2.json",
       "topics": [
         {
+          "id": "de-a2-greetings",
+          "key": "greetings",
+          "title": "Sapaan & kesantunan",
+          "icon": "👋",
+          "order": 1,
+          "cardCount": 4
+        },
+        {
           "id": "de-a2-numbers-time",
           "key": "numbers-time",
           "title": "Angka, tanggal & waktu",
           "icon": "🔢",
-          "order": 1,
-          "cardCount": 6
-        },
-        {
-          "id": "de-a2-function-words",
-          "key": "function-words",
-          "title": "Kata fungsi & penghubung",
-          "icon": "🔗",
           "order": 2,
-          "cardCount": 55
+          "cardCount": 29
         },
         {
-          "id": "de-a2-home-daily",
-          "key": "home-daily",
-          "title": "Rumah & benda sehari-hari",
-          "icon": "🏠",
+          "id": "de-a2-family-people",
+          "key": "family-people",
+          "title": "Keluarga & hubungan pribadi",
+          "icon": "👨‍👩‍👧",
           "order": 3,
-          "cardCount": 13
+          "cardCount": 27
+        },
+        {
+          "id": "de-a2-travel-transport",
+          "key": "travel-transport",
+          "title": "Perjalanan, transportasi & arah",
+          "icon": "🚆",
+          "order": 4,
+          "cardCount": 49
         },
         {
           "id": "de-a2-food-drink",
           "key": "food-drink",
           "title": "Makanan & minuman",
           "icon": "🍎",
-          "order": 4,
-          "cardCount": 8
-        },
-        {
-          "id": "de-a2-travel-transport",
-          "key": "travel-transport",
-          "title": "Perjalanan & transportasi",
-          "icon": "🚆",
           "order": 5,
-          "cardCount": 15
+          "cardCount": 21
         },
         {
-          "id": "de-a2-work-school",
-          "key": "work-school",
-          "title": "Kerja & sekolah",
-          "icon": "🏫",
+          "id": "de-a2-home-daily",
+          "key": "home-daily",
+          "title": "Rumah & kegiatan rumah tangga",
+          "icon": "🏠",
           "order": 6,
-          "cardCount": 9
+          "cardCount": 19
         },
         {
           "id": "de-a2-clothes-shopping",
           "key": "clothes-shopping",
-          "title": "Pakaian & belanja",
-          "icon": "🛍️",
+          "title": "Pakaian, penampilan & belanja",
+          "icon": "👕",
           "order": 7,
-          "cardCount": 14
-        },
-        {
-          "id": "de-a2-body-health",
-          "key": "body-health",
-          "title": "Tubuh & kesehatan",
-          "icon": "🩺",
-          "order": 8,
-          "cardCount": 15
-        },
-        {
-          "id": "de-a2-directions-places",
-          "key": "directions-places",
-          "title": "Arah & tempat",
-          "icon": "🧭",
-          "order": 9,
-          "cardCount": 11
+          "cardCount": 21
         },
         {
           "id": "de-a2-colors-shapes",
           "key": "colors-shapes",
-          "title": "Warna & bentuk",
+          "title": "Warna, bentuk & ukuran",
           "icon": "🎨",
+          "order": 8,
+          "cardCount": 30
+        },
+        {
+          "id": "de-a2-body-health",
+          "key": "body-health",
+          "title": "Tubuh & pancaindra",
+          "icon": "🧍",
+          "order": 9,
+          "cardCount": 36
+        },
+        {
+          "id": "de-a2-health-psychology",
+          "key": "health-psychology",
+          "title": "Kesehatan & perawatan",
+          "icon": "🩺",
           "order": 10,
-          "cardCount": 7
+          "cardCount": 38
         },
         {
-          "id": "de-a2-persons",
-          "key": "persons",
-          "title": "Orang & profesi",
-          "icon": "👤",
+          "id": "de-a2-directions-places",
+          "key": "directions-places",
+          "title": "Bangunan, kota & tempat umum",
+          "icon": "🏙️",
           "order": 11,
-          "cardCount": 42
-        },
-        {
-          "id": "de-a2-objects-tech",
-          "key": "objects-tech",
-          "title": "Benda & teknologi",
-          "icon": "🔧",
-          "order": 12,
-          "cardCount": 8
-        },
-        {
-          "id": "de-a2-nature-animals",
-          "key": "nature-animals",
-          "title": "Alam & hewan",
-          "icon": "🐾",
-          "order": 13,
-          "cardCount": 29
+          "cardCount": 15
         },
         {
           "id": "de-a2-places-geography",
           "key": "places-geography",
-          "title": "Tempat & geografi",
-          "icon": "🗺️",
-          "order": 14,
-          "cardCount": 10
+          "title": "Geografi, negara & bahasa",
+          "icon": "🌍",
+          "order": 12,
+          "cardCount": 21
         },
         {
-          "id": "de-a2-abstract-nouns",
-          "key": "abstract-nouns",
-          "title": "Nomina abstrak",
-          "icon": "🧠",
+          "id": "de-a2-nature-animals",
+          "key": "nature-animals",
+          "title": "Alam, hewan & tumbuhan",
+          "icon": "🌿",
+          "order": 13,
+          "cardCount": 28
+        },
+        {
+          "id": "de-a2-environment-nature",
+          "key": "environment-nature",
+          "title": "Lingkungan, cuaca & geologi",
+          "icon": "🌦️",
+          "order": 14,
+          "cardCount": 13
+        },
+        {
+          "id": "de-a2-work-economy",
+          "key": "work-economy",
+          "title": "Pekerjaan, uang & ekonomi",
+          "icon": "💼",
           "order": 15,
-          "cardCount": 75
+          "cardCount": 38
+        },
+        {
+          "id": "de-a2-education-science",
+          "key": "education-science",
+          "title": "Pendidikan, sains & pengetahuan",
+          "icon": "🔬",
+          "order": 16,
+          "cardCount": 35
+        },
+        {
+          "id": "de-a2-culture-arts",
+          "key": "culture-arts",
+          "title": "Seni, hiburan & budaya",
+          "icon": "🎭",
+          "order": 17,
+          "cardCount": 33
+        },
+        {
+          "id": "de-a2-religion-mythology",
+          "key": "religion-mythology",
+          "title": "Agama, mitologi & kepercayaan",
+          "icon": "🕊️",
+          "order": 18,
+          "cardCount": 22
+        },
+        {
+          "id": "de-a2-law-crime",
+          "key": "law-crime",
+          "title": "Hukum, kejahatan & keselamatan",
+          "icon": "⚖️",
+          "order": 19,
+          "cardCount": 46
+        },
+        {
+          "id": "de-a2-conflict-military",
+          "key": "conflict-military",
+          "title": "Militer, perang & persenjataan",
+          "icon": "🛡️",
+          "order": 20,
+          "cardCount": 47
+        },
+        {
+          "id": "de-a2-society-politics",
+          "key": "society-politics",
+          "title": "Masyarakat, negara & politik",
+          "icon": "🏛️",
+          "order": 21,
+          "cardCount": 26
+        },
+        {
+          "id": "de-a2-media-tech",
+          "key": "media-tech",
+          "title": "Media, komunikasi digital & teknologi",
+          "icon": "💻",
+          "order": 22,
+          "cardCount": 26
+        },
+        {
+          "id": "de-a2-sports-hobby",
+          "key": "sports-hobby",
+          "title": "Olahraga, permainan & hobi",
+          "icon": "⚽",
+          "order": 23,
+          "cardCount": 28
+        },
+        {
+          "id": "de-a2-emotions-opinion",
+          "key": "emotions-opinion",
+          "title": "Perasaan, pikiran & sikap",
+          "icon": "💬",
+          "order": 24,
+          "cardCount": 70
+        },
+        {
+          "id": "de-a2-language-communication",
+          "key": "language-communication",
+          "title": "Bahasa, percakapan & tulisan",
+          "icon": "🗣️",
+          "order": 25,
+          "cardCount": 66
+        },
+        {
+          "id": "de-a2-objects-tech",
+          "key": "objects-tech",
+          "title": "Perkakas & benda sehari-hari",
+          "icon": "🧰",
+          "order": 26,
+          "cardCount": 22
+        },
+        {
+          "id": "de-a2-materials-measures",
+          "key": "materials-measures",
+          "title": "Bahan, zat & satuan ukur",
+          "icon": "⚗️",
+          "order": 27,
+          "cardCount": 21
+        },
+        {
+          "id": "de-a2-persons",
+          "key": "persons",
+          "title": "Orang, identitas & profesi",
+          "icon": "👥",
+          "order": 28,
+          "cardCount": 16
+        },
+        {
+          "id": "de-a2-function-words",
+          "key": "function-words",
+          "title": "Kata fungsi, penghubung & keterangan",
+          "icon": "🔗",
+          "order": 29,
+          "cardCount": 45
         },
         {
           "id": "de-a2-verbs-basic-1",
           "key": "verbs-basic-1",
-          "title": "Kata kerja dasar (1/4)",
+          "title": "Tindakan & kata kerja umum (1/2)",
           "icon": "🔁",
-          "order": 16,
-          "cardCount": 79
+          "order": 30,
+          "cardCount": 80
         },
         {
           "id": "de-a2-verbs-basic-2",
           "key": "verbs-basic-2",
-          "title": "Kata kerja dasar (2/4)",
+          "title": "Tindakan & kata kerja umum (2/2)",
           "icon": "🔁",
-          "order": 17,
-          "cardCount": 79
-        },
-        {
-          "id": "de-a2-verbs-basic-3",
-          "key": "verbs-basic-3",
-          "title": "Kata kerja dasar (3/4)",
-          "icon": "🔁",
-          "order": 18,
-          "cardCount": 78
-        },
-        {
-          "id": "de-a2-verbs-basic-4",
-          "key": "verbs-basic-4",
-          "title": "Kata kerja dasar (4/4)",
-          "icon": "🔁",
-          "order": 19,
-          "cardCount": 32
+          "order": 31,
+          "cardCount": 38
         },
         {
           "id": "de-a2-adjectives-basic-1",
           "key": "adjectives-basic-1",
-          "title": "Kata sifat dasar (1/2)",
+          "title": "Sifat & keadaan umum (1/2)",
           "icon": "✨",
-          "order": 20,
-          "cardCount": 79
+          "order": 32,
+          "cardCount": 80
         },
         {
           "id": "de-a2-adjectives-basic-2",
           "key": "adjectives-basic-2",
-          "title": "Kata sifat dasar (2/2)",
+          "title": "Sifat & keadaan umum (2/2)",
           "icon": "✨",
-          "order": 21,
-          "cardCount": 65
+          "order": 33,
+          "cardCount": 14
         },
         {
-          "id": "de-a2-general-1",
-          "key": "general-1",
-          "title": "Kosakata umum (1/6)",
-          "icon": "📚",
-          "order": 22,
-          "cardCount": 71
-        },
-        {
-          "id": "de-a2-general-2",
-          "key": "general-2",
-          "title": "Kosakata umum (2/6)",
-          "icon": "📚",
-          "order": 23,
-          "cardCount": 72
-        },
-        {
-          "id": "de-a2-general-3",
-          "key": "general-3",
-          "title": "Kosakata umum (3/6)",
-          "icon": "📚",
-          "order": 24,
-          "cardCount": 72
-        },
-        {
-          "id": "de-a2-general-4",
-          "key": "general-4",
-          "title": "Kosakata umum (4/6)",
-          "icon": "📚",
-          "order": 25,
-          "cardCount": 78
-        },
-        {
-          "id": "de-a2-general-5",
-          "key": "general-5",
-          "title": "Kosakata umum (5/6)",
-          "icon": "📚",
-          "order": 26,
-          "cardCount": 76
-        },
-        {
-          "id": "de-a2-general-6",
-          "key": "general-6",
-          "title": "Kosakata umum (6/6)",
-          "icon": "📚",
-          "order": 27,
-          "cardCount": 48
+          "id": "de-a2-abstract-nouns",
+          "key": "abstract-nouns",
+          "title": "Konsep, proses & hubungan abstrak",
+          "icon": "💡",
+          "order": 34,
+          "cardCount": 42
         }
       ]
     },
@@ -366,260 +558,300 @@
       "file": "b1.json",
       "topics": [
         {
-          "id": "de-b1-work-economy",
-          "key": "work-economy",
-          "title": "Pekerjaan & ekonomi",
-          "icon": "💼",
+          "id": "de-b1-greetings",
+          "key": "greetings",
+          "title": "Sapaan & kesantunan",
+          "icon": "👋",
           "order": 1,
-          "cardCount": 14
+          "cardCount": 5
         },
         {
-          "id": "de-b1-media-tech",
-          "key": "media-tech",
-          "title": "Media & teknologi",
-          "icon": "💻",
+          "id": "de-b1-numbers-time",
+          "key": "numbers-time",
+          "title": "Angka, tanggal & waktu",
+          "icon": "🔢",
           "order": 2,
-          "cardCount": 9
+          "cardCount": 35
         },
         {
-          "id": "de-b1-education-science",
-          "key": "education-science",
-          "title": "Pendidikan & ilmu",
-          "icon": "🔬",
+          "id": "de-b1-family-people",
+          "key": "family-people",
+          "title": "Keluarga & hubungan pribadi",
+          "icon": "👨‍👩‍👧",
           "order": 3,
-          "cardCount": 12
+          "cardCount": 37
         },
         {
-          "id": "de-b1-culture-arts",
-          "key": "culture-arts",
-          "title": "Budaya & seni",
-          "icon": "🎭",
+          "id": "de-b1-travel-transport",
+          "key": "travel-transport",
+          "title": "Perjalanan, transportasi & arah",
+          "icon": "🚆",
           "order": 4,
-          "cardCount": 9
+          "cardCount": 63
         },
         {
-          "id": "de-b1-law-crime",
-          "key": "law-crime",
-          "title": "Hukum & kriminal",
-          "icon": "⚖️",
+          "id": "de-b1-food-drink",
+          "key": "food-drink",
+          "title": "Makanan & minuman",
+          "icon": "🍎",
           "order": 5,
-          "cardCount": 16
+          "cardCount": 55
         },
         {
-          "id": "de-b1-sports-hobby",
-          "key": "sports-hobby",
-          "title": "Olahraga & hobi",
-          "icon": "⚽",
+          "id": "de-b1-home-daily",
+          "key": "home-daily",
+          "title": "Rumah & kegiatan rumah tangga",
+          "icon": "🏠",
           "order": 6,
-          "cardCount": 13
+          "cardCount": 46
         },
         {
-          "id": "de-b1-persons",
-          "key": "persons",
-          "title": "Orang & profesi",
-          "icon": "👤",
+          "id": "de-b1-clothes-shopping",
+          "key": "clothes-shopping",
+          "title": "Pakaian, penampilan & belanja",
+          "icon": "👕",
           "order": 7,
-          "cardCount": 79
+          "cardCount": 30
+        },
+        {
+          "id": "de-b1-colors-shapes",
+          "key": "colors-shapes",
+          "title": "Warna, bentuk & ukuran",
+          "icon": "🎨",
+          "order": 8,
+          "cardCount": 36
+        },
+        {
+          "id": "de-b1-body-health",
+          "key": "body-health",
+          "title": "Tubuh & pancaindra",
+          "icon": "🧍",
+          "order": 9,
+          "cardCount": 42
+        },
+        {
+          "id": "de-b1-health-psychology",
+          "key": "health-psychology",
+          "title": "Kesehatan & perawatan",
+          "icon": "🩺",
+          "order": 10,
+          "cardCount": 56
+        },
+        {
+          "id": "de-b1-directions-places",
+          "key": "directions-places",
+          "title": "Bangunan, kota & tempat umum",
+          "icon": "🏙️",
+          "order": 11,
+          "cardCount": 23
         },
         {
           "id": "de-b1-places-geography",
           "key": "places-geography",
-          "title": "Tempat & geografi",
-          "icon": "🗺️",
-          "order": 8,
+          "title": "Geografi, negara & bahasa",
+          "icon": "🌍",
+          "order": 12,
+          "cardCount": 46
+        },
+        {
+          "id": "de-b1-nature-animals",
+          "key": "nature-animals",
+          "title": "Alam, hewan & tumbuhan",
+          "icon": "🌿",
+          "order": 13,
+          "cardCount": 60
+        },
+        {
+          "id": "de-b1-environment-nature",
+          "key": "environment-nature",
+          "title": "Lingkungan, cuaca & geologi",
+          "icon": "🌦️",
+          "order": 14,
+          "cardCount": 25
+        },
+        {
+          "id": "de-b1-work-economy",
+          "key": "work-economy",
+          "title": "Pekerjaan, uang & ekonomi",
+          "icon": "💼",
+          "order": 15,
+          "cardCount": 77
+        },
+        {
+          "id": "de-b1-education-science",
+          "key": "education-science",
+          "title": "Pendidikan, sains & pengetahuan",
+          "icon": "🔬",
+          "order": 16,
+          "cardCount": 58
+        },
+        {
+          "id": "de-b1-culture-arts",
+          "key": "culture-arts",
+          "title": "Seni, hiburan & budaya",
+          "icon": "🎭",
+          "order": 17,
+          "cardCount": 58
+        },
+        {
+          "id": "de-b1-religion-mythology",
+          "key": "religion-mythology",
+          "title": "Agama, mitologi & kepercayaan",
+          "icon": "🕊️",
+          "order": 18,
+          "cardCount": 39
+        },
+        {
+          "id": "de-b1-law-crime-1",
+          "key": "law-crime-1",
+          "title": "Hukum, kejahatan & keselamatan (1/2)",
+          "icon": "⚖️",
+          "order": 19,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-law-crime-2",
+          "key": "law-crime-2",
+          "title": "Hukum, kejahatan & keselamatan (2/2)",
+          "icon": "⚖️",
+          "order": 20,
+          "cardCount": 2
+        },
+        {
+          "id": "de-b1-conflict-military",
+          "key": "conflict-military",
+          "title": "Militer, perang & persenjataan",
+          "icon": "🛡️",
+          "order": 21,
+          "cardCount": 55
+        },
+        {
+          "id": "de-b1-society-politics",
+          "key": "society-politics",
+          "title": "Masyarakat, negara & politik",
+          "icon": "🏛️",
+          "order": 22,
+          "cardCount": 57
+        },
+        {
+          "id": "de-b1-media-tech",
+          "key": "media-tech",
+          "title": "Media, komunikasi digital & teknologi",
+          "icon": "💻",
+          "order": 23,
+          "cardCount": 48
+        },
+        {
+          "id": "de-b1-sports-hobby",
+          "key": "sports-hobby",
+          "title": "Olahraga, permainan & hobi",
+          "icon": "⚽",
+          "order": 24,
+          "cardCount": 44
+        },
+        {
+          "id": "de-b1-emotions-opinion-1",
+          "key": "emotions-opinion-1",
+          "title": "Perasaan, pikiran & sikap (1/2)",
+          "icon": "💬",
+          "order": 25,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-emotions-opinion-2",
+          "key": "emotions-opinion-2",
+          "title": "Perasaan, pikiran & sikap (2/2)",
+          "icon": "💬",
+          "order": 26,
+          "cardCount": 28
+        },
+        {
+          "id": "de-b1-language-communication-1",
+          "key": "language-communication-1",
+          "title": "Bahasa, percakapan & tulisan (1/2)",
+          "icon": "🗣️",
+          "order": 27,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-language-communication-2",
+          "key": "language-communication-2",
+          "title": "Bahasa, percakapan & tulisan (2/2)",
+          "icon": "🗣️",
+          "order": 28,
           "cardCount": 22
         },
         {
           "id": "de-b1-objects-tech",
           "key": "objects-tech",
-          "title": "Benda & teknologi",
-          "icon": "🔧",
-          "order": 9,
-          "cardCount": 17
+          "title": "Perkakas & benda sehari-hari",
+          "icon": "🧰",
+          "order": 29,
+          "cardCount": 55
         },
         {
-          "id": "de-b1-nature-animals",
-          "key": "nature-animals",
-          "title": "Alam & hewan",
-          "icon": "🐾",
-          "order": 10,
-          "cardCount": 33
+          "id": "de-b1-materials-measures",
+          "key": "materials-measures",
+          "title": "Bahan, zat & satuan ukur",
+          "icon": "⚗️",
+          "order": 30,
+          "cardCount": 52
         },
         {
-          "id": "de-b1-abstract-nouns-1",
-          "key": "abstract-nouns-1",
-          "title": "Nomina abstrak (1/2)",
-          "icon": "🧠",
-          "order": 11,
-          "cardCount": 80
+          "id": "de-b1-persons",
+          "key": "persons",
+          "title": "Orang, identitas & profesi",
+          "icon": "👥",
+          "order": 31,
+          "cardCount": 54
         },
         {
-          "id": "de-b1-abstract-nouns-2",
-          "key": "abstract-nouns-2",
-          "title": "Nomina abstrak (2/2)",
-          "icon": "🧠",
-          "order": 12,
-          "cardCount": 58
+          "id": "de-b1-function-words",
+          "key": "function-words",
+          "title": "Kata fungsi, penghubung & keterangan",
+          "icon": "🔗",
+          "order": 32,
+          "cardCount": 16
         },
         {
           "id": "de-b1-verbs-advanced-1",
           "key": "verbs-advanced-1",
-          "title": "Kata kerja lanjutan (1/5)",
+          "title": "Tindakan & kata kerja umum (1/3)",
           "icon": "🔁",
-          "order": 13,
-          "cardCount": 79
+          "order": 33,
+          "cardCount": 80
         },
         {
           "id": "de-b1-verbs-advanced-2",
           "key": "verbs-advanced-2",
-          "title": "Kata kerja lanjutan (2/5)",
+          "title": "Tindakan & kata kerja umum (2/3)",
           "icon": "🔁",
-          "order": 14,
+          "order": 34,
           "cardCount": 80
         },
         {
           "id": "de-b1-verbs-advanced-3",
           "key": "verbs-advanced-3",
-          "title": "Kata kerja lanjutan (3/5)",
+          "title": "Tindakan & kata kerja umum (3/3)",
           "icon": "🔁",
-          "order": 15,
-          "cardCount": 80
+          "order": 35,
+          "cardCount": 5
         },
         {
-          "id": "de-b1-verbs-advanced-4",
-          "key": "verbs-advanced-4",
-          "title": "Kata kerja lanjutan (4/5)",
-          "icon": "🔁",
-          "order": 16,
-          "cardCount": 80
-        },
-        {
-          "id": "de-b1-verbs-advanced-5",
-          "key": "verbs-advanced-5",
-          "title": "Kata kerja lanjutan (5/5)",
-          "icon": "🔁",
-          "order": 17,
-          "cardCount": 38
-        },
-        {
-          "id": "de-b1-adjectives-advanced-1",
-          "key": "adjectives-advanced-1",
-          "title": "Kata sifat lanjutan (1/3)",
+          "id": "de-b1-adjectives-advanced",
+          "key": "adjectives-advanced",
+          "title": "Sifat & keadaan umum",
           "icon": "✨",
-          "order": 18,
-          "cardCount": 80
+          "order": 36,
+          "cardCount": 69
         },
         {
-          "id": "de-b1-adjectives-advanced-2",
-          "key": "adjectives-advanced-2",
-          "title": "Kata sifat lanjutan (2/3)",
-          "icon": "✨",
-          "order": 19,
-          "cardCount": 79
-        },
-        {
-          "id": "de-b1-adjectives-advanced-3",
-          "key": "adjectives-advanced-3",
-          "title": "Kata sifat lanjutan (3/3)",
-          "icon": "✨",
-          "order": 20,
-          "cardCount": 12
-        },
-        {
-          "id": "de-b1-general-1",
-          "key": "general-1",
-          "title": "Kosakata umum (1/12)",
-          "icon": "📚",
-          "order": 21,
-          "cardCount": 77
-        },
-        {
-          "id": "de-b1-general-2",
-          "key": "general-2",
-          "title": "Kosakata umum (2/12)",
-          "icon": "📚",
-          "order": 22,
-          "cardCount": 77
-        },
-        {
-          "id": "de-b1-general-3",
-          "key": "general-3",
-          "title": "Kosakata umum (3/12)",
-          "icon": "📚",
-          "order": 23,
-          "cardCount": 79
-        },
-        {
-          "id": "de-b1-general-4",
-          "key": "general-4",
-          "title": "Kosakata umum (4/12)",
-          "icon": "📚",
-          "order": 24,
-          "cardCount": 78
-        },
-        {
-          "id": "de-b1-general-5",
-          "key": "general-5",
-          "title": "Kosakata umum (5/12)",
-          "icon": "📚",
-          "order": 25,
-          "cardCount": 76
-        },
-        {
-          "id": "de-b1-general-6",
-          "key": "general-6",
-          "title": "Kosakata umum (6/12)",
-          "icon": "📚",
-          "order": 26,
-          "cardCount": 74
-        },
-        {
-          "id": "de-b1-general-7",
-          "key": "general-7",
-          "title": "Kosakata umum (7/12)",
-          "icon": "📚",
-          "order": 27,
-          "cardCount": 76
-        },
-        {
-          "id": "de-b1-general-8",
-          "key": "general-8",
-          "title": "Kosakata umum (8/12)",
-          "icon": "📚",
-          "order": 28,
-          "cardCount": 74
-        },
-        {
-          "id": "de-b1-general-9",
-          "key": "general-9",
-          "title": "Kosakata umum (9/12)",
-          "icon": "📚",
-          "order": 29,
-          "cardCount": 79
-        },
-        {
-          "id": "de-b1-general-10",
-          "key": "general-10",
-          "title": "Kosakata umum (10/12)",
-          "icon": "📚",
-          "order": 30,
-          "cardCount": 77
-        },
-        {
-          "id": "de-b1-general-11",
-          "key": "general-11",
-          "title": "Kosakata umum (11/12)",
-          "icon": "📚",
-          "order": 31,
-          "cardCount": 78
-        },
-        {
-          "id": "de-b1-general-12",
-          "key": "general-12",
-          "title": "Kosakata umum (12/12)",
-          "icon": "📚",
-          "order": 32,
-          "cardCount": 23
+          "id": "de-b1-abstract-nouns",
+          "key": "abstract-nouns",
+          "title": "Konsep, proses & hubungan abstrak",
+          "icon": "💡",
+          "order": 37,
+          "cardCount": 60
         }
       ]
     },
@@ -629,268 +861,324 @@
       "file": "b2.json",
       "topics": [
         {
-          "id": "de-b2-work-economy",
-          "key": "work-economy",
-          "title": "Pekerjaan & ekonomi",
-          "icon": "💼",
+          "id": "de-b2-greetings",
+          "key": "greetings",
+          "title": "Sapaan & kesantunan",
+          "icon": "👋",
           "order": 1,
           "cardCount": 8
         },
         {
-          "id": "de-b2-law-crime",
-          "key": "law-crime",
-          "title": "Hukum & kriminal",
-          "icon": "⚖️",
+          "id": "de-b2-numbers-time",
+          "key": "numbers-time",
+          "title": "Angka, tanggal & waktu",
+          "icon": "🔢",
           "order": 2,
-          "cardCount": 22
+          "cardCount": 32
         },
         {
-          "id": "de-b2-media-tech",
-          "key": "media-tech",
-          "title": "Media & teknologi",
-          "icon": "💻",
+          "id": "de-b2-family-people",
+          "key": "family-people",
+          "title": "Keluarga & hubungan pribadi",
+          "icon": "👨‍👩‍👧",
           "order": 3,
-          "cardCount": 9
+          "cardCount": 30
         },
         {
-          "id": "de-b2-sports-hobby",
-          "key": "sports-hobby",
-          "title": "Olahraga & hobi",
-          "icon": "⚽",
+          "id": "de-b2-travel-transport",
+          "key": "travel-transport",
+          "title": "Perjalanan, transportasi & arah",
+          "icon": "🚆",
           "order": 4,
-          "cardCount": 9
+          "cardCount": 56
         },
         {
-          "id": "de-b2-persons",
-          "key": "persons",
-          "title": "Orang & profesi",
-          "icon": "👤",
+          "id": "de-b2-food-drink",
+          "key": "food-drink",
+          "title": "Makanan & minuman",
+          "icon": "🍎",
           "order": 5,
-          "cardCount": 80
+          "cardCount": 78
         },
         {
-          "id": "de-b2-abstract-nouns-1",
-          "key": "abstract-nouns-1",
-          "title": "Nomina abstrak (1/3)",
-          "icon": "🧠",
+          "id": "de-b2-home-daily",
+          "key": "home-daily",
+          "title": "Rumah & kegiatan rumah tangga",
+          "icon": "🏠",
           "order": 6,
-          "cardCount": 80
+          "cardCount": 41
         },
         {
-          "id": "de-b2-abstract-nouns-2",
-          "key": "abstract-nouns-2",
-          "title": "Nomina abstrak (2/3)",
-          "icon": "🧠",
+          "id": "de-b2-clothes-shopping",
+          "key": "clothes-shopping",
+          "title": "Pakaian, penampilan & belanja",
+          "icon": "👕",
           "order": 7,
+          "cardCount": 39
+        },
+        {
+          "id": "de-b2-colors-shapes",
+          "key": "colors-shapes",
+          "title": "Warna, bentuk & ukuran",
+          "icon": "🎨",
+          "order": 8,
+          "cardCount": 35
+        },
+        {
+          "id": "de-b2-body-health",
+          "key": "body-health",
+          "title": "Tubuh & pancaindra",
+          "icon": "🧍",
+          "order": 9,
+          "cardCount": 63
+        },
+        {
+          "id": "de-b2-health-psychology-1",
+          "key": "health-psychology-1",
+          "title": "Kesehatan & perawatan (1/2)",
+          "icon": "🩺",
+          "order": 10,
           "cardCount": 80
         },
         {
-          "id": "de-b2-abstract-nouns-3",
-          "key": "abstract-nouns-3",
-          "title": "Nomina abstrak (3/3)",
-          "icon": "🧠",
-          "order": 8,
-          "cardCount": 24
+          "id": "de-b2-health-psychology-2",
+          "key": "health-psychology-2",
+          "title": "Kesehatan & perawatan (2/2)",
+          "icon": "🩺",
+          "order": 11,
+          "cardCount": 5
+        },
+        {
+          "id": "de-b2-directions-places",
+          "key": "directions-places",
+          "title": "Bangunan, kota & tempat umum",
+          "icon": "🏙️",
+          "order": 12,
+          "cardCount": 23
         },
         {
           "id": "de-b2-places-geography",
           "key": "places-geography",
-          "title": "Tempat & geografi",
-          "icon": "🗺️",
-          "order": 9,
-          "cardCount": 22
+          "title": "Geografi, negara & bahasa",
+          "icon": "🌍",
+          "order": 13,
+          "cardCount": 53
+        },
+        {
+          "id": "de-b2-nature-animals-1",
+          "key": "nature-animals-1",
+          "title": "Alam, hewan & tumbuhan (1/2)",
+          "icon": "🌿",
+          "order": 14,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-nature-animals-2",
+          "key": "nature-animals-2",
+          "title": "Alam, hewan & tumbuhan (2/2)",
+          "icon": "🌿",
+          "order": 15,
+          "cardCount": 15
+        },
+        {
+          "id": "de-b2-environment-nature",
+          "key": "environment-nature",
+          "title": "Lingkungan, cuaca & geologi",
+          "icon": "🌦️",
+          "order": 16,
+          "cardCount": 20
+        },
+        {
+          "id": "de-b2-work-economy-1",
+          "key": "work-economy-1",
+          "title": "Pekerjaan, uang & ekonomi (1/2)",
+          "icon": "💼",
+          "order": 17,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-work-economy-2",
+          "key": "work-economy-2",
+          "title": "Pekerjaan, uang & ekonomi (2/2)",
+          "icon": "💼",
+          "order": 18,
+          "cardCount": 17
+        },
+        {
+          "id": "de-b2-education-science",
+          "key": "education-science",
+          "title": "Pendidikan, sains & pengetahuan",
+          "icon": "🔬",
+          "order": 19,
+          "cardCount": 56
+        },
+        {
+          "id": "de-b2-culture-arts",
+          "key": "culture-arts",
+          "title": "Seni, hiburan & budaya",
+          "icon": "🎭",
+          "order": 20,
+          "cardCount": 68
+        },
+        {
+          "id": "de-b2-religion-mythology",
+          "key": "religion-mythology",
+          "title": "Agama, mitologi & kepercayaan",
+          "icon": "🕊️",
+          "order": 21,
+          "cardCount": 59
+        },
+        {
+          "id": "de-b2-law-crime",
+          "key": "law-crime",
+          "title": "Hukum, kejahatan & keselamatan",
+          "icon": "⚖️",
+          "order": 22,
+          "cardCount": 76
+        },
+        {
+          "id": "de-b2-conflict-military",
+          "key": "conflict-military",
+          "title": "Militer, perang & persenjataan",
+          "icon": "🛡️",
+          "order": 23,
+          "cardCount": 74
+        },
+        {
+          "id": "de-b2-society-politics",
+          "key": "society-politics",
+          "title": "Masyarakat, negara & politik",
+          "icon": "🏛️",
+          "order": 24,
+          "cardCount": 59
+        },
+        {
+          "id": "de-b2-media-tech",
+          "key": "media-tech",
+          "title": "Media, komunikasi digital & teknologi",
+          "icon": "💻",
+          "order": 25,
+          "cardCount": 56
+        },
+        {
+          "id": "de-b2-sports-hobby",
+          "key": "sports-hobby",
+          "title": "Olahraga, permainan & hobi",
+          "icon": "⚽",
+          "order": 26,
+          "cardCount": 48
+        },
+        {
+          "id": "de-b2-emotions-opinion-1",
+          "key": "emotions-opinion-1",
+          "title": "Perasaan, pikiran & sikap (1/2)",
+          "icon": "💬",
+          "order": 27,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-emotions-opinion-2",
+          "key": "emotions-opinion-2",
+          "title": "Perasaan, pikiran & sikap (2/2)",
+          "icon": "💬",
+          "order": 28,
+          "cardCount": 20
+        },
+        {
+          "id": "de-b2-language-communication-1",
+          "key": "language-communication-1",
+          "title": "Bahasa, percakapan & tulisan (1/2)",
+          "icon": "🗣️",
+          "order": 29,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-language-communication-2",
+          "key": "language-communication-2",
+          "title": "Bahasa, percakapan & tulisan (2/2)",
+          "icon": "🗣️",
+          "order": 30,
+          "cardCount": 25
         },
         {
           "id": "de-b2-objects-tech",
           "key": "objects-tech",
-          "title": "Benda & teknologi",
-          "icon": "🔧",
-          "order": 10,
-          "cardCount": 11
+          "title": "Perkakas & benda sehari-hari",
+          "icon": "🧰",
+          "order": 31,
+          "cardCount": 72
         },
         {
-          "id": "de-b2-nature-animals",
-          "key": "nature-animals",
-          "title": "Alam & hewan",
-          "icon": "🐾",
-          "order": 11,
-          "cardCount": 40
+          "id": "de-b2-materials-measures",
+          "key": "materials-measures",
+          "title": "Bahan, zat & satuan ukur",
+          "icon": "⚗️",
+          "order": 32,
+          "cardCount": 63
+        },
+        {
+          "id": "de-b2-persons",
+          "key": "persons",
+          "title": "Orang, identitas & profesi",
+          "icon": "👥",
+          "order": 33,
+          "cardCount": 50
+        },
+        {
+          "id": "de-b2-function-words",
+          "key": "function-words",
+          "title": "Kata fungsi, penghubung & keterangan",
+          "icon": "🔗",
+          "order": 34,
+          "cardCount": 20
         },
         {
           "id": "de-b2-verbs-advanced-1",
           "key": "verbs-advanced-1",
-          "title": "Kata kerja lanjutan (1/5)",
+          "title": "Tindakan & kata kerja umum (1/3)",
           "icon": "🔁",
-          "order": 12,
+          "order": 35,
           "cardCount": 80
         },
         {
           "id": "de-b2-verbs-advanced-2",
           "key": "verbs-advanced-2",
-          "title": "Kata kerja lanjutan (2/5)",
+          "title": "Tindakan & kata kerja umum (2/3)",
           "icon": "🔁",
-          "order": 13,
+          "order": 36,
           "cardCount": 80
         },
         {
           "id": "de-b2-verbs-advanced-3",
           "key": "verbs-advanced-3",
-          "title": "Kata kerja lanjutan (3/5)",
+          "title": "Tindakan & kata kerja umum (3/3)",
           "icon": "🔁",
-          "order": 14,
-          "cardCount": 80
-        },
-        {
-          "id": "de-b2-verbs-advanced-4",
-          "key": "verbs-advanced-4",
-          "title": "Kata kerja lanjutan (4/5)",
-          "icon": "🔁",
-          "order": 15,
-          "cardCount": 80
-        },
-        {
-          "id": "de-b2-verbs-advanced-5",
-          "key": "verbs-advanced-5",
-          "title": "Kata kerja lanjutan (5/5)",
-          "icon": "🔁",
-          "order": 16,
-          "cardCount": 39
-        },
-        {
-          "id": "de-b2-adjectives-advanced-1",
-          "key": "adjectives-advanced-1",
-          "title": "Kata sifat lanjutan (1/3)",
-          "icon": "✨",
-          "order": 17,
-          "cardCount": 80
-        },
-        {
-          "id": "de-b2-adjectives-advanced-2",
-          "key": "adjectives-advanced-2",
-          "title": "Kata sifat lanjutan (2/3)",
-          "icon": "✨",
-          "order": 18,
-          "cardCount": 79
-        },
-        {
-          "id": "de-b2-adjectives-advanced-3",
-          "key": "adjectives-advanced-3",
-          "title": "Kata sifat lanjutan (3/3)",
-          "icon": "✨",
-          "order": 19,
+          "order": 37,
           "cardCount": 8
         },
         {
-          "id": "de-b2-general-1",
-          "key": "general-1",
-          "title": "Kosakata umum (1/14)",
-          "icon": "📚",
-          "order": 20,
+          "id": "de-b2-adjectives-advanced",
+          "key": "adjectives-advanced",
+          "title": "Sifat & keadaan umum",
+          "icon": "✨",
+          "order": 38,
+          "cardCount": 70
+        },
+        {
+          "id": "de-b2-abstract-nouns-1",
+          "key": "abstract-nouns-1",
+          "title": "Konsep, proses & hubungan abstrak (1/2)",
+          "icon": "💡",
+          "order": 39,
           "cardCount": 80
         },
         {
-          "id": "de-b2-general-2",
-          "key": "general-2",
-          "title": "Kosakata umum (2/14)",
-          "icon": "📚",
-          "order": 21,
-          "cardCount": 77
-        },
-        {
-          "id": "de-b2-general-3",
-          "key": "general-3",
-          "title": "Kosakata umum (3/14)",
-          "icon": "📚",
-          "order": 22,
-          "cardCount": 78
-        },
-        {
-          "id": "de-b2-general-4",
-          "key": "general-4",
-          "title": "Kosakata umum (4/14)",
-          "icon": "📚",
-          "order": 23,
-          "cardCount": 77
-        },
-        {
-          "id": "de-b2-general-5",
-          "key": "general-5",
-          "title": "Kosakata umum (5/14)",
-          "icon": "📚",
-          "order": 24,
-          "cardCount": 79
-        },
-        {
-          "id": "de-b2-general-6",
-          "key": "general-6",
-          "title": "Kosakata umum (6/14)",
-          "icon": "📚",
-          "order": 25,
-          "cardCount": 79
-        },
-        {
-          "id": "de-b2-general-7",
-          "key": "general-7",
-          "title": "Kosakata umum (7/14)",
-          "icon": "📚",
-          "order": 26,
-          "cardCount": 80
-        },
-        {
-          "id": "de-b2-general-8",
-          "key": "general-8",
-          "title": "Kosakata umum (8/14)",
-          "icon": "📚",
-          "order": 27,
-          "cardCount": 78
-        },
-        {
-          "id": "de-b2-general-9",
-          "key": "general-9",
-          "title": "Kosakata umum (9/14)",
-          "icon": "📚",
-          "order": 28,
-          "cardCount": 80
-        },
-        {
-          "id": "de-b2-general-10",
-          "key": "general-10",
-          "title": "Kosakata umum (10/14)",
-          "icon": "📚",
-          "order": 29,
-          "cardCount": 78
-        },
-        {
-          "id": "de-b2-general-11",
-          "key": "general-11",
-          "title": "Kosakata umum (11/14)",
-          "icon": "📚",
-          "order": 30,
-          "cardCount": 80
-        },
-        {
-          "id": "de-b2-general-12",
-          "key": "general-12",
-          "title": "Kosakata umum (12/14)",
-          "icon": "📚",
-          "order": 31,
-          "cardCount": 79
-        },
-        {
-          "id": "de-b2-general-13",
-          "key": "general-13",
-          "title": "Kosakata umum (13/14)",
-          "icon": "📚",
-          "order": 32,
-          "cardCount": 79
-        },
-        {
-          "id": "de-b2-general-14",
-          "key": "general-14",
-          "title": "Kosakata umum (14/14)",
-          "icon": "📚",
-          "order": 33,
-          "cardCount": 48
+          "id": "de-b2-abstract-nouns-2",
+          "key": "abstract-nouns-2",
+          "title": "Konsep, proses & hubungan abstrak (2/2)",
+          "icon": "💡",
+          "order": 40,
+          "cardCount": 4
         }
       ]
     },
@@ -900,324 +1188,380 @@
       "file": "c1.json",
       "topics": [
         {
-          "id": "de-c1-law-crime",
-          "key": "law-crime",
-          "title": "Hukum & kriminal",
-          "icon": "⚖️",
+          "id": "de-c1-greetings",
+          "key": "greetings",
+          "title": "Sapaan & kesantunan",
+          "icon": "👋",
           "order": 1,
-          "cardCount": 24
+          "cardCount": 1
         },
         {
-          "id": "de-c1-media-tech",
-          "key": "media-tech",
-          "title": "Media & teknologi",
-          "icon": "💻",
+          "id": "de-c1-numbers-time",
+          "key": "numbers-time",
+          "title": "Angka, tanggal & waktu",
+          "icon": "🔢",
           "order": 2,
-          "cardCount": 14
+          "cardCount": 38
         },
         {
-          "id": "de-c1-education-science",
-          "key": "education-science",
-          "title": "Pendidikan & ilmu",
-          "icon": "🔬",
+          "id": "de-c1-family-people",
+          "key": "family-people",
+          "title": "Keluarga & hubungan pribadi",
+          "icon": "👨‍👩‍👧",
           "order": 3,
-          "cardCount": 10
+          "cardCount": 30
+        },
+        {
+          "id": "de-c1-travel-transport-1",
+          "key": "travel-transport-1",
+          "title": "Perjalanan, transportasi & arah (1/2)",
+          "icon": "🚆",
+          "order": 4,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-travel-transport-2",
+          "key": "travel-transport-2",
+          "title": "Perjalanan, transportasi & arah (2/2)",
+          "icon": "🚆",
+          "order": 5,
+          "cardCount": 11
+        },
+        {
+          "id": "de-c1-food-drink-1",
+          "key": "food-drink-1",
+          "title": "Makanan & minuman (1/2)",
+          "icon": "🍎",
+          "order": 6,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-food-drink-2",
+          "key": "food-drink-2",
+          "title": "Makanan & minuman (2/2)",
+          "icon": "🍎",
+          "order": 7,
+          "cardCount": 31
+        },
+        {
+          "id": "de-c1-home-daily",
+          "key": "home-daily",
+          "title": "Rumah & kegiatan rumah tangga",
+          "icon": "🏠",
+          "order": 8,
+          "cardCount": 47
+        },
+        {
+          "id": "de-c1-clothes-shopping",
+          "key": "clothes-shopping",
+          "title": "Pakaian, penampilan & belanja",
+          "icon": "👕",
+          "order": 9,
+          "cardCount": 33
+        },
+        {
+          "id": "de-c1-colors-shapes",
+          "key": "colors-shapes",
+          "title": "Warna, bentuk & ukuran",
+          "icon": "🎨",
+          "order": 10,
+          "cardCount": 34
+        },
+        {
+          "id": "de-c1-body-health",
+          "key": "body-health",
+          "title": "Tubuh & pancaindra",
+          "icon": "🧍",
+          "order": 11,
+          "cardCount": 75
+        },
+        {
+          "id": "de-c1-health-psychology-1",
+          "key": "health-psychology-1",
+          "title": "Kesehatan & perawatan (1/2)",
+          "icon": "🩺",
+          "order": 12,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-health-psychology-2",
+          "key": "health-psychology-2",
+          "title": "Kesehatan & perawatan (2/2)",
+          "icon": "🩺",
+          "order": 13,
+          "cardCount": 66
+        },
+        {
+          "id": "de-c1-directions-places",
+          "key": "directions-places",
+          "title": "Bangunan, kota & tempat umum",
+          "icon": "🏙️",
+          "order": 14,
+          "cardCount": 33
+        },
+        {
+          "id": "de-c1-places-geography-1",
+          "key": "places-geography-1",
+          "title": "Geografi, negara & bahasa (1/2)",
+          "icon": "🌍",
+          "order": 15,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-places-geography-2",
+          "key": "places-geography-2",
+          "title": "Geografi, negara & bahasa (2/2)",
+          "icon": "🌍",
+          "order": 16,
+          "cardCount": 18
+        },
+        {
+          "id": "de-c1-nature-animals-1",
+          "key": "nature-animals-1",
+          "title": "Alam, hewan & tumbuhan (1/2)",
+          "icon": "🌿",
+          "order": 17,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-nature-animals-2",
+          "key": "nature-animals-2",
+          "title": "Alam, hewan & tumbuhan (2/2)",
+          "icon": "🌿",
+          "order": 18,
+          "cardCount": 48
         },
         {
           "id": "de-c1-environment-nature",
           "key": "environment-nature",
-          "title": "Lingkungan & alam",
-          "icon": "🌱",
-          "order": 4,
-          "cardCount": 8
+          "title": "Lingkungan, cuaca & geologi",
+          "icon": "🌦️",
+          "order": 19,
+          "cardCount": 31
         },
         {
-          "id": "de-c1-health-psychology",
-          "key": "health-psychology",
-          "title": "Kesehatan & psikologi",
-          "icon": "🧠",
-          "order": 5,
+          "id": "de-c1-work-economy-1",
+          "key": "work-economy-1",
+          "title": "Pekerjaan, uang & ekonomi (1/2)",
+          "icon": "💼",
+          "order": 20,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-work-economy-2",
+          "key": "work-economy-2",
+          "title": "Pekerjaan, uang & ekonomi (2/2)",
+          "icon": "💼",
+          "order": 21,
+          "cardCount": 3
+        },
+        {
+          "id": "de-c1-education-science-1",
+          "key": "education-science-1",
+          "title": "Pendidikan, sains & pengetahuan (1/2)",
+          "icon": "🔬",
+          "order": 22,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-education-science-2",
+          "key": "education-science-2",
+          "title": "Pendidikan, sains & pengetahuan (2/2)",
+          "icon": "🔬",
+          "order": 23,
           "cardCount": 9
         },
         {
-          "id": "de-c1-persons-1",
-          "key": "persons-1",
-          "title": "Orang & profesi (1/2)",
-          "icon": "👤",
-          "order": 6,
-          "cardCount": 79
-        },
-        {
-          "id": "de-c1-persons-2",
-          "key": "persons-2",
-          "title": "Orang & profesi (2/2)",
-          "icon": "👤",
-          "order": 7,
-          "cardCount": 39
-        },
-        {
-          "id": "de-c1-abstract-nouns-1",
-          "key": "abstract-nouns-1",
-          "title": "Nomina abstrak (1/4)",
-          "icon": "🧠",
-          "order": 8,
+          "id": "de-c1-culture-arts-1",
+          "key": "culture-arts-1",
+          "title": "Seni, hiburan & budaya (1/2)",
+          "icon": "🎭",
+          "order": 24,
           "cardCount": 80
         },
         {
-          "id": "de-c1-abstract-nouns-2",
-          "key": "abstract-nouns-2",
-          "title": "Nomina abstrak (2/4)",
-          "icon": "🧠",
-          "order": 9,
+          "id": "de-c1-culture-arts-2",
+          "key": "culture-arts-2",
+          "title": "Seni, hiburan & budaya (2/2)",
+          "icon": "🎭",
+          "order": 25,
+          "cardCount": 3
+        },
+        {
+          "id": "de-c1-religion-mythology",
+          "key": "religion-mythology",
+          "title": "Agama, mitologi & kepercayaan",
+          "icon": "🕊️",
+          "order": 26,
+          "cardCount": 63
+        },
+        {
+          "id": "de-c1-law-crime",
+          "key": "law-crime",
+          "title": "Hukum, kejahatan & keselamatan",
+          "icon": "⚖️",
+          "order": 27,
           "cardCount": 80
         },
         {
-          "id": "de-c1-abstract-nouns-3",
-          "key": "abstract-nouns-3",
-          "title": "Nomina abstrak (3/4)",
-          "icon": "🧠",
-          "order": 10,
+          "id": "de-c1-conflict-military",
+          "key": "conflict-military",
+          "title": "Militer, perang & persenjataan",
+          "icon": "🛡️",
+          "order": 28,
+          "cardCount": 69
+        },
+        {
+          "id": "de-c1-society-politics-1",
+          "key": "society-politics-1",
+          "title": "Masyarakat, negara & politik (1/2)",
+          "icon": "🏛️",
+          "order": 29,
           "cardCount": 80
         },
         {
-          "id": "de-c1-abstract-nouns-4",
-          "key": "abstract-nouns-4",
-          "title": "Nomina abstrak (4/4)",
-          "icon": "🧠",
-          "order": 11,
-          "cardCount": 18
+          "id": "de-c1-society-politics-2",
+          "key": "society-politics-2",
+          "title": "Masyarakat, negara & politik (2/2)",
+          "icon": "🏛️",
+          "order": 30,
+          "cardCount": 7
         },
         {
-          "id": "de-c1-places-geography",
-          "key": "places-geography",
-          "title": "Tempat & geografi",
-          "icon": "🗺️",
-          "order": 12,
-          "cardCount": 23
-        },
-        {
-          "id": "de-c1-objects-tech",
-          "key": "objects-tech",
-          "title": "Benda & teknologi",
-          "icon": "🔧",
-          "order": 13,
-          "cardCount": 12
-        },
-        {
-          "id": "de-c1-nature-animals",
-          "key": "nature-animals",
-          "title": "Alam & hewan",
-          "icon": "🐾",
-          "order": 14,
-          "cardCount": 49
+          "id": "de-c1-media-tech",
+          "key": "media-tech",
+          "title": "Media, komunikasi digital & teknologi",
+          "icon": "💻",
+          "order": 31,
+          "cardCount": 74
         },
         {
           "id": "de-c1-sports-hobby",
           "key": "sports-hobby",
-          "title": "Olahraga & hobi",
+          "title": "Olahraga, permainan & hobi",
           "icon": "⚽",
-          "order": 15,
-          "cardCount": 16
+          "order": 32,
+          "cardCount": 71
+        },
+        {
+          "id": "de-c1-emotions-opinion-1",
+          "key": "emotions-opinion-1",
+          "title": "Perasaan, pikiran & sikap (1/2)",
+          "icon": "💬",
+          "order": 33,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-emotions-opinion-2",
+          "key": "emotions-opinion-2",
+          "title": "Perasaan, pikiran & sikap (2/2)",
+          "icon": "💬",
+          "order": 34,
+          "cardCount": 27
+        },
+        {
+          "id": "de-c1-language-communication-1",
+          "key": "language-communication-1",
+          "title": "Bahasa, percakapan & tulisan (1/2)",
+          "icon": "🗣️",
+          "order": 35,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-language-communication-2",
+          "key": "language-communication-2",
+          "title": "Bahasa, percakapan & tulisan (2/2)",
+          "icon": "🗣️",
+          "order": 36,
+          "cardCount": 47
+        },
+        {
+          "id": "de-c1-objects-tech",
+          "key": "objects-tech",
+          "title": "Perkakas & benda sehari-hari",
+          "icon": "🧰",
+          "order": 37,
+          "cardCount": 79
+        },
+        {
+          "id": "de-c1-materials-measures-1",
+          "key": "materials-measures-1",
+          "title": "Bahan, zat & satuan ukur (1/2)",
+          "icon": "⚗️",
+          "order": 38,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-materials-measures-2",
+          "key": "materials-measures-2",
+          "title": "Bahan, zat & satuan ukur (2/2)",
+          "icon": "⚗️",
+          "order": 39,
+          "cardCount": 9
+        },
+        {
+          "id": "de-c1-persons",
+          "key": "persons",
+          "title": "Orang, identitas & profesi",
+          "icon": "👥",
+          "order": 40,
+          "cardCount": 45
+        },
+        {
+          "id": "de-c1-function-words",
+          "key": "function-words",
+          "title": "Kata fungsi, penghubung & keterangan",
+          "icon": "🔗",
+          "order": 41,
+          "cardCount": 8
         },
         {
           "id": "de-c1-verbs-advanced-1",
           "key": "verbs-advanced-1",
-          "title": "Kata kerja lanjutan (1/5)",
+          "title": "Tindakan & kata kerja umum (1/3)",
           "icon": "🔁",
-          "order": 16,
+          "order": 42,
           "cardCount": 80
         },
         {
           "id": "de-c1-verbs-advanced-2",
           "key": "verbs-advanced-2",
-          "title": "Kata kerja lanjutan (2/5)",
+          "title": "Tindakan & kata kerja umum (2/3)",
           "icon": "🔁",
-          "order": 17,
-          "cardCount": 79
+          "order": 43,
+          "cardCount": 80
         },
         {
           "id": "de-c1-verbs-advanced-3",
           "key": "verbs-advanced-3",
-          "title": "Kata kerja lanjutan (3/5)",
+          "title": "Tindakan & kata kerja umum (3/3)",
           "icon": "🔁",
-          "order": 18,
-          "cardCount": 80
+          "order": 44,
+          "cardCount": 3
         },
         {
-          "id": "de-c1-verbs-advanced-4",
-          "key": "verbs-advanced-4",
-          "title": "Kata kerja lanjutan (4/5)",
-          "icon": "🔁",
-          "order": 19,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c1-verbs-advanced-5",
-          "key": "verbs-advanced-5",
-          "title": "Kata kerja lanjutan (5/5)",
-          "icon": "🔁",
-          "order": 20,
-          "cardCount": 36
-        },
-        {
-          "id": "de-c1-adjectives-advanced-1",
-          "key": "adjectives-advanced-1",
-          "title": "Kata sifat lanjutan (1/3)",
+          "id": "de-c1-adjectives-advanced",
+          "key": "adjectives-advanced",
+          "title": "Sifat & keadaan umum",
           "icon": "✨",
-          "order": 21,
+          "order": 45,
           "cardCount": 80
         },
         {
-          "id": "de-c1-adjectives-advanced-2",
-          "key": "adjectives-advanced-2",
-          "title": "Kata sifat lanjutan (2/3)",
-          "icon": "✨",
-          "order": 22,
+          "id": "de-c1-abstract-nouns-1",
+          "key": "abstract-nouns-1",
+          "title": "Konsep, proses & hubungan abstrak (1/2)",
+          "icon": "💡",
+          "order": 46,
           "cardCount": 80
         },
         {
-          "id": "de-c1-adjectives-advanced-3",
-          "key": "adjectives-advanced-3",
-          "title": "Kata sifat lanjutan (3/3)",
-          "icon": "✨",
-          "order": 23,
-          "cardCount": 45
-        },
-        {
-          "id": "de-c1-general-1",
-          "key": "general-1",
-          "title": "Kosakata umum (1/17)",
-          "icon": "📚",
-          "order": 24,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c1-general-2",
-          "key": "general-2",
-          "title": "Kosakata umum (2/17)",
-          "icon": "📚",
-          "order": 25,
-          "cardCount": 76
-        },
-        {
-          "id": "de-c1-general-3",
-          "key": "general-3",
-          "title": "Kosakata umum (3/17)",
-          "icon": "📚",
-          "order": 26,
-          "cardCount": 77
-        },
-        {
-          "id": "de-c1-general-4",
-          "key": "general-4",
-          "title": "Kosakata umum (4/17)",
-          "icon": "📚",
-          "order": 27,
-          "cardCount": 78
-        },
-        {
-          "id": "de-c1-general-5",
-          "key": "general-5",
-          "title": "Kosakata umum (5/17)",
-          "icon": "📚",
-          "order": 28,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c1-general-6",
-          "key": "general-6",
-          "title": "Kosakata umum (6/17)",
-          "icon": "📚",
-          "order": 29,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c1-general-7",
-          "key": "general-7",
-          "title": "Kosakata umum (7/17)",
-          "icon": "📚",
-          "order": 30,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c1-general-8",
-          "key": "general-8",
-          "title": "Kosakata umum (8/17)",
-          "icon": "📚",
-          "order": 31,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c1-general-9",
-          "key": "general-9",
-          "title": "Kosakata umum (9/17)",
-          "icon": "📚",
-          "order": 32,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c1-general-10",
-          "key": "general-10",
-          "title": "Kosakata umum (10/17)",
-          "icon": "📚",
-          "order": 33,
-          "cardCount": 78
-        },
-        {
-          "id": "de-c1-general-11",
-          "key": "general-11",
-          "title": "Kosakata umum (11/17)",
-          "icon": "📚",
-          "order": 34,
-          "cardCount": 79
-        },
-        {
-          "id": "de-c1-general-12",
-          "key": "general-12",
-          "title": "Kosakata umum (12/17)",
-          "icon": "📚",
-          "order": 35,
-          "cardCount": 79
-        },
-        {
-          "id": "de-c1-general-13",
-          "key": "general-13",
-          "title": "Kosakata umum (13/17)",
-          "icon": "📚",
-          "order": 36,
-          "cardCount": 79
-        },
-        {
-          "id": "de-c1-general-14",
-          "key": "general-14",
-          "title": "Kosakata umum (14/17)",
-          "icon": "📚",
-          "order": 37,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c1-general-15",
-          "key": "general-15",
-          "title": "Kosakata umum (15/17)",
-          "icon": "📚",
-          "order": 38,
-          "cardCount": 79
-        },
-        {
-          "id": "de-c1-general-16",
-          "key": "general-16",
-          "title": "Kosakata umum (16/17)",
-          "icon": "📚",
-          "order": 39,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c1-general-17",
-          "key": "general-17",
-          "title": "Kosakata umum (17/17)",
-          "icon": "📚",
-          "order": 40,
-          "cardCount": 17
+          "id": "de-c1-abstract-nouns-2",
+          "key": "abstract-nouns-2",
+          "title": "Konsep, proses & hubungan abstrak (2/2)",
+          "icon": "💡",
+          "order": 47,
+          "cardCount": 10
         }
       ]
     },
@@ -1227,236 +1571,300 @@
       "file": "c2.json",
       "topics": [
         {
-          "id": "de-c2-education-science",
-          "key": "education-science",
-          "title": "Pendidikan & ilmu",
-          "icon": "🔬",
+          "id": "de-c2-numbers-time",
+          "key": "numbers-time",
+          "title": "Angka, tanggal & waktu",
+          "icon": "🔢",
           "order": 1,
-          "cardCount": 15
+          "cardCount": 31
         },
         {
-          "id": "de-c2-law-crime",
-          "key": "law-crime",
-          "title": "Hukum & kriminal",
-          "icon": "⚖️",
+          "id": "de-c2-family-people",
+          "key": "family-people",
+          "title": "Keluarga & hubungan pribadi",
+          "icon": "👨‍👩‍👧",
           "order": 2,
-          "cardCount": 14
+          "cardCount": 17
+        },
+        {
+          "id": "de-c2-travel-transport",
+          "key": "travel-transport",
+          "title": "Perjalanan, transportasi & arah",
+          "icon": "🚆",
+          "order": 3,
+          "cardCount": 61
+        },
+        {
+          "id": "de-c2-food-drink-1",
+          "key": "food-drink-1",
+          "title": "Makanan & minuman (1/2)",
+          "icon": "🍎",
+          "order": 4,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-food-drink-2",
+          "key": "food-drink-2",
+          "title": "Makanan & minuman (2/2)",
+          "icon": "🍎",
+          "order": 5,
+          "cardCount": 2
+        },
+        {
+          "id": "de-c2-home-daily",
+          "key": "home-daily",
+          "title": "Rumah & kegiatan rumah tangga",
+          "icon": "🏠",
+          "order": 6,
+          "cardCount": 29
+        },
+        {
+          "id": "de-c2-clothes-shopping",
+          "key": "clothes-shopping",
+          "title": "Pakaian, penampilan & belanja",
+          "icon": "👕",
+          "order": 7,
+          "cardCount": 29
+        },
+        {
+          "id": "de-c2-colors-shapes",
+          "key": "colors-shapes",
+          "title": "Warna, bentuk & ukuran",
+          "icon": "🎨",
+          "order": 8,
+          "cardCount": 29
+        },
+        {
+          "id": "de-c2-body-health",
+          "key": "body-health",
+          "title": "Tubuh & pancaindra",
+          "icon": "🧍",
+          "order": 9,
+          "cardCount": 48
+        },
+        {
+          "id": "de-c2-health-psychology-1",
+          "key": "health-psychology-1",
+          "title": "Kesehatan & perawatan (1/2)",
+          "icon": "🩺",
+          "order": 10,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-health-psychology-2",
+          "key": "health-psychology-2",
+          "title": "Kesehatan & perawatan (2/2)",
+          "icon": "🩺",
+          "order": 11,
+          "cardCount": 22
+        },
+        {
+          "id": "de-c2-directions-places",
+          "key": "directions-places",
+          "title": "Bangunan, kota & tempat umum",
+          "icon": "🏙️",
+          "order": 12,
+          "cardCount": 19
+        },
+        {
+          "id": "de-c2-places-geography-1",
+          "key": "places-geography-1",
+          "title": "Geografi, negara & bahasa (1/2)",
+          "icon": "🌍",
+          "order": 13,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-places-geography-2",
+          "key": "places-geography-2",
+          "title": "Geografi, negara & bahasa (2/2)",
+          "icon": "🌍",
+          "order": 14,
+          "cardCount": 5
+        },
+        {
+          "id": "de-c2-nature-animals-1",
+          "key": "nature-animals-1",
+          "title": "Alam, hewan & tumbuhan (1/2)",
+          "icon": "🌿",
+          "order": 15,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-nature-animals-2",
+          "key": "nature-animals-2",
+          "title": "Alam, hewan & tumbuhan (2/2)",
+          "icon": "🌿",
+          "order": 16,
+          "cardCount": 8
         },
         {
           "id": "de-c2-environment-nature",
           "key": "environment-nature",
-          "title": "Lingkungan & alam",
-          "icon": "🌱",
-          "order": 3,
-          "cardCount": 8
+          "title": "Lingkungan, cuaca & geologi",
+          "icon": "🌦️",
+          "order": 17,
+          "cardCount": 39
         },
         {
-          "id": "de-c2-persons-1",
-          "key": "persons-1",
-          "title": "Orang & profesi (1/2)",
-          "icon": "👤",
-          "order": 4,
-          "cardCount": 79
+          "id": "de-c2-work-economy",
+          "key": "work-economy",
+          "title": "Pekerjaan, uang & ekonomi",
+          "icon": "💼",
+          "order": 18,
+          "cardCount": 73
         },
         {
-          "id": "de-c2-persons-2",
-          "key": "persons-2",
-          "title": "Orang & profesi (2/2)",
-          "icon": "👤",
-          "order": 5,
-          "cardCount": 5
+          "id": "de-c2-education-science",
+          "key": "education-science",
+          "title": "Pendidikan, sains & pengetahuan",
+          "icon": "🔬",
+          "order": 19,
+          "cardCount": 62
         },
         {
-          "id": "de-c2-abstract-nouns-1",
-          "key": "abstract-nouns-1",
-          "title": "Nomina abstrak (1/3)",
-          "icon": "🧠",
-          "order": 6,
-          "cardCount": 80
+          "id": "de-c2-culture-arts",
+          "key": "culture-arts",
+          "title": "Seni, hiburan & budaya",
+          "icon": "🎭",
+          "order": 20,
+          "cardCount": 54
         },
         {
-          "id": "de-c2-abstract-nouns-2",
-          "key": "abstract-nouns-2",
-          "title": "Nomina abstrak (2/3)",
-          "icon": "🧠",
-          "order": 7,
-          "cardCount": 80
+          "id": "de-c2-religion-mythology",
+          "key": "religion-mythology",
+          "title": "Agama, mitologi & kepercayaan",
+          "icon": "🕊️",
+          "order": 21,
+          "cardCount": 63
         },
         {
-          "id": "de-c2-abstract-nouns-3",
-          "key": "abstract-nouns-3",
-          "title": "Nomina abstrak (3/3)",
-          "icon": "🧠",
-          "order": 8,
-          "cardCount": 13
+          "id": "de-c2-law-crime",
+          "key": "law-crime",
+          "title": "Hukum, kejahatan & keselamatan",
+          "icon": "⚖️",
+          "order": 22,
+          "cardCount": 44
         },
         {
-          "id": "de-c2-places-geography",
-          "key": "places-geography",
-          "title": "Tempat & geografi",
-          "icon": "🗺️",
-          "order": 9,
-          "cardCount": 13
+          "id": "de-c2-conflict-military",
+          "key": "conflict-military",
+          "title": "Militer, perang & persenjataan",
+          "icon": "🛡️",
+          "order": 23,
+          "cardCount": 43
         },
         {
-          "id": "de-c2-objects-tech",
-          "key": "objects-tech",
-          "title": "Benda & teknologi",
-          "icon": "🔧",
-          "order": 10,
-          "cardCount": 20
+          "id": "de-c2-society-politics",
+          "key": "society-politics",
+          "title": "Masyarakat, negara & politik",
+          "icon": "🏛️",
+          "order": 24,
+          "cardCount": 69
         },
         {
-          "id": "de-c2-nature-animals",
-          "key": "nature-animals",
-          "title": "Alam & hewan",
-          "icon": "🐾",
-          "order": 11,
-          "cardCount": 47
+          "id": "de-c2-media-tech",
+          "key": "media-tech",
+          "title": "Media, komunikasi digital & teknologi",
+          "icon": "💻",
+          "order": 25,
+          "cardCount": 57
         },
         {
           "id": "de-c2-sports-hobby",
           "key": "sports-hobby",
-          "title": "Olahraga & hobi",
+          "title": "Olahraga, permainan & hobi",
           "icon": "⚽",
-          "order": 12,
-          "cardCount": 10
+          "order": 26,
+          "cardCount": 38
+        },
+        {
+          "id": "de-c2-emotions-opinion",
+          "key": "emotions-opinion",
+          "title": "Perasaan, pikiran & sikap",
+          "icon": "💬",
+          "order": 27,
+          "cardCount": 66
+        },
+        {
+          "id": "de-c2-language-communication-1",
+          "key": "language-communication-1",
+          "title": "Bahasa, percakapan & tulisan (1/2)",
+          "icon": "🗣️",
+          "order": 28,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-language-communication-2",
+          "key": "language-communication-2",
+          "title": "Bahasa, percakapan & tulisan (2/2)",
+          "icon": "🗣️",
+          "order": 29,
+          "cardCount": 3
+        },
+        {
+          "id": "de-c2-objects-tech",
+          "key": "objects-tech",
+          "title": "Perkakas & benda sehari-hari",
+          "icon": "🧰",
+          "order": 30,
+          "cardCount": 50
+        },
+        {
+          "id": "de-c2-materials-measures",
+          "key": "materials-measures",
+          "title": "Bahan, zat & satuan ukur",
+          "icon": "⚗️",
+          "order": 31,
+          "cardCount": 71
+        },
+        {
+          "id": "de-c2-persons",
+          "key": "persons",
+          "title": "Orang, identitas & profesi",
+          "icon": "👥",
+          "order": 32,
+          "cardCount": 33
+        },
+        {
+          "id": "de-c2-function-words",
+          "key": "function-words",
+          "title": "Kata fungsi, penghubung & keterangan",
+          "icon": "🔗",
+          "order": 33,
+          "cardCount": 8
         },
         {
           "id": "de-c2-verbs-advanced-1",
           "key": "verbs-advanced-1",
-          "title": "Kata kerja lanjutan (1/3)",
+          "title": "Tindakan & kata kerja umum (1/2)",
           "icon": "🔁",
-          "order": 13,
+          "order": 34,
           "cardCount": 80
         },
         {
           "id": "de-c2-verbs-advanced-2",
           "key": "verbs-advanced-2",
-          "title": "Kata kerja lanjutan (2/3)",
+          "title": "Tindakan & kata kerja umum (2/2)",
           "icon": "🔁",
-          "order": 14,
-          "cardCount": 80
+          "order": 35,
+          "cardCount": 14
         },
         {
-          "id": "de-c2-verbs-advanced-3",
-          "key": "verbs-advanced-3",
-          "title": "Kata kerja lanjutan (3/3)",
-          "icon": "🔁",
-          "order": 15,
-          "cardCount": 54
-        },
-        {
-          "id": "de-c2-adjectives-advanced-1",
-          "key": "adjectives-advanced-1",
-          "title": "Kata sifat lanjutan (1/2)",
+          "id": "de-c2-adjectives-advanced",
+          "key": "adjectives-advanced",
+          "title": "Sifat & keadaan umum",
           "icon": "✨",
-          "order": 16,
-          "cardCount": 80
+          "order": 36,
+          "cardCount": 64
         },
         {
-          "id": "de-c2-adjectives-advanced-2",
-          "key": "adjectives-advanced-2",
-          "title": "Kata sifat lanjutan (2/2)",
-          "icon": "✨",
-          "order": 17,
-          "cardCount": 77
-        },
-        {
-          "id": "de-c2-general-1",
-          "key": "general-1",
-          "title": "Kosakata umum (1/12)",
-          "icon": "📚",
-          "order": 18,
-          "cardCount": 79
-        },
-        {
-          "id": "de-c2-general-2",
-          "key": "general-2",
-          "title": "Kosakata umum (2/12)",
-          "icon": "📚",
-          "order": 19,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c2-general-3",
-          "key": "general-3",
-          "title": "Kosakata umum (3/12)",
-          "icon": "📚",
-          "order": 20,
-          "cardCount": 78
-        },
-        {
-          "id": "de-c2-general-4",
-          "key": "general-4",
-          "title": "Kosakata umum (4/12)",
-          "icon": "📚",
-          "order": 21,
-          "cardCount": 79
-        },
-        {
-          "id": "de-c2-general-5",
-          "key": "general-5",
-          "title": "Kosakata umum (5/12)",
-          "icon": "📚",
-          "order": 22,
-          "cardCount": 79
-        },
-        {
-          "id": "de-c2-general-6",
-          "key": "general-6",
-          "title": "Kosakata umum (6/12)",
-          "icon": "📚",
-          "order": 23,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c2-general-7",
-          "key": "general-7",
-          "title": "Kosakata umum (7/12)",
-          "icon": "📚",
-          "order": 24,
-          "cardCount": 79
-        },
-        {
-          "id": "de-c2-general-8",
-          "key": "general-8",
-          "title": "Kosakata umum (8/12)",
-          "icon": "📚",
-          "order": 25,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c2-general-9",
-          "key": "general-9",
-          "title": "Kosakata umum (9/12)",
-          "icon": "📚",
-          "order": 26,
-          "cardCount": 80
-        },
-        {
-          "id": "de-c2-general-10",
-          "key": "general-10",
-          "title": "Kosakata umum (10/12)",
-          "icon": "📚",
-          "order": 27,
-          "cardCount": 79
-        },
-        {
-          "id": "de-c2-general-11",
-          "key": "general-11",
-          "title": "Kosakata umum (11/12)",
-          "icon": "📚",
-          "order": 28,
-          "cardCount": 79
-        },
-        {
-          "id": "de-c2-general-12",
-          "key": "general-12",
-          "title": "Kosakata umum (12/12)",
-          "icon": "📚",
-          "order": 29,
-          "cardCount": 52
+          "id": "de-c2-abstract-nouns",
+          "key": "abstract-nouns",
+          "title": "Konsep, proses & hubungan abstrak",
+          "icon": "💡",
+          "order": 37,
+          "cardCount": 48
         }
       ]
     }

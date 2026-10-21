@@ -105,7 +105,7 @@ Legenda: ✅ rilis & terverifikasi di produksi · 🟡 ada tapi terbatas · ⛔ 
 | F-12 | ~~Generate kartu dengan AI~~ | ❌ | Dibatalkan: akun hanya untuk menyimpan progres; tidak ada dependensi API/LLM |
 | F-13 | Ekspor JSON (backup) | ✅ | `/settings` |
 | F-14 | Migrasi otomatis data lama | ✅ | FSRS→siklus (`engineV2`), per-level→per-topik (`topicsV3`, `topicsV4`) |
-| F-15 | Validator konten + unit test | ✅ | `npm run seed:validate`, 53 test Vitest |
+| F-15 | Validator konten + unit test | ✅ | `npm run seed:validate`, 68 test Vitest |
 | F-16 | Offline/PWA | ⛔ | Firestore punya cache persisten; tamu tetap jalan tanpa jaringan setelah load |
 | F-17 | Bahasa target kedua | ⛔ | Registry & `courseId` siap, konten belum |
 | F-18 | Materi video + tracking tontonan | 🟡 | `/videos/[section]`, playlist YouTube A1 (66 pelajaran) diputar lewat IFrame API; progres per akun di `videoPlaylists`. Band lain belum punya playlist |
@@ -175,13 +175,13 @@ PILIH BAND ──▶ PILIH TOPIK ──▶ SESI (kartu 1..N)
 
 | Band | Topik | Kartu | Catatan |
 | --- | --- | --- | --- |
-| A1 | 16 | 534 | berasal dari 200 kartu kurasi, lalu penggabungan kata berulang |
-| A2 | 27 | 1.146 | |
-| B1 | 32 | 1.758 | |
-| B2 | 33 | 1.983 | |
-| C1 | 40 | 2.383 | |
-| C2 | 29 | 1.679 | kandidat habis setelah filter nama diri (target awal 2.200) |
-| **Total** | **177** | **9.483** | |
+| A1 | 33 | 534 | berasal dari 200 kartu kurasi, lalu penggabungan kata berulang |
+| A2 | 34 | 1.146 | |
+| B1 | 37 | 1.758 | |
+| B2 | 40 | 1.983 | |
+| C1 | 47 | 2.383 | |
+| C2 | 37 | 1.679 | kandidat habis setelah filter nama diri (target awal 2.200) |
+| **Total** | **228** | **9.483** | |
 
 ### 8.2 Pipeline
 
@@ -193,14 +193,12 @@ Wikdict de-en.sqlite3 ─────┘        ├─ manifest.json (v2: level 
                                     └─ topic-map.json     (id topik v3 → id topik v4)
 ```
 
-Aturan klasifikasi (`scripts/content/topics.json`):
-1. kata kunci pada lemma Jerman → 2. kata kunci pada arti Indonesia (`idKeywords` regex) →
-3. aturan sufiks (`-ung`, `-heit`, `-keit`, `-schaft`, `-tion`, `-platz`, `-zeug`, `-krankheit`, …) →
-4. `fallbackWordTypes` per topik → 5. topik `general` ("Kosakata umum").
-
-Batasan teknis: `MIN_SCORE = 0.5`, `MAX_RANK = 50_000`, `MAX_TOPIC_SIZE = 80`,
-`MIN_TOPIC_SIZE = 8`, dedupe akhir lintas band memakai lemma tanpa membedakan jenis kata;
-variasi ejaan digabung dan makna yang berbeda diberi konteks dalam kartu di band terendah, ukuran target per band `LEVEL_SIZES = 600/1200/1800/2000/2400/2200`.
+Kategori akhir mengikuti inventaris hasil tinjauan `de-topic-assignments.json` dan
+katalog `de-topic-catalog.json` melalui `reclassify_decks.py`. Setiap lemma tepat
+satu kategori pada level semula; ID kartu tetap sama saat berpindah topik. Topik
+dibagi maksimal 80 kartu. Kata baru tanpa kategori eksplisit ditolak. Aturan
+keyword/sufiks generator lama hanya dipakai pada tahap kandidat sementara.
+Lihat [laporan topik](GERMAN-TOPICS-REVIEW.md) untuk migrasi `topicsV6`.
 
 **Filter nama diri** (`scripts/content/proper-names.json` + aturan "arti == lemma"):
 negara, benua, kota besar, dan nama orang umum dibuang. Nama bahasa/demonim
@@ -210,8 +208,7 @@ Kata kasar/makian **tidak** difilter — tetap kosakata yang sah untuk dipelajar
 ### 8.3 Kualitas yang masih kurang
 
 - Gender/artikel kata benda dan contoh kalimat baru ada di 200 kartu A1 kurasi.
-- Tumpukan "Kosakata umum" masih besar di B1–C2 (903 / 1.088 / 1.297 / 932 kartu) — prioritas
-  perbaikan klasifikasi berikutnya, dengan menambah kata kunci/sufiks di `topics.json`.
+- Kategori per lemma sudah ditinjau; kata baru tetap memerlukan penetapan kategori manual.
 - `proper-names.json` masih punya duplikat (`kroatien`, `havanna`, `herodеs`) dan satu entri
   dengan huruf Cyrillic; perlu dibersihkan saat rebuild berikutnya.
 
@@ -265,7 +262,7 @@ Index komposit: `cards(deckId, createdAt)`, `progress(deckId)`, `reviews(deckId,
 
 `{contentVersion, profile, progress, cycles, dailyStats, reviews, videos?}` — struktur sama dengan cloud.
 `videos` bersifat opsional agar snapshot lama tetap valid.
-`contentVersion = 5`; saat dibuka, id topik lama di-remap lewat `topic-map.json` lalu
+`contentVersion = 6`; saat dibuka, id topik lama di-remap lewat `topic-map.json` lalu
 `migration-map.json`, dan siklus dibangun ulang dari `progress`.
 
 Keputusan penting: **kartu tidak disalin per akun** (kecuali deck kustom). Menambah band/topik
@@ -351,7 +348,7 @@ tidak menambah biaya tulis per pengguna.
 - [x] `npm run seed:validate` lolos: jumlah kartu per topik = manifest, ID topik unik, urutan unik,
       tidak ada duplikat `wordType:lemma` lintas band.
 - [x] Tidak ada nama negara/kota/nama orang pada kartu kosakata.
-- [x] 9.483 kartu dalam 177 topik; setiap topik ≤ 80 kartu.
+- [x] 9.483 kartu dalam 228 topik; setiap topik ≤ 80 kartu.
 
 **Akun**
 - [x] Login Google/email berfungsi di domain produksi (authorized domain terdaftar).

@@ -486,10 +486,14 @@ def main() -> int:
             encoding="utf-8",
         )
 
-    (ROOT / "src" / "content" / "topic-map.json").write_text(
-        json.dumps(topic_remap, ensure_ascii=False, indent=0, sort_keys=True) + "\n",
-        encoding="utf-8",
-    )
+    # Historical v3→v4 mappings remain necessary for dormant accounts. The
+    # semantic v6 layout has its own migration snapshot and keeps card ids.
+    topic_map_path = ROOT / "src" / "content" / "topic-map.json"
+    if not topic_map_path.exists():
+        topic_map_path.write_text(
+            json.dumps(topic_remap, ensure_ascii=False, indent=0, sort_keys=True) + "\n",
+            encoding="utf-8",
+        )
 
     for stale in CONTENT.glob("*-core.json"):
         stale.unlink()
@@ -497,6 +501,8 @@ def main() -> int:
     print(f"total {total_cards} kartu di {len(manifest_levels)} band")
     print(f"migration map: {len(migration)} id lama dipetakan")
     review_decks()
+    from reclassify_decks import reclassify_decks
+    reclassify_decks()
     return 0
 
 

@@ -77,7 +77,15 @@ export function consolidateReviewedProgress(
     return { progress: result, cycles: reviewedCycles };
 }
 
-export async function loadReviewedGermanCards() {
+export async function loadReviewedGermanCards(layout: "current" | "v5" = "current") {
     const { contentTopics, loadContentCards } = await import("@/lib/content/registry");
-    return (await Promise.all(contentTopics.map((topic) => loadContentCards(topic.id)))).flat();
+    const cards = (await Promise.all(contentTopics.map((topic) => loadContentCards(topic.id)))).flat();
+    if (layout === "current") return cards;
+    // The vocabulary migration must finish against its original deck layout
+    // before the semantic-topic migration runs, including for older accounts.
+    const snapshot = (await import("@/content/topic-map-v6.json")).default;
+    const oldDeckById = new Map<string, string>(Object.entries(snapshot.fromDecks).flatMap(
+        ([deckId, suffixes]) => suffixes.map((suffix) => [`${deckId}-${String(suffix).padStart(4, "0")}`, deckId] as const),
+    ));
+    return cards.map((card) => ({ ...card, deckId: oldDeckById.get(card.id) ?? card.deckId }));
 }

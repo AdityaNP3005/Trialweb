@@ -9,7 +9,7 @@ import { consolidateReviewedProgress, loadReviewedGermanCards } from "@/lib/cont
 export async function migrateReviewedVocab(uid: string, profile: Profile | null): Promise<boolean> {
     if (!profile?.topicsV4 || profile.vocabV5) return false;
     const [snapshot, cycles, cards, aliases] = await Promise.all([
-        getDocs(progressColRef(uid)), fetchAllCycles(uid), loadReviewedGermanCards(),
+        getDocs(progressColRef(uid)), fetchAllCycles(uid), loadReviewedGermanCards("v5"),
         import("@/content/de/review-aliases.json").then((module) => module.default),
     ]);
     const original = snapshot.docs.map((doc) => ({ ...doc.data(), cardId: doc.id }) as CardProgress);

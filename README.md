@@ -1,7 +1,7 @@
 # GoAbroad
 
 Flashcard web app untuk belajar bahasa asing — **Bahasa Jerman A1–C2** (9.483 kartu dalam
-**177 topik**) dan **Mandarin tradisional** dari buku *當代中文課程* (2.891 kartu dalam
+**228 topik**) dan **Mandarin tradisional** dari buku *當代中文課程* (2.891 kartu dalam
 **54 bab**, Buku 1–4). Engine-nya sama: pilih **band/buku**, lalu pilih **topik/bab**.
 Satu sesi menyelesaikan satu unit penuh, kartu dijawab **Ulangi** atau **Sudah paham**, dan
 unit direset otomatis setelah semua kartunya ditampilkan.
@@ -150,12 +150,12 @@ Deck dibundel dari data terbuka (lihat [`NOTICE.md`](./NOTICE.md)) dan dipecah m
 
 | Band | Topik | Kartu | Topik pertama |
 | --- | --- | --- | --- |
-| A1 | 16 | 534 | Sapaan & perkenalan, Angka & waktu |
-| A2 | 27 | 1.146 | Angka & waktu, Kata fungsi & penghubung |
-| B1 | 32 | 1.758 | Pekerjaan & ekonomi, Media & teknologi |
-| B2 | 33 | 1.983 | Pekerjaan & ekonomi, Hukum & kriminal |
-| C1 | 40 | 2.383 | Hukum & kriminal, Media & teknologi |
-| C2 | 29 | 1.679 | Pendidikan & ilmu, Masyarakat & politik |
+| A1 | 33 | 534 | Sapaan & perkenalan, Angka & waktu |
+| A2 | 34 | 1.146 | Angka & waktu, Kata fungsi & penghubung |
+| B1 | 37 | 1.758 | Pekerjaan & ekonomi, Media & teknologi |
+| B2 | 40 | 1.983 | Pekerjaan & ekonomi, Hukum & kriminal |
+| C1 | 47 | 2.383 | Hukum & kriminal, Media & teknologi |
+| C2 | 37 | 1.679 | Pendidikan & ilmu, Masyarakat & politik |
 
 Topik tambahan di luar tema lama: **Kata fungsi & penghubung**, **Orang & profesi**,
 **Nomina abstrak**, **Alam & hewan**, **Tempat & geografi**, **Benda & teknologi**,
@@ -327,3 +327,5 @@ dimuat, halaman menampilkan tautan ke YouTube sebagai gantinya. Status `SELESAI`
 tercatat setelah pemutar benar-benar diputar.
 
 Audit kosakata Jerman: [hasil dan cara verifikasi](docs/GERMAN-VOCAB-REVIEW.md).
+
+Penataan kategori Deutsch: [laporan dan migrasi topik](docs/GERMAN-TOPICS-REVIEW.md).

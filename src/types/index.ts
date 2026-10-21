@@ -127,6 +127,10 @@ export type CardProgress = {
  * cycle, plus cards that still need another pass ("repeat" without "next").
  */
 export type DeckCycle = {
+    /** Stable card histories have been regrouped into semantic topics. */
+    topicsV6?: boolean;
+    /** Original v5 cursor, retained until all semantic-topic batches finish. */
+    previousTopicCursor?: number;
     /** Positional cursor already adjusted for the German vocabulary cleanup. */
     vocabV5?: boolean;
     deckId: string;
@@ -227,6 +231,8 @@ export type Profile = {
     topicsV4?: boolean;
     /** Duplicate vocabulary histories consolidated, with stable surviving ids. */
     vocabV5?: boolean;
+    /** Stable card histories regrouped into semantic topics. */
+    topicsV6?: boolean;
     /** Set once guest video progress has been merged into the account. */
     videosV1?: boolean;
     /** Legacy per-band settings, kept so old documents still load. */

@@ -108,14 +108,15 @@ describe("German vocabulary progress consolidation", () => {
         } });
         await new GuestStore("id").getProfile();
         const saved = JSON.parse(data.get(GUEST_STORAGE_KEY)!);
-        expect(saved.contentVersion).toBe(5);
+        expect(saved.contentVersion).toBe(6);
         expect(saved.progress[removed]).toBeUndefined();
         expect(saved.progress[target].cardId).toBe(target);
         expect(saved.progress[custom.cardId]).toEqual(custom);
         expect(saved.cycles[zh.deckId]).toEqual(zh);
-        expect(saved.cycles[deckId].cursor).toBe(cards.filter(
-            (entry) => entry.deckId === deckId && Number(entry.id.slice(-4)) <= 35,
-        ).length);
+        const destination = cards.find((entry) => entry.id === target)!;
+        expect(saved.progress[target].deckId).toBe(destination.deckId);
+        expect(saved.cycles[destination.deckId].topicsV6).toBe(true);
+        expect(saved.cycles[destination.deckId].pendingCardIds).toContain(target);
         await new GuestStore("id").getProfile();
         expect(JSON.parse(data.get(GUEST_STORAGE_KEY)!)).toEqual(saved);
     });

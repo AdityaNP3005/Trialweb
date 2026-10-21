@@ -42,6 +42,9 @@ const contentRoot = join(projectRoot, "src", "content");
 const manifest = JSON.parse(
     readFileSync(join(contentRoot, "manifest.json"), "utf8"),
 ) as Manifest;
+const semanticAssignments = JSON.parse(readFileSync(
+    join(projectRoot, "scripts", "content", "de-topic-assignments.json"), "utf8",
+)) as Record<string, string>;
 
 const ARTICLELESS_NOUNS = new Set([
     "montag",
@@ -116,13 +119,17 @@ for (const level of manifest.levels) {
         const data = result.data;
         // Word type must not hide duplicate headwords (Hallo/hallo, noun/verb).
         const contentKey = germanHeadword(data.front);
+        const category = topic.replace(/-\d+$/, "");
+        if (semanticAssignments[contentKey] !== category || data.tags[0] !== category) {
+            problems.push(`${data.front}: kategori tidak sesuai inventaris hasil kurasi`);
+        }
         if (seenHere.has(contentKey)) {
             problems.push(`${level.file}: duplikat "${data.front}" (#${index + 1})`);
         }
         seenHere.add(contentKey);
         const cardId = String(card.id ?? "");
-        const deckId = `de-${level.level.toLowerCase()}-${topic}`;
-        if (!cardId.startsWith(`${deckId}-`) || !/-\d{4}$/.test(cardId)) {
+        // A card keeps its original id when it moves to a different topic.
+        if (!cardId.startsWith(`de-${level.level.toLowerCase()}-`) || !/-\d{4}$/.test(cardId)) {
             problems.push(`${level.file}: id stabil tidak valid untuk ${data.front}`);
         }
         if (allCardIds.has(cardId)) problems.push(`id kartu duplikat: ${cardId}`);
@@ -193,6 +200,9 @@ for (const [removedId, targetId] of Object.entries(reviewAliases)) {
     }
 }
 console.log(`Audit vocab Jerman: ${allFronts.size} kata unik, ${reviewAliases ? Object.keys(reviewAliases).length : 0} alias kartu gabungan.`);
+if (Object.keys(semanticAssignments).length !== totalCards) {
+    problems.push("Inventaris kategori tidak mencakup tepat seluruh kartu Jerman");
+}
 
 const migration = JSON.parse(
     readFileSync(join(contentRoot, "migration-map.json"), "utf8"),

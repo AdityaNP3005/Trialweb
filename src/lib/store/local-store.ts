@@ -17,6 +17,7 @@ import { courses, listContentDecks } from "@/content/courses";
 import { getContentDeck, loadContentCards } from "@/lib/content/registry";
 import { buildSession, cycleProgress, emptyCycle } from "@/lib/study/session";
 import { consolidateReviewedProgress, loadReviewedGermanCards } from "@/lib/content/review-progress";
+import { reclassifyTopicProgress } from "@/lib/content/topic-progress";
 import { normalizeBands, progressPercent } from "@/lib/study/progress";
 import {
     defaultProfileFor,
@@ -117,7 +118,7 @@ export class GuestStore implements StudyStore {
         } else {
             this.db = {
                 version: 2,
-                contentVersion: 5,
+                contentVersion: 6,
                 profile: defaultProfileFor({
                     displayName: null,
                     email: null,
@@ -136,15 +137,23 @@ export class GuestStore implements StudyStore {
         if ((this.db.contentVersion ?? 0) < 4) {
             await remapTopics(this.db);
         }
-        if (this.db.contentVersion !== 5) {
+        if ((this.db.contentVersion ?? 0) < 5) {
             const aliases = (await import("@/content/de/review-aliases.json")).default;
             const reviewed = consolidateReviewedProgress(
                 Object.values(this.db.progress), Object.values(this.db.cycles),
-                await loadReviewedGermanCards(), aliases,
+                await loadReviewedGermanCards("v5"), aliases,
             );
             this.db.progress = Object.fromEntries(reviewed.progress.map((entry) => [entry.cardId, entry]));
             this.db.cycles = Object.fromEntries(reviewed.cycles.map((entry) => [entry.deckId, entry]));
             this.db.contentVersion = 5;
+        }
+        if ((this.db.contentVersion ?? 0) < 6) {
+            const layout = (await import("@/content/topic-map-v6.json")).default.fromDecks;
+            const next = reclassifyTopicProgress(Object.values(this.db.progress),
+                Object.values(this.db.cycles), await loadReviewedGermanCards(), layout);
+            this.db.progress = Object.fromEntries(next.progress.map((entry) => [entry.cardId, entry]));
+            this.db.cycles = Object.fromEntries(next.cycles.map((entry) => [entry.deckId, entry]));
+            this.db.contentVersion = 6;
         }
         this.persist();
         return this.db;

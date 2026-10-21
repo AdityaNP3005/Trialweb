@@ -1,0 +1,142 @@
+{
+  "version": 6,
+  "maxTopicSize": 80,
+  "topics": {
+    "greetings": {
+      "title": "Sapaan & kesantunan",
+      "icon": "👋"
+    },
+    "numbers-time": {
+      "title": "Angka, tanggal & waktu",
+      "icon": "🔢"
+    },
+    "family-people": {
+      "title": "Keluarga & hubungan pribadi",
+      "icon": "👨‍👩‍👧"
+    },
+    "travel-transport": {
+      "title": "Perjalanan, transportasi & arah",
+      "icon": "🚆"
+    },
+    "food-drink": {
+      "title": "Makanan & minuman",
+      "icon": "🍎"
+    },
+    "home-daily": {
+      "title": "Rumah & kegiatan rumah tangga",
+      "icon": "🏠"
+    },
+    "clothes-shopping": {
+      "title": "Pakaian, penampilan & belanja",
+      "icon": "👕"
+    },
+    "colors-shapes": {
+      "title": "Warna, bentuk & ukuran",
+      "icon": "🎨"
+    },
+    "body-health": {
+      "title": "Tubuh & pancaindra",
+      "icon": "🧍"
+    },
+    "health-psychology": {
+      "title": "Kesehatan & perawatan",
+      "icon": "🩺"
+    },
+    "directions-places": {
+      "title": "Bangunan, kota & tempat umum",
+      "icon": "🏙️"
+    },
+    "places-geography": {
+      "title": "Geografi, negara & bahasa",
+      "icon": "🌍"
+    },
+    "nature-animals": {
+      "title": "Alam, hewan & tumbuhan",
+      "icon": "🌿"
+    },
+    "environment-nature": {
+      "title": "Lingkungan, cuaca & geologi",
+      "icon": "🌦️"
+    },
+    "work-economy": {
+      "title": "Pekerjaan, uang & ekonomi",
+      "icon": "💼"
+    },
+    "education-science": {
+      "title": "Pendidikan, sains & pengetahuan",
+      "icon": "🔬"
+    },
+    "culture-arts": {
+      "title": "Seni, hiburan & budaya",
+      "icon": "🎭"
+    },
+    "religion-mythology": {
+      "title": "Agama, mitologi & kepercayaan",
+      "icon": "🕊️"
+    },
+    "law-crime": {
+      "title": "Hukum, kejahatan & keselamatan",
+      "icon": "⚖️"
+    },
+    "conflict-military": {
+      "title": "Militer, perang & persenjataan",
+      "icon": "🛡️"
+    },
+    "society-politics": {
+      "title": "Masyarakat, negara & politik",
+      "icon": "🏛️"
+    },
+    "media-tech": {
+      "title": "Media, komunikasi digital & teknologi",
+      "icon": "💻"
+    },
+    "sports-hobby": {
+      "title": "Olahraga, permainan & hobi",
+      "icon": "⚽"
+    },
+    "emotions-opinion": {
+      "title": "Perasaan, pikiran & sikap",
+      "icon": "💬"
+    },
+    "language-communication": {
+      "title": "Bahasa, percakapan & tulisan",
+      "icon": "🗣️"
+    },
+    "objects-tech": {
+      "title": "Perkakas & benda sehari-hari",
+      "icon": "🧰"
+    },
+    "materials-measures": {
+      "title": "Bahan, zat & satuan ukur",
+      "icon": "⚗️"
+    },
+    "persons": {
+      "title": "Orang, identitas & profesi",
+      "icon": "👥"
+    },
+    "function-words": {
+      "title": "Kata fungsi, penghubung & keterangan",
+      "icon": "🔗"
+    },
+    "verbs-basic": {
+      "title": "Tindakan & kata kerja umum",
+      "icon": "🔁"
+    },
+    "verbs-advanced": {
+      "title": "Tindakan & kata kerja umum",
+      "icon": "🔁"
+    },
+    "adjectives-basic": {
+      "title": "Sifat & keadaan umum",
+      "icon": "✨"
+    },
+    "adjectives-advanced": {
+      "title": "Sifat & keadaan umum",
+      "icon": "✨"
+    },
+    "abstract-nouns": {
+      "title": "Konsep, proses & hubungan abstrak",
+      "icon": "💡"
+    }
+  }
+}

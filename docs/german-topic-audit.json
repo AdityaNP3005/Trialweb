@@ -1,0 +1,88 @@
+{
+  "baselineCommit": "bd0e4f9",
+  "cardsReviewed": 9483,
+  "movedCards": 8530,
+  "categories": 34,
+  "previousTopics": 177,
+  "currentTopics": 228,
+  "previousGeneralCards": 4659,
+  "currentGeneralCards": 0,
+  "unchangedIdsLevelsAndCardContents": true,
+  "duplicateHeadwords": 0,
+  "migrationSourceLayoutVerified": true,
+  "assignmentsCoverEveryCardExactlyOnce": true,
+  "categoryCounts": {
+    "abstract-nouns": 336,
+    "adjectives-advanced": 283,
+    "adjectives-basic": 145,
+    "body-health": 278,
+    "clothes-shopping": 158,
+    "colors-shapes": 181,
+    "conflict-military": 290,
+    "culture-arts": 301,
+    "directions-places": 118,
+    "education-science": 313,
+    "emotions-opinion": 472,
+    "environment-nature": 131,
+    "family-people": 168,
+    "food-drink": 377,
+    "function-words": 187,
+    "greetings": 33,
+    "health-psychology": 439,
+    "home-daily": 198,
+    "language-communication": 506,
+    "law-crime": 335,
+    "materials-measures": 300,
+    "media-tech": 265,
+    "nature-animals": 400,
+    "numbers-time": 218,
+    "objects-tech": 282,
+    "persons": 203,
+    "places-geography": 306,
+    "religion-mythology": 251,
+    "society-politics": 302,
+    "sports-hobby": 232,
+    "travel-transport": 346,
+    "verbs-advanced": 590,
+    "verbs-basic": 160,
+    "work-economy": 379
+  },
+  "levels": [
+    {
+      "level": "A1",
+      "cards": 534,
+      "previousTopics": 16,
+      "currentTopics": 33
+    },
+    {
+      "level": "A2",
+      "cards": 1146,
+      "previousTopics": 27,
+      "currentTopics": 34
+    },
+    {
+      "level": "B1",
+      "cards": 1758,
+      "previousTopics": 32,
+      "currentTopics": 37
+    },
+    {
+      "level": "B2",
+      "cards": 1983,
+      "previousTopics": 33,
+      "currentTopics": 40
+    },
+    {
+      "level": "C1",
+      "cards": 2383,
+      "previousTopics": 40,
+      "currentTopics": 47
+    },
+    {
+      "level": "C2",
+      "cards": 1679,
+      "previousTopics": 29,
+      "currentTopics": 37
+    }
+  ]
+}

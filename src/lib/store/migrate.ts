@@ -12,7 +12,7 @@ import type { Profile } from "@/types";
 import { fetchProfile, patchProfile } from "@/lib/data/profile";
 import { fetchVideoProgress, saveVideoProgress } from "@/lib/data/videos";
 import { mergePlaylistProgress } from "@/lib/video/progress";
-import { clearGuestSnapshot, readGuestSnapshot } from "./local-store";
+import { clearGuestSnapshot, GuestStore, readGuestSnapshot } from "./local-store";
 
 /**
  * Moves guest (localStorage) user decks, progress and daily stats into the
@@ -27,11 +27,18 @@ export async function migrateGuestData(
 ): Promise<boolean> {
     if (cloudDeckCount > 0) return false;
 
-    const guest = readGuestSnapshot();
+    let guest = readGuestSnapshot();
     if (!guest) return false;
     if (guest.decks.length === 0 && Object.keys(guest.progress).length === 0) {
         return false;
     }
+    // Cloud and guest histories must use the same layout before they merge.
+    // In particular, do not run a legacy positional remap on v6 card ids.
+    const profile = await fetchProfile(uid);
+    if (!profile?.topicsV6) return false;
+    await new GuestStore(guest.profile.uiLocale).getProfile();
+    guest = readGuestSnapshot();
+    if (!guest) return false;
 
     const now = Date.now();
 
