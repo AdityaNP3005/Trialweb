@@ -2,6 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { cardInputSchema } from "../src/lib/validation/schemas.ts";
+import { germanHeadword } from "../src/lib/content/german.ts";
 
 /**
  * Validates every bundled topic deck:
@@ -55,15 +56,8 @@ const ARTICLELESS_NOUNS = new Set([
 const problems: string[] = [];
 const warnings: string[] = [];
 const allFronts = new Map<string, string>();
+const allCardIds = new Set<string>();
 let totalCards = 0;
-
-function normalize(front: string): string {
-    return front
-        .toLowerCase()
-        .replace(/^(der|die|das)\s+/, "")
-        .replace(/[.,!?;:]+$/g, "")
-        .trim();
-}
 
 if (manifest.version !== 2) {
     problems.push(`manifest.json: version ${manifest.version} ≠ 2`);
@@ -87,6 +81,9 @@ for (const level of manifest.levels) {
     }
 
     const counts = new Map<string, number>();
+    if (JSON.stringify(file.topics) !== JSON.stringify(level.topics)) {
+        problems.push(`${level.file}: daftar topik tidak sama dengan manifest`);
+    }
     let missingExamples = 0;
     let missingGender = 0;
     const seenHere = new Set<string>();
@@ -117,11 +114,19 @@ for (const level of manifest.levels) {
         }
 
         const data = result.data;
-        const contentKey = `${data.wordType}:${normalize(data.front)}`;
+        // Word type must not hide duplicate headwords (Hallo/hallo, noun/verb).
+        const contentKey = germanHeadword(data.front);
         if (seenHere.has(contentKey)) {
             problems.push(`${level.file}: duplikat "${data.front}" (#${index + 1})`);
         }
         seenHere.add(contentKey);
+        const cardId = String(card.id ?? "");
+        const deckId = `de-${level.level.toLowerCase()}-${topic}`;
+        if (!cardId.startsWith(`${deckId}-`) || !/-\d{4}$/.test(cardId)) {
+            problems.push(`${level.file}: id stabil tidak valid untuk ${data.front}`);
+        }
+        if (allCardIds.has(cardId)) problems.push(`id kartu duplikat: ${cardId}`);
+        allCardIds.add(cardId);
 
         const previous = allFronts.get(contentKey);
         if (previous && previous !== level.level) {
@@ -178,6 +183,16 @@ for (const level of manifest.levels) {
         warnings.push(`${level.level}: ${missingExamples} kartu tanpa contoh kalimat`);
     }
 }
+
+const reviewAliases = JSON.parse(
+    readFileSync(join(contentRoot, "de", "review-aliases.json"), "utf8"),
+) as Record<string, string>;
+for (const [removedId, targetId] of Object.entries(reviewAliases)) {
+    if (allCardIds.has(removedId) || !allCardIds.has(targetId)) {
+        problems.push(`alias vocab tidak valid: ${removedId} → ${targetId}`);
+    }
+}
+console.log(`Audit vocab Jerman: ${allFronts.size} kata unik, ${reviewAliases ? Object.keys(reviewAliases).length : 0} alias kartu gabungan.`);
 
 const migration = JSON.parse(
     readFileSync(join(contentRoot, "migration-map.json"), "utf8"),

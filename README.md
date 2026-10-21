@@ -1,6 +1,6 @@
 # GoAbroad
 
-Flashcard web app untuk belajar bahasa asing — **Bahasa Jerman A1–C2** (9.688 kartu dalam
+Flashcard web app untuk belajar bahasa asing — **Bahasa Jerman A1–C2** (9.483 kartu dalam
 **177 topik**) dan **Mandarin tradisional** dari buku *當代中文課程* (2.891 kartu dalam
 **54 bab**, Buku 1–4). Engine-nya sama: pilih **band/buku**, lalu pilih **topik/bab**.
 Satu sesi menyelesaikan satu unit penuh, kartu dijawab **Ulangi** atau **Sudah paham**, dan
@@ -150,12 +150,12 @@ Deck dibundel dari data terbuka (lihat [`NOTICE.md`](./NOTICE.md)) dan dipecah m
 
 | Band | Topik | Kartu | Topik pertama |
 | --- | --- | --- | --- |
-| A1 | 16 | 600 | Sapaan & perkenalan, Angka & waktu |
-| A2 | 27 | 1.200 | Angka & waktu, Kata fungsi & penghubung |
-| B1 | 32 | 1.800 | Pekerjaan & ekonomi, Media & teknologi |
-| B2 | 33 | 2.000 | Pekerjaan & ekonomi, Hukum & kriminal |
-| C1 | 40 | 2.400 | Hukum & kriminal, Media & teknologi |
-| C2 | 29 | 1.688 | Pendidikan & ilmu, Masyarakat & politik |
+| A1 | 16 | 534 | Sapaan & perkenalan, Angka & waktu |
+| A2 | 27 | 1.146 | Angka & waktu, Kata fungsi & penghubung |
+| B1 | 32 | 1.758 | Pekerjaan & ekonomi, Media & teknologi |
+| B2 | 33 | 1.983 | Pekerjaan & ekonomi, Hukum & kriminal |
+| C1 | 40 | 2.383 | Hukum & kriminal, Media & teknologi |
+| C2 | 29 | 1.679 | Pendidikan & ilmu, Masyarakat & politik |
 
 Topik tambahan di luar tema lama: **Kata fungsi & penghubung**, **Orang & profesi**,
 **Nomina abstrak**, **Alam & hewan**, **Tempat & geografi**, **Benda & teknologi**,
@@ -325,3 +325,5 @@ paham dan akan muncul lagi pada putaran berikutnya.
 - Video butuh jaringan dan `youtube-nocookie.com` yang tidak diblokir; bila iframe gagal
 dimuat, halaman menampilkan tautan ke YouTube sebagai gantinya. Status `SELESAI` hanya
 tercatat setelah pemutar benar-benar diputar.
+
+Audit kosakata Jerman: [hasil dan cara verifikasi](docs/GERMAN-VOCAB-REVIEW.md).

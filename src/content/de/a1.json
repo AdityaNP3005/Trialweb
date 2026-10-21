@@ -8,7 +8,7 @@
    "title": "Sapaan & perkenalan",
    "icon": "👋",
    "order": 1,
-   "cardCount": 37
+   "cardCount": 24
   },
   {
    "id": "de-a1-numbers-time",
@@ -16,7 +16,7 @@
    "title": "Angka, tanggal & waktu",
    "icon": "🔢",
    "order": 2,
-   "cardCount": 55
+   "cardCount": 44
   },
   {
    "id": "de-a1-family-people",
@@ -32,7 +32,7 @@
    "title": "Makanan & minuman",
    "icon": "🍎",
    "order": 4,
-   "cardCount": 29
+   "cardCount": 28
   },
   {
    "id": "de-a1-home-daily",
@@ -48,7 +48,7 @@
    "title": "Warna & bentuk",
    "icon": "🎨",
    "order": 6,
-   "cardCount": 14
+   "cardCount": 13
   },
   {
    "id": "de-a1-body-health",
@@ -64,7 +64,7 @@
    "title": "Arah & tempat",
    "icon": "🧭",
    "order": 8,
-   "cardCount": 26
+   "cardCount": 25
   },
   {
    "id": "de-a1-travel-transport",
@@ -80,7 +80,7 @@
    "title": "Kerja & sekolah",
    "icon": "🏫",
    "order": 10,
-   "cardCount": 13
+   "cardCount": 12
   },
   {
    "id": "de-a1-function-words-1",
@@ -88,7 +88,7 @@
    "title": "Kata fungsi & penghubung (1/2)",
    "icon": "🔗",
    "order": 11,
-   "cardCount": 80
+   "cardCount": 70
   },
   {
    "id": "de-a1-function-words-2",
@@ -104,7 +104,7 @@
    "title": "Kata kerja dasar",
    "icon": "🔁",
    "order": 13,
-   "cardCount": 77
+   "cardCount": 75
   },
   {
    "id": "de-a1-adjectives-basic",
@@ -112,7 +112,7 @@
    "title": "Kata sifat dasar",
    "icon": "✨",
    "order": 14,
-   "cardCount": 65
+   "cardCount": 62
   },
   {
    "id": "de-a1-general-1",
@@ -120,7 +120,7 @@
    "title": "Kosakata umum (1/2)",
    "icon": "📚",
    "order": 15,
-   "cardCount": 80
+   "cardCount": 62
   },
   {
    "id": "de-a1-general-2",
@@ -128,14 +128,14 @@
    "title": "Kosakata umum (2/2)",
    "icon": "📚",
    "order": 16,
-   "cardCount": 39
+   "cardCount": 34
   }
  ],
  "cards": [
   {
    "front": "Hallo",
-   "meaningId": "halo",
-   "meaningEn": "hello",
+   "meaningId": "halo; hai (sapaan); keributan (das Hallo)",
+   "meaningEn": "hello; hi (greeting); commotion (das Hallo)",
    "wordType": "phrase",
    "tags": [
     "greetings"
@@ -144,7 +144,9 @@
    "topic": "greetings",
    "exampleDe": "Hallo, wie heißt du?",
    "exampleId": "Halo, siapa namamu?",
-   "exampleEn": "Hello, what is your name?"
+   "exampleEn": "Hello, what is your name?",
+   "id": "de-a1-greetings-0001",
+   "reviewedSenses": true
   },
   {
    "front": "Guten Morgen",
@@ -155,7 +157,8 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0002"
   },
   {
    "front": "Guten Tag",
@@ -166,7 +169,8 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0003"
   },
   {
    "front": "Guten Abend",
@@ -177,7 +181,8 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0004"
   },
   {
    "front": "Gute Nacht",
@@ -188,7 +193,8 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0005"
   },
   {
    "front": "Auf Wiedersehen",
@@ -199,75 +205,88 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0006"
   },
   {
    "front": "Tschüss",
    "meaningId": "dadah",
-   "meaningEn": "bye",
+   "meaningEn": "Tschüss (phrase): bye; tschüs (phrase): goodbye · bye · bye-bye",
    "wordType": "phrase",
    "tags": [
     "greetings"
    ],
    "level": "A1",
    "topic": "greetings",
-   "ipa": "[t͡ʃʏs]"
+   "ipa": "[t͡ʃʏs]",
+   "id": "de-a1-greetings-0007",
+   "reviewedSenses": true
   },
   {
    "front": "Bitte",
-   "meaningId": "tolong / silakan",
-   "meaningEn": "please / you are welcome",
+   "meaningId": "tolong; silakan; sama-sama (bitte); permintaan (die Bitte)",
+   "meaningEn": "please; you are welcome (bitte); request (die Bitte)",
    "wordType": "phrase",
    "tags": [
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0008",
+   "reviewedSenses": true
   },
   {
    "front": "Danke",
    "meaningId": "terima kasih",
-   "meaningEn": "thank you",
+   "meaningEn": "Danke (phrase): thank you; danke (function word/interjection): thanks · thank you · cheers",
    "wordType": "phrase",
    "tags": [
     "greetings"
    ],
    "level": "A1",
    "topic": "greetings",
-   "ipa": "[ˈdaŋkə]"
+   "ipa": "[ˈdaŋkə]",
+   "id": "de-a1-greetings-0009",
+   "reviewedSenses": true
   },
   {
    "front": "Entschuldigung",
-   "meaningId": "maaf / permisi",
-   "meaningEn": "excuse me / sorry",
+   "meaningId": "maaf; permisi; permintaan maaf",
+   "meaningEn": "excuse me; sorry; apology",
    "wordType": "phrase",
    "tags": [
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0010",
+   "reviewedSenses": true
   },
   {
    "front": "Ja",
-   "meaningId": "ya",
-   "meaningEn": "yes",
+   "meaningId": "ya; jawaban setuju (das Ja)",
+   "meaningEn": "yes; affirmative answer (das Ja)",
    "wordType": "other",
    "tags": [
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0011",
+   "reviewedSenses": true
   },
   {
    "front": "Nein",
    "meaningId": "tidak",
-   "meaningEn": "no",
+   "meaningEn": "Nein (function word/interjection): no; Nein (noun): no · nay",
    "wordType": "other",
    "tags": [
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0012",
+   "reviewedSenses": true
   },
   {
    "front": "Wie geht es dir?",
@@ -278,7 +297,8 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0013"
   },
   {
    "front": "Ich heiße …",
@@ -292,7 +312,8 @@
    "topic": "greetings",
    "exampleDe": "Ich heiße Anna.",
    "exampleId": "Nama saya Anna.",
-   "exampleEn": "My name is Anna."
+   "exampleEn": "My name is Anna.",
+   "id": "de-a1-greetings-0014"
   },
   {
    "front": "Ich verstehe nicht",
@@ -303,7 +324,8 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0015"
   },
   {
    "front": "Sprechen Sie Englisch?",
@@ -314,18 +336,8 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "Ja",
-   "meaningId": "ia",
-   "meaningEn": "yes · aye · yea",
-   "wordType": "noun",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0016"
   },
   {
    "front": "wie",
@@ -336,95 +348,34 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0018"
   },
   {
    "front": "auf",
-   "meaningId": "buka",
-   "meaningEn": "open",
+   "meaningId": "auf (keterangan): terbuka (misalnya pintu); auf (kata fungsi/seruan): di atas; ke atas (diikuti datif/akusatif)",
+   "meaningEn": "auf (adverb): open (e.g. a door); auf (function word/interjection): on; onto",
    "wordType": "adverb",
    "tags": [
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "auf",
-   "meaningId": "atas",
-   "meaningEn": "on · onto",
-   "wordType": "other",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "Nein",
-   "meaningId": "tidak",
-   "meaningEn": "no · nay",
-   "wordType": "noun",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0019",
+   "reviewedSenses": true
   },
   {
    "front": "doch",
-   "meaningId": "bagaimanapun juga",
-   "meaningEn": "but · though",
+   "meaningId": "doch (keterangan): tentu saja; justru; penegasan yang membantah kalimat negatif; doch (kata fungsi/seruan): namun; tetapi",
+   "meaningEn": "doch (adverb): indeed; actually; yes (contradicting a negative); doch (function word/interjection): yet; however",
    "wordType": "adverb",
    "tags": [
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "doch",
-   "meaningId": "namun",
-   "meaningEn": "yet",
-   "wordType": "other",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "Bitte",
-   "meaningId": "permintaan",
-   "meaningEn": "request · petition · plea",
-   "wordType": "noun",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "bitte",
-   "meaningId": "tolong · minta tolong",
-   "meaningEn": "please",
-   "wordType": "adverb",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "danke",
-   "meaningId": "terima kasih",
-   "meaningEn": "thanks · thank you · cheers",
-   "wordType": "other",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0022",
+   "reviewedSenses": true
   },
   {
    "front": "vielleicht",
@@ -435,40 +386,20 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0027"
   },
   {
    "front": "bis",
-   "meaningId": "ke",
-   "meaningEn": "until · by · through",
+   "meaningId": "sampai; hingga",
+   "meaningEn": "until; up to",
    "wordType": "other",
    "tags": [
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "Hallo",
-   "meaningId": "saluir",
-   "meaningEn": "hallo",
-   "wordType": "noun",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "hallo",
-   "meaningId": "hai",
-   "meaningEn": "hello · hi",
-   "wordType": "other",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0028"
   },
   {
    "front": "bald",
@@ -479,7 +410,8 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0031"
   },
   {
    "front": "Name",
@@ -490,29 +422,8 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "Entschuldigung",
-   "meaningId": "permisi",
-   "meaningEn": "excuse me · sorry",
-   "wordType": "other",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "Entschuldigung",
-   "meaningId": "ampun",
-   "meaningEn": "apology · excuse",
-   "wordType": "noun",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0032"
   },
   {
    "front": "Willkommen",
@@ -523,29 +434,9 @@
     "greetings"
    ],
    "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "willkommen",
-   "meaningId": "selamat datang",
-   "meaningEn": "welcome",
-   "wordType": "adjective",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
-  },
-  {
-   "front": "willkommen",
-   "meaningId": "selamat datang",
-   "meaningEn": "welcome",
-   "wordType": "other",
-   "tags": [
-    "greetings"
-   ],
-   "level": "A1",
-   "topic": "greetings"
+   "topic": "greetings",
+   "id": "de-a1-greetings-0035",
+   "reviewedSenses": true
   },
   {
    "front": "eins",
@@ -556,7 +447,9 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0001",
+   "reviewedSenses": true
   },
   {
    "front": "zwei",
@@ -567,7 +460,9 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0002",
+   "reviewedSenses": true
   },
   {
    "front": "drei",
@@ -578,7 +473,9 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0003",
+   "reviewedSenses": true
   },
   {
    "front": "vier",
@@ -589,7 +486,9 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0004",
+   "reviewedSenses": true
   },
   {
    "front": "fünf",
@@ -600,7 +499,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0005"
   },
   {
    "front": "sechs",
@@ -611,7 +511,9 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0006",
+   "reviewedSenses": true
   },
   {
    "front": "sieben",
@@ -622,7 +524,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0007"
   },
   {
    "front": "acht",
@@ -633,7 +536,9 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0008",
+   "reviewedSenses": true
   },
   {
    "front": "neun",
@@ -644,7 +549,9 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0009",
+   "reviewedSenses": true
   },
   {
    "front": "zehn",
@@ -655,7 +562,9 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0010",
+   "reviewedSenses": true
   },
   {
    "front": "elf",
@@ -666,7 +575,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0011"
   },
   {
    "front": "zwölf",
@@ -677,7 +587,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0012"
   },
   {
    "front": "zwanzig",
@@ -688,7 +599,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0013"
   },
   {
    "front": "hundert",
@@ -699,7 +611,9 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0014",
+   "reviewedSenses": true
   },
   {
    "front": "der Tag",
@@ -715,7 +629,8 @@
    "plural": "die Tage",
    "exampleDe": "Guten Tag! Schönen Tag noch.",
    "exampleId": "Selamat siang! Semoga harimu menyenangkan.",
-   "exampleEn": "Good day! Have a nice day."
+   "exampleEn": "Good day! Have a nice day.",
+   "id": "de-a1-numbers-time-0015"
   },
   {
    "front": "die Woche",
@@ -728,7 +643,8 @@
    "level": "A1",
    "topic": "numbers-time",
    "gender": "die",
-   "plural": "die Wochen"
+   "plural": "die Wochen",
+   "id": "de-a1-numbers-time-0016"
   },
   {
    "front": "der Monat",
@@ -741,7 +657,8 @@
    "level": "A1",
    "topic": "numbers-time",
    "gender": "der",
-   "plural": "die Monate"
+   "plural": "die Monate",
+   "id": "de-a1-numbers-time-0017"
   },
   {
    "front": "das Jahr",
@@ -754,7 +671,8 @@
    "level": "A1",
    "topic": "numbers-time",
    "gender": "das",
-   "plural": "die Jahre"
+   "plural": "die Jahre",
+   "id": "de-a1-numbers-time-0018"
   },
   {
    "front": "heute",
@@ -765,18 +683,22 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0019",
+   "reviewedSenses": true
   },
   {
    "front": "morgen",
-   "meaningId": "besok",
-   "meaningEn": "tomorrow",
+   "meaningId": "morgen (keterangan): besok; der Morgen (benda): pagi",
+   "meaningEn": "morgen (adverb): tomorrow; der Morgen (noun): morning",
    "wordType": "adverb",
    "tags": [
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0020",
+   "reviewedSenses": true
   },
   {
    "front": "gestern",
@@ -787,7 +709,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0021"
   },
   {
    "front": "jetzt",
@@ -798,20 +721,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "der Morgen",
-   "meaningId": "pagi",
-   "meaningEn": "morning",
-   "wordType": "noun",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
    "topic": "numbers-time",
-   "gender": "der",
-   "plural": "die Morgen"
+   "id": "de-a1-numbers-time-0022"
   },
   {
    "front": "der Abend",
@@ -824,7 +735,8 @@
    "level": "A1",
    "topic": "numbers-time",
    "gender": "der",
-   "plural": "die Abende"
+   "plural": "die Abende",
+   "id": "de-a1-numbers-time-0024"
   },
   {
    "front": "die Nacht",
@@ -837,7 +749,8 @@
    "level": "A1",
    "topic": "numbers-time",
    "gender": "die",
-   "plural": "die Nächte"
+   "plural": "die Nächte",
+   "id": "de-a1-numbers-time-0025"
   },
   {
    "front": "die Uhr",
@@ -850,7 +763,8 @@
    "level": "A1",
    "topic": "numbers-time",
    "gender": "die",
-   "plural": "die Uhren"
+   "plural": "die Uhren",
+   "id": "de-a1-numbers-time-0026"
   },
   {
    "front": "die Stunde",
@@ -863,7 +777,8 @@
    "level": "A1",
    "topic": "numbers-time",
    "gender": "die",
-   "plural": "die Stunden"
+   "plural": "die Stunden",
+   "id": "de-a1-numbers-time-0027"
   },
   {
    "front": "die Minute",
@@ -876,7 +791,8 @@
    "level": "A1",
    "topic": "numbers-time",
    "gender": "die",
-   "plural": "die Minuten"
+   "plural": "die Minuten",
+   "id": "de-a1-numbers-time-0028"
   },
   {
    "front": "Montag",
@@ -887,7 +803,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0029"
   },
   {
    "front": "Dienstag",
@@ -898,7 +815,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0030"
   },
   {
    "front": "Mittwoch",
@@ -909,7 +827,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0031"
   },
   {
    "front": "Donnerstag",
@@ -920,7 +839,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0032"
   },
   {
    "front": "Freitag",
@@ -931,7 +851,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0033"
   },
   {
    "front": "Samstag",
@@ -942,7 +863,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0034"
   },
   {
    "front": "Sonntag",
@@ -953,18 +875,21 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0035"
   },
   {
    "front": "ein",
-   "meaningId": "satu",
-   "meaningEn": "one",
+   "meaningId": "satu; sebuah/seorang (kata sandang); menyala (alat)",
+   "meaningEn": "one; a/an (indefinite article); on (device)",
    "wordType": "number",
    "tags": [
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0036",
+   "reviewedSenses": true
   },
   {
    "front": "dann",
@@ -975,7 +900,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0037"
   },
   {
    "front": "immer",
@@ -986,7 +912,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0038"
   },
   {
    "front": "nie",
@@ -997,7 +924,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0039"
   },
   {
    "front": "Zeit",
@@ -1008,106 +936,34 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "Heute",
-   "meaningId": "hari ini",
-   "meaningEn": "today",
-   "wordType": "noun",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "Zwei",
-   "meaningId": "dua",
-   "meaningEn": "two",
-   "wordType": "noun",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "Drei",
-   "meaningId": "tiga",
-   "meaningEn": "three",
-   "wordType": "noun",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0040"
   },
   {
    "front": "später",
    "meaningId": "nanti",
-   "meaningEn": "later",
+   "meaningEn": "später (adjective): later; später (adverb): later · later on",
    "wordType": "adjective",
    "tags": [
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "später",
-   "meaningId": "nanti",
-   "meaningEn": "later · later on",
-   "wordType": "adverb",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "Eins",
-   "meaningId": "satu",
-   "meaningEn": "one",
-   "wordType": "noun",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0044",
+   "reviewedSenses": true
   },
   {
    "front": "Erste",
-   "meaningId": "pemutaran perdana",
-   "meaningEn": "first",
+   "meaningId": "Erste (benda): orang atau hal yang pertama; erste (sifat): pertama",
+   "meaningEn": "Erste (noun): the first one; erste (adjective): first",
    "wordType": "noun",
    "tags": [
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "erste",
-   "meaningId": "pertama",
-   "meaningEn": "first",
-   "wordType": "adjective",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "Vier",
-   "meaningId": "empat",
-   "meaningEn": "four",
-   "wordType": "noun",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0047",
+   "reviewedSenses": true
   },
   {
    "front": "manchmal",
@@ -1118,7 +974,8 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0050"
   },
   {
    "front": "oft",
@@ -1129,51 +986,21 @@
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0051"
   },
   {
    "front": "früh",
-   "meaningId": "dini",
+   "meaningId": "awal; pagi-pagi",
    "meaningEn": "early",
    "wordType": "adjective",
    "tags": [
     "numbers-time"
    ],
    "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "früh",
-   "meaningId": "dini",
-   "meaningEn": "early",
-   "wordType": "adverb",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "Zehn",
-   "meaningId": "sepuluh",
-   "meaningEn": "ten",
-   "wordType": "noun",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
-  },
-  {
-   "front": "Sechs",
-   "meaningId": "enam",
-   "meaningEn": "six",
-   "wordType": "noun",
-   "tags": [
-    "numbers-time"
-   ],
-   "level": "A1",
-   "topic": "numbers-time"
+   "topic": "numbers-time",
+   "id": "de-a1-numbers-time-0052",
+   "reviewedSenses": true
   },
   {
    "front": "der Vater",
@@ -1189,7 +1016,8 @@
    "plural": "die Väter",
    "exampleDe": "Mein Vater kocht gern.",
    "exampleId": "Ayah saya suka memasak.",
-   "exampleEn": "My father likes cooking."
+   "exampleEn": "My father likes cooking.",
+   "id": "de-a1-family-people-0001"
   },
   {
    "front": "die Mutter",
@@ -1202,7 +1030,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "die",
-   "plural": "die Mütter"
+   "plural": "die Mütter",
+   "id": "de-a1-family-people-0002"
   },
   {
    "front": "der Sohn",
@@ -1215,7 +1044,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "der",
-   "plural": "die Söhne"
+   "plural": "die Söhne",
+   "id": "de-a1-family-people-0003"
   },
   {
    "front": "die Tochter",
@@ -1228,7 +1058,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "die",
-   "plural": "die Töchter"
+   "plural": "die Töchter",
+   "id": "de-a1-family-people-0004"
   },
   {
    "front": "der Bruder",
@@ -1241,7 +1072,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "der",
-   "plural": "die Brüder"
+   "plural": "die Brüder",
+   "id": "de-a1-family-people-0005"
   },
   {
    "front": "die Schwester",
@@ -1254,7 +1086,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "die",
-   "plural": "die Schwestern"
+   "plural": "die Schwestern",
+   "id": "de-a1-family-people-0006"
   },
   {
    "front": "die Eltern",
@@ -1267,7 +1100,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "die",
-   "plural": "die Eltern"
+   "plural": "die Eltern",
+   "id": "de-a1-family-people-0007"
   },
   {
    "front": "der Großvater",
@@ -1280,7 +1114,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "der",
-   "plural": "die Großväter"
+   "plural": "die Großväter",
+   "id": "de-a1-family-people-0008"
   },
   {
    "front": "die Großmutter",
@@ -1293,7 +1128,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "die",
-   "plural": "die Großmütter"
+   "plural": "die Großmütter",
+   "id": "de-a1-family-people-0009"
   },
   {
    "front": "das Kind",
@@ -1309,7 +1145,8 @@
    "plural": "die Kinder",
    "exampleDe": "Das Kind spielt im Garten.",
    "exampleId": "Anak itu bermain di taman.",
-   "exampleEn": "The child is playing in the garden."
+   "exampleEn": "The child is playing in the garden.",
+   "id": "de-a1-family-people-0010"
   },
   {
    "front": "der Mann",
@@ -1322,7 +1159,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "der",
-   "plural": "die Männer"
+   "plural": "die Männer",
+   "id": "de-a1-family-people-0011"
   },
   {
    "front": "die Frau",
@@ -1335,7 +1173,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "die",
-   "plural": "die Frauen"
+   "plural": "die Frauen",
+   "id": "de-a1-family-people-0012"
   },
   {
    "front": "der Freund",
@@ -1348,7 +1187,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "der",
-   "plural": "die Freunde"
+   "plural": "die Freunde",
+   "id": "de-a1-family-people-0013"
   },
   {
    "front": "die Freundin",
@@ -1361,7 +1201,8 @@
    "level": "A1",
    "topic": "family-people",
    "gender": "die",
-   "plural": "die Freundinnen"
+   "plural": "die Freundinnen",
+   "id": "de-a1-family-people-0014"
   },
   {
    "front": "Leute",
@@ -1372,7 +1213,8 @@
     "family-people"
    ],
    "level": "A1",
-   "topic": "family-people"
+   "topic": "family-people",
+   "id": "de-a1-family-people-0015"
   },
   {
    "front": "Mädchen",
@@ -1383,7 +1225,8 @@
     "family-people"
    ],
    "level": "A1",
-   "topic": "family-people"
+   "topic": "family-people",
+   "id": "de-a1-family-people-0016"
   },
   {
    "front": "Junge",
@@ -1394,7 +1237,8 @@
     "family-people"
    ],
    "level": "A1",
-   "topic": "family-people"
+   "topic": "family-people",
+   "id": "de-a1-family-people-0017"
   },
   {
    "front": "Familie",
@@ -1405,7 +1249,8 @@
     "family-people"
    ],
    "level": "A1",
-   "topic": "family-people"
+   "topic": "family-people",
+   "id": "de-a1-family-people-0018"
   },
   {
    "front": "Baby",
@@ -1416,7 +1261,8 @@
     "family-people"
    ],
    "level": "A1",
-   "topic": "family-people"
+   "topic": "family-people",
+   "id": "de-a1-family-people-0019"
   },
   {
    "front": "Mensch",
@@ -1427,7 +1273,8 @@
     "family-people"
    ],
    "level": "A1",
-   "topic": "family-people"
+   "topic": "family-people",
+   "id": "de-a1-family-people-0020"
   },
   {
    "front": "Onkel",
@@ -1438,7 +1285,8 @@
     "family-people"
    ],
    "level": "A1",
-   "topic": "family-people"
+   "topic": "family-people",
+   "id": "de-a1-family-people-0021"
   },
   {
    "front": "das Brot",
@@ -1455,7 +1303,8 @@
    "ipa": "[bʁoːt]",
    "exampleDe": "Ich kaufe frisches Brot.",
    "exampleId": "Saya membeli roti segar.",
-   "exampleEn": "I am buying fresh bread."
+   "exampleEn": "I am buying fresh bread.",
+   "id": "de-a1-food-drink-0001"
   },
   {
    "front": "die Butter",
@@ -1467,7 +1316,8 @@
    ],
    "level": "A1",
    "topic": "food-drink",
-   "gender": "die"
+   "gender": "die",
+   "id": "de-a1-food-drink-0002"
   },
   {
    "front": "der Käse",
@@ -1480,7 +1330,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "der",
-   "plural": "die Käse"
+   "plural": "die Käse",
+   "id": "de-a1-food-drink-0003"
   },
   {
    "front": "das Ei",
@@ -1493,7 +1344,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "das",
-   "plural": "die Eier"
+   "plural": "die Eier",
+   "id": "de-a1-food-drink-0004"
   },
   {
    "front": "die Milch",
@@ -1505,7 +1357,8 @@
    ],
    "level": "A1",
    "topic": "food-drink",
-   "gender": "die"
+   "gender": "die",
+   "id": "de-a1-food-drink-0005"
   },
   {
    "front": "das Wasser",
@@ -1522,7 +1375,8 @@
    "ipa": "[ˈvasɐ]",
    "exampleDe": "Ein Glas Wasser, bitte.",
    "exampleId": "Satu gelas air, tolong.",
-   "exampleEn": "A glass of water, please."
+   "exampleEn": "A glass of water, please.",
+   "id": "de-a1-food-drink-0006"
   },
   {
    "front": "der Kaffee",
@@ -1535,7 +1389,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "der",
-   "plural": "die Kaffees"
+   "plural": "die Kaffees",
+   "id": "de-a1-food-drink-0007"
   },
   {
    "front": "der Tee",
@@ -1548,7 +1403,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "der",
-   "plural": "die Tees"
+   "plural": "die Tees",
+   "id": "de-a1-food-drink-0008"
   },
   {
    "front": "das Bier",
@@ -1561,7 +1417,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "das",
-   "plural": "die Biere"
+   "plural": "die Biere",
+   "id": "de-a1-food-drink-0009"
   },
   {
    "front": "der Wein",
@@ -1574,7 +1431,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "der",
-   "plural": "die Weine"
+   "plural": "die Weine",
+   "id": "de-a1-food-drink-0010"
   },
   {
    "front": "der Apfel",
@@ -1591,7 +1449,8 @@
    "ipa": "[ˈapfl̩]",
    "exampleDe": "Ich esse einen Apfel.",
    "exampleId": "Saya makan sebuah apel.",
-   "exampleEn": "I am eating an apple."
+   "exampleEn": "I am eating an apple.",
+   "id": "de-a1-food-drink-0011"
   },
   {
    "front": "die Banane",
@@ -1604,12 +1463,13 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "die",
-   "plural": "die Bananen"
+   "plural": "die Bananen",
+   "id": "de-a1-food-drink-0012"
   },
   {
    "front": "die Orange",
-   "meaningId": "jeruk",
-   "meaningEn": "orange",
+   "meaningId": "die Orange (benda): jeruk; orange (sifat): jingga · oranye",
+   "meaningEn": "die Orange (noun): orange; orange (adjective): orange · orangey",
    "wordType": "noun",
    "tags": [
     "food-drink"
@@ -1617,7 +1477,9 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "die",
-   "plural": "die Orangen"
+   "plural": "die Orangen",
+   "id": "de-a1-food-drink-0013",
+   "reviewedSenses": true
   },
   {
    "front": "das Fleisch",
@@ -1629,7 +1491,8 @@
    ],
    "level": "A1",
    "topic": "food-drink",
-   "gender": "das"
+   "gender": "das",
+   "id": "de-a1-food-drink-0014"
   },
   {
    "front": "der Fisch",
@@ -1642,7 +1505,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "der",
-   "plural": "die Fische"
+   "plural": "die Fische",
+   "id": "de-a1-food-drink-0015"
   },
   {
    "front": "das Hähnchen",
@@ -1655,7 +1519,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "das",
-   "plural": "die Hähnchen"
+   "plural": "die Hähnchen",
+   "id": "de-a1-food-drink-0016"
   },
   {
    "front": "der Reis",
@@ -1667,7 +1532,8 @@
    ],
    "level": "A1",
    "topic": "food-drink",
-   "gender": "der"
+   "gender": "der",
+   "id": "de-a1-food-drink-0017"
   },
   {
    "front": "die Kartoffel",
@@ -1680,7 +1546,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "die",
-   "plural": "die Kartoffeln"
+   "plural": "die Kartoffeln",
+   "id": "de-a1-food-drink-0018"
   },
   {
    "front": "der Salat",
@@ -1693,7 +1560,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "der",
-   "plural": "die Salate"
+   "plural": "die Salate",
+   "id": "de-a1-food-drink-0019"
   },
   {
    "front": "das Gemüse",
@@ -1706,7 +1574,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "das",
-   "plural": "die Gemüse"
+   "plural": "die Gemüse",
+   "id": "de-a1-food-drink-0020"
   },
   {
    "front": "der Zucker",
@@ -1718,7 +1587,8 @@
    ],
    "level": "A1",
    "topic": "food-drink",
-   "gender": "der"
+   "gender": "der",
+   "id": "de-a1-food-drink-0021"
   },
   {
    "front": "das Salz",
@@ -1731,7 +1601,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "das",
-   "plural": "die Salze"
+   "plural": "die Salze",
+   "id": "de-a1-food-drink-0022"
   },
   {
    "front": "der Kuchen",
@@ -1744,7 +1615,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "der",
-   "plural": "die Kuchen"
+   "plural": "die Kuchen",
+   "id": "de-a1-food-drink-0023"
   },
   {
    "front": "das Frühstück",
@@ -1757,7 +1629,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "das",
-   "plural": "die Frühstücke"
+   "plural": "die Frühstücke",
+   "id": "de-a1-food-drink-0024"
   },
   {
    "front": "das Mittagessen",
@@ -1770,7 +1643,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "das",
-   "plural": "die Mittagessen"
+   "plural": "die Mittagessen",
+   "id": "de-a1-food-drink-0025"
   },
   {
    "front": "das Abendessen",
@@ -1783,7 +1657,8 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "das",
-   "plural": "die Abendessen"
+   "plural": "die Abendessen",
+   "id": "de-a1-food-drink-0026"
   },
   {
    "front": "die Speisekarte",
@@ -1796,29 +1671,21 @@
    "level": "A1",
    "topic": "food-drink",
    "gender": "die",
-   "plural": "die Speisekarten"
+   "plural": "die Speisekarten",
+   "id": "de-a1-food-drink-0027"
   },
   {
    "front": "trinken",
-   "meaningId": "minum",
-   "meaningEn": "to drink",
+   "meaningId": "trinken (kerja): minum; Trinken (benda): kegiatan minum",
+   "meaningEn": "trinken (verb): to drink; Trinken (noun): drinking",
    "wordType": "verb",
    "tags": [
     "food-drink"
    ],
    "level": "A1",
-   "topic": "food-drink"
-  },
-  {
-   "front": "Trinken",
-   "meaningId": "peminuman",
-   "meaningEn": "drinking",
-   "wordType": "noun",
-   "tags": [
-    "food-drink"
-   ],
-   "level": "A1",
-   "topic": "food-drink"
+   "topic": "food-drink",
+   "id": "de-a1-food-drink-0028",
+   "reviewedSenses": true
   },
   {
    "front": "das Haus",
@@ -1832,7 +1699,8 @@
    "topic": "home-daily",
    "gender": "das",
    "plural": "die Häuser",
-   "ipa": "[haʊ̯s]"
+   "ipa": "[haʊ̯s]",
+   "id": "de-a1-home-daily-0001"
   },
   {
    "front": "die Wohnung",
@@ -1845,7 +1713,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "die",
-   "plural": "die Wohnungen"
+   "plural": "die Wohnungen",
+   "id": "de-a1-home-daily-0002"
   },
   {
    "front": "die Küche",
@@ -1858,7 +1727,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "die",
-   "plural": "die Küchen"
+   "plural": "die Küchen",
+   "id": "de-a1-home-daily-0003"
   },
   {
    "front": "das Bad",
@@ -1871,7 +1741,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "das",
-   "plural": "die Bäder"
+   "plural": "die Bäder",
+   "id": "de-a1-home-daily-0004"
   },
   {
    "front": "das Schlafzimmer",
@@ -1884,7 +1755,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "das",
-   "plural": "die Schlafzimmer"
+   "plural": "die Schlafzimmer",
+   "id": "de-a1-home-daily-0005"
   },
   {
    "front": "das Wohnzimmer",
@@ -1897,7 +1769,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "das",
-   "plural": "die Wohnzimmer"
+   "plural": "die Wohnzimmer",
+   "id": "de-a1-home-daily-0006"
   },
   {
    "front": "der Tisch",
@@ -1910,7 +1783,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "der",
-   "plural": "die Tische"
+   "plural": "die Tische",
+   "id": "de-a1-home-daily-0007"
   },
   {
    "front": "der Stuhl",
@@ -1923,7 +1797,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "der",
-   "plural": "die Stühle"
+   "plural": "die Stühle",
+   "id": "de-a1-home-daily-0008"
   },
   {
    "front": "das Bett",
@@ -1936,7 +1811,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "das",
-   "plural": "die Betten"
+   "plural": "die Betten",
+   "id": "de-a1-home-daily-0009"
   },
   {
    "front": "die Tür",
@@ -1952,7 +1828,8 @@
    "plural": "die Türen",
    "exampleDe": "Bitte schließe die Tür.",
    "exampleId": "Tolong tutup pintunya.",
-   "exampleEn": "Please close the door."
+   "exampleEn": "Please close the door.",
+   "id": "de-a1-home-daily-0010"
   },
   {
    "front": "das Fenster",
@@ -1965,7 +1842,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "das",
-   "plural": "die Fenster"
+   "plural": "die Fenster",
+   "id": "de-a1-home-daily-0011"
   },
   {
    "front": "die Lampe",
@@ -1978,7 +1856,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "die",
-   "plural": "die Lampen"
+   "plural": "die Lampen",
+   "id": "de-a1-home-daily-0012"
   },
   {
    "front": "das Buch",
@@ -1992,7 +1871,8 @@
    "topic": "home-daily",
    "gender": "das",
    "plural": "die Bücher",
-   "ipa": "[buːx]"
+   "ipa": "[buːx]",
+   "id": "de-a1-home-daily-0013"
   },
   {
    "front": "der Schlüssel",
@@ -2005,7 +1885,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "der",
-   "plural": "die Schlüssel"
+   "plural": "die Schlüssel",
+   "id": "de-a1-home-daily-0014"
   },
   {
    "front": "das Handy",
@@ -2018,7 +1899,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "das",
-   "plural": "die Handys"
+   "plural": "die Handys",
+   "id": "de-a1-home-daily-0015"
   },
   {
    "front": "die Tasche",
@@ -2031,7 +1913,8 @@
    "level": "A1",
    "topic": "home-daily",
    "gender": "die",
-   "plural": "die Taschen"
+   "plural": "die Taschen",
+   "id": "de-a1-home-daily-0016"
   },
   {
    "front": "wohnen",
@@ -2042,7 +1925,8 @@
     "home-daily"
    ],
    "level": "A1",
-   "topic": "home-daily"
+   "topic": "home-daily",
+   "id": "de-a1-home-daily-0017"
   },
   {
    "front": "Zimmer",
@@ -2053,7 +1937,8 @@
     "home-daily"
    ],
    "level": "A1",
-   "topic": "home-daily"
+   "topic": "home-daily",
+   "id": "de-a1-home-daily-0018"
   },
   {
    "front": "rot",
@@ -2064,7 +1949,9 @@
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0001",
+   "reviewedSenses": true
   },
   {
    "front": "blau",
@@ -2075,7 +1962,9 @@
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0002",
+   "reviewedSenses": true
   },
   {
    "front": "gelb",
@@ -2086,7 +1975,9 @@
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0003",
+   "reviewedSenses": true
   },
   {
    "front": "grün",
@@ -2097,29 +1988,35 @@
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0004",
+   "reviewedSenses": true
   },
   {
    "front": "schwarz",
    "meaningId": "hitam",
-   "meaningEn": "black",
+   "meaningEn": "schwarz (adjective): black; Schwarz (noun): black · sable",
    "wordType": "adjective",
    "tags": [
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0005",
+   "reviewedSenses": true
   },
   {
    "front": "weiß",
    "meaningId": "putih",
-   "meaningEn": "white",
+   "meaningEn": "weiß (adjective): white; Weiß (noun): white · whiteness",
    "wordType": "adjective",
    "tags": [
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0006",
+   "reviewedSenses": true
   },
   {
    "front": "grau",
@@ -2130,7 +2027,8 @@
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0007"
   },
   {
    "front": "braun",
@@ -2141,7 +2039,9 @@
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0008",
+   "reviewedSenses": true
   },
   {
    "front": "groß",
@@ -2152,7 +2052,8 @@
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0009"
   },
   {
    "front": "klein",
@@ -2163,18 +2064,8 @@
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
-  },
-  {
-   "front": "Weiß",
-   "meaningId": "putih",
-   "meaningEn": "white · whiteness",
-   "wordType": "noun",
-   "tags": [
-    "colors-shapes"
-   ],
-   "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0010"
   },
   {
    "front": "kurz",
@@ -2185,7 +2076,8 @@
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0012"
   },
   {
    "front": "lang",
@@ -2196,7 +2088,8 @@
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0013"
   },
   {
    "front": "hoch",
@@ -2207,7 +2100,8 @@
     "colors-shapes"
    ],
    "level": "A1",
-   "topic": "colors-shapes"
+   "topic": "colors-shapes",
+   "id": "de-a1-colors-shapes-0014"
   },
   {
    "front": "der Kopf",
@@ -2220,7 +2114,8 @@
    "level": "A1",
    "topic": "body-health",
    "gender": "der",
-   "plural": "die Köpfe"
+   "plural": "die Köpfe",
+   "id": "de-a1-body-health-0001"
   },
   {
    "front": "das Auge",
@@ -2233,7 +2128,8 @@
    "level": "A1",
    "topic": "body-health",
    "gender": "das",
-   "plural": "die Augen"
+   "plural": "die Augen",
+   "id": "de-a1-body-health-0002"
   },
   {
    "front": "die Hand",
@@ -2246,12 +2142,13 @@
    "level": "A1",
    "topic": "body-health",
    "gender": "die",
-   "plural": "die Hände"
+   "plural": "die Hände",
+   "id": "de-a1-body-health-0003"
   },
   {
    "front": "der Arm",
-   "meaningId": "lengan",
-   "meaningEn": "arm",
+   "meaningId": "der Arm (benda): lengan; arm (sifat): miskin · papa",
+   "meaningEn": "der Arm (noun): arm; arm (adjective): poor · needy",
    "wordType": "noun",
    "tags": [
     "body-health"
@@ -2259,7 +2156,9 @@
    "level": "A1",
    "topic": "body-health",
    "gender": "der",
-   "plural": "die Arme"
+   "plural": "die Arme",
+   "id": "de-a1-body-health-0004",
+   "reviewedSenses": true
   },
   {
    "front": "das Bein",
@@ -2272,7 +2171,8 @@
    "level": "A1",
    "topic": "body-health",
    "gender": "das",
-   "plural": "die Beine"
+   "plural": "die Beine",
+   "id": "de-a1-body-health-0005"
   },
   {
    "front": "der Bauch",
@@ -2285,7 +2185,8 @@
    "level": "A1",
    "topic": "body-health",
    "gender": "der",
-   "plural": "die Bäuche"
+   "plural": "die Bäuche",
+   "id": "de-a1-body-health-0006"
   },
   {
    "front": "der Zahn",
@@ -2298,7 +2199,8 @@
    "level": "A1",
    "topic": "body-health",
    "gender": "der",
-   "plural": "die Zähne"
+   "plural": "die Zähne",
+   "id": "de-a1-body-health-0007"
   },
   {
    "front": "krank",
@@ -2312,7 +2214,8 @@
    "topic": "body-health",
    "exampleDe": "Ich bin krank.",
    "exampleId": "Saya sakit.",
-   "exampleEn": "I am sick."
+   "exampleEn": "I am sick.",
+   "id": "de-a1-body-health-0008"
   },
   {
    "front": "der Arzt",
@@ -2325,7 +2228,8 @@
    "level": "A1",
    "topic": "body-health",
    "gender": "der",
-   "plural": "die Ärzte"
+   "plural": "die Ärzte",
+   "id": "de-a1-body-health-0009"
   },
   {
    "front": "das Medikament",
@@ -2338,7 +2242,8 @@
    "level": "A1",
    "topic": "body-health",
    "gender": "das",
-   "plural": "die Medikamente"
+   "plural": "die Medikamente",
+   "id": "de-a1-body-health-0010"
   },
   {
    "front": "Gesicht",
@@ -2349,7 +2254,8 @@
     "body-health"
    ],
    "level": "A1",
-   "topic": "body-health"
+   "topic": "body-health",
+   "id": "de-a1-body-health-0011"
   },
   {
    "front": "Blut",
@@ -2360,29 +2266,32 @@
     "body-health"
    ],
    "level": "A1",
-   "topic": "body-health"
+   "topic": "body-health",
+   "id": "de-a1-body-health-0012"
   },
   {
    "front": "Herz",
-   "meaningId": "jantung · hati",
+   "meaningId": "jantung; hati (kiasan)",
    "meaningEn": "heart",
    "wordType": "noun",
    "tags": [
     "body-health"
    ],
    "level": "A1",
-   "topic": "body-health"
+   "topic": "body-health",
+   "id": "de-a1-body-health-0013"
   },
   {
    "front": "Körper",
-   "meaningId": "badan · tubuh",
+   "meaningId": "tubuh; benda; lapangan (aljabar)",
    "meaningEn": "body · field",
    "wordType": "noun",
    "tags": [
     "body-health"
    ],
    "level": "A1",
-   "topic": "body-health"
+   "topic": "body-health",
+   "id": "de-a1-body-health-0014"
   },
   {
    "front": "der Bahnhof",
@@ -2395,7 +2304,8 @@
    "level": "A1",
    "topic": "directions-places",
    "gender": "der",
-   "plural": "die Bahnhöfe"
+   "plural": "die Bahnhöfe",
+   "id": "de-a1-directions-places-0001"
   },
   {
    "front": "der Flughafen",
@@ -2408,7 +2318,8 @@
    "level": "A1",
    "topic": "directions-places",
    "gender": "der",
-   "plural": "die Flughäfen"
+   "plural": "die Flughäfen",
+   "id": "de-a1-directions-places-0002"
   },
   {
    "front": "die Schule",
@@ -2421,7 +2332,8 @@
    "level": "A1",
    "topic": "directions-places",
    "gender": "die",
-   "plural": "die Schulen"
+   "plural": "die Schulen",
+   "id": "de-a1-directions-places-0003"
   },
   {
    "front": "die Universität",
@@ -2434,7 +2346,8 @@
    "level": "A1",
    "topic": "directions-places",
    "gender": "die",
-   "plural": "die Universitäten"
+   "plural": "die Universitäten",
+   "id": "de-a1-directions-places-0004"
   },
   {
    "front": "das Krankenhaus",
@@ -2447,7 +2360,8 @@
    "level": "A1",
    "topic": "directions-places",
    "gender": "das",
-   "plural": "die Krankenhäuser"
+   "plural": "die Krankenhäuser",
+   "id": "de-a1-directions-places-0005"
   },
   {
    "front": "der Supermarkt",
@@ -2460,7 +2374,8 @@
    "level": "A1",
    "topic": "directions-places",
    "gender": "der",
-   "plural": "die Supermärkte"
+   "plural": "die Supermärkte",
+   "id": "de-a1-directions-places-0006"
   },
   {
    "front": "das Restaurant",
@@ -2473,7 +2388,8 @@
    "level": "A1",
    "topic": "directions-places",
    "gender": "das",
-   "plural": "die Restaurants"
+   "plural": "die Restaurants",
+   "id": "de-a1-directions-places-0007"
   },
   {
    "front": "die Apotheke",
@@ -2486,7 +2402,8 @@
    "level": "A1",
    "topic": "directions-places",
    "gender": "die",
-   "plural": "die Apotheken"
+   "plural": "die Apotheken",
+   "id": "de-a1-directions-places-0008"
   },
   {
    "front": "der Park",
@@ -2499,7 +2416,8 @@
    "level": "A1",
    "topic": "directions-places",
    "gender": "der",
-   "plural": "die Parks"
+   "plural": "die Parks",
+   "id": "de-a1-directions-places-0009"
   },
   {
    "front": "die Straße",
@@ -2512,7 +2430,8 @@
    "level": "A1",
    "topic": "directions-places",
    "gender": "die",
-   "plural": "die Straßen"
+   "plural": "die Straßen",
+   "id": "de-a1-directions-places-0010"
   },
   {
    "front": "hier",
@@ -2523,29 +2442,32 @@
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0011"
   },
   {
    "front": "vor",
-   "meaningId": "di depan",
-   "meaningEn": "before · ago · ere",
+   "meaningId": "di depan; sebelum; yang lalu",
+   "meaningEn": "in front of; before; ago",
    "wordType": "other",
    "tags": [
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0012"
   },
   {
    "front": "über",
-   "meaningId": "atas",
-   "meaningEn": "above · over",
+   "meaningId": "di atas; tentang; lebih dari",
+   "meaningEn": "over; about; more than",
    "wordType": "other",
    "tags": [
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0013"
   },
   {
    "front": "Weg",
@@ -2556,29 +2478,21 @@
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0014"
   },
   {
    "front": "Gerade",
-   "meaningId": "garis",
-   "meaningEn": "straight line · line",
+   "meaningId": "Gerade (benda): garis lurus; gerade (sifat): lurus; rata",
+   "meaningEn": "Gerade (noun): straight line; gerade (adjective): straight; even",
    "wordType": "noun",
    "tags": [
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
-  },
-  {
-   "front": "gerade",
-   "meaningId": "lurus",
-   "meaningEn": "even",
-   "wordType": "adjective",
-   "tags": [
-    "directions-places"
-   ],
-   "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0015",
+   "reviewedSenses": true
   },
   {
    "front": "dort",
@@ -2589,18 +2503,20 @@
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0017"
   },
   {
    "front": "unter",
-   "meaningId": "bawah",
-   "meaningEn": "below · under",
+   "meaningId": "di bawah; di antara",
+   "meaningEn": "under; among",
    "wordType": "other",
    "tags": [
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0018"
   },
   {
    "front": "Stadt",
@@ -2611,18 +2527,20 @@
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0019"
   },
   {
    "front": "weit",
-   "meaningId": "lebar",
-   "meaningEn": "wide",
+   "meaningId": "jauh; luas",
+   "meaningEn": "far; wide",
    "wordType": "adjective",
    "tags": [
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0020"
   },
   {
    "front": "hinter",
@@ -2633,29 +2551,32 @@
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0021"
   },
   {
    "front": "oben",
-   "meaningId": "diatas",
-   "meaningEn": "above · upstairs",
+   "meaningId": "di atas; di lantai atas",
+   "meaningEn": "above; upstairs",
    "wordType": "adverb",
    "tags": [
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0022"
   },
   {
    "front": "Seite",
-   "meaningId": "halaman",
+   "meaningId": "sisi; halaman",
    "meaningEn": "side · page",
    "wordType": "noun",
    "tags": [
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0023"
   },
   {
    "front": "zwischen",
@@ -2666,29 +2587,32 @@
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0024"
   },
   {
    "front": "unten",
-   "meaningId": "lantai bawah",
-   "meaningEn": "downstairs · below · down there",
+   "meaningId": "di bawah; di lantai bawah",
+   "meaningEn": "below; downstairs",
    "wordType": "adverb",
    "tags": [
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0025"
   },
   {
    "front": "Platz",
-   "meaningId": "lapangan",
+   "meaningId": "tempat; lapangan; ruang tersedia",
    "meaningEn": "square · plaza · circus",
    "wordType": "noun",
    "tags": [
     "directions-places"
    ],
    "level": "A1",
-   "topic": "directions-places"
+   "topic": "directions-places",
+   "id": "de-a1-directions-places-0026"
   },
   {
    "front": "fahren",
@@ -2699,7 +2623,8 @@
     "travel-transport"
    ],
    "level": "A1",
-   "topic": "travel-transport"
+   "topic": "travel-transport",
+   "id": "de-a1-travel-transport-0001"
   },
   {
    "front": "der Zug",
@@ -2712,7 +2637,8 @@
    "level": "A1",
    "topic": "travel-transport",
    "gender": "der",
-   "plural": "die Züge"
+   "plural": "die Züge",
+   "id": "de-a1-travel-transport-0002"
   },
   {
    "front": "das Auto",
@@ -2725,7 +2651,8 @@
    "level": "A1",
    "topic": "travel-transport",
    "gender": "das",
-   "plural": "die Autos"
+   "plural": "die Autos",
+   "id": "de-a1-travel-transport-0003"
   },
   {
    "front": "das Fahrrad",
@@ -2738,7 +2665,8 @@
    "level": "A1",
    "topic": "travel-transport",
    "gender": "das",
-   "plural": "die Fahrräder"
+   "plural": "die Fahrräder",
+   "id": "de-a1-travel-transport-0004"
   },
   {
    "front": "die U-Bahn",
@@ -2751,7 +2679,8 @@
    "level": "A1",
    "topic": "travel-transport",
    "gender": "die",
-   "plural": "die U-Bahnen"
+   "plural": "die U-Bahnen",
+   "id": "de-a1-travel-transport-0005"
   },
   {
    "front": "die Fahrkarte",
@@ -2767,29 +2696,33 @@
    "plural": "die Fahrkarten",
    "exampleDe": "Eine Fahrkarte nach Berlin, bitte.",
    "exampleId": "Satu tiket ke Berlin, tolong.",
-   "exampleEn": "One ticket to Berlin, please."
+   "exampleEn": "One ticket to Berlin, please.",
+   "id": "de-a1-travel-transport-0006"
   },
   {
    "front": "Land",
-   "meaningId": "negara · bangsa",
-   "meaningEn": "country · land",
+   "meaningId": "negara; daratan",
+   "meaningEn": "country; land",
    "wordType": "noun",
    "tags": [
     "travel-transport"
    ],
    "level": "A1",
-   "topic": "travel-transport"
+   "topic": "travel-transport",
+   "id": "de-a1-travel-transport-0007"
   },
   {
    "front": "Wagen",
-   "meaningId": "gerbong",
-   "meaningEn": "cart · car · carriage",
+   "meaningId": "Wagen (benda): mobil; gerobak; gerbong; wagen (kerja): berani melakukan; mempertaruhkan",
+   "meaningEn": "Wagen (noun): car; cart; carriage; wagen (verb): to dare; to risk",
    "wordType": "noun",
    "tags": [
     "travel-transport"
    ],
    "level": "A1",
-   "topic": "travel-transport"
+   "topic": "travel-transport",
+   "id": "de-a1-travel-transport-0008",
+   "reviewedSenses": true
   },
   {
    "front": "Pass",
@@ -2800,7 +2733,8 @@
     "travel-transport"
    ],
    "level": "A1",
-   "topic": "travel-transport"
+   "topic": "travel-transport",
+   "id": "de-a1-travel-transport-0009"
   },
   {
    "front": "Schiff",
@@ -2811,7 +2745,8 @@
     "travel-transport"
    ],
    "level": "A1",
-   "topic": "travel-transport"
+   "topic": "travel-transport",
+   "id": "de-a1-travel-transport-0010"
   },
   {
    "front": "arbeiten",
@@ -2822,12 +2757,13 @@
     "work-school"
    ],
    "level": "A1",
-   "topic": "work-school"
+   "topic": "work-school",
+   "id": "de-a1-work-school-0001"
   },
   {
    "front": "lernen",
-   "meaningId": "belajar",
-   "meaningEn": "to learn",
+   "meaningId": "lernen (kerja): belajar; Lernen (benda): kegiatan belajar; pembelajaran",
+   "meaningEn": "lernen (verb): to learn; Lernen (noun): learning · study",
    "wordType": "verb",
    "tags": [
     "work-school"
@@ -2836,7 +2772,9 @@
    "topic": "work-school",
    "exampleDe": "Ich lerne jeden Tag Deutsch.",
    "exampleId": "Saya belajar bahasa Jerman setiap hari.",
-   "exampleEn": "I study German every day."
+   "exampleEn": "I study German every day.",
+   "id": "de-a1-work-school-0002",
+   "reviewedSenses": true
   },
   {
    "front": "die Arbeit",
@@ -2849,7 +2787,8 @@
    "level": "A1",
    "topic": "work-school",
    "gender": "die",
-   "plural": "die Arbeiten"
+   "plural": "die Arbeiten",
+   "id": "de-a1-work-school-0003"
   },
   {
    "front": "der Beruf",
@@ -2862,7 +2801,8 @@
    "level": "A1",
    "topic": "work-school",
    "gender": "der",
-   "plural": "die Berufe"
+   "plural": "die Berufe",
+   "id": "de-a1-work-school-0004"
   },
   {
    "front": "das Büro",
@@ -2875,7 +2815,8 @@
    "level": "A1",
    "topic": "work-school",
    "gender": "das",
-   "plural": "die Büros"
+   "plural": "die Büros",
+   "id": "de-a1-work-school-0005"
   },
   {
    "front": "der Lehrer",
@@ -2888,7 +2829,8 @@
    "level": "A1",
    "topic": "work-school",
    "gender": "der",
-   "plural": "die Lehrer"
+   "plural": "die Lehrer",
+   "id": "de-a1-work-school-0006"
   },
   {
    "front": "die Lehrerin",
@@ -2901,7 +2843,8 @@
    "level": "A1",
    "topic": "work-school",
    "gender": "die",
-   "plural": "die Lehrerinnen"
+   "plural": "die Lehrerinnen",
+   "id": "de-a1-work-school-0007"
   },
   {
    "front": "der Student",
@@ -2914,7 +2857,8 @@
    "level": "A1",
    "topic": "work-school",
    "gender": "der",
-   "plural": "die Studenten"
+   "plural": "die Studenten",
+   "id": "de-a1-work-school-0008"
   },
   {
    "front": "die Prüfung",
@@ -2927,7 +2871,8 @@
    "level": "A1",
    "topic": "work-school",
    "gender": "die",
-   "plural": "die Prüfungen"
+   "plural": "die Prüfungen",
+   "id": "de-a1-work-school-0009"
   },
   {
    "front": "die Hausaufgabe",
@@ -2940,7 +2885,8 @@
    "level": "A1",
    "topic": "work-school",
    "gender": "die",
-   "plural": "die Hausaufgaben"
+   "plural": "die Hausaufgaben",
+   "id": "de-a1-work-school-0010"
   },
   {
    "front": "der Termin",
@@ -2953,7 +2899,8 @@
    "level": "A1",
    "topic": "work-school",
    "gender": "der",
-   "plural": "die Termine"
+   "plural": "die Termine",
+   "id": "de-a1-work-school-0011"
   },
   {
    "front": "Job",
@@ -2964,23 +2911,13 @@
     "work-school"
    ],
    "level": "A1",
-   "topic": "work-school"
-  },
-  {
-   "front": "Lernen",
-   "meaningId": "kajian",
-   "meaningEn": "learning · study",
-   "wordType": "noun",
-   "tags": [
-    "work-school"
-   ],
-   "level": "A1",
-   "topic": "work-school"
+   "topic": "work-school",
+   "id": "de-a1-work-school-0012"
   },
   {
    "front": "sein",
-   "meaningId": "adalah / berada",
-   "meaningEn": "to be",
+   "meaningId": "sein (kerja): adalah / berada; Sein (benda): keberadaan; eksistensi",
+   "meaningEn": "sein (verb): to be; Sein (noun): being · existence · essence",
    "wordType": "verb",
    "tags": [
     "function-words-1"
@@ -2989,7 +2926,9 @@
    "topic": "function-words-1",
    "exampleDe": "Ich bin müde.",
    "exampleId": "Saya lelah.",
-   "exampleEn": "I am tired."
+   "exampleEn": "I am tired.",
+   "id": "de-a1-function-words-1-0001",
+   "reviewedSenses": true
   },
   {
    "front": "Du",
@@ -3000,7 +2939,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0002"
   },
   {
    "front": "nicht",
@@ -3011,18 +2951,20 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0003"
   },
   {
    "front": "die",
-   "meaningId": "-nya",
-   "meaningEn": "the",
+   "meaningId": "kata sandang untuk nomina feminin atau jamak",
+   "meaningEn": "the (feminine singular or plural article)",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0004"
   },
   {
    "front": "und",
@@ -3033,18 +2975,20 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0005"
   },
   {
    "front": "der",
-   "meaningId": "-nya",
-   "meaningEn": "the",
+   "meaningId": "kata sandang untuk nomina maskulin (nominatif)",
+   "meaningEn": "the (masculine nominative article)",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0006"
   },
   {
    "front": "was",
@@ -3055,62 +2999,21 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0007"
   },
   {
    "front": "zu",
-   "meaningId": "tertutup",
-   "meaningEn": "closed",
+   "meaningId": "zu (sifat): tertutup; zu (keterangan): terlalu (misalnya zu viel: terlalu banyak); zu (kata fungsi/seruan): ke; untuk; penanda infinitif",
+   "meaningEn": "zu (adjective): closed; zu (adverb): too (e.g. too much); zu (function word/interjection): to; for; infinitive marker",
    "wordType": "adjective",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
-  },
-  {
-   "front": "zu",
-   "meaningId": "tertutup",
-   "meaningEn": "closed",
-   "wordType": "adverb",
-   "tags": [
-    "function-words-1"
-   ],
-   "level": "A1",
-   "topic": "function-words-1"
-  },
-  {
-   "front": "zu",
-   "meaningId": "banding",
-   "meaningEn": "to",
-   "wordType": "other",
-   "tags": [
-    "function-words-1"
-   ],
-   "level": "A1",
-   "topic": "function-words-1"
-  },
-  {
-   "front": "ein",
-   "meaningId": "pakai",
-   "meaningEn": "on",
-   "wordType": "adjective",
-   "tags": [
-    "function-words-1"
-   ],
-   "level": "A1",
-   "topic": "function-words-1"
-  },
-  {
-   "front": "ein",
-   "meaningId": "satu",
-   "meaningEn": "a · an",
-   "wordType": "other",
-   "tags": [
-    "function-words-1"
-   ],
-   "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0008",
+   "reviewedSenses": true
   },
   {
    "front": "in",
@@ -3121,7 +3024,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0013"
   },
   {
    "front": "mit",
@@ -3132,7 +3036,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0014"
   },
   {
    "front": "dass",
@@ -3143,7 +3048,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0015"
   },
   {
    "front": "aber",
@@ -3154,40 +3060,33 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0016"
   },
   {
    "front": "so",
-   "meaningId": "berikutnya",
-   "meaningEn": "then",
+   "meaningId": "so (keterangan): begitu; demikian; sangat; so (kata fungsi/seruan): seperti; dengan cara demikian",
+   "meaningEn": "so (adverb): so; thus; very; so (function word/interjection): as; in this way",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
-  },
-  {
-   "front": "so",
-   "meaningId": "begini",
-   "meaningEn": "as",
-   "wordType": "other",
-   "tags": [
-    "function-words-1"
-   ],
-   "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0017",
+   "reviewedSenses": true
   },
   {
    "front": "für",
-   "meaningId": "buat",
+   "meaningId": "untuk",
    "meaningEn": "for",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0019"
   },
   {
    "front": "von",
@@ -3198,7 +3097,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0020"
   },
   {
    "front": "wenn",
@@ -3209,29 +3109,21 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0021"
   },
   {
    "front": "an",
-   "meaningId": "pakai",
-   "meaningEn": "on",
+   "meaningId": "an (keterangan): menyala; aktif; an (kata fungsi/seruan): di; pada; menempel pada (permukaan)",
+   "meaningEn": "an (adverb): on; switched on; an (function word/interjection): at; on; against",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
-  },
-  {
-   "front": "an",
-   "meaningId": "atas",
-   "meaningEn": "on",
-   "wordType": "other",
-   "tags": [
-    "function-words-1"
-   ],
-   "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0022",
+   "reviewedSenses": true
   },
   {
    "front": "noch",
@@ -3242,29 +3134,21 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0024"
   },
   {
    "front": "da",
-   "meaningId": "situ",
-   "meaningEn": "there",
+   "meaningId": "da (keterangan): situ; da (kata fungsi/seruan): karena",
+   "meaningEn": "da (adverb): there; da (function word/interjection): since · because · as",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
-  },
-  {
-   "front": "da",
-   "meaningId": "karena",
-   "meaningEn": "since · because · as",
-   "wordType": "other",
-   "tags": [
-    "function-words-1"
-   ],
-   "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0025",
+   "reviewedSenses": true
   },
   {
    "front": "auch",
@@ -3275,7 +3159,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0027"
   },
   {
    "front": "schon",
@@ -3286,51 +3171,33 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0028"
   },
   {
    "front": "als",
-   "meaningId": "daripada",
-   "meaningEn": "than",
+   "meaningId": "ketika (kejadian lampau); sebagai; daripada",
+   "meaningEn": "when (past event); as; than",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
-  },
-  {
-   "front": "Sein",
-   "meaningId": "ada",
-   "meaningEn": "being · existence · essence",
-   "wordType": "noun",
-   "tags": [
-    "function-words-1"
-   ],
-   "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0029"
   },
   {
    "front": "Mal",
    "meaningId": "kali",
-   "meaningEn": "time",
+   "meaningEn": "Mal (noun): time; mal (function word/interjection): times",
    "wordType": "noun",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
-  },
-  {
-   "front": "mal",
-   "meaningId": "kali",
-   "meaningEn": "times",
-   "wordType": "other",
-   "tags": [
-    "function-words-1"
-   ],
-   "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0031",
+   "reviewedSenses": true
   },
   {
    "front": "aus",
@@ -3341,18 +3208,20 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0033"
   },
   {
    "front": "um",
-   "meaningId": "tentang",
-   "meaningEn": "at · around",
+   "meaningId": "di sekeliling; pada (jam); tentang",
+   "meaningEn": "around; at (a time); about",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0034"
   },
   {
    "front": "oder",
@@ -3363,18 +3232,20 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0035"
   },
   {
    "front": "nach",
-   "meaningId": "ke",
-   "meaningEn": "after · behind · past",
+   "meaningId": "setelah; menuju; menurut",
+   "meaningEn": "after; to; according to",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0036"
   },
   {
    "front": "wo",
@@ -3385,7 +3256,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0037"
   },
   {
    "front": "mehr",
@@ -3396,18 +3268,20 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0038"
   },
   {
    "front": "bei",
-   "meaningId": "sebelah",
-   "meaningEn": "by · near · with",
+   "meaningId": "di dekat; di tempat; bersama",
+   "meaningEn": "near; at; with",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0039"
   },
   {
    "front": "also",
@@ -3418,7 +3292,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0040"
   },
   {
    "front": "warum",
@@ -3429,18 +3304,21 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0041"
   },
   {
    "front": "los",
-   "meaningId": "menjadi",
-   "meaningEn": "come on · go · get moving",
+   "meaningId": "los (keterangan): ayo!; mulai!; lepas; Los (benda): undian; tiket undian; nasib",
+   "meaningEn": "los (adverb): come on!; go!; loose; Los (noun): lot; lottery ticket; fate",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0042",
+   "reviewedSenses": true
   },
   {
    "front": "wieder",
@@ -3451,29 +3329,32 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0043"
   },
   {
    "front": "denn",
-   "meaningId": "karena",
-   "meaningEn": "because · since#Konjunktion",
+   "meaningId": "karena; partikel penegas dalam pertanyaan",
+   "meaningEn": "because; question emphasis particle",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0044"
   },
   {
    "front": "hey",
-   "meaningId": "saluir",
-   "meaningEn": "hey",
+   "meaningId": "hei! (sapaan)",
+   "meaningEn": "hey! (greeting)",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0045"
   },
   {
    "front": "weil",
@@ -3484,29 +3365,21 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0046"
   },
   {
    "front": "damit",
-   "meaningId": "begini",
-   "meaningEn": "with it · with that",
+   "meaningId": "damit (keterangan): dengan itu; damit (kata fungsi/seruan): agar",
+   "meaningEn": "damit (adverb): with it; with that; damit (function word/interjection): so that · in order that · in order to",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
-  },
-  {
-   "front": "damit",
-   "meaningId": "agar",
-   "meaningEn": "so that · in order that · in order to",
-   "wordType": "other",
-   "tags": [
-    "function-words-1"
-   ],
-   "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0047",
+   "reviewedSenses": true
   },
   {
    "front": "nun",
@@ -3517,7 +3390,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0049"
   },
   {
    "front": "zurück",
@@ -3528,7 +3402,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0050"
   },
   {
    "front": "ab",
@@ -3539,18 +3414,21 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0051"
   },
   {
    "front": "wohl",
-   "meaningId": "baik",
-   "meaningEn": "well",
+   "meaningId": "wohl (keterangan): mungkin; barangkali; dengan baik; Wohl (benda): kesejahteraan",
+   "meaningEn": "wohl (adverb): probably; presumably; well; Wohl (noun): well-being · prosperity · welfare",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0052",
+   "reviewedSenses": true
   },
   {
    "front": "durch",
@@ -3561,18 +3439,20 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0053"
   },
   {
    "front": "ob",
-   "meaningId": "balik halaman",
-   "meaningEn": "because of · due to · on account of",
+   "meaningId": "apakah (dalam pertanyaan tidak langsung)",
+   "meaningEn": "whether; if",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0054"
   },
   {
    "front": "raus",
@@ -3583,7 +3463,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0055"
   },
   {
    "front": "wieso",
@@ -3594,18 +3475,21 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0056"
   },
   {
    "front": "selbst",
-   "meaningId": "bahkan",
-   "meaningEn": "even · -self",
+   "meaningId": "bahkan; diri sendiri; jati diri (das Selbst)",
+   "meaningEn": "even; oneself; self (das Selbst)",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0057",
+   "reviewedSenses": true
   },
   {
    "front": "ohne",
@@ -3616,40 +3500,44 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0058"
   },
   {
    "front": "her",
-   "meaningId": "kemari",
-   "meaningEn": "ago · since",
+   "meaningId": "kemari; yang lalu (misalnya lange her)",
+   "meaningEn": "hither; ago",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0059"
   },
   {
    "front": "lange",
-   "meaningId": "jam",
-   "meaningEn": "long · for a long time",
+   "meaningId": "lama; untuk waktu yang lama",
+   "meaningEn": "for a long time",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0060"
   },
   {
    "front": "seit",
-   "meaningId": "dari · mulai",
-   "meaningEn": "since",
+   "meaningId": "sejak; selama (hingga sekarang)",
+   "meaningEn": "since; for (continuing to now)",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0061"
   },
   {
    "front": "wegen",
@@ -3660,7 +3548,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0062"
   },
   {
    "front": "zusammen",
@@ -3671,29 +3560,33 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0063"
   },
   {
    "front": "erst",
-   "meaningId": "pertama",
-   "meaningEn": "only · not before",
+   "meaningId": "baru; belum sebelum; pertama-tama",
+   "meaningEn": "only; not until; first",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0064"
   },
   {
    "front": "Scheiße",
    "meaningId": "tahi",
-   "meaningEn": "shit · fuck · bugger",
+   "meaningEn": "Scheiße (function word/interjection): shit · fuck · bugger; scheiße (adjective): shit · crappy · shitty; Scheiße (noun): shit · bullshit",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0065",
+   "reviewedSenses": true
   },
   {
    "front": "gegen",
@@ -3704,7 +3597,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0066"
   },
   {
    "front": "sonst",
@@ -3715,7 +3609,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0067"
   },
   {
    "front": "sofort",
@@ -3726,7 +3621,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0068"
   },
   {
    "front": "wann",
@@ -3737,29 +3633,34 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0069"
   },
   {
    "front": "halt",
-   "meaningId": "benar",
-   "meaningEn": "simply",
+   "meaningId": "halt (keterangan): ya memang; begitulah (partikel percakapan); Halt (benda): perhentian; pegangan; dukungan",
+   "meaningEn": "halt (adverb): just; simply (conversational particle); Halt (noun): stop; hold; support",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0070",
+   "reviewedSenses": true
   },
   {
    "front": "dank",
-   "meaningId": "berkat",
-   "meaningEn": "thanks to",
+   "meaningId": "berkat (kata depan); rasa terima kasih (der Dank)",
+   "meaningEn": "thanks to (preposition); gratitude (der Dank)",
    "wordType": "other",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0071",
+   "reviewedSenses": true
   },
   {
    "front": "lieber",
@@ -3770,7 +3671,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0072"
   },
   {
    "front": "hi",
@@ -3781,7 +3683,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0073"
   },
   {
    "front": "fast",
@@ -3792,18 +3695,20 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0074"
   },
   {
    "front": "vorbei",
-   "meaningId": "balik halaman",
-   "meaningEn": "past",
+   "meaningId": "sudah berlalu; lewat; selesai",
+   "meaningEn": "past; over; finished",
    "wordType": "adverb",
    "tags": [
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0075"
   },
   {
    "front": "darum",
@@ -3814,7 +3719,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0076"
   },
   {
    "front": "sogar",
@@ -3825,7 +3731,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0077"
   },
   {
    "front": "woher",
@@ -3836,7 +3743,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0078"
   },
   {
    "front": "überhaupt",
@@ -3847,7 +3755,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0079"
   },
   {
    "front": "etwa",
@@ -3858,7 +3767,8 @@
     "function-words-1"
    ],
    "level": "A1",
-   "topic": "function-words-1"
+   "topic": "function-words-1",
+   "id": "de-a1-function-words-1-0080"
   },
   {
    "front": "anders",
@@ -3869,7 +3779,8 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0001"
   },
   {
    "front": "niemals",
@@ -3880,18 +3791,21 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0002"
   },
   {
    "front": "eben",
-   "meaningId": "kini",
-   "meaningEn": "just",
+   "meaningId": "baru saja; memang (keterangan); rata (sifat)",
+   "meaningEn": "just now; simply (adverb); flat; even (adjective)",
    "wordType": "adverb",
    "tags": [
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0003",
+   "reviewedSenses": true
   },
   {
    "front": "während",
@@ -3902,7 +3816,8 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0004"
   },
   {
    "front": "falls",
@@ -3913,7 +3828,8 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0005"
   },
   {
    "front": "dies",
@@ -3924,29 +3840,33 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0006"
   },
   {
    "front": "wen",
-   "meaningId": "yang mana",
-   "meaningEn": "who · whom",
+   "meaningId": "siapa (objek akusatif)",
+   "meaningEn": "whom (accusative)",
    "wordType": "other",
    "tags": [
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0007"
   },
   {
    "front": "sondern",
-   "meaningId": "namun",
-   "meaningEn": "but · but rather",
+   "meaningId": "melainkan (penghubung); memisahkan (kata kerja)",
+   "meaningEn": "but rather (conjunction); to separate (verb)",
    "wordType": "other",
    "tags": [
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0008",
+   "reviewedSenses": true
   },
   {
    "front": "außer",
@@ -3957,7 +3877,8 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0009"
   },
   {
    "front": "zuerst",
@@ -3968,7 +3889,8 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0010"
   },
   {
    "front": "hierher",
@@ -3979,7 +3901,8 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0011"
   },
   {
    "front": "bereits",
@@ -3990,18 +3913,20 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0012"
   },
   {
    "front": "leider",
-   "meaningId": "sayang",
-   "meaningEn": "unfortunately · alas",
+   "meaningId": "sayangnya",
+   "meaningEn": "unfortunately",
    "wordType": "adverb",
    "tags": [
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0013"
   },
   {
    "front": "überall",
@@ -4012,18 +3937,20 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0014"
   },
   {
    "front": "wem",
-   "meaningId": "yang",
-   "meaningEn": "whom",
+   "meaningId": "kepada siapa (datif)",
+   "meaningEn": "to whom (dative)",
    "wordType": "other",
    "tags": [
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0015"
   },
   {
    "front": "danach",
@@ -4034,7 +3961,8 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0016"
   },
   {
    "front": "damals",
@@ -4045,7 +3973,8 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0017"
   },
   {
    "front": "nachdem",
@@ -4056,7 +3985,8 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0018"
   },
   {
    "front": "irgendwo",
@@ -4067,7 +3997,8 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0019"
   },
   {
    "front": "drüben",
@@ -4078,29 +4009,33 @@
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0020"
   },
   {
    "front": "laut",
-   "meaningId": "menurut",
-   "meaningEn": "according",
+   "meaningId": "laut (kata fungsi/seruan): menurut; laut (sifat): keras; Laut (benda): bunyi",
+   "meaningEn": "laut (function word/interjection): according; laut (adjective): loud; Laut (noun): sound",
    "wordType": "other",
    "tags": [
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0021",
+   "reviewedSenses": true
   },
   {
    "front": "eher",
-   "meaningId": "agak",
-   "meaningEn": "sooner · earlier",
+   "meaningId": "lebih awal; lebih cenderung",
+   "meaningEn": "sooner; rather",
    "wordType": "adverb",
    "tags": [
     "function-words-2"
    ],
    "level": "A1",
-   "topic": "function-words-2"
+   "topic": "function-words-2",
+   "id": "de-a1-function-words-2-0022"
   },
   {
    "front": "haben",
@@ -4114,7 +4049,8 @@
    "topic": "verbs-basic",
    "exampleDe": "Wir haben Zeit.",
    "exampleId": "Kami punya waktu.",
-   "exampleEn": "We have time."
+   "exampleEn": "We have time.",
+   "id": "de-a1-verbs-basic-0001"
   },
   {
    "front": "gehen",
@@ -4125,7 +4061,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0002"
   },
   {
    "front": "kommen",
@@ -4136,7 +4073,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0003"
   },
   {
    "front": "machen",
@@ -4147,12 +4085,13 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0004"
   },
   {
    "front": "sprechen",
    "meaningId": "berbicara",
-   "meaningEn": "to speak",
+   "meaningEn": "sprechen (verb): to speak; Sprechen (noun): speaking",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
@@ -4161,40 +4100,48 @@
    "topic": "verbs-basic",
    "exampleDe": "Sprechen Sie Deutsch?",
    "exampleId": "Apakah Anda berbicara bahasa Jerman?",
-   "exampleEn": "Do you speak German?"
+   "exampleEn": "Do you speak German?",
+   "id": "de-a1-verbs-basic-0005",
+   "reviewedSenses": true
   },
   {
    "front": "lesen",
-   "meaningId": "membaca",
-   "meaningEn": "to read",
+   "meaningId": "membaca (kata kerja); kegiatan membaca (das Lesen)",
+   "meaningEn": "to read; reading (das Lesen)",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0006",
+   "reviewedSenses": true
   },
   {
    "front": "schreiben",
-   "meaningId": "menulis",
-   "meaningEn": "to write",
+   "meaningId": "menulis (kata kerja); tulisan atau surat (das Schreiben)",
+   "meaningEn": "to write; writing or formal letter (das Schreiben)",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0007",
+   "reviewedSenses": true
   },
   {
    "front": "sehen",
-   "meaningId": "melihat",
-   "meaningEn": "to see",
+   "meaningId": "melihat (kata kerja); penglihatan (das Sehen)",
+   "meaningEn": "to see; sight; vision (das Sehen)",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0008",
+   "reviewedSenses": true
   },
   {
    "front": "hören",
@@ -4205,7 +4152,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0009"
   },
   {
    "front": "verstehen",
@@ -4216,7 +4164,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0010"
   },
   {
    "front": "brauchen",
@@ -4227,7 +4176,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0011"
   },
   {
    "front": "möchten",
@@ -4241,7 +4191,8 @@
    "topic": "verbs-basic",
    "exampleDe": "Ich möchte einen Kaffee.",
    "exampleId": "Saya ingin kopi.",
-   "exampleEn": "I would like a coffee."
+   "exampleEn": "I would like a coffee.",
+   "id": "de-a1-verbs-basic-0012"
   },
   {
    "front": "können",
@@ -4252,7 +4203,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0013"
   },
   {
    "front": "spielen",
@@ -4263,7 +4215,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0014"
   },
   {
    "front": "schlafen",
@@ -4274,7 +4227,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0015"
   },
   {
    "front": "aufstehen",
@@ -4285,7 +4239,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0016"
   },
   {
    "front": "helfen",
@@ -4296,7 +4251,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0017"
   },
   {
    "front": "einen",
@@ -4307,7 +4263,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0018"
   },
   {
    "front": "werden",
@@ -4318,7 +4275,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0019"
   },
   {
    "front": "sagen",
@@ -4329,7 +4287,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0020"
   },
   {
    "front": "tun",
@@ -4340,18 +4299,21 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0021"
   },
   {
    "front": "wissen",
-   "meaningId": "tahu",
-   "meaningEn": "know",
+   "meaningId": "wissen (kerja): tahu; Wissen (benda): pengetahuan",
+   "meaningEn": "wissen (verb): know; Wissen (noun): knowledge",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0022",
+   "reviewedSenses": true
   },
   {
    "front": "müssen",
@@ -4362,18 +4324,21 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0023"
   },
   {
    "front": "leben",
-   "meaningId": "hidup",
-   "meaningEn": "live",
+   "meaningId": "leben (kerja): hidup; Leben (benda): hidup · kehidupan",
+   "meaningEn": "leben (verb): live; Leben (noun): life",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0024",
+   "reviewedSenses": true
   },
   {
    "front": "wollen",
@@ -4384,29 +4349,32 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0025"
   },
   {
    "front": "lassen",
-   "meaningId": "menyebabkan",
-   "meaningEn": "let · cause · have",
+   "meaningId": "membiarkan; menyuruh; meninggalkan",
+   "meaningEn": "to let; to have something done; to leave",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0026"
   },
   {
    "front": "meinen",
-   "meaningId": "menganggap",
-   "meaningEn": "mean · signify",
+   "meaningId": "bermaksud; berpendapat",
+   "meaningEn": "to mean; to think",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0027"
   },
   {
    "front": "reden",
@@ -4417,7 +4385,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0028"
   },
   {
    "front": "finden",
@@ -4428,7 +4397,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0029"
   },
   {
    "front": "geben",
@@ -4439,18 +4409,20 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0030"
   },
   {
    "front": "sollen",
-   "meaningId": "mungkin",
-   "meaningEn": "shall",
+   "meaningId": "seharusnya; diminta untuk",
+   "meaningEn": "should; to be supposed to",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0031"
   },
   {
    "front": "bleiben",
@@ -4461,18 +4433,20 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0032"
   },
   {
    "front": "nehmen",
-   "meaningId": "bawa · membawa",
-   "meaningEn": "take · have",
+   "meaningId": "mengambil",
+   "meaningEn": "to take",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0033"
   },
   {
    "front": "glauben",
@@ -4483,7 +4457,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0034"
   },
   {
    "front": "bringen",
@@ -4494,7 +4469,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0035"
   },
   {
    "front": "fragen",
@@ -4505,7 +4481,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0036"
   },
   {
    "front": "warten",
@@ -4516,7 +4493,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0037"
   },
   {
    "front": "halten",
@@ -4527,18 +4505,21 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0038"
   },
   {
    "front": "denken",
-   "meaningId": "pikir",
-   "meaningEn": "think",
+   "meaningId": "denken (kerja): pikir; Denken (benda): pikiran",
+   "meaningEn": "denken (verb): think; Denken (noun): thinking · thought",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0039",
+   "reviewedSenses": true
   },
   {
    "front": "kennen",
@@ -4549,7 +4530,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0040"
   },
   {
    "front": "vergessen",
@@ -4560,18 +4542,20 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0041"
   },
   {
    "front": "bekommen",
-   "meaningId": "ambil",
-   "meaningEn": "get · receive · be given",
+   "meaningId": "mendapatkan; menerima",
+   "meaningEn": "to get; to receive",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0042"
   },
   {
    "front": "töten",
@@ -4582,7 +4566,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0043"
   },
   {
    "front": "stehen",
@@ -4593,7 +4578,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0044"
   },
   {
    "front": "sterben",
@@ -4604,18 +4590,21 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0045"
   },
   {
    "front": "treffen",
-   "meaningId": "bertemu",
-   "meaningEn": "meet",
+   "meaningId": "treffen (kerja): bertemu; Treffen (benda): pertemuan",
+   "meaningEn": "treffen (verb): meet; Treffen (noun): meeting · date",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0046",
+   "reviewedSenses": true
   },
   {
    "front": "sorgen",
@@ -4626,7 +4615,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0047"
   },
   {
    "front": "suchen",
@@ -4637,7 +4627,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0048"
   },
   {
    "front": "versuchen",
@@ -4648,62 +4639,56 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0049"
   },
   {
    "front": "holen",
-   "meaningId": "sergap",
-   "meaningEn": "fetch · get",
+   "meaningId": "mengambil; menjemput",
+   "meaningEn": "to fetch; to get",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
-  },
-  {
-   "front": "wagen",
-   "meaningId": "jurit malam",
-   "meaningEn": "dare · venture",
-   "wordType": "verb",
-   "tags": [
-    "verbs-basic"
-   ],
-   "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0050"
   },
   {
    "front": "gefallen",
-   "meaningId": "suka",
-   "meaningEn": "please · like",
+   "meaningId": "menyenangkan; disukai (misalnya es gefällt mir)",
+   "meaningEn": "to please; to appeal to",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0052"
   },
   {
    "front": "verlassen",
-   "meaningId": "berangkat",
-   "meaningEn": "leave · abandon · forsake",
+   "meaningId": "meninggalkan",
+   "meaningEn": "to leave; to abandon",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0053"
   },
   {
    "front": "zeigen",
-   "meaningId": "pertunjukan",
-   "meaningEn": "show · point · demonstrate",
+   "meaningId": "menunjukkan",
+   "meaningEn": "to show; to point out",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0054"
   },
   {
    "front": "erzählen",
@@ -4714,40 +4699,33 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0055"
   },
   {
    "front": "stellen",
-   "meaningId": "tanya",
-   "meaningEn": "put · place · stand",
+   "meaningId": "meletakkan dalam posisi tegak; mengajukan (pertanyaan)",
+   "meaningEn": "to put upright; to pose (a question)",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0056"
   },
   {
    "front": "kriegen",
-   "meaningId": "ambil",
-   "meaningEn": "wage war",
+   "meaningId": "kriegen (kerja): mendapatkan (percakapan); berperang; Kriegen (benda): permainan kejar-kejaran",
+   "meaningEn": "kriegen (verb): to get (colloquial); to wage war; Kriegen (noun): tag (children's game)",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
-  },
-  {
-   "front": "sondern",
-   "meaningId": "melainkan",
-   "meaningEn": "separate",
-   "wordType": "verb",
-   "tags": [
-    "verbs-basic"
-   ],
-   "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0057",
+   "reviewedSenses": true
   },
   {
    "front": "setzen",
@@ -4758,7 +4736,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0059"
   },
   {
    "front": "dürfen",
@@ -4769,7 +4748,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0060"
   },
   {
    "front": "retten",
@@ -4780,7 +4760,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0061"
   },
   {
    "front": "lieben",
@@ -4791,29 +4772,33 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0062"
   },
   {
    "front": "schaffen",
-   "meaningId": "menciptakan",
-   "meaningEn": "create · make · shape",
+   "meaningId": "menciptakan; berhasil menyelesaikan; karya atau kegiatan berkarya (das Schaffen)",
+   "meaningEn": "to create; to manage; creative work (das Schaffen)",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0063",
+   "reviewedSenses": true
   },
   {
    "front": "nennen",
-   "meaningId": "меня зовут = nama saya",
-   "meaningEn": "call",
+   "meaningId": "menyebut; menamai",
+   "meaningEn": "to call; to name",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0064"
   },
   {
    "front": "laufen",
@@ -4824,7 +4809,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0065"
   },
   {
    "front": "erinnern",
@@ -4835,7 +4821,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0066"
   },
   {
    "front": "verlieren",
@@ -4846,7 +4833,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0067"
   },
   {
    "front": "ziehen",
@@ -4857,7 +4845,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0068"
   },
   {
    "front": "verschwinden",
@@ -4868,7 +4857,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0069"
   },
   {
    "front": "aufhören",
@@ -4879,7 +4869,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0070"
   },
   {
    "front": "rufen",
@@ -4890,7 +4881,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0071"
   },
   {
    "front": "heiraten",
@@ -4901,7 +4893,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0072"
   },
   {
    "front": "erklären",
@@ -4912,18 +4905,20 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0073"
   },
   {
    "front": "tagen",
-   "meaningId": "fajar",
-   "meaningEn": "meet",
+   "meaningId": "bersidang; mengadakan rapat",
+   "meaningEn": "to convene; to hold a meeting",
    "wordType": "verb",
    "tags": [
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0074"
   },
   {
    "front": "sitzen",
@@ -4934,7 +4929,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0075"
   },
   {
    "front": "vorstellen",
@@ -4945,7 +4941,8 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0076"
   },
   {
    "front": "heißen",
@@ -4956,18 +4953,21 @@
     "verbs-basic"
    ],
    "level": "A1",
-   "topic": "verbs-basic"
+   "topic": "verbs-basic",
+   "id": "de-a1-verbs-basic-0077"
   },
   {
    "front": "gut",
-   "meaningId": "baik / bagus",
-   "meaningEn": "good",
+   "meaningId": "gut (sifat): baik / bagus; Gut (benda): harta benda",
+   "meaningEn": "gut (adjective): good; Gut (noun): property · good",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0001",
+   "reviewedSenses": true
   },
   {
    "front": "schlecht",
@@ -4978,7 +4978,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0002"
   },
   {
    "front": "neu",
@@ -4989,7 +4990,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0003"
   },
   {
    "front": "alt",
@@ -5000,7 +5002,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0004"
   },
   {
    "front": "schnell",
@@ -5011,7 +5014,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0005"
   },
   {
    "front": "langsam",
@@ -5022,7 +5026,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0006"
   },
   {
    "front": "warm",
@@ -5033,7 +5038,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0007"
   },
   {
    "front": "kalt",
@@ -5044,7 +5050,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0008"
   },
   {
    "front": "schön",
@@ -5055,7 +5062,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0009"
   },
   {
    "front": "müde",
@@ -5066,7 +5074,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0010"
   },
   {
    "front": "glücklich",
@@ -5077,7 +5086,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0011"
   },
   {
    "front": "einfach",
@@ -5088,7 +5098,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0012"
   },
   {
    "front": "schwierig",
@@ -5099,7 +5110,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0013"
   },
   {
    "front": "viel",
@@ -5110,7 +5122,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0014"
   },
   {
    "front": "ganz",
@@ -5121,7 +5134,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0015"
   },
   {
    "front": "sicher",
@@ -5132,7 +5146,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0016"
   },
   {
    "front": "genau",
@@ -5143,7 +5158,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0017"
   },
   {
    "front": "klar",
@@ -5154,7 +5170,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0018"
   },
   {
    "front": "besser",
@@ -5165,7 +5182,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0019"
   },
   {
    "front": "natürlich",
@@ -5176,18 +5194,20 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0020"
   },
   {
    "front": "gar",
-   "meaningId": "matang",
-   "meaningEn": "done · cooked",
+   "meaningId": "matang (makanan)",
+   "meaningEn": "cooked; done",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0021"
   },
   {
    "front": "gleich",
@@ -5198,18 +5218,21 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0022"
   },
   {
    "front": "recht",
-   "meaningId": "kanan",
-   "meaningEn": "right",
+   "meaningId": "benar; tepat (sifat); hak; hukum (das Recht)",
+   "meaningEn": "right; proper (adjective); right; law (das Recht)",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0023",
+   "reviewedSenses": true
   },
   {
    "front": "richtig",
@@ -5220,7 +5243,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0024"
   },
   {
    "front": "tot",
@@ -5231,7 +5255,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0025"
   },
   {
    "front": "rein",
@@ -5242,7 +5267,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0026"
   },
   {
    "front": "genug",
@@ -5253,18 +5279,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
-  },
-  {
-   "front": "scheiße",
-   "meaningId": "tahi",
-   "meaningEn": "shit · crappy · shitty",
-   "wordType": "adjective",
-   "tags": [
-    "adjectives-basic"
-   ],
-   "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0027"
   },
   {
    "front": "fertig",
@@ -5275,7 +5291,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0029"
   },
   {
    "front": "verdammt",
@@ -5286,7 +5303,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0030"
   },
   {
    "front": "wahr",
@@ -5297,7 +5315,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0031"
   },
   {
    "front": "echt",
@@ -5308,7 +5327,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0032"
   },
   {
    "front": "letzte",
@@ -5319,7 +5339,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0033"
   },
   {
    "front": "toll",
@@ -5330,7 +5351,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0034"
   },
   {
    "front": "bereit",
@@ -5341,7 +5363,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0035"
   },
   {
    "front": "verrückt",
@@ -5352,7 +5375,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0036"
   },
   {
    "front": "ruhig",
@@ -5363,18 +5387,20 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0037"
   },
   {
    "front": "endlich",
-   "meaningId": "berhingga",
-   "meaningEn": "finite · limited",
+   "meaningId": "terbatas; berhingga (matematika)",
+   "meaningEn": "finite; limited",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0038"
   },
   {
    "front": "schwer",
@@ -5385,7 +5411,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0039"
   },
   {
    "front": "wenig",
@@ -5396,7 +5423,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0040"
   },
   {
    "front": "bestimmt",
@@ -5407,40 +5435,34 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0041"
   },
   {
    "front": "schuld",
-   "meaningId": "bersalah",
-   "meaningEn": "be to blame · responsible",
+   "meaningId": "bersalah (sifat); utang; kesalahan (die Schuld)",
+   "meaningEn": "to blame (adjective); debt; guilt (die Schuld)",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0042",
+   "reviewedSenses": true
   },
   {
    "front": "ernst",
-   "meaningId": "serius",
-   "meaningEn": "serious",
+   "meaningId": "ernst (sifat): serius; Ernst (benda): keseriusan; kesungguhan",
+   "meaningEn": "ernst (adjective): serious; Ernst (noun): seriousness; earnestness",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
-  },
-  {
-   "front": "eben",
-   "meaningId": "rata",
-   "meaningEn": "even · plain",
-   "wordType": "adjective",
-   "tags": [
-    "adjectives-basic"
-   ],
-   "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0043",
+   "reviewedSenses": true
   },
   {
    "front": "wichtig",
@@ -5451,18 +5473,20 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0045"
   },
   {
    "front": "bloß",
-   "meaningId": "hanya",
-   "meaningEn": "bare",
+   "meaningId": "telanjang; semata-mata",
+   "meaningEn": "bare; mere",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0046"
   },
   {
    "front": "ehrlich",
@@ -5473,7 +5497,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0047"
   },
   {
    "front": "frei",
@@ -5484,7 +5509,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0048"
   },
   {
    "front": "möglich",
@@ -5495,18 +5521,21 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0049"
   },
   {
    "front": "fest",
-   "meaningId": "padat",
-   "meaningEn": "solid · firm",
+   "meaningId": "kokoh; padat (sifat); pesta; perayaan (das Fest)",
+   "meaningEn": "firm; solid (adjective); celebration; festival (das Fest)",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0050",
+   "reviewedSenses": true
   },
   {
    "front": "falsch",
@@ -5517,18 +5546,20 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0051"
   },
   {
    "front": "früher",
-   "meaningId": "mantan",
-   "meaningEn": "former · erstwhile",
+   "meaningId": "terdahulu; mantan",
+   "meaningEn": "former; earlier",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0052"
   },
   {
    "front": "voll",
@@ -5539,18 +5570,20 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0053"
   },
   {
    "front": "direkt",
-   "meaningId": "menyutradarai",
+   "meaningId": "langsung",
    "meaningEn": "direct",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0054"
   },
   {
    "front": "völlig",
@@ -5561,18 +5594,21 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0055"
   },
   {
    "front": "wert",
-   "meaningId": "sayang",
-   "meaningEn": "worth",
+   "meaningId": "wert (sifat): bernilai; sepadan dengan; Wert (benda): nilai; harga",
+   "meaningEn": "wert (adjective): worth; Wert (noun): value; worth",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0056",
+   "reviewedSenses": true
   },
   {
    "front": "froh",
@@ -5583,7 +5619,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0057"
   },
   {
    "front": "super",
@@ -5594,7 +5631,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0058"
   },
   {
    "front": "total",
@@ -5605,18 +5643,20 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0059"
   },
   {
    "front": "leicht",
-   "meaningId": "mudah",
-   "meaningEn": "light · lightweight",
+   "meaningId": "ringan; mudah",
+   "meaningEn": "light; easy",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0060"
   },
   {
    "front": "interessiert",
@@ -5627,7 +5667,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0061"
   },
   {
    "front": "cool",
@@ -5638,29 +5679,21 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0062"
   },
   {
    "front": "licht",
-   "meaningId": "terang",
-   "meaningEn": "light · bright",
+   "meaningId": "licht (sifat): terang; jarang (rambut atau pepohonan); Licht (benda): cahaya",
+   "meaningEn": "licht (adjective): light · bright; Licht (noun): light",
    "wordType": "adjective",
    "tags": [
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
-  },
-  {
-   "front": "laut",
-   "meaningId": "keras",
-   "meaningEn": "loud",
-   "wordType": "adjective",
-   "tags": [
-    "adjectives-basic"
-   ],
-   "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0063",
+   "reviewedSenses": true
   },
   {
    "front": "böse",
@@ -5671,7 +5704,8 @@
     "adjectives-basic"
    ],
    "level": "A1",
-   "topic": "adjectives-basic"
+   "topic": "adjectives-basic",
+   "id": "de-a1-adjectives-basic-0065"
   },
   {
    "front": "der Computer",
@@ -5684,7 +5718,8 @@
    "level": "A1",
    "topic": "general-1",
    "gender": "der",
-   "plural": "die Computer"
+   "plural": "die Computer",
+   "id": "de-a1-general-1-0001"
   },
   {
    "front": "die Frage",
@@ -5700,7 +5735,8 @@
    "plural": "die Fragen",
    "exampleDe": "Ich habe eine Frage.",
    "exampleId": "Saya punya pertanyaan.",
-   "exampleEn": "I have a question."
+   "exampleEn": "I have a question.",
+   "id": "de-a1-general-1-0002"
   },
   {
    "front": "die Antwort",
@@ -5713,7 +5749,8 @@
    "level": "A1",
    "topic": "general-1",
    "gender": "die",
-   "plural": "die Antworten"
+   "plural": "die Antworten",
+   "id": "de-a1-general-1-0003"
   },
   {
    "front": "Hast",
@@ -5724,40 +5761,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Los",
-   "meaningId": "nasib",
-   "meaningEn": "ticket",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Sehen",
-   "meaningId": "nampak",
-   "meaningEn": "seeing · sight",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Wissen",
-   "meaningId": "pengetahuan",
-   "meaningEn": "knowledge",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0004"
   },
   {
    "front": "Würde",
@@ -5768,18 +5773,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Leben",
-   "meaningId": "hidup · kehidupan",
-   "meaningEn": "life",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0008"
   },
   {
    "front": "Leid",
@@ -5790,7 +5785,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0010"
   },
   {
    "front": "Macht",
@@ -5801,7 +5797,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0011"
   },
   {
    "front": "Gott",
@@ -5812,7 +5809,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0012"
   },
   {
    "front": "Glaube",
@@ -5823,18 +5821,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Wohl",
-   "meaningId": "kesejahteraan",
-   "meaningEn": "well-being · prosperity · welfare",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0013"
   },
   {
    "front": "Liebe",
@@ -5845,7 +5833,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0015"
   },
   {
    "front": "Paar",
@@ -5856,29 +5845,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Selbst",
-   "meaningId": "sendiri",
-   "meaningEn": "self",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Recht",
-   "meaningId": "hak",
-   "meaningEn": "right · law",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0016"
   },
   {
    "front": "Angst",
@@ -5889,7 +5857,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0019"
   },
   {
    "front": "Welt",
@@ -5900,18 +5869,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Scheiße",
-   "meaningId": "tahi",
-   "meaningEn": "shit · bullshit",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0020"
   },
   {
    "front": "Musik",
@@ -5922,18 +5881,20 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0022"
   },
   {
    "front": "Herr",
-   "meaningId": "tuan",
+   "meaningId": "tuan; bapak (sapaan); Tuhan (keagamaan)",
    "meaningEn": "Lord",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0023"
   },
   {
    "front": "Problem",
@@ -5944,29 +5905,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Halt",
-   "meaningId": "bantu",
-   "meaningEn": "stop",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Sprechen",
-   "meaningId": "berbicara",
-   "meaningEn": "speaking",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0024"
   },
   {
    "front": "Sache",
@@ -5977,7 +5917,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0027"
   },
   {
    "front": "Hilfe",
@@ -5988,29 +5929,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Denken",
-   "meaningId": "pikiran",
-   "meaningEn": "thinking · thought",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Dank",
-   "meaningId": "pengakuan",
-   "meaningEn": "thanks · thank",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0028"
   },
   {
    "front": "Fall",
@@ -6021,29 +5941,32 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0031"
   },
   {
    "front": "Mache",
-   "meaningId": "bikin",
-   "meaningEn": "pretense",
+   "meaningId": "rekayasa; kepura-puraan",
+   "meaningEn": "contrivance; pretense",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0032"
   },
   {
    "front": "Glück",
-   "meaningId": "kebahagiaan",
+   "meaningId": "keberuntungan; kebahagiaan",
    "meaningEn": "luck · fortune",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0033"
   },
   {
    "front": "Ende",
@@ -6054,18 +5977,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Treffen",
-   "meaningId": "pertemuan",
-   "meaningEn": "meeting · date",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0034"
   },
   {
    "front": "Idee",
@@ -6076,7 +5989,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0036"
   },
   {
    "front": "Kerl",
@@ -6087,7 +6001,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0037"
   },
   {
    "front": "Teufel",
@@ -6098,7 +6013,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0038"
   },
   {
    "front": "Grund",
@@ -6109,7 +6025,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0039"
   },
   {
    "front": "Mama",
@@ -6120,7 +6037,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0040"
   },
   {
    "front": "Ruhe",
@@ -6131,7 +6049,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0041"
   },
   {
    "front": "Tod",
@@ -6142,29 +6061,32 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0042"
   },
   {
    "front": "Art",
-   "meaningId": "spesies",
+   "meaningId": "jenis; cara; spesies",
    "meaningEn": "species · kind",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0043"
   },
   {
    "front": "Schatz",
-   "meaningId": "harta",
+   "meaningId": "harta; sayang (sapaan mesra)",
    "meaningEn": "treasure · hoard",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0044"
   },
   {
    "front": "Miss",
@@ -6175,7 +6097,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0045"
   },
   {
    "front": "Geschichte",
@@ -6186,7 +6109,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0046"
   },
   {
    "front": "Alter",
@@ -6197,51 +6121,32 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0047"
   },
   {
    "front": "Schau",
-   "meaningId": "firasat",
-   "meaningEn": "exhibition · exposition",
+   "meaningId": "pertunjukan; pameran",
+   "meaningEn": "exhibition; show",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0048"
   },
   {
    "front": "Spaß",
-   "meaningId": "atraksi",
-   "meaningEn": "fun · entertainment · amusement",
+   "meaningId": "kesenangan; lelucon",
+   "meaningEn": "fun; joke",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Schuld",
-   "meaningId": "utang",
-   "meaningEn": "debt · arrearage",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Ernst",
-   "meaningId": "talangan",
-   "meaningEn": "seriousness · earnestness · austerity",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0049"
   },
   {
    "front": "Ort",
@@ -6252,7 +6157,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0052"
   },
   {
    "front": "Spiel",
@@ -6263,7 +6169,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0053"
   },
   {
    "front": "Chance",
@@ -6274,7 +6181,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0054"
   },
   {
    "front": "Krieg",
@@ -6285,7 +6193,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0055"
   },
   {
    "front": "Wort",
@@ -6296,7 +6205,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0056"
   },
   {
    "front": "Teil",
@@ -6307,40 +6217,20 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0057"
   },
   {
    "front": "Sorge",
-   "meaningId": "acuh",
-   "meaningEn": "worry · concern · anxiety",
+   "meaningId": "kekhawatiran; perhatian",
+   "meaningEn": "worry; concern",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Kriegen",
-   "meaningId": "sergap",
-   "meaningEn": "tag · catch · tig",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Fest",
-   "meaningId": "festival",
-   "meaningEn": "festival · party · feast",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0058"
   },
   {
    "front": "Waffe",
@@ -6351,7 +6241,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0061"
   },
   {
    "front": "Rede",
@@ -6362,7 +6253,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0062"
   },
   {
    "front": "Nummer",
@@ -6373,7 +6265,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0063"
   },
   {
    "front": "Arsch",
@@ -6384,7 +6277,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0064"
   },
   {
    "front": "Telefon",
@@ -6395,7 +6289,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0065"
   },
   {
    "front": "Plan",
@@ -6406,7 +6301,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0066"
   },
   {
    "front": "Fehler",
@@ -6417,7 +6313,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0067"
   },
   {
    "front": "Dollar",
@@ -6428,40 +6325,32 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0068"
   },
   {
    "front": "Menge",
-   "meaningId": "himpunan",
+   "meaningId": "jumlah; banyaknya; himpunan (matematika)",
    "meaningEn": "set",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0069"
   },
   {
    "front": "Ruf",
-   "meaningId": "bayang-bayang",
-   "meaningEn": "call · summons",
+   "meaningId": "panggilan; reputasi",
+   "meaningEn": "call; reputation",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Schaffen",
-   "meaningId": "kerja",
-   "meaningEn": "job",
-   "wordType": "noun",
-   "tags": [
-    "general-1"
-   ],
-   "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0070"
   },
   {
    "front": "Scheiß",
@@ -6472,7 +6361,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0072"
   },
   {
    "front": "Hölle",
@@ -6483,29 +6373,32 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0073"
   },
   {
    "front": "Doktor",
-   "meaningId": "doktor",
-   "meaningEn": "doctor · physican",
+   "meaningId": "doktor (gelar); dokter (sapaan)",
+   "meaningEn": "doctor (academic title or form of address)",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0074"
   },
   {
    "front": "Tat",
-   "meaningId": "babak",
-   "meaningEn": "act · deed · action",
+   "meaningId": "perbuatan; tindakan",
+   "meaningEn": "deed; act",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0075"
   },
   {
    "front": "Feuer",
@@ -6516,18 +6409,20 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0076"
   },
   {
    "front": "Stelle",
-   "meaningId": "angka",
-   "meaningEn": "job",
+   "meaningId": "tempat; posisi; lowongan pekerjaan",
+   "meaningEn": "place; position; job",
    "wordType": "noun",
    "tags": [
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0077"
   },
   {
    "front": "Kumpel",
@@ -6538,7 +6433,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0078"
   },
   {
    "front": "Luft",
@@ -6549,7 +6445,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0079"
   },
   {
    "front": "Suche",
@@ -6560,18 +6457,8 @@
     "general-1"
    ],
    "level": "A1",
-   "topic": "general-1"
-  },
-  {
-   "front": "Wert",
-   "meaningId": "bobot",
-   "meaningEn": "value · worth · price",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
+   "topic": "general-1",
+   "id": "de-a1-general-1-0080"
   },
   {
    "front": "Party",
@@ -6582,18 +6469,20 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0002"
   },
   {
    "front": "Wahl",
-   "meaningId": "Wahl",
-   "meaningEn": "election · adoption",
+   "meaningId": "pilihan; pemilihan (umum)",
+   "meaningEn": "choice; election",
    "wordType": "noun",
    "tags": [
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0003"
   },
   {
    "front": "Vertrauen",
@@ -6604,7 +6493,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0004"
   },
   {
    "front": "Gefühl",
@@ -6615,7 +6505,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0005"
   },
   {
    "front": "Stück",
@@ -6626,7 +6517,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0006"
   },
   {
    "front": "Zukunft",
@@ -6637,18 +6529,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Licht",
-   "meaningId": "cahaya",
-   "meaningEn": "light",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0007"
   },
   {
    "front": "Nachricht",
@@ -6659,18 +6541,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Laut",
-   "meaningId": "bunyi",
-   "meaningEn": "sound",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0009"
   },
   {
    "front": "Erde",
@@ -6681,18 +6553,20 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0011"
   },
   {
    "front": "Rest",
-   "meaningId": "bekas",
-   "meaningEn": "remainder · rest",
+   "meaningId": "sisa",
+   "meaningEn": "remainder; rest",
    "wordType": "noun",
    "tags": [
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0012"
   },
   {
    "front": "Opfer",
@@ -6703,29 +6577,20 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0013"
   },
   {
    "front": "Mist",
-   "meaningId": "pupuk",
+   "meaningId": "kotoran hewan; omong kosong (percakapan)",
    "meaningEn": "dung · manure",
    "wordType": "noun",
    "tags": [
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Schreiben",
-   "meaningId": "kepenulisan",
-   "meaningEn": "writing",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0014"
   },
   {
    "front": "Versuch",
@@ -6736,7 +6601,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0016"
   },
   {
    "front": "Sex",
@@ -6747,7 +6613,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0017"
   },
   {
    "front": "Weh",
@@ -6758,7 +6625,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0018"
   },
   {
    "front": "die Rechnung",
@@ -6774,7 +6642,8 @@
    "plural": "die Rechnungen",
    "exampleDe": "Die Rechnung, bitte!",
    "exampleId": "Tagihannya, tolong!",
-   "exampleEn": "The bill, please!"
+   "exampleEn": "The bill, please!",
+   "id": "de-a1-general-2-0019"
   },
   {
    "front": "das Geld",
@@ -6790,7 +6659,8 @@
    "plural": "die Gelder",
    "exampleDe": "Ich habe kein Geld.",
    "exampleId": "Saya tidak punya uang.",
-   "exampleEn": "I have no money."
+   "exampleEn": "I have no money.",
+   "id": "de-a1-general-2-0020"
   },
   {
    "front": "kaufen",
@@ -6801,7 +6671,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0021"
   },
   {
    "front": "bezahlen",
@@ -6812,7 +6683,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0022"
   },
   {
    "front": "teuer",
@@ -6823,7 +6695,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0023"
   },
   {
    "front": "billig",
@@ -6834,7 +6707,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0024"
   },
   {
    "front": "Moment",
@@ -6845,7 +6719,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0025"
   },
   {
    "front": "allein",
@@ -6856,7 +6731,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0026"
   },
   {
    "front": "Polizei",
@@ -6867,7 +6743,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0027"
   },
   {
    "front": "wohin",
@@ -6878,7 +6755,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0028"
   },
   {
    "front": "König",
@@ -6889,7 +6767,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0029"
   },
   {
    "front": "Hund",
@@ -6900,7 +6779,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0030"
   },
   {
    "front": "Himmel",
@@ -6911,29 +6791,20 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
-  },
-  {
-   "front": "Gut",
-   "meaningId": "harta benda",
-   "meaningEn": "property · good",
-   "wordType": "noun",
-   "tags": [
-    "general-2"
-   ],
-   "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0031"
   },
   {
    "front": "Etwas",
-   "meaningId": "barang",
-   "meaningEn": "affair",
+   "meaningId": "sesuatu; suatu hal",
+   "meaningEn": "something",
    "wordType": "noun",
    "tags": [
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0033"
   },
   {
    "front": "Ding",
@@ -6944,7 +6815,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0034"
   },
   {
    "front": "wahrscheinlich",
@@ -6955,7 +6827,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0035"
   },
   {
    "front": "Ordnung",
@@ -6966,18 +6839,20 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0036"
   },
   {
    "front": "Ahnung",
-   "meaningId": "ide",
-   "meaningEn": "idea",
+   "meaningId": "dugaan; gambaran; firasat",
+   "meaningEn": "idea; inkling; premonition",
    "wordType": "noun",
    "tags": [
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0037"
   },
   {
    "front": "Wahrheit",
@@ -6988,7 +6863,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0038"
   },
   {
    "front": "Gefängnis",
@@ -6999,7 +6875,8 @@
     "general-2"
    ],
    "level": "A1",
-   "topic": "general-2"
+   "topic": "general-2",
+   "id": "de-a1-general-2-0039"
   }
  ]
 }

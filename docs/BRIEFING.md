@@ -9,10 +9,15 @@
 
 ## 0. Ringkasan 60 detik
 
+Audit vocab terbaru: lihat [`GERMAN-VOCAB-REVIEW.md`](./GERMAN-VOCAB-REVIEW.md).
+205 kartu duplikat digabung; ID kartu yang tersisa dipertahankan secara eksplisit.
+Migrasi tambahan: `vocabV5` (akun/cycle), `contentVersion = 5` (tamu).
+Angka dan verifikasi produksi pada commit lama di bawah adalah catatan historis.
+
 Web flashcard bahasa Jerman A1–C2. **Sudah live.** Pengguna memilih band → memilih topik →
 satu sesi menyelesaikan seluruh kartu topik itu dengan tombol **Ulangi** / **Sudah paham**;
 topik direset otomatis setelah semua kartu tampil (`Putaran 2`). Ada mode tamu (localStorage,
-tanpa akun) dan mode akun (Firestore). Konten dibundel statis, **9.688 kartu / 177 topik**.
+tanpa akun) dan mode akun (Firestore). Konten dibundel statis, **9.483 kartu / 177 topik**.
 Sudah ada 3 gelombang migrasi data (FSRS → siklus → topik → topik v4) dan semuanya sudah
 dijalankan untuk akun pilot.
 
@@ -27,7 +32,7 @@ dijalankan untuk akun pilot.
 | Mode tamu penuh fungsi | ✅ | `localStorage` `goabroad.guest.v2` |
 | Engine siklus repeat/next + pending | ✅ | `src/lib/study/session.ts`, 34 unit test |
 | Deck per topik + pilih band | ✅ | `/dashboard`, `/levels/[level]`, manifest v2 |
-| Konten A1–C2 tanpa nama diri | ✅ | 9.688 kartu, 177 topik (commit `012acb6`) |
+| Konten A1–C2 tanpa nama diri | ✅ | 9.483 kartu, 177 topik (audit vocab; lihat laporan) |
 | Migrasi progres bertahap | ✅ | flag `engineV2`, `topicsV3`, `topicsV4` |
 | Deck kustom + impor CSV | ✅ | `papaparse` + `zod`, `/decks` |
 | Statistik, streak, heatmap, kuis | ✅ | `/stats`, `dailyStats` |
@@ -35,20 +40,20 @@ dijalankan untuk akun pilot.
 
 ---
 
-## 2. Angka konten saat ini (`012acb6`)
+## 2. Angka konten setelah audit vocab 2026-10-21
 
 | Band | Topik | Kartu |
 | --- | --- | --- |
-| A1 | 16 | 600 |
-| A2 | 27 | 1.200 |
-| B1 | 32 | 1.800 |
-| B2 | 33 | 2.000 |
-| C1 | 40 | 2.400 |
-| C2 | 29 | 1.688 |
-| **Total** | **177** | **9.688** |
+| A1 | 16 | 534 |
+| A2 | 27 | 1.146 |
+| B1 | 32 | 1.758 |
+| B2 | 33 | 1.983 |
+| C1 | 40 | 2.383 |
+| C2 | 29 | 1.679 |
+| **Total** | **177** | **9.483** |
 
 Sisa "Kosakata umum" per band (indikator kualitas klasifikasi):
-A1 119 · A2 452 · B1 903 · B2 1.088 · C1 1.297 · C2 932.
+A1 96 · A2 417 · B1 868 · B2 1.072 · C1 1.282 · C2 924.
 
 ### Mandarin (`zh`) — buku 1–4
 
@@ -141,7 +146,7 @@ npm run deploy:rules      # firestore.rules + firestore.indexes.json
 | `src/lib/data/progress.ts` | `submitAction`: progress + deckCycle + dailyStats + review log (batch) |
 | `src/lib/data/migrate-topics.ts` | remap id topik cloud (`migration-map.json` → `topic-map.json`) |
 | `src/lib/data/migrate-legacy.ts` | migrasi FSRS → siklus (`engineV2`) |
-| `src/lib/store/local-store.ts` | mode tamu, `contentVersion = 4`, `remapTopics()` |
+| `src/lib/store/local-store.ts` | mode tamu, `contentVersion = 5`, `remapTopics()` |
 | `src/lib/store/cloud-store.ts` | mode akun, merge topik konten + deck pengguna |
 | `src/lib/content/registry.ts` | loader statis per level, `loadContentCards()` (filter `card.topic === topic.key`) |
 | `src/content/courses.ts` | `listContentDecks`, `summarizeBand()` |
@@ -217,7 +222,7 @@ npm run content:build && npm run seed:validate
 #    (lihat riwayat commit 012acb6 — helper-nya membandingkan topic per id kartu)
 
 # 3. bump versi + migrasi
-#    - src/lib/store/local-store.ts        : contentVersion 4 -> 5
+#    - src/lib/store/local-store.ts        : contentVersion 5 -> versi berikutnya
 #    - src/lib/data/migrate-topics.ts      : ganti flag topicsV4 -> topicsV5
 #    - src/types/index.ts                  : tambah field flag baru
 #    - tests/unit/topics.test.ts           : sesuaikan rantai map
@@ -234,13 +239,12 @@ npm run content:build && npm run seed:validate
    rebuild → regenerasi `topic-map.json` → migrasi versi berikutnya.
 2. **Perkecil "Kosakata umum" B1–C2** (903 / 1.088 / 1.297 / 932 kartu). Tambah
    `keywords`/`idKeywords`/`suffixes` di `scripts/content/topics.json`, lalu rebuild.
-3. **Pulihkan volume C2** (1.688 dari target 2.200): naikkan `MAX_RANK` atau turunkan
+3. **Pulihkan volume C2** (1.679 dari target 2.200): naikkan `MAX_RANK` atau turunkan
    `MIN_SCORE` di `build-decks.py`.
 4. **Kualitas kartu**: artikel/gender + contoh kalimat baru ada di 200 kartu A1 kurasi
    (`src/content/de/source/curated-a1.json`).
 5. **Akun hanya menyimpan progres** — jangan tambah fitur yang dikunci di balik login.
-6. **README** masih menyebut `topic-id-keywords.json` (file itu sudah dihapus/digabung ke
-   `topics.json`) — rapikan saat menyentuh dokumentasi.
+6. **Kurasi arti** berikutnya diterapkan melalui `de-gloss-overrides.json`; lihat audit vocab.
 7. **Mandarin buku 5–6**: file sumber berhenti di Buku 5 L10 dan Buku 6 belum ada. Minta
    ekspor tambahan, lalu jalankan `npm run content:zh -- --books 5,6`, tambahkan loader
    `zh:book5`/`zh:book6` di registry, dan lengkapi `en-id-*.tsv` untuk gloss baru.
@@ -326,8 +330,8 @@ Di browser (produksi atau lokal):
 
 > Repo `/home/cislab301b/Aditya/try web` = GoAbroad, Next.js 16 + Firebase + Vercel.
 > Sudah live di https://goabroad-rho.vercel.app (commit `012acb6`). Produk: flashcard Jerman
-> A1–C2, 9.688 kartu / 177 topik, sesi = 1 topik penuh dengan tombol Ulangi/Sudah paham dan
-> siklus auto-reset. Mode tamu (localStorage `goabroad.guest.v2`, `contentVersion 4`) dan mode
+> A1–C2, 9.483 kartu / 177 topik, sesi = 1 topik penuh dengan tombol Ulangi/Sudah paham dan
+> siklus auto-reset. Mode tamu (localStorage `goabroad.guest.v2`, `contentVersion 5`) dan mode
 > akun (Firestore `progress` + `deckCycles`). Migrasi otomatis: `engineV2`, `topicsV3`,
 > `topicsV4` via `migration-map.json` lalu `topic-map.json`.
 > Aturan: pakai Node di `.node/` (`source ./activate.sh`), dev hanya `127.0.0.1`, matikan server

@@ -15,6 +15,7 @@ import { listDecks } from "@/lib/data/decks";
 import { fetchProfile } from "@/lib/data/profile";
 import { migrateLegacyEngine } from "@/lib/data/migrate-legacy";
 import { migrateTopicProgress } from "@/lib/data/migrate-topics";
+import { migrateReviewedVocab } from "@/lib/data/migrate-reviewed-vocab";
 import { CloudStore } from "@/lib/store/cloud-store";
 import { GuestStore } from "@/lib/store/local-store";
 import { migrateGuestData, migrateGuestVideos } from "@/lib/store/migrate";
@@ -60,6 +61,8 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
                     await migrateLegacyEngine(user.uid, storedProfile).catch(() => false);
                     const afterEngine = await fetchProfile(user.uid).catch(() => null);
                     await migrateTopicProgress(user.uid, afterEngine).catch(() => false);
+                    const afterTopics = await fetchProfile(user.uid).catch(() => null);
+                    await migrateReviewedVocab(user.uid, afterTopics).catch(() => false);
                 }
             } catch {
                 // Migration is best-effort.

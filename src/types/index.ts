@@ -127,6 +127,8 @@ export type CardProgress = {
  * cycle, plus cards that still need another pass ("repeat" without "next").
  */
 export type DeckCycle = {
+    /** Positional cursor already adjusted for the German vocabulary cleanup. */
+    vocabV5?: boolean;
     deckId: string;
     cycle: number;
     cursor: number;
@@ -223,6 +225,8 @@ export type Profile = {
     topicsV3?: boolean;
     /** Set once progress has been remapped to the current topic ids. */
     topicsV4?: boolean;
+    /** Duplicate vocabulary histories consolidated, with stable surviving ids. */
+    vocabV5?: boolean;
     /** Set once guest video progress has been merged into the account. */
     videosV1?: boolean;
     /** Legacy per-band settings, kept so old documents still load. */

@@ -1,0 +1,49 @@
+{
+  "baselineCommit": "dcb466f",
+  "reviewedOriginalCards": 9688,
+  "uniqueCards": 9483,
+  "duplicateCardsConsolidated": 205,
+  "headwordGroupsConsolidated": 196,
+  "cardsWithMeaningChangesExcludingDelimiterFormatting": 1323,
+  "duplicateHeadwordsRemaining": 0,
+  "survivingIdsUnchanged": true,
+  "everyRemovedIdHasSameHeadwordTarget": true,
+  "levels": [
+    {
+      "level": "A1",
+      "before": 600,
+      "after": 534,
+      "topics": 16
+    },
+    {
+      "level": "A2",
+      "before": 1200,
+      "after": 1146,
+      "topics": 27
+    },
+    {
+      "level": "B1",
+      "before": 1800,
+      "after": 1758,
+      "topics": 32
+    },
+    {
+      "level": "B2",
+      "before": 2000,
+      "after": 1983,
+      "topics": 33
+    },
+    {
+      "level": "C1",
+      "before": 2400,
+      "after": 2383,
+      "topics": 40
+    },
+    {
+      "level": "C2",
+      "before": 1688,
+      "after": 1679,
+      "topics": 29
+    }
+  ]
+}

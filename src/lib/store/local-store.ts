@@ -16,6 +16,7 @@ import { dateKey } from "@/lib/utils/date";
 import { courses, listContentDecks } from "@/content/courses";
 import { getContentDeck, loadContentCards } from "@/lib/content/registry";
 import { buildSession, cycleProgress, emptyCycle } from "@/lib/study/session";
+import { consolidateReviewedProgress, loadReviewedGermanCards } from "@/lib/content/review-progress";
 import { normalizeBands, progressPercent } from "@/lib/study/progress";
 import {
     defaultProfileFor,
@@ -116,7 +117,7 @@ export class GuestStore implements StudyStore {
         } else {
             this.db = {
                 version: 2,
-                contentVersion: 4,
+                contentVersion: 5,
                 profile: defaultProfileFor({
                     displayName: null,
                     email: null,
@@ -132,8 +133,18 @@ export class GuestStore implements StudyStore {
             };
         }
 
-        if (this.db.contentVersion !== 4) {
+        if ((this.db.contentVersion ?? 0) < 4) {
             await remapTopics(this.db);
+        }
+        if (this.db.contentVersion !== 5) {
+            const aliases = (await import("@/content/de/review-aliases.json")).default;
+            const reviewed = consolidateReviewedProgress(
+                Object.values(this.db.progress), Object.values(this.db.cycles),
+                await loadReviewedGermanCards(), aliases,
+            );
+            this.db.progress = Object.fromEntries(reviewed.progress.map((entry) => [entry.cardId, entry]));
+            this.db.cycles = Object.fromEntries(reviewed.cycles.map((entry) => [entry.deckId, entry]));
+            this.db.contentVersion = 5;
         }
         this.persist();
         return this.db;

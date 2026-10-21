@@ -18,6 +18,7 @@ import re
 import sqlite3
 import sys
 from pathlib import Path
+from review_decks import review_decks
 
 ROOT = Path(__file__).resolve().parents[2]
 CACHE = ROOT / ".content-cache"
@@ -274,7 +275,7 @@ def current_topic_ids() -> dict[tuple[str, str], str]:
                 continue
             counters[topic] = counters.get(topic, 0) + 1
             key = (normalize(card["front"]), card.get("wordType", "other"))
-            mapping.setdefault(key, f"de-{level.lower()}-{topic}-{counters[topic]:04d}")
+            mapping.setdefault(key, card.get("id", f"de-{level.lower()}-{topic}-{counters[topic]:04d}"))
     return mapping
 
 
@@ -495,6 +496,7 @@ def main() -> int:
 
     print(f"total {total_cards} kartu di {len(manifest_levels)} band")
     print(f"migration map: {len(migration)} id lama dipetakan")
+    review_decks()
     return 0
 
 

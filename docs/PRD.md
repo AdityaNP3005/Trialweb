@@ -29,7 +29,7 @@ Fitur belajar **gratis tanpa akun** (mode tamu, data di browser). Akun hanya dip
 | Kosakata disajikan acak tanpa konteks tema | Sulit membangun pola, terasa tidak terarah | Deck dipecah per topik, urutan topik per band |
 | Batas "kartu harian" memotong di tengah topik | Topik tidak pernah tuntas, progres kabur | Sesi = 1 topik utuh, tanpa jatah harian |
 | Progres tidak terlihat per tema | Pengguna tidak tahu harus lanjut ke mana | Progres per topik, per band, dan statistik harian |
-| Deck A1–C2 berbayar / tersebar tidak konsisten | Biaya, kualitas tidak merata | 9.688 kartu terkurasi dari data terbuka, gratis |
+| Deck A1–C2 berbayar / tersebar tidak konsisten | Biaya, kualitas tidak merata | 9.483 kartu terkurasi dari data terbuka, gratis |
 
 Peluang: mahasiswa/pekerja yang butuh kosakata Jerman untuk studi (Ausbildung, Studienkolleg,
 Goethe/ÖSD) dan ingin alat ringan yang bisa dibuka di browser tanpa instalasi.
@@ -171,17 +171,17 @@ PILIH BAND ──▶ PILIH TOPIK ──▶ SESI (kartu 1..N)
 
 ## 8. Spesifikasi konten
 
-### 8.1 Volume saat ini (`012acb6`)
+### 8.1 Volume setelah audit vocab 2026-10-21
 
 | Band | Topik | Kartu | Catatan |
 | --- | --- | --- | --- |
-| A1 | 16 | 600 | 200 kartu pertama kurasi manual (punya artikel + contoh kalimat) |
-| A2 | 27 | 1.200 | |
-| B1 | 32 | 1.800 | |
-| B2 | 33 | 2.000 | |
-| C1 | 40 | 2.400 | |
-| C2 | 29 | 1.688 | kandidat habis setelah filter nama diri (target awal 2.200) |
-| **Total** | **177** | **9.688** | |
+| A1 | 16 | 534 | berasal dari 200 kartu kurasi, lalu penggabungan kata berulang |
+| A2 | 27 | 1.146 | |
+| B1 | 32 | 1.758 | |
+| B2 | 33 | 1.983 | |
+| C1 | 40 | 2.383 | |
+| C2 | 29 | 1.679 | kandidat habis setelah filter nama diri (target awal 2.200) |
+| **Total** | **177** | **9.483** | |
 
 ### 8.2 Pipeline
 
@@ -199,8 +199,8 @@ Aturan klasifikasi (`scripts/content/topics.json`):
 4. `fallbackWordTypes` per topik → 5. topik `general` ("Kosakata umum").
 
 Batasan teknis: `MIN_SCORE = 0.5`, `MAX_RANK = 50_000`, `MAX_TOPIC_SIZE = 80`,
-`MIN_TOPIC_SIZE = 8`, dedupe lintas band memakai `wordType:lemma` (satu lemma hanya di
-band terendah), ukuran target per band `LEVEL_SIZES = 600/1200/1800/2000/2400/2200`.
+`MIN_TOPIC_SIZE = 8`, dedupe akhir lintas band memakai lemma tanpa membedakan jenis kata;
+variasi ejaan digabung dan makna yang berbeda diberi konteks dalam kartu di band terendah, ukuran target per band `LEVEL_SIZES = 600/1200/1800/2000/2400/2200`.
 
 **Filter nama diri** (`scripts/content/proper-names.json` + aturan "arti == lemma"):
 negara, benua, kota besar, dan nama orang umum dibuang. Nama bahasa/demonim
@@ -265,7 +265,7 @@ Index komposit: `cards(deckId, createdAt)`, `progress(deckId)`, `reviews(deckId,
 
 `{contentVersion, profile, progress, cycles, dailyStats, reviews, videos?}` — struktur sama dengan cloud.
 `videos` bersifat opsional agar snapshot lama tetap valid.
-`contentVersion = 4`; saat dibuka, id topik lama di-remap lewat `topic-map.json` lalu
+`contentVersion = 5`; saat dibuka, id topik lama di-remap lewat `topic-map.json` lalu
 `migration-map.json`, dan siklus dibangun ulang dari `progress`.
 
 Keputusan penting: **kartu tidak disalin per akun** (kecuali deck kustom). Menambah band/topik
@@ -351,7 +351,7 @@ tidak menambah biaya tulis per pengguna.
 - [x] `npm run seed:validate` lolos: jumlah kartu per topik = manifest, ID topik unik, urutan unik,
       tidak ada duplikat `wordType:lemma` lintas band.
 - [x] Tidak ada nama negara/kota/nama orang pada kartu kosakata.
-- [x] 9.688 kartu dalam 177 topik; setiap topik ≤ 80 kartu.
+- [x] 9.483 kartu dalam 177 topik; setiap topik ≤ 80 kartu.
 
 **Akun**
 - [x] Login Google/email berfungsi di domain produksi (authorized domain terdaftar).

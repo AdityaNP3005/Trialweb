@@ -1,0 +1,4312 @@
+{
+  "auf|adverb": {
+    "meaningId": "terbuka (misalnya pintu)",
+    "meaningEn": "open (e.g. a door)"
+  },
+  "auf|other": {
+    "meaningId": "di atas; ke atas (diikuti datif/akusatif)",
+    "meaningEn": "on; onto"
+  },
+  "Bitte|noun": {
+    "meaningId": "permintaan",
+    "meaningEn": "request; plea"
+  },
+  "doch|adverb": {
+    "meaningId": "tentu saja; justru; penegasan yang membantah kalimat negatif",
+    "meaningEn": "indeed; actually; yes (contradicting a negative)"
+  },
+  "doch|other": {
+    "meaningId": "namun; tetapi",
+    "meaningEn": "yet; however"
+  },
+  "Erste|noun": {
+    "meaningId": "orang atau hal yang pertama",
+    "meaningEn": "the first one"
+  },
+  "ein|adjective": {
+    "meaningId": "menyala; aktif (misalnya alat elektronik)",
+    "meaningEn": "on; switched on"
+  },
+  "früh|adjective": {
+    "meaningId": "awal; pagi-pagi",
+    "meaningEn": "early"
+  },
+  "Gerade|noun": {
+    "meaningId": "garis lurus",
+    "meaningEn": "straight line"
+  },
+  "gerade|adjective": {
+    "meaningId": "lurus; rata",
+    "meaningEn": "straight; even"
+  },
+  "weit|adjective": {
+    "meaningId": "jauh; luas",
+    "meaningEn": "far; wide"
+  },
+  "vor|other": {
+    "meaningId": "di depan; sebelum; yang lalu",
+    "meaningEn": "in front of; before; ago"
+  },
+  "über|other": {
+    "meaningId": "di atas; tentang; lebih dari",
+    "meaningEn": "over; about; more than"
+  },
+  "unter|other": {
+    "meaningId": "di bawah; di antara",
+    "meaningEn": "under; among"
+  },
+  "oben|adverb": {
+    "meaningId": "di atas; di lantai atas",
+    "meaningEn": "above; upstairs"
+  },
+  "unten|adverb": {
+    "meaningId": "di bawah; di lantai bawah",
+    "meaningEn": "below; downstairs"
+  },
+  "Land|noun": {
+    "meaningId": "negara; daratan",
+    "meaningEn": "country; land"
+  },
+  "Wagen|noun": {
+    "meaningId": "mobil; gerobak; gerbong",
+    "meaningEn": "car; cart; carriage"
+  },
+  "wagen|verb": {
+    "meaningId": "berani melakukan; mempertaruhkan",
+    "meaningEn": "to dare; to risk"
+  },
+  "zu|adjective": {
+    "meaningId": "tertutup",
+    "meaningEn": "closed"
+  },
+  "zu|adverb": {
+    "meaningId": "terlalu (misalnya zu viel: terlalu banyak)",
+    "meaningEn": "too (e.g. too much)"
+  },
+  "zu|other": {
+    "meaningId": "ke; untuk; penanda infinitif",
+    "meaningEn": "to; for; infinitive marker"
+  },
+  "die|other": {
+    "meaningId": "kata sandang untuk nomina feminin atau jamak",
+    "meaningEn": "the (feminine singular or plural article)"
+  },
+  "der|other": {
+    "meaningId": "kata sandang untuk nomina maskulin (nominatif)",
+    "meaningEn": "the (masculine nominative article)"
+  },
+  "so|adverb": {
+    "meaningId": "begitu; demikian; sangat",
+    "meaningEn": "so; thus; very"
+  },
+  "so|other": {
+    "meaningId": "seperti; dengan cara demikian",
+    "meaningEn": "as; in this way"
+  },
+  "an|adverb": {
+    "meaningId": "menyala; aktif",
+    "meaningEn": "on; switched on"
+  },
+  "an|other": {
+    "meaningId": "di; pada; menempel pada (permukaan)",
+    "meaningEn": "at; on; against"
+  },
+  "bis|other": {
+    "meaningId": "sampai; hingga",
+    "meaningEn": "until; up to"
+  },
+  "für|other": {
+    "meaningId": "untuk",
+    "meaningEn": "for"
+  },
+  "als|other": {
+    "meaningId": "ketika (kejadian lampau); sebagai; daripada",
+    "meaningEn": "when (past event); as; than"
+  },
+  "um|other": {
+    "meaningId": "di sekeliling; pada (jam); tentang",
+    "meaningEn": "around; at (a time); about"
+  },
+  "nach|other": {
+    "meaningId": "setelah; menuju; menurut",
+    "meaningEn": "after; to; according to"
+  },
+  "bei|other": {
+    "meaningId": "di dekat; di tempat; bersama",
+    "meaningEn": "near; at; with"
+  },
+  "los|adverb": {
+    "meaningId": "ayo!; mulai!; lepas",
+    "meaningEn": "come on!; go!; loose"
+  },
+  "Los|noun": {
+    "meaningId": "undian; tiket undian; nasib",
+    "meaningEn": "lot; lottery ticket; fate"
+  },
+  "hey|other": {
+    "meaningId": "hei! (sapaan)",
+    "meaningEn": "hey! (greeting)"
+  },
+  "denn|other": {
+    "meaningId": "karena; partikel penegas dalam pertanyaan",
+    "meaningEn": "because; question emphasis particle"
+  },
+  "damit|adverb": {
+    "meaningId": "dengan itu",
+    "meaningEn": "with it; with that"
+  },
+  "wohl|adverb": {
+    "meaningId": "mungkin; barangkali; dengan baik",
+    "meaningEn": "probably; presumably; well"
+  },
+  "ob|other": {
+    "meaningId": "apakah (dalam pertanyaan tidak langsung)",
+    "meaningEn": "whether; if"
+  },
+  "lange|adverb": {
+    "meaningId": "lama; untuk waktu yang lama",
+    "meaningEn": "for a long time"
+  },
+  "her|adverb": {
+    "meaningId": "kemari; yang lalu (misalnya lange her)",
+    "meaningEn": "hither; ago"
+  },
+  "seit|other": {
+    "meaningId": "sejak; selama (hingga sekarang)",
+    "meaningEn": "since; for (continuing to now)"
+  },
+  "erst|adverb": {
+    "meaningId": "baru; belum sebelum; pertama-tama",
+    "meaningEn": "only; not until; first"
+  },
+  "halt|adverb": {
+    "meaningId": "ya memang; begitulah (partikel percakapan)",
+    "meaningEn": "just; simply (conversational particle)"
+  },
+  "Halt|noun": {
+    "meaningId": "perhentian; pegangan; dukungan",
+    "meaningEn": "stop; hold; support"
+  },
+  "hi|other": {
+    "meaningId": "hai! (sapaan)",
+    "meaningEn": "hi! (greeting)"
+  },
+  "vorbei|adverb": {
+    "meaningId": "sudah berlalu; lewat; selesai",
+    "meaningEn": "past; over; finished"
+  },
+  "wen|other": {
+    "meaningId": "siapa (objek akusatif)",
+    "meaningEn": "whom (accusative)"
+  },
+  "wem|other": {
+    "meaningId": "kepada siapa (datif)",
+    "meaningEn": "to whom (dative)"
+  },
+  "leider|adverb": {
+    "meaningId": "sayangnya",
+    "meaningEn": "unfortunately"
+  },
+  "eher|adverb": {
+    "meaningId": "lebih awal; lebih cenderung",
+    "meaningEn": "sooner; rather"
+  },
+  "sollen|verb": {
+    "meaningId": "seharusnya; diminta untuk",
+    "meaningEn": "should; to be supposed to"
+  },
+  "nehmen|verb": {
+    "meaningId": "mengambil",
+    "meaningEn": "to take"
+  },
+  "bekommen|verb": {
+    "meaningId": "mendapatkan; menerima",
+    "meaningEn": "to get; to receive"
+  },
+  "holen|verb": {
+    "meaningId": "mengambil; menjemput",
+    "meaningEn": "to fetch; to get"
+  },
+  "gefallen|verb": {
+    "meaningId": "menyenangkan; disukai (misalnya es gefällt mir)",
+    "meaningEn": "to please; to appeal to"
+  },
+  "verlassen|verb": {
+    "meaningId": "meninggalkan",
+    "meaningEn": "to leave; to abandon"
+  },
+  "zeigen|verb": {
+    "meaningId": "menunjukkan",
+    "meaningEn": "to show; to point out"
+  },
+  "stellen|verb": {
+    "meaningId": "meletakkan dalam posisi tegak; mengajukan (pertanyaan)",
+    "meaningEn": "to put upright; to pose (a question)"
+  },
+  "kriegen|verb": {
+    "meaningId": "mendapatkan (percakapan); berperang",
+    "meaningEn": "to get (colloquial); to wage war"
+  },
+  "Kriegen|noun": {
+    "meaningId": "permainan kejar-kejaran",
+    "meaningEn": "tag (children's game)"
+  },
+  "sondern|verb": {
+    "meaningId": "memisahkan; memilah",
+    "meaningEn": "to separate; to sort"
+  },
+  "nennen|verb": {
+    "meaningId": "menyebut; menamai",
+    "meaningEn": "to call; to name"
+  },
+  "tagen|verb": {
+    "meaningId": "bersidang; mengadakan rapat",
+    "meaningEn": "to convene; to hold a meeting"
+  },
+  "lassen|verb": {
+    "meaningId": "membiarkan; menyuruh; meninggalkan",
+    "meaningEn": "to let; to have something done; to leave"
+  },
+  "meinen|verb": {
+    "meaningId": "bermaksud; berpendapat",
+    "meaningEn": "to mean; to think"
+  },
+  "schaffen|verb": {
+    "meaningId": "menciptakan; berhasil menyelesaikan",
+    "meaningEn": "to create; to manage"
+  },
+  "recht|adjective": {
+    "meaningId": "benar; tepat",
+    "meaningEn": "right; proper"
+  },
+  "gar|adjective": {
+    "meaningId": "matang (makanan)",
+    "meaningEn": "cooked; done"
+  },
+  "endlich|adjective": {
+    "meaningId": "terbatas; berhingga (matematika)",
+    "meaningEn": "finite; limited"
+  },
+  "früher|adjective": {
+    "meaningId": "terdahulu; mantan",
+    "meaningEn": "former; earlier"
+  },
+  "direkt|adjective": {
+    "meaningId": "langsung",
+    "meaningEn": "direct"
+  },
+  "wert|adjective": {
+    "meaningId": "bernilai; sepadan dengan",
+    "meaningEn": "worth"
+  },
+  "leicht|adjective": {
+    "meaningId": "ringan; mudah",
+    "meaningEn": "light; easy"
+  },
+  "bloß|adjective": {
+    "meaningId": "telanjang; semata-mata",
+    "meaningEn": "bare; mere"
+  },
+  "Schau|noun": {
+    "meaningId": "pertunjukan; pameran",
+    "meaningEn": "exhibition; show"
+  },
+  "Spaß|noun": {
+    "meaningId": "kesenangan; lelucon",
+    "meaningEn": "fun; joke"
+  },
+  "Sorge|noun": {
+    "meaningId": "kekhawatiran; perhatian",
+    "meaningEn": "worry; concern"
+  },
+  "Ruf|noun": {
+    "meaningId": "panggilan; reputasi",
+    "meaningEn": "call; reputation"
+  },
+  "Wahl|noun": {
+    "meaningId": "pilihan; pemilihan (umum)",
+    "meaningEn": "choice; election"
+  },
+  "Doktor|noun": {
+    "meaningId": "doktor (gelar); dokter (sapaan)",
+    "meaningEn": "doctor (academic title or form of address)"
+  },
+  "Tat|noun": {
+    "meaningId": "perbuatan; tindakan",
+    "meaningEn": "deed; act"
+  },
+  "Stelle|noun": {
+    "meaningId": "tempat; posisi; lowongan pekerjaan",
+    "meaningEn": "place; position; job"
+  },
+  "Wert|noun": {
+    "meaningId": "nilai; harga",
+    "meaningEn": "value; worth"
+  },
+  "Rest|noun": {
+    "meaningId": "sisa",
+    "meaningEn": "remainder; rest"
+  },
+  "Mache|noun": {
+    "meaningId": "rekayasa; kepura-puraan",
+    "meaningEn": "contrivance; pretense"
+  },
+  "Etwas|noun": {
+    "meaningId": "sesuatu; suatu hal",
+    "meaningEn": "something"
+  },
+  "Ahnung|noun": {
+    "meaningId": "dugaan; gambaran; firasat",
+    "meaningEn": "idea; inkling; premonition"
+  },
+  "Wochenende|noun": {
+    "meaningId": "akhir pekan",
+    "meaningEn": "weekend"
+  },
+  "zweite|adjective": {
+    "meaningId": "kedua",
+    "meaningEn": "second"
+  },
+  "dritte|adjective": {
+    "meaningId": "ketiga",
+    "meaningEn": "third"
+  },
+  "indem|other": {
+    "meaningId": "dengan cara; dengan melakukan",
+    "meaningEn": "by; by doing"
+  },
+  "gegenüber|other": {
+    "meaningId": "di seberang; berhadapan dengan",
+    "meaningEn": "opposite; facing"
+  },
+  "übrigens|adverb": {
+    "meaningId": "omong-omong",
+    "meaningEn": "by the way"
+  },
+  "längst|adverb": {
+    "meaningId": "sudah lama",
+    "meaningEn": "long since; long ago"
+  },
+  "dadurch|adverb": {
+    "meaningId": "dengan demikian; melalui itu",
+    "meaningEn": "thereby; through that"
+  },
+  "umsonst|adverb": {
+    "meaningId": "gratis; sia-sia",
+    "meaningEn": "free of charge; in vain"
+  },
+  "trotz|other": {
+    "meaningId": "meskipun; walaupun",
+    "meaningEn": "despite; in spite of"
+  },
+  "heutzutage|adverb": {
+    "meaningId": "dewasa ini; saat ini",
+    "meaningEn": "nowadays"
+  },
+  "Fresse|other": {
+    "meaningId": "diam! (kasar)",
+    "meaningEn": "shut up! (vulgar)"
+  },
+  "ciao|other": {
+    "meaningId": "dadah; sampai jumpa",
+    "meaningEn": "bye; goodbye"
+  },
+  "Dusche|noun": {
+    "meaningId": "pancuran mandi; mandi dengan pancuran",
+    "meaningEn": "shower"
+  },
+  "Aufgabe|noun": {
+    "meaningId": "tugas; soal latihan",
+    "meaningEn": "task; exercise"
+  },
+  "Unterricht|noun": {
+    "meaningId": "pelajaran; kegiatan mengajar",
+    "meaningEn": "lessons; teaching"
+  },
+  "vorne|adverb": {
+    "meaningId": "di depan",
+    "meaningEn": "at the front"
+  },
+  "Richter|noun": {
+    "meaningId": "hakim",
+    "meaningEn": "judge"
+  },
+  "Prinzessin|noun": {
+    "meaningId": "putri raja",
+    "meaningEn": "princess"
+  },
+  "Amerikaner|noun": {
+    "meaningId": "orang Amerika",
+    "meaningEn": "American person"
+  },
+  "gemein|adjective": {
+    "meaningId": "jahat; kejam; umum",
+    "meaningEn": "mean; nasty; common"
+  },
+  "Schauspieler|noun": {
+    "meaningId": "aktor; pemeran",
+    "meaningEn": "actor"
+  },
+  "Bauer|noun": {
+    "meaningId": "petani; pion (catur)",
+    "meaningEn": "farmer; pawn (chess)"
+  },
+  "Hof|noun": {
+    "meaningId": "halaman dalam; istana",
+    "meaningEn": "courtyard; royal court"
+  },
+  "Stand|noun": {
+    "meaningId": "keadaan; stan; kedudukan",
+    "meaningEn": "state; stall; standing"
+  },
+  "Hoffnung|noun": {
+    "meaningId": "harapan",
+    "meaningEn": "hope"
+  },
+  "Achtung|noun": {
+    "meaningId": "perhatian; penghormatan",
+    "meaningEn": "attention; respect"
+  },
+  "Lösung|noun": {
+    "meaningId": "pemecahan masalah; solusi; larutan",
+    "meaningEn": "solution (to a problem or in chemistry)"
+  },
+  "Botschaft|noun": {
+    "meaningId": "pesan; kedutaan",
+    "meaningEn": "message; embassy"
+  },
+  "Unterstützung|noun": {
+    "meaningId": "dukungan; bantuan",
+    "meaningEn": "support; assistance"
+  },
+  "Deckung|noun": {
+    "meaningId": "perlindungan; tempat berlindung",
+    "meaningEn": "cover; shelter"
+  },
+  "Leitung|noun": {
+    "meaningId": "pimpinan; saluran; kabel",
+    "meaningEn": "leadership; line; cable"
+  },
+  "Vermögen|noun": {
+    "meaningId": "harta kekayaan; kemampuan",
+    "meaningEn": "assets; fortune; ability"
+  },
+  "vermögen|verb": {
+    "meaningId": "mampu; sanggup",
+    "meaningEn": "to be able to"
+  },
+  "Verstärkung|noun": {
+    "meaningId": "penguatan; bala bantuan",
+    "meaningEn": "reinforcement; amplification"
+  },
+  "Behandlung|noun": {
+    "meaningId": "perlakuan; perawatan; pengobatan",
+    "meaningEn": "treatment; medical care"
+  },
+  "Identität|noun": {
+    "meaningId": "identitas",
+    "meaningEn": "identity"
+  },
+  "Leidenschaft|noun": {
+    "meaningId": "hasrat; gairah",
+    "meaningEn": "passion"
+  },
+  "Warnung|noun": {
+    "meaningId": "peringatan",
+    "meaningEn": "warning"
+  },
+  "laden|verb": {
+    "meaningId": "memuat; mengisi daya; mengundang",
+    "meaningEn": "to load; to charge; to invite"
+  },
+  "schönen|verb": {
+    "meaningId": "memperindah; membuat tampak lebih baik",
+    "meaningEn": "to embellish; to make look better"
+  },
+  "ansehen|verb": {
+    "meaningId": "melihat; menonton; menganggap",
+    "meaningEn": "to look at; to watch; to regard"
+  },
+  "weihnachten|verb": {
+    "meaningId": "mulai terasa suasana Natal",
+    "meaningEn": "to feel like Christmas"
+  },
+  "Weihnachten|noun": {
+    "meaningId": "Natal",
+    "meaningEn": "Christmas"
+  },
+  "erledigen|verb": {
+    "meaningId": "menyelesaikan; mengurus",
+    "meaningEn": "to finish; to deal with"
+  },
+  "passen|verb": {
+    "meaningId": "cocok; pas",
+    "meaningEn": "to fit; to suit"
+  },
+  "erhalten|verb": {
+    "meaningId": "menerima; mempertahankan",
+    "meaningEn": "to receive; to preserve"
+  },
+  "bedeuten|verb": {
+    "meaningId": "berarti; bermakna",
+    "meaningEn": "to mean; to signify"
+  },
+  "mitnehmen|verb": {
+    "meaningId": "membawa serta",
+    "meaningEn": "to take along"
+  },
+  "hängen|verb": {
+    "meaningId": "menggantung; tergantung",
+    "meaningEn": "to hang"
+  },
+  "unterhalten|verb": {
+    "meaningId": "menghibur; memelihara; bercakap-cakap (sich unterhalten)",
+    "meaningEn": "to entertain; to maintain; to converse (reflexive)"
+  },
+  "schaden|verb": {
+    "meaningId": "merugikan; membahayakan",
+    "meaningEn": "to harm; to damage"
+  },
+  "reichen|verb": {
+    "meaningId": "menyodorkan; cukup; menjangkau",
+    "meaningEn": "to hand; to suffice; to reach"
+  },
+  "verhalten|verb": {
+    "meaningId": "berperilaku (sich verhalten)",
+    "meaningEn": "to behave (reflexive)"
+  },
+  "verbringen|verb": {
+    "meaningId": "menghabiskan (waktu)",
+    "meaningEn": "to spend (time)"
+  },
+  "freuen|verb": {
+    "meaningId": "membuat senang; bergembira (sich freuen)",
+    "meaningEn": "to please; to be glad (reflexive)"
+  },
+  "wünschen|verb": {
+    "meaningId": "menginginkan; mengharapkan",
+    "meaningEn": "to wish; to desire"
+  },
+  "mitkommen|verb": {
+    "meaningId": "ikut; datang bersama",
+    "meaningEn": "to come along; to accompany"
+  },
+  "zeugen|verb": {
+    "meaningId": "bersaksi; menjadi bukti; memperanakkan",
+    "meaningEn": "to testify; to bear witness; to father"
+  },
+  "überlegen|verb": {
+    "meaningId": "mempertimbangkan; memikirkan",
+    "meaningEn": "to consider; to think over"
+  },
+  "aufgeben|verb": {
+    "meaningId": "menyerah; melepaskan; menyerahkan (tugas)",
+    "meaningEn": "to give up; to hand in"
+  },
+  "verlangen|verb": {
+    "meaningId": "menuntut; meminta",
+    "meaningEn": "to demand; to request"
+  },
+  "merken|verb": {
+    "meaningId": "menyadari; mengingat",
+    "meaningEn": "to notice; to remember"
+  },
+  "handeln|verb": {
+    "meaningId": "bertindak; berdagang",
+    "meaningEn": "to act; to trade"
+  },
+  "wachen|verb": {
+    "meaningId": "berjaga; mengawasi",
+    "meaningEn": "to stay awake; to watch over"
+  },
+  "hingehen|verb": {
+    "meaningId": "pergi ke sana",
+    "meaningEn": "to go there"
+  },
+  "bieten|verb": {
+    "meaningId": "menawarkan",
+    "meaningEn": "to offer"
+  },
+  "schnappen|verb": {
+    "meaningId": "menangkap; menyambar",
+    "meaningEn": "to catch; to snap"
+  },
+  "streiten|verb": {
+    "meaningId": "bertengkar; berdebat",
+    "meaningEn": "to argue; to quarrel"
+  },
+  "fehlen|verb": {
+    "meaningId": "tidak ada; kurang; hilang",
+    "meaningEn": "to be missing; to lack"
+  },
+  "heiligen|verb": {
+    "meaningId": "menyucikan",
+    "meaningEn": "to sanctify"
+  },
+  "packen|verb": {
+    "meaningId": "mengemas; mencengkeram",
+    "meaningEn": "to pack; to grab"
+  },
+  "verhaften|verb": {
+    "meaningId": "menangkap; menahan (oleh polisi)",
+    "meaningEn": "to arrest"
+  },
+  "abhauen|verb": {
+    "meaningId": "kabur (percakapan); memotong",
+    "meaningEn": "to run away (colloquial); to chop off"
+  },
+  "anziehen|verb": {
+    "meaningId": "mengenakan pakaian; menarik",
+    "meaningEn": "to put on clothes; to attract"
+  },
+  "ertragen|verb": {
+    "meaningId": "menanggung; bertahan menghadapi",
+    "meaningEn": "to bear; to endure"
+  },
+  "geraten|verb": {
+    "meaningId": "masuk ke dalam (keadaan); menjadi",
+    "meaningEn": "to get into (a situation); to turn out"
+  },
+  "langen|verb": {
+    "meaningId": "cukup; menjangkau",
+    "meaningEn": "to suffice; to reach"
+  },
+  "rechten|verb": {
+    "meaningId": "berselisih; memperdebatkan hak",
+    "meaningEn": "to dispute; to argue over rights"
+  },
+  "treiben|verb": {
+    "meaningId": "mendorong; menggerakkan; melakukan",
+    "meaningEn": "to drive; to propel; to pursue"
+  },
+  "vorsichtig|adjective": {
+    "meaningId": "hati-hati",
+    "meaningEn": "careful; cautious"
+  },
+  "unbedingt|adjective": {
+    "meaningId": "tanpa syarat; mutlak",
+    "meaningEn": "unconditional; absolute"
+  },
+  "verliebt|adjective": {
+    "meaningId": "jatuh cinta",
+    "meaningEn": "in love"
+  },
+  "beschäftigt|adjective": {
+    "meaningId": "sibuk",
+    "meaningEn": "busy"
+  },
+  "wunderschön|adjective": {
+    "meaningId": "sangat indah; cantik sekali",
+    "meaningEn": "beautiful; gorgeous"
+  },
+  "kaputt|adjective": {
+    "meaningId": "rusak",
+    "meaningEn": "broken"
+  },
+  "wild|adjective": {
+    "meaningId": "liar",
+    "meaningEn": "wild"
+  },
+  "frisch|adjective": {
+    "meaningId": "segar; baru",
+    "meaningEn": "fresh; new"
+  },
+  "ernsthaft|adjective": {
+    "meaningId": "serius",
+    "meaningEn": "serious"
+  },
+  "gemeinsam|adjective": {
+    "meaningId": "bersama; dimiliki bersama",
+    "meaningEn": "joint; shared"
+  },
+  "selten|adjective": {
+    "meaningId": "jarang; langka",
+    "meaningEn": "rare; uncommon"
+  },
+  "gegenseitig|adjective": {
+    "meaningId": "saling; timbal balik",
+    "meaningEn": "mutual; reciprocal"
+  },
+  "eindeutig|adjective": {
+    "meaningId": "jelas; tidak ambigu",
+    "meaningEn": "clear; unambiguous"
+  },
+  "happy|adjective": {
+    "meaningId": "senang; bahagia (serapan percakapan)",
+    "meaningEn": "happy; glad (colloquial borrowing)"
+  },
+  "clever|adjective": {
+    "meaningId": "cerdas; cerdik",
+    "meaningEn": "clever; smart"
+  },
+  "verbrannt|adjective": {
+    "meaningId": "terbakar",
+    "meaningEn": "burnt; burned"
+  },
+  "Sinn|noun": {
+    "meaningId": "makna; indra; tujuan",
+    "meaningEn": "meaning; sense; purpose"
+  },
+  "Bescheid|noun": {
+    "meaningId": "pemberitahuan; jawaban resmi",
+    "meaningEn": "notification; official reply"
+  },
+  "Rolle|noun": {
+    "meaningId": "peran; gulungan",
+    "meaningEn": "role; roll"
+  },
+  "Vorsicht|noun": {
+    "meaningId": "kehati-hatian; kewaspadaan",
+    "meaningEn": "caution; care"
+  },
+  "Boot|noun": {
+    "meaningId": "perahu",
+    "meaningEn": "boat"
+  },
+  "Verstand|noun": {
+    "meaningId": "akal; nalar",
+    "meaningEn": "intellect; reason"
+  },
+  "Band|noun": {
+    "meaningId": "pita (das Band); jilid (der Band); grup musik (die Band)",
+    "meaningEn": "ribbon; volume; music band"
+  },
+  "Schuss|noun": {
+    "meaningId": "tembakan; sedikit cairan",
+    "meaningEn": "shot; dash (of liquid)"
+  },
+  "Druck|noun": {
+    "meaningId": "tekanan; cetakan",
+    "meaningEn": "pressure; print"
+  },
+  "Schloss|noun": {
+    "meaningId": "kastel; kunci (mekanisme pengunci)",
+    "meaningEn": "castle; lock"
+  },
+  "Hintern|noun": {
+    "meaningId": "pantat",
+    "meaningEn": "bottom; buttocks"
+  },
+  "Kugel|noun": {
+    "meaningId": "bola; peluru",
+    "meaningEn": "sphere; bullet"
+  },
+  "Lager|noun": {
+    "meaningId": "gudang; perkemahan",
+    "meaningEn": "warehouse; camp"
+  },
+  "Gang|noun": {
+    "meaningId": "lorong; cara berjalan; gigi persneling",
+    "meaningEn": "corridor; gait; gear"
+  },
+  "Akte|noun": {
+    "meaningId": "berkas; dokumen",
+    "meaningEn": "file; dossier"
+  },
+  "Fass|noun": {
+    "meaningId": "tong; barel",
+    "meaningEn": "barrel; cask"
+  },
+  "Wache|noun": {
+    "meaningId": "penjaga; penjagaan",
+    "meaningEn": "guard; watch"
+  },
+  "Schulden|noun": {
+    "meaningId": "utang (jamak)",
+    "meaningEn": "debts"
+  },
+  "Aussage|noun": {
+    "meaningId": "pernyataan; kesaksian",
+    "meaningEn": "statement; testimony"
+  },
+  "Signal|noun": {
+    "meaningId": "sinyal; isyarat",
+    "meaningEn": "signal"
+  },
+  "Stich|noun": {
+    "meaningId": "tusukan; sengatan; jahitan",
+    "meaningEn": "stab; sting; stitch"
+  },
+  "Story|noun": {
+    "meaningId": "cerita",
+    "meaningEn": "story"
+  },
+  "Leichter|noun": {
+    "meaningId": "tongkang",
+    "meaningEn": "lighter (barge)"
+  },
+  "Bühne|noun": {
+    "meaningId": "panggung",
+    "meaningEn": "stage"
+  },
+  "Decke|noun": {
+    "meaningId": "selimut; langit-langit ruangan",
+    "meaningEn": "blanket; ceiling"
+  },
+  "Notfall|noun": {
+    "meaningId": "keadaan darurat",
+    "meaningEn": "emergency"
+  },
+  "Pech|noun": {
+    "meaningId": "nasib buruk; ter",
+    "meaningEn": "bad luck; pitch"
+  },
+  "Stärke|noun": {
+    "meaningId": "kekuatan; pati (bahan makanan)",
+    "meaningEn": "strength; starch"
+  },
+  "Befinden|noun": {
+    "meaningId": "kondisi kesehatan; keadaan diri",
+    "meaningEn": "state of health; condition"
+  },
+  "Schnitt|noun": {
+    "meaningId": "potongan; irisan",
+    "meaningEn": "cut"
+  },
+  "Revier|noun": {
+    "meaningId": "wilayah; daerah tugas",
+    "meaningEn": "territory; precinct"
+  },
+  "Führer|noun": {
+    "meaningId": "pemimpin; pemandu",
+    "meaningEn": "leader; guide"
+  },
+  "Bereich|noun": {
+    "meaningId": "bidang; wilayah",
+    "meaningEn": "area; field"
+  },
+  "Gabe|noun": {
+    "meaningId": "pemberian; bakat",
+    "meaningEn": "gift; talent"
+  },
+  "Nachsehen|noun": {
+    "meaningId": "memeriksa; kekalahan (das Nachsehen haben: dirugikan)",
+    "meaningEn": "checking; disadvantage (in an idiom)"
+  },
+  "Schild|noun": {
+    "meaningId": "perisai (der Schild); papan tanda (das Schild)",
+    "meaningEn": "shield; sign"
+  },
+  "Fan|noun": {
+    "meaningId": "penggemar",
+    "meaningEn": "fan; supporter"
+  },
+  "Over|noun": {
+    "meaningId": "satu giliran enam lemparan (kriket)",
+    "meaningEn": "over (six deliveries in cricket)"
+  },
+  "Steuer": {
+    "meaningId": "pajak (die Steuer); kemudi (das Steuer)"
+  },
+  "Ausbildung": {
+    "meaningId": "pendidikan kejuruan; pelatihan"
+  },
+  "Gewerkschaft": {
+    "meaningId": "serikat pekerja"
+  },
+  "Funkgerät": {
+    "meaningId": "alat komunikasi radio"
+  },
+  "Studie": {
+    "meaningId": "studi; penelitian"
+  },
+  "Erziehung": {
+    "meaningId": "pendidikan; pengasuhan"
+  },
+  "Bildung": {
+    "meaningId": "pendidikan; pembentukan"
+  },
+  "belasten": {
+    "meaningId": "membebani; memberatkan (tuduhan)"
+  },
+  "zurückrufen": {
+    "meaningId": "menelepon kembali; memanggil kembali"
+  },
+  "Hobby": {
+    "meaningId": "hobi; kegemaran"
+  },
+  "Testament": {
+    "meaningId": "surat wasiat; perjanjian (dalam Alkitab)"
+  },
+  "Darling": {
+    "meaningId": "sayang (sapaan mesra)"
+  },
+  "Hausmeister": {
+    "meaningId": "penjaga gedung; pengurus bangunan"
+  },
+  "Schein": {
+    "meaningId": "cahaya; penampilan; surat keterangan"
+  },
+  "Strich": {
+    "meaningId": "garis; goresan"
+  },
+  "Friseur": {
+    "meaningId": "penata rambut; tukang cukur"
+  },
+  "Franzose": {
+    "meaningId": "orang Prancis"
+  },
+  "hinweg": {
+    "meaningId": "melewati; menjauh"
+  },
+  "Ebene": {
+    "meaningId": "dataran; tingkat"
+  },
+  "Mitbewohner": {
+    "meaningId": "teman serumah"
+  },
+  "Sackgasse": {
+    "meaningId": "jalan buntu"
+  },
+  "Kabel": {
+    "meaningId": "kabel"
+  },
+  "Dose": {
+    "meaningId": "kaleng"
+  },
+  "funken": {
+    "meaningId": "memancarkan sinyal radio; memercik"
+  },
+  "Vieh": {
+    "meaningId": "hewan ternak"
+  },
+  "Fuchs": {
+    "meaningId": "rubah"
+  },
+  "Rasen": {
+    "meaningId": "hamparan rumput"
+  },
+  "rasen": {
+    "meaningId": "melaju kencang; mengamuk"
+  },
+  "Lieferung": {
+    "meaningId": "pengiriman; barang kiriman"
+  },
+  "Entführung": {
+    "meaningId": "penculikan"
+  },
+  "Trennung": {
+    "meaningId": "pemisahan; perpisahan"
+  },
+  "Meldung": {
+    "meaningId": "laporan; pemberitahuan"
+  },
+  "Haltung": {
+    "meaningId": "sikap; postur tubuh; pemeliharaan hewan"
+  },
+  "Beförderung": {
+    "meaningId": "promosi jabatan; pengangkutan"
+  },
+  "Versammlung": {
+    "meaningId": "pertemuan; rapat"
+  },
+  "Ablenkung": {
+    "meaningId": "pengalihan perhatian; pembelokan"
+  },
+  "Zuneigung": {
+    "meaningId": "kasih sayang; rasa suka"
+  },
+  "Finsternis": {
+    "meaningId": "kegelapan; gerhana"
+  },
+  "Hinrichtung": {
+    "meaningId": "eksekusi hukuman mati"
+  },
+  "Bezahlung": {
+    "meaningId": "pembayaran; upah"
+  },
+  "Spannung": {
+    "meaningId": "ketegangan; tegangan listrik"
+  },
+  "Bestimmung": {
+    "meaningId": "penentuan; ketentuan; takdir"
+  },
+  "Produktion": {
+    "meaningId": "produksi"
+  },
+  "Befragung": {
+    "meaningId": "tanya jawab; pemeriksaan dengan pertanyaan"
+  },
+  "Heilung": {
+    "meaningId": "penyembuhan"
+  },
+  "Veranstaltung": {
+    "meaningId": "acara; kegiatan yang diselenggarakan"
+  },
+  "Erleichterung": {
+    "meaningId": "kelegaan; kemudahan"
+  },
+  "Zeichnung": {
+    "meaningId": "gambar; ilustrasi"
+  },
+  "bergen": {
+    "meaningId": "menyelamatkan; mengevakuasi; menyimpan"
+  },
+  "übersehen": {
+    "meaningId": "melewatkan tanpa melihat; mengabaikan",
+    "meaningEn": "to overlook; to miss; to survey"
+  },
+  "reißen": {
+    "meaningId": "merobek; menarik dengan kuat"
+  },
+  "heben": {
+    "meaningId": "mengangkat"
+  },
+  "anhören": {
+    "meaningId": "mendengarkan; terdengar (sich anhören)"
+  },
+  "hinsetzen": {
+    "meaningId": "mendudukkan; duduk (sich hinsetzen)"
+  },
+  "schalten": {
+    "meaningId": "mengganti gigi; mengalihkan; menyalakan"
+  },
+  "schämen": {
+    "meaningId": "merasa malu (sich schämen)"
+  },
+  "durchsuchen": {
+    "meaningId": "menggeledah; mencari dengan teliti"
+  },
+  "schmecken": {
+    "meaningId": "terasa (di lidah); mencicipi"
+  },
+  "klappen": {
+    "meaningId": "berhasil (percakapan); melipat"
+  },
+  "blicken": {
+    "meaningId": "memandang; melihat"
+  },
+  "narren": {
+    "meaningId": "memperdaya; membodohi"
+  },
+  "abhalten": {
+    "meaningId": "mencegah; mengadakan (acara)"
+  },
+  "mitteilen": {
+    "meaningId": "memberitahukan; menyampaikan"
+  },
+  "ausrichten": {
+    "meaningId": "menyampaikan; menyelenggarakan; mengarahkan"
+  },
+  "stürzen": {
+    "meaningId": "jatuh; menggulingkan"
+  },
+  "unterbrechen": {
+    "meaningId": "menyela; menghentikan sementara"
+  },
+  "erden": {
+    "meaningId": "membumikan (listrik)"
+  },
+  "wegnehmen": {
+    "meaningId": "mengambil; merampas"
+  },
+  "verzichten": {
+    "meaningId": "melepaskan; tidak menggunakan hak"
+  },
+  "anlegen": {
+    "meaningId": "mengenakan; membuat; menginvestasikan"
+  },
+  "verderben": {
+    "meaningId": "merusak; menjadi busuk"
+  },
+  "losgehen": {
+    "meaningId": "berangkat; mulai"
+  },
+  "angehen": {
+    "meaningId": "menyangkut; menangani; mulai menyala"
+  },
+  "durchführen": {
+    "meaningId": "melaksanakan; menjalankan"
+  },
+  "eröffnen": {
+    "meaningId": "membuka; meresmikan"
+  },
+  "stoßen": {
+    "meaningId": "mendorong; membentur"
+  },
+  "aufbauen": {
+    "meaningId": "membangun; mendirikan"
+  },
+  "auftreten": {
+    "meaningId": "muncul; tampil; menginjak"
+  },
+  "vergehen": {
+    "meaningId": "berlalu; lenyap"
+  },
+  "bedienen": {
+    "meaningId": "melayani; mengoperasikan"
+  },
+  "streichen": {
+    "meaningId": "mengoleskan; mengecat; mencoret"
+  },
+  "erhöhen": {
+    "meaningId": "menaikkan; meningkatkan"
+  },
+  "auflegen": {
+    "meaningId": "meletakkan; menutup telepon"
+  },
+  "verdanken": {
+    "meaningId": "berutang budi; memperoleh berkat"
+  },
+  "operieren": {
+    "meaningId": "mengoperasi (medis); beroperasi"
+  },
+  "runden": {
+    "meaningId": "membulatkan"
+  },
+  "absagen": {
+    "meaningId": "membatalkan; menolak undangan"
+  },
+  "ablenken": {
+    "meaningId": "mengalihkan perhatian; membelokkan"
+  },
+  "versetzen": {
+    "meaningId": "memindahkan; menempatkan dalam keadaan",
+    "meaningEn": "to move; to transfer; to put into a state"
+  },
+  "büßen": {
+    "meaningId": "menebus kesalahan; menanggung akibat"
+  },
+  "erweisen": {
+    "meaningId": "membuktikan; menunjukkan"
+  },
+  "zurücklassen": {
+    "meaningId": "meninggalkan"
+  },
+  "feststellen": {
+    "meaningId": "memastikan; menetapkan; menemukan fakta"
+  },
+  "aushalten": {
+    "meaningId": "menahan; bertahan menghadapi"
+  },
+  "vorkommen": {
+    "meaningId": "terjadi; ditemukan; terasa (bagi seseorang)"
+  },
+  "festnehmen": {
+    "meaningId": "menangkap; menahan"
+  },
+  "anschließen": {
+    "meaningId": "menyambungkan; bergabung (sich anschließen)"
+  },
+  "beseitigen": {
+    "meaningId": "menyingkirkan; menghilangkan"
+  },
+  "gelten": {
+    "meaningId": "berlaku; dianggap"
+  },
+  "verbreiten": {
+    "meaningId": "menyebarkan"
+  },
+  "beschäftigen": {
+    "meaningId": "mempekerjakan; menyibukkan; membahas"
+  },
+  "begeben": {
+    "meaningId": "menuju (sich begeben); menerbitkan (surat berharga)",
+    "meaningEn": "to proceed (sich begeben); to issue (securities)"
+  },
+  "mitfahren": {
+    "meaningId": "ikut naik kendaraan"
+  },
+  "grauen": {
+    "meaningId": "mulai fajar; merasa ngeri"
+  },
+  "überwinden": {
+    "meaningId": "mengatasi; menaklukkan"
+  },
+  "knien": {
+    "meaningId": "berlutut"
+  },
+  "erfinden": {
+    "meaningId": "menemukan; menciptakan"
+  },
+  "erobern": {
+    "meaningId": "menaklukkan; merebut"
+  },
+  "mitspielen": {
+    "meaningId": "ikut bermain"
+  },
+  "bluten": {
+    "meaningId": "berdarah"
+  },
+  "erteilen": {
+    "meaningId": "memberikan (izin, perintah, atau pelajaran)"
+  },
+  "rahmen": {
+    "meaningId": "membingkai"
+  },
+  "zeichnen": {
+    "meaningId": "menggambar; menandatangani"
+  },
+  "wiederhaben": {
+    "meaningId": "mendapatkan kembali"
+  },
+  "ausstehen": {
+    "meaningId": "menahan; menanggung; masih tertunda"
+  },
+  "aufhängen": {
+    "meaningId": "menggantungkan"
+  },
+  "checken": {
+    "meaningId": "memeriksa; memahami (percakapan)"
+  },
+  "beraten": {
+    "meaningId": "memberi nasihat; berkonsultasi"
+  },
+  "marschieren": {
+    "meaningId": "berbaris; berjalan berbaris"
+  },
+  "ertrinken": {
+    "meaningId": "mati tenggelam"
+  },
+  "herrschen": {
+    "meaningId": "memerintah; berkuasa; berlaku"
+  },
+  "wehen": {
+    "meaningId": "bertiup; berkibar"
+  },
+  "spritzen": {
+    "meaningId": "menyemprot; memercik"
+  },
+  "hochgehen": {
+    "meaningId": "naik; meledak (percakapan)"
+  },
+  "wegtreten": {
+    "meaningId": "melangkah menjauh; menendang hingga lepas"
+  },
+  "verhören": {
+    "meaningId": "menginterogasi; salah dengar (sich verhören)"
+  },
+  "fließen": {
+    "meaningId": "mengalir"
+  },
+  "beachten": {
+    "meaningId": "memperhatikan; menaati"
+  },
+  "vermasseln": {
+    "meaningId": "mengacaukan (percakapan)"
+  },
+  "stärken": {
+    "meaningId": "memperkuat; menganji (pakaian)"
+  },
+  "verborgen": {
+    "meaningId": "tersembunyi",
+    "meaningEn": "hidden; concealed"
+  },
+  "jammern": {
+    "meaningId": "mengeluh; meratap"
+  },
+  "verführen": {
+    "meaningId": "menggoda; membujuk"
+  },
+  "abkommen": {
+    "meaningId": "menyimpang; meninggalkan (rencana)",
+    "meaningEn": "to deviate; to depart from"
+  },
+  "verarbeiten": {
+    "meaningId": "mengolah; memproses"
+  },
+  "überqueren": {
+    "meaningId": "menyeberangi"
+  },
+  "mitteln": {
+    "meaningId": "menghitung nilai rata-rata"
+  },
+  "ansprechen": {
+    "meaningId": "menyapa; membahas"
+  },
+  "stürmen": {
+    "meaningId": "menyerbu; bertiup kencang"
+  },
+  "betreiben": {
+    "meaningId": "menjalankan; mengoperasikan"
+  },
+  "grillen": {
+    "meaningId": "memanggang di atas bara"
+  },
+  "hüten": {
+    "meaningId": "menjaga; menggembalakan"
+  },
+  "klarkommen": {
+    "meaningId": "mampu mengatasi; bergaul dengan baik"
+  },
+  "auftreiben": {
+    "meaningId": "mendapatkan dengan mencari; mengumpulkan"
+  },
+  "bequem": {
+    "meaningId": "nyaman"
+  },
+  "pleite": {
+    "meaningId": "bangkrut (percakapan)"
+  },
+  "mächtig": {
+    "meaningId": "berkuasa; sangat kuat"
+  },
+  "unangenehm": {
+    "meaningId": "tidak menyenangkan"
+  },
+  "schüchtern": {
+    "meaningId": "pemalu"
+  },
+  "verlegen": {
+    "meaningId": "malu; canggung"
+  },
+  "menschlich": {
+    "meaningId": "manusiawi; berkaitan dengan manusia"
+  },
+  "sanft": {
+    "meaningId": "lembut"
+  },
+  "niedlich": {
+    "meaningId": "imut; lucu"
+  },
+  "unfassbar": {
+    "meaningId": "tidak terbayangkan; luar biasa"
+  },
+  "unsichtbar": {
+    "meaningId": "tidak terlihat"
+  },
+  "kardinal": {
+    "meaningId": "pokok; utama"
+  },
+  "fit": {
+    "meaningId": "bugar; sehat"
+  },
+  "verängstigt": {
+    "meaningId": "ketakutan"
+  },
+  "aufrichtig": {
+    "meaningId": "tulus; jujur"
+  },
+  "angebracht": {
+    "meaningId": "pantas; sesuai"
+  },
+  "quitt": {
+    "meaningId": "impas; lunas"
+  },
+  "unverständlich": {
+    "meaningId": "tidak dapat dimengerti"
+  },
+  "empfindlich": {
+    "meaningId": "peka; sensitif"
+  },
+  "gelehrt": {
+    "meaningId": "terpelajar; berilmu"
+  },
+  "stur": {
+    "meaningId": "keras kepala"
+  },
+  "körperlich": {
+    "meaningId": "fisik; jasmani"
+  },
+  "gewalttätig": {
+    "meaningId": "menggunakan kekerasan; beringas"
+  },
+  "sensibel": {
+    "meaningId": "peka; sensitif"
+  },
+  "gebacken": {
+    "meaningId": "dipanggang"
+  },
+  "relativ": {
+    "meaningId": "relatif; bergantung pada pembanding"
+  },
+  "versehentlich": {
+    "meaningId": "tidak sengaja"
+  },
+  "Widerstand": {
+    "meaningId": "perlawanan; hambatan; resistor"
+  },
+  "Anzeichen": {
+    "meaningId": "tanda; gejala"
+  },
+  "Reißen": {
+    "meaningId": "robekan; tarikan; nyeri menusuk"
+  },
+  "Leib": {
+    "meaningId": "tubuh"
+  },
+  "Sender": {
+    "meaningId": "pemancar; stasiun penyiaran"
+  },
+  "Bande": {
+    "meaningId": "gerombolan; ikatan (jamak dari Band)"
+  },
+  "Schmuck": {
+    "meaningId": "perhiasan"
+  },
+  "entgegen": {
+    "meaningId": "menuju; berlawanan dengan"
+  },
+  "Strecke": {
+    "meaningId": "jarak; rute; ruas garis"
+  },
+  "Laster": {
+    "meaningId": "kebiasaan buruk; truk (percakapan)"
+  },
+  "Gegenwart": {
+    "meaningId": "masa kini; kehadiran"
+  },
+  "Stift": {
+    "meaningId": "pena; pensil"
+  },
+  "Anblick": {
+    "meaningId": "pemandangan; penampakan"
+  },
+  "Tiefe": {
+    "meaningId": "kedalaman"
+  },
+  "Wille": {
+    "meaningId": "kehendak; kemauan"
+  },
+  "Abschied": {
+    "meaningId": "perpisahan; pamitan"
+  },
+  "Amt": {
+    "meaningId": "jabatan; kantor pemerintah"
+  },
+  "Gesang": {
+    "meaningId": "nyanyian; seni menyanyi"
+  },
+  "lediglich": {
+    "meaningId": "hanya; semata-mata"
+  },
+  "Bestand": {
+    "meaningId": "persediaan; keberadaan yang bertahan"
+  },
+  "Erbe": {
+    "meaningId": "warisan (das Erbe); ahli waris (der Erbe)"
+  },
+  "Kissen": {
+    "meaningId": "bantal"
+  },
+  "Trost": {
+    "meaningId": "penghiburan"
+  },
+  "Biest": {
+    "meaningId": "binatang buas; orang yang kejam"
+  },
+  "Anlass": {
+    "meaningId": "alasan; kesempatan"
+  },
+  "Akt": {
+    "meaningId": "tindakan; babak; lukisan telanjang"
+  },
+  "Freak": {
+    "meaningId": "orang eksentrik; penggemar fanatik"
+  },
+  "Detail": {
+    "meaningId": "rincian"
+  },
+  "Box": {
+    "meaningId": "kotak; bilik"
+  },
+  "Zusammenhang": {
+    "meaningId": "hubungan; keterkaitan"
+  },
+  "Wehe": {
+    "meaningId": "nyeri kontraksi persalinan"
+  },
+  "Sorte": {
+    "meaningId": "jenis; macam"
+  },
+  "Marsch": {
+    "meaningId": "gerak jalan; mars (musik)"
+  },
+  "Brett": {
+    "meaningId": "papan"
+  },
+  "vorüber": {
+    "meaningId": "berlalu; lewat"
+  },
+  "Anspruch": {
+    "meaningId": "tuntutan; hak; standar yang diharapkan"
+  },
+  "Aufstand": {
+    "meaningId": "pemberontakan"
+  },
+  "Schneide": {
+    "meaningId": "mata pisau; sisi tajam"
+  },
+  "Kater": {
+    "meaningId": "kucing jantan; pengar setelah minum alkohol"
+  },
+  "Miese": {
+    "meaningId": "kerugian; utang (percakapan)"
+  },
+  "Bock": {
+    "meaningId": "kambing jantan; keinginan (percakapan)"
+  },
+  "Streich": {
+    "meaningId": "lelucon jahil; tipuan"
+  },
+  "Herbst": {
+    "meaningId": "musim gugur"
+  },
+  "Studium": {
+    "meaningId": "studi di perguruan tinggi"
+  },
+  "Angesicht": {
+    "meaningId": "wajah; muka"
+  },
+  "mittlerweile": {
+    "meaningId": "sementara itu; sekarang ini"
+  },
+  "Vorkommen": {
+    "meaningId": "kejadian; keberadaan; endapan (mineral)"
+  },
+  "derzeit": {
+    "meaningId": "saat ini"
+  },
+  "Frost": {
+    "meaningId": "embun beku; suhu beku"
+  },
+  "Po": {
+    "meaningId": "pantat (percakapan)"
+  },
+  "Koks": {
+    "meaningId": "kokas; kokain (slang)"
+  },
+  "Kammer": {
+    "meaningId": "kamar kecil; dewan"
+  },
+  "Schoß": {
+    "meaningId": "pangkuan; rahim"
+  },
+  "Security": {
+    "meaningId": "keamanan; petugas keamanan"
+  },
+  "Gestalt": {
+    "meaningId": "bentuk; sosok"
+  },
+  "Sehnsucht": {
+    "meaningId": "kerinduan yang mendalam"
+  },
+  "Garderobe": {
+    "meaningId": "tempat menyimpan mantel; ruang ganti; pakaian"
+  },
+  "Bräutigam": {
+    "meaningId": "pengantin laki-laki"
+  },
+  "Rang": {
+    "meaningId": "pangkat; peringkat"
+  },
+  "Pension": {
+    "meaningId": "penginapan kecil; uang pensiun"
+  },
+  "Dritter": {
+    "meaningId": "orang ketiga"
+  },
+  "Enge": {
+    "meaningId": "kesempitan; ruang yang sempit"
+  },
+  "gen": {
+    "meaningId": "ke arah (kata depan sastra)"
+  },
+  "Umgang": {
+    "meaningId": "pergaulan; cara menangani",
+    "meaningEn": "social contact; dealings; handling"
+  },
+  "hinüber": {
+    "meaningId": "ke seberang"
+  },
+  "Geier": {
+    "meaningId": "burung pemakan bangkai; burung nasar"
+  },
+  "Schale": {
+    "meaningId": "mangkuk; kulit buah; cangkang"
+  },
+  "Handschrift": {
+    "meaningId": "tulisan tangan"
+  },
+  "Hülle": {
+    "meaningId": "sampul; pembungkus"
+  },
+  "Kit": {
+    "meaningId": "perlengkapan satu set"
+  },
+  "Arabisch": {
+    "meaningId": "bahasa Arab"
+  },
+  "Araber": {
+    "meaningId": "orang Arab"
+  },
+  "Ausgabe": {
+    "meaningId": "pengeluaran; edisi; penerbitan"
+  },
+  "Note": {
+    "meaningId": "nilai; not musik; uang kertas"
+  },
+  "Bon": {
+    "meaningId": "struk; kupon",
+    "meaningEn": "receipt; voucher"
+  },
+  "Geschirr": {
+    "meaningId": "peralatan makan; tali kekang"
+  },
+  "Gedenken": {
+    "meaningId": "peringatan; kenangan"
+  },
+  "Plastik": {
+    "meaningId": "plastik (die Plastik); patung atau seni pahat (die Plastik)"
+  },
+  "Topf": {
+    "meaningId": "panci; pot"
+  },
+  "Routine": {
+    "meaningId": "kebiasaan; rutinitas"
+  },
+  "Schwindel": {
+    "meaningId": "pusing; penipuan"
+  },
+  "Hüfte": {
+    "meaningId": "pinggul"
+  },
+  "Branche": {
+    "meaningId": "bidang usaha; industri"
+  },
+  "Pullover": {
+    "meaningId": "sweter"
+  },
+  "Sahne": {
+    "meaningId": "krim susu"
+  },
+  "Umsatz": {
+    "meaningId": "omzet; perputaran penjualan"
+  },
+  "Obhut": {
+    "meaningId": "penjagaan; perlindungan"
+  },
+  "Belastung": {
+    "meaningId": "beban; tekanan; bukti yang memberatkan"
+  },
+  "berechnen": {
+    "meaningId": "menghitung; mengenakan biaya"
+  },
+  "aufladen": {
+    "meaningId": "mengisi daya; memuat"
+  },
+  "rechtmäßig": {
+    "meaningId": "sah; sesuai hukum"
+  },
+  "rechtlich": {
+    "meaningId": "berkaitan dengan hukum"
+  },
+  "Befund": {
+    "meaningId": "temuan pemeriksaan; hasil diagnosis"
+  },
+  "Spanier": {
+    "meaningId": "orang Spanyol"
+  },
+  "Kundin": {
+    "meaningId": "pelanggan perempuan"
+  },
+  "Rubin": {
+    "meaningId": "batu rubi"
+  },
+  "Vorschein": {
+    "meaningId": "penampakan (zum Vorschein kommen: muncul)"
+  },
+  "Aktivität": {
+    "meaningId": "aktivitas; kegiatan"
+  },
+  "Anpassung": {
+    "meaningId": "penyesuaian; adaptasi"
+  },
+  "Verpflichtung": {
+    "meaningId": "kewajiban; komitmen"
+  },
+  "Verfolgung": {
+    "meaningId": "pengejaran; penganiayaan"
+  },
+  "Anordnung": {
+    "meaningId": "perintah; susunan"
+  },
+  "Bindung": {
+    "meaningId": "ikatan"
+  },
+  "Täuschung": {
+    "meaningId": "penipuan; kekeliruan persepsi"
+  },
+  "Bedienung": {
+    "meaningId": "pengoperasian; pelayanan; pelayan"
+  },
+  "Bestechung": {
+    "meaningId": "penyuapan"
+  },
+  "Bekanntschaft": {
+    "meaningId": "kenalan; perkenalan"
+  },
+  "Verkleidung": {
+    "meaningId": "penyamaran; kostum"
+  },
+  "Erkenntnis": {
+    "meaningId": "pemahaman; pengetahuan yang diperoleh"
+  },
+  "Steuerung": {
+    "meaningId": "pengendalian; sistem kendali"
+  },
+  "Freundlichkeit": {
+    "meaningId": "keramahan"
+  },
+  "Versorgung": {
+    "meaningId": "pasokan; penyediaan; perawatan"
+  },
+  "Ruck": {
+    "meaningId": "sentakan"
+  },
+  "Zufriedenheit": {
+    "meaningId": "kepuasan"
+  },
+  "Audienz": {
+    "meaningId": "pertemuan resmi dengan penguasa"
+  },
+  "Auseinandersetzung": {
+    "meaningId": "perselisihan; pembahasan mendalam"
+  },
+  "Beurteilung": {
+    "meaningId": "penilaian"
+  },
+  "Wiederholung": {
+    "meaningId": "pengulangan"
+  },
+  "Schlussfolgerung": {
+    "meaningId": "kesimpulan"
+  },
+  "Genugtuung": {
+    "meaningId": "kepuasan; pemulihan nama baik"
+  },
+  "Neigung": {
+    "meaningId": "kecenderungan; kemiringan"
+  },
+  "Exekution": {
+    "meaningId": "eksekusi hukuman mati"
+  },
+  "Begnadigung": {
+    "meaningId": "pengampunan hukuman"
+  },
+  "Isolation": {
+    "meaningId": "isolasi; pengasingan"
+  },
+  "Begründung": {
+    "meaningId": "alasan; dasar pembenaran"
+  },
+  "Dekoration": {
+    "meaningId": "hiasan; dekorasi"
+  },
+  "Aufrichtigkeit": {
+    "meaningId": "ketulusan; kejujuran"
+  },
+  "Gleis": {
+    "meaningId": "rel; jalur kereta api"
+  },
+  "Schreiber": {
+    "meaningId": "juru tulis; penulis",
+    "meaningEn": "scribe; writer"
+  },
+  "Läufer": {
+    "meaningId": "pelari; gajah (catur)"
+  },
+  "Thunfisch": {
+    "meaningId": "ikan tuna"
+  },
+  "tierisch": {
+    "meaningId": "berkaitan dengan hewan; sangat (percakapan)"
+  },
+  "einlassen": {
+    "meaningId": "membiarkan masuk; terlibat (sich einlassen)"
+  },
+  "aufsuchen": {
+    "meaningId": "mendatangi; mencari"
+  },
+  "anhaben": {
+    "meaningId": "mengenakan (pakaian)"
+  },
+  "anrichten": {
+    "meaningId": "menimbulkan (kerusakan); menyajikan (makanan)"
+  },
+  "vermitteln": {
+    "meaningId": "menengahi; menyampaikan; mempertemukan"
+  },
+  "verständigen": {
+    "meaningId": "memberi tahu; mencapai kesepahaman (sich verständigen)"
+  },
+  "begleichen": {
+    "meaningId": "melunasi; menyelesaikan (tagihan)"
+  },
+  "beugen": {
+    "meaningId": "menekuk; membengkokkan"
+  },
+  "falten": {
+    "meaningId": "melipat"
+  },
+  "vormachen": {
+    "meaningId": "memperagakan; memperdaya"
+  },
+  "aufsteigen": {
+    "meaningId": "naik; meningkat; dipromosikan"
+  },
+  "lagern": {
+    "meaningId": "menyimpan; berkemah"
+  },
+  "reinziehen": {
+    "meaningId": "menarik masuk; melibatkan (percakapan)"
+  },
+  "zerreißen": {
+    "meaningId": "merobek hingga terpisah"
+  },
+  "losfahren": {
+    "meaningId": "mulai berangkat dengan kendaraan"
+  },
+  "einfangen": {
+    "meaningId": "menangkap"
+  },
+  "beheben": {
+    "meaningId": "mengatasi; memperbaiki (masalah)"
+  },
+  "ausfallen": {
+    "meaningId": "gagal berfungsi; dibatalkan; rontok"
+  },
+  "nachgeben": {
+    "meaningId": "mengalah; melunak"
+  },
+  "schleifen": {
+    "meaningId": "mengasah; mengampelas; menyeret"
+  },
+  "anmelden": {
+    "meaningId": "mendaftarkan; masuk ke akun (sich anmelden)"
+  },
+  "ausstellen": {
+    "meaningId": "memamerkan; menerbitkan (dokumen)"
+  },
+  "krallen": {
+    "meaningId": "mencengkeram dengan cakar"
+  },
+  "schmelzen": {
+    "meaningId": "mencair; meleleh"
+  },
+  "würdigen": {
+    "meaningId": "menghargai; mengakui jasa"
+  },
+  "belegen": {
+    "meaningId": "membuktikan; menempati; mengambil (mata kuliah)"
+  },
+  "einstecken": {
+    "meaningId": "memasukkan ke saku; menerima (pukulan)"
+  },
+  "lokalisieren": {
+    "meaningId": "menentukan lokasi"
+  },
+  "beitragen": {
+    "meaningId": "menyumbang; berkontribusi"
+  },
+  "kritisieren": {
+    "meaningId": "mengkritik"
+  },
+  "vorenthalten": {
+    "meaningId": "menahan; tidak memberikan yang menjadi hak"
+  },
+  "hinkommen": {
+    "meaningId": "sampai ke sana; mencukupi"
+  },
+  "stützen": {
+    "meaningId": "menopang; mendukung"
+  },
+  "steigern": {
+    "meaningId": "meningkatkan"
+  },
+  "erlösen": {
+    "meaningId": "membebaskan; menyelamatkan; memperoleh (hasil penjualan)"
+  },
+  "aufbringen": {
+    "meaningId": "mengumpulkan (uang); membuat marah"
+  },
+  "vollbringen": {
+    "meaningId": "menyelesaikan; mencapai"
+  },
+  "nachvollziehen": {
+    "meaningId": "memahami jalan pikiran; menelusuri kembali"
+  },
+  "betreffen": {
+    "meaningId": "menyangkut; berkaitan dengan"
+  },
+  "abtreten": {
+    "meaningId": "menyerahkan (hak); mengundurkan diri",
+    "meaningEn": "to cede; to resign; to wear down"
+  },
+  "ticken": {
+    "meaningId": "berdetik; berpikir atau bertindak (percakapan)",
+    "meaningEn": "to tick; to think or act (colloquial)"
+  },
+  "ertränken": {
+    "meaningId": "menenggelamkan hingga mati"
+  },
+  "umfallen": {
+    "meaningId": "tumbang; jatuh terguling"
+  },
+  "aushelfen": {
+    "meaningId": "membantu sementara"
+  },
+  "wackeln": {
+    "meaningId": "bergoyang; goyah"
+  },
+  "festlegen": {
+    "meaningId": "menetapkan"
+  },
+  "wiedererkennen": {
+    "meaningId": "mengenali kembali"
+  },
+  "erlassen": {
+    "meaningId": "mengeluarkan (peraturan); membebaskan (utang)"
+  },
+  "verwischen": {
+    "meaningId": "menghapus jejak; mengaburkan"
+  },
+  "meistern": {
+    "meaningId": "menguasai; berhasil mengatasi"
+  },
+  "verschlagen|verb": {
+    "meaningId": "membawa ke suatu tempat; memukul",
+    "meaningEn": "to drive or carry to a place; to strike"
+  },
+  "verschlagen|adjective": {
+    "meaningId": "licik; penuh tipu muslihat",
+    "meaningEn": "devious; sly"
+  },
+  "abschießen": {
+    "meaningId": "menembak jatuh; meluncurkan"
+  },
+  "anklopfen": {
+    "meaningId": "mengetuk pintu"
+  },
+  "nachfragen": {
+    "meaningId": "bertanya lebih lanjut"
+  },
+  "flicken": {
+    "meaningId": "menambal; memperbaiki"
+  },
+  "hellen": {
+    "meaningId": "mencerahkan; menjadikan terang"
+  },
+  "campen": {
+    "meaningId": "berkemah"
+  },
+  "hochkommen": {
+    "meaningId": "naik; muncul kembali"
+  },
+  "erwerben": {
+    "meaningId": "memperoleh; membeli"
+  },
+  "abstürzen": {
+    "meaningId": "jatuh; mengalami kecelakaan (pesawat); macet (komputer)"
+  },
+  "stiften": {
+    "meaningId": "menyumbangkan; mendirikan; menimbulkan"
+  },
+  "herausholen": {
+    "meaningId": "mengeluarkan; mengambil keluar"
+  },
+  "programmieren": {
+    "meaningId": "memprogram"
+  },
+  "unterkriegen": {
+    "meaningId": "mengalahkan; membuat patah semangat"
+  },
+  "besagen": {
+    "meaningId": "menyatakan; berarti"
+  },
+  "preisgeben": {
+    "meaningId": "membocorkan; menyerahkan; mengorbankan"
+  },
+  "rocken": {
+    "meaningId": "memainkan musik rok; mengguncang (percakapan)"
+  },
+  "beschwören": {
+    "meaningId": "memohon dengan sungguh-sungguh; memanggil (roh)"
+  },
+  "vorrücken": {
+    "meaningId": "maju; bergerak ke depan"
+  },
+  "gleiten": {
+    "meaningId": "meluncur"
+  },
+  "zerren": {
+    "meaningId": "menarik dengan kasar; menyeret"
+  },
+  "einweisen": {
+    "meaningId": "memberi pengarahan; memasukkan ke lembaga perawatan"
+  },
+  "abschreiben": {
+    "meaningId": "menyalin; menghapus dari pembukuan"
+  },
+  "belehren": {
+    "meaningId": "mengajari; menasihati"
+  },
+  "schöpfen": {
+    "meaningId": "menimba; menciptakan"
+  },
+  "vorläufig": {
+    "meaningId": "sementara"
+  },
+  "eingebildet": {
+    "meaningId": "sombong; khayalan"
+  },
+  "ansteckend": {
+    "meaningId": "menular"
+  },
+  "geistig": {
+    "meaningId": "mental; intelektual"
+  },
+  "defekt": {
+    "meaningId": "rusak"
+  },
+  "stier": {
+    "meaningId": "terbelalak; menatap kaku",
+    "meaningEn": "staring fixedly; glassy-eyed"
+  },
+  "startklar": {
+    "meaningId": "siap berangkat"
+  },
+  "vage": {
+    "meaningId": "samar; tidak jelas"
+  },
+  "zart": {
+    "meaningId": "lembut; halus; rapuh"
+  },
+  "selig": {
+    "meaningId": "bahagia; diberkati"
+  },
+  "überwältigend": {
+    "meaningId": "luar biasa; sangat mengesankan"
+  },
+  "gehorsam": {
+    "meaningId": "patuh"
+  },
+  "auffällig": {
+    "meaningId": "mencolok"
+  },
+  "zärtlich": {
+    "meaningId": "penuh kasih; lembut"
+  },
+  "oberflächlich": {
+    "meaningId": "dangkal; di permukaan"
+  },
+  "moralisch": {
+    "meaningId": "berkaitan dengan moral"
+  },
+  "korrupt": {
+    "meaningId": "korup"
+  },
+  "leichtsinnig": {
+    "meaningId": "ceroboh; sembrono"
+  },
+  "flüchtig": {
+    "meaningId": "sekilas; sepintas; buron"
+  },
+  "künstlich": {
+    "meaningId": "buatan; artifisial"
+  },
+  "geschmacklos": {
+    "meaningId": "tidak berselera; hambar"
+  },
+  "manuell": {
+    "meaningId": "manual; dilakukan dengan tangan"
+  },
+  "lebhaft": {
+    "meaningId": "hidup; ramai; lincah"
+  },
+  "zwangsläufig": {
+    "meaningId": "tidak terelakkan; sebagai akibat yang pasti"
+  },
+  "parat": {
+    "meaningId": "siap; tersedia"
+  },
+  "Ausschlag": {
+    "meaningId": "ruam; penyimpangan jarum ukur"
+  },
+  "Marquis": {
+    "meaningId": "markis (gelar bangsawan)"
+  },
+  "Stoß": {
+    "meaningId": "dorongan; benturan",
+    "meaningEn": "push; impact; thrust"
+  },
+  "Arbeitszimmer": {
+    "meaningId": "ruang kerja"
+  },
+  "vielmehr": {
+    "meaningId": "melainkan; lebih tepatnya"
+  },
+  "Zeitalter": {
+    "meaningId": "zaman; era"
+  },
+  "Partie": {
+    "meaningId": "bagian; satu permainan; rombongan"
+  },
+  "Länge": {
+    "meaningId": "panjang"
+  },
+  "Verteidiger": {
+    "meaningId": "pembela; pemain bertahan"
+  },
+  "Begleiter": {
+    "meaningId": "pendamping"
+  },
+  "Rechtsanwalt": {
+    "meaningId": "pengacara"
+  },
+  "Stier": {
+    "meaningId": "banteng; Taurus (zodiak)"
+  },
+  "Leinwand": {
+    "meaningId": "kanvas; layar bioskop"
+  },
+  "Sound": {
+    "meaningId": "suara; bunyi"
+  },
+  "Absturz": {
+    "meaningId": "kejatuhan; kecelakaan pesawat; macetnya komputer"
+  },
+  "Schlägerei": {
+    "meaningId": "perkelahian"
+  },
+  "Bösewicht": {
+    "meaningId": "penjahat"
+  },
+  "Stapel": {
+    "meaningId": "tumpukan"
+  },
+  "Verehrer": {
+    "meaningId": "pengagum"
+  },
+  "Wiege": {
+    "meaningId": "buaian bayi"
+  },
+  "Becken": {
+    "meaningId": "panggul; baskom; cekungan"
+  },
+  "Zitrone": {
+    "meaningId": "lemon"
+  },
+  "Zeugenstand": {
+    "meaningId": "tempat saksi memberikan kesaksian",
+    "meaningEn": "witness stand"
+  },
+  "Gästezimmer": {
+    "meaningId": "kamar tamu (untuk menginap)"
+  },
+  "Strenge": {
+    "meaningId": "ketegasan; keketatan"
+  },
+  "Spitzname": {
+    "meaningId": "nama julukan"
+  },
+  "Urteilsvermögen": {
+    "meaningId": "kemampuan menilai; pertimbangan yang baik"
+  },
+  "Schlucht": {
+    "meaningId": "ngarai; jurang"
+  },
+  "Abgang": {
+    "meaningId": "kepergian; keluarnya sesuatu"
+  },
+  "Gebrauch": {
+    "meaningId": "penggunaan; pemakaian"
+  },
+  "Köpfchen": {
+    "meaningId": "kepala kecil; kecerdikan"
+  },
+  "Haarschnitt": {
+    "meaningId": "potongan rambut"
+  },
+  "Stadium": {
+    "meaningId": "tahap; stadium"
+  },
+  "Lebensform": {
+    "meaningId": "bentuk kehidupan"
+  },
+  "Aufsehen": {
+    "meaningId": "kehebohan; perhatian publik"
+  },
+  "Sprit": {
+    "meaningId": "bensin; bahan bakar (percakapan)",
+    "meaningEn": "petrol; fuel"
+  },
+  "Beschuss": {
+    "meaningId": "penembakan; serangan tembakan"
+  },
+  "Gutachten": {
+    "meaningId": "laporan penilaian ahli"
+  },
+  "Kritiker": {
+    "meaningId": "pengkritik; kritikus"
+  },
+  "Niete": {
+    "meaningId": "paku keling; tiket undian kosong; orang tidak becus"
+  },
+  "Ansatz": {
+    "meaningId": "pendekatan; permulaan"
+  },
+  "Eintrag": {
+    "meaningId": "entri; catatan"
+  },
+  "Beule": {
+    "meaningId": "benjolan; penyok"
+  },
+  "Freigabe": {
+    "meaningId": "izin; pelepasan"
+  },
+  "Glücksbringer": {
+    "meaningId": "benda pembawa keberuntungan"
+  },
+  "Küken": {
+    "meaningId": "anak ayam"
+  },
+  "Lagerraum": {
+    "meaningId": "ruang penyimpanan"
+  },
+  "servus": {
+    "meaningId": "hai; sampai jumpa (sapaan regional)",
+    "meaningEn": "hello; goodbye (regional greeting)"
+  },
+  "Acker": {
+    "meaningId": "ladang"
+  },
+  "hinab": {
+    "meaningId": "ke bawah"
+  },
+  "Übernahme": {
+    "meaningId": "pengambilalihan"
+  },
+  "baba": {
+    "meaningId": "dadah (sapaan perpisahan regional)"
+  },
+  "Darsteller": {
+    "meaningId": "pemeran"
+  },
+  "Erdboden": {
+    "meaningId": "permukaan tanah"
+  },
+  "Webseite": {
+    "meaningId": "halaman web"
+  },
+  "Provision": {
+    "meaningId": "komisi penjualan"
+  },
+  "Degen": {
+    "meaningId": "pedang tusuk"
+  },
+  "Erdgeschoss": {
+    "meaningId": "lantai dasar"
+  },
+  "mittels": {
+    "meaningId": "dengan menggunakan; melalui"
+  },
+  "huhu": {
+    "meaningId": "halo! (panggilan untuk menarik perhatian)"
+  },
+  "Oberhaupt": {
+    "meaningId": "kepala; pemimpin"
+  },
+  "Schwachstelle": {
+    "meaningId": "titik lemah"
+  },
+  "Kanne": {
+    "meaningId": "teko; wadah bercerat"
+  },
+  "Gage": {
+    "meaningId": "honorarium penampil"
+  },
+  "Aufschub": {
+    "meaningId": "penundaan"
+  },
+  "Schneesturm": {
+    "meaningId": "badai salju"
+  },
+  "Urkunde": {
+    "meaningId": "akta; sertifikat"
+  },
+  "Gefreiter": {
+    "meaningId": "prajurit tingkat satu (pangkat militer)"
+  },
+  "Befehlshaber": {
+    "meaningId": "panglima; komandan"
+  },
+  "Antlitz": {
+    "meaningId": "wajah (sastra)"
+  },
+  "Gemüt": {
+    "meaningId": "perasaan; watak"
+  },
+  "Wohnheim": {
+    "meaningId": "asrama"
+  },
+  "Stütze": {
+    "meaningId": "penopang; dukungan"
+  },
+  "Schimmel": {
+    "meaningId": "jamur; kuda putih"
+  },
+  "Moderator": {
+    "meaningId": "pembawa acara; moderator"
+  },
+  "Cutter": {
+    "meaningId": "penyunting film; pisau pemotong"
+  },
+  "Abwasch": {
+    "meaningId": "kegiatan mencuci piring; piring kotor"
+  },
+  "Weber": {
+    "meaningId": "penenun"
+  },
+  "Bankett": {
+    "meaningId": "jamuan resmi"
+  },
+  "moin": {
+    "meaningId": "halo; selamat pagi (sapaan regional)",
+    "meaningEn": "hello; good morning (regional greeting)"
+  },
+  "Gassi": {
+    "meaningId": "jalan-jalan bersama anjing (Gassi gehen)"
+  },
+  "Paprika": {
+    "meaningId": "paprika; bubuk paprika"
+  },
+  "Psyche": {
+    "meaningId": "jiwa; kondisi mental"
+  },
+  "Bluse": {
+    "meaningId": "blus"
+  },
+  "Sekt": {
+    "meaningId": "anggur bersoda"
+  },
+  "Heft": {
+    "meaningId": "buku tulis; majalah edisi tertentu"
+  },
+  "Weide": {
+    "meaningId": "padang penggembalaan; pohon dedalu"
+  },
+  "Waage": {
+    "meaningId": "timbangan; Libra (zodiak)"
+  },
+  "Pickel": {
+    "meaningId": "jerawat; beliung"
+  },
+  "Mikrowelle": {
+    "meaningId": "gelombang mikro; oven microwave"
+  },
+  "Fakultät": {
+    "meaningId": "fakultas; faktorial (matematika)"
+  },
+  "Nachlass": {
+    "meaningId": "harta peninggalan; potongan harga"
+  },
+  "gesetzlich": {
+    "meaningId": "menurut hukum; diwajibkan undang-undang"
+  },
+  "juristisch": {
+    "meaningId": "berkaitan dengan ilmu hukum"
+  },
+  "Anwendung": {
+    "meaningId": "penerapan; penggunaan"
+  },
+  "Meisterin": {
+    "meaningId": "juara perempuan; ahli perempuan"
+  },
+  "patent": {
+    "meaningId": "cakap; praktis; menyenangkan (percakapan)"
+  },
+  "Chinesin": {
+    "meaningId": "perempuan Tionghoa"
+  },
+  "Terroristin": {
+    "meaningId": "teroris perempuan"
+  },
+  "Meilenstein": {
+    "meaningId": "batu penanda jarak; tonggak penting"
+  },
+  "dezent": {
+    "meaningId": "tidak mencolok; bersahaja"
+  },
+  "gescheit": {
+    "meaningId": "cerdas; masuk akal"
+  },
+  "Ausführung": {
+    "meaningId": "pelaksanaan; uraian; versi"
+  },
+  "Überarbeitung": {
+    "meaningId": "revisi; kerja berlebihan"
+  },
+  "Füllung": {
+    "meaningId": "isian; tambalan (gigi)"
+  },
+  "Direktion": {
+    "meaningId": "direksi; pimpinan"
+  },
+  "Voraussetzung": {
+    "meaningId": "prasyarat; syarat"
+  },
+  "Verbreitung": {
+    "meaningId": "penyebaran"
+  },
+  "Unendlichkeit": {
+    "meaningId": "ketakterhinggaan; keabadian"
+  },
+  "Verbundenheit": {
+    "meaningId": "keterikatan; rasa kebersamaan"
+  },
+  "Zählung": {
+    "meaningId": "penghitungan"
+  },
+  "Kapazität": {
+    "meaningId": "kapasitas; daya tampung"
+  },
+  "Mahnung": {
+    "meaningId": "peringatan; surat pengingat pembayaran"
+  },
+  "Dichtung": {
+    "meaningId": "puisi; karya sastra; penyekat"
+  },
+  "Dringlichkeit": {
+    "meaningId": "urgensi; keadaan mendesak"
+  },
+  "Verwahrung": {
+    "meaningId": "penyimpanan; penahanan"
+  },
+  "Ausbreitung": {
+    "meaningId": "penyebaran; perluasan"
+  },
+  "Verschmelzung": {
+    "meaningId": "peleburan; penggabungan",
+    "meaningEn": "fusion; merging"
+  },
+  "Umwandlung": {
+    "meaningId": "perubahan bentuk; konversi"
+  },
+  "Steigerung": {
+    "meaningId": "peningkatan",
+    "meaningEn": "increase; comparison (grammar)"
+  },
+  "Bearbeitung": {
+    "meaningId": "pengolahan; penyuntingan"
+  },
+  "Wahnvorstellung": {
+    "meaningId": "delusi; keyakinan keliru"
+  },
+  "Verabschiedung": {
+    "meaningId": "perpisahan; pengesahan (undang-undang)"
+  },
+  "Einnahme": {
+    "meaningId": "pendapatan; penerimaan; konsumsi (obat)",
+    "meaningEn": "income; intake; capture"
+  },
+  "Domino": {
+    "meaningId": "domino (permainan atau kostum)"
+  },
+  "Einkaufswagen": {
+    "meaningId": "kereta belanja"
+  },
+  "Luchs": {
+    "meaningId": "lynx (kucing liar bertelinga berumbai)"
+  },
+  "Felsbrocken": {
+    "meaningId": "bongkahan batu"
+  },
+  "voreingenommen": {
+    "meaningId": "berprasangka; tidak netral"
+  },
+  "Versteckspiel": {
+    "meaningId": "permainan petak umpet"
+  },
+  "vortragen": {
+    "meaningId": "menyampaikan; membawakan (pidato atau karya)"
+  },
+  "aufholen": {
+    "meaningId": "mengejar ketertinggalan"
+  },
+  "einschließen": {
+    "meaningId": "mengunci di dalam; mencakup"
+  },
+  "plagen": {
+    "meaningId": "menyiksa; mengganggu"
+  },
+  "zerlegen": {
+    "meaningId": "membongkar; menguraikan"
+  },
+  "weglassen": {
+    "meaningId": "menghilangkan; tidak menyertakan"
+  },
+  "kiffen": {
+    "meaningId": "mengisap ganja (slang)"
+  },
+  "knöpfen": {
+    "meaningId": "mengancingkan"
+  },
+  "bemitleiden": {
+    "meaningId": "mengasihani"
+  },
+  "missverstehen": {
+    "meaningId": "salah memahami"
+  },
+  "wichsen": {
+    "meaningId": "masturbasi (kasar); memoles"
+  },
+  "wühlen": {
+    "meaningId": "mengaduk-aduk; mengobrak-abrik"
+  },
+  "winden": {
+    "meaningId": "melilit; berkelok"
+  },
+  "beeinträchtigen": {
+    "meaningId": "mengganggu; merugikan"
+  },
+  "zugucken": {
+    "meaningId": "menonton; melihat (percakapan)"
+  },
+  "versinken": {
+    "meaningId": "tenggelam; terbenam"
+  },
+  "verkommen": {
+    "meaningId": "merosot; menjadi rusak"
+  },
+  "überziehen": {
+    "meaningId": "mengenakan; melapisi; melampaui"
+  },
+  "ertönen": {
+    "meaningId": "berbunyi; terdengar"
+  },
+  "ausgleichen": {
+    "meaningId": "menyeimbangkan; mengganti kerugian"
+  },
+  "auswirken": {
+    "meaningId": "berdampak; berpengaruh (sich auswirken)"
+  },
+  "schnattern": {
+    "meaningId": "berkotek; berceloteh"
+  },
+  "rütteln": {
+    "meaningId": "mengguncang; menggoyang"
+  },
+  "einschläfern": {
+    "meaningId": "membuat tertidur; melakukan eutanasia pada hewan"
+  },
+  "erörtern": {
+    "meaningId": "membahas; mendiskusikan"
+  },
+  "tönen": {
+    "meaningId": "berbunyi; bersuara"
+  },
+  "gaumen": {
+    "meaningId": "mengangkat batang kayu dengan tuas (istilah kehutanan)"
+  },
+  "entgegennehmen": {
+    "meaningId": "menerima"
+  },
+  "abspringen": {
+    "meaningId": "melompat turun; mengundurkan diri"
+  },
+  "unterbreiten": {
+    "meaningId": "mengajukan (usul atau tawaran)"
+  },
+  "einbeziehen": {
+    "meaningId": "menyertakan; melibatkan"
+  },
+  "freihalten": {
+    "meaningId": "menjaga agar tetap kosong; mentraktir"
+  },
+  "beherbergen": {
+    "meaningId": "memberi tempat tinggal; menampung"
+  },
+  "hochfahren": {
+    "meaningId": "menyalakan sistem; menaikkan"
+  },
+  "zunehmen": {
+    "meaningId": "bertambah; naik berat badan"
+  },
+  "orientieren": {
+    "meaningId": "memberi petunjuk arah; menyesuaikan diri (sich orientieren)"
+  },
+  "haften": {
+    "meaningId": "melekat; bertanggung jawab secara hukum"
+  },
+  "stampfen": {
+    "meaningId": "mengentak; menumbuk"
+  },
+  "zocken": {
+    "meaningId": "berjudi; bermain gim (slang)"
+  },
+  "anbrennen": {
+    "meaningId": "mulai terbakar; hangus"
+  },
+  "anstehen": {
+    "meaningId": "mengantre; akan dihadapi"
+  },
+  "hochhalten": {
+    "meaningId": "mengangkat dan menahan tinggi",
+    "meaningEn": "to hold up high; to uphold"
+  },
+  "ausmalen": {
+    "meaningId": "mewarnai; membayangkan"
+  },
+  "fahnden": {
+    "meaningId": "mencari buronan atau barang bukti"
+  },
+  "observieren": {
+    "meaningId": "mengamati; mengawasi"
+  },
+  "spreizen": {
+    "meaningId": "merentangkan; melebarkan"
+  },
+  "nachschlagen": {
+    "meaningId": "mencari dalam kamus; memukul lagi"
+  },
+  "zerfetzen": {
+    "meaningId": "mengoyak hingga hancur"
+  },
+  "auftauen": {
+    "meaningId": "mencair; mencairkan yang beku"
+  },
+  "zapfen": {
+    "meaningId": "menyadap; menuangkan dari tong"
+  },
+  "prägen": {
+    "meaningId": "membentuk; mencetak (uang)"
+  },
+  "dämpfen": {
+    "meaningId": "meredam; mengukus"
+  },
+  "durchkreuzen": {
+    "meaningId": "menggagalkan; melintasi"
+  },
+  "vermarkten": {
+    "meaningId": "memasarkan"
+  },
+  "verstreichen": {
+    "meaningId": "berlalu; mengoleskan"
+  },
+  "nachempfinden": {
+    "meaningId": "memahami perasaan; ikut merasakan"
+  },
+  "wedeln": {
+    "meaningId": "mengibas-ngibaskan"
+  },
+  "rüsten": {
+    "meaningId": "mempersenjatai; mempersiapkan"
+  },
+  "ausdehnen": {
+    "meaningId": "memperluas; meregangkan"
+  },
+  "schädigen": {
+    "meaningId": "merusak; merugikan"
+  },
+  "niederschlagen": {
+    "meaningId": "memukul jatuh; menumpas"
+  },
+  "beleuchten": {
+    "meaningId": "menerangi; menelaah"
+  },
+  "ausweiten": {
+    "meaningId": "memperluas"
+  },
+  "erheblich": {
+    "meaningId": "cukup besar; signifikan"
+  },
+  "ebenbürtig": {
+    "meaningId": "setara; sebanding"
+  },
+  "untätig": {
+    "meaningId": "tidak aktif; tidak berbuat apa-apa"
+  },
+  "durchschnittlich": {
+    "meaningId": "rata-rata; biasa saja"
+  },
+  "kleinlich": {
+    "meaningId": "terlalu mempermasalahkan hal kecil"
+  },
+  "allerhand": {
+    "meaningId": "bermacam-macam; cukup banyak",
+    "meaningEn": "all sorts of; quite a lot"
+  },
+  "scharfsinnig": {
+    "meaningId": "tajam pikiran; cerdas"
+  },
+  "massiv": {
+    "meaningId": "besar dan kokoh; padat; sangat kuat"
+  },
+  "smart": {
+    "meaningId": "cerdas; rapi dan bergaya"
+  },
+  "monatlich": {
+    "meaningId": "bulanan"
+  },
+  "unerwünscht": {
+    "meaningId": "tidak diinginkan"
+  },
+  "reibungslos": {
+    "meaningId": "lancar tanpa hambatan"
+  },
+  "intellektuell": {
+    "meaningId": "intelektual; berkaitan dengan pemikiran"
+  },
+  "knifflig": {
+    "meaningId": "rumit; sulit dipecahkan"
+  },
+  "verlogen": {
+    "meaningId": "pembohong; tidak jujur"
+  },
+  "ordinär": {
+    "meaningId": "vulgar; kasar; biasa"
+  },
+  "mühelos": {
+    "meaningId": "tanpa susah payah"
+  },
+  "beharrlich": {
+    "meaningId": "tekun; gigih"
+  },
+  "einfältig": {
+    "meaningId": "lugu; kurang cerdas"
+  },
+  "feindlich": {
+    "meaningId": "bermusuhan"
+  },
+  "brennend": {
+    "meaningId": "terbakar; sangat mendesak"
+  },
+  "erblich": {
+    "meaningId": "turun-temurun; diwariskan"
+  },
+  "delikat": {
+    "meaningId": "lezat; sensitif dan perlu kehati-hatian"
+  },
+  "Härte": {
+    "meaningId": "kekerasan; ketegasan"
+  },
+  "Witwer": {
+    "meaningId": "duda"
+  },
+  "Veilchen": {
+    "meaningId": "bunga violet; mata lebam (percakapan)"
+  },
+  "Gymnasium": {
+    "meaningId": "sekolah menengah jalur persiapan universitas"
+  },
+  "Schlips": {
+    "meaningId": "dasi"
+  },
+  "Popo": {
+    "meaningId": "pantat (bahasa anak)"
+  },
+  "Schnäppchen": {
+    "meaningId": "barang yang dibeli murah; penawaran bagus"
+  },
+  "Blinddarm": {
+    "meaningId": "usus buntu (sekum)"
+  },
+  "Fight": {
+    "meaningId": "pertarungan"
+  },
+  "Pfirsich": {
+    "meaningId": "buah persik"
+  },
+  "Email": {
+    "meaningId": "email (lapisan pelapis logam)"
+  },
+  "Dukaten": {
+    "meaningId": "dukat (koin emas)"
+  },
+  "Hieb": {
+    "meaningId": "pukulan; tebasan"
+  },
+  "Konsole": {
+    "meaningId": "konsol permainan; panel kendali"
+  },
+  "Frauchen": {
+    "meaningId": "pemilik perempuan seekor hewan peliharaan"
+  },
+  "Geschütz": {
+    "meaningId": "meriam; senjata artileri"
+  },
+  "Herrchen": {
+    "meaningId": "pemilik laki-laki seekor hewan peliharaan"
+  },
+  "Massiv": {
+    "meaningId": "gugusan pegunungan"
+  },
+  "Arthritis": {
+    "meaningId": "radang sendi"
+  },
+  "Absage": {
+    "meaningId": "penolakan; pembatalan"
+  },
+  "Einschlag": {
+    "meaningId": "benturan; hantaman"
+  },
+  "Zutat": {
+    "meaningId": "bahan (masakan)"
+  },
+  "Rundgang": {
+    "meaningId": "tur berjalan kaki; keliling"
+  },
+  "Camper": {
+    "meaningId": "orang yang berkemah; mobil kemah"
+  },
+  "Petze": {
+    "meaningId": "tukang mengadu (percakapan)"
+  },
+  "Bildfläche": {
+    "meaningId": "layar; tempat terlihat (dalam ungkapan)"
+  },
+  "Grünschnabel": {
+    "meaningId": "anak ingusan; orang belum berpengalaman"
+  },
+  "Flegel": {
+    "meaningId": "alat perontok; orang kasar"
+  },
+  "Hinterteil": {
+    "meaningId": "bagian belakang; pantat"
+  },
+  "Schlagsahne": {
+    "meaningId": "krim kocok"
+  },
+  "Anrecht": {
+    "meaningId": "hak; hak atas sesuatu"
+  },
+  "Hehler": {
+    "meaningId": "penadah barang curian"
+  },
+  "hunderttausend": {
+    "meaningId": "seratus ribu"
+  },
+  "Erdbeere": {
+    "meaningId": "stroberi"
+  },
+  "Eroberer": {
+    "meaningId": "penakluk"
+  },
+  "Schleuse": {
+    "meaningId": "pintu air"
+  },
+  "Referat": {
+    "meaningId": "presentasi; laporan; bagian di suatu lembaga"
+  },
+  "Ausverkauf": {
+    "meaningId": "obral; penjualan penghabisan stok"
+  },
+  "Schleppe": {
+    "meaningId": "ekor gaun"
+  },
+  "Ratgeber": {
+    "meaningId": "penasihat; buku panduan"
+  },
+  "Typhus": {
+    "meaningId": "demam tifoid (tifus abdominalis)"
+  },
+  "Abstieg": {
+    "meaningId": "penurunan; turun kasta (olahraga)"
+  },
+  "Spiritus": {
+    "meaningId": "spiritus; alkohol terdenaturasi"
+  },
+  "Wichtigtuer": {
+    "meaningId": "orang yang suka menganggap dirinya penting"
+  },
+  "Warteschleife": {
+    "meaningId": "antrean tunggu; pola terbang menunggu"
+  },
+  "Ausfall": {
+    "meaningId": "kegagalan fungsi; pembatalan; ketidakhadiran"
+  },
+  "Sense": {
+    "meaningId": "sabit besar bergagang panjang"
+  },
+  "Delle": {
+    "meaningId": "penyok"
+  },
+  "Report": {
+    "meaningId": "laporan"
+  },
+  "Lacrosse": {
+    "meaningId": "lakros (olahraga beregu)"
+  },
+  "Blindgänger": {
+    "meaningId": "bom atau amunisi yang gagal meledak"
+  },
+  "Eingabe": {
+    "meaningId": "masukan; permohonan tertulis"
+  },
+  "Golfschläger": {
+    "meaningId": "tongkat golf"
+  },
+  "Renner": {
+    "meaningId": "produk laris; kuda pacu"
+  },
+  "Gremium": {
+    "meaningId": "dewan; komite"
+  },
+  "Verweis": {
+    "meaningId": "teguran; rujukan"
+  },
+  "Körbchen": {
+    "meaningId": "keranjang kecil; ukuran mangkuk bra"
+  },
+  "Reiseführer": {
+    "meaningId": "pemandu wisata; buku panduan wisata"
+  },
+  "Schlupfloch": {
+    "meaningId": "celah untuk menghindari aturan"
+  },
+  "Röntgenbild": {
+    "meaningId": "foto rontgen"
+  },
+  "Rundfunk": {
+    "meaningId": "penyiaran radio"
+  },
+  "Elfe": {
+    "meaningId": "peri"
+  },
+  "Fazit": {
+    "meaningId": "kesimpulan"
+  },
+  "Maroni": {
+    "meaningId": "buah kastanye"
+  },
+  "Bohnenstange": {
+    "meaningId": "tiang penyangga tanaman buncis; orang kurus tinggi"
+  },
+  "Tanker": {
+    "meaningId": "kapal tanker"
+  },
+  "Passiv": {
+    "meaningId": "bentuk pasif (tata bahasa)"
+  },
+  "Violett": {
+    "meaningId": "warna ungu"
+  },
+  "Tusch": {
+    "meaningId": "fanfare singkat"
+  },
+  "Gleichstand": {
+    "meaningId": "kedudukan imbang"
+  },
+  "Schlager": {
+    "meaningId": "lagu populer; produk laris"
+  },
+  "Kontostand": {
+    "meaningId": "saldo rekening"
+  },
+  "Abstrich": {
+    "meaningId": "usapan sampel (medis); pengurangan",
+    "meaningEn": "swab (medical sample); reduction"
+  },
+  "Zeche": {
+    "meaningId": "tambang; tagihan makan-minum (percakapan)"
+  },
+  "Garn": {
+    "meaningId": "benang"
+  },
+  "Klapperschlange": {
+    "meaningId": "ular derik"
+  },
+  "Fond": {
+    "meaningId": "kaldu pekat; jok belakang mobil",
+    "meaningEn": "stock (cooking); rear passenger compartment"
+  },
+  "Button": {
+    "meaningId": "tombol; lencana bulat"
+  },
+  "Vernissage": {
+    "meaningId": "pembukaan pameran seni"
+  },
+  "Queue": {
+    "meaningId": "tongkat biliar"
+  },
+  "Dressing": {
+    "meaningId": "saus salad"
+  },
+  "Gockel": {
+    "meaningId": "ayam jantan"
+  },
+  "Elan": {
+    "meaningId": "semangat; antusiasme"
+  },
+  "Gebrüder": {
+    "meaningId": "saudara laki-laki (bersama-sama)",
+    "meaningEn": "brothers (collectively)"
+  },
+  "Guthaben": {
+    "meaningId": "saldo positif; dana tersimpan"
+  },
+  "Stubenarrest": {
+    "meaningId": "hukuman tidak boleh keluar kamar atau rumah"
+  },
+  "Merkmal": {
+    "meaningId": "ciri; karakteristik"
+  },
+  "Ramme": {
+    "meaningId": "alat pemancang; pendobrak",
+    "meaningEn": "pile driver; battering ram"
+  },
+  "Download": {
+    "meaningId": "unduhan"
+  },
+  "Gedeck": {
+    "meaningId": "perlengkapan makan untuk satu orang; menu paket"
+  },
+  "Nächstenliebe": {
+    "meaningId": "kasih kepada sesama"
+  },
+  "stet": {
+    "meaningId": "tetap; kontinu"
+  },
+  "Apfelbaum": {
+    "meaningId": "pohon apel"
+  },
+  "Faultier": {
+    "meaningId": "kungkang (sloth)"
+  },
+  "Führerin": {
+    "meaningId": "pemimpin perempuan; pemandu perempuan"
+  },
+  "Absolvent": {
+    "meaningId": "lulusan"
+  },
+  "Menschsein": {
+    "meaningId": "keberadaan sebagai manusia; kemanusiaan"
+  },
+  "Branntwein": {
+    "meaningId": "minuman beralkohol hasil penyulingan"
+  },
+  "Geborgenheit": {
+    "meaningId": "rasa aman dan terlindungi"
+  },
+  "Seligkeit": {
+    "meaningId": "kebahagiaan sempurna; kebahagiaan surgawi",
+    "meaningEn": "bliss; blessedness"
+  },
+  "Connection": {
+    "meaningId": "hubungan; koneksi"
+  },
+  "Mentalität": {
+    "meaningId": "pola pikir; mentalitas"
+  },
+  "Bekämpfung": {
+    "meaningId": "upaya melawan; pemberantasan"
+  },
+  "Zerstreuung": {
+    "meaningId": "pengalihan perhatian; hiburan; penyebaran"
+  },
+  "Entsorgung": {
+    "meaningId": "pembuangan; pengelolaan limbah"
+  },
+  "Haftung": {
+    "meaningId": "tanggung jawab hukum; daya lekat"
+  },
+  "Räumung": {
+    "meaningId": "pengosongan; evakuasi"
+  },
+  "Isolierung": {
+    "meaningId": "isolasi; penyekatan"
+  },
+  "Anregung": {
+    "meaningId": "dorongan; rangsangan; saran"
+  },
+  "Umschreibung": {
+    "meaningId": "parafrasa; penulisan ulang"
+  },
+  "Verzichtserklärung": {
+    "meaningId": "pernyataan pelepasan hak"
+  },
+  "Überlieferung": {
+    "meaningId": "tradisi; pewarisan cerita atau pengetahuan"
+  },
+  "Entladung": {
+    "meaningId": "pembongkaran muatan; pelepasan listrik"
+  },
+  "Vollstreckung": {
+    "meaningId": "pelaksanaan putusan hukum"
+  },
+  "Fürstentum": {
+    "meaningId": "kepangeranan"
+  },
+  "Vorauszahlung": {
+    "meaningId": "pembayaran di muka"
+  },
+  "Abschaltung": {
+    "meaningId": "pemadaman; penonaktifan"
+  },
+  "verkabeln": {
+    "meaningId": "memasang kabel"
+  },
+  "Strippe": {
+    "meaningId": "tali; kabel (percakapan)"
+  },
+  "kabeln": {
+    "meaningId": "mengirim kabar melalui kabel"
+  },
+  "entleeren": {
+    "meaningId": "mengosongkan"
+  },
+  "ausleeren": {
+    "meaningId": "mengosongkan"
+  },
+  "Spielball": {
+    "meaningId": "bola permainan; orang yang dipermainkan",
+    "meaningEn": "playing ball; plaything (figurative)"
+  },
+  "wirren": {
+    "meaningId": "mengacaukan; membingungkan"
+  },
+  "erhellen": {
+    "meaningId": "menerangi; menjelaskan"
+  },
+  "herausziehen": {
+    "meaningId": "menarik keluar"
+  },
+  "trügen": {
+    "meaningId": "menipu; memberi kesan keliru"
+  },
+  "hecheln": {
+    "meaningId": "terengah-engah; menggosip (kiasan)",
+    "meaningEn": "to pant; to gossip (figurative)"
+  },
+  "petzen": {
+    "meaningId": "mengadu; membocorkan rahasia"
+  },
+  "auffassen": {
+    "meaningId": "memahami; menafsirkan"
+  },
+  "verwunden": {
+    "meaningId": "melukai"
+  },
+  "verharren": {
+    "meaningId": "tetap bertahan di suatu tempat atau keadaan"
+  },
+  "knicken": {
+    "meaningId": "menekuk; melipat"
+  },
+  "vergraulen": {
+    "meaningId": "membuat orang menjauh; mengusir"
+  },
+  "bemuttern": {
+    "meaningId": "merawat secara berlebihan seperti seorang ibu"
+  },
+  "schwerfallen": {
+    "meaningId": "terasa sulit"
+  },
+  "hinauswerfen": {
+    "meaningId": "melempar keluar; mengusir"
+  },
+  "herumtragen": {
+    "meaningId": "membawa berkeliling"
+  },
+  "sichten": {
+    "meaningId": "memeriksa; memilah; melihat (sesuatu yang dicari)"
+  },
+  "hausieren": {
+    "meaningId": "berjualan dari pintu ke pintu"
+  },
+  "besprühen": {
+    "meaningId": "menyemprot",
+    "meaningEn": "to spray"
+  },
+  "verhätscheln": {
+    "meaningId": "memanjakan berlebihan"
+  },
+  "aufhetzen": {
+    "meaningId": "menghasut; mengadu domba"
+  },
+  "anrechnen": {
+    "meaningId": "memperhitungkan; mengakui sebagai kredit"
+  },
+  "abchecken": {
+    "meaningId": "memeriksa; mengecek (percakapan)"
+  },
+  "revidieren": {
+    "meaningId": "merevisi; meninjau kembali"
+  },
+  "vertun": {
+    "meaningId": "membuang-buang; keliru (sich vertun)"
+  },
+  "übertönen": {
+    "meaningId": "menenggelamkan suara lain"
+  },
+  "montieren": {
+    "meaningId": "memasang; merakit"
+  },
+  "verprassen": {
+    "meaningId": "menghambur-hamburkan"
+  },
+  "anlasten": {
+    "meaningId": "menyalahkan; membebankan kesalahan"
+  },
+  "ausrutschen": {
+    "meaningId": "terpeleset"
+  },
+  "auseinanderreißen": {
+    "meaningId": "merobek hingga terpisah"
+  },
+  "abstammen": {
+    "meaningId": "berasal dari; merupakan keturunan"
+  },
+  "widern": {
+    "meaningId": "menjijikkan; menimbulkan rasa muak"
+  },
+  "zubeißen": {
+    "meaningId": "menggigit kuat"
+  },
+  "konservieren": {
+    "meaningId": "mengawetkan"
+  },
+  "sondieren": {
+    "meaningId": "menyelidiki; menjajaki"
+  },
+  "schlüssig": {
+    "meaningId": "logis; meyakinkan"
+  },
+  "handgreiflich": {
+    "meaningId": "melibatkan kekerasan fisik; nyata"
+  },
+  "dingfest": {
+    "meaningId": "tertangkap (dingfest machen: menangkap)"
+  },
+  "weitgehend": {
+    "meaningId": "sebagian besar; secara luas"
+  },
+  "farbig": {
+    "meaningId": "berwarna"
+  },
+  "geringfügig": {
+    "meaningId": "kecil; tidak berarti"
+  },
+  "nächstbeste": {
+    "meaningId": "yang tersedia berikutnya; sembarang yang cukup cocok"
+  },
+  "vertrauensvoll": {
+    "meaningId": "penuh kepercayaan"
+  },
+  "zierlich": {
+    "meaningId": "mungil; ramping"
+  },
+  "listig": {
+    "meaningId": "licik; cerdik"
+  },
+  "rothaarig": {
+    "meaningId": "berambut merah"
+  },
+  "leger": {
+    "meaningId": "santai; tidak formal"
+  },
+  "folgsam": {
+    "meaningId": "patuh"
+  },
+  "flauschig": {
+    "meaningId": "lembut dan berbulu halus"
+  },
+  "garstig": {
+    "meaningId": "jahat; menjengkelkan"
+  },
+  "gutartig": {
+    "meaningId": "jinak; baik hati; tidak ganas (medis)"
+  },
+  "Schwalbe": {
+    "meaningId": "burung layang-layang; pura-pura jatuh (sepak bola)"
+  },
+  "Totenkopf": {
+    "meaningId": "tengkorak"
+  },
+  "Moll": {
+    "meaningId": "nada minor (musik)"
+  },
+  "Rapport": {
+    "meaningId": "laporan; hubungan baik"
+  },
+  "Spelunke": {
+    "meaningId": "kedai kumuh; tempat hiburan yang buruk"
+  },
+  "Feldherr": {
+    "meaningId": "panglima perang"
+  },
+  "Warterei": {
+    "meaningId": "penantian panjang (ungkapan kesal)"
+  },
+  "Guide": {
+    "meaningId": "pemandu; buku panduan"
+  },
+  "Ablage": {
+    "meaningId": "tempat penyimpanan; pengarsipan"
+  },
+  "Vollzug": {
+    "meaningId": "pelaksanaan; menjalani hukuman",
+    "meaningEn": "execution; implementation; serving a sentence"
+  },
+  "Plakette": {
+    "meaningId": "plakat kecil; lencana"
+  },
+  "Uhrmacher": {
+    "meaningId": "pembuat dan tukang reparasi jam"
+  },
+  "Flutwelle": {
+    "meaningId": "gelombang pasang; gelombang banjir"
+  },
+  "Geißel": {
+    "meaningId": "cambuk; bencana yang menyiksa"
+  },
+  "Standpauke": {
+    "meaningId": "teguran keras; omelan panjang"
+  },
+  "Lehrmeister": {
+    "meaningId": "guru; pengajar ahli"
+  },
+  "Mystery": {
+    "meaningId": "misteri; genre cerita misteri"
+  },
+  "Strähne": {
+    "meaningId": "seikat rambut; untaian"
+  },
+  "Einlage": {
+    "meaningId": "sisipan; simpanan; sol dalam sepatu"
+  },
+  "Körperbau": {
+    "meaningId": "bentuk tubuh; perawakan"
+  },
+  "Lebensdauer": {
+    "meaningId": "masa hidup; umur pakai"
+  },
+  "Ibuprofen": {
+    "meaningId": "ibuprofen"
+  },
+  "Kontra": {
+    "meaningId": "penentangan; argumen yang melawan"
+  },
+  "Farbton": {
+    "meaningId": "nuansa warna"
+  },
+  "WM": {
+    "meaningId": "kejuaraan dunia (Weltmeisterschaft)",
+    "meaningEn": "world championship (Weltmeisterschaft)"
+  },
+  "Crime": {
+    "meaningId": "kejahatan (serapan dari Inggris)"
+  },
+  "Gewäsch": {
+    "meaningId": "omong kosong"
+  },
+  "Einband": {
+    "meaningId": "sampul; jilid buku"
+  },
+  "Intro": {
+    "meaningId": "bagian pembuka; pengantar"
+  },
+  "Soundcheck": {
+    "meaningId": "pemeriksaan suara sebelum pertunjukan"
+  },
+  "Gotteshaus": {
+    "meaningId": "rumah ibadah"
+  },
+  "Schwenk": {
+    "meaningId": "gerakan memutar; sapuan kamera"
+  },
+  "Kopfzerbrechen": {
+    "meaningId": "kekhawatiran; pemikiran yang melelahkan"
+  },
+  "Vorzeichen": {
+    "meaningId": "pertanda; tanda positif atau negatif; tanda nada"
+  },
+  "Manege": {
+    "meaningId": "arena sirkus"
+  },
+  "Lotse": {
+    "meaningId": "pandu kapal; pemandu"
+  },
+  "Lusche": {
+    "meaningId": "orang lemah atau tidak becus (hinaan)"
+  },
+  "Butterbrot": {
+    "meaningId": "roti beroles mentega"
+  },
+  "Bilderrahmen": {
+    "meaningId": "bingkai gambar"
+  },
+  "Gastronomie": {
+    "meaningId": "usaha makanan dan minuman; tata boga"
+  },
+  "Signalhorn": {
+    "meaningId": "klakson; terompet isyarat"
+  },
+  "Greenhorn": {
+    "meaningId": "pemula yang belum berpengalaman"
+  },
+  "Martinshorn": {
+    "meaningId": "sirene kendaraan darurat"
+  },
+  "Nomen": {
+    "meaningId": "kata benda (tata bahasa)"
+  },
+  "Franchise": {
+    "meaningId": "waralaba; seri karya"
+  },
+  "Vorbehalt": {
+    "meaningId": "keberatan; syarat pembatas"
+  },
+  "Fremdenführer": {
+    "meaningId": "pemandu wisata"
+  },
+  "Niederschlag": {
+    "meaningId": "presipitasi (hujan atau salju); endapan"
+  },
+  "Trimester": {
+    "meaningId": "periode tiga bulan"
+  },
+  "Rauferei": {
+    "meaningId": "perkelahian"
+  },
+  "Ausbau": {
+    "meaningId": "perluasan; pengembangan; pembongkaran komponen"
+  },
+  "Beet": {
+    "meaningId": "bedeng tanaman"
+  },
+  "Upload": {
+    "meaningId": "unggahan"
+  },
+  "Scharlach": {
+    "meaningId": "demam scarlet; warna merah skarlet"
+  },
+  "Zins": {
+    "meaningId": "bunga (uang)",
+    "meaningEn": "interest (on money)"
+  },
+  "Büschel": {
+    "meaningId": "seikat; segumpal (rambut atau rumput)"
+  },
+  "Anreise": {
+    "meaningId": "perjalanan menuju tujuan"
+  },
+  "Einmaleins": {
+    "meaningId": "tabel perkalian; dasar-dasar suatu bidang"
+  },
+  "Verhütungsmittel": {
+    "meaningId": "alat atau obat kontrasepsi"
+  },
+  "Dienstleistung": {
+    "meaningId": "jasa; layanan"
+  },
+  "gaumen|verb": {
+    "meaningId": "menjaga; melindungi (regional Swiss)",
+    "meaningEn": "to watch over; to protect (Swiss regional)"
+  },
+  "Flott": {
+    "meaningId": "krim susu; lapisan yang mengapung (regional Jerman utara)",
+    "meaningEn": "cream; floating surface layer (northern German regional)"
+  },
+  "Danke|phrase": {
+    "meaningEn": "thank you"
+  },
+  "Bitte|phrase": {
+    "meaningEn": "please; you are welcome"
+  },
+  "Ernst": {
+    "meaningEn": "seriousness; earnestness",
+    "meaningId": "keseriusan; kesungguhan"
+  },
+  "Stolz": {
+    "meaningEn": "pride",
+    "meaningId": "kebanggaan"
+  },
+  "Ansehen": {
+    "meaningEn": "reputation; esteem",
+    "meaningId": "reputasi; penghormatan"
+  },
+  "Übel": {
+    "meaningId": "keburukan; kemalangan"
+  },
+  "Kosten": {
+    "meaningId": "biaya"
+  },
+  "Laden": {
+    "meaningId": "toko"
+  },
+  "Vermögen": {
+    "meaningId": "kekayaan; kemampuan"
+  },
+  "Lernen": {
+    "meaningId": "kegiatan belajar; pembelajaran"
+  },
+  "Trinken": {
+    "meaningId": "kegiatan minum"
+  },
+  "Sein": {
+    "meaningId": "keberadaan; eksistensi"
+  },
+  "schulden": {
+    "meaningId": "berutang"
+  },
+  "los": {
+    "meaningId": "ayo!; mulai!; lepas"
+  },
+  "Tief": {
+    "meaningId": "daerah bertekanan udara rendah; kedalaman"
+  },
+  "Brillant": {
+    "meaningId": "berlian berpotongan brilian"
+  },
+  "Füllen": {
+    "meaningId": "anak kuda (istilah lama)"
+  },
+  "Grauen": {
+    "meaningId": "kengerian; fajar"
+  },
+  "Gehorsam": {
+    "meaningId": "kepatuhan"
+  },
+  "Gen": {
+    "meaningId": "gen (unit pewarisan sifat)"
+  },
+  "licht": {
+    "meaningId": "terang; jarang (rambut atau pepohonan)"
+  },
+  "Klamm": {
+    "meaningId": "ngarai sempit"
+  },
+  "türkis": {
+    "meaningId": "biru kehijauan; warna pirus"
+  },
+  "Türkis": {
+    "meaningId": "batu pirus; warna biru kehijauan"
+  },
+  "neunte": {
+    "meaningId": "kesembilan"
+  },
+  "Wahl": {
+    "meaningId": "pilihan; pemilihan umum"
+  },
+  "indem": {
+    "meaningId": "dengan cara; dengan melakukan"
+  },
+  "Wache": {
+    "meaningId": "penjaga; penjagaan"
+  },
+  "Halt": {
+    "meaningId": "perhentian; pegangan; dukungan"
+  },
+  "@hallo": {
+    "meaningId": "halo; hai (sapaan); keributan (das Hallo)",
+    "meaningEn": "hello; hi (greeting); commotion (das Hallo)"
+  },
+  "@bitte": {
+    "meaningId": "tolong; silakan; sama-sama (bitte); permintaan (die Bitte)",
+    "meaningEn": "please; you are welcome (bitte); request (die Bitte)"
+  },
+  "@entschuldigung": {
+    "meaningId": "maaf; permisi; permintaan maaf",
+    "meaningEn": "excuse me; sorry; apology"
+  },
+  "@ja": {
+    "meaningId": "ya; jawaban setuju (das Ja)",
+    "meaningEn": "yes; affirmative answer (das Ja)"
+  },
+  "@hundert": {
+    "meaningId": "seratus",
+    "meaningEn": "one hundred"
+  },
+  "@früh": {
+    "meaningId": "awal; pagi-pagi",
+    "meaningEn": "early"
+  },
+  "@selbst": {
+    "meaningId": "bahkan; diri sendiri; jati diri (das Selbst)",
+    "meaningEn": "even; oneself; self (das Selbst)"
+  },
+  "@dank": {
+    "meaningId": "berkat (kata depan); rasa terima kasih (der Dank)",
+    "meaningEn": "thanks to (preposition); gratitude (der Dank)"
+  },
+  "@eben": {
+    "meaningId": "baru saja; memang (keterangan); rata (sifat)",
+    "meaningEn": "just now; simply (adverb); flat; even (adjective)"
+  },
+  "@sondern": {
+    "meaningId": "melainkan (penghubung); memisahkan (kata kerja)",
+    "meaningEn": "but rather (conjunction); to separate (verb)"
+  },
+  "@lesen": {
+    "meaningId": "membaca (kata kerja); kegiatan membaca (das Lesen)",
+    "meaningEn": "to read; reading (das Lesen)"
+  },
+  "@schreiben": {
+    "meaningId": "menulis (kata kerja); tulisan atau surat (das Schreiben)",
+    "meaningEn": "to write; writing or formal letter (das Schreiben)"
+  },
+  "@sehen": {
+    "meaningId": "melihat (kata kerja); penglihatan (das Sehen)",
+    "meaningEn": "to see; sight; vision (das Sehen)"
+  },
+  "@schaffen": {
+    "meaningId": "menciptakan; berhasil menyelesaikan; karya atau kegiatan berkarya (das Schaffen)",
+    "meaningEn": "to create; to manage; creative work (das Schaffen)"
+  },
+  "@recht": {
+    "meaningId": "benar; tepat (sifat); hak; hukum (das Recht)",
+    "meaningEn": "right; proper (adjective); right; law (das Recht)"
+  },
+  "@schuld": {
+    "meaningId": "bersalah (sifat); utang; kesalahan (die Schuld)",
+    "meaningEn": "to blame (adjective); debt; guilt (die Schuld)"
+  },
+  "@fest": {
+    "meaningId": "kokoh; padat (sifat); pesta; perayaan (das Fest)",
+    "meaningEn": "firm; solid (adjective); celebration; festival (das Fest)"
+  },
+  "@tausend": {
+    "meaningId": "seribu; ribuan",
+    "meaningEn": "one thousand; thousands"
+  },
+  "@kosten": {
+    "meaningId": "biaya (die Kosten); berharga; mencicipi (kosten)",
+    "meaningEn": "costs (die Kosten); to cost; to taste (kosten)"
+  },
+  "@tief": {
+    "meaningId": "dalam (sifat); daerah bertekanan udara rendah (das Tief)",
+    "meaningEn": "deep (adjective); low-pressure area (das Tief)"
+  },
+  "@singen": {
+    "meaningId": "bernyanyi; kegiatan menyanyi (das Singen)",
+    "meaningEn": "to sing; singing (das Singen)"
+  },
+  "@überleben": {
+    "meaningId": "bertahan hidup; kelangsungan hidup (das Überleben)",
+    "meaningEn": "to survive; survival (das Überleben)"
+  },
+  "@verbrechen": {
+    "meaningId": "melakukan kejahatan (kata kerja); kejahatan (das Verbrechen)",
+    "meaningEn": "to perpetrate; crime (das Verbrechen)"
+  },
+  "@schaden": {
+    "meaningId": "merugikan; kerusakan; kerugian (der Schaden)",
+    "meaningEn": "to harm; damage; loss (der Schaden)"
+  },
+  "@verlangen": {
+    "meaningId": "menuntut; meminta (kata kerja); keinginan kuat (das Verlangen)",
+    "meaningEn": "to demand; to request; strong desire (das Verlangen)"
+  },
+  "@rauchen": {
+    "meaningId": "merokok; kegiatan merokok (das Rauchen)",
+    "meaningEn": "to smoke; smoking (das Rauchen)"
+  },
+  "@aufwachen": {
+    "meaningId": "bangun dari tidur; proses terbangun (das Aufwachen)",
+    "meaningEn": "to wake up; waking up (das Aufwachen)"
+  },
+  "@auftauchen": {
+    "meaningId": "muncul; naik ke permukaan; kemunculan (das Auftauchen)",
+    "meaningEn": "to appear; to surface; appearance (das Auftauchen)"
+  },
+  "@englisch": {
+    "meaningId": "berkaitan dengan Inggris (sifat); bahasa Inggris (das Englisch)",
+    "meaningEn": "English (adjective); the English language"
+  },
+  "@französisch": {
+    "meaningId": "berkaitan dengan Prancis (sifat); bahasa Prancis (das Französisch)",
+    "meaningEn": "French (adjective); the French language"
+  },
+  "@heulen": {
+    "meaningId": "melolong; menangis keras; lolongan (das Heulen)",
+    "meaningEn": "to howl; to bawl; howling (das Heulen)"
+  },
+  "@bedenken": {
+    "meaningId": "mempertimbangkan (kata kerja); keberatan; kekhawatiran (die Bedenken)",
+    "meaningEn": "to consider; reservations; concerns (die Bedenken)"
+  },
+  "@auftreten": {
+    "meaningId": "tampil; muncul; menginjak; penampilan; sikap (das Auftreten)",
+    "meaningEn": "to appear; to perform; to step on; appearance; demeanour (das Auftreten)"
+  },
+  "@grauen": {
+    "meaningId": "mulai fajar; merasa ngeri; kengerian; fajar (das Grauen)",
+    "meaningEn": "to dawn; to feel dread; horror; dawn (das Grauen)"
+  },
+  "@rahmen": {
+    "meaningId": "membingkai; bingkai; kerangka (der Rahmen)",
+    "meaningEn": "to frame; frame; framework (der Rahmen)"
+  },
+  "@andenken": {
+    "meaningId": "mulai mempertimbangkan (kata kerja); kenang-kenangan (das Andenken)",
+    "meaningEn": "to begin considering; souvenir; remembrance (das Andenken)"
+  },
+  "@spanisch": {
+    "meaningId": "berkaitan dengan Spanyol (sifat); bahasa Spanyol (das Spanisch)",
+    "meaningEn": "Spanish (adjective); the Spanish language"
+  },
+  "@lila": {
+    "meaningId": "ungu (warna)",
+    "meaningEn": "purple; lilac (colour)"
+  },
+  "@russisch": {
+    "meaningId": "berkaitan dengan Rusia (sifat); bahasa Rusia (das Russisch)",
+    "meaningEn": "Russian (adjective); the Russian language"
+  },
+  "@italienisch": {
+    "meaningId": "berkaitan dengan Italia (sifat); bahasa Italia (das Italienisch)",
+    "meaningEn": "Italian (adjective); the Italian language"
+  },
+  "@chinesisch": {
+    "meaningId": "berkaitan dengan Tiongkok (sifat); bahasa Tionghoa (das Chinesisch)",
+    "meaningEn": "Chinese (adjective); the Chinese language"
+  },
+  "@arabisch": {
+    "meaningId": "berkaitan dengan Arab (sifat); bahasa Arab (das Arabisch)",
+    "meaningEn": "Arabic; Arab (adjective); the Arabic language"
+  },
+  "@japanisch": {
+    "meaningId": "berkaitan dengan Jepang (sifat); bahasa Jepang (das Japanisch)",
+    "meaningEn": "Japanese (adjective); the Japanese language"
+  },
+  "@e-mail": {
+    "meaningId": "surat elektronik (die E-Mail); lapisan email pada logam (das Email)",
+    "meaningEn": "email message (die E-Mail); enamel coating (das Email)"
+  },
+  "@erwachen": {
+    "meaningId": "terbangun; kebangkitan (das Erwachen)",
+    "meaningEn": "to awaken; awakening (das Erwachen)"
+  },
+  "@begehren": {
+    "meaningId": "menginginkan; mendambakan (kata kerja); hasrat; tuntutan (das Begehren)",
+    "meaningEn": "to desire; to crave; desire; request (das Begehren)"
+  },
+  "@ausschließlich": {
+    "meaningId": "hanya; semata-mata; eksklusif",
+    "meaningEn": "exclusively; solely; exclusive"
+  },
+  "@link": {
+    "meaningId": "licik; kiri (sifat regional); tautan internet (der Link)",
+    "meaningEn": "devious; left (regional adjective); hyperlink (der Link)"
+  },
+  "@türkisch": {
+    "meaningId": "berkaitan dengan Turki (sifat); bahasa Turki (das Türkisch)",
+    "meaningEn": "Turkish (adjective); the Turkish language"
+  },
+  "@hebräisch": {
+    "meaningId": "berkaitan dengan Ibrani (sifat); bahasa Ibrani (das Hebräisch)",
+    "meaningEn": "Hebrew (adjective); the Hebrew language"
+  },
+  "@samt": {
+    "meaningId": "bersama; beserta (kata depan); kain beludru (der Samt)",
+    "meaningEn": "together with (preposition); velvet (der Samt)"
+  },
+  "@gaumen": {
+    "meaningId": "langit-langit mulut (der Gaumen); menjaga; melindungi (gaumen, regional Swiss)",
+    "meaningEn": "palate (der Gaumen); to watch over; to protect (gaumen, Swiss regional)"
+  },
+  "@einschreiben": {
+    "meaningId": "mendaftar; menuliskan; surat tercatat (das Einschreiben)",
+    "meaningEn": "to enrol; to inscribe; registered letter (das Einschreiben)"
+  },
+  "@polnisch": {
+    "meaningId": "berkaitan dengan Polandia (sifat); bahasa Polandia (das Polnisch)",
+    "meaningEn": "Polish (adjective); the Polish language"
+  },
+  "@koreanisch": {
+    "meaningId": "berkaitan dengan Korea (sifat); bahasa Korea (das Koreanisch)",
+    "meaningEn": "Korean (adjective); the Korean language"
+  },
+  "@violett": {
+    "meaningId": "ungu (warna)",
+    "meaningEn": "violet; purple (colour)"
+  },
+  "@rumänisch": {
+    "meaningId": "berkaitan dengan Rumania (sifat); bahasa Rumania (das Rumänisch)",
+    "meaningEn": "Romanian (adjective); the Romanian language"
+  },
+  "@dänisch": {
+    "meaningId": "berkaitan dengan Denmark (sifat); bahasa Denmark (das Dänisch)",
+    "meaningEn": "Danish (adjective); the Danish language"
+  },
+  "@transparent": {
+    "meaningId": "spanduk (das Transparent); tembus pandang; transparan (sifat)",
+    "meaningEn": "banner (das Transparent); transparent (adjective)"
+  },
+  "@tschechisch": {
+    "meaningId": "berkaitan dengan Ceko (sifat); bahasa Ceko (das Tschechisch)",
+    "meaningEn": "Czech (adjective); the Czech language"
+  },
+  "@irisch": {
+    "meaningId": "berkaitan dengan Irlandia (sifat); bahasa Irlandia (das Irisch)",
+    "meaningEn": "Irish (adjective); the Irish language"
+  },
+  "@persisch": {
+    "meaningId": "berkaitan dengan Persia (sifat); bahasa Persia atau Farsi (das Persisch)",
+    "meaningEn": "Persian (adjective); the Persian language; Farsi"
+  },
+  "@holländisch": {
+    "meaningId": "berkaitan dengan Belanda (sifat); bahasa Belanda (das Holländisch)",
+    "meaningEn": "Dutch (adjective); the Dutch language"
+  },
+  "@ein": {
+    "meaningId": "satu; sebuah/seorang (kata sandang); menyala (alat)",
+    "meaningEn": "one; a/an (indefinite article); on (device)"
+  },
+  "Glück": {
+    "meaningId": "keberuntungan; kebahagiaan"
+  },
+  "Menge": {
+    "meaningId": "jumlah; banyaknya; himpunan (matematika)"
+  },
+  "Art": {
+    "meaningId": "jenis; cara; spesies"
+  },
+  "Schatz": {
+    "meaningId": "harta; sayang (sapaan mesra)"
+  },
+  "Mist": {
+    "meaningId": "kotoran hewan; omong kosong (percakapan)"
+  },
+  "Herr": {
+    "meaningId": "tuan; bapak (sapaan); Tuhan (keagamaan)"
+  },
+  "Herz": {
+    "meaningId": "jantung; hati (kiasan)"
+  },
+  "Körper": {
+    "meaningId": "tubuh; benda; lapangan (aljabar)"
+  },
+  "Schiff": {
+    "meaningId": "kapal"
+  },
+  "Platz": {
+    "meaningId": "tempat; lapangan; ruang tersedia"
+  },
+  "Seite": {
+    "meaningId": "sisi; halaman"
+  },
+  "weit": {
+    "meaningId": "jauh; luas"
+  },
+  "lange": {
+    "meaningId": "lama; untuk waktu yang lama"
+  },
+  "erfahren": {
+    "meaningId": "mengetahui; mengalami"
+  },
+  "tragen": {
+    "meaningId": "membawa; mengenakan"
+  },
+  "ändern": {
+    "meaningId": "mengubah; berubah (sich ändern)"
+  },
+  "kämpfen": {
+    "meaningId": "bertarung; berjuang"
+  },
+  "liegen": {
+    "meaningId": "berbaring; terletak"
+  },
+  "bewegen": {
+    "meaningId": "menggerakkan; bergerak (sich bewegen)"
+  },
+  "aufhalten": {
+    "meaningId": "menghentikan; menunda; tinggal (sich aufhalten)"
+  },
+  "erkennen": {
+    "meaningId": "mengenali; menyadari"
+  },
+  "werfen": {
+    "meaningId": "melempar"
+  },
+  "verzeihen": {
+    "meaningId": "memaafkan"
+  },
+  "danken": {
+    "meaningId": "berterima kasih"
+  },
+  "beenden": {
+    "meaningId": "mengakhiri; menyelesaikan"
+  },
+  "schätzen": {
+    "meaningId": "memperkirakan; menghargai"
+  },
+  "schmerzen": {
+    "meaningId": "terasa sakit; menyakitkan"
+  },
+  "funktionieren": {
+    "meaningId": "berfungsi; bekerja dengan baik"
+  },
+  "nachdenken": {
+    "meaningId": "berpikir; merenung"
+  },
+  "erschießen": {
+    "meaningId": "menembak mati"
+  },
+  "kochen": {
+    "meaningId": "memasak; merebus"
+  },
+  "verletzen": {
+    "meaningId": "melukai; melanggar"
+  },
+  "umgehen": {
+    "meaningId": "menangani; menghindari; beredar"
+  },
+  "beobachten": {
+    "meaningId": "mengamati; mengawasi"
+  },
+  "wirken": {
+    "meaningId": "berpengaruh; bekerja; tampak"
+  },
+  "wetten": {
+    "meaningId": "bertaruh"
+  },
+  "zwingen": {
+    "meaningId": "memaksa"
+  },
+  "aufnehmen": {
+    "meaningId": "merekam; menerima; menampung"
+  },
+  "gründen": {
+    "meaningId": "mendirikan; membentuk"
+  },
+  "zugeben": {
+    "meaningId": "mengakui; menambahkan"
+  },
+  "irren": {
+    "meaningId": "keliru; salah (sich irren)"
+  },
+  "richten": {
+    "meaningId": "mengarahkan; meluruskan; mengadili"
+  },
+  "entfernen": {
+    "meaningId": "menghapus; menyingkirkan; menjauh (sich entfernen)"
+  },
+  "ergeben": {
+    "meaningId": "menghasilkan; menyerah (sich ergeben)"
+  },
+  "liefern": {
+    "meaningId": "mengirim; memasok"
+  },
+  "verabschieden": {
+    "meaningId": "berpamitan (sich verabschieden); mengesahkan"
+  },
+  "bewahren": {
+    "meaningId": "menjaga; mempertahankan"
+  },
+  "angreifen": {
+    "meaningId": "menyerang"
+  },
+  "posten": {
+    "meaningId": "mengunggah; memasang kiriman"
+  },
+  "besiegen": {
+    "meaningId": "mengalahkan"
+  },
+  "bestehen": {
+    "meaningId": "terdiri dari; lulus; bertahan"
+  },
+  "klingen": {
+    "meaningId": "berbunyi; terdengar"
+  },
+  "betreten": {
+    "meaningId": "memasuki"
+  },
+  "informieren": {
+    "meaningId": "memberi informasi; memberi tahu"
+  },
+  "anschauen": {
+    "meaningId": "melihat; menonton"
+  },
+  "bekämpfen": {
+    "meaningId": "melawan; memberantas"
+  },
+  "Hure": {
+    "meaningId": "pelacur (kasar)"
+  },
+  "Nutte": {
+    "meaningId": "pelacur (kasar)"
+  },
+  "Anschlag": {
+    "meaningId": "serangan; percobaan serangan; papan pengumuman"
+  },
+  "produzieren": {
+    "meaningId": "memproduksi; menghasilkan"
+  },
+  "transportieren": {
+    "meaningId": "mengangkut; memindahkan"
+  },
+  "rückwärts": {
+    "meaningId": "ke belakang"
+  },
+  "befördern": {
+    "meaningId": "mempromosikan; mengangkut"
+  },
+  "erstellen": {
+    "meaningId": "membuat; menyusun"
+  },
+  "fetzen": {
+    "meaningId": "merobek; bertengkar (sich fetzen, percakapan)"
+  },
+  "heikel": {
+    "meaningId": "rumit; sensitif; perlu kehati-hatian"
+  },
+  "Kuckuck": {
+    "meaningId": "burung kukuk"
+  },
+  "Attacke": {
+    "meaningId": "serangan"
+  },
+  "Gunst": {
+    "meaningId": "bantuan; kemurahan hati; dukungan"
+  },
+  "Prügelei": {
+    "meaningId": "perkelahian"
+  },
+  "Begierde": {
+    "meaningId": "hasrat; keinginan kuat"
+  },
+  "Gefängnisdirektor": {
+    "meaningId": "kepala penjara",
+    "meaningEn": "prison governor; prison warden"
+  },
+  "anfertigen": {
+    "meaningId": "membuat; menghasilkan"
+  },
+  "winseln": {
+    "meaningId": "merintih; merengek"
+  },
+  "absteigen": {
+    "meaningId": "turun; turun dari kendaraan"
+  },
+  "bewaffnen": {
+    "meaningId": "mempersenjatai"
+  },
+  "nörgeln": {
+    "meaningId": "mengomel; terus mengkritik hal kecil"
+  },
+  "zanken": {
+    "meaningId": "bertengkar"
+  },
+  "konstruieren": {
+    "meaningId": "merancang; membangun"
+  },
+  "Dirne": {
+    "meaningId": "pelacur; gadis (istilah lama)"
+  },
+  "Pitcher": {
+    "meaningId": "pelempar bola (bisbol)"
+  },
+  "Boxkampf": {
+    "meaningId": "pertandingan tinju"
+  },
+  "Spasti": {
+    "meaningId": "hinaan yang merendahkan kecerdasan atau disabilitas (kasar)"
+  },
+  "huckepack": {
+    "meaningId": "dengan menggendong di punggung"
+  },
+  "herunterkommen": {
+    "meaningId": "turun; merosot kondisinya"
+  },
+  "hervorbringen": {
+    "meaningId": "menghasilkan; menciptakan"
+  },
+  "abseilen": {
+    "meaningId": "turun menggunakan tali"
+  },
+  "hervorgehen": {
+    "meaningId": "berasal dari; dihasilkan dari"
+  },
+  "Clinch": {
+    "meaningId": "posisi saling merangkul dalam tinju; perselisihan"
+  },
+  "Bowler": {
+    "meaningId": "pelempar bola (kriket); pemain boling; topi bundar"
+  },
+  "Zentner": {
+    "meaningId": "zentner (Jerman: 50 kg; Austria/Swiss: 100 kg)",
+    "meaningEn": "zentner (Germany: 50 kg; Austria/Switzerland: 100 kg)"
+  },
+  "Selfie": {
+    "meaningId": "swafoto"
+  },
+  "Sodawasser": {
+    "meaningId": "air soda; air berkarbonasi"
+  },
+  "Schutzgeld": {
+    "meaningId": "uang perlindungan yang diperas"
+  },
+  "Hafenarbeiter": {
+    "meaningId": "buruh pelabuhan"
+  },
+  "Farbstoff": {
+    "meaningId": "zat pewarna"
+  },
+  "Schuldner": {
+    "meaningId": "debitur; orang yang berutang"
+  },
+  "Tonbandgerät": {
+    "meaningId": "perekam pita"
+  },
+  "Geiz": {
+    "meaningId": "kekikiran"
+  },
+  "Mucke": {
+    "meaningId": "musik (slang); gangguan (regional)"
+  },
+  "Skala": {
+    "meaningId": "skala"
+  },
+  "Lehrgang": {
+    "meaningId": "kursus; pelatihan"
+  },
+  "Mokka": {
+    "meaningId": "kopi moka; kota Mukha"
+  },
+  "Whip": {
+    "meaningId": "pengatur disiplin fraksi di parlemen",
+    "meaningEn": "parliamentary whip"
+  },
+  "Kriterium": {
+    "meaningId": "kriteria; patokan penilaian"
+  },
+  "Windstoß": {
+    "meaningId": "hembusan angin"
+  },
+  "Bauernhof": {
+    "meaningId": "peternakan; lahan pertanian beserta rumahnya"
+  },
+  "Ausrüstung": {
+    "meaningId": "peralatan; perlengkapan"
+  },
+  "Einrichtung": {
+    "meaningId": "fasilitas; perabotan; pendirian"
+  },
+  "Zuflucht": {
+    "meaningId": "tempat berlindung"
+  },
+  "Fries": {
+    "meaningId": "ornamen mendatar pada dinding; kain wol kasar"
+  },
+  "Tischgebet": {
+    "meaningId": "doa sebelum atau sesudah makan"
+  },
+  "Schutzpatron": {
+    "meaningId": "santo pelindung"
+  },
+  "Schwiegermutter": {
+    "meaningId": "ibu mertua"
+  },
+  "Dame": {
+    "meaningId": "wanita; ratu (catur)"
+  },
+  "Medizin": {
+    "meaningId": "kedokteran; obat"
+  },
+  "Mittel": {
+    "meaningId": "sarana; cara; obat"
+  },
+  "Rat": {
+    "meaningId": "nasihat; dewan"
+  },
+  "Gegend": {
+    "meaningId": "wilayah; daerah sekitar"
+  },
+  "Leiter": {
+    "meaningId": "tangga (die Leiter); pemimpin (der Leiter)"
+  },
+  "Dienst": {
+    "meaningId": "dinas; layanan; tugas"
+  },
+  "Ton": {
+    "meaningId": "bunyi; nada; tanah liat"
+  },
+  "Quelle": {
+    "meaningId": "sumber; mata air"
+  },
+  "Fan": {
+    "meaningId": "penggemar; pendukung"
+  },
+  "Feier": {
+    "meaningId": "perayaan; pesta"
+  },
+  "Gemeinde": {
+    "meaningId": "komunitas; munisipalitas; jemaat"
+  },
+  "Gnade": {
+    "meaningId": "belas kasihan; pengampunan"
+  },
+  "Bulle": {
+    "meaningId": "banteng; polisi (slang kasar)"
+  },
+  "Hütte": {
+    "meaningId": "pondok; gubuk"
+  },
+  "Normale": {
+    "meaningId": "garis normal (matematika)"
+  },
+  "Geist": {
+    "meaningId": "roh; hantu; pikiran"
+  },
+  "Stoff": {
+    "meaningId": "bahan; kain; materi pembahasan"
+  },
+  "Schwere": {
+    "meaningId": "berat; tingkat keparahan; gravitasi"
+  },
+  "Strom": {
+    "meaningId": "arus listrik; aliran"
+  },
+  "Hau": {
+    "meaningId": "pukulan; ketidakwarasan (percakapan)"
+  },
+  "Schlag": {
+    "meaningId": "pukulan; ketukan"
+  },
+  "Untertitel": {
+    "meaningId": "subtitel; teks terjemahan pada video"
+  },
+  "Folge": {
+    "meaningId": "akibat; urutan; episode"
+  },
+  "Schnitte": {
+    "meaningId": "irisan roti; roti lapis"
+  },
+  "Riegel": {
+    "meaningId": "palang pengunci; batangan"
+  },
+  "Gewalt": {
+    "meaningId": "kekerasan; kekuasaan"
+  },
+  "Falken": {
+    "meaningId": "burung alap-alap (jamak)"
+  },
+  "Abschuss": {
+    "meaningEn": "shooting down; firing; launch"
+  },
+  "Blas": {
+    "meaningId": "semburan napas paus saat muncul ke permukaan",
+    "meaningEn": "whale blow; exhaled air from a surfacing whale"
+  },
+  "Bear": {
+    "meaningId": "spekulan yang mengharapkan harga pasar turun (bursa)",
+    "meaningEn": "bear; investor speculating on falling prices"
+  },
+  "House": {
+    "meaningId": "musik house (genre musik elektronik)",
+    "meaningEn": "house music (electronic music genre)"
+  },
+  "Court": {
+    "meaningId": "lapangan tenis, squash, atau basket",
+    "meaningEn": "court (tennis, squash or basketball)"
+  },
+  "Bai": {
+    "meaningId": "teluk (istilah geografis)",
+    "meaningEn": "bay (geographical inlet)"
+  },
+  "Brauner": {
+    "meaningId": "kuda berwarna cokelat dengan surai hitam; kopi susu (Austria)",
+    "meaningEn": "bay horse; coffee with cream (Austria)"
+  },
+  "back": {
+    "meaningId": "kembali (perintah untuk mundur dalam pelayaran)",
+    "meaningEn": "back (nautical command)"
+  },
+  "Buff": {
+    "meaningId": "efek atau mantra peningkat kemampuan dalam gim",
+    "meaningEn": "buff; temporary attribute enhancement in a game"
+  }
+}

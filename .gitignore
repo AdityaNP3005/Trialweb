@@ -53,3 +53,4 @@ next-env.d.ts
 
 # downloaded open-data caches for the content pipeline
 .content-cache/
+__pycache__/

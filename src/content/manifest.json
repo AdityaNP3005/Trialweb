@@ -13,7 +13,7 @@
           "title": "Sapaan & perkenalan",
           "icon": "👋",
           "order": 1,
-          "cardCount": 37
+          "cardCount": 24
         },
         {
           "id": "de-a1-numbers-time",
@@ -21,7 +21,7 @@
           "title": "Angka, tanggal & waktu",
           "icon": "🔢",
           "order": 2,
-          "cardCount": 55
+          "cardCount": 44
         },
         {
           "id": "de-a1-family-people",
@@ -37,7 +37,7 @@
           "title": "Makanan & minuman",
           "icon": "🍎",
           "order": 4,
-          "cardCount": 29
+          "cardCount": 28
         },
         {
           "id": "de-a1-home-daily",
@@ -53,7 +53,7 @@
           "title": "Warna & bentuk",
           "icon": "🎨",
           "order": 6,
-          "cardCount": 14
+          "cardCount": 13
         },
         {
           "id": "de-a1-body-health",
@@ -69,7 +69,7 @@
           "title": "Arah & tempat",
           "icon": "🧭",
           "order": 8,
-          "cardCount": 26
+          "cardCount": 25
         },
         {
           "id": "de-a1-travel-transport",
@@ -85,7 +85,7 @@
           "title": "Kerja & sekolah",
           "icon": "🏫",
           "order": 10,
-          "cardCount": 13
+          "cardCount": 12
         },
         {
           "id": "de-a1-function-words-1",
@@ -93,7 +93,7 @@
           "title": "Kata fungsi & penghubung (1/2)",
           "icon": "🔗",
           "order": 11,
-          "cardCount": 80
+          "cardCount": 70
         },
         {
           "id": "de-a1-function-words-2",
@@ -109,7 +109,7 @@
           "title": "Kata kerja dasar",
           "icon": "🔁",
           "order": 13,
-          "cardCount": 77
+          "cardCount": 75
         },
         {
           "id": "de-a1-adjectives-basic",
@@ -117,7 +117,7 @@
           "title": "Kata sifat dasar",
           "icon": "✨",
           "order": 14,
-          "cardCount": 65
+          "cardCount": 62
         },
         {
           "id": "de-a1-general-1",
@@ -125,7 +125,7 @@
           "title": "Kosakata umum (1/2)",
           "icon": "📚",
           "order": 15,
-          "cardCount": 80
+          "cardCount": 62
         },
         {
           "id": "de-a1-general-2",
@@ -133,7 +133,7 @@
           "title": "Kosakata umum (2/2)",
           "icon": "📚",
           "order": 16,
-          "cardCount": 39
+          "cardCount": 34
         }
       ]
     },
@@ -148,7 +148,7 @@
           "title": "Angka, tanggal & waktu",
           "icon": "🔢",
           "order": 1,
-          "cardCount": 10
+          "cardCount": 6
         },
         {
           "id": "de-a2-function-words",
@@ -204,7 +204,7 @@
           "title": "Tubuh & kesehatan",
           "icon": "🩺",
           "order": 8,
-          "cardCount": 16
+          "cardCount": 15
         },
         {
           "id": "de-a2-directions-places",
@@ -220,7 +220,7 @@
           "title": "Warna & bentuk",
           "icon": "🎨",
           "order": 10,
-          "cardCount": 12
+          "cardCount": 7
         },
         {
           "id": "de-a2-persons",
@@ -252,7 +252,7 @@
           "title": "Tempat & geografi",
           "icon": "🗺️",
           "order": 14,
-          "cardCount": 11
+          "cardCount": 10
         },
         {
           "id": "de-a2-abstract-nouns",
@@ -260,7 +260,7 @@
           "title": "Nomina abstrak",
           "icon": "🧠",
           "order": 15,
-          "cardCount": 76
+          "cardCount": 75
         },
         {
           "id": "de-a2-verbs-basic-1",
@@ -268,7 +268,7 @@
           "title": "Kata kerja dasar (1/4)",
           "icon": "🔁",
           "order": 16,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-a2-verbs-basic-2",
@@ -276,7 +276,7 @@
           "title": "Kata kerja dasar (2/4)",
           "icon": "🔁",
           "order": 17,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-a2-verbs-basic-3",
@@ -284,7 +284,7 @@
           "title": "Kata kerja dasar (3/4)",
           "icon": "🔁",
           "order": 18,
-          "cardCount": 80
+          "cardCount": 78
         },
         {
           "id": "de-a2-verbs-basic-4",
@@ -300,7 +300,7 @@
           "title": "Kata sifat dasar (1/2)",
           "icon": "✨",
           "order": 20,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-a2-adjectives-basic-2",
@@ -308,7 +308,7 @@
           "title": "Kata sifat dasar (2/2)",
           "icon": "✨",
           "order": 21,
-          "cardCount": 67
+          "cardCount": 65
         },
         {
           "id": "de-a2-general-1",
@@ -316,7 +316,7 @@
           "title": "Kosakata umum (1/6)",
           "icon": "📚",
           "order": 22,
-          "cardCount": 80
+          "cardCount": 71
         },
         {
           "id": "de-a2-general-2",
@@ -324,7 +324,7 @@
           "title": "Kosakata umum (2/6)",
           "icon": "📚",
           "order": 23,
-          "cardCount": 80
+          "cardCount": 72
         },
         {
           "id": "de-a2-general-3",
@@ -332,7 +332,7 @@
           "title": "Kosakata umum (3/6)",
           "icon": "📚",
           "order": 24,
-          "cardCount": 80
+          "cardCount": 72
         },
         {
           "id": "de-a2-general-4",
@@ -340,7 +340,7 @@
           "title": "Kosakata umum (4/6)",
           "icon": "📚",
           "order": 25,
-          "cardCount": 80
+          "cardCount": 78
         },
         {
           "id": "de-a2-general-5",
@@ -348,7 +348,7 @@
           "title": "Kosakata umum (5/6)",
           "icon": "📚",
           "order": 26,
-          "cardCount": 80
+          "cardCount": 76
         },
         {
           "id": "de-a2-general-6",
@@ -356,7 +356,7 @@
           "title": "Kosakata umum (6/6)",
           "icon": "📚",
           "order": 27,
-          "cardCount": 52
+          "cardCount": 48
         }
       ]
     },
@@ -411,7 +411,7 @@
           "title": "Olahraga & hobi",
           "icon": "⚽",
           "order": 6,
-          "cardCount": 15
+          "cardCount": 13
         },
         {
           "id": "de-b1-persons",
@@ -419,7 +419,7 @@
           "title": "Orang & profesi",
           "icon": "👤",
           "order": 7,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-b1-places-geography",
@@ -443,7 +443,7 @@
           "title": "Alam & hewan",
           "icon": "🐾",
           "order": 10,
-          "cardCount": 35
+          "cardCount": 33
         },
         {
           "id": "de-b1-abstract-nouns-1",
@@ -467,7 +467,7 @@
           "title": "Kata kerja lanjutan (1/5)",
           "icon": "🔁",
           "order": 13,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-b1-verbs-advanced-2",
@@ -515,7 +515,7 @@
           "title": "Kata sifat lanjutan (2/3)",
           "icon": "✨",
           "order": 19,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-b1-adjectives-advanced-3",
@@ -531,7 +531,7 @@
           "title": "Kosakata umum (1/12)",
           "icon": "📚",
           "order": 21,
-          "cardCount": 80
+          "cardCount": 77
         },
         {
           "id": "de-b1-general-2",
@@ -539,7 +539,7 @@
           "title": "Kosakata umum (2/12)",
           "icon": "📚",
           "order": 22,
-          "cardCount": 80
+          "cardCount": 77
         },
         {
           "id": "de-b1-general-3",
@@ -547,7 +547,7 @@
           "title": "Kosakata umum (3/12)",
           "icon": "📚",
           "order": 23,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-b1-general-4",
@@ -555,7 +555,7 @@
           "title": "Kosakata umum (4/12)",
           "icon": "📚",
           "order": 24,
-          "cardCount": 80
+          "cardCount": 78
         },
         {
           "id": "de-b1-general-5",
@@ -563,7 +563,7 @@
           "title": "Kosakata umum (5/12)",
           "icon": "📚",
           "order": 25,
-          "cardCount": 80
+          "cardCount": 76
         },
         {
           "id": "de-b1-general-6",
@@ -571,7 +571,7 @@
           "title": "Kosakata umum (6/12)",
           "icon": "📚",
           "order": 26,
-          "cardCount": 80
+          "cardCount": 74
         },
         {
           "id": "de-b1-general-7",
@@ -579,7 +579,7 @@
           "title": "Kosakata umum (7/12)",
           "icon": "📚",
           "order": 27,
-          "cardCount": 80
+          "cardCount": 76
         },
         {
           "id": "de-b1-general-8",
@@ -587,7 +587,7 @@
           "title": "Kosakata umum (8/12)",
           "icon": "📚",
           "order": 28,
-          "cardCount": 80
+          "cardCount": 74
         },
         {
           "id": "de-b1-general-9",
@@ -595,7 +595,7 @@
           "title": "Kosakata umum (9/12)",
           "icon": "📚",
           "order": 29,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-b1-general-10",
@@ -603,7 +603,7 @@
           "title": "Kosakata umum (10/12)",
           "icon": "📚",
           "order": 30,
-          "cardCount": 80
+          "cardCount": 77
         },
         {
           "id": "de-b1-general-11",
@@ -611,7 +611,7 @@
           "title": "Kosakata umum (11/12)",
           "icon": "📚",
           "order": 31,
-          "cardCount": 80
+          "cardCount": 78
         },
         {
           "id": "de-b1-general-12",
@@ -770,7 +770,7 @@
           "title": "Kata sifat lanjutan (2/3)",
           "icon": "✨",
           "order": 18,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-b2-adjectives-advanced-3",
@@ -794,7 +794,7 @@
           "title": "Kosakata umum (2/14)",
           "icon": "📚",
           "order": 21,
-          "cardCount": 80
+          "cardCount": 77
         },
         {
           "id": "de-b2-general-3",
@@ -802,7 +802,7 @@
           "title": "Kosakata umum (3/14)",
           "icon": "📚",
           "order": 22,
-          "cardCount": 80
+          "cardCount": 78
         },
         {
           "id": "de-b2-general-4",
@@ -810,7 +810,7 @@
           "title": "Kosakata umum (4/14)",
           "icon": "📚",
           "order": 23,
-          "cardCount": 80
+          "cardCount": 77
         },
         {
           "id": "de-b2-general-5",
@@ -818,7 +818,7 @@
           "title": "Kosakata umum (5/14)",
           "icon": "📚",
           "order": 24,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-b2-general-6",
@@ -826,7 +826,7 @@
           "title": "Kosakata umum (6/14)",
           "icon": "📚",
           "order": 25,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-b2-general-7",
@@ -842,7 +842,7 @@
           "title": "Kosakata umum (8/14)",
           "icon": "📚",
           "order": 27,
-          "cardCount": 80
+          "cardCount": 78
         },
         {
           "id": "de-b2-general-9",
@@ -858,7 +858,7 @@
           "title": "Kosakata umum (10/14)",
           "icon": "📚",
           "order": 29,
-          "cardCount": 80
+          "cardCount": 78
         },
         {
           "id": "de-b2-general-11",
@@ -874,7 +874,7 @@
           "title": "Kosakata umum (12/14)",
           "icon": "📚",
           "order": 31,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-b2-general-13",
@@ -882,7 +882,7 @@
           "title": "Kosakata umum (13/14)",
           "icon": "📚",
           "order": 32,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-b2-general-14",
@@ -945,7 +945,7 @@
           "title": "Orang & profesi (1/2)",
           "icon": "👤",
           "order": 6,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c1-persons-2",
@@ -1033,7 +1033,7 @@
           "title": "Kata kerja lanjutan (2/5)",
           "icon": "🔁",
           "order": 17,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c1-verbs-advanced-3",
@@ -1097,7 +1097,7 @@
           "title": "Kosakata umum (2/17)",
           "icon": "📚",
           "order": 25,
-          "cardCount": 80
+          "cardCount": 76
         },
         {
           "id": "de-c1-general-3",
@@ -1105,7 +1105,7 @@
           "title": "Kosakata umum (3/17)",
           "icon": "📚",
           "order": 26,
-          "cardCount": 80
+          "cardCount": 77
         },
         {
           "id": "de-c1-general-4",
@@ -1113,7 +1113,7 @@
           "title": "Kosakata umum (4/17)",
           "icon": "📚",
           "order": 27,
-          "cardCount": 80
+          "cardCount": 78
         },
         {
           "id": "de-c1-general-5",
@@ -1161,7 +1161,7 @@
           "title": "Kosakata umum (10/17)",
           "icon": "📚",
           "order": 33,
-          "cardCount": 80
+          "cardCount": 78
         },
         {
           "id": "de-c1-general-11",
@@ -1169,7 +1169,7 @@
           "title": "Kosakata umum (11/17)",
           "icon": "📚",
           "order": 34,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c1-general-12",
@@ -1177,7 +1177,7 @@
           "title": "Kosakata umum (12/17)",
           "icon": "📚",
           "order": 35,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c1-general-13",
@@ -1185,7 +1185,7 @@
           "title": "Kosakata umum (13/17)",
           "icon": "📚",
           "order": 36,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c1-general-14",
@@ -1201,7 +1201,7 @@
           "title": "Kosakata umum (15/17)",
           "icon": "📚",
           "order": 38,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c1-general-16",
@@ -1256,7 +1256,7 @@
           "title": "Orang & profesi (1/2)",
           "icon": "👤",
           "order": 4,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c2-persons-2",
@@ -1368,7 +1368,7 @@
           "title": "Kosakata umum (1/12)",
           "icon": "📚",
           "order": 18,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c2-general-2",
@@ -1384,7 +1384,7 @@
           "title": "Kosakata umum (3/12)",
           "icon": "📚",
           "order": 20,
-          "cardCount": 80
+          "cardCount": 78
         },
         {
           "id": "de-c2-general-4",
@@ -1392,7 +1392,7 @@
           "title": "Kosakata umum (4/12)",
           "icon": "📚",
           "order": 21,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c2-general-5",
@@ -1400,7 +1400,7 @@
           "title": "Kosakata umum (5/12)",
           "icon": "📚",
           "order": 22,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c2-general-6",
@@ -1416,7 +1416,7 @@
           "title": "Kosakata umum (7/12)",
           "icon": "📚",
           "order": 24,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c2-general-8",
@@ -1440,7 +1440,7 @@
           "title": "Kosakata umum (10/12)",
           "icon": "📚",
           "order": 27,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c2-general-11",
@@ -1448,7 +1448,7 @@
           "title": "Kosakata umum (11/12)",
           "icon": "📚",
           "order": 28,
-          "cardCount": 80
+          "cardCount": 79
         },
         {
           "id": "de-c2-general-12",

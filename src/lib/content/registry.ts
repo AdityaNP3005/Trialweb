@@ -3,6 +3,8 @@ import deManifest from "@/content/manifest.json";
 import zhManifest from "@/content/zh/manifest.json";
 
 export type SeedCard = {
+    /** Explicit bundled id, preserved when earlier cards are consolidated. */
+    id?: string;
     front: string;
     meaningId: string;
     meaningEn: string;
@@ -245,7 +247,7 @@ export async function loadContentCards(deckId: string): Promise<Card[]> {
     );
 
     const cards: Card[] = unitCards.map((card, index) => ({
-        id: `${unit.id}-${String(index + 1).padStart(4, "0")}`,
+        id: card.id ?? `${unit.id}-${String(index + 1).padStart(4, "0")}`,
         deckId: unit.id,
         courseId: unit.courseId,
         front: card.front,
