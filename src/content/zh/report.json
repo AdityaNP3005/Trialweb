@@ -1,0 +1,319 @@
+{
+  "source": ".content-cache/acc/pleco_dangdai.tsv",
+  "books": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "parsedRows": 3020,
+  "cards": 2891,
+  "perBook": {
+    "book1": {
+      "chapters": 15,
+      "cards": 520
+    },
+    "book2": {
+      "chapters": 15,
+      "cards": 618
+    },
+    "book3": {
+      "chapters": 12,
+      "cards": 804
+    },
+    "book4": {
+      "chapters": 12,
+      "cards": 949
+    }
+  },
+  "duplicatesDropped": 129,
+  "personNamesDropped": 47,
+  "missingPinyin": 0,
+  "missingGloss": 14,
+  "nonHanziRows": 1,
+  "unparsedHeaders": 0,
+  "missingIndonesian": 0,
+  "missingIndonesianSample": [],
+  "duplicateSample": [
+    {
+      "front": "好",
+      "pinyin": "hǎo",
+      "keptIn": "book1/l01",
+      "droppedFrom": "book1/l02",
+      "gloss": "OK"
+    },
+    {
+      "front": "要",
+      "pinyin": "yào",
+      "keptIn": "book1/l01",
+      "droppedFrom": "book1/l04",
+      "gloss": "to want, to need"
+    },
+    {
+      "front": "要",
+      "pinyin": "yào",
+      "keptIn": "book1/l01",
+      "droppedFrom": "book1/l04",
+      "gloss": "to take, to require"
+    },
+    {
+      "front": "家",
+      "pinyin": "jiā",
+      "keptIn": "book1/l02",
+      "droppedFrom": "book1/l05",
+      "gloss": "measure word for restaurants, shops"
+    },
+    {
+      "front": "可以",
+      "pinyin": "kěyǐ",
+      "keptIn": "book1/l03",
+      "droppedFrom": "book1/l05",
+      "gloss": "could"
+    },
+    {
+      "front": "在",
+      "pinyin": "zài",
+      "keptIn": "book1/l06",
+      "droppedFrom": "book1/l06",
+      "gloss": "at"
+    },
+    {
+      "front": "點",
+      "pinyin": "diǎn",
+      "keptIn": "book1/l05",
+      "droppedFrom": "book1/l07",
+      "gloss": "o'clock"
+    },
+    {
+      "front": "在",
+      "pinyin": "zài",
+      "keptIn": "book1/l06",
+      "droppedFrom": "book1/l07",
+      "gloss": "progressive aspect verb"
+    },
+    {
+      "front": "可以",
+      "pinyin": "kěyǐ",
+      "keptIn": "book1/l03",
+      "droppedFrom": "book1/l07",
+      "gloss": "may"
+    },
+    {
+      "front": "坐",
+      "pinyin": "zuò",
+      "keptIn": "book1/l02",
+      "droppedFrom": "book1/l08",
+      "gloss": "to take by, to travel by"
+    },
+    {
+      "front": "塊",
+      "pinyin": "kuài",
+      "keptIn": "book1/l04",
+      "droppedFrom": "book1/l10",
+      "gloss": "measure word for pieces of food"
+    },
+    {
+      "front": "吧",
+      "pinyin": "ba",
+      "keptIn": "book1/l03",
+      "droppedFrom": "book1/l10",
+      "gloss": "sentence-final particle for guessing"
+    },
+    {
+      "front": "請",
+      "pinyin": "qǐng",
+      "keptIn": "book1/l01",
+      "droppedFrom": "book1/l10",
+      "gloss": "to treat sb to sth"
+    },
+    {
+      "front": "就",
+      "pinyin": "jiù",
+      "keptIn": "book1/l09",
+      "droppedFrom": "book1/l11",
+      "gloss": "only, merely"
+    },
+    {
+      "front": "到",
+      "pinyin": "dào",
+      "keptIn": "book1/l05",
+      "droppedFrom": "book1/l11",
+      "gloss": "arrive"
+    },
+    {
+      "front": "想",
+      "pinyin": "xiǎng",
+      "keptIn": "book1/l03",
+      "droppedFrom": "book1/l11",
+      "gloss": "to think"
+    },
+    {
+      "front": "給",
+      "pinyin": "gěi",
+      "keptIn": "book1/l10",
+      "droppedFrom": "book1/l11",
+      "gloss": "to"
+    },
+    {
+      "front": "會",
+      "pinyin": "huì",
+      "keptIn": "book1/l05",
+      "droppedFrom": "book1/l11",
+      "gloss": "will"
+    },
+    {
+      "front": "那",
+      "pinyin": "nà",
+      "keptIn": "book1/l04",
+      "droppedFrom": "book1/l11",
+      "gloss": "then, in that case"
+    },
+    {
+      "front": "到",
+      "pinyin": "dào",
+      "keptIn": "book1/l05",
+      "droppedFrom": "book1/l12",
+      "gloss": "to go/ come to"
+    },
+    {
+      "front": "以後",
+      "pinyin": "yǐhòu",
+      "keptIn": "book1/l12",
+      "droppedFrom": "book1/l12",
+      "gloss": "afterwards"
+    },
+    {
+      "front": "好",
+      "pinyin": "hǎo",
+      "keptIn": "book1/l01",
+      "droppedFrom": "book1/l12",
+      "gloss": "easy to"
+    },
+    {
+      "front": "找",
+      "pinyin": "zhǎo",
+      "keptIn": "book1/l06",
+      "droppedFrom": "book1/l12",
+      "gloss": "to look for"
+    },
+    {
+      "front": "工作",
+      "pinyin": "gōngzuò",
+      "keptIn": "book1/l12",
+      "droppedFrom": "book1/l12",
+      "gloss": "job, work"
+    },
+    {
+      "front": "再",
+      "pinyin": "zài",
+      "keptIn": "book1/l11",
+      "droppedFrom": "book1/l12",
+      "gloss": "again"
+    },
+    {
+      "front": "怎麼",
+      "pinyin": "zěnme",
+      "keptIn": "book1/l08",
+      "droppedFrom": "book1/l13",
+      "gloss": "how come?"
+    },
+    {
+      "front": "那麼",
+      "pinyin": "nàme",
+      "keptIn": "book1/l12",
+      "droppedFrom": "book1/l13",
+      "gloss": "so"
+    },
+    {
+      "front": "了",
+      "pinyin": "le",
+      "keptIn": "book1/l04",
+      "droppedFrom": "book1/l13",
+      "gloss": "verbal particle indicating a completed action"
+    },
+    {
+      "front": "對",
+      "pinyin": "duì",
+      "keptIn": "book1/l10",
+      "droppedFrom": "book1/l13",
+      "gloss": "to"
+    },
+    {
+      "front": "想",
+      "pinyin": "xiǎng",
+      "keptIn": "book1/l03",
+      "droppedFrom": "book1/l14",
+      "gloss": "to miss"
+    },
+    {
+      "front": "快",
+      "pinyin": "kuài",
+      "keptIn": "book1/l08",
+      "droppedFrom": "book1/l14",
+      "gloss": "soon"
+    },
+    {
+      "front": "要",
+      "pinyin": "yào",
+      "keptIn": "book1/l01",
+      "droppedFrom": "book1/l14",
+      "gloss": "will, going to"
+    },
+    {
+      "front": "幾",
+      "pinyin": "jǐ",
+      "keptIn": "book1/l02",
+      "droppedFrom": "book1/l15",
+      "gloss": "few"
+    },
+    {
+      "front": "跟",
+      "pinyin": "gēn",
+      "keptIn": "book1/l08",
+      "droppedFrom": "book1/l15",
+      "gloss": "to"
+    },
+    {
+      "front": "過",
+      "pinyin": "guò",
+      "keptIn": "book1/l13",
+      "droppedFrom": "book2/l01",
+      "gloss": "to go past, to cross"
+    },
+    {
+      "front": "應該",
+      "pinyin": "yīnggāi",
+      "keptIn": "book1/l09",
+      "droppedFrom": "book2/l01",
+      "gloss": "should"
+    },
+    {
+      "front": "還是",
+      "pinyin": "háishì",
+      "keptIn": "book1/l03",
+      "droppedFrom": "book2/l02",
+      "gloss": "should probably, alternatively, had better"
+    },
+    {
+      "front": "走",
+      "pinyin": "zǒu",
+      "keptIn": "book2/l01",
+      "droppedFrom": "book2/l02",
+      "gloss": "to leave, to bid farewell"
+    },
+    {
+      "front": "下",
+      "pinyin": "xià",
+      "keptIn": "book2/l01",
+      "droppedFrom": "book2/l02",
+      "gloss": "to get off, alight, disembark"
+    },
+    {
+      "front": "早",
+      "pinyin": "zǎo",
+      "keptIn": "book2/l02",
+      "droppedFrom": "book2/l03",
+      "gloss": "early"
+    }
+  ]
+}

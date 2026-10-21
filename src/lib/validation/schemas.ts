@@ -1,6 +1,8 @@
 import { z } from "zod";
 
 export const cefrLevels = ["A1", "A2", "B1", "B2", "C1", "C2"] as const;
+/** Section id of a course: a CEFR band ("A1") or a book ("book1"). */
+export const sectionIdSchema = z.string().trim().min(1).max(24);
 export const wordTypes = [
     "noun",
     "verb",
@@ -29,7 +31,7 @@ export const cardInputSchema = z.object({
     exampleId: trimmed(400).nullable().default(null),
     exampleEn: trimmed(400).nullable().default(null),
     tags: z.array(trimmed(40)).max(12).default([]),
-    level: z.enum(cefrLevels).default("A1"),
+    level: sectionIdSchema.default("A1"),
     source: z.enum(cardSources).default("user"),
     suspended: z.boolean().default(false),
 });

@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { CornerDownRight, Repeat2 } from "lucide-react";
 import type { Card } from "@/types";
 import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils/cn";
 import { TtsButton } from "./tts-button";
 
 export function FlashcardView({
@@ -15,6 +16,8 @@ export function FlashcardView({
     busy,
     voiceURI,
     rate,
+    lang,
+    badgeLabel,
     repeatCount = 0,
     cycle,
 }: {
@@ -26,6 +29,10 @@ export function FlashcardView({
     busy: boolean;
     voiceURI?: string | null;
     rate?: number;
+    /** Speech locale of the active course (`de-DE` or `zh-TW`). */
+    lang?: string;
+    /** Replaces the section badge text (e.g. "Buku 1"). */
+    badgeLabel?: string;
     repeatCount?: number;
     cycle?: number;
 }) {
@@ -54,15 +61,27 @@ export function FlashcardView({
                             <Repeat2 className="size-3" /> {repeatCount}
                         </Badge>
                     ) : null}
-                    <Badge tone="neutral">{card.level}</Badge>
+                    <Badge tone="neutral">{badgeLabel ?? card.level}</Badge>
                     {cycle ? <Badge tone="accent">{t("cycleBadge", { cycle })}</Badge> : null}
                 </div>
 
                 <div className="mt-6 flex items-center gap-2">
-                    <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                    <h2
+                        className={cn(
+                            "font-extrabold tracking-tight",
+                            card.script === "hanzi"
+                                ? "font-cjk text-5xl leading-tight sm:text-6xl"
+                                : "text-3xl sm:text-4xl",
+                        )}
+                    >
                         {card.front}
                     </h2>
-                    <TtsButton text={card.front} voiceURI={voiceURI} rate={rate} />
+                    <TtsButton
+                        text={card.front}
+                        voiceURI={voiceURI}
+                        rate={rate}
+                        lang={lang}
+                    />
                 </div>
 
                 {card.ipa ? (
@@ -72,6 +91,11 @@ export function FlashcardView({
                 {revealed ? (
                     <div className="animate-rise mt-6 w-full max-w-md">
                         <div className="mx-auto mb-5 h-px w-24 bg-border" />
+                        {card.pinyin ? (
+                            <p className="mb-2 font-mono text-lg font-semibold tracking-wide text-accent">
+                                {card.pinyin}
+                            </p>
+                        ) : null}
                         <p className="text-lg font-semibold">
                             {card.meaningId}
                             <span className="font-normal text-muted"> · {card.meaningEn}</span>

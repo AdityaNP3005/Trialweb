@@ -5,10 +5,9 @@ import { ArrowRight, CalendarDays, ChevronRight, Flame, Layers, Trophy } from "l
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { DailyStat, Deck, DeckProgress } from "@/types";
-import { CEFR_LEVELS } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
 import { computeStreak } from "@/lib/stats/streak";
-import { summarizeBand } from "@/content/courses";
+import { courses, courseSections, getCourse, summarizeSection } from "@/content/courses";
 import { buttonStyles } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/progress";
 import { DeckCard } from "@/components/decks/deck-card";
@@ -22,12 +21,17 @@ type DashboardData = {
 };
 
 export default function DashboardPage() {
-    const { store, profile } = useStore();
+    const { store, profile, refreshProfile } = useStore();
     const t = useTranslations("dashboard");
     const locale = useLocale();
 
+    const activeCourseId = profile?.activeCourseId ?? "de";
+    const course = getCourse(activeCourseId);
+    const sections = useMemo(() => courseSections(activeCourseId), [activeCourseId]);
+
     const [data, setData] = useState<DashboardData | null>(null);
     const [error, setError] = useState<string | null>(null);
+    const [switching, setSwitching] = useState(false);
 
     useEffect(() => {
         if (!store) return;
@@ -52,7 +56,7 @@ export default function DashboardPage() {
         return () => {
             cancelled = true;
         };
-    }, [store]);
+    }, [store, activeCourseId]);
 
     const name = profile?.displayName ?? "";
     const streak = data ? computeStreak(data.recent).current : 0;
@@ -65,12 +69,25 @@ export default function DashboardPage() {
     const bands = useMemo(
         () =>
             data
-                ? CEFR_LEVELS.map((level) => ({
-                    summary: summarizeBand(level, data.decks, progressById),
+                ? sections.map((section) => ({
+                    section,
+                    summary: summarizeSection(section.id, data.decks, progressById),
                 }))
                 : [],
-        [data, progressById],
+        [data, progressById, sections],
     );
+
+    async function switchCourse(courseId: string) {
+        if (!store || courseId === activeCourseId) return;
+        setSwitching(true);
+        setData(null);
+        try {
+            await store.updateProfile({ activeCourseId: courseId });
+            await refreshProfile();
+        } finally {
+            setSwitching(false);
+        }
+    }
 
     const recentTopics = useMemo(() => {
         if (!data) return [];
@@ -134,11 +151,35 @@ export default function DashboardPage() {
             </section>
 
             <section className="space-y-3">
+                <div className="flex flex-wrap items-center gap-2">
+                    {courses
+                        .filter((entry) => entry.enabled)
+                        .map((entry) => (
+                            <button
+                                key={entry.id}
+                                type="button"
+                                disabled={switching}
+                                onClick={() => void switchCourse(entry.id)}
+                                aria-pressed={entry.id === activeCourseId}
+                                className={
+                                    entry.id === activeCourseId
+                                        ? "inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 text-xs font-bold text-accent-fg"
+                                        : "inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-semibold text-muted transition hover:text-fg disabled:opacity-50"
+                                }
+                            >
+                                <span aria-hidden>{entry.flag}</span>
+                                {entry.nativeName}
+                            </button>
+                        ))}
+                </div>
+
                 <div>
                     <h2 className="text-sm font-bold uppercase tracking-wide text-muted">
-                        {t("pickBand")}
+                        {course.unitNoun === "book" ? t("pickBook") : t("pickBand")}
                     </h2>
-                    <p className="mt-1 text-xs text-muted">{t("pickBandHint")}</p>
+                    <p className="mt-1 text-xs text-muted">
+                        {course.unitNoun === "book" ? t("pickBookHint") : t("pickBandHint")}
+                    </p>
                 </div>
 
                 {!data ? (
@@ -149,19 +190,21 @@ export default function DashboardPage() {
                     </div>
                 ) : (
                     <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                        {bands.map(({ summary }) => (
+                        {bands.map(({ section, summary }) => (
                             <Link
-                                key={summary.level}
-                                href={`/levels/${summary.level}`}
+                                key={section.id}
+                                href={`/levels/${section.id}`}
                                 className="surface-card group flex flex-col gap-3 p-4 transition hover:-translate-y-0.5 hover:border-accent/50"
                             >
                                 <div className="flex items-start justify-between">
                                     <div>
                                         <p className="text-lg font-extrabold leading-none">
-                                            {summary.level}
+                                            {section.label}
                                         </p>
                                         <p className="mt-1 text-xs text-muted">
-                                            {t("bandTopics", { count: summary.topics })}
+                                            {course.unitNoun === "book"
+                                                ? t("bookChapters", { count: summary.topics })
+                                                : t("bandTopics", { count: summary.topics })}
                                         </p>
                                     </div>
                                     <span className="text-xl font-extrabold text-accent">
@@ -179,10 +222,15 @@ export default function DashboardPage() {
                                 <div className="mt-auto flex items-center justify-between gap-2 text-[11px] text-muted">
                                     <span>
                                         {summary.known}/{summary.total} ·{" "}
-                                        {t("bandDone", {
-                                            done: summary.topicsDone,
-                                            total: summary.topics,
-                                        })}
+                                        {course.unitNoun === "book"
+                                            ? t("bookDone", {
+                                                done: summary.topicsDone,
+                                                total: summary.topics,
+                                            })
+                                            : t("bandDone", {
+                                                done: summary.topicsDone,
+                                                total: summary.topics,
+                                            })}
                                     </span>
                                     <ChevronRight className="size-4 transition group-hover:translate-x-0.5 group-hover:text-accent" />
                                 </div>
@@ -208,14 +256,27 @@ export default function DashboardPage() {
                 {recentTopics.length === 0 ? (
                     <EmptyState
                         title={t("noRecent")}
-                        body={t("noRecentBody")}
+                        body={
+                            course.unitNoun === "book"
+                                ? t("noRecentBodyBook")
+                                : t("noRecentBody")
+                        }
                         action={
-                            <Link
-                                href="/levels/A1"
-                                className={buttonStyles({ size: "sm" })}
-                            >
-                                {t("openA1")}
-                            </Link>
+                            course.unitNoun === "book" && sections[0] ? (
+                                <Link
+                                    href={`/levels/${sections[0].id}`}
+                                    className={buttonStyles({ size: "sm" })}
+                                >
+                                    {t("openBook", { book: sections[0].label })}
+                                </Link>
+                            ) : (
+                                <Link
+                                    href="/levels/A1"
+                                    className={buttonStyles({ size: "sm" })}
+                                >
+                                    {t("openA1")}
+                                </Link>
+                            )
                         }
                     />
                 ) : (

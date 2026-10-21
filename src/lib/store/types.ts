@@ -99,6 +99,7 @@ export const defaultProfileFor = (input: {
     activeCourseId: "de",
     prefs: defaultPrefs(),
     ttsVoiceURI: null,
+    ttsVoices: {},
     ttsRate: 1,
     onboardingComplete: true,
     engineV2: true,

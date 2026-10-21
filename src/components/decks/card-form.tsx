@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-import type { Card, CardInput, CefrLevel, Gender, WordType } from "@/types";
+import type { Card, CardInput, CefrLevel, Gender, SectionId, WordType } from "@/types";
 import { cardInputSchema, splitGermanArticle } from "@/lib/validation/schemas";
 import { useStore } from "@/components/providers/store-provider";
 import { Button } from "@/components/ui/button";
@@ -31,7 +31,7 @@ type FormState = {
     exampleId: string;
     exampleEn: string;
     tags: string;
-    level: CefrLevel;
+    level: SectionId;
 };
 
 function toForm(card: Card | null): FormState {

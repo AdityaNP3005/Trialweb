@@ -21,6 +21,7 @@ import { useAuth } from "@/components/providers/auth-provider";
 import { useStore } from "@/components/providers/store-provider";
 import { useTheme, type Theme } from "@/components/providers/theme-provider";
 import { useSpeech } from "@/hooks/use-speech";
+import { getCourse } from "@/content/courses";
 import { cardsToCsv } from "@/lib/import/csv";
 import { downloadFile, todayStamp } from "@/lib/utils/download";
 import { Button, buttonStyles } from "@/components/ui/button";
@@ -44,7 +45,8 @@ export default function SettingsPage() {
     const t = useTranslations("settings");
     const tc = useTranslations("common");
     const { theme, setTheme } = useTheme();
-    const { germanVoices, speak } = useSpeech();
+    const activeCourse = getCourse(profile?.activeCourseId);
+    const { voices: courseVoices, speak } = useSpeech(activeCourse.speechLocale);
     const router = useRouter();
     const pathname = usePathname();
     const params = useParams<{ locale: string }>();
@@ -61,9 +63,11 @@ export default function SettingsPage() {
     useEffect(() => {
         if (!profile) return;
         setShuffleCards(Boolean(profile.prefs?.shuffleCards));
-        setTtsVoiceURI(profile.ttsVoiceURI ?? "");
+        setTtsVoiceURI(
+            profile.ttsVoices?.[activeCourse.id] ?? profile.ttsVoiceURI ?? "",
+        );
         setTtsRate(profile.ttsRate);
-    }, [profile]);
+    }, [profile, activeCourse.id]);
 
     async function loadEverything(): Promise<{ decks: (Deck & { cards: Card[] })[] }> {
         if (!store) return { decks: [] };
@@ -86,6 +90,10 @@ export default function SettingsPage() {
                 prefs: { shuffleCards },
                 ttsRate,
                 ttsVoiceURI: ttsVoiceURI || null,
+                ttsVoices: {
+                    ...(profile?.ttsVoices ?? {}),
+                    [activeCourse.id]: ttsVoiceURI || null,
+                },
             });
             await refreshProfile();
             setSaved(true);
@@ -235,9 +243,9 @@ export default function SettingsPage() {
             <section className="surface-card p-5">
                 <h2 className="mb-3 flex items-center gap-2 text-sm font-bold">
                     <Volume2 className="size-4 text-muted" />
-                    {t("audio")}
+                    {t("audio")} · {activeCourse.nativeName}
                 </h2>
-                {germanVoices.length === 0 ? (
+                {courseVoices.length === 0 ? (
                     <p className="rounded-lg bg-warning/10 px-3 py-2 text-xs text-warning">
                         {t("ttsNoVoice")}
                     </p>
@@ -251,7 +259,7 @@ export default function SettingsPage() {
                                 onChange={(event) => setTtsVoiceURI(event.target.value)}
                             >
                                 <option value="">{t("ttsAuto")}</option>
-                                {germanVoices.map((voice) => (
+                                {courseVoices.map((voice) => (
                                     <option key={voice.voiceURI} value={voice.voiceURI}>
                                         {voice.name} ({voice.lang})
                                     </option>
@@ -278,10 +286,15 @@ export default function SettingsPage() {
                                 size="sm"
                                 className="mt-2"
                                 onClick={() =>
-                                    speak("Guten Tag! Ich lerne Deutsch.", {
-                                        voiceURI: ttsVoiceURI || null,
-                                        rate: ttsRate,
-                                    })
+                                    speak(
+                                        activeCourse.script === "hanzi"
+                                            ? "你好，我學中文。"
+                                            : "Guten Tag! Ich lerne Deutsch.",
+                                        {
+                                            voiceURI: ttsVoiceURI || null,
+                                            rate: ttsRate,
+                                        },
+                                    )
                                 }
                             >
                                 <Volume2 className="size-3.5" />

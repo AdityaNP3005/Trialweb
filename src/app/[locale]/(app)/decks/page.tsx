@@ -4,9 +4,9 @@ import { useEffect, useMemo, useState } from "react";
 import { Filter, Plus } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useStore } from "@/components/providers/store-provider";
-import type { CefrLevel, Deck, DeckProgress } from "@/types";
+import type { CefrLevel, Deck, DeckProgress, SectionId } from "@/types";
 import { CEFR_LEVELS } from "@/types";
-import { summarizeBand } from "@/content/courses";
+import { courseSections, summarizeSection } from "@/content/courses";
 import { Button } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
 import { Input, Label, Select, Textarea } from "@/components/ui/field";
@@ -14,16 +14,23 @@ import { EmptyState } from "@/components/ui/empty-state";
 import { Skeleton } from "@/components/ui/progress";
 import { DeckCard } from "@/components/decks/deck-card";
 
-const levels: (CefrLevel | "all")[] = ["all", ...CEFR_LEVELS];
-
 export default function DecksPage() {
-    const { store } = useStore();
+    const { store, profile } = useStore();
     const t = useTranslations("decks");
     const tc = useTranslations("common");
 
+    const sections = useMemo(
+        () => courseSections(profile?.activeCourseId ?? "de"),
+        [profile?.activeCourseId],
+    );
+    const levels: (SectionId | "all")[] = useMemo(
+        () => ["all", ...sections.map((section) => section.id)],
+        [sections],
+    );
+
     const [decks, setDecks] = useState<Deck[] | null>(null);
     const [progress, setProgress] = useState<Record<string, DeckProgress>>({});
-    const [level, setLevel] = useState<CefrLevel | "all">("all");
+    const [level, setLevel] = useState<SectionId | "all">("all");
     const [tag, setTag] = useState("all");
     const [source, setSource] = useState<"all" | "content" | "user">("all");
     const [dialogOpen, setDialogOpen] = useState(false);
@@ -63,14 +70,15 @@ export default function DecksPage() {
 
     const tags = useMemo(() => {
         const set = new Set<string>();
+        const sectionIds = new Set(sections.map((section) => section.id));
         decks?.forEach((deck) =>
             deck.tags
-                // Only band tags are useful here; topic keys would flood the list.
-                .filter((entry) => /^[abc][12]$/.test(entry))
+                // Only section tags are useful here; unit keys would flood the list.
+                .filter((entry) => sectionIds.has(entry))
                 .forEach((entry) => set.add(entry)),
         );
-        return [...set].sort();
-    }, [decks]);
+        return [...set];
+    }, [decks, sections]);
 
     const filtered = useMemo(() => {
         return (decks ?? [])
@@ -82,11 +90,14 @@ export default function DecksPage() {
             })
             .sort((a, b) => {
                 if (a.level !== b.level) {
-                    return CEFR_LEVELS.indexOf(a.level) - CEFR_LEVELS.indexOf(b.level);
+                    const order = sections.map((section) => section.id);
+                    const ai = order.indexOf(a.level);
+                    const bi = order.indexOf(b.level);
+                    return (ai < 0 ? 99 : ai) - (bi < 0 ? 99 : bi);
                 }
                 return (a.topicOrder ?? 0) - (b.topicOrder ?? 0);
             });
-    }, [decks, level, tag, source]);
+    }, [decks, level, tag, source, sections]);
 
     async function handleCreate(event: React.FormEvent) {
         event.preventDefault();
@@ -191,24 +202,32 @@ export default function DecksPage() {
             ) : level === "all" && source !== "user" ? (
                 <div className="space-y-5">
                     <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                        {CEFR_LEVELS.map((entry) => {
-                            const summary = summarizeBand(entry, decks, new Map(Object.entries(progress)));
+                        {sections.map((section) => {
+                            const summary = summarizeSection(
+                                section.id,
+                                decks,
+                                new Map(Object.entries(progress)),
+                            );
                             return (
                                 <button
-                                    key={entry}
+                                    key={section.id}
                                     type="button"
-                                    onClick={() => setLevel(entry)}
+                                    onClick={() => setLevel(section.id)}
                                     className="surface-card flex flex-col gap-2 p-4 text-left transition hover:border-accent/50"
                                 >
                                     <div className="flex items-center justify-between">
-                                        <span className="text-lg font-extrabold">{entry}</span>
+                                        <span className="text-lg font-extrabold">
+                                            {section.label}
+                                        </span>
                                         <span className="text-sm font-extrabold text-accent">
                                             {summary.percent}%
                                         </span>
                                     </div>
                                     <p className="text-xs text-muted">
-                                        {t("bandTopics", { count: summary.topics })} · {summary.known}/
-                                        {summary.total}
+                                        {section.unitNoun === "book"
+                                            ? t("bookChapters", { count: summary.topics })
+                                            : t("bandTopics", { count: summary.topics })}{" "}
+                                        · {summary.known}/{summary.total}
                                     </p>
                                     <div className="h-1.5 w-full overflow-hidden rounded-full bg-surface-2">
                                         <div

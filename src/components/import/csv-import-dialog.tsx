@@ -3,7 +3,7 @@
 import { useMemo, useRef, useState } from "react";
 import { FileUp } from "lucide-react";
 import { useTranslations } from "next-intl";
-import type { CefrLevel } from "@/types";
+import type { SectionId } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
 import {
     emptyMapping,
@@ -48,7 +48,7 @@ export function CsvImportDialog({
     onClose: () => void;
     deckId: string;
     courseId: string;
-    level: CefrLevel;
+    level: SectionId;
     existingFronts: Set<string>;
     onImported: () => void;
 }) {

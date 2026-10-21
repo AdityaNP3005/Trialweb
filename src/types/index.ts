@@ -1,5 +1,13 @@
 export type CefrLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
 
+/**
+ * A section of a course: a CEFR band for German (A1…C2) or a book for
+ * Mandarin (book1…book6). Content units (decks) always live inside a section.
+ */
+export type SectionId = string;
+
+export type CardScript = "latin" | "hanzi";
+
 export const CEFR_LEVELS: readonly CefrLevel[] = [
     "A1",
     "A2",
@@ -33,11 +41,15 @@ export type Card = {
     wordType: WordType;
     plural: string | null;
     ipa: string | null;
+    /** Mandarin only: tone-marked pinyin, shown after the card is revealed. */
+    pinyin?: string | null;
+    /** Script used on the front side; affects fonts and TTS locale. */
+    script?: CardScript;
     exampleDe: string | null;
     exampleId: string | null;
     exampleEn: string | null;
     tags: string[];
-    level: CefrLevel;
+    level: SectionId;
     source: CardSource;
     suspended: boolean;
     createdAt: number;
@@ -58,19 +70,23 @@ export type Deck = {
     courseId: string;
     name: string;
     description: string;
-    level: CefrLevel;
+    level: SectionId;
     tags: string[];
     cardCount: number;
     source: DeckSource;
     isDefault: boolean;
     /** Content decks are bundled; user decks live in the account store. */
     readOnly: boolean;
-    /** Topic key for bundled decks (e.g. "greetings"). */
+    /** Topic key for bundled decks (e.g. "greetings", "l01"). */
     topicKey?: string;
     /** Emoji shown in the topic lists. */
     icon?: string;
     /** Position of the topic inside its band (1-based). */
     topicOrder?: number;
+    /** Human label of the parent section: "A1" or "Buku 1". */
+    sectionLabel?: string;
+    /** Mandarin only: chapter number inside the book (1-based). */
+    chapterNumber?: number;
     createdAt: number;
     updatedAt: number;
 };
@@ -137,7 +153,7 @@ export type StudyPrefs = {
 
 export type DeckProgress = {
     deckId: string;
-    level: CefrLevel;
+    level: SectionId;
     cycle: number;
     known: number;
     total: number;
@@ -185,6 +201,8 @@ export type Profile = {
     activeCourseId: string;
     prefs: StudyPrefs;
     ttsVoiceURI: string | null;
+    /** Preferred voice per course id ("de", "zh"); falls back to `ttsVoiceURI`. */
+    ttsVoices?: Record<string, string | null>;
     ttsRate: number;
     onboardingComplete: boolean;
     /** Set once the FSRS → cycle migration has run for this account. */

@@ -17,6 +17,8 @@ export function QuizView({
     busy,
     voiceURI,
     rate,
+    lang,
+    badgeLabel,
 }: {
     card: Card;
     options: string[];
@@ -26,6 +28,8 @@ export function QuizView({
     busy: boolean;
     voiceURI?: string | null;
     rate?: number;
+    lang?: string;
+    badgeLabel?: string;
 }) {
     const t = useTranslations("quiz");
     const correct = card.meaningId;
@@ -36,11 +40,25 @@ export function QuizView({
         <div className="space-y-4">
             <div className="surface-card flex min-h-[180px] flex-col items-center justify-center p-6 text-center">
                 <div className="flex items-center gap-2">
-                    <Badge tone="neutral">{card.level}</Badge>
+                    <Badge tone="neutral">{badgeLabel ?? card.level}</Badge>
                 </div>
                 <div className="mt-4 flex items-center gap-2">
-                    <h2 className="text-3xl font-extrabold tracking-tight">{card.front}</h2>
-                    <TtsButton text={card.front} voiceURI={voiceURI} rate={rate} />
+                    <h2
+                        className={cn(
+                            "font-extrabold tracking-tight",
+                            card.script === "hanzi"
+                                ? "font-cjk text-4xl sm:text-5xl"
+                                : "text-3xl",
+                        )}
+                    >
+                        {card.front}
+                    </h2>
+                    <TtsButton
+                        text={card.front}
+                        voiceURI={voiceURI}
+                        rate={rate}
+                        lang={lang}
+                    />
                 </div>
                 <p className="mt-2 text-xs text-muted">{t("question")}</p>
             </div>

@@ -1,5 +1,10 @@
-import type { CefrLevel, Deck, DeckProgress } from "@/types";
-import { contentTopics, loadContentCards, topicsForLevel } from "@/lib/content/registry";
+import type { CardScript, Deck, DeckProgress, SectionId } from "@/types";
+import {
+    contentUnits,
+    loadContentCards,
+    sectionsForCourse,
+    topicsForLevel,
+} from "@/lib/content/registry";
 
 export type Course = {
     id: string;
@@ -7,13 +12,17 @@ export type Course = {
     nativeName: string;
     flag: string;
     speechLocale: string;
-    levels: CefrLevel[];
+    script: CardScript;
+    /** "band" (CEFR) or "book" (textbook volume) — drives UI copy. */
+    unitNoun: "band" | "book";
+    /** "topic" or "chapter" — one study session. */
+    chapterNoun: "topic" | "chapter";
     enabled: boolean;
 };
 
 /**
- * Adding a language = add content under `src/content/<id>/`, register the level
- * files in `src/lib/content/registry.ts` and add one entry here.
+ * Adding a language = add content under `src/content/<id>/`, register the file
+ * loaders in `src/lib/content/registry.ts` and add one entry here.
  */
 export const courses: Course[] = [
     {
@@ -22,7 +31,20 @@ export const courses: Course[] = [
         nativeName: "Deutsch",
         flag: "🇩🇪",
         speechLocale: "de-DE",
-        levels: ["A1", "A2", "B1", "B2", "C1", "C2"],
+        script: "latin",
+        unitNoun: "band",
+        chapterNoun: "topic",
+        enabled: true,
+    },
+    {
+        id: "zh",
+        name: "Mandarin (traditional)",
+        nativeName: "華語",
+        flag: "🇹🇼",
+        speechLocale: "zh-TW",
+        script: "hanzi",
+        unitNoun: "book",
+        chapterNoun: "chapter",
         enabled: true,
     },
 ];
@@ -33,35 +55,53 @@ export function getCourse(id: string | null | undefined): Course {
     return courses.find((course) => course.id === id) ?? defaultCourse;
 }
 
-/** Bundled topics exposed as normal `Deck` objects (read-only). */
+/** Resolves the course that owns a section id ("A1" → de, "book1" → zh). */
+export function getCourseForSection(sectionId: SectionId | null | undefined): Course | null {
+    if (!sectionId) return null;
+    return (
+        courses.find((course) =>
+            sectionsForCourse(course.id).some((section) => section.id === sectionId),
+        ) ?? null
+    );
+}
+
+export function courseSections(courseId: string) {
+    return sectionsForCourse(courseId);
+}
+
+/** Bundled units exposed as normal `Deck` objects (read-only). */
 export function listContentDecks(courseId = defaultCourse.id): Deck[] {
-    return contentTopics
-        .filter((topic) => topic.courseId === courseId)
-        .map((topic) => ({
-            id: topic.id,
-            courseId: topic.courseId,
-            name: topic.title,
+    return contentUnits
+        .filter((unit) => unit.courseId === courseId)
+        .map((unit) => ({
+            id: unit.id,
+            courseId: unit.courseId,
+            name: unit.title,
             description: "",
-            level: topic.level,
-            tags: [topic.key, topic.level.toLowerCase()],
-            cardCount: topic.cardCount,
+            level: unit.sectionId,
+            tags: [unit.key, unit.sectionId],
+            cardCount: unit.cardCount,
             source: "content" as const,
-            isDefault: topic.level === "A1" && topic.order === 1,
+            isDefault:
+                unit.sectionId === sectionsForCourse(courseId)[0]?.id && unit.order === 1,
             readOnly: true,
-            topicKey: topic.key,
-            icon: topic.icon,
-            topicOrder: topic.order,
+            topicKey: unit.key,
+            icon: unit.icon,
+            topicOrder: unit.order,
+            sectionLabel: unit.sectionLabel,
+            chapterNumber: unit.chapterNumber,
             createdAt: 0,
             updatedAt: 0,
         }));
 }
 
 export function listContentDecksForLevel(
-    level: CefrLevel,
-    courseId = defaultCourse.id,
+    level: SectionId,
+    courseId?: string,
 ): Deck[] {
-    const ids = new Set(topicsForLevel(level).map((topic) => topic.id));
-    return listContentDecks(courseId).filter((deck) => ids.has(deck.id));
+    const owner = courseId ?? getCourseForSection(level)?.id ?? defaultCourse.id;
+    const ids = new Set(topicsForLevel(level).map((unit) => unit.id));
+    return listContentDecks(owner).filter((deck) => ids.has(deck.id));
 }
 
 export async function getContentDeckCards(deckId: string) {
@@ -69,7 +109,7 @@ export async function getContentDeckCards(deckId: string) {
 }
 
 export type BandSummary = {
-    level: CefrLevel;
+    level: SectionId;
     topics: number;
     total: number;
     known: number;
@@ -78,9 +118,9 @@ export type BandSummary = {
     nextTopic: Deck | null;
 };
 
-/** Roll-up of all topic progress inside one band. */
-export function summarizeBand(
-    level: CefrLevel,
+/** Roll-up of all unit progress inside one section (band or book). */
+export function summarizeSection(
+    level: SectionId,
     decks: Deck[],
     progress: Map<string, DeckProgress>,
 ): BandSummary {
@@ -112,6 +152,12 @@ export function summarizeBand(
     };
 }
 
-export function isContentLevel(level: string | null | undefined): level is CefrLevel {
-    return Boolean(level && courses[0].levels.includes(level as CefrLevel));
+/** @deprecated use `summarizeSection` (bands and books share the same logic). */
+export const summarizeBand = summarizeSection;
+
+export function isContentSection(sectionId: SectionId | null | undefined): boolean {
+    return Boolean(getCourseForSection(sectionId));
 }
+
+/** @deprecated use `isContentSection` */
+export const isContentLevel = isContentSection;

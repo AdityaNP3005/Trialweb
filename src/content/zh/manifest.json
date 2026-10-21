@@ -1,0 +1,474 @@
+{
+  "version": 1,
+  "courseId": "zh",
+  "books": [
+    {
+      "id": "book1",
+      "label": "Buku 1",
+      "title": "當代中文課程 1",
+      "order": 1,
+      "file": "book1.json",
+      "chapters": [
+        {
+          "id": "zh-book1-l01",
+          "key": "l01",
+          "title": "Bab 1",
+          "icon": "01",
+          "order": 1,
+          "cardCount": 40
+        },
+        {
+          "id": "zh-book1-l02",
+          "key": "l02",
+          "title": "Bab 2",
+          "icon": "02",
+          "order": 2,
+          "cardCount": 33
+        },
+        {
+          "id": "zh-book1-l03",
+          "key": "l03",
+          "title": "Bab 3",
+          "icon": "03",
+          "order": 3,
+          "cardCount": 40
+        },
+        {
+          "id": "zh-book1-l04",
+          "key": "l04",
+          "title": "Bab 4",
+          "icon": "04",
+          "order": 4,
+          "cardCount": 34
+        },
+        {
+          "id": "zh-book1-l05",
+          "key": "l05",
+          "title": "Bab 5",
+          "icon": "05",
+          "order": 5,
+          "cardCount": 36
+        },
+        {
+          "id": "zh-book1-l06",
+          "key": "l06",
+          "title": "Bab 6",
+          "icon": "06",
+          "order": 6,
+          "cardCount": 39
+        },
+        {
+          "id": "zh-book1-l07",
+          "key": "l07",
+          "title": "Bab 7",
+          "icon": "07",
+          "order": 7,
+          "cardCount": 35
+        },
+        {
+          "id": "zh-book1-l08",
+          "key": "l08",
+          "title": "Bab 8",
+          "icon": "08",
+          "order": 8,
+          "cardCount": 33
+        },
+        {
+          "id": "zh-book1-l09",
+          "key": "l09",
+          "title": "Bab 9",
+          "icon": "09",
+          "order": 9,
+          "cardCount": 25
+        },
+        {
+          "id": "zh-book1-l10",
+          "key": "l10",
+          "title": "Bab 10",
+          "icon": "10",
+          "order": 10,
+          "cardCount": 30
+        },
+        {
+          "id": "zh-book1-l11",
+          "key": "l11",
+          "title": "Bab 11",
+          "icon": "11",
+          "order": 11,
+          "cardCount": 34
+        },
+        {
+          "id": "zh-book1-l12",
+          "key": "l12",
+          "title": "Bab 12",
+          "icon": "12",
+          "order": 12,
+          "cardCount": 31
+        },
+        {
+          "id": "zh-book1-l13",
+          "key": "l13",
+          "title": "Bab 13",
+          "icon": "13",
+          "order": 13,
+          "cardCount": 36
+        },
+        {
+          "id": "zh-book1-l14",
+          "key": "l14",
+          "title": "Bab 14",
+          "icon": "14",
+          "order": 14,
+          "cardCount": 32
+        },
+        {
+          "id": "zh-book1-l15",
+          "key": "l15",
+          "title": "Bab 15",
+          "icon": "15",
+          "order": 15,
+          "cardCount": 42
+        }
+      ]
+    },
+    {
+      "id": "book2",
+      "label": "Buku 2",
+      "title": "當代中文課程 2",
+      "order": 2,
+      "file": "book2.json",
+      "chapters": [
+        {
+          "id": "zh-book2-l01",
+          "key": "l01",
+          "title": "Bab 1",
+          "icon": "01",
+          "order": 1,
+          "cardCount": 42
+        },
+        {
+          "id": "zh-book2-l02",
+          "key": "l02",
+          "title": "Bab 2",
+          "icon": "02",
+          "order": 2,
+          "cardCount": 40
+        },
+        {
+          "id": "zh-book2-l03",
+          "key": "l03",
+          "title": "Bab 3",
+          "icon": "03",
+          "order": 3,
+          "cardCount": 39
+        },
+        {
+          "id": "zh-book2-l04",
+          "key": "l04",
+          "title": "Bab 4",
+          "icon": "04",
+          "order": 4,
+          "cardCount": 43
+        },
+        {
+          "id": "zh-book2-l05",
+          "key": "l05",
+          "title": "Bab 5",
+          "icon": "05",
+          "order": 5,
+          "cardCount": 43
+        },
+        {
+          "id": "zh-book2-l06",
+          "key": "l06",
+          "title": "Bab 6",
+          "icon": "06",
+          "order": 6,
+          "cardCount": 45
+        },
+        {
+          "id": "zh-book2-l07",
+          "key": "l07",
+          "title": "Bab 7",
+          "icon": "07",
+          "order": 7,
+          "cardCount": 41
+        },
+        {
+          "id": "zh-book2-l08",
+          "key": "l08",
+          "title": "Bab 8",
+          "icon": "08",
+          "order": 8,
+          "cardCount": 34
+        },
+        {
+          "id": "zh-book2-l09",
+          "key": "l09",
+          "title": "Bab 9",
+          "icon": "09",
+          "order": 9,
+          "cardCount": 39
+        },
+        {
+          "id": "zh-book2-l10",
+          "key": "l10",
+          "title": "Bab 10",
+          "icon": "10",
+          "order": 10,
+          "cardCount": 39
+        },
+        {
+          "id": "zh-book2-l11",
+          "key": "l11",
+          "title": "Bab 11",
+          "icon": "11",
+          "order": 11,
+          "cardCount": 43
+        },
+        {
+          "id": "zh-book2-l12",
+          "key": "l12",
+          "title": "Bab 12",
+          "icon": "12",
+          "order": 12,
+          "cardCount": 44
+        },
+        {
+          "id": "zh-book2-l13",
+          "key": "l13",
+          "title": "Bab 13",
+          "icon": "13",
+          "order": 13,
+          "cardCount": 40
+        },
+        {
+          "id": "zh-book2-l14",
+          "key": "l14",
+          "title": "Bab 14",
+          "icon": "14",
+          "order": 14,
+          "cardCount": 47
+        },
+        {
+          "id": "zh-book2-l15",
+          "key": "l15",
+          "title": "Bab 15",
+          "icon": "15",
+          "order": 15,
+          "cardCount": 39
+        }
+      ]
+    },
+    {
+      "id": "book3",
+      "label": "Buku 3",
+      "title": "當代中文課程 3",
+      "order": 3,
+      "file": "book3.json",
+      "chapters": [
+        {
+          "id": "zh-book3-l01",
+          "key": "l01",
+          "title": "Bab 1",
+          "icon": "01",
+          "order": 1,
+          "cardCount": 51
+        },
+        {
+          "id": "zh-book3-l02",
+          "key": "l02",
+          "title": "Bab 2",
+          "icon": "02",
+          "order": 2,
+          "cardCount": 54
+        },
+        {
+          "id": "zh-book3-l03",
+          "key": "l03",
+          "title": "Bab 3",
+          "icon": "03",
+          "order": 3,
+          "cardCount": 69
+        },
+        {
+          "id": "zh-book3-l04",
+          "key": "l04",
+          "title": "Bab 4",
+          "icon": "04",
+          "order": 4,
+          "cardCount": 58
+        },
+        {
+          "id": "zh-book3-l05",
+          "key": "l05",
+          "title": "Bab 5",
+          "icon": "05",
+          "order": 5,
+          "cardCount": 68
+        },
+        {
+          "id": "zh-book3-l06",
+          "key": "l06",
+          "title": "Bab 6",
+          "icon": "06",
+          "order": 6,
+          "cardCount": 63
+        },
+        {
+          "id": "zh-book3-l07",
+          "key": "l07",
+          "title": "Bab 7",
+          "icon": "07",
+          "order": 7,
+          "cardCount": 67
+        },
+        {
+          "id": "zh-book3-l08",
+          "key": "l08",
+          "title": "Bab 8",
+          "icon": "08",
+          "order": 8,
+          "cardCount": 78
+        },
+        {
+          "id": "zh-book3-l09",
+          "key": "l09",
+          "title": "Bab 9",
+          "icon": "09",
+          "order": 9,
+          "cardCount": 65
+        },
+        {
+          "id": "zh-book3-l10",
+          "key": "l10",
+          "title": "Bab 10",
+          "icon": "10",
+          "order": 10,
+          "cardCount": 65
+        },
+        {
+          "id": "zh-book3-l11",
+          "key": "l11",
+          "title": "Bab 11",
+          "icon": "11",
+          "order": 11,
+          "cardCount": 83
+        },
+        {
+          "id": "zh-book3-l12",
+          "key": "l12",
+          "title": "Bab 12",
+          "icon": "12",
+          "order": 12,
+          "cardCount": 83
+        }
+      ]
+    },
+    {
+      "id": "book4",
+      "label": "Buku 4",
+      "title": "當代中文課程 4",
+      "order": 4,
+      "file": "book4.json",
+      "chapters": [
+        {
+          "id": "zh-book4-l01",
+          "key": "l01",
+          "title": "Bab 1",
+          "icon": "01",
+          "order": 1,
+          "cardCount": 67
+        },
+        {
+          "id": "zh-book4-l02",
+          "key": "l02",
+          "title": "Bab 2",
+          "icon": "02",
+          "order": 2,
+          "cardCount": 72
+        },
+        {
+          "id": "zh-book4-l03",
+          "key": "l03",
+          "title": "Bab 3",
+          "icon": "03",
+          "order": 3,
+          "cardCount": 80
+        },
+        {
+          "id": "zh-book4-l04",
+          "key": "l04",
+          "title": "Bab 4",
+          "icon": "04",
+          "order": 4,
+          "cardCount": 76
+        },
+        {
+          "id": "zh-book4-l05",
+          "key": "l05",
+          "title": "Bab 5",
+          "icon": "05",
+          "order": 5,
+          "cardCount": 78
+        },
+        {
+          "id": "zh-book4-l06",
+          "key": "l06",
+          "title": "Bab 6",
+          "icon": "06",
+          "order": 6,
+          "cardCount": 83
+        },
+        {
+          "id": "zh-book4-l07",
+          "key": "l07",
+          "title": "Bab 7",
+          "icon": "07",
+          "order": 7,
+          "cardCount": 70
+        },
+        {
+          "id": "zh-book4-l08",
+          "key": "l08",
+          "title": "Bab 8",
+          "icon": "08",
+          "order": 8,
+          "cardCount": 91
+        },
+        {
+          "id": "zh-book4-l09",
+          "key": "l09",
+          "title": "Bab 9",
+          "icon": "09",
+          "order": 9,
+          "cardCount": 87
+        },
+        {
+          "id": "zh-book4-l10",
+          "key": "l10",
+          "title": "Bab 10",
+          "icon": "10",
+          "order": 10,
+          "cardCount": 75
+        },
+        {
+          "id": "zh-book4-l11",
+          "key": "l11",
+          "title": "Bab 11",
+          "icon": "11",
+          "order": 11,
+          "cardCount": 91
+        },
+        {
+          "id": "zh-book4-l12",
+          "key": "l12",
+          "title": "Bab 12",
+          "icon": "12",
+          "order": 12,
+          "cardCount": 79
+        }
+      ]
+    }
+  ]
+}

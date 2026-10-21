@@ -1,0 +1,5695 @@
+{
+  "courseId": "zh",
+  "section": {
+    "id": "book2",
+    "label": "Buku 2",
+    "title": "當代中文課程 2",
+    "order": 2
+  },
+  "chapters": [
+    {
+      "id": "zh-book2-l01",
+      "key": "l01",
+      "title": "Bab 1",
+      "icon": "01",
+      "order": 1,
+      "cardCount": 42
+    },
+    {
+      "id": "zh-book2-l02",
+      "key": "l02",
+      "title": "Bab 2",
+      "icon": "02",
+      "order": 2,
+      "cardCount": 40
+    },
+    {
+      "id": "zh-book2-l03",
+      "key": "l03",
+      "title": "Bab 3",
+      "icon": "03",
+      "order": 3,
+      "cardCount": 39
+    },
+    {
+      "id": "zh-book2-l04",
+      "key": "l04",
+      "title": "Bab 4",
+      "icon": "04",
+      "order": 4,
+      "cardCount": 43
+    },
+    {
+      "id": "zh-book2-l05",
+      "key": "l05",
+      "title": "Bab 5",
+      "icon": "05",
+      "order": 5,
+      "cardCount": 43
+    },
+    {
+      "id": "zh-book2-l06",
+      "key": "l06",
+      "title": "Bab 6",
+      "icon": "06",
+      "order": 6,
+      "cardCount": 45
+    },
+    {
+      "id": "zh-book2-l07",
+      "key": "l07",
+      "title": "Bab 7",
+      "icon": "07",
+      "order": 7,
+      "cardCount": 41
+    },
+    {
+      "id": "zh-book2-l08",
+      "key": "l08",
+      "title": "Bab 8",
+      "icon": "08",
+      "order": 8,
+      "cardCount": 34
+    },
+    {
+      "id": "zh-book2-l09",
+      "key": "l09",
+      "title": "Bab 9",
+      "icon": "09",
+      "order": 9,
+      "cardCount": 39
+    },
+    {
+      "id": "zh-book2-l10",
+      "key": "l10",
+      "title": "Bab 10",
+      "icon": "10",
+      "order": 10,
+      "cardCount": 39
+    },
+    {
+      "id": "zh-book2-l11",
+      "key": "l11",
+      "title": "Bab 11",
+      "icon": "11",
+      "order": 11,
+      "cardCount": 43
+    },
+    {
+      "id": "zh-book2-l12",
+      "key": "l12",
+      "title": "Bab 12",
+      "icon": "12",
+      "order": 12,
+      "cardCount": 44
+    },
+    {
+      "id": "zh-book2-l13",
+      "key": "l13",
+      "title": "Bab 13",
+      "icon": "13",
+      "order": 13,
+      "cardCount": 40
+    },
+    {
+      "id": "zh-book2-l14",
+      "key": "l14",
+      "title": "Bab 14",
+      "icon": "14",
+      "order": 14,
+      "cardCount": 47
+    },
+    {
+      "id": "zh-book2-l15",
+      "key": "l15",
+      "title": "Bab 15",
+      "icon": "15",
+      "order": 15,
+      "cardCount": 39
+    }
+  ],
+  "cards": [
+    {
+      "front": "走",
+      "pinyin": "zǒu",
+      "meaningEn": "to get to",
+      "meaningId": "sampai",
+      "chapter": "l01",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "路人",
+      "pinyin": "lùrén",
+      "meaningEn": "someone",
+      "meaningId": "seseorang",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "幫忙",
+      "pinyin": "bāngmáng",
+      "meaningEn": "to help",
+      "meaningId": "menolong",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "迷路",
+      "pinyin": "mílù",
+      "meaningEn": "to be lost, to have lost directions",
+      "meaningId": "tersesat",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "下",
+      "pinyin": "xià",
+      "meaningEn": "next",
+      "meaningId": "berikutnya",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "路口",
+      "pinyin": "lùkǒu",
+      "meaningEn": "intersection",
+      "meaningId": "persimpangan",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "段",
+      "pinyin": "duàn",
+      "meaningEn": "section",
+      "meaningId": "bagian",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "第",
+      "pinyin": "dì",
+      "meaningEn": "used to indicate ordinal numbers",
+      "meaningId": "penanda bilangan urut",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "紅綠燈",
+      "pinyin": "hónglǜdēng",
+      "meaningEn": "traffic light",
+      "meaningId": "lampu lalu lintas",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "告訴",
+      "pinyin": "gàosù",
+      "meaningEn": "to tell",
+      "meaningId": "memberi tahu",
+      "chapter": "l01",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "提款機",
+      "pinyin": "tíkuǎnjī",
+      "meaningEn": "ATM machine",
+      "meaningId": "mesin ATM",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "超商",
+      "pinyin": "chāo-shāng",
+      "meaningEn": "convenience store",
+      "meaningId": "minimarket",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "郵局",
+      "pinyin": "yóujú",
+      "meaningEn": "post office",
+      "meaningId": "kantor pos",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "提",
+      "pinyin": "tí",
+      "meaningEn": "to withdraw",
+      "meaningId": "menarik",
+      "chapter": "l01",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "那邊",
+      "pinyin": "nàbiān",
+      "meaningEn": "over there, yonder",
+      "meaningId": "di sana",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "師大",
+      "pinyin": "shīdà",
+      "meaningEn": "NTNU Dàxué)",
+      "meaningId": "Universitas Normal Taiwan",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "和平東路",
+      "pinyin": "hépíngDōng Lù",
+      "meaningEn": "Heping East Road",
+      "meaningId": "Jalan Heping Timur",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "往前",
+      "pinyin": "wǎng qián",
+      "meaningEn": "forward, ahead",
+      "meaningId": "ke depan",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "右轉",
+      "pinyin": "yòu zhuǎn",
+      "meaningEn": "to turn right",
+      "meaningId": "belok kanan",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "聽起來",
+      "pinyin": "tīng qǐlái",
+      "meaningEn": "to sound, sound like",
+      "meaningId": "terdengar",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "看見",
+      "pinyin": "kànjiàn",
+      "meaningEn": "to see, to have seen",
+      "meaningId": "melihat",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "下載",
+      "pinyin": "xiàzài",
+      "meaningEn": "to download",
+      "meaningId": "mengunduh",
+      "chapter": "l01",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "地圖",
+      "pinyin": "dìtú",
+      "meaningEn": "map",
+      "meaningId": "peta",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "好用",
+      "pinyin": "hǎoyòng",
+      "meaningEn": "easy to use, handy",
+      "meaningId": "mudah dipakai",
+      "chapter": "l01",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "著",
+      "pinyin": "zhe",
+      "meaningEn": "a particle indicating progression or continuation of",
+      "meaningId": "partikel penanda kelanjutan",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "日用品",
+      "pinyin": "rìyòngpǐn",
+      "meaningEn": "articles of daily use",
+      "meaningId": "kebutuhan sehari-hari",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "經過",
+      "pinyin": "jīngguò",
+      "meaningEn": "to go past",
+      "meaningId": "melewati",
+      "chapter": "l01",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "巷子",
+      "pinyin": "xiàngzi",
+      "meaningEn": "alley",
+      "meaningId": "gang",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "餓",
+      "pinyin": "è",
+      "meaningEn": "hungry",
+      "meaningId": "lapar",
+      "chapter": "l01",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "一邊",
+      "pinyin": "yìbiān",
+      "meaningEn": "indicates doing two things simultaneously, as, while",
+      "meaningId": "sambil",
+      "chapter": "l01",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "發現",
+      "pinyin": "fāxiàn",
+      "meaningEn": "to discover",
+      "meaningId": "menemukan",
+      "chapter": "l01",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "離",
+      "pinyin": "lí",
+      "meaningEn": "from",
+      "meaningId": "dari",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "背包",
+      "pinyin": "bēibāo",
+      "meaningEn": "backpack",
+      "meaningId": "ransel",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "正好",
+      "pinyin": "zhènghǎo",
+      "meaningEn": "just, happen to",
+      "meaningId": "kebetulan",
+      "chapter": "l01",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "最後",
+      "pinyin": "zuìhòu",
+      "meaningEn": "in the end, finally",
+      "meaningId": "pada akhirnya",
+      "chapter": "l01",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "枝",
+      "pinyin": "zhī",
+      "meaningEn": "measure word for pens",
+      "meaningId": "kata bantu bilangan untuk pena",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "筆",
+      "pinyin": "bǐ",
+      "meaningEn": "pen",
+      "meaningId": "pena",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "本",
+      "pinyin": "běn",
+      "meaningEn": "measure word for books",
+      "meaningId": "kata bantu bilangan untuk buku",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "本子",
+      "pinyin": "běnzi",
+      "meaningEn": "notebook",
+      "meaningId": "buku catatan",
+      "chapter": "l01",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "左轉",
+      "pinyin": "zuǒ zhuǎn",
+      "meaningEn": "to turn left",
+      "meaningId": "belok kiri",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "師大路上",
+      "pinyin": "shīdà Lù shàng",
+      "meaningEn": "on Shida Road",
+      "meaningId": "di Jalan Shida",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "麵店",
+      "pinyin": "miàn diàn",
+      "meaningEn": "noodle shop",
+      "meaningId": "kedai mi",
+      "chapter": "l01",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "早",
+      "pinyin": "zǎo",
+      "meaningEn": "Good morning",
+      "meaningId": "selamat pagi",
+      "chapter": "l02",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "約",
+      "pinyin": "yuē",
+      "meaningEn": "to invite someone to do something at a specific time",
+      "meaningId": "mengajak",
+      "chapter": "l02",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "對面",
+      "pinyin": "duìmiàn",
+      "meaningEn": "on the other side of , opposite",
+      "meaningId": "di seberang",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "直接",
+      "pinyin": "zhíjiē",
+      "meaningEn": "directly",
+      "meaningId": "langsung",
+      "chapter": "l02",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "不必",
+      "pinyin": "búbì",
+      "meaningEn": "no need to, not necessary to",
+      "meaningId": "tidak perlu",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "換",
+      "pinyin": "huàn",
+      "meaningEn": "to transfer",
+      "meaningId": "memindahkan",
+      "chapter": "l02",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "車站",
+      "pinyin": "chēzhàn",
+      "meaningEn": "bus station, train station",
+      "meaningId": "terminal/stasiun",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "麻煩",
+      "pinyin": "máfán",
+      "meaningEn": "troublesome",
+      "meaningId": "merepotkan",
+      "chapter": "l02",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "趕快",
+      "pinyin": "gǎnkuài",
+      "meaningEn": "right away",
+      "meaningId": "segera",
+      "chapter": "l02",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "班次",
+      "pinyin": "bāncì",
+      "meaningEn": "number of scheduled runs",
+      "meaningId": "jumlah jadwal",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "禮拜",
+      "pinyin": "lǐbài",
+      "meaningEn": "week",
+      "meaningId": "minggu",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "見",
+      "pinyin": "jiàn",
+      "meaningEn": "to see",
+      "meaningId": "melihat",
+      "chapter": "l02",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "電腦展",
+      "pinyin": "diànnǎo zhǎn",
+      "meaningEn": "computer show",
+      "meaningId": "pameran komputer",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "世貿展覽館",
+      "pinyin": "shìmào Zhǎnlǎn Guǎn",
+      "meaningEn": "World Trade Center Exhibition Hall",
+      "meaningId": "Balai Pameran World Trade Center",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "展覽館",
+      "pinyin": "zhǎnlǎn guǎn",
+      "meaningEn": "exhibition hall",
+      "meaningId": "ruang pameran",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "台北",
+      "pinyin": "táiběi",
+      "meaningEn": "Taipei",
+      "meaningId": "Taipei",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "別急",
+      "pinyin": "bié jí",
+      "meaningEn": "No need to hurry. Take your time",
+      "meaningId": "tidak usah buru-buru",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "飛機",
+      "pinyin": "fēijī",
+      "meaningEn": "airplane",
+      "meaningId": "pesawat",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "轉機",
+      "pinyin": "zhuǎn jī",
+      "meaningEn": "to transfer",
+      "meaningId": "memindahkan",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "機場",
+      "pinyin": "jīchǎng",
+      "meaningEn": "airport",
+      "meaningId": "bandara",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "巴士",
+      "pinyin": "bāshì",
+      "meaningEn": "bus",
+      "meaningId": "bus",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "市區",
+      "pinyin": "shìqū",
+      "meaningEn": "downtown",
+      "meaningId": "pusat kota",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "交通",
+      "pinyin": "jiāotōng",
+      "meaningEn": "transportation",
+      "meaningId": "transportasi",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "便利",
+      "pinyin": "biànlì",
+      "meaningEn": "convenient, handy",
+      "meaningId": "praktis",
+      "chapter": "l02",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "到處",
+      "pinyin": "dàochù",
+      "meaningEn": "everywhere",
+      "meaningId": "di mana-mana",
+      "chapter": "l02",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "路線",
+      "pinyin": "lùxiàn",
+      "meaningEn": "route",
+      "meaningId": "rute",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "複雜",
+      "pinyin": "fùzá",
+      "meaningEn": "complicated",
+      "meaningId": "rumit",
+      "chapter": "l02",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "輕鬆",
+      "pinyin": "qīngsōng",
+      "meaningEn": "with ease",
+      "meaningId": "dengan mudah",
+      "chapter": "l02",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "東部",
+      "pinyin": "dōngbù",
+      "meaningEn": "eastern part",
+      "meaningId": "bagian timur",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "海邊",
+      "pinyin": "hǎibiān",
+      "meaningEn": "seaside",
+      "meaningId": "tepi pantai",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "島",
+      "pinyin": "dǎo",
+      "meaningEn": "island",
+      "meaningId": "pulau",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "搭",
+      "pinyin": "dā",
+      "meaningEn": "to take",
+      "meaningId": "mengambil",
+      "chapter": "l02",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "船",
+      "pinyin": "chuán",
+      "meaningEn": "boat, ship",
+      "meaningId": "kapal",
+      "chapter": "l02",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "地",
+      "pinyin": "de",
+      "meaningEn": "adverbial particle",
+      "meaningId": "partikel adverbial",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "法國",
+      "pinyin": "fǎguó",
+      "meaningEn": "France",
+      "meaningId": "Prancis",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "歐洲",
+      "pinyin": "ōuzhōu",
+      "meaningEn": "Europe",
+      "meaningId": "Eropa",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "悠遊卡",
+      "pinyin": "yōuyóukǎ",
+      "meaningEn": "EasyCard",
+      "meaningId": "EasyCard",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "綠島",
+      "pinyin": "lǜdǎo",
+      "meaningEn": "Green Island, to the southeast of the main island",
+      "meaningId": "Pulau Hijau",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "東南邊",
+      "pinyin": "dōngnán biān",
+      "meaningEn": "the southeast side of",
+      "meaningId": "sisi tenggara",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "好好地",
+      "pinyin": "hǎohǎo de",
+      "meaningEn": "to do something properly",
+      "meaningId": "melakukan dengan benar",
+      "chapter": "l02",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "進步",
+      "pinyin": "jìnbù",
+      "meaningEn": "to make improvement, to progress",
+      "meaningId": "maju",
+      "chapter": "l03",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "考試",
+      "pinyin": "kǎoshì",
+      "meaningEn": "a test, examination",
+      "meaningId": "ujian",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "準備",
+      "pinyin": "zhǔnbèi",
+      "meaningEn": "to prepare, to get ready",
+      "meaningId": "menyiapkan",
+      "chapter": "l03",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "考",
+      "pinyin": "kǎo",
+      "meaningEn": "to take a test",
+      "meaningId": "mengikuti ujian",
+      "chapter": "l03",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "聽寫",
+      "pinyin": "tīngxiě",
+      "meaningEn": "dictation",
+      "meaningId": "dikte",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "容易",
+      "pinyin": "róngyì",
+      "meaningEn": "easy",
+      "meaningId": "mudah",
+      "chapter": "l03",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "小學",
+      "pinyin": "xiǎoxué",
+      "meaningEn": "elementary school",
+      "meaningId": "sekolah dasar",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "漢字",
+      "pinyin": "hànzì",
+      "meaningEn": "Chinese characters",
+      "meaningId": "aksara Han",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "高中",
+      "pinyin": "gāozhōng",
+      "meaningEn": "senior high school",
+      "meaningId": "SMA",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "才",
+      "pinyin": "cái",
+      "meaningEn": "just, only",
+      "meaningId": "hanya",
+      "chapter": "l03",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "說話",
+      "pinyin": "shuōhuà",
+      "meaningEn": "to speak",
+      "meaningId": "berbicara",
+      "chapter": "l03",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "不夠",
+      "pinyin": "bú gòu",
+      "meaningEn": "not quite, not enough",
+      "meaningId": "belum cukup",
+      "chapter": "l03",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "流利",
+      "pinyin": "liúlì",
+      "meaningEn": "fluent",
+      "meaningId": "lancar",
+      "chapter": "l03",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "雖然",
+      "pinyin": "suīrán",
+      "meaningEn": "although",
+      "meaningId": "walaupun",
+      "chapter": "l03",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "環境",
+      "pinyin": "huánjìng",
+      "meaningEn": "environment, surroundings",
+      "meaningId": "lingkungan",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "同意",
+      "pinyin": "tóngyì",
+      "meaningEn": "to agree with",
+      "meaningId": "setuju dengan",
+      "chapter": "l03",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "報紙",
+      "pinyin": "bàozhǐ",
+      "meaningEn": "newspapers",
+      "meaningId": "koran",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "麵包",
+      "pinyin": "miànbāo",
+      "meaningEn": "bread",
+      "meaningId": "roti",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "演講",
+      "pinyin": "yǎnjiǎng",
+      "meaningEn": "a speech, a public lecture",
+      "meaningId": "pidato, ceramah",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "噢",
+      "pinyin": "òu",
+      "meaningEn": "Oh",
+      "meaningId": "oh",
+      "chapter": "l03",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "活動中心",
+      "pinyin": "huódòng zhōngxīn",
+      "meaningEn": "activity center",
+      "meaningId": "pusat kegiatan",
+      "chapter": "l03",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "想起來",
+      "pinyin": "xiǎng qǐlái",
+      "meaningEn": "to have remembered",
+      "meaningId": "ingat kembali",
+      "chapter": "l03",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "選",
+      "pinyin": "xuǎn",
+      "meaningEn": "to select",
+      "meaningId": "memilih",
+      "chapter": "l03",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "作業",
+      "pinyin": "zuòyè",
+      "meaningEn": "homework, assignment",
+      "meaningId": "PR, tugas",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "練習",
+      "pinyin": "liànxí",
+      "meaningEn": "to practice",
+      "meaningId": "berlatih",
+      "chapter": "l03",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "半夜",
+      "pinyin": "bànyè",
+      "meaningEn": "middle of the night, late at night",
+      "meaningId": "tengah malam",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "高興",
+      "pinyin": "gāoxìng",
+      "meaningEn": "glad, pleased",
+      "meaningId": "senang",
+      "chapter": "l03",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "平常",
+      "pinyin": "píngcháng",
+      "meaningEn": "usually",
+      "meaningId": "biasanya",
+      "chapter": "l03",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "爬山",
+      "pinyin": "páshān",
+      "meaningEn": "to go hiking",
+      "meaningId": "mendaki",
+      "chapter": "l03",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "認識",
+      "pinyin": "rènshì",
+      "meaningEn": "to get to know someone",
+      "meaningId": "berkenalan",
+      "chapter": "l03",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "聊天",
+      "pinyin": "liáotiān",
+      "meaningEn": "to have a chat",
+      "meaningId": "mengobrol",
+      "chapter": "l03",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "文化",
+      "pinyin": "wénhuà",
+      "meaningEn": "culture",
+      "meaningId": "budaya",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "廣告",
+      "pinyin": "guǎnggào",
+      "meaningEn": "advertisement, commercial",
+      "meaningId": "iklan",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "位",
+      "pinyin": "wèi",
+      "meaningEn": "measure word for people",
+      "meaningId": "kata bantu bilangan untuk orang",
+      "chapter": "l03",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "了解",
+      "pinyin": "liǎojiě",
+      "meaningEn": "to understand",
+      "meaningId": "mengerti",
+      "chapter": "l03",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "生活",
+      "pinyin": "shēnghuó",
+      "meaningEn": "life",
+      "meaningId": "kehidupan",
+      "chapter": "l03",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "陽明山",
+      "pinyin": "yángmíng Shān",
+      "meaningEn": "Yangming Mountain",
+      "meaningId": "Gunung Yangming",
+      "chapter": "l03",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "外國人",
+      "pinyin": "wàiguó rén",
+      "meaningEn": "foreigner",
+      "meaningId": "orang asing",
+      "chapter": "l03",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "一些",
+      "pinyin": "yìxiē",
+      "meaningEn": "a little bit of, some, a fair amount of",
+      "meaningId": "sedikit, beberapa",
+      "chapter": "l03",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "打工",
+      "pinyin": "dǎgōng",
+      "meaningEn": "to work part-time",
+      "meaningId": "kerja paruh waktu",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "主任",
+      "pinyin": "zhǔrèn",
+      "meaningEn": "director",
+      "meaningId": "direktur, sutradara",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "介紹",
+      "pinyin": "jièshào",
+      "meaningEn": "to introduce",
+      "meaningId": "memperkenalkan",
+      "chapter": "l04",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "歲",
+      "pinyin": "suì",
+      "meaningEn": "years of age",
+      "meaningId": "tahun (usia)",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "語言學",
+      "pinyin": "yǔyánxué",
+      "meaningEn": "linguistics",
+      "meaningId": "linguistik",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "經驗",
+      "pinyin": "jīngyàn",
+      "meaningEn": "experience",
+      "meaningId": "pengalaman",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "談",
+      "pinyin": "tán",
+      "meaningEn": "to talk over, to talk about , to discuss",
+      "meaningId": "membicarakan",
+      "chapter": "l04",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "當",
+      "pinyin": "dāng",
+      "meaningEn": "to serve as",
+      "meaningId": "menjabat sebagai",
+      "chapter": "l04",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "助教",
+      "pinyin": "zhùjiào",
+      "meaningEn": "teaching assistant",
+      "meaningId": "asisten dosen",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "上午",
+      "pinyin": "shàngwǔ",
+      "meaningEn": "morning",
+      "meaningId": "pagi",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "除了",
+      "pinyin": "chúle",
+      "meaningEn": "except for, other than",
+      "meaningId": "kecuali",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "年級",
+      "pinyin": "niánjí",
+      "meaningEn": "grade",
+      "meaningId": "nilai, kelas",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "暑假",
+      "pinyin": "shǔjià",
+      "meaningEn": "summer vacation",
+      "meaningId": "libur musim panas",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "請教",
+      "pinyin": "qǐngjiào",
+      "meaningEn": "to ask, to inquire",
+      "meaningId": "bertanya",
+      "chapter": "l04",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "薪水",
+      "pinyin": "xīnshuǐ",
+      "meaningEn": "pay",
+      "meaningId": "membayar",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "算",
+      "pinyin": "suàn",
+      "meaningEn": "to calculate",
+      "meaningId": "menghitung",
+      "chapter": "l04",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "按照",
+      "pinyin": "ànzhào",
+      "meaningEn": "based on, in accordance with",
+      "meaningId": "berdasarkan",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "教授",
+      "pinyin": "jiàoshòu",
+      "meaningEn": "professor",
+      "meaningId": "profesor",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "鐘點費",
+      "pinyin": "zhōngdiǎn fèi",
+      "meaningEn": "hourly pay",
+      "meaningId": "upah per jam",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "份",
+      "pinyin": "fèn",
+      "meaningEn": "measure word for job",
+      "meaningId": "kata bantu bilangan untuk pekerjaan",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "法文",
+      "pinyin": "fǎwén",
+      "meaningEn": "French language",
+      "meaningId": "bahasa Prancis",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "亞洲",
+      "pinyin": "yàzhōu",
+      "meaningEn": "Asia",
+      "meaningId": "Asia",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "西班牙語",
+      "pinyin": "xībānyá yǔ",
+      "meaningEn": "Spanish language",
+      "meaningId": "bahasa Spanyol",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "英文",
+      "pinyin": "yīngwén",
+      "meaningEn": "English language",
+      "meaningId": "bahasa Inggris",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "三年級",
+      "pinyin": "sān niánjí",
+      "meaningEn": "grade three",
+      "meaningId": "kelas tiga",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "法律",
+      "pinyin": "fǎlǜ",
+      "meaningEn": "law",
+      "meaningId": "hukum",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "夠",
+      "pinyin": "gòu",
+      "meaningEn": "enough",
+      "meaningId": "cukup",
+      "chapter": "l04",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "履歷表",
+      "pinyin": "lǚlìbiǎo",
+      "meaningEn": "resume",
+      "meaningId": "riwayat hidup",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "面談",
+      "pinyin": "miàntán",
+      "meaningEn": "to have an interview, interview",
+      "meaningId": "wawancara kerja",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "華僑",
+      "pinyin": "huáqiáo",
+      "meaningEn": "overseas Chinese",
+      "meaningId": "Tionghoa perantauan",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "辦公室",
+      "pinyin": "bàngōngshì",
+      "meaningEn": "office",
+      "meaningId": "kantor",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "談話",
+      "pinyin": "tánhuà",
+      "meaningEn": "to talk",
+      "meaningId": "berbicara",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "情形",
+      "pinyin": "qíngxíng",
+      "meaningEn": "situation",
+      "meaningId": "situasi",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "適合",
+      "pinyin": "shìhé",
+      "meaningEn": "suitable for",
+      "meaningId": "cocok untuk",
+      "chapter": "l04",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "說明",
+      "pinyin": "shuōmíng",
+      "meaningEn": "to explain",
+      "meaningId": "menjelaskan",
+      "chapter": "l04",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "然後",
+      "pinyin": "ránhòu",
+      "meaningEn": "afterwards, and then",
+      "meaningId": "lalu, kemudian",
+      "chapter": "l04",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "月底",
+      "pinyin": "yuèdǐ",
+      "meaningEn": "the end of a month",
+      "meaningId": "akhir bulan",
+      "chapter": "l04",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "發",
+      "pinyin": "fā",
+      "meaningEn": "to pay",
+      "meaningId": "membayar",
+      "chapter": "l04",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "馬上",
+      "pinyin": "mǎshàng",
+      "meaningEn": "immediately",
+      "meaningId": "segera",
+      "chapter": "l04",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "答應",
+      "pinyin": "dāyìng",
+      "meaningEn": "to accept",
+      "meaningId": "menerima",
+      "chapter": "l04",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "順利",
+      "pinyin": "shùnlì",
+      "meaningEn": "to go, to proceed, smoothly",
+      "meaningId": "berjalan lancar",
+      "chapter": "l04",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "黃",
+      "pinyin": "huáng",
+      "meaningEn": "a common Chinese family name, literally “yellow”",
+      "meaningId": "marga Tionghoa (Huang)",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "沒想到",
+      "pinyin": "méi xiǎngdào",
+      "meaningEn": "unexpectedly, didn't expect",
+      "meaningId": "tidak disangka",
+      "chapter": "l04",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "喜酒",
+      "pinyin": "xǐjiǔ",
+      "meaningEn": "wedding banquet, wedding reception",
+      "meaningId": "resepsi pernikahan",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "恭喜",
+      "pinyin": "gōngxǐ",
+      "meaningEn": "to congratulate",
+      "meaningId": "mengucapkan selamat",
+      "chapter": "l05",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "新娘",
+      "pinyin": "xīnniáng",
+      "meaningEn": "bride",
+      "meaningId": "pengantin wanita",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "參加",
+      "pinyin": "cānjiā",
+      "meaningEn": "to attend",
+      "meaningId": "menghadiri",
+      "chapter": "l05",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "婚禮",
+      "pinyin": "hūnlǐ",
+      "meaningEn": "wedding ceremony",
+      "meaningId": "upacara pernikahan",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "西裝",
+      "pinyin": "xīzhuāng",
+      "meaningEn": "a suit",
+      "meaningId": "jas",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "正式",
+      "pinyin": "zhèngshì",
+      "meaningEn": "formal",
+      "meaningId": "formal",
+      "chapter": "l05",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "客人",
+      "pinyin": "kèrén",
+      "meaningEn": "guest",
+      "meaningId": "tamu",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "手",
+      "pinyin": "shǒu",
+      "meaningEn": "hand",
+      "meaningId": "tangan",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "照相機",
+      "pinyin": "zhàoxiàngjī",
+      "meaningEn": "camera",
+      "meaningId": "kamera",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "新郎",
+      "pinyin": "xīnláng",
+      "meaningEn": "bridegroom",
+      "meaningId": "pengantin pria",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "白",
+      "pinyin": "bái",
+      "meaningEn": "white",
+      "meaningId": "putih",
+      "chapter": "l05",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "帥",
+      "pinyin": "shuài",
+      "meaningEn": "handsome, good looking",
+      "meaningId": "tampan",
+      "chapter": "l05",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "禮服",
+      "pinyin": "lǐfú",
+      "meaningEn": "formal attire",
+      "meaningId": "pakaian formal",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "座位",
+      "pinyin": "zuòwèi",
+      "meaningEn": "seat",
+      "meaningId": "kursi",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "看起來",
+      "pinyin": "kàn qǐlái",
+      "meaningEn": "to look, it appears to me",
+      "meaningId": "tampak",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "結婚",
+      "pinyin": "jiéhūn",
+      "meaningEn": "to get married to",
+      "meaningId": "menikah",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "日子",
+      "pinyin": "rìzi",
+      "meaningEn": "day",
+      "meaningId": "hari",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "親戚",
+      "pinyin": "qīnqī",
+      "meaningEn": "relatives",
+      "meaningId": "kerabat",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "熱鬧",
+      "pinyin": "rènào",
+      "meaningEn": "to be boisterous, lively",
+      "meaningId": "ramai",
+      "chapter": "l05",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "慶祝",
+      "pinyin": "qìngzhù",
+      "meaningEn": "to celebrate",
+      "meaningId": "merayakan",
+      "chapter": "l05",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "件",
+      "pinyin": "jiàn",
+      "meaningEn": "measure word for clothing",
+      "meaningId": "kata bantu bilangan untuk pakaian",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "喜事",
+      "pinyin": "xǐshì",
+      "meaningEn": "an auspicious occasion, such as a wedding",
+      "meaningId": "acara baik (mis. pernikahan)",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "請客",
+      "pinyin": "qǐngkè",
+      "meaningEn": "to host a banquet, treat somebody to a meal",
+      "meaningId": "mentraktir",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "紅包",
+      "pinyin": "hóngbāo",
+      "meaningEn": "red envelope with cash gift",
+      "meaningId": "angpao",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "送",
+      "pinyin": "sòng",
+      "meaningEn": "to give a gift, to send off, to see off",
+      "meaningId": "memberi hadiah",
+      "chapter": "l05",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "新人",
+      "pinyin": "xīnrén",
+      "meaningEn": "newlyweds",
+      "meaningId": "pengantin baru",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "喜宴",
+      "pinyin": "xǐyàn",
+      "meaningEn": "wedding banquet, wedding reception",
+      "meaningId": "resepsi pernikahan",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "敬酒",
+      "pinyin": "jìngjiǔ",
+      "meaningEn": "to make a toast",
+      "meaningId": "mengangkat gelas",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "大人",
+      "pinyin": "dàrén",
+      "meaningEn": "adult",
+      "meaningId": "orang dewasa",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "小孩",
+      "pinyin": "xiǎohái",
+      "meaningEn": "child, children",
+      "meaningId": "anak-anak",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "不得了",
+      "pinyin": "bùdéliǎo",
+      "meaningEn": "very",
+      "meaningId": "sangat",
+      "chapter": "l05",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "另外",
+      "pinyin": "lìngwài",
+      "meaningEn": "another",
+      "meaningId": "yang lain",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "糖",
+      "pinyin": "táng",
+      "meaningEn": "candies",
+      "meaningId": "permen",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "離開",
+      "pinyin": "líkāi",
+      "meaningEn": "to depart, to leave",
+      "meaningId": "berangkat",
+      "chapter": "l05",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "句",
+      "pinyin": "jù",
+      "meaningEn": "measure word for utterances",
+      "meaningId": "kata bantu bilangan untuk kalimat",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "祝福",
+      "pinyin": "zhùfú",
+      "meaningEn": "to give blessings to",
+      "meaningId": "memberkati",
+      "chapter": "l05",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "話",
+      "pinyin": "huà",
+      "meaningEn": "utterance, word",
+      "meaningId": "ucapan",
+      "chapter": "l05",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "一會兒",
+      "pinyin": "yìhuǐr",
+      "meaningEn": "in a moment",
+      "meaningId": "sebentar lagi",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "有說有笑",
+      "pinyin": "yǒushuō yǒuxiào",
+      "meaningEn": "laughing and joking",
+      "meaningId": "bercanda",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "有吃有喝",
+      "pinyin": "yǒuchī yǒuhē",
+      "meaningEn": "an availability of food and drink",
+      "meaningId": "tersedia makanan dan minuman",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "百年好合",
+      "pinyin": "bǎiniánhǎohé",
+      "meaningEn": "百年好合",
+      "meaningId": "semoga langgeng selamanya",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "早生貴子",
+      "pinyin": "zǎoshēngguìzǐ",
+      "meaningEn": "早生貴子",
+      "meaningId": "semoga cepat dikaruniai anak",
+      "chapter": "l05",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "搬",
+      "pinyin": "bān",
+      "meaningEn": "to move to",
+      "meaningId": "pindah ke",
+      "chapter": "l06",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "河邊",
+      "pinyin": "hé biān",
+      "meaningEn": "riverside",
+      "meaningId": "tepi sungai",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "公園",
+      "pinyin": "gōngyuán",
+      "meaningEn": "park",
+      "meaningId": "taman",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "腳踏車",
+      "pinyin": "jiǎotàchē",
+      "meaningEn": "bicycle",
+      "meaningId": "sepeda",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "正在",
+      "pinyin": "zhèngzài",
+      "meaningEn": "right in the middle of, currently engaged in",
+      "meaningId": "sedang",
+      "chapter": "l06",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "網站",
+      "pinyin": "wǎngzhàn",
+      "meaningEn": "website",
+      "meaningId": "situs web",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "資料",
+      "pinyin": "zīliào",
+      "meaningEn": "information",
+      "meaningId": "informasi",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "搬家",
+      "pinyin": "bān jiā",
+      "meaningEn": "to move",
+      "meaningId": "pindah",
+      "chapter": "l06",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "合約",
+      "pinyin": "héyuē",
+      "meaningEn": "contract, agreement",
+      "meaningId": "kontrak, perjanjian",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "到期",
+      "pinyin": "dàoqí",
+      "meaningEn": "to expire",
+      "meaningId": "kedaluwarsa",
+      "chapter": "l06",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "還好",
+      "pinyin": "háihǎo",
+      "meaningEn": "fortunately",
+      "meaningId": "untungnya",
+      "chapter": "l06",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "光線",
+      "pinyin": "guāngxiàn",
+      "meaningEn": "natural lighting",
+      "meaningId": "cahaya alami",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "重要",
+      "pinyin": "zhòngyào",
+      "meaningEn": "important",
+      "meaningId": "penting",
+      "chapter": "l06",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "如果",
+      "pinyin": "rúguǒ",
+      "meaningEn": "if",
+      "meaningId": "jika",
+      "chapter": "l06",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "別的",
+      "pinyin": "biéde",
+      "meaningEn": "other",
+      "meaningId": "lain",
+      "chapter": "l06",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "合適",
+      "pinyin": "héshì",
+      "meaningEn": "suitable",
+      "meaningId": "cocok",
+      "chapter": "l06",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "可惜",
+      "pinyin": "kěxí",
+      "meaningEn": "to be a shame, a pity",
+      "meaningId": "sayang",
+      "chapter": "l06",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "放",
+      "pinyin": "fàng",
+      "meaningEn": "to store, to leave at a place",
+      "meaningId": "menyimpan di",
+      "chapter": "l06",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "兩邊",
+      "pinyin": "liǎngbiān",
+      "meaningEn": "both places",
+      "meaningId": "kedua tempat",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "願意",
+      "pinyin": "yuànyì",
+      "meaningEn": "to be willing to",
+      "meaningId": "bersedia",
+      "chapter": "l06",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "開",
+      "pinyin": "kāi",
+      "meaningEn": "to drive",
+      "meaningId": "menyetir",
+      "chapter": "l06",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "存",
+      "pinyin": "cún",
+      "meaningEn": "to save",
+      "meaningId": "menabung",
+      "chapter": "l06",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "隨身碟",
+      "pinyin": "suíshēndié",
+      "meaningEn": "flash drive",
+      "meaningId": "flashdisk",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "什麼樣",
+      "pinyin": "shénmeyàng",
+      "meaningEn": "what kind of",
+      "meaningId": "seperti apa",
+      "chapter": "l06",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "慢慢來",
+      "pinyin": "mànmàn lái",
+      "meaningEn": "take your time",
+      "meaningId": "pelan-pelan saja",
+      "chapter": "l06",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "不急",
+      "pinyin": "bùjí",
+      "meaningEn": "Don't rush, no hurry",
+      "meaningId": "jangan buru-buru",
+      "chapter": "l06",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "相當",
+      "pinyin": "xiāngdāng",
+      "meaningEn": "fairly",
+      "meaningId": "cukup",
+      "chapter": "l06",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "自行車",
+      "pinyin": "zìxíngchē",
+      "meaningEn": "bicycle",
+      "meaningId": "sepeda",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "床",
+      "pinyin": "chuáng",
+      "meaningEn": "bed",
+      "meaningId": "tempat tidur",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "桌子",
+      "pinyin": "zhuōzi",
+      "meaningEn": "desk, table",
+      "meaningId": "meja",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "椅子",
+      "pinyin": "yǐzi",
+      "meaningEn": "chair",
+      "meaningId": "kursi",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "家具",
+      "pinyin": "jiājù",
+      "meaningEn": "furniture",
+      "meaningId": "perabot",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "而且",
+      "pinyin": "érqiě",
+      "meaningEn": "also",
+      "meaningId": "juga",
+      "chapter": "l06",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "吵",
+      "pinyin": "chǎo",
+      "meaningEn": "noisy",
+      "meaningId": "berisik",
+      "chapter": "l06",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "生活費",
+      "pinyin": "shēnghuófèi",
+      "meaningEn": "living expenses",
+      "meaningId": "biaya hidup",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "低",
+      "pinyin": "dī",
+      "meaningEn": "low",
+      "meaningId": "rendah",
+      "chapter": "l06",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "留",
+      "pinyin": "liú",
+      "meaningEn": "to stay / to leave behind",
+      "meaningId": "tinggal",
+      "chapter": "l06",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "長",
+      "pinyin": "cháng",
+      "meaningEn": "long",
+      "meaningId": "panjang",
+      "chapter": "l06",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "討論",
+      "pinyin": "tǎolùn",
+      "meaningEn": "to have a discussion over, to go over with",
+      "meaningId": "mendiskusikan",
+      "chapter": "l06",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "社團",
+      "pinyin": "shètuán",
+      "meaningEn": "club, association",
+      "meaningId": "klub, perkumpulan",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "活動",
+      "pinyin": "huódòng",
+      "meaningEn": "activity",
+      "meaningId": "kegiatan",
+      "chapter": "l06",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "失望",
+      "pinyin": "shīwàng",
+      "meaningEn": "to be disappointed",
+      "meaningId": "kecewa",
+      "chapter": "l06",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "放心",
+      "pinyin": "fàngxīn",
+      "meaningEn": "not to worry, to rest assured",
+      "meaningId": "tenang saja",
+      "chapter": "l06",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "用",
+      "pinyin": "yòng",
+      "meaningEn": "to use",
+      "meaningId": "menggunakan",
+      "chapter": "l06",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "首爾",
+      "pinyin": "shǒu'ěr",
+      "meaningEn": "Seoul",
+      "meaningId": "Seoul",
+      "chapter": "l06",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "垃圾",
+      "pinyin": "lèsè",
+      "meaningEn": "garbage",
+      "meaningId": "sampah",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "倒",
+      "pinyin": "dào",
+      "meaningEn": "to throw out",
+      "meaningId": "membuang",
+      "chapter": "l07",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "丟",
+      "pinyin": "diū",
+      "meaningEn": "to throw, to throw away",
+      "meaningId": "membuang",
+      "chapter": "l07",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "收",
+      "pinyin": "shōu",
+      "meaningEn": "to collect",
+      "meaningId": "mengumpulkan",
+      "chapter": "l07",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "以為",
+      "pinyin": "yǐwéi",
+      "meaningEn": "to assume wrongly",
+      "meaningId": "salah sangka",
+      "chapter": "l07",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "回收",
+      "pinyin": "huíshōu",
+      "meaningEn": "to recycle",
+      "meaningId": "mendaur ulang",
+      "chapter": "l07",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "規定",
+      "pinyin": "guīdìng",
+      "meaningEn": "rules, regulation",
+      "meaningId": "peraturan",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "要不然",
+      "pinyin": "yàobùrán",
+      "meaningEn": "otherwise",
+      "meaningId": "kalau tidak",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "皮包",
+      "pinyin": "píbāo",
+      "meaningEn": "purse",
+      "meaningId": "dompet",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "跑",
+      "pinyin": "pǎo",
+      "meaningEn": "to run",
+      "meaningId": "berlari",
+      "chapter": "l07",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "追",
+      "pinyin": "zhuī",
+      "meaningEn": "to run after, to chase",
+      "meaningId": "mengejar",
+      "chapter": "l07",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "有趣",
+      "pinyin": "yǒuqù",
+      "meaningEn": "interesting",
+      "meaningId": "menarik",
+      "chapter": "l07",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "不壞",
+      "pinyin": "bú huài",
+      "meaningEn": "not too bad",
+      "meaningId": "lumayan",
+      "chapter": "l07",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "天天",
+      "pinyin": "tiāntiān",
+      "meaningEn": "everyday",
+      "meaningId": "setiap hari",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "汽水罐",
+      "pinyin": "qìshuǐ guàn",
+      "meaningEn": "soda can",
+      "meaningId": "kaleng soda",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "紙杯",
+      "pinyin": "zhǐbēi",
+      "meaningEn": "paper cup",
+      "meaningId": "gelas kertas",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "放下",
+      "pinyin": "fàngxià",
+      "meaningEn": "put down",
+      "meaningId": "meletakkan",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "走出來",
+      "pinyin": "zǒu chūlái",
+      "meaningEn": "to walk out of",
+      "meaningId": "keluar dari",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "怎麼辦",
+      "pinyin": "zěnmebàn",
+      "meaningEn": "What now?",
+      "meaningId": "bagaimana sekarang?",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "聊",
+      "pinyin": "liáo",
+      "meaningEn": "to chat",
+      "meaningId": "mengobrol",
+      "chapter": "l07",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "忽然",
+      "pinyin": "hūrán",
+      "meaningEn": "suddenly",
+      "meaningId": "tiba-tiba",
+      "chapter": "l07",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "聲音",
+      "pinyin": "shēngyīn",
+      "meaningEn": "sound",
+      "meaningId": "suara",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "奇怪",
+      "pinyin": "qíguài",
+      "meaningEn": "strange, odd",
+      "meaningId": "aneh",
+      "chapter": "l07",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "袋子",
+      "pinyin": "dàizi",
+      "meaningEn": "bag",
+      "meaningId": "tas",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "輛",
+      "pinyin": "liàng",
+      "meaningEn": "measure word for vehicles",
+      "meaningId": "kata bantu bilangan untuk kendaraan",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "地點",
+      "pinyin": "dìdiǎn",
+      "meaningEn": "location",
+      "meaningId": "lokasi",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "為了",
+      "pinyin": "wèile",
+      "meaningEn": "to, for the sake of",
+      "meaningId": "demi",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "保護",
+      "pinyin": "bǎohù",
+      "meaningEn": "to protect",
+      "meaningId": "melindungi",
+      "chapter": "l07",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "分類",
+      "pinyin": "fēnlèi",
+      "meaningEn": "classification",
+      "meaningId": "klasifikasi",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "利用",
+      "pinyin": "lìyòng",
+      "meaningEn": "to make use of",
+      "meaningId": "memanfaatkan",
+      "chapter": "l07",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "紙",
+      "pinyin": "zhǐ",
+      "meaningEn": "paper",
+      "meaningId": "kertas",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "瓶子",
+      "pinyin": "píngzi",
+      "meaningEn": "bottle",
+      "meaningId": "botol",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "塑膠",
+      "pinyin": "sùjiāo",
+      "meaningEn": "plastic",
+      "meaningId": "plastik",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "資源",
+      "pinyin": "zīyuán",
+      "meaningEn": "resource",
+      "meaningId": "sumber daya",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "回收桶",
+      "pinyin": "huíshōutǒng",
+      "meaningEn": "recycling bin",
+      "meaningId": "tempat sampah daur ulang",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "城市",
+      "pinyin": "chéngshì",
+      "meaningEn": "city",
+      "meaningId": "kota",
+      "chapter": "l07",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "聽見",
+      "pinyin": "tīngjiàn",
+      "meaningEn": "to hear, to have heard",
+      "meaningId": "mendengar",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "開過來",
+      "pinyin": "kāi guòlái",
+      "meaningEn": "to drive over",
+      "meaningId": "berkendara mendekat",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "走過去",
+      "pinyin": "zǒu guòqù",
+      "meaningEn": "to walk over",
+      "meaningId": "berjalan ke",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "丟進去",
+      "pinyin": "diū jìnqù",
+      "meaningEn": "to throw into",
+      "meaningId": "membuang ke",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "路上",
+      "pinyin": "lùshàng",
+      "meaningEn": "on the street",
+      "meaningId": "di jalan",
+      "chapter": "l07",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "功夫",
+      "pinyin": "gōngfū",
+      "meaningEn": "kungfu, martial arts",
+      "meaningId": "kungfu",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "推",
+      "pinyin": "tuī",
+      "meaningEn": "to push",
+      "meaningId": "mendorong",
+      "chapter": "l08",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "體育館",
+      "pinyin": "tǐyùguǎn",
+      "meaningEn": "gym",
+      "meaningId": "pusat kebugaran",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "太極拳",
+      "pinyin": "tàijíquán",
+      "meaningEn": "Tai Chi, shadow boxing",
+      "meaningId": "tai chi",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "師父",
+      "pinyin": "shīfù",
+      "meaningEn": "master",
+      "meaningId": "tuan, ahli",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "天分",
+      "pinyin": "tiānfèn",
+      "meaningEn": "gift, talent",
+      "meaningId": "bakat",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "懂",
+      "pinyin": "dǒng",
+      "meaningEn": "to understand, to comprehend",
+      "meaningId": "memahami",
+      "chapter": "l08",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "起來",
+      "pinyin": "qǐlái",
+      "meaningEn": "to wake up",
+      "meaningId": "bangun",
+      "chapter": "l08",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "動作",
+      "pinyin": "dòngzuò",
+      "meaningEn": "movement",
+      "meaningId": "gerakan",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "輕",
+      "pinyin": "qīng",
+      "meaningEn": "light, effortless, gentle",
+      "meaningId": "ringan",
+      "chapter": "l08",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "腿",
+      "pinyin": "tuǐ",
+      "meaningEn": "leg",
+      "meaningId": "kaki",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "了",
+      "pinyin": "liǎo",
+      "meaningEn": "capability complement",
+      "meaningId": "pelengkap kemampuan",
+      "chapter": "l08",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "下去",
+      "pinyin": "xiàqù",
+      "meaningEn": "a temporal particle meaning to continue with an action",
+      "meaningId": "partikel penanda kelanjutan",
+      "chapter": "l08",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "興趣",
+      "pinyin": "xìngqù",
+      "meaningEn": "interest",
+      "meaningId": "minat",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "借",
+      "pinyin": "jiè",
+      "meaningEn": "to borrow",
+      "meaningId": "meminjam",
+      "chapter": "l08",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "有天分",
+      "pinyin": "yǒu tiānfèn",
+      "meaningEn": "to be gifted, talented",
+      "meaningId": "berbakat",
+      "chapter": "l08",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "學會",
+      "pinyin": "xuéhuì",
+      "meaningEn": "to learn, to master",
+      "meaningId": "menguasai",
+      "chapter": "l08",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "起不來",
+      "pinyin": "qǐ bù lái",
+      "meaningEn": "can't get up",
+      "meaningId": "tidak bisa bangun",
+      "chapter": "l08",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "走不了路",
+      "pinyin": "zǒubù liǎo lù",
+      "meaningEn": "can't walk",
+      "meaningId": "tidak bisa jalan",
+      "chapter": "l08",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "好處",
+      "pinyin": "hǎochù",
+      "meaningEn": "benefit",
+      "meaningId": "manfaat",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "抱怨",
+      "pinyin": "bàoyuàn",
+      "meaningEn": "to complain",
+      "meaningId": "mengeluh",
+      "chapter": "l08",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "公尺",
+      "pinyin": "gōngchǐ",
+      "meaningEn": "meter",
+      "meaningId": "meter",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "總是",
+      "pinyin": "zǒngshì",
+      "meaningEn": "always, invariably",
+      "meaningId": "selalu",
+      "chapter": "l08",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "完",
+      "pinyin": "wán",
+      "meaningEn": "phase marker for ‘completion', to finish",
+      "meaningId": "penanda selesai",
+      "chapter": "l08",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "體力",
+      "pinyin": "tǐlì",
+      "meaningEn": "physical strength",
+      "meaningId": "kekuatan fisik",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "整天",
+      "pinyin": "zhěngtiān",
+      "meaningEn": "an entire day",
+      "meaningId": "sepanjang hari",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "精神",
+      "pinyin": "jīngshén",
+      "meaningEn": "spirit, energy",
+      "meaningId": "semangat",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "本來",
+      "pinyin": "běnlái",
+      "meaningEn": "originally",
+      "meaningId": "awalnya",
+      "chapter": "l08",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "可能",
+      "pinyin": "kěnéng",
+      "meaningEn": "maybe, probably",
+      "meaningId": "mungkin",
+      "chapter": "l08",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "回",
+      "pinyin": "huí",
+      "meaningEn": "to return to",
+      "meaningId": "kembali ke",
+      "chapter": "l08",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "影響",
+      "pinyin": "yǐngxiǎng",
+      "meaningEn": "to influence, to interfere with",
+      "meaningId": "memengaruhi",
+      "chapter": "l08",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "身體",
+      "pinyin": "shēntǐ",
+      "meaningEn": "body",
+      "meaningId": "tubuh",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "練",
+      "pinyin": "liàn",
+      "meaningEn": "to practice, to train, to drill",
+      "meaningId": "melatih",
+      "chapter": "l08",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "想起",
+      "pinyin": "xiǎngqǐ",
+      "meaningEn": "to recall",
+      "meaningId": "mengingat",
+      "chapter": "l08",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "春假",
+      "pinyin": "chūnjià",
+      "meaningEn": "spring break",
+      "meaningId": "libur musim semi",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "特色",
+      "pinyin": "tèsè",
+      "meaningEn": "unique features, distinctive traits",
+      "meaningId": "ciri khas",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "顏色",
+      "pinyin": "yánsè",
+      "meaningEn": "color",
+      "meaningId": "warna",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "廟",
+      "pinyin": "miào",
+      "meaningEn": "temple",
+      "meaningId": "kelenteng",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "像",
+      "pinyin": "xiàng",
+      "meaningEn": "similar to",
+      "meaningId": "mirip dengan",
+      "chapter": "l09",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "教堂",
+      "pinyin": "jiàotáng",
+      "meaningEn": "church, cathedral",
+      "meaningId": "gereja, katedral",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "南部",
+      "pinyin": "nánbù",
+      "meaningEn": "southern region",
+      "meaningId": "wilayah selatan",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "潛水",
+      "pinyin": "qiánshuǐ",
+      "meaningEn": "to dive",
+      "meaningId": "menyelam",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "各",
+      "pinyin": "gè",
+      "meaningEn": "various",
+      "meaningId": "berbagai",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "魚",
+      "pinyin": "yú",
+      "meaningEn": "fish",
+      "meaningId": "ikan",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "酸",
+      "pinyin": "suān",
+      "meaningEn": "sour, tart",
+      "meaningId": "asam",
+      "chapter": "l09",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "檸檬",
+      "pinyin": "níngméng",
+      "meaningEn": "lemon, lime",
+      "meaningId": "lemon",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "味道",
+      "pinyin": "wèidào",
+      "meaningEn": "taste, flavor",
+      "meaningId": "rasa",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "泰國",
+      "pinyin": "tàiguó",
+      "meaningEn": "Thailand",
+      "meaningId": "Thailand",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "比起來",
+      "pinyin": "bǐ qǐlái",
+      "meaningEn": "compared to",
+      "meaningId": "dibandingkan dengan",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "極了",
+      "pinyin": "jí le",
+      "meaningEn": "absolutely, extremely",
+      "meaningId": "sama sekali, sangat",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "忘不了",
+      "pinyin": "wàng bù liǎo",
+      "meaningEn": "unforgettable",
+      "meaningId": "tak terlupakan",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "鄉下",
+      "pinyin": "xiāngxià",
+      "meaningEn": "countryside",
+      "meaningId": "pedesaan",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "氣氛",
+      "pinyin": "qìfēn",
+      "meaningEn": "atmosphere",
+      "meaningId": "suasana",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "鎮",
+      "pinyin": "zhèn",
+      "meaningEn": "rural town",
+      "meaningId": "kota kecil",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "不同",
+      "pinyin": "bùtóng",
+      "meaningEn": "different",
+      "meaningId": "berbeda",
+      "chapter": "l09",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "現代",
+      "pinyin": "xiàndài",
+      "meaningEn": "modern",
+      "meaningId": "modern",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "公寓",
+      "pinyin": "gōngyù",
+      "meaningEn": "apartment",
+      "meaningId": "apartemen",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "馬路",
+      "pinyin": "mǎlù",
+      "meaningEn": "street",
+      "meaningId": "jalan",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "寬",
+      "pinyin": "kuān",
+      "meaningEn": "wide",
+      "meaningId": "lebar",
+      "chapter": "l09",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "汽車",
+      "pinyin": "qìchē",
+      "meaningEn": "car",
+      "meaningId": "mobil",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "建築",
+      "pinyin": "jiànzhú",
+      "meaningEn": "buildings",
+      "meaningId": "bangunan",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "老",
+      "pinyin": "lǎo",
+      "meaningEn": "old",
+      "meaningId": "tua",
+      "chapter": "l09",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "層",
+      "pinyin": "céng",
+      "meaningEn": "measure word for floors and storeys",
+      "meaningId": "kata bantu bilangan untuk lantai",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "北部",
+      "pinyin": "běibù",
+      "meaningEn": "the north",
+      "meaningId": "utara",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "熱情",
+      "pinyin": "rèqíng",
+      "meaningEn": "hospitable, welcoming, warmhearted",
+      "meaningId": "ramah, hangat",
+      "chapter": "l09",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "擠",
+      "pinyin": "jǐ",
+      "meaningEn": "crowded",
+      "meaningId": "penuh sesak",
+      "chapter": "l09",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "飲料",
+      "pinyin": "yǐnliào",
+      "meaningEn": "drink, beverage",
+      "meaningId": "minuman",
+      "chapter": "l09",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "巴黎",
+      "pinyin": "bālí",
+      "meaningEn": "Paris",
+      "meaningId": "Paris",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "高雄市",
+      "pinyin": "gāoxióng Shì",
+      "meaningEn": "Kaohsiung City in southern Taiwan",
+      "meaningId": "Kota Kaohsiung",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "中南部",
+      "pinyin": "zhōngnánbù",
+      "meaningEn": "central and southern regions",
+      "meaningId": "wilayah tengah dan selatan",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "買得起",
+      "pinyin": "mǎi de qǐ",
+      "meaningEn": "afford, affordable",
+      "meaningId": "mampu membeli",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "百貨公司",
+      "pinyin": "bǎihuò gōngsī",
+      "meaningEn": "department store",
+      "meaningId": "toko serba ada",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "越來越",
+      "pinyin": "yuèláiyuè",
+      "meaningEn": "more and more, increasingly",
+      "meaningId": "semakin",
+      "chapter": "l09",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "餃子",
+      "pinyin": "jiǎozi",
+      "meaningEn": "dumplings",
+      "meaningId": "pangsit",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "脫",
+      "pinyin": "tuō",
+      "meaningEn": "to remove, to take off",
+      "meaningId": "melepas",
+      "chapter": "l10",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "鞋",
+      "pinyin": "xié",
+      "meaningEn": "shoes",
+      "meaningId": "sepatu",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "關",
+      "pinyin": "guān",
+      "meaningEn": "to close",
+      "meaningId": "menutup",
+      "chapter": "l10",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "門",
+      "pinyin": "mén",
+      "meaningEn": "door",
+      "meaningId": "pintu",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "春捲",
+      "pinyin": "chūnjuǎn",
+      "meaningEn": "spring rolls",
+      "meaningId": "lumpia",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "泡菜",
+      "pinyin": "pàocài",
+      "meaningEn": "kimchi, pickled vegetables",
+      "meaningId": "kimchi, acar",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "飯廳",
+      "pinyin": "fàntīng",
+      "meaningEn": "dining room",
+      "meaningId": "ruang makan",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "洗",
+      "pinyin": "xǐ",
+      "meaningEn": "to wash",
+      "meaningId": "mencuci",
+      "chapter": "l10",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "做菜",
+      "pinyin": "zuòcài",
+      "meaningEn": "to cook",
+      "meaningId": "memasak",
+      "chapter": "l10",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "水餃",
+      "pinyin": "shuǐjiǎo",
+      "meaningEn": "dumplings",
+      "meaningId": "pangsit",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "煮",
+      "pinyin": "zhǔ",
+      "meaningEn": "to cook, to boil",
+      "meaningId": "merebus",
+      "chapter": "l10",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "壞",
+      "pinyin": "huài",
+      "meaningEn": "to go bad",
+      "meaningId": "basi",
+      "chapter": "l10",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "破",
+      "pinyin": "pò",
+      "meaningEn": "to break, to split open",
+      "meaningId": "pecah",
+      "chapter": "l10",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "餡兒",
+      "pinyin": "xiànr",
+      "meaningEn": "filling",
+      "meaningId": "isian",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "扁",
+      "pinyin": "biǎn",
+      "meaningEn": "flat",
+      "meaningId": "datar",
+      "chapter": "l10",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "材料",
+      "pinyin": "cáiliào",
+      "meaningEn": "ingredients",
+      "meaningId": "bahan",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "道",
+      "pinyin": "dào",
+      "meaningEn": "measure word for dishes of food",
+      "meaningId": "kata bantu bilangan untuk hidangan",
+      "chapter": "l10",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "飽",
+      "pinyin": "bǎo",
+      "meaningEn": "to have eaten enough, to be full",
+      "meaningId": "kenyang",
+      "chapter": "l10",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "光",
+      "pinyin": "guāng",
+      "meaningEn": "to be finished, none left",
+      "meaningId": "habis",
+      "chapter": "l10",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "鍋子",
+      "pinyin": "guōzi",
+      "meaningEn": "pot, kettle, pan, wok",
+      "meaningId": "panci, wajan",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "筷子",
+      "pinyin": "kuàizi",
+      "meaningEn": "chopsticks",
+      "meaningId": "sumpit",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "韓國",
+      "pinyin": "hánguó",
+      "meaningEn": "Korea",
+      "meaningId": "Korea",
+      "chapter": "l10",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "看不出來",
+      "pinyin": "kànbùchūlái",
+      "meaningEn": "看不出來",
+      "meaningId": "tidak terlihat",
+      "chapter": "l10",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "酸辣湯",
+      "pinyin": "suānlà tāng",
+      "meaningEn": "hot and sour soup",
+      "meaningId": "sup asam pedas",
+      "chapter": "l10",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "學期",
+      "pinyin": "xuéqí",
+      "meaningEn": "semester",
+      "meaningId": "semester",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "趁",
+      "pinyin": "chèn",
+      "meaningEn": "while, take advantage of",
+      "meaningId": "sambil memanfaatkan",
+      "chapter": "l10",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "皮",
+      "pinyin": "pí",
+      "meaningEn": "skin, wraps",
+      "meaningId": "kulit",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "嚐",
+      "pinyin": "cháng",
+      "meaningEn": "to savor, to taste",
+      "meaningId": "mencicipi",
+      "chapter": "l10",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "大白菜",
+      "pinyin": "dàbáicài",
+      "meaningEn": "Chinese cabbage",
+      "meaningId": "sawi putih",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "加",
+      "pinyin": "jiā",
+      "meaningEn": "to add",
+      "meaningId": "menambahkan",
+      "chapter": "l10",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "鹽",
+      "pinyin": "yán",
+      "meaningEn": "salt",
+      "meaningId": "garam",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "拌",
+      "pinyin": "bàn",
+      "meaningEn": "to stir, to mix",
+      "meaningId": "mengaduk",
+      "chapter": "l10",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "辣椒",
+      "pinyin": "làjiāo",
+      "meaningEn": "chili peppers",
+      "meaningId": "cabai",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "調味料",
+      "pinyin": "tiáowèiliào",
+      "meaningEn": "seasonings",
+      "meaningId": "bumbu",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "玻璃",
+      "pinyin": "bōlí",
+      "meaningEn": "glass",
+      "meaningId": "kaca",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "壽司",
+      "pinyin": "shòusī",
+      "meaningEn": "sushi",
+      "meaningId": "sushi",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "食物",
+      "pinyin": "shíwù",
+      "meaningEn": "food",
+      "meaningId": "makanan",
+      "chapter": "l10",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "做起來",
+      "pinyin": "zuò qǐlái",
+      "meaningEn": "when undertaken, to do",
+      "meaningId": "kalau dikerjakan",
+      "chapter": "l10",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "其他",
+      "pinyin": "qítā",
+      "meaningEn": "other, the other, the remaining",
+      "meaningId": "yang lain",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "假期",
+      "pinyin": "jiàqí",
+      "meaningEn": "vacation, holiday",
+      "meaningId": "liburan",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "溫泉",
+      "pinyin": "wēnquán",
+      "meaningEn": "hot springs",
+      "meaningId": "pemandian air panas",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "票",
+      "pinyin": "piào",
+      "meaningEn": "ticket",
+      "meaningId": "tiket",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "考慮",
+      "pinyin": "kǎolǜ",
+      "meaningEn": "to consider",
+      "meaningId": "mempertimbangkan",
+      "chapter": "l11",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "順便",
+      "pinyin": "shùnbiàn",
+      "meaningEn": "without making any extra effort, on the wa y, while",
+      "meaningId": "sambil lalu",
+      "chapter": "l11",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "湖",
+      "pinyin": "hú",
+      "meaningEn": "lake",
+      "meaningId": "danau",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "原住民",
+      "pinyin": "yuánzhùmín",
+      "meaningEn": "aborigines",
+      "meaningId": "penduduk asli",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "趟",
+      "pinyin": "tàng",
+      "meaningEn": "measure word for a trip",
+      "meaningId": "kata bantu bilangan untuk perjalanan",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "後來",
+      "pinyin": "hòulái",
+      "meaningEn": "later",
+      "meaningId": "nanti",
+      "chapter": "l11",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "注意",
+      "pinyin": "zhùyì",
+      "meaningEn": "to pay attention to",
+      "meaningId": "memperhatikan",
+      "chapter": "l11",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "沙灘",
+      "pinyin": "shātān",
+      "meaningEn": "beach",
+      "meaningId": "pantai",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "錢包",
+      "pinyin": "qiánbāo",
+      "meaningEn": "wallet, purse",
+      "meaningId": "dompet",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "不見",
+      "pinyin": "bújiàn",
+      "meaningEn": "to be lost, to disappear",
+      "meaningId": "hilang",
+      "chapter": "l11",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "被",
+      "pinyin": "bèi",
+      "meaningEn": "a particle marking a passive sentence",
+      "meaningId": "partikel kalimat pasif",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "偷",
+      "pinyin": "tōu",
+      "meaningEn": "to steal",
+      "meaningId": "mencuri",
+      "chapter": "l11",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "安全",
+      "pinyin": "ānquán",
+      "meaningEn": "safe",
+      "meaningId": "aman",
+      "chapter": "l11",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "值得",
+      "pinyin": "zhíde",
+      "meaningEn": "worthwhile, worth",
+      "meaningId": "layak",
+      "chapter": "l11",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "墾丁",
+      "pinyin": "kěndīng",
+      "meaningEn": "Kenting, an area on the southern tip of Taiwan, famed",
+      "meaningId": "Kenting",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "台中",
+      "pinyin": "táizhōng",
+      "meaningEn": "Taichung city, in central Taiwan",
+      "meaningId": "Kota Taichung",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "日月潭",
+      "pinyin": "rìyuè Tán",
+      "meaningEn": "Sun Moon Lake, in central Taiwan",
+      "meaningId": "Danau Sun Moon",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "水上活動",
+      "pinyin": "shuǐshànghuódòng",
+      "meaningEn": "water activities, water recreation",
+      "meaningId": "olahraga air",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "風景區",
+      "pinyin": "fēngjǐngqū",
+      "meaningEn": "scenic area",
+      "meaningId": "kawasan wisata",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "遍",
+      "pinyin": "biàn",
+      "meaningEn": "measure word for number of times",
+      "meaningId": "kata bantu bilangan untuk kali",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "民宿",
+      "pinyin": "mínsù",
+      "meaningEn": "Bed & Breakfast lodgings",
+      "meaningId": "penginapan bed & breakfast",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "運氣",
+      "pinyin": "yùnqì",
+      "meaningEn": "luck",
+      "meaningId": "keberuntungan",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "摩托車",
+      "pinyin": "mótuōchē",
+      "meaningEn": "motorcycle",
+      "meaningId": "sepeda motor",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "熱帶",
+      "pinyin": "rèdài",
+      "meaningEn": "tropical region",
+      "meaningId": "daerah tropis",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "植物",
+      "pinyin": "zhíwù",
+      "meaningEn": "plants",
+      "meaningId": "tumbuhan",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "所有",
+      "pinyin": "suǒyǒu",
+      "meaningEn": "all",
+      "meaningId": "semua",
+      "chapter": "l11",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "白天",
+      "pinyin": "báitiān",
+      "meaningEn": "in the daytime",
+      "meaningId": "pada siang hari",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "躺",
+      "pinyin": "tǎng",
+      "meaningEn": "to lie down",
+      "meaningId": "berbaring",
+      "chapter": "l11",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "黃昏",
+      "pinyin": "huánghūn",
+      "meaningEn": "dusk",
+      "meaningId": "senja",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "條",
+      "pinyin": "tiáo",
+      "meaningEn": "measure word for street",
+      "meaningId": "kata bantu bilangan untuk jalan",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "街",
+      "pinyin": "jiē",
+      "meaningEn": "street",
+      "meaningId": "jalan",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "啤酒",
+      "pinyin": "píjiǔ",
+      "meaningEn": "beer",
+      "meaningId": "bir",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "上",
+      "pinyin": "shàng",
+      "meaningEn": "a verb particle indicating the coming into contact",
+      "meaningId": "partikel penanda kontak",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "浪漫",
+      "pinyin": "làngmàn",
+      "meaningEn": "romantic",
+      "meaningId": "romantis",
+      "chapter": "l11",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "家鄉",
+      "pinyin": "jiāxiāng",
+      "meaningEn": "hometown, usually a village",
+      "meaningId": "kampung halaman",
+      "chapter": "l11",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "觀光客",
+      "pinyin": "guānguāngkè",
+      "meaningEn": "tourist",
+      "meaningId": "wisatawan",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "曬太陽",
+      "pinyin": "shài tàiyáng",
+      "meaningEn": "to sunbathe",
+      "meaningId": "berjemur",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "水上摩托車",
+      "pinyin": "shuǐshàng mótuōchē",
+      "meaningEn": "jet skis",
+      "meaningId": "jet ski",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "愛上",
+      "pinyin": "àishàng",
+      "meaningEn": "to fall in love with",
+      "meaningId": "jatuh cinta",
+      "chapter": "l11",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "素食",
+      "pinyin": "sùshí",
+      "meaningEn": "vegetarian food",
+      "meaningId": "makanan vegetarian",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "速食",
+      "pinyin": "sùshí",
+      "meaningEn": "fast food",
+      "meaningId": "makanan cepat saji",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "錯",
+      "pinyin": "cuò",
+      "meaningEn": "to be mistaken, wrong",
+      "meaningId": "salah",
+      "chapter": "l12",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "肉",
+      "pinyin": "ròu",
+      "meaningEn": "meat",
+      "meaningId": "daging",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "欸",
+      "pinyin": "èi",
+      "meaningEn": "an interjection particle, calling for attention",
+      "meaningId": "partikel pemanggil perhatian",
+      "chapter": "l12",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "讓",
+      "pinyin": "ràng",
+      "meaningEn": "to let, to make",
+      "meaningId": "membuat",
+      "chapter": "l12",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "吃素",
+      "pinyin": "chīsù",
+      "meaningEn": "to be a vegetarian, to eat vegetarian food",
+      "meaningId": "vegetarian",
+      "chapter": "l12",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "漢堡",
+      "pinyin": "hànbǎo",
+      "meaningEn": "hamburger",
+      "meaningId": "hamburger",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "變",
+      "pinyin": "biàn",
+      "meaningEn": "to become",
+      "meaningId": "menjadi",
+      "chapter": "l12",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "胖",
+      "pinyin": "pàng",
+      "meaningEn": "fat",
+      "meaningId": "gemuk",
+      "chapter": "l12",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "素菜",
+      "pinyin": "sùcài",
+      "meaningEn": "vegetarian food, dishes",
+      "meaningId": "masakan vegetarian",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "油膩",
+      "pinyin": "yóunì",
+      "meaningEn": "oily, greasy",
+      "meaningId": "berminyak",
+      "chapter": "l12",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "樣",
+      "pinyin": "yàng",
+      "meaningEn": "measure word for dishes, kinds",
+      "meaningId": "kata bantu bilangan untuk jenis",
+      "chapter": "l12",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "好奇",
+      "pinyin": "hàoqí",
+      "meaningEn": "curious, to wonder",
+      "meaningId": "penasaran",
+      "chapter": "l12",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "女孩",
+      "pinyin": "nǚhái",
+      "meaningEn": "girl",
+      "meaningId": "anak perempuan",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "青菜",
+      "pinyin": "qīngcài",
+      "meaningEn": "vegetables",
+      "meaningId": "sayuran",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "瘦",
+      "pinyin": "shòu",
+      "meaningEn": "thin",
+      "meaningId": "tipis",
+      "chapter": "l12",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "室友",
+      "pinyin": "shìyǒu",
+      "meaningEn": "roommate",
+      "meaningId": "teman sekamar",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "豬肉",
+      "pinyin": "zhūròu",
+      "meaningEn": "pork",
+      "meaningId": "daging babi",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "西方",
+      "pinyin": "xīfāng",
+      "meaningEn": "the West, western",
+      "meaningId": "Barat",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "完全",
+      "pinyin": "wánquán",
+      "meaningEn": "completely",
+      "meaningId": "sepenuhnya",
+      "chapter": "l12",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "鹹",
+      "pinyin": "xián",
+      "meaningEn": "salty",
+      "meaningId": "asin",
+      "chapter": "l12",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "炸",
+      "pinyin": "zhá",
+      "meaningEn": "to deep fry",
+      "meaningId": "menggoreng",
+      "chapter": "l12",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "烤",
+      "pinyin": "kǎo",
+      "meaningEn": "to grill, to roast, to BBQ",
+      "meaningId": "memanggang",
+      "chapter": "l12",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "沙拉",
+      "pinyin": "shālā",
+      "meaningEn": "salad",
+      "meaningId": "salad",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "麥當勞",
+      "pinyin": "màidāngláo",
+      "meaningEn": "McDonald's",
+      "meaningId": "McDonald's",
+      "chapter": "l12",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "速食店",
+      "pinyin": "sùshí diàn",
+      "meaningEn": "fast food restaurant",
+      "meaningId": "restoran cepat saji",
+      "chapter": "l12",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "只要",
+      "pinyin": "zhǐyào",
+      "meaningEn": "as long as",
+      "meaningId": "asalkan",
+      "chapter": "l12",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "餐",
+      "pinyin": "cān",
+      "meaningEn": "measure word for meal",
+      "meaningId": "kata bantu bilangan untuk makanan",
+      "chapter": "l12",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "宗教",
+      "pinyin": "zōngjiào",
+      "meaningEn": "religion",
+      "meaningId": "agama",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "關係",
+      "pinyin": "guānxi",
+      "meaningEn": "relationship",
+      "meaningId": "hubungan",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "薯條",
+      "pinyin": "shǔtiáo",
+      "meaningEn": "French fries",
+      "meaningId": "kentang goreng",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "作法",
+      "pinyin": "zuòfǎ",
+      "meaningEn": "way of doing something",
+      "meaningId": "cara melakukan",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "越",
+      "pinyin": "yuè",
+      "meaningEn": "more",
+      "meaningId": "lebih",
+      "chapter": "l12",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "簡單",
+      "pinyin": "jiǎndān",
+      "meaningEn": "simple",
+      "meaningId": "sederhana",
+      "chapter": "l12",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "蒸",
+      "pinyin": "zhēng",
+      "meaningEn": "to steam",
+      "meaningId": "mengukus",
+      "chapter": "l12",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "有機",
+      "pinyin": "yǒujī",
+      "meaningEn": "organic",
+      "meaningId": "organik",
+      "chapter": "l12",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "食品",
+      "pinyin": "shípǐn",
+      "meaningEn": "food",
+      "meaningId": "makanan",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "地球",
+      "pinyin": "dìqiú",
+      "meaningEn": "the earth",
+      "meaningId": "bumi",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "汙染",
+      "pinyin": "wūrǎn",
+      "meaningEn": "pollution",
+      "meaningId": "polusi",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "嚴重",
+      "pinyin": "yánzhòng",
+      "meaningEn": "serious",
+      "meaningId": "serius",
+      "chapter": "l12",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "衛生",
+      "pinyin": "wèishēng",
+      "meaningEn": "hygiene",
+      "meaningId": "kebersihan",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "營養",
+      "pinyin": "yíngyǎng",
+      "meaningEn": "nutrition",
+      "meaningId": "nutrisi",
+      "chapter": "l12",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "什麼的",
+      "pinyin": "shénmede",
+      "meaningEn": "things like",
+      "meaningId": "hal-hal seperti",
+      "chapter": "l12",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "掉",
+      "pinyin": "diào",
+      "meaningEn": "to lose",
+      "meaningId": "kehilangan",
+      "chapter": "l13",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "低頭",
+      "pinyin": "dītóu",
+      "meaningEn": "to lower one's head",
+      "meaningId": "menunduk",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "傳",
+      "pinyin": "chuán",
+      "meaningEn": "to send",
+      "meaningId": "mengirim",
+      "chapter": "l13",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "簡訊",
+      "pinyin": "jiǎnxùn",
+      "meaningEn": "text message",
+      "meaningId": "pesan singkat",
+      "chapter": "l13",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "功能",
+      "pinyin": "gōngnéng",
+      "meaningEn": "function",
+      "meaningId": "fungsi",
+      "chapter": "l13",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "生氣",
+      "pinyin": "shēngqì",
+      "meaningEn": "to get angry at",
+      "meaningId": "marah",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "罵",
+      "pinyin": "mà",
+      "meaningEn": "to yell at, to scold, to tell off",
+      "meaningId": "memarahi",
+      "chapter": "l13",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "健身房",
+      "pinyin": "jiànshēnfáng",
+      "meaningEn": "gym",
+      "meaningId": "pusat kebugaran",
+      "chapter": "l13",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "啦",
+      "pinyin": "la",
+      "meaningEn": "a sentence-final particle indicating a question, 了+啊",
+      "meaningId": "partikel tanya (了+啊)",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "查",
+      "pinyin": "chá",
+      "meaningEn": "to check, to look up",
+      "meaningId": "mencari",
+      "chapter": "l13",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "班機",
+      "pinyin": "bānjī",
+      "meaningEn": "flight",
+      "meaningId": "penerbangan",
+      "chapter": "l13",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "訂位",
+      "pinyin": "dìngwèi",
+      "meaningEn": "to make reservations",
+      "meaningId": "memesan tempat",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "電",
+      "pinyin": "diàn",
+      "meaningEn": "electric power",
+      "meaningId": "listrik",
+      "chapter": "l13",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "充電",
+      "pinyin": "chōngdiàn",
+      "meaningEn": "to charge",
+      "meaningId": "mengisi daya",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "糊塗",
+      "pinyin": "hútú",
+      "meaningEn": "muddle-headed",
+      "meaningId": "linglung",
+      "chapter": "l13",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "喔",
+      "pinyin": "ō",
+      "meaningEn": "a sentence-final particle indicating a suggestion",
+      "meaningId": "partikel ajakan",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "義大利",
+      "pinyin": "yìdàlì",
+      "meaningEn": "Italy",
+      "meaningId": "Italia",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "拿走",
+      "pinyin": "názǒu",
+      "meaningEn": "to take away",
+      "meaningId": "membawa pergi",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "撿到",
+      "pinyin": "jiǎndào",
+      "meaningEn": "to find something, to pick up",
+      "meaningId": "menemukan",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "留下",
+      "pinyin": "liúxià",
+      "meaningEn": "to keep for oneself",
+      "meaningId": "menyimpan sendiri",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "網路",
+      "pinyin": "wǎnglù",
+      "meaningEn": "the internet",
+      "meaningId": "internet",
+      "chapter": "l13",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "發生",
+      "pinyin": "fāshēng",
+      "meaningEn": "to happen",
+      "meaningId": "terjadi",
+      "chapter": "l13",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "事情",
+      "pinyin": "shìqíng",
+      "meaningEn": "event, happening",
+      "meaningId": "peristiwa",
+      "chapter": "l13",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "消息",
+      "pinyin": "xiāoxí",
+      "meaningEn": "news, information",
+      "meaningId": "berita, informasi",
+      "chapter": "l13",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "透過",
+      "pinyin": "tòuguò",
+      "meaningEn": "through",
+      "meaningId": "melalui",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "世界",
+      "pinyin": "shìjiè",
+      "meaningEn": "the world",
+      "meaningId": "dunia",
+      "chapter": "l13",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "節省",
+      "pinyin": "jiéshěng",
+      "meaningEn": "to save",
+      "meaningId": "menabung",
+      "chapter": "l13",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "起床",
+      "pinyin": "qǐchuáng",
+      "meaningEn": "to get out of bed",
+      "meaningId": "bangun tidur",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "檢查",
+      "pinyin": "jiǎnchá",
+      "meaningEn": "to check",
+      "meaningId": "memeriksa",
+      "chapter": "l13",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "郵件",
+      "pinyin": "yóujiàn",
+      "meaningEn": "mail",
+      "meaningId": "surat, pos",
+      "chapter": "l13",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "立刻",
+      "pinyin": "lìkè",
+      "meaningEn": "immediately",
+      "meaningId": "segera",
+      "chapter": "l13",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "上傳",
+      "pinyin": "shàngchuán",
+      "meaningEn": "to upload, to post",
+      "meaningId": "mengunggah",
+      "chapter": "l13",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "正常",
+      "pinyin": "zhèngcháng",
+      "meaningEn": "to be normal",
+      "meaningId": "normal",
+      "chapter": "l13",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "現代人",
+      "pinyin": "xiàndài rén",
+      "meaningEn": "modern day people, people today",
+      "meaningId": "orang masa kini",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "比方說",
+      "pinyin": "bǐfāng shuō",
+      "meaningEn": "for example",
+      "meaningId": "misalnya",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "做到",
+      "pinyin": "zuòdào",
+      "meaningEn": "to be able to achieve, to succeed in doing",
+      "meaningId": "berhasil melakukan",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "第一手",
+      "pinyin": "dìyīshǒu",
+      "meaningEn": "first hand",
+      "meaningId": "langsung (tangan pertama)",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "急著",
+      "pinyin": "jízhe",
+      "meaningEn": "in a hurry to",
+      "meaningId": "tergesa-gesa",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "打招呼",
+      "pinyin": "dǎ zhāohū",
+      "meaningEn": "to greet someone",
+      "meaningId": "menyapa",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "面對面",
+      "pinyin": "miàn duì miàn",
+      "meaningEn": "face-to-face",
+      "meaningId": "bertatap muka",
+      "chapter": "l13",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "將來",
+      "pinyin": "jiānglái",
+      "meaningEn": "the future",
+      "meaningId": "masa depan",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "徵求",
+      "pinyin": "zhēngqiú",
+      "meaningEn": "to seek, to invite applications for",
+      "meaningId": "mencari",
+      "chapter": "l14",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "教師",
+      "pinyin": "jiàoshī",
+      "meaningEn": "instructor",
+      "meaningId": "pengajar",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "認為",
+      "pinyin": "rènwéi",
+      "meaningEn": "to have the opinion that, to think",
+      "meaningId": "berpendapat",
+      "chapter": "l14",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "畢業",
+      "pinyin": "bìyè",
+      "meaningEn": "to graduate",
+      "meaningId": "lulus",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "發展",
+      "pinyin": "fāzhǎn",
+      "meaningEn": "to develop",
+      "meaningId": "berkembang",
+      "chapter": "l14",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "連",
+      "pinyin": "lián",
+      "meaningEn": "even",
+      "meaningId": "bahkan",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "想法",
+      "pinyin": "xiǎngfǎ",
+      "meaningEn": "thoughts, way of thinking, idea",
+      "meaningId": "gagasan",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "不但",
+      "pinyin": "búdàn",
+      "meaningEn": "not only",
+      "meaningId": "bukan hanya",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "繼續",
+      "pinyin": "jìxù",
+      "meaningEn": "to continue",
+      "meaningId": "melanjutkan",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "使用",
+      "pinyin": "shǐyòng",
+      "meaningEn": "to make use of, to use",
+      "meaningId": "menggunakan",
+      "chapter": "l14",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "實現",
+      "pinyin": "shíxiàn",
+      "meaningEn": "to come true, to realize",
+      "meaningId": "terwujud",
+      "chapter": "l14",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "招待",
+      "pinyin": "zhāodài",
+      "meaningEn": "to entertain, to play host to",
+      "meaningId": "menjamu",
+      "chapter": "l14",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "研究所",
+      "pinyin": "yánjiùsuǒ",
+      "meaningEn": "graduate school",
+      "meaningId": "sekolah pascasarjana",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "聚",
+      "pinyin": "jù",
+      "meaningEn": "to get together",
+      "meaningId": "berkumpul",
+      "chapter": "l14",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "香港",
+      "pinyin": "xiānggǎng",
+      "meaningEn": "Hong Kong",
+      "meaningId": "Hong Kong",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "上海",
+      "pinyin": "shànghǎi",
+      "meaningEn": "Shanghai",
+      "meaningId": "Shanghai",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "說到",
+      "pinyin": "shuōdào",
+      "meaningEn": "to mention",
+      "meaningId": "menyebutkan",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "念完",
+      "pinyin": "niànwán",
+      "meaningEn": "to complete",
+      "meaningId": "menyelesaikan",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "分公司",
+      "pinyin": "fēngōngsī",
+      "meaningEn": "branch office",
+      "meaningId": "kantor cabang",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "捨不得",
+      "pinyin": "shěbùdé",
+      "meaningEn": "reluctant to part with",
+      "meaningId": "enggan berpisah",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "聚一聚",
+      "pinyin": "jù yí jù",
+      "meaningEn": "get together",
+      "meaningId": "berkumpul",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "當時",
+      "pinyin": "dāngshí",
+      "meaningEn": "at that time",
+      "meaningId": "pada saat itu",
+      "chapter": "l14",
+      "wordType": "adverb",
+      "tags": []
+    },
+    {
+      "front": "聲調",
+      "pinyin": "shēngdiào",
+      "meaningEn": "tones",
+      "meaningId": "nada",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "發音",
+      "pinyin": "fāyīn",
+      "meaningEn": "pronunciation",
+      "meaningId": "pelafalan",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "準",
+      "pinyin": "zhǔn",
+      "meaningEn": "to be accurate",
+      "meaningId": "akurat",
+      "chapter": "l14",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "企業",
+      "pinyin": "qìyè",
+      "meaningEn": "enterprise",
+      "meaningId": "perusahaan",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "管理",
+      "pinyin": "guǎnlǐ",
+      "meaningEn": "management",
+      "meaningId": "manajemen",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "系",
+      "pinyin": "xì",
+      "meaningEn": "academic department",
+      "meaningId": "jurusan",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "經濟",
+      "pinyin": "jīngjì",
+      "meaningEn": "economy",
+      "meaningId": "ekonomi",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "幫助",
+      "pinyin": "bāngzhù",
+      "meaningEn": "help",
+      "meaningId": "bantuan",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "有關",
+      "pinyin": "yǒuguān",
+      "meaningEn": "to be related to",
+      "meaningId": "berhubungan dengan",
+      "chapter": "l14",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "語法",
+      "pinyin": "yǔfǎ",
+      "meaningEn": "syntax, grammar",
+      "meaningId": "tata bahasa",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "研究",
+      "pinyin": "yánjiù",
+      "meaningEn": "to do research in",
+      "meaningId": "meneliti",
+      "chapter": "l14",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "教書",
+      "pinyin": "jiāoshū",
+      "meaningEn": "to teach",
+      "meaningId": "mengajar",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "方法",
+      "pinyin": "fāngfǎ",
+      "meaningEn": "method, approach",
+      "meaningId": "metode",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "目的",
+      "pinyin": "mùdì",
+      "meaningEn": "goal, objective",
+      "meaningId": "tujuan",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "國際",
+      "pinyin": "guójì",
+      "meaningEn": "international",
+      "meaningId": "internasional",
+      "chapter": "l14",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "翻譯",
+      "pinyin": "fānyì",
+      "meaningEn": "translator, interpreter",
+      "meaningId": "penerjemah",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "外交",
+      "pinyin": "wàijiāo",
+      "meaningEn": "diplomacy, foreign affairs",
+      "meaningId": "diplomasi",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "人員",
+      "pinyin": "rényuán",
+      "meaningEn": "staff, personnel",
+      "meaningId": "staf",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "充實",
+      "pinyin": "chōngshí",
+      "meaningEn": "to enrich, to strengthen",
+      "meaningId": "memperkaya",
+      "chapter": "l14",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "專業",
+      "pinyin": "zhuānyè",
+      "meaningEn": "profession, specialisation",
+      "meaningId": "profesi, spesialisasi",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "能力",
+      "pinyin": "nénglì",
+      "meaningEn": "capacity, ability",
+      "meaningId": "kemampuan",
+      "chapter": "l14",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "加拿大",
+      "pinyin": "jiānádà",
+      "meaningEn": "Canada",
+      "meaningId": "Kanada",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "企業管理系",
+      "pinyin": "qìyè guǎnlǐ xì",
+      "meaningEn": "department of business management",
+      "meaningId": "jurusan manajemen bisnis",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "國際關係",
+      "pinyin": "guójì guānxì",
+      "meaningEn": "international relations",
+      "meaningId": "hubungan internasional",
+      "chapter": "l14",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "春節",
+      "pinyin": "chūnjié",
+      "meaningEn": "the Lunar New Year, the Spring Festival",
+      "meaningId": "Tahun Baru Imlek",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "伯伯",
+      "pinyin": "bóbo",
+      "meaningEn": "uncle, friends' fathers in general",
+      "meaningId": "paman",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "年夜飯",
+      "pinyin": "niányèfàn",
+      "meaningEn": "Lunar New Year's Eve dinner",
+      "meaningId": "makan malam tahun baru Imlek",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "打擾",
+      "pinyin": "dǎrǎo",
+      "meaningEn": "to trouble , to disturb",
+      "meaningId": "mengganggu",
+      "chapter": "l15",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "女兒",
+      "pinyin": "nǚ'ér",
+      "meaningEn": "daughter",
+      "meaningId": "anak perempuan",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "國外",
+      "pinyin": "guówài",
+      "meaningEn": "abroad",
+      "meaningId": "ke luar negeri",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "圍爐",
+      "pinyin": "wéilú",
+      "meaningEn": "for a family to gather over Lunar New Year's Eve dinner",
+      "meaningId": "berkumpul makan malam Imlek",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "意思",
+      "pinyin": "yìsi",
+      "meaningEn": "meaning",
+      "meaningId": "arti",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "全家",
+      "pinyin": "quánjiā",
+      "meaningEn": "the entire family",
+      "meaningId": "seluruh keluarga",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "孩子",
+      "pinyin": "háizi",
+      "meaningEn": "children",
+      "meaningId": "anak-anak",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "吉祥",
+      "pinyin": "jíxiáng",
+      "meaningEn": "auspicious",
+      "meaningId": "membawa keberuntungan",
+      "chapter": "l15",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "年紀",
+      "pinyin": "niánjì",
+      "meaningEn": "age",
+      "meaningId": "usia",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "過年",
+      "pinyin": "guò nián",
+      "meaningEn": "to celebrate the Lunar New Year",
+      "meaningId": "merayakan Imlek",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "除夕夜",
+      "pinyin": "chúxì yè",
+      "meaningEn": "Luner New Year's Eve",
+      "meaningId": "malam tahun baru Imlek",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "睡著",
+      "pinyin": "shuìzháo",
+      "meaningEn": "to fall asleep",
+      "meaningId": "tertidur",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "壓歲錢",
+      "pinyin": "yāsuìqián",
+      "meaningEn": "New Year's Eve money",
+      "meaningId": "angpao tahun baru",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "恭喜發財",
+      "pinyin": "gōngxǐ fācái",
+      "meaningEn": "Congratulations. I wish you wealth",
+      "meaningId": "selamat, semoga kaya",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "好了",
+      "pinyin": "hǎo le",
+      "meaningEn": "OK",
+      "meaningId": "oke",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "節日",
+      "pinyin": "jiérì",
+      "meaningEn": "holiday, festival",
+      "meaningId": "hari libur, perayaan",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "打掃",
+      "pinyin": "dǎsǎo",
+      "meaningEn": "to clean up",
+      "meaningId": "membersihkan",
+      "chapter": "l15",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "春聯",
+      "pinyin": "chūnlián",
+      "meaningEn": "New Year's couplets",
+      "meaningId": "kertas couplet tahun baru",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "除夕",
+      "pinyin": "chúxì",
+      "meaningEn": "Lunar New Year's Eve",
+      "meaningId": "malam tahun baru Imlek",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "年糕",
+      "pinyin": "niángāo",
+      "meaningEn": "new year rice cake",
+      "meaningId": "kue keranjang",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "橘子",
+      "pinyin": "júzi",
+      "meaningEn": "orange, tangerine",
+      "meaningId": "jeruk",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "守歲",
+      "pinyin": "shǒusuì",
+      "meaningEn": "to stay up waiting for the arrival of the New Year",
+      "meaningId": "begadang malam tahun baru",
+      "chapter": "l15",
+      "wordType": "verb",
+      "tags": []
+    },
+    {
+      "front": "說法",
+      "pinyin": "shuōfǎ",
+      "meaningEn": "way of saying things, a theory",
+      "meaningId": "pendapat",
+      "chapter": "l15",
+      "wordType": "noun",
+      "tags": []
+    },
+    {
+      "front": "晚",
+      "pinyin": "wǎn",
+      "meaningEn": "late",
+      "meaningId": "terlambat",
+      "chapter": "l15",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "活",
+      "pinyin": "huó",
+      "meaningEn": "to live, to stay active",
+      "meaningId": "hidup",
+      "chapter": "l15",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "平安",
+      "pinyin": "píng'ān",
+      "meaningEn": "peaceful, eventless",
+      "meaningId": "damai",
+      "chapter": "l15",
+      "wordType": "adjective",
+      "tags": []
+    },
+    {
+      "front": "出門",
+      "pinyin": "chūmén",
+      "meaningEn": "to go out, to leave the house",
+      "meaningId": "keluar rumah",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "拜年",
+      "pinyin": "bàinián",
+      "meaningEn": "to pay a New Year visit",
+      "meaningId": "bersilaturahmi tahun baru",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "華人",
+      "pinyin": "huárén",
+      "meaningEn": "Chinese, a person of Chinese ethnicity",
+      "meaningId": "orang Tionghoa",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "貼上",
+      "pinyin": "tiēshàng",
+      "meaningEn": "to stick on",
+      "meaningId": "menempel",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "年年有餘",
+      "pinyin": "niánniányǒuyú",
+      "meaningEn": "abundance every year",
+      "meaningId": "berlimpah setiap tahun",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "步步高升",
+      "pinyin": "bùbù gāoshēng",
+      "meaningEn": "to rise in social rank",
+      "meaningId": "naik pangkat",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "大吉大利",
+      "pinyin": "dàjí dàlì",
+      "meaningEn": "great wishes for the new year",
+      "meaningId": "doa baik tahun baru",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "放鞭炮",
+      "pinyin": "fàng biānpào",
+      "meaningEn": "to set off firecrackers",
+      "meaningId": "menyalakan petasan",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "大年初一",
+      "pinyin": "dànián chūyī",
+      "meaningEn": "first day of the Lunar New Year",
+      "meaningId": "hari pertama Imlek",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    },
+    {
+      "front": "大年初五",
+      "pinyin": "dànián chūwǔ",
+      "meaningEn": "fifth day of the Lunar New Year",
+      "meaningId": "hari kelima Imlek",
+      "chapter": "l15",
+      "wordType": "other",
+      "tags": []
+    }
+  ]
+}

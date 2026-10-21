@@ -13,6 +13,7 @@
     "test:watch": "vitest",
     "seed:validate": "node scripts/validate-content.ts",
     "content:build": "python3 scripts/content/build-decks.py",
+    "content:zh": "python3 scripts/content/zh/build-zh.py",
     "emulators": "firebase emulators:start --only auth,firestore --project demo-goabroad",
     "deploy:rules": "firebase deploy --only firestore:rules,firestore:indexes"
   },

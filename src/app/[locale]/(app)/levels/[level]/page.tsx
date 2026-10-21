@@ -5,10 +5,10 @@ import { useParams } from "next/navigation";
 import { ArrowLeft, CheckCircle2, Play, RotateCcw } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
-import type { CefrLevel, Deck, DeckProgress } from "@/types";
-import { CEFR_LEVELS } from "@/types";
+import type { Deck, DeckProgress } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
-import { summarizeBand } from "@/content/courses";
+import { getCourseForSection, summarizeSection } from "@/content/courses";
+import { getSection } from "@/lib/content/registry";
 import { Badge } from "@/components/ui/badge";
 import { buttonStyles } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/progress";
@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils/cn";
 
 export default function LevelPage() {
     const params = useParams<{ level: string }>();
-    const level = (params?.level ?? "").toUpperCase() as CefrLevel;
+    const sectionId = params?.level ?? "";
     const router = useRouter();
     const { store } = useStore();
     const t = useTranslations("levels");
@@ -24,7 +24,9 @@ export default function LevelPage() {
     const [decks, setDecks] = useState<Deck[] | null>(null);
     const [progress, setProgress] = useState<Map<string, DeckProgress>>(new Map());
 
-    const valid = CEFR_LEVELS.includes(level);
+    const section = getSection(sectionId);
+    const course = getCourseForSection(sectionId);
+    const valid = Boolean(section && course);
 
     useEffect(() => {
         if (!valid) {
@@ -47,19 +49,19 @@ export default function LevelPage() {
         return () => {
             cancelled = true;
         };
-    }, [store, valid]);
+    }, [store, valid, sectionId]);
 
     const topics = useMemo(
         () =>
             (decks ?? [])
-                .filter((deck) => deck.source === "content" && deck.level === level)
+                .filter((deck) => deck.source === "content" && deck.level === sectionId)
                 .sort((a, b) => (a.topicOrder ?? 0) - (b.topicOrder ?? 0)),
-        [decks, level],
+        [decks, sectionId],
     );
 
     const summary = useMemo(
-        () => summarizeBand(level, decks ?? [], progress),
-        [level, decks, progress],
+        () => summarizeSection(sectionId, decks ?? [], progress),
+        [sectionId, decks, progress],
     );
 
     if (!valid) return null;
@@ -88,16 +90,28 @@ export default function LevelPage() {
                 <div className="flex flex-wrap items-start justify-between gap-4">
                     <div>
                         <div className="flex items-center gap-2">
-                            <h1 className="text-2xl font-extrabold tracking-tight">{level}</h1>
-                            <Badge tone="accent">{t("badge")}</Badge>
+                            <h1 className="text-2xl font-extrabold tracking-tight">
+                                {section!.label}
+                            </h1>
+                            <Badge tone="accent">{course!.nativeName}</Badge>
                         </div>
+                        {course!.unitNoun === "book" ? (
+                            <p className="mt-0.5 text-xs text-muted">{section!.title}</p>
+                        ) : null}
                         <p className="mt-1 text-sm text-muted">
-                            {t("summary", {
-                                topics: summary.topics,
-                                done: summary.topicsDone,
-                                known: summary.known,
-                                total: summary.total,
-                            })}
+                            {course!.unitNoun === "book"
+                                ? t("summaryBook", {
+                                    chapters: summary.topics,
+                                    done: summary.topicsDone,
+                                    known: summary.known,
+                                    total: summary.total,
+                                })
+                                : t("summary", {
+                                    topics: summary.topics,
+                                    done: summary.topicsDone,
+                                    known: summary.known,
+                                    total: summary.total,
+                                })}
                         </p>
                         <div className="mt-3 h-2 w-full max-w-sm overflow-hidden rounded-full bg-surface-2">
                             <div
@@ -122,9 +136,11 @@ export default function LevelPage() {
             <section className="space-y-3">
                 <div>
                     <h2 className="text-sm font-bold uppercase tracking-wide text-muted">
-                        {t("topicsTitle")}
+                        {course!.unitNoun === "book" ? t("chaptersTitle") : t("topicsTitle")}
                     </h2>
-                    <p className="mt-1 text-xs text-muted">{t("topicsHint")}</p>
+                    <p className="mt-1 text-xs text-muted">
+                        {course!.unitNoun === "book" ? t("chaptersHint") : t("topicsHint")}
+                    </p>
                 </div>
 
                 <ol className="space-y-2">

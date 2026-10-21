@@ -32,6 +32,7 @@ dijalankan untuk akun pilot.
 | AI generate (gate token + API key) | 🟡 | `/api/ai/generate`, dialog di `/decks/[deckId]` |
 | Deck kustom + impor CSV | ✅ | `papaparse` + `zod`, `/decks` |
 | Statistik, streak, heatmap, kuis | ✅ | `/stats`, `dailyStats` |
+| **Mandarin tradisional (buku 1–4)** | ✅ | course `zh`, 54 bab, 2.891 kartu, TTS `zh-TW` |
 
 ---
 
@@ -49,6 +50,24 @@ dijalankan untuk akun pilot.
 
 Sisa "Kosakata umum" per band (indikator kualitas klasifikasi):
 A1 119 · A2 452 · B1 903 · B2 1.088 · C1 1.297 · C2 932.
+
+### Mandarin (`zh`) — buku 1–4
+
+| Buku | Bab | Kartu |
+| --- | --- | --- |
+| Buku 1 | 15 | 520 |
+| Buku 2 | 15 | 618 |
+| Buku 3 | 12 | 804 |
+| Buku 4 | 12 | 949 |
+
+- Hierarki: **Buku → Bab** (satu bab = satu sesi; `L01-I` + `L01-II` digabung).
+- Kartu: depan Hanzi, belakang pinyin + Inggris + Indonesia (`Card.pinyin`).
+- Sumber: ekspor kosakata di `.content-cache/acc/pleco_dangdai.tsv` (tidak di-commit).
+- `npm run content:zh` menulis `src/content/zh/bookN.json`, `manifest.json`, `report.json`.
+- Nama orang dibuang (`scripts/content/zh/person-names.json` + pola gloss), tempat dipertahankan.
+- Arti Indonesia: `scripts/content/zh/en-id-*.tsv` (gloss Inggris → Indonesia) dan
+  `id-glosses.jsonl` (override per hanzi|pinyin). Saat ini 0 kartu tanpa arti Indonesia.
+- Buku 5 di file sumber hanya L01–L10 dan **Buku 6 belum ada** → belum dirilis.
 
 Perintah cek cepat:
 
@@ -89,6 +108,7 @@ Konten:
 
 ```bash
 npm run content:build     # python3 scripts/content/build-decks.py (butuh .content-cache/)
+npm run content:zh        # python3 scripts/content/zh/build-zh.py (butuh .content-cache/acc/)
 npm run seed:validate     # jumlah kartu vs manifest, duplikat lintas band, id/urutan topik
 ```
 
@@ -210,6 +230,9 @@ npm run content:build && npm run seed:validate
 5. **Rate limit AI** masih in-memory (20/user/hari) → pindah ke Firestore untuk multi-instance.
 6. **README** masih menyebut `topic-id-keywords.json` (file itu sudah dihapus/digabung ke
    `topics.json`) — rapikan saat menyentuh dokumentasi.
+7. **Mandarin buku 5–6**: file sumber berhenti di Buku 5 L10 dan Buku 6 belum ada. Minta
+   ekspor tambahan, lalu jalankan `npm run content:zh -- --books 5,6`, tambahkan loader
+   `zh:book5`/`zh:book6` di registry, dan lengkapi `en-id-*.tsv` untuk gloss baru.
 
 ---
 

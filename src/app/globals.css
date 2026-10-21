@@ -54,6 +54,10 @@
     --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
         "Helvetica Neue", Arial, "Noto Sans", sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+    /* Traditional Chinese: uses the platform CJK font, no webfont download. */
+    --font-cjk: "Noto Sans TC", "Noto Sans CJK TC", "PingFang TC",
+        "Microsoft JhengHei", "Hiragino Sans CNS", ui-sans-serif, system-ui,
+        sans-serif;
 
     --radius-xl2: 1.25rem;
 }

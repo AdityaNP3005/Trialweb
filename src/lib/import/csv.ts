@@ -1,5 +1,5 @@
 import Papa from "papaparse";
-import type { CardInput, CefrLevel } from "@/types";
+import type { CardInput, SectionId } from "@/types";
 
 export type CsvTable = {
     headers: string[];
@@ -79,7 +79,7 @@ export type MappedRows = {
 export function mapRows(
     table: CsvTable,
     mapping: ColumnMapping,
-    defaults: { level: CefrLevel; existingFronts: Set<string> },
+    defaults: { level: SectionId; existingFronts: Set<string> },
 ): MappedRows {
     const seen = new Set(defaults.existingFronts);
     const cards: Omit<CardInput, "deckId" | "courseId">[] = [];
@@ -124,7 +124,9 @@ export function mapRows(
                 .map((tag) => tag.trim())
                 .filter(Boolean),
             level:
-                levelValue === "A2" || levelValue === "B1" ? (levelValue as CefrLevel) : defaults.level,
+                levelValue === "A2" || levelValue === "B1"
+                    ? levelValue
+                    : defaults.level,
             source: "import",
             suspended: false,
         });

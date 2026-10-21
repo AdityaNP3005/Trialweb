@@ -10,8 +10,9 @@
 ## 1. Ringkasan
 
 GoAbroad adalah web app hafalan kosakata berbasis flashcard. Pengguna memilih **band CEFR**
-(A1–C2), lalu memilih **satu topik** (mis. "Sapaan & perkenalan", "Hukum & kriminal").
-Satu sesi menyelesaikan satu topik penuh; setiap kartu dijawab **Ulangi** atau **Sudah paham**.
+(A1–C2) untuk Jerman atau **buku** untuk Mandarin, lalu memilih **satu topik/bab**
+(mis. "Sapaan & perkenalan", "Bab 3"). Satu sesi menyelesaikan satu unit penuh; setiap kartu
+dijawab **Ulangi** atau **Sudah paham**.
 Topik dianggap tuntas ketika semua kartunya sudah ditampilkan tanpa sisa kartu "Ulangi",
 lalu siklus topik otomatis direset (`Putaran 2`, `Putaran 3`, …).
 
@@ -195,6 +196,31 @@ Kata kasar/makian **tidak** difilter — tetap kosakata yang sah untuk dipelajar
   dengan huruf Cyrillic; perlu dibersihkan saat rebuild berikutnya.
 
 ---
+
+### 8.4 Mandarin tradisional (buku 1–4)
+
+Course `zh` memakai acuan *當代中文課程* dengan struktur **Buku → Bab** (tanpa subbab).
+Satu bab = `LNN-I` + `LNN-II` pada daftar kosakata, dan menjadi satu sesi.
+
+| Buku | Bab | Kartu |
+| --- | --- | --- |
+| Buku 1 | 15 | 520 |
+| Buku 2 | 15 | 618 |
+| Buku 3 | 12 | 804 |
+| Buku 4 | 12 | 949 |
+| **Total** | **54** | **2.891** |
+
+- **Kartu**: depan Hanzi (font CJK), belakang **pinyin** (tanda nada) + arti **Inggris** + **Indonesia**.
+- **Audio**: Web Speech API `zh-TW` (sama seperti Jerman memakai `de-DE`). Tidak ada audio buku
+  yang di-host karena berhak cipta; suara berasal dari perangkat pengguna.
+- **Klasifikasi**: buku & bab hanya untuk pengurutan. Nama orang (tokoh dialog/tokoh sejarah)
+  dibuang, nama tempat/negara dipertahankan karena diajarkan di bab.
+- **Dedupe**: kunci `hanzi|pinyin`, kemunculan pertama menang; bab tetap unik.
+- **Kelengkapan**: setiap baris sumber harus menjadi kartu atau tercatat di
+  `src/content/zh/report.json` (duplikat/nama dibuang), dan validator menolak kartu tanpa
+  arti Indonesia.
+- **Cakupan saat ini**: Buku 5 baru memuat L01–L10 pada file sumber dan Buku 6 belum ada,
+  sehingga keduanya belum dirilis.
 
 ## 9. Model data
 

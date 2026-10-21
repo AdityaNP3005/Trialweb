@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Card, Deck, StudyAction, StudyMode } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
+import { getCourse } from "@/content/courses";
 import { buildOptions, pickDistractors } from "@/lib/quiz/distractors";
 import {
     insertRepeat,
@@ -257,7 +258,13 @@ export default function StudyPage() {
                     <ArrowLeft className="size-4" />
                 </Link>
                 <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-bold">{deck?.name ?? t("sessionTitle")}</p>
+                    <p className="truncate text-sm font-bold">
+                        {deck
+                            ? deck.sectionLabel
+                                ? `${deck.sectionLabel} · ${deck.name}`
+                                : deck.name
+                            : t("sessionTitle")}
+                    </p>
                     <p className="text-[11px] text-muted">
                         {t("cycleLine", { cycle: plan?.cycle ?? 1 })} ·{" "}
                         {t("knownLine", { known: knownNow, total: deckTotal })} ·{" "}
@@ -316,8 +323,10 @@ export default function StudyPage() {
                             void answer(quizPicked === current.meaningId ? "next" : "repeat")
                         }
                         busy={busy}
-                        voiceURI={profile?.ttsVoiceURI}
+                        voiceURI={profile?.ttsVoices?.[deck?.courseId ?? ""] ?? profile?.ttsVoiceURI}
                         rate={profile?.ttsRate}
+                        lang={deck ? getCourse(deck.courseId).speechLocale : undefined}
+                        badgeLabel={deck?.sectionLabel}
                     />
                 ) : (
                     <FlashcardView
@@ -327,8 +336,10 @@ export default function StudyPage() {
                         onRepeat={() => void answer("repeat")}
                         onNext={() => void answer("next")}
                         busy={busy}
-                        voiceURI={profile?.ttsVoiceURI}
+                        voiceURI={profile?.ttsVoices?.[deck?.courseId ?? ""] ?? profile?.ttsVoiceURI}
                         rate={profile?.ttsRate}
+                        lang={deck ? getCourse(deck.courseId).speechLocale : undefined}
+                        badgeLabel={deck?.sectionLabel}
                         repeatCount={repeatCounts[current.id] ?? 0}
                         cycle={plan?.cycle}
                     />

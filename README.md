@@ -1,10 +1,10 @@
 # GoAbroad
 
-Flashcard web app untuk belajar bahasa asing — mulai dari **Bahasa Jerman A1 sampai C2**
-(9.688 kartu dalam **177 topik**), dengan engine **siklus per topik**: pilih **band** (A1–C2),
-lalu pilih **topik** (mis. "Sapaan & perkenalan"). Satu sesi menyelesaikan satu topik penuh,
-kartu dijawab **Ulangi** atau **Sudah paham**, dan topik direset otomatis setelah semua kartunya
-ditampilkan. Band tidak pernah dicampur dalam satu sesi.
+Flashcard web app untuk belajar bahasa asing — **Bahasa Jerman A1–C2** (9.688 kartu dalam
+**177 topik**) dan **Mandarin tradisional** dari buku *當代中文課程* (2.891 kartu dalam
+**54 bab**, Buku 1–4). Engine-nya sama: pilih **band/buku**, lalu pilih **topik/bab**.
+Satu sesi menyelesaikan satu unit penuh, kartu dijawab **Ulangi** atau **Sudah paham**, dan
+unit direset otomatis setelah semua kartunya ditampilkan.
 
 > Prinsip produk: **fitur belajar gratis tanpa akun**. Akun hanya dibutuhkan untuk sinkronisasi
 > cloud dan fitur **AI** (generate kartu).
@@ -44,6 +44,35 @@ lagi ±3 kartu kemudian dan tetap "pending" sampai dijawab paham.
 
 Keyboard: `Space` untuk membuka jawaban, `1`/`R` untuk Ulangi, `2`/`N` untuk Sudah paham,
 `Q` untuk berganti flashcard/kuis.
+
+## Mandarin tradisional (buku 1–4)
+
+Course kedua memakai struktur **Buku → Bab** (tanpa topik/subbab) dengan acuan kosakata
+*當代中文課程* (A Course in Contemporary Chinese). Kartu: depan **Hanzi**, belakang **pinyin**,
+arti **Inggris** dan **Indonesia**.
+
+| Buku | Bab | Kartu |
+| --- | --- | --- |
+| Buku 1 | 15 | 520 |
+| Buku 2 | 15 | 618 |
+| Buku 3 | 12 | 804 |
+| Buku 4 | 12 | 949 |
+| **Total** | **54** | **2.891** |
+
+- Sumber kosakata diekspor dari buku (tidak di-commit; letakkan di `.content-cache/acc/pleco_dangdai.tsv`).
+- Nama orang (tokoh dialog, tokoh sejarah) dibuang; nama tempat/negara dipertahankan karena diajarkan di bab.
+- Duplikat `hanzi|pinyin` diambil kemunculan pertama, sisanya dicatat di `src/content/zh/report.json`.
+- Gloss Inggris diringkas (tag POS & catatan panjang dibuang), arti Indonesia ditulis sendiri di
+  `scripts/content/zh/en-id-*.tsv` + `id-glosses.jsonl`.
+- Audio memakai **Web Speech API** (`zh-TW`), jadi tidak ada berkas audio buku yang di-host.
+
+```bash
+npm run content:zh        # bangun src/content/zh/book1..4.json + manifest + report
+npm run content:zh -- --require-id   # gagal bila ada kartu tanpa arti Indonesia
+```
+
+Loader buku terdaftar di `src/lib/content/registry.ts`. Setelah menambah buku baru, tambahkan
+loader + entri manifest (dihasilkan otomatis oleh script) lalu jalankan `npm run seed:validate`.
 
 ## Stack
 
@@ -159,7 +188,8 @@ Setelah menambah deck: daftarkan loader-nya di `src/lib/content/registry.ts`
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm run lint` | ESLint (Next core-web-vitals + TS) |
 | `npm test` | Unit test Vitest (engine sesi, kuis, CSV, streak) |
-| `npm run content:build` | Bangun deck A1–C2 dari data terbuka |
+| `npm run content:build` | Bangun deck Jerman A1–C2 dari data terbuka |
+| `npm run content:zh` | Bangun deck Mandarin (buku 1–4) dari ekspor kosakata |
 | `npm run seed:validate` | Validasi konten + jumlah kartu vs manifest |
 | `npm run emulators` | Firebase Emulator Suite (auth + firestore) |
 | `npm run deploy:rules` | Deploy `firestore.rules` + `firestore.indexes.json` |
@@ -182,14 +212,17 @@ src/
     data/                  # akses Firestore per koleksi (cards, decks, progress, ...)
     quiz/ import/ validation/ stats/
   content/
-    manifest.json          # level → topik berurutan
+    manifest.json          # level → topik berurutan (Jerman)
     de/a1.json … c2.json   # topik + kartu per level
     de/source/curated-a1.json
     migration-map.json     # id kartu lama → id topik v3
     topic-map.json         # id topik v3 → id topik v4
+    zh/manifest.json       # buku → bab berurutan (Mandarin)
+    zh/book1.json … book4.json
 scripts/
   content/{topics.json,proper-names.json,build-decks.py}
-  validate-content.ts      # validator konten
+  content/zh/{build-zh.py,person-names.json,en-id-*.tsv,id-glosses.jsonl}
+  validate-content.ts      # validator konten (Jerman + Mandarin)
 docs/
   PRD.md                   # kebutuhan produk + acceptance criteria + roadmap
   BRIEFING.md              # status terkini untuk AI/kontributor berikutnya

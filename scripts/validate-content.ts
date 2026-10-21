@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { cardInputSchema } from "../src/lib/validation/schemas.ts";
@@ -184,6 +184,145 @@ const migration = JSON.parse(
 ) as Record<string, string>;
 console.log(`\nTotal ${totalCards} kartu di ${manifest.levels.length} band.`);
 console.log(`Peta migrasi: ${Object.keys(migration).length} id lama → id topik.`);
+
+/* ------------------------------------------------------------------ */
+/* Mandarin (當代中文): book → chapter, Hanzi + pinyin + EN + ID        */
+/* ------------------------------------------------------------------ */
+
+type ZhChapter = {
+    id: string;
+    key: string;
+    title: string;
+    order: number;
+    cardCount: number;
+};
+
+type ZhManifest = {
+    version: number;
+    courseId: string;
+    books: {
+        id: string;
+        label: string;
+        title: string;
+        order: number;
+        file: string;
+        chapters: ZhChapter[];
+    }[];
+};
+
+type ZhCard = {
+    front?: string;
+    pinyin?: string | null;
+    meaningEn?: string;
+    meaningId?: string;
+    chapter?: string;
+    wordType?: string;
+};
+
+const HAN = /[\u3400-\u4dbf\u4e00-\u9fff]/;
+const PINYIN_TONE = /[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜü]/i;
+
+const zhManifestPath = join(contentRoot, "zh", "manifest.json");
+if (!existsSync(zhManifestPath)) {
+    warnings.push("zh: manifest Mandarin belum ada");
+} else {
+    const zhManifest = JSON.parse(
+        readFileSync(zhManifestPath, "utf8"),
+    ) as ZhManifest;
+    let zhCards = 0;
+    let zhChapters = 0;
+
+    for (const book of zhManifest.books) {
+        const path = join(contentRoot, "zh", book.file);
+        if (!existsSync(path)) {
+            problems.push(`zh/${book.file}: file buku tidak ditemukan`);
+            continue;
+        }
+        const file = JSON.parse(readFileSync(path, "utf8")) as {
+            courseId?: string;
+            chapters?: ZhChapter[];
+            cards?: ZhCard[];
+        };
+        if (file.courseId !== "zh") {
+            problems.push(`zh/${book.file}: courseId "${file.courseId}" tidak cocok`);
+        }
+
+        const cards = file.cards ?? [];
+        const chapterKeys = new Set(book.chapters.map((chapter) => chapter.key));
+        const counts = new Map<string, number>();
+        const seen = new Map<string, string>();
+        const idMissing: string[] = [];
+
+        for (const [index, card] of cards.entries()) {
+            const label = `zh/${book.file} #${index + 1}`;
+            if (!card.front || !HAN.test(card.front)) {
+                problems.push(`${label}: hanzi tidak valid ("${card.front ?? "?"}")`);
+            }
+            if (!card.pinyin) {
+                warnings.push(`${label} (${card.front}): pinyin kosong`);
+            } else if (/\d/.test(card.pinyin) && !PINYIN_TONE.test(card.pinyin)) {
+                problems.push(
+                    `${label} (${card.front}): pinyin "${card.pinyin}" memakai angka, harus tanda nada`,
+                );
+            }
+            if (!card.meaningEn) problems.push(`${label} (${card.front}): arti Inggris kosong`);
+            if (!card.meaningId) {
+                problems.push(`${label} (${card.front}): arti Indonesia kosong`);
+            } else if (
+                card.meaningEn &&
+                card.meaningId.trim().toLowerCase() === card.meaningEn.trim().toLowerCase() &&
+                // Proper nouns ("Taiwan", "Japan") are legitimately identical.
+                !/^[A-Z][A-Za-z'’-]+$/.test(card.meaningId.trim())
+            ) {
+                idMissing.push(card.front ?? "?");
+            }
+            if (!card.chapter || !chapterKeys.has(card.chapter)) {
+                problems.push(
+                    `${label} (${card.front}): bab "${card.chapter ?? "?"}" tidak ada di manifest`,
+                );
+            } else {
+                counts.set(card.chapter, (counts.get(card.chapter) ?? 0) + 1);
+            }
+
+            const key = `${card.front}|${(card.pinyin ?? "").toLowerCase()}`;
+            const previous = seen.get(key);
+            if (previous) {
+                problems.push(
+                    `${label} (${card.front}): duplikat dengan bab ${previous}`,
+                );
+            } else {
+                seen.set(key, card.chapter ?? "?");
+            }
+        }
+
+        for (const chapter of book.chapters) {
+            const actual = counts.get(chapter.key) ?? 0;
+            if (actual !== chapter.cardCount) {
+                problems.push(
+                    `${book.label}/${chapter.id}: manifest ${chapter.cardCount} kartu, file berisi ${actual}`,
+                );
+            }
+            if (actual === 0) {
+                problems.push(`${book.label}/${chapter.id}: bab kosong`);
+            }
+        }
+
+        zhCards += cards.length;
+        zhChapters += book.chapters.length;
+        console.log(
+            `${book.label.padEnd(8)} ${String(book.chapters.length).padStart(3)} bab · ${String(cards.length).padStart(4)} kartu`,
+        );
+        if (idMissing.length > 0) {
+            warnings.push(
+                `${book.label}: ${idMissing.length} kartu masih memakai arti Inggris (belum diterjemahkan): ${idMissing
+                    .slice(0, 5)
+                    .join(", ")}`,
+            );
+        }
+    }
+
+    console.log(`Total ${zhCards} kartu Mandarin di ${zhChapters} bab.`);
+}
 
 if (warnings.length > 0) {
     console.log(`\nPeringatan kualitas (${warnings.length}):`);

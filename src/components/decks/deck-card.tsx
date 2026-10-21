@@ -34,7 +34,7 @@ export function DeckCard({
                     </div>
                 </div>
                 <div className="flex flex-col items-end gap-1">
-                    <Badge tone="accent">{deck.level}</Badge>
+                    <Badge tone="accent">{deck.sectionLabel ?? deck.level}</Badge>
                     {deck.readOnly ? (
                         <Lock className="size-3 text-muted" aria-label="read-only" />
                     ) : null}

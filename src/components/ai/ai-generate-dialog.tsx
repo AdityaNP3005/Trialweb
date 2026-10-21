@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Lock, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import type { CefrLevel } from "@/types";
+import type { SectionId } from "@/types";
 import type { AiCard } from "@/lib/validation/schemas";
 import { useAuth } from "@/components/providers/auth-provider";
 import { useStore } from "@/components/providers/store-provider";
@@ -24,7 +24,7 @@ export function AiGenerateDialog({
     onClose: () => void;
     deckId: string;
     courseId: string;
-    level: CefrLevel;
+    level: SectionId;
     onImported: () => void;
 }) {
     const { user } = useAuth();
