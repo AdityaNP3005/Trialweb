@@ -46,7 +46,7 @@ export function QuizView({
                         className={cn(
                             "tracking-tight",
                             card.script === "hanzi"
-                                ? "font-cjk text-[2.5rem] leading-tight sm:text-[3rem]"
+                                ? "font-cjk font-medium text-[2.5rem] leading-tight sm:text-[3rem]"
                                 : "display text-[2rem] leading-tight sm:text-[2.5rem]",
                         )}
                     >

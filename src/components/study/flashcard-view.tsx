@@ -84,7 +84,7 @@ export function FlashcardView({
                             className={cn(
                                 "tracking-tight",
                                 card.script === "hanzi"
-                                    ? "font-cjk text-[3.5rem] leading-[1.05] sm:text-[4.25rem]"
+                                    ? "font-cjk font-medium text-[3.5rem] leading-[1.05] sm:text-[4.25rem]"
                                     : "display text-[2.25rem] leading-[1.05] sm:text-[2.75rem]",
                             )}
                         >

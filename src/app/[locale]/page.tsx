@@ -32,7 +32,7 @@ function PreviewCard({
             <p
                 className={
                     script === "hanzi"
-                        ? "font-cjk mt-5 text-[2.75rem] leading-none tracking-tight"
+                        ? "font-cjk font-medium mt-5 text-[2.75rem] leading-none tracking-tight"
                         : "display mt-5 text-[2rem] leading-none"
                 }
             >
@@ -182,7 +182,7 @@ export default async function LandingPage() {
                                     <span
                                         className={
                                             route.id === "zh"
-                                                ? "font-cjk text-lg text-route"
+                                                ? "font-cjk font-medium text-lg text-route"
                                                 : "font-mono text-[11px] font-medium uppercase tracking-[0.16em] text-route"
                                         }
                                     >

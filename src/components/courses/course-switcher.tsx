@@ -34,7 +34,7 @@ export function CourseSwitcher({
                         aria-pressed={active}
                         className={cn(
                             "-mb-px border-b-2 pb-1.5 text-sm transition-colors disabled:opacity-50",
-                            course.script === "hanzi" ? "font-cjk" : "font-semibold",
+                            course.script === "hanzi" ? "font-cjk font-medium" : "font-semibold",
                             active
                                 ? "border-accent text-fg"
                                 : "border-transparent text-muted hover:text-fg",
