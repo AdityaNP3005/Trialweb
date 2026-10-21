@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
-import { IBM_Plex_Mono, Inter_Tight, Source_Serif_4 } from "next/font/google";
+import { IBM_Plex_Mono, Inter, Source_Serif_4 } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import "../globals.css";
 
-const interTight = Inter_Tight({
+const sans = Inter({
     subsets: ["latin"],
     display: "swap",
-    variable: "--font-inter-tight",
+    variable: "--font-sans-face",
 });
 
 const display = Source_Serif_4({
@@ -66,7 +66,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
     return (
         <html lang={locale} suppressHydrationWarning>
             <body
-                className={`${interTight.variable} ${display.variable} ${plexMono.variable} min-h-dvh bg-bg text-fg antialiased`}
+                className={`${sans.variable} ${display.variable} ${plexMono.variable} min-h-dvh bg-bg text-fg antialiased`}
             >
                 <Script id="theme-bootstrap" strategy="beforeInteractive">
                     {themeScript}
