@@ -16,8 +16,8 @@ dijawab **Ulangi** atau **Sudah paham**.
 Topik dianggap tuntas ketika semua kartunya sudah ditampilkan tanpa sisa kartu "Ulangi",
 lalu siklus topik otomatis direset (`Putaran 2`, `Putaran 3`, …).
 
-Fitur belajar **gratis tanpa akun** (mode tamu, data di browser). Akun hanya diperlukan untuk
-**sinkronisasi cloud** dan **fitur AI**.
+Fitur belajar **gratis tanpa akun** (mode tamu, data di browser). Akun hanya dipakai untuk
+**menyimpan progres**: sinkronisasi cloud antar perangkat dan backup.
 
 ---
 
@@ -58,7 +58,8 @@ Goethe/ÖSD) dan ingin alat ringan yang bisa dibuka di browser tanpa instalasi.
 ## 4. Prinsip produk
 
 1. **Gratis tanpa akun.** Semua fitur belajar inti berjalan di mode tamu.
-2. **Akun = sinkron + AI.** Login tidak pernah menjadi syarat untuk belajar.
+2. **Akun = simpan progres.** Login tidak pernah menjadi syarat untuk belajar; akun hanya
+   menyinkronkan dan mem-backup progres.
 3. **Satu sesi, satu topik.** Band tidak pernah dicampur dalam satu sesi.
 4. **Urutan topik berbeda per band**, dimulai dari tema paling umum.
 5. **"Paham" adalah keputusan pengguna**, bukan hasil algoritma. Pengulangan hanya menjadwalkan
@@ -101,7 +102,7 @@ Legenda: ✅ rilis & terverifikasi di produksi · 🟡 ada tapi terbatas · ⛔ 
 | F-09 | Statistik harian, streak, kuis | ✅ | `dailyStats`, `src/lib/quiz`, `/stats` |
 | F-10 | Text-to-speech Jerman | ✅ | Web Speech API (`de-DE`) via `src/hooks/use-speech.ts` |
 | F-11 | Deck kustom + impor CSV | ✅ | `/decks`, `/decks/[deckId]`, `papaparse` + validasi `zod` |
-| F-12 | Generate kartu dengan AI | 🟡 | `/api/ai/generate` (gate token + `GEMINI_API_KEY`), dialog di halaman deck kustom; butuh akun |
+| F-12 | ~~Generate kartu dengan AI~~ | ❌ | Dibatalkan: akun hanya untuk menyimpan progres; tidak ada dependensi API/LLM |
 | F-13 | Ekspor JSON (backup) | ✅ | `/settings` |
 | F-14 | Migrasi otomatis data lama | ✅ | FSRS→siklus (`engineV2`), per-level→per-topik (`topicsV3`, `topicsV4`) |
 | F-15 | Validator konten + unit test | ✅ | `npm run seed:validate`, 34 test Vitest |
@@ -233,7 +234,7 @@ users/{uid}/deckCycles/{deckId}     {cursor, cycle, knownInCycle, pendingCardIds
 users/{uid}/dailyStats/{YYYY-MM-DD} {reviews, next, repeat, known, studyMs, quizCorrect, quizTotal}
 users/{uid}/reviews/{id}            log jawaban (audit)
 users/{uid}/decks/{deckId}          deck buatan sendiri
-users/{uid}/cards/{cardId}          kartu deck kustom / impor / AI
+users/{uid}/cards/{cardId}          kartu deck kustom / impor
 ```
 
 Index komposit: `cards(deckId, createdAt)`, `progress(deckId)`, `reviews(deckId, createdAt)`.
@@ -257,7 +258,7 @@ tidak menambah biaya tulis per pengguna.
 | A2 | Konten dibundel statis (`src/content/de/*.json`) + loader statis | Baca cepat, biaya Firestore nol, bisa jalan tanpa akun |
 | A3 | Engine siklus sendiri (bukan FSRS) | Sesuai permintaan: jatah kartu harian diganti siklus per topik |
 | A4 | Guest-first, cloud opsional | Prinsip gratis tanpa akun |
-| A5 | Verifikasi token AI via JWKS `jose` (tanpa `firebase-admin`) | Tidak perlu service account/kredensial server |
+| A5 | Tanpa API/LLM eksternal | Semua fitur berjalan lokal; tidak ada biaya API atau kunci rahasia |
 | A6 | Firebase Auth + Firestore cache persisten | Sinkron + tetap responsif di jaringan lambat |
 | A7 | Dev/start bind `127.0.0.1` | Server lab, port tidak boleh terbuka ke jaringan |
 | A8 | Migrasi data bertahap dengan flag (`engineV2`, `topicsV3`, `topicsV4`) | Perubahan model tidak menghapus progres pengguna |
@@ -268,8 +269,8 @@ tidak menambah biaya tulis per pengguna.
 
 ## 11. Kebutuhan non-fungsional
 
-- **Keamanan**: `firestore.rules` membatasi akses ke `users/{uid}` milik sendiri; API AI wajib
-  token Firebase + rate limit 20/user/hari (in-memory); secret hanya di env server.
+- **Keamanan**: `firestore.rules` membatasi akses ke `users/{uid}` milik sendiri; tidak ada
+  endpoint server yang menyimpan secret.
 - **Privasi**: mode tamu tidak mengirim data ke mana pun; tidak ada analytics pihak ketiga.
 - **Performa**: dashboard & daftar topik < 1,5 s pada koneksi 4G; konten dimuat per level
   (file terbesar C1 ~2.400 kartu).
@@ -288,7 +289,6 @@ tidak menambah biaya tulis per pengguna.
 | Topik tuntas per pengguna aktif/minggu | ≥ 3 topik |
 | Konversi tamu → akun | ≥ 10% |
 | Rasio kartu "Ulangi" turun antar putaran | turun ≥ 30% dari putaran 1 ke 2 |
-| Error rate API AI | < 2% (di luar 401/503 yang disengaja) |
 
 ---
 
@@ -320,8 +320,7 @@ tidak menambah biaya tulis per pengguna.
 - [x] Tidak ada nama negara/kota/nama orang pada kartu kosakata.
 - [x] 9.688 kartu dalam 177 topik; setiap topik ≤ 80 kartu.
 
-**AI & akun**
-- [x] `/api/ai/generate` tanpa token → 401; tanpa `GEMINI_API_KEY` → 503.
+**Akun**
 - [x] Login Google/email berfungsi di domain produksi (authorized domain terdaftar).
 
 **Operasional**
@@ -336,7 +335,7 @@ tidak menambah biaya tulis per pengguna.
 1. Gate wajib: `npm run typecheck && npm run lint && npm test && npm run seed:validate && npm run build`.
 2. Push ke `main` → Vercel build otomatis (project `goabroad`).
 3. Verifikasi produksi manual: `/id/dashboard` (angka band), `/id/levels/A1` (daftar topik),
-   `/id/study/de-a1-greetings` (sesi jalan), `/api/ai/generate` tanpa token → 401/503.
+   `/id/study/de-a1-greetings` (sesi jalan), `/id/login` (form login tampil).
 4. Smoke lokal: `npm run start -- -p 3100`, lalu `pkill -f next-server` dan cek `ss -ltnp`.
 
 ---

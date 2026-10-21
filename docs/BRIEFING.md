@@ -29,7 +29,6 @@ dijalankan untuk akun pilot.
 | Deck per topik + pilih band | ✅ | `/dashboard`, `/levels/[level]`, manifest v2 |
 | Konten A1–C2 tanpa nama diri | ✅ | 9.688 kartu, 177 topik (commit `012acb6`) |
 | Migrasi progres bertahap | ✅ | flag `engineV2`, `topicsV3`, `topicsV4` |
-| AI generate (gate token + API key) | 🟡 | `/api/ai/generate`, dialog di `/decks/[deckId]` |
 | Deck kustom + impor CSV | ✅ | `papaparse` + `zod`, `/decks` |
 | Statistik, streak, heatmap, kuis | ✅ | `/stats`, `dailyStats` |
 | **Mandarin tradisional (buku 1–4)** | ✅ | course `zh`, 54 bab, 2.891 kartu, TTS `zh-TW` |
@@ -129,8 +128,7 @@ npm run deploy:rules      # firestore.rules + firestore.indexes.json
 | `src/app/[locale]/(app)/levels/[level]/page.tsx` | daftar topik berurutan, status, reset topik |
 | `src/app/[locale]/(app)/study/[deckId]/page.tsx` | sesi topik (repeat/next, header putaran) |
 | `src/app/[locale]/(app)/decks/page.tsx` | ringkasan band + daftar topik + filter tag |
-| `src/app/[locale]/(app)/decks/[deckId]/page.tsx` | deck kustom, impor CSV, dialog AI |
-| `src/app/api/ai/generate/route.ts` | endpoint AI (401 tanpa token, 503 tanpa key) |
+| `src/app/[locale]/(app)/decks/[deckId]/page.tsx` | deck kustom, impor CSV |
 | `src/lib/study/session.ts` | `buildSession`, `insertRepeat` (gap 3), `cycleProgress`, `MAX_REPEATS_PER_CARD` |
 | `src/lib/data/progress.ts` | `submitAction`: progress + deckCycle + dailyStats + review log (batch) |
 | `src/lib/data/migrate-topics.ts` | remap id topik cloud (`migration-map.json` → `topic-map.json`) |
@@ -155,7 +153,7 @@ npm run deploy:rules      # firestore.rules + firestore.indexes.json
 
 - `.env.production` **di-commit** dan hanya berisi konfigurasi web Firebase **publik**
   (`NEXT_PUBLIC_FIREBASE_*`). Jangan tambahkan secret ke file ini.
-- `GEMINI_API_KEY` hanya di dashboard Vercel (server-only). Tanpa itu AI = 503 (by design).
+- Tidak ada secret server. Semua fitur berjalan tanpa API key pihak ketiga.
 - Firebase project: `goabroad-d86fc`. Akun pilot: `admin@goabroad.app`
   (**password tidak disimpan di repo** — minta ke pemilik).
 - Authorized domain Firebase harus memuat `goabroad-rho.vercel.app` agar Google Sign-In jalan.
@@ -171,8 +169,8 @@ npm run deploy:rules      # firestore.rules + firestore.indexes.json
 3. **Satu sesi = satu topik.** Jangan campur band/topik dalam satu sesi.
 4. **Dev/start hanya loopback** (`127.0.0.1`). Ini server lab; port tidak boleh terbuka.
    `npm run dev:network` hanya bila benar-benar perlu.
-5. **Jangan pakai `firebase-admin`.** Verifikasi token AI memakai JWKS `jose` di
-   `src/lib/firebase/verify-token.ts` (`verifyFirebaseIdToken`) supaya tidak butuh service account.
+5. **Tanpa `firebase-admin` dan tanpa API/LLM eksternal.** Semua fitur berjalan di klien +
+   Firestore; jangan tambah dependency server baru untuk "mempermudah".
 6. **Setiap perubahan id topik wajib disertai map migrasi** (`topic-map.json`) + bump
    `contentVersion` (guest) dan flag profil (cloud).
 7. **`create_file` menolak file yang sudah ada** → `rm -f` dulu sebelum menulis ulang.
@@ -227,7 +225,7 @@ npm run content:build && npm run seed:validate
    `MIN_SCORE` di `build-decks.py`.
 4. **Kualitas kartu**: artikel/gender + contoh kalimat baru ada di 200 kartu A1 kurasi
    (`src/content/de/source/curated-a1.json`).
-5. **Rate limit AI** masih in-memory (20/user/hari) → pindah ke Firestore untuk multi-instance.
+5. **Akun hanya menyimpan progres** — jangan tambah fitur yang dikunci di balik login.
 6. **README** masih menyebut `topic-id-keywords.json` (file itu sudah dihapus/digabung ke
    `topics.json`) — rapikan saat menyentuh dokumentasi.
 7. **Mandarin buku 5–6**: file sumber berhenti di Buku 5 L10 dan Buku 6 belum ada. Minta
@@ -248,7 +246,7 @@ npm run content:build && npm run seed:validate
 - **`create_file` menolak file existing** → hapus dulu.
 - **Polling status deploy lewat GitHub API bisa kena rate limit** → verifikasi dengan
   mengambil halaman produksi (angka topik di `/id/dashboard`) bukan API.
-- **AI route**: tanpa `firebase-admin`; jangan tambah dependency itu untuk "mempermudah".
+- **Tanpa secret**: tidak ada route server yang butuh API key; jangan tambah `firebase-admin`.
 - **Login Google**: domain produksi harus terdaftar di Firebase Console →
   Authentication → Settings → **Authorized domains**. Kalau belum, SDK menolak dengan
   `auth/unauthorized-domain` (UI sekarang menampilkan pesan khusus + kode error itu).
@@ -267,7 +265,6 @@ npm run content:build && npm run seed:validate
 # lokal
 npm run build && npm run start -- -p 3100
 curl -s -o /dev/null -w "%{http_code}\n" http://127.0.0.1:3100/id/login        # 200
-curl -s -o /dev/null -w "%{http_code}\n" -X POST http://127.0.0.1:3100/api/ai/generate  # 401/503
 pkill -f next-server
 ```
 

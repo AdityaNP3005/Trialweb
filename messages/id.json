@@ -25,7 +25,7 @@
         "words": "kata",
         "cards": "kartu",
         "of": "dari",
-        "freeNoAccount": "Gratis tanpa akun · AI membutuhkan akun"
+        "freeNoAccount": "Gratis tanpa akun · Akun menyimpan progres"
     },
     "nav": {
         "dashboard": "Beranda",
@@ -88,7 +88,7 @@
         "signingIn": "Memproses…",
         "checkEmail": "Pendaftaran berhasil. Cek email untuk verifikasi, lalu masuk.",
         "continueGuest": "Lanjutkan tanpa akun",
-        "guestNote": "Mode tamu menyimpan progres di browser ini saja. Buat akun untuk sinkronisasi dan fitur AI."
+        "guestNote": "Mode tamu menyimpan progres di browser ini saja. Buat akun agar progres tersimpan dan tersinkron antar perangkat."
     },
     "setup": {
         "title": "Firebase belum dikonfigurasi",
@@ -145,7 +145,7 @@
         "filterTag": "Filter tag",
         "filterSource": "Filter sumber",
         "emptyTitle": "Belum ada deck",
-        "emptyBody": "Buat deck sendiri, impor CSV, atau generate kartu dengan AI.",
+        "emptyBody": "Buat deck sendiri atau impor CSV.",
         "addCard": "Tambah kartu",
         "study": "Belajar",
         "editCard": "Ubah kartu",
@@ -274,7 +274,7 @@
         "saved": "Pengaturan disimpan",
         "account": "Akun",
         "guestTitle": "Mode tamu",
-        "guestBody": "Progresmu disimpan di browser ini. Masuk dengan akun untuk sinkronisasi antar perangkat, backup cloud, dan fitur AI.",
+        "guestBody": "Progresmu disimpan di browser ini. Masuk dengan akun untuk sinkronisasi antar perangkat dan backup cloud.",
         "guestCta": "Masuk / daftar"
     },
     "import": {
@@ -296,21 +296,6 @@
         "importing": "Mengimpor {done}/{total}…",
         "success": "{count} kartu berhasil diimpor",
         "ignore": "Abaikan"
-    },
-    "ai": {
-        "title": "Generate kartu dengan AI",
-        "body": "Tulis topik, AI menyusun kartu sesuai level. Tinjau hasilnya sebelum disimpan.",
-        "topic": "Topik",
-        "topicPlaceholder": "misal: makanan di restoran, kata kerja gerak",
-        "count": "Jumlah kartu",
-        "generate": "Generate",
-        "generating": "Menyusun kartu…",
-        "preview": "Pratinjau {count} kartu",
-        "accept": "Simpan {count} kartu",
-        "notConfigured": "Fitur AI belum aktif. Set GEMINI_API_KEY di server untuk mengaktifkannya.",
-        "loginRequired": "Fitur AI membutuhkan akun. Masuk atau daftar dulu — fitur belajar lainnya tetap gratis tanpa akun.",
-        "loginCta": "Masuk untuk memakai AI",
-        "error": "Gagal generate kartu. Coba lagi."
     },
     "errors": {
         "required": "Wajib diisi",

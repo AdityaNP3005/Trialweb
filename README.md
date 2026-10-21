@@ -6,8 +6,8 @@ Flashcard web app untuk belajar bahasa asing — **Bahasa Jerman A1–C2** (9.68
 Satu sesi menyelesaikan satu unit penuh, kartu dijawab **Ulangi** atau **Sudah paham**, dan
 unit direset otomatis setelah semua kartunya ditampilkan.
 
-> Prinsip produk: **fitur belajar gratis tanpa akun**. Akun hanya dibutuhkan untuk sinkronisasi
-> cloud dan fitur **AI** (generate kartu).
+> Prinsip produk: **semua fitur belajar gratis tanpa akun**. Akun hanya dipakai untuk
+> menyimpan progres (sinkron antar perangkat + backup cloud).
 
 📄 **Dokumentasi lengkap:** [`docs/PRD.md`](./docs/PRD.md) (kebutuhan produk, acceptance
 criteria, roadmap) dan [`docs/BRIEFING.md`](./docs/BRIEFING.md) (status teknis terkini,
@@ -17,13 +17,14 @@ invariant, gotchas, TODO — baca ini dulu sebelum mengubah kode).
 
 ## Tiga mode
 
-| Mode | Data disimpan di | Butuh akun? | Butuh Firebase? | Butuh API key? |
-| --- | --- | --- | --- | --- |
-| **Tamu (guest)** — default | `localStorage` browser | ❌ | ❌ | ❌ |
-| **Akun (cloud)** | Firestore `/users/{uid}/**` | ✅ | ✅ | ❌ |
-| **AI generate** | Firestore (setelah ditinjau) | ✅ | ✅ | ✅ `GEMINI_API_KEY` |
+| Mode | Data disimpan di | Butuh akun? | Butuh Firebase? |
+| --- | --- | --- | --- |
+| **Tamu (guest)** — default | `localStorage` browser | ❌ | ❌ |
+| **Akun (cloud)** | Firestore `/users/{uid}/**` | ✅ | ✅ |
 
-- Deck A1–C2 **dibundel di aplikasi**. Firestore hanya menyimpan progres per akun
+- Akun dipakai **hanya untuk menyimpan progres**: sinkron antar perangkat dan backup
+  cloud. Tidak ada fitur lain yang dikunci di balik akun.
+- Deck semua bahasa **dibundel di aplikasi**. Firestore hanya menyimpan progres per akun
   (`progress/{cardId}` + `deckCycles/{deckId}`), bukan salinan kartu — jadi menambah level baru
   tidak menambah biaya tulis per akun.
 - Tamu bisa langsung membuka `/id/dashboard`; progresnya tersimpan di browser dan ikut
@@ -90,7 +91,7 @@ Runtime Node dipasang **privat** di dalam project (`.node/`), tidak menyentuh No
 source ./activate.sh          # menambah .node/bin ke PATH (Node 24)
 npm install                   # dependency lokal di ./node_modules
 
-cp .env.example .env.local    # opsional: hanya perlu untuk mode akun/AI
+cp .env.example .env.local    # opsional: hanya perlu untuk mode akun
 npm run dev                   # http://127.0.0.1:3000 (loopback saja)
 ```
 
@@ -122,17 +123,14 @@ npm run dev
 4. Deploy aturan & index: `npm run deploy:rules`.
 5. Tambahkan domain deploy (mis. `*.vercel.app`) ke **Authentication → Settings → Authorized domains**.
 
-### Fitur AI
+### Fitur tanpa akun
 
-```bash
-GEMINI_API_KEY=...            # server-only
-GEMINI_MODEL=gemini-2.5-flash # opsional
-```
+Semua fitur belajar (deck bawaan, sesi, kuis, statistik) berjalan tanpa login. Akun hanya
+menambah penyimpanan progres di cloud:
 
-- `/api/ai/generate` memverifikasi Firebase ID token memakai JWKS publik Google (`jose`),
-  jadi tidak perlu service account. Cukup `NEXT_PUBLIC_FIREBASE_PROJECT_ID`.
-- Tanpa `GEMINI_API_KEY` endpoint mengembalikan **503** dan UI menampilkan pesan "AI belum aktif".
-- Limit sederhana: 20 request/user/hari (in-memory; pindah ke Firestore/Redis bila multi-instance).
+- Progres tamu disimpan di `localStorage` dan ikut dimigrasikan ke akun saat pertama login
+  (jika akun masih kosong).
+- Setelah login, progres tersinkron antar perangkat dan otomatis di-backup di Firestore.
 
 ## Konten Jerman A1–C2
 
@@ -203,8 +201,7 @@ src/
   app/[locale]/
     (auth)/                # login / signup / reset-password
     (app)/                 # dashboard, decks, study, stats, settings
-    api/ai/generate/       # route handler AI (server-only)
-  components/              # ui, layout, decks, study, import, ai, stats
+  components/              # ui, layout, decks, study, import, stats
   hooks/use-speech.ts      # Web Speech API (de-DE)
   lib/
     study/session.ts       # engine siklus: buildSession, insertRepeat, cycleProgress
@@ -235,7 +232,7 @@ users/{uid}                          profil + bands (ukuran sesi per level) + TT
 users/{uid}/progress/{cardId}        status kartu: known, repeat count, cycle, timestamp
 users/{uid}/deckCycles/{deckId}      cursor, cycle, knownInCycle, pendingCardIds
 users/{uid}/decks/{deckId}           deck buatan sendiri (opsional)
-users/{uid}/cards/{cardId}           kartu deck buatan sendiri / hasil impor / AI
+users/{uid}/cards/{cardId}           kartu deck buatan sendiri / hasil impor
 users/{uid}/reviews/{reviewId}       log jawaban (repeat/next)
 users/{uid}/dailyStats/{YYYY-MM-DD}  counter harian (streak & heatmap)
 ```
@@ -260,16 +257,13 @@ dokumen progres/cycle lama dihapus. Snapshot tamu (`goabroad.guest.v2`) di-remap
    | Variable | Scope | Catatan |
    | --- | --- | --- |
    | `NEXT_PUBLIC_FIREBASE_*` | Production + Preview | Di-inline saat build |
-   | `GEMINI_API_KEY` | Production | server-only |
-   | `GEMINI_MODEL` | Production | opsional |
 
 3. `NEXT_PUBLIC_*` di-*inline* saat build → **redeploy** setelah mengubahnya. Repo ini sudah
    menyertakan `.env.production` dengan konfigurasi web Firebase publik, jadi build produksi
    selalu punya config meski dashboard kosong.
 4. Tambahkan domain Vercel ke Firebase Console → Authentication → Settings → **Authorized domains**.
 5. Deploy rules & index: `npm run deploy:rules`.
-6. Smoke test: `/id/login` menampilkan form login, `/api/ai/generate` tanpa token → **401**
-   (atau **503** bila `GEMINI_API_KEY` belum diisi).
+6. Smoke test: `/id/login` menampilkan form login, `/id/dashboard` bisa dibuka tanpa akun.
 
 ## Menambah bahasa baru
 

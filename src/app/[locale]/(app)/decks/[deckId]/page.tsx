@@ -24,7 +24,6 @@ import { Skeleton } from "@/components/ui/progress";
 import { CardList } from "@/components/decks/card-list";
 import { CardFormDialog } from "@/components/decks/card-form";
 import { CsvImportDialog } from "@/components/import/csv-import-dialog";
-import { AiGenerateDialog } from "@/components/ai/ai-generate-dialog";
 
 export default function DeckDetailPage() {
     const params = useParams<{ deckId: string }>();
@@ -41,7 +40,6 @@ export default function DeckDetailPage() {
     const [selected, setSelected] = useState<Card | null>(null);
     const [formOpen, setFormOpen] = useState(false);
     const [importOpen, setImportOpen] = useState(false);
-    const [aiOpen, setAiOpen] = useState(false);
     const [confirmDelete, setConfirmDelete] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
@@ -223,15 +221,6 @@ export default function DeckDetailPage() {
                     <Upload className="size-3.5" />
                     CSV
                 </Button>
-                <Button
-                    variant="secondary"
-                    size="sm"
-                    onClick={() => setAiOpen(true)}
-                    disabled={deck.readOnly}
-                >
-                    <Sparkles className="size-3.5" />
-                    AI
-                </Button>
             </div>
 
             {!cards ? (
@@ -288,15 +277,6 @@ export default function DeckDetailPage() {
                 existingFronts={
                     new Set((cards ?? []).map((card) => card.front.toLowerCase()))
                 }
-                onImported={load}
-            />
-
-            <AiGenerateDialog
-                open={aiOpen}
-                onClose={() => setAiOpen(false)}
-                deckId={deck.id}
-                courseId={deck.courseId}
-                level={deck.level}
                 onImported={load}
             />
 

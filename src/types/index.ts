@@ -28,7 +28,7 @@ export type WordType =
 
 export type Gender = "der" | "die" | "das";
 
-export type CardSource = "seed" | "user" | "ai" | "import";
+export type CardSource = "seed" | "user" | "import";
 
 export type Card = {
     id: string;

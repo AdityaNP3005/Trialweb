@@ -13,7 +13,7 @@ export const wordTypes = [
     "other",
 ] as const;
 export const genders = ["der", "die", "das"] as const;
-export const cardSources = ["seed", "user", "ai", "import"] as const;
+export const cardSources = ["seed", "user", "import"] as const;
 
 const trimmed = (max: number) => z.string().trim().max(max);
 
@@ -49,33 +49,6 @@ export const bandSettingSchema = z.object({
     sessionSize: z.number().int().min(5).max(100),
     shuffle: z.boolean().default(false),
 });
-
-/** Shape returned by the AI route after validation. */
-export const aiCardSchema = z.object({
-    front: z.string().trim().min(1).max(160),
-    meaningId: z.string().trim().min(1).max(240),
-    meaningEn: z.string().trim().min(1).max(240),
-    gender: z.enum(genders).nullable().default(null),
-    wordType: z.enum(wordTypes).default("other"),
-    plural: z.string().trim().max(160).nullable().default(null),
-    exampleDe: z.string().trim().max(400).nullable().default(null),
-    exampleId: z.string().trim().max(400).nullable().default(null),
-    exampleEn: z.string().trim().max(400).nullable().default(null),
-    tags: z.array(z.string().trim().max(40)).max(8).default([]),
-});
-
-export const aiResponseSchema = z.object({
-    cards: z.array(aiCardSchema).min(1).max(20),
-});
-
-export const aiRequestSchema = z.object({
-    topic: z.string().trim().min(2).max(200),
-    count: z.number().int().min(1).max(20).default(10),
-    level: z.enum(cefrLevels).default("A1"),
-});
-
-export type AiCard = z.infer<typeof aiCardSchema>;
-export type AiRequest = z.infer<typeof aiRequestSchema>;
 
 /** Accepts values like "der Apfel" and separates the article. */
 export function splitGermanArticle(front: string): {
