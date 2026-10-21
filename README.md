@@ -230,6 +230,9 @@ Snapshot tamu generasi lama (`goabroad.guest.v1`) juga dimigrasikan ke `goabroad
 
 ## Catatan & batasan
 
+- Membuka sesi langsung memajukan posisi (cursor) deck, karena kartu yang ditampilkan dianggap
+  sudah "diperkenalkan" pada putaran itu. Kalau sesi ditinggalkan, kartu tersebut tidak
+  dihitung paham dan akan muncul lagi pada putaran berikutnya.
 - Artikel/gender kata benda dan contoh kalimat belum tersedia untuk kartu hasil pipeline
   (hanya 200 kartu A1 kurasi). Lihat peringatan `npm run seed:validate`.
 - Pembagian level A2–C2 diambil dari peringkat frekuensi, bukan daftar resmi Goethe/ÖSD
