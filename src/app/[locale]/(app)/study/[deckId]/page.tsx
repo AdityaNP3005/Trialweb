@@ -4,15 +4,15 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams } from "next/navigation";
 import { ArrowLeft, Layers, ListChecks } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { Link, useRouter } from "@/i18n/navigation";
-import type { Card, ReviewRating, StudyMode } from "@/types";
+import { Link } from "@/i18n/navigation";
+import type { Card, Deck, StudyAction, StudyMode } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
-import { previewIntervals } from "@/lib/srs/fsrs";
+import { buildOptions, pickDistractors } from "@/lib/quiz/distractors";
 import {
-    buildOptions,
-    pickDistractors,
-    ratingForQuiz,
-} from "@/lib/quiz/distractors";
+    insertRepeat,
+    MAX_REPEATS_PER_CARD,
+    type SessionPlan,
+} from "@/lib/study/session";
 import { buttonStyles } from "@/components/ui/button";
 import { EmptyState } from "@/components/ui/empty-state";
 import { Progress, Skeleton } from "@/components/ui/progress";
@@ -30,10 +30,10 @@ export default function StudyPage() {
     const { store, profile } = useStore();
     const t = useTranslations("study");
     const tq = useTranslations("quiz");
-    const router = useRouter();
 
+    const [plan, setPlan] = useState<SessionPlan | null>(null);
+    const [deck, setDeck] = useState<Deck | null>(null);
     const [queue, setQueue] = useState<Card[] | null>(null);
-    const [deckName, setDeckName] = useState<string | null>(null);
     const [index, setIndex] = useState(0);
     const [revealed, setRevealed] = useState(false);
     const [mode, setMode] = useState<StudyMode>("flashcard");
@@ -41,42 +41,43 @@ export default function StudyPage() {
     const [quizPicked, setQuizPicked] = useState<string | null>(null);
     const [busy, setBusy] = useState(false);
     const [error, setError] = useState<string | null>(null);
-    const [stats, setStats] = useState({ correct: 0, total: 0, newCards: 0 });
+    const [counters, setCounters] = useState({ next: 0, repeat: 0 });
     const [summary, setSummary] = useState<SessionSummaryData | null>(null);
+    const [repeatCounts, setRepeatCounts] = useState<Record<string, number>>({});
 
-    // Timestamps are set inside effects/handlers, never during render.
     const startedAt = useRef(0);
     const cardShownAt = useRef(0);
+    const booted = useRef(false);
 
     useEffect(() => {
-        if (!store) return;
+        if (!store || booted.current) return;
+        booted.current = true;
         let cancelled = false;
 
         (async () => {
             try {
-                const today = await store.getTodayStat();
-                const newLimit = Math.max(0, (profile?.newPerDay ?? 10) - today.newCards);
+                const decks = await store.listDecks();
+                const targetId =
+                    deckIdParam === "all"
+                        ? (decks.find((entry) => entry.isDefault) ?? decks[0])?.id
+                        : deckIdParam;
 
-                const result = await store.getStudyQueue({
-                    deckId: deckIdParam === "all" ? null : deckIdParam,
-                    reviewLimit: 100,
-                    newLimit,
-                });
-
-                let distractors: string[] = result.cards.map((card) => card.meaningId);
-
-                if (deckIdParam !== "all") {
-                    const [deck, cards] = await Promise.all([
-                        store.getDeck(deckIdParam),
-                        store.listCards(deckIdParam, 80),
-                    ]);
-                    if (!cancelled) setDeckName(deck?.name ?? null);
-                    distractors = cards.map((card) => card.meaningId);
+                if (!targetId) {
+                    if (!cancelled) setQueue([]);
+                    return;
                 }
 
+                const [nextDeck, nextPlan, cards] = await Promise.all([
+                    store.getDeck(targetId),
+                    store.getSession(targetId),
+                    store.listCards(targetId, 400),
+                ]);
+
                 if (cancelled) return;
-                setPool(distractors);
-                setQueue(result.cards);
+                setDeck(nextDeck);
+                setPlan(nextPlan);
+                setQueue(nextPlan.cards);
+                setPool(cards.map((card) => card.meaningId));
                 startedAt.current = Date.now();
                 cardShownAt.current = Date.now();
             } catch (cause) {
@@ -89,10 +90,12 @@ export default function StudyPage() {
         return () => {
             cancelled = true;
         };
-    }, [store, profile, deckIdParam, tq]);
+    }, [store, deckIdParam, tq]);
 
     const current = queue?.[index] ?? null;
-    const total = queue?.length ?? 0;
+    const totalInSession = queue?.length ?? 0;
+    const deckTotal = deck?.cardCount ?? 0;
+    const knownNow = (plan?.knownInCycle ?? 0) + counters.next;
 
     const quizAvailable = useMemo(() => new Set(pool.filter(Boolean)).size >= 4, [pool]);
 
@@ -103,66 +106,65 @@ export default function StudyPage() {
         return buildOptions(current.meaningId, distractors);
     }, [current, mode, pool, quizAvailable]);
 
-    const preview = useMemo(
-        () => (current ? previewIntervals(current.srs) : null),
-        [current],
-    );
-
-    function advance(correct: boolean) {
-        const next = {
-            correct: stats.correct + (correct ? 1 : 0),
-            total: stats.total + 1,
-            newCards: stats.newCards + (current?.isNew ? 1 : 0),
-        };
-        setStats(next);
-
-        if (index + 1 >= total) {
-            setSummary({ ...next, durationMs: Date.now() - startedAt.current });
-            return;
-        }
-
-        setIndex((value) => value + 1);
-        setRevealed(false);
-        setQuizPicked(null);
-        cardShownAt.current = Date.now();
+    function finish(next: number, repeat: number) {
+        setSummary({
+            total: next + repeat,
+            next,
+            repeat,
+            cycle: plan?.cycle ?? 1,
+            cycleReset: plan?.cycleReset ?? false,
+            durationMs: Date.now() - startedAt.current,
+        });
     }
 
-    async function handleRate(rating: ReviewRating) {
+    async function answer(action: StudyAction) {
         if (!store || !current || busy) return;
         const durationMs = Date.now() - cardShownAt.current;
         setBusy(true);
         setError(null);
-        try {
-            await store.submitReview({
-                card: current,
-                rating,
-                mode: "flashcard",
-                correct: rating >= 3,
-                durationMs,
-            });
-            advance(rating >= 3);
-        } catch (cause) {
-            setError(cause instanceof Error ? cause.message : "error");
-        } finally {
-            setBusy(false);
-        }
-    }
 
-    async function handleQuizNext() {
-        if (!store || !current || busy || quizPicked === null) return;
-        const correct = quizPicked === current.meaningId;
-        const durationMs = Date.now() - cardShownAt.current;
-        setBusy(true);
-        setError(null);
+        const isQuiz = mode === "quiz";
+        const correct = isQuiz ? quizPicked === current.meaningId : action === "next";
+
         try {
-            await store.submitReview({
+            await store.submitAction({
                 card: current,
-                rating: ratingForQuiz(correct, durationMs),
-                mode: "quiz",
+                action,
+                mode,
                 correct,
                 durationMs,
+                session: plan
+                    ? {
+                        cycle: plan.cycle,
+                        introducedCardIds: [],
+                        nextCursor: plan.nextCursor,
+                        pendingLeft: plan.pendingLeft,
+                        knownInCycle: plan.knownInCycle,
+                    }
+                    : null,
             });
-            advance(correct);
+
+            const repeats = repeatCounts[current.id] ?? 0;
+            if (action === "repeat" && repeats < MAX_REPEATS_PER_CARD) {
+                setRepeatCounts((value) => ({ ...value, [current.id]: repeats + 1 }));
+                setQueue((value) => (value ? insertRepeat(value, index, current) : value));
+            }
+
+            const nextCounts = {
+                next: counters.next + (action === "next" ? 1 : 0),
+                repeat: counters.repeat + (action === "repeat" ? 1 : 0),
+            };
+            setCounters(nextCounts);
+
+            if (index + 1 >= totalInSession) {
+                finish(nextCounts.next, nextCounts.repeat);
+                return;
+            }
+
+            setIndex((value) => value + 1);
+            setRevealed(false);
+            setQuizPicked(null);
+            cardShownAt.current = Date.now();
         } catch (cause) {
             setError(cause instanceof Error ? cause.message : "error");
         } finally {
@@ -178,11 +180,6 @@ export default function StudyPage() {
             }
             if (summary) return;
 
-            if (event.key === "Escape") {
-                if (window.confirm(t("exitConfirm"))) router.push("/dashboard");
-                return;
-            }
-
             if (event.key.toLowerCase() === "q" && quizAvailable) {
                 setMode((value) => (value === "flashcard" ? "quiz" : "flashcard"));
                 setRevealed(false);
@@ -195,12 +192,13 @@ export default function StudyPage() {
             if (event.code === "Space" || event.key === "Enter") {
                 event.preventDefault();
                 if (!revealed) setRevealed(true);
+                else void answer("next");
                 return;
             }
 
-            if (revealed && ["1", "2", "3", "4"].includes(event.key)) {
-                void handleRate(Number(event.key) as ReviewRating);
-            }
+            if (!revealed) return;
+            if (event.key === "1" || event.key.toLowerCase() === "r") void answer("repeat");
+            if (event.key === "2" || event.key.toLowerCase() === "n") void answer("next");
         }
 
         window.addEventListener("keydown", onKeyDown);
@@ -231,7 +229,7 @@ export default function StudyPage() {
         );
     }
 
-    if (total === 0) {
+    if (totalInSession === 0) {
         return (
             <EmptyState
                 title={t("emptyQueue")}
@@ -259,10 +257,11 @@ export default function StudyPage() {
                     <ArrowLeft className="size-4" />
                 </Link>
                 <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-bold">{deckName ?? t("sessionTitle")}</p>
+                    <p className="truncate text-sm font-bold">{deck?.name ?? t("sessionTitle")}</p>
                     <p className="text-[11px] text-muted">
-                        {t("deckProgress", { done: index, total })} ·{" "}
-                        {t("remaining", { count: total - index })}
+                        {t("cycleLine", { cycle: plan?.cycle ?? 1 })} ·{" "}
+                        {t("knownLine", { known: knownNow, total: deckTotal })} ·{" "}
+                        {t("sessionLine", { done: index, total: totalInSession })}
                     </p>
                 </div>
 
@@ -304,7 +303,7 @@ export default function StudyPage() {
                 </div>
             </div>
 
-            <Progress value={index} max={total} label={t("sessionTitle")} />
+            <Progress value={index} max={totalInSession} label={t("sessionTitle")} />
 
             {current ? (
                 mode === "quiz" && quizOptions.length === 4 ? (
@@ -313,7 +312,9 @@ export default function StudyPage() {
                         options={quizOptions}
                         picked={quizPicked}
                         onPick={setQuizPicked}
-                        onNext={handleQuizNext}
+                        onNext={() =>
+                            void answer(quizPicked === current.meaningId ? "next" : "repeat")
+                        }
                         busy={busy}
                         voiceURI={profile?.ttsVoiceURI}
                         rate={profile?.ttsRate}
@@ -323,11 +324,13 @@ export default function StudyPage() {
                         card={current}
                         revealed={revealed}
                         onReveal={() => setRevealed(true)}
-                        preview={preview!}
-                        onRate={handleRate}
+                        onRepeat={() => void answer("repeat")}
+                        onNext={() => void answer("next")}
                         busy={busy}
                         voiceURI={profile?.ttsVoiceURI}
                         rate={profile?.ttsRate}
+                        repeatCount={repeatCounts[current.id] ?? 0}
+                        cycle={plan?.cycle}
                     />
                 )
             ) : null}

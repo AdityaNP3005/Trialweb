@@ -1,17 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import {
     ArrowRight,
     CalendarDays,
     Flame,
     Layers,
     Sparkles,
-    Target,
+    Trophy,
 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import type { DailyStat, Deck } from "@/types";
+import type { DailyStat, Deck, DeckProgress } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
 import { computeStreak } from "@/lib/stats/streak";
 import { buttonStyles } from "@/components/ui/button";
@@ -20,10 +20,9 @@ import { DeckCard } from "@/components/decks/deck-card";
 import { EmptyState } from "@/components/ui/empty-state";
 
 type DashboardData = {
-    due: number;
-    newCount: number;
-    today: DailyStat;
     decks: Deck[];
+    progress: DeckProgress[];
+    today: DailyStat;
     recent: DailyStat[];
 };
 
@@ -41,21 +40,13 @@ export default function DashboardPage() {
 
         (async () => {
             try {
-                const [counts, today, decks, recent] = await Promise.all([
-                    store.getGlobalCounts(),
-                    store.getTodayStat(),
+                const [decks, progress, today, recent] = await Promise.all([
                     store.listDecks(),
+                    store.listDeckProgress(),
+                    store.getTodayStat(),
                     store.getRecentStats(30),
                 ]);
-                if (!cancelled) {
-                    setData({
-                        due: counts.due,
-                        newCount: counts.newCount,
-                        today,
-                        decks,
-                        recent,
-                    });
-                }
+                if (!cancelled) setData({ decks, progress, today, recent });
             } catch (cause) {
                 if (!cancelled) {
                     setError(cause instanceof Error ? cause.message : "error");
@@ -69,14 +60,28 @@ export default function DashboardPage() {
     }, [store]);
 
     const name = profile?.displayName ?? "";
-    const dailyGoal = profile?.dailyGoal ?? 20;
-    const newPerDay = profile?.newPerDay ?? 10;
-
-    const availableNew = data
-        ? Math.min(data.newCount, Math.max(0, newPerDay - data.today.newCards))
-        : 0;
-    const queueSize = data ? data.due + availableNew : 0;
     const streak = data ? computeStreak(data.recent).current : 0;
+
+    const progressById = useMemo(
+        () => new Map((data?.progress ?? []).map((entry) => [entry.deckId, entry])),
+        [data],
+    );
+
+    const totals = useMemo(() => {
+        const list = data?.progress ?? [];
+        const total = list.reduce((sum, entry) => sum + entry.total, 0);
+        const known = list.reduce((sum, entry) => sum + entry.known, 0);
+        return { total, known, percent: total ? Math.round((known / total) * 100) : 0 };
+    }, [data]);
+
+    const nextDeck = useMemo(() => {
+        if (!data) return null;
+        return (
+            data.decks.find((deck) => (progressById.get(deck.id)?.percent ?? 0) < 100) ??
+            data.decks[0] ??
+            null
+        );
+    }, [data, progressById]);
 
     if (error) {
         return (
@@ -121,42 +126,34 @@ export default function DashboardPage() {
                             className="pointer-events-none absolute -right-16 -top-20 size-56 rounded-full bg-accent/10 blur-2xl"
                         />
                         <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-                            <div>
+                            <div className="min-w-0">
                                 <p className="text-xs font-semibold uppercase tracking-wide text-muted">
-                                    {t("dueToday")}
+                                    {t("cycleProgress")}
                                 </p>
                                 <div className="mt-1 flex items-end gap-3">
                                     <span className="text-5xl font-extrabold leading-none tracking-tight">
-                                        {data.due}
+                                        {totals.percent}%
                                     </span>
                                     <span className="mb-1 text-sm text-muted">
-                                        + {availableNew} {t("newToday").toLowerCase()}
+                                        {t("knownOf", { known: totals.known, total: totals.total })}
                                     </span>
                                 </div>
-                                <div className="mt-4 max-w-xs">
-                                    <div className="mb-1.5 flex justify-between text-[11px] font-semibold text-muted">
-                                        <span>{t("goal")}</span>
-                                        <span>
-                                            {data.today.reviews} / {dailyGoal}
-                                        </span>
-                                    </div>
+                                <div className="mt-4 max-w-sm">
                                     <Progress
-                                        value={Math.min(data.today.reviews, dailyGoal)}
-                                        max={dailyGoal}
-                                        label={t("goal")}
+                                        value={totals.known}
+                                        max={Math.max(1, totals.total)}
+                                        label={t("cycleProgress")}
                                     />
-                                    {data.today.reviews >= dailyGoal ? (
-                                        <p className="mt-1.5 text-[11px] font-semibold text-success">
-                                            {t("goalDone")}
-                                        </p>
-                                    ) : null}
+                                    <p className="mt-1.5 text-[11px] text-muted">
+                                        {t("resetHint")}
+                                    </p>
                                 </div>
                             </div>
 
                             <div className="shrink-0">
-                                {queueSize > 0 ? (
+                                {nextDeck ? (
                                     <Link
-                                        href="/study/all"
+                                        href={`/study/${nextDeck.id}`}
                                         className={buttonStyles({ size: "lg", className: "w-full sm:w-auto" })}
                                     >
                                         <Sparkles className="size-4" />
@@ -164,7 +161,7 @@ export default function DashboardPage() {
                                     </Link>
                                 ) : (
                                     <p className="max-w-[15rem] rounded-xl bg-surface-2 px-4 py-3 text-sm text-muted">
-                                        {t("allCaughtUp")}
+                                        {t("noDecks")}
                                     </p>
                                 )}
                             </div>
@@ -173,12 +170,12 @@ export default function DashboardPage() {
 
                     <section className="grid gap-4 sm:grid-cols-3">
                         <StatTile
-                            icon={<Layers className="size-4" />}
-                            label={t("newToday")}
-                            value={availableNew}
+                            icon={<Trophy className="size-4" />}
+                            label={t("knownToday")}
+                            value={data.today.known ?? data.today.next ?? 0}
                         />
                         <StatTile
-                            icon={<Target className="size-4" />}
+                            icon={<Layers className="size-4" />}
                             label={t("reviewsToday")}
                             value={data.today.reviews}
                         />
@@ -206,7 +203,11 @@ export default function DashboardPage() {
                         ) : (
                             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                                 {data.decks.slice(0, 6).map((deck) => (
-                                    <DeckCard key={deck.id} deck={deck} />
+                                    <DeckCard
+                                        key={deck.id}
+                                        deck={deck}
+                                        progress={progressById.get(deck.id)}
+                                    />
                                 ))}
                             </div>
                         )}

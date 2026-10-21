@@ -10,11 +10,13 @@ export function CardList({
     onEdit,
     onDelete,
     onToggleSuspend,
+    readOnly = false,
 }: {
     cards: Card[];
     onEdit: (card: Card) => void;
     onDelete: (card: Card) => void;
     onToggleSuspend: (card: Card) => void;
+    readOnly?: boolean;
 }) {
     const t = useTranslations("decks");
     const tc = useTranslations("common");
@@ -56,39 +58,41 @@ export function CardList({
                         ) : null}
                     </div>
 
-                    <div className="flex shrink-0 items-center gap-0.5 opacity-70 transition group-hover:opacity-100">
-                        <button
-                            type="button"
-                            onClick={() => onToggleSuspend(card)}
-                            title={card.suspended ? t("unsuspend") : t("suspend")}
-                            aria-label={card.suspended ? t("unsuspend") : t("suspend")}
-                            className="rounded-lg p-1.5 text-muted transition hover:bg-surface hover:text-fg"
-                        >
-                            {card.suspended ? (
-                                <Eye className="size-3.5" />
-                            ) : (
-                                <EyeOff className="size-3.5" />
-                            )}
-                        </button>
-                        <button
-                            type="button"
-                            onClick={() => onEdit(card)}
-                            title={t("editCard")}
-                            aria-label={t("editCard")}
-                            className="rounded-lg p-1.5 text-muted transition hover:bg-surface hover:text-fg"
-                        >
-                            <Pencil className="size-3.5" />
-                        </button>
-                        <button
-                            type="button"
-                            onClick={() => onDelete(card)}
-                            title={tc("delete")}
-                            aria-label={tc("delete")}
-                            className="rounded-lg p-1.5 text-muted transition hover:bg-surface hover:text-danger"
-                        >
-                            <Trash2 className="size-3.5" />
-                        </button>
-                    </div>
+                    {readOnly ? null : (
+                        <div className="flex shrink-0 items-center gap-0.5 opacity-70 transition group-hover:opacity-100">
+                            <button
+                                type="button"
+                                onClick={() => onToggleSuspend(card)}
+                                title={card.suspended ? t("unsuspend") : t("suspend")}
+                                aria-label={card.suspended ? t("unsuspend") : t("suspend")}
+                                className="rounded-lg p-1.5 text-muted transition hover:bg-surface hover:text-fg"
+                            >
+                                {card.suspended ? (
+                                    <Eye className="size-3.5" />
+                                ) : (
+                                    <EyeOff className="size-3.5" />
+                                )}
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => onEdit(card)}
+                                title={t("editCard")}
+                                aria-label={t("editCard")}
+                                className="rounded-lg p-1.5 text-muted transition hover:bg-surface hover:text-fg"
+                            >
+                                <Pencil className="size-3.5" />
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => onDelete(card)}
+                                title={tc("delete")}
+                                aria-label={tc("delete")}
+                                className="rounded-lg p-1.5 text-muted transition hover:bg-surface hover:text-danger"
+                            >
+                                <Trash2 className="size-3.5" />
+                            </button>
+                        </div>
+                    )}
                 </li>
             ))}
         </ul>

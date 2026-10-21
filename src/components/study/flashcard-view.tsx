@@ -1,31 +1,33 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { CornerDownRight } from "lucide-react";
-import type { Card, ReviewRating } from "@/types";
-import type { IntervalPreview } from "@/lib/srs/fsrs";
+import { CornerDownRight, Repeat2 } from "lucide-react";
+import type { Card } from "@/types";
 import { Badge } from "@/components/ui/badge";
-import { RatingBar } from "./rating-bar";
 import { TtsButton } from "./tts-button";
 
 export function FlashcardView({
     card,
     revealed,
     onReveal,
-    preview,
-    onRate,
+    onRepeat,
+    onNext,
     busy,
     voiceURI,
     rate,
+    repeatCount = 0,
+    cycle,
 }: {
     card: Card;
     revealed: boolean;
     onReveal: () => void;
-    preview: IntervalPreview;
-    onRate: (rating: ReviewRating) => void;
+    onRepeat: () => void;
+    onNext: () => void;
     busy: boolean;
     voiceURI?: string | null;
     rate?: number;
+    repeatCount?: number;
+    cycle?: number;
 }) {
     const t = useTranslations("study");
 
@@ -47,8 +49,13 @@ export function FlashcardView({
                 aria-label={revealed ? card.front : t("tapToReveal")}
             >
                 <div className="flex items-center gap-2">
-                    {card.isNew ? <Badge tone="accent">new</Badge> : null}
+                    {repeatCount > 0 ? (
+                        <Badge tone="warning">
+                            <Repeat2 className="size-3" /> {repeatCount}
+                        </Badge>
+                    ) : null}
                     <Badge tone="neutral">{card.level}</Badge>
+                    {cycle ? <Badge tone="accent">{t("cycleBadge", { cycle })}</Badge> : null}
                 </div>
 
                 <div className="mt-6 flex items-center gap-2">
@@ -91,13 +98,40 @@ export function FlashcardView({
                     </div>
                 ) : (
                     <p className="mt-8 text-xs font-medium text-muted">
-                        {t("tapToReveal")} · <kbd className="rounded bg-surface-2 px-1.5 py-0.5">Space</kbd>
+                        {t("tapToReveal")} ·{" "}
+                        <kbd className="rounded bg-surface-2 px-1.5 py-0.5">Space</kbd>
                     </p>
                 )}
             </div>
 
             {revealed ? (
-                <RatingBar preview={preview} onRate={onRate} disabled={busy} />
+                <div className="grid gap-2 sm:grid-cols-2">
+                    <button
+                        type="button"
+                        onClick={onRepeat}
+                        disabled={busy}
+                        className="flex flex-col items-start gap-0.5 rounded-xl border border-warning/40 bg-warning/10 px-4 py-3 text-left transition hover:bg-warning/15 disabled:opacity-50"
+                    >
+                        <span className="flex items-center gap-1.5 text-sm font-bold text-warning">
+                            <Repeat2 className="size-4" />
+                            {t("actionRepeat")}
+                            <kbd className="ml-1 rounded bg-surface px-1 text-[10px] text-muted">1</kbd>
+                        </span>
+                        <span className="text-[11px] text-muted">{t("actionRepeatHint")}</span>
+                    </button>
+                    <button
+                        type="button"
+                        onClick={onNext}
+                        disabled={busy}
+                        className="flex flex-col items-start gap-0.5 rounded-xl border border-success/40 bg-success/10 px-4 py-3 text-left transition hover:bg-success/15 disabled:opacity-50"
+                    >
+                        <span className="flex items-center gap-1.5 text-sm font-bold text-success">
+                            {t("actionNext")}
+                            <kbd className="ml-1 rounded bg-surface px-1 text-[10px] text-muted">2</kbd>
+                        </span>
+                        <span className="text-[11px] text-muted">{t("actionNextHint")}</span>
+                    </button>
+                </div>
             ) : (
                 <button
                     type="button"

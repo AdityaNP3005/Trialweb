@@ -12,6 +12,8 @@ import { useLocale } from "next-intl";
 import type { Profile } from "@/types";
 import { useAuth } from "@/components/providers/auth-provider";
 import { listDecks } from "@/lib/data/decks";
+import { fetchProfile } from "@/lib/data/profile";
+import { migrateLegacyEngine } from "@/lib/data/migrate-legacy";
 import { CloudStore } from "@/lib/store/cloud-store";
 import { GuestStore } from "@/lib/store/local-store";
 import { migrateGuestData } from "@/lib/store/migrate";
@@ -50,6 +52,8 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
                 if (user) {
                     const decks = await listDecks(user.uid).catch(() => []);
                     await migrateGuestData(user.uid, decks.length).catch(() => false);
+                    const storedProfile = await fetchProfile(user.uid).catch(() => null);
+                    await migrateLegacyEngine(user.uid, storedProfile).catch(() => false);
                 }
             } catch {
                 // Migration is best-effort.

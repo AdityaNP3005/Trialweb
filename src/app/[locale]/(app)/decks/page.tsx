@@ -4,7 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import { Filter, Plus } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useStore } from "@/components/providers/store-provider";
-import type { CefrLevel, Deck } from "@/types";
+import type { CefrLevel, Deck, DeckProgress } from "@/types";
+import { CEFR_LEVELS } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
 import { Input, Label, Select, Textarea } from "@/components/ui/field";
@@ -12,7 +13,7 @@ import { EmptyState } from "@/components/ui/empty-state";
 import { Skeleton } from "@/components/ui/progress";
 import { DeckCard } from "@/components/decks/deck-card";
 
-const levels: (CefrLevel | "all")[] = ["all", "A1", "A2", "B1"];
+const levels: (CefrLevel | "all")[] = ["all", ...CEFR_LEVELS];
 
 export default function DecksPage() {
     const { store } = useStore();
@@ -20,9 +21,10 @@ export default function DecksPage() {
     const tc = useTranslations("common");
 
     const [decks, setDecks] = useState<Deck[] | null>(null);
+    const [progress, setProgress] = useState<Record<string, DeckProgress>>({});
     const [level, setLevel] = useState<CefrLevel | "all">("all");
     const [tag, setTag] = useState("all");
-    const [source, setSource] = useState<"all" | "seed" | "user">("all");
+    const [source, setSource] = useState<"all" | "content" | "user">("all");
     const [dialogOpen, setDialogOpen] = useState(false);
     const [saving, setSaving] = useState(false);
     const [error, setError] = useState<string | null>(null);
@@ -32,7 +34,6 @@ export default function DecksPage() {
         description: "",
         level: "A1" as CefrLevel,
         tags: "",
-        newPerDay: 10,
     });
 
     useEffect(() => {
@@ -40,8 +41,16 @@ export default function DecksPage() {
         let cancelled = false;
         (async () => {
             try {
-                const next = await store.listDecks();
-                if (!cancelled) setDecks(next);
+                const [next, nextProgress] = await Promise.all([
+                    store.listDecks(),
+                    store.listDeckProgress(),
+                ]);
+                if (!cancelled) {
+                    setDecks(next);
+                    setProgress(
+                        Object.fromEntries(nextProgress.map((entry) => [entry.deckId, entry])),
+                    );
+                }
             } catch (cause) {
                 if (!cancelled) setError(cause instanceof Error ? cause.message : "error");
             }
@@ -80,11 +89,10 @@ export default function DecksPage() {
                     .split(",")
                     .map((entry) => entry.trim())
                     .filter(Boolean),
-                newPerDay: form.newPerDay,
             });
             setDecks(await store.listDecks());
             setDialogOpen(false);
-            setForm({ name: "", description: "", level: "A1", tags: "", newPerDay: 10 });
+            setForm({ name: "", description: "", level: "A1", tags: "" });
         } catch (cause) {
             setError(cause instanceof Error ? cause.message : "error");
         } finally {
@@ -117,8 +125,8 @@ export default function DecksPage() {
                             type="button"
                             onClick={() => setLevel(entry)}
                             className={`rounded-lg px-2.5 py-1 text-xs font-semibold transition ${level === entry
-                                    ? "bg-accent text-accent-fg"
-                                    : "bg-surface-2 text-muted hover:text-fg"
+                                ? "bg-accent text-accent-fg"
+                                : "bg-surface-2 text-muted hover:text-fg"
                                 }`}
                         >
                             {entry === "all" ? tc("all") : entry}
@@ -146,12 +154,12 @@ export default function DecksPage() {
                         aria-label={t("filterSource")}
                         value={source}
                         onChange={(event) =>
-                            setSource(event.target.value as "all" | "seed" | "user")
+                            setSource(event.target.value as "all" | "content" | "user")
                         }
                         className="h-9 w-auto py-0 text-xs"
                     >
                         <option value="all">{tc("all")}</option>
-                        <option value="seed">seed</option>
+                        <option value="content">content</option>
                         <option value="user">user</option>
                     </Select>
                 </div>
@@ -181,7 +189,7 @@ export default function DecksPage() {
             ) : (
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                     {filtered.map((deck) => (
-                        <DeckCard key={deck.id} deck={deck} />
+                        <DeckCard key={deck.id} deck={deck} progress={progress[deck.id]} />
                     ))}
                 </div>
             )}
@@ -233,23 +241,12 @@ export default function DecksPage() {
                                     setForm({ ...form, level: event.target.value as CefrLevel })
                                 }
                             >
-                                <option value="A1">A1</option>
-                                <option value="A2">A2</option>
-                                <option value="B1">B1</option>
+                                {CEFR_LEVELS.map((entry) => (
+                                    <option key={entry} value={entry}>
+                                        {entry}
+                                    </option>
+                                ))}
                             </Select>
-                        </div>
-                        <div>
-                            <Label htmlFor="deck-new">New / day</Label>
-                            <Input
-                                id="deck-new"
-                                type="number"
-                                min={0}
-                                max={200}
-                                value={form.newPerDay}
-                                onChange={(event) =>
-                                    setForm({ ...form, newPerDay: Number(event.target.value) })
-                                }
-                            />
                         </div>
                     </div>
                     <div>

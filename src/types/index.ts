@@ -1,4 +1,13 @@
-export type CefrLevel = "A1" | "A2" | "B1";
+export type CefrLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
+
+export const CEFR_LEVELS: readonly CefrLevel[] = [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "C1",
+    "C2",
+];
 
 export type WordType =
     | "noun"
@@ -12,24 +21,6 @@ export type WordType =
 export type Gender = "der" | "die" | "das";
 
 export type CardSource = "seed" | "user" | "ai" | "import";
-
-/**
- * Serialisable snapshot of an FSRS card. `state` is the numeric value of
- * ts-fsrs' `State` enum, kept as a number so it survives Firestore round-trips.
- */
-export type SrsState = {
-    state: number;
-    dueMs: number;
-    stability: number;
-    difficulty: number;
-    elapsedDays: number;
-    scheduledDays: number;
-    /** Position inside the learning steps (ts-fsrs 5.x). Optional for old docs. */
-    learningSteps?: number;
-    reps: number;
-    lapses: number;
-    lastReviewMs: number | null;
-};
 
 export type Card = {
     id: string;
@@ -49,23 +40,18 @@ export type Card = {
     level: CefrLevel;
     source: CardSource;
     suspended: boolean;
-    /** Denormalised for querying: `srs.state === State.New`. */
-    isNew: boolean;
-    /** Denormalised for querying: mirrors `srs.dueMs`. */
-    dueMs: number;
-    srs: SrsState;
     createdAt: number;
     updatedAt: number;
 };
 
 export type CardInput = Omit<
     Card,
-    "id" | "createdAt" | "updatedAt" | "isNew" | "dueMs" | "srs" | "suspended"
+    "id" | "createdAt" | "updatedAt" | "suspended"
 > & {
     suspended?: boolean;
 };
 
-export type DeckSource = "seed" | "user";
+export type DeckSource = "content" | "user";
 
 export type Deck = {
     id: string;
@@ -75,9 +61,10 @@ export type Deck = {
     level: CefrLevel;
     tags: string[];
     cardCount: number;
-    newPerDay: number;
     source: DeckSource;
     isDefault: boolean;
+    /** Content decks are bundled; user decks live in the account store. */
+    readOnly: boolean;
     createdAt: number;
     updatedAt: number;
 };
@@ -87,41 +74,96 @@ export type DeckInput = {
     description: string;
     level: CefrLevel;
     tags: string[];
-    newPerDay: number;
 };
 
-export type ReviewRating = 1 | 2 | 3 | 4;
+/** Binary answer for every card in the new study flow. */
+export type StudyAction = "repeat" | "next";
 export type StudyMode = "flashcard" | "quiz";
 
-export type ReviewLogEntry = {
+/**
+ * Per-card state for one account. One document per card that was ever shown,
+ * so the collection stays proportional to progress instead of deck size.
+ */
+export type CardProgress = {
     cardId: string;
     deckId: string;
     courseId: string;
-    rating: ReviewRating;
+    /** Cycle in which this card was last handled. */
+    cycle: number;
+    /** `true` when the card was answered with "next" in the current cycle. */
+    known: boolean;
+    repeatsInCycle: number;
+    totalRepeats: number;
+    /** How many times the card has ever been marked as known. */
+    knownCount: number;
+    lastSeenAt: number;
+    lastActionAt: number;
+};
+
+/**
+ * Cursor for one deck: which cards were already introduced in the running
+ * cycle, plus cards that still need another pass ("repeat" without "next").
+ */
+export type DeckCycle = {
+    deckId: string;
+    cycle: number;
+    cursor: number;
+    knownInCycle: number;
+    pendingCardIds: string[];
+    startedAt: number;
+    completedAt: number | null;
+    lastActivityAt: number;
+};
+
+export type LevelSetting = {
+    /** How many cards one session takes from this level's deck. */
+    sessionSize: number;
+    shuffle: boolean;
+};
+
+export type BandSettings = Record<CefrLevel, LevelSetting>;
+
+export type DeckProgress = {
+    deckId: string;
+    level: CefrLevel;
+    cycle: number;
+    known: number;
+    total: number;
+    pending: number;
+    percent: number;
+    lastActivityAt: number | null;
+};
+
+export type StudyLogEntry = {
+    cardId: string;
+    deckId: string;
+    courseId: string;
+    action: StudyAction;
     mode: StudyMode;
     correct: boolean;
     durationMs: number;
-    reviewMs: number;
-    stateBefore: number;
-    stateAfter: number;
-    dueMs: number;
-    stability: number;
-    difficulty: number;
-    elapsedDays: number;
-    scheduledDays: number;
+    cycle: number;
+    createdAt: number;
 };
 
 export type DailyStat = {
     date: string;
+    /** Every answered card (repeat + next). */
     reviews: number;
-    again: number;
-    hard: number;
-    good: number;
-    easy: number;
-    newCards: number;
+    next: number;
+    repeat: number;
+    /** Cards that became known during the day. */
+    known: number;
     studyMs: number;
     quizCorrect: number;
     quizTotal: number;
+    /** Legacy FSRS counters kept so old documents still parse. */
+    again?: number;
+    hard?: number;
+    good?: number;
+    easy?: number;
+    newCards?: number;
+    updatedAt?: number;
 };
 
 export type Profile = {
@@ -129,17 +171,21 @@ export type Profile = {
     email: string | null;
     uiLocale: "id" | "en";
     activeCourseId: string;
-    dailyGoal: number;
-    newPerDay: number;
+    bands: BandSettings;
     ttsVoiceURI: string | null;
     ttsRate: number;
     onboardingComplete: boolean;
+    /** Set once the FSRS → cycle migration has run for this account. */
+    engineV2?: boolean;
+    /** Legacy fields, kept optional so old documents still load. */
+    dailyGoal?: number;
+    newPerDay?: number;
     createdAt: number;
     updatedAt: number;
 };
 
 export type DeckCounts = {
-    due: number;
-    new: number;
     total: number;
+    known: number;
+    pending: number;
 };

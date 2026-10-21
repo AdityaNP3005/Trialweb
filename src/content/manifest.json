@@ -1,0 +1,83 @@
+{
+  "courseId": "de",
+  "decks": [
+    {
+      "id": "de-a1-core",
+      "file": "a1-core.json",
+      "level": "A1",
+      "name": "Deutsch A1 · Kosakata Inti",
+      "description": "Kata-kata Jerman level A1 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
+      "tags": [
+        "a1",
+        "kosakata",
+        "inti"
+      ],
+      "cardCount": 600
+    },
+    {
+      "id": "de-a2-core",
+      "file": "a2-core.json",
+      "level": "A2",
+      "name": "Deutsch A2 · Kosakata Inti",
+      "description": "Kata-kata Jerman level A2 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
+      "tags": [
+        "a2",
+        "kosakata",
+        "inti"
+      ],
+      "cardCount": 1200
+    },
+    {
+      "id": "de-b1-core",
+      "file": "b1-core.json",
+      "level": "B1",
+      "name": "Deutsch B1 · Kosakata Inti",
+      "description": "Kata-kata Jerman level B1 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
+      "tags": [
+        "b1",
+        "kosakata",
+        "inti"
+      ],
+      "cardCount": 1800
+    },
+    {
+      "id": "de-b2-core",
+      "file": "b2-core.json",
+      "level": "B2",
+      "name": "Deutsch B2 · Kosakata Inti",
+      "description": "Kata-kata Jerman level B2 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
+      "tags": [
+        "b2",
+        "kosakata",
+        "inti"
+      ],
+      "cardCount": 2000
+    },
+    {
+      "id": "de-c1-core",
+      "file": "c1-core.json",
+      "level": "C1",
+      "name": "Deutsch C1 · Kosakata Inti",
+      "description": "Kata-kata Jerman level C1 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
+      "tags": [
+        "c1",
+        "kosakata",
+        "inti"
+      ],
+      "cardCount": 2400
+    },
+    {
+      "id": "de-c2-core",
+      "file": "c2-core.json",
+      "level": "C2",
+      "name": "Deutsch C2 · Kosakata Inti",
+      "description": "Kata-kata Jerman level C2 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
+      "tags": [
+        "c2",
+        "kosakata",
+        "inti"
+      ],
+      "cardCount": 2200
+    }
+  ]
+}

@@ -1,7 +1,6 @@
 import {
     addDoc,
     deleteDoc,
-    getCountFromServer,
     getDoc,
     getDocs,
     orderBy,
@@ -10,29 +9,41 @@ import {
     where,
     writeBatch,
 } from "firebase/firestore";
-import type { Deck, DeckCounts, DeckInput } from "@/types";
+import type { Deck, DeckInput } from "@/types";
 import { deckInputSchema } from "@/lib/validation/schemas";
 import {
     cardsColRef,
+    deckCycleDocRef,
     deckDocRef,
     decksColRef,
+    progressColRef,
 } from "@/lib/firebase/paths";
 import { getDb } from "@/lib/firebase/client";
 
+/** User decks only; bundled content decks are merged in the store layer. */
 export async function listDecks(uid: string): Promise<Deck[]> {
     const snapshot = await getDocs(
         query(decksColRef(uid), orderBy("createdAt", "asc")),
     );
-    return snapshot.docs.map((entry) => ({
-        ...(entry.data() as Omit<Deck, "id">),
-        id: entry.id,
-    }));
+    return snapshot.docs
+        .map((entry) => ({
+            ...(entry.data() as Omit<Deck, "id">),
+            id: entry.id,
+            source: (entry.data().source === "user" ? "user" : "content") as Deck["source"],
+            readOnly: false,
+        }))
+        .filter((deck) => deck.source === "user");
 }
 
 export async function fetchDeck(uid: string, deckId: string): Promise<Deck | null> {
     const snapshot = await getDoc(deckDocRef(uid, deckId));
     if (!snapshot.exists()) return null;
-    return { ...(snapshot.data() as Omit<Deck, "id">), id: snapshot.id };
+    return {
+        ...(snapshot.data() as Omit<Deck, "id">),
+        id: snapshot.id,
+        source: "user",
+        readOnly: false,
+    };
 }
 
 export async function createDeck(
@@ -49,9 +60,9 @@ export async function createDeck(
         level: input.level,
         tags: input.tags,
         cardCount: 0,
-        newPerDay: input.newPerDay,
         source: "user",
         isDefault: false,
+        readOnly: false,
         createdAt: now,
         updatedAt: now,
     });
@@ -68,11 +79,12 @@ export async function updateDeck(
 }
 
 export async function deleteDeck(uid: string, deckId: string) {
-    const cards = await getDocs(
-        query(cardsColRef(uid), where("deckId", "==", deckId), orderBy("createdAt")),
-    );
+    const [cards, progress] = await Promise.all([
+        getDocs(query(cardsColRef(uid), where("deckId", "==", deckId))),
+        getDocs(query(progressColRef(uid), where("deckId", "==", deckId))),
+    ]);
 
-    const refs = cards.docs.map((entry) => entry.ref);
+    const refs = [...cards.docs.map((entry) => entry.ref), ...progress.docs.map((entry) => entry.ref)];
     for (let index = 0; index < refs.length; index += 400) {
         const batch = writeBatch(getDb());
         for (const ref of refs.slice(index, index + 400)) {
@@ -81,70 +93,6 @@ export async function deleteDeck(uid: string, deckId: string) {
         await batch.commit();
     }
 
+    await deleteDoc(deckCycleDocRef(uid, deckId));
     await deleteDoc(deckDocRef(uid, deckId));
-}
-
-export async function fetchDeckCounts(
-    uid: string,
-    deckId: string,
-): Promise<DeckCounts> {
-    const now = Date.now();
-    const [total, due, fresh] = await Promise.all([
-        getCountFromServer(query(cardsColRef(uid), where("deckId", "==", deckId))),
-        getCountFromServer(
-            query(
-                cardsColRef(uid),
-                where("deckId", "==", deckId),
-                where("isNew", "==", false),
-                where("dueMs", "<=", now),
-            ),
-        ),
-        getCountFromServer(
-            query(
-                cardsColRef(uid),
-                where("deckId", "==", deckId),
-                where("isNew", "==", true),
-            ),
-        ),
-    ]);
-
-    return {
-        total: total.data().count,
-        due: due.data().count,
-        new: fresh.data().count,
-    };
-}
-
-export async function fetchGlobalCounts(
-    uid: string,
-): Promise<Omit<DeckCounts, "total">> {
-    const now = Date.now();
-
-    const [due, fresh] = await Promise.all([
-        getCountFromServer(
-            query(
-                cardsColRef(uid),
-                where("isNew", "==", false),
-                where("dueMs", "<=", now),
-            ),
-        ),
-        getCountFromServer(
-            query(cardsColRef(uid), where("isNew", "==", true)),
-        ),
-    ]);
-
-    return { due: due.data().count, new: fresh.data().count };
-}
-
-export async function fetchCardTotals(
-    uid: string,
-): Promise<{ total: number; studied: number }> {
-    const [total, studied] = await Promise.all([
-        getCountFromServer(query(cardsColRef(uid))),
-        getCountFromServer(
-            query(cardsColRef(uid), where("isNew", "==", false)),
-        ),
-    ]);
-
-    return { total: total.data().count, studied: studied.data().count };
 }

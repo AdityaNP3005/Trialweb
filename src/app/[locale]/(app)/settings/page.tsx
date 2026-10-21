@@ -16,12 +16,19 @@ import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { routing, type AppLocale } from "@/i18n/routing";
-import type { Card, Deck } from "@/types";
+import type { BandSettings, Card, Deck } from "@/types";
+import { CEFR_LEVELS } from "@/types";
 import { useAuth } from "@/components/providers/auth-provider";
 import { useStore } from "@/components/providers/store-provider";
 import { useTheme, type Theme } from "@/components/providers/theme-provider";
 import { useSpeech } from "@/hooks/use-speech";
 import { cardsToCsv } from "@/lib/import/csv";
+import {
+    defaultBands,
+    MAX_SESSION_SIZE,
+    MIN_SESSION_SIZE,
+    normalizeBands,
+} from "@/lib/study/progress";
 import { downloadFile, todayStamp } from "@/lib/utils/download";
 import { Button, buttonStyles } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
@@ -49,8 +56,7 @@ export default function SettingsPage() {
     const pathname = usePathname();
     const params = useParams<{ locale: string }>();
 
-    const [dailyGoal, setDailyGoal] = useState(20);
-    const [newPerDay, setNewPerDay] = useState(10);
+    const [bands, setBands] = useState<BandSettings>(defaultBands());
     const [ttsVoiceURI, setTtsVoiceURI] = useState("");
     const [ttsRate, setTtsRate] = useState(1);
     const [saving, setSaving] = useState(false);
@@ -61,8 +67,7 @@ export default function SettingsPage() {
 
     useEffect(() => {
         if (!profile) return;
-        setDailyGoal(profile.dailyGoal);
-        setNewPerDay(profile.newPerDay);
+        setBands(normalizeBands(profile.bands));
         setTtsVoiceURI(profile.ttsVoiceURI ?? "");
         setTtsRate(profile.ttsRate);
     }, [profile]);
@@ -85,8 +90,7 @@ export default function SettingsPage() {
         setError(null);
         try {
             await store.updateProfile({
-                dailyGoal,
-                newPerDay,
+                bands,
                 ttsRate,
                 ttsVoiceURI: ttsVoiceURI || null,
             });
@@ -154,7 +158,8 @@ export default function SettingsPage() {
         try {
             const decks = await store.listDecks();
             for (const deck of decks) {
-                await store.deleteDeck(deck.id);
+                if (deck.readOnly) await store.resetDeckCycle(deck.id);
+                else await store.deleteDeck(deck.id);
             }
             setConfirmWipe(false);
             router.replace("/dashboard");
@@ -216,31 +221,54 @@ export default function SettingsPage() {
             </section>
 
             <section className="surface-card p-5">
-                <h2 className="mb-3 text-sm font-bold">{t("learning")}</h2>
-                <div className="grid gap-4 sm:grid-cols-2">
-                    <div>
-                        <Label htmlFor="daily-goal">{t("dailyGoal")}</Label>
-                        <Input
-                            id="daily-goal"
-                            type="number"
-                            min={1}
-                            max={500}
-                            value={dailyGoal}
-                            onChange={(event) => setDailyGoal(Number(event.target.value))}
-                        />
-                    </div>
-                    <div>
-                        <Label htmlFor="new-per-day">{t("newPerDay")}</Label>
-                        <Input
-                            id="new-per-day"
-                            type="number"
-                            min={0}
-                            max={200}
-                            value={newPerDay}
-                            onChange={(event) => setNewPerDay(Number(event.target.value))}
-                        />
-                    </div>
+                <h2 className="mb-1 text-sm font-bold">{t("learning")}</h2>
+                <p className="mb-4 text-xs text-muted">{t("bandsHint")}</p>
+                <div className="grid gap-3 sm:grid-cols-2">
+                    {CEFR_LEVELS.map((level) => (
+                        <div
+                            key={level}
+                            className="rounded-xl border border-border bg-surface-2/60 p-3"
+                        >
+                            <div className="flex items-center justify-between gap-3">
+                                <Label htmlFor={`band-${level}`} className="mb-0">
+                                    {t("bandLabel", { level })}
+                                </Label>
+                                <Input
+                                    id={`band-${level}`}
+                                    type="number"
+                                    min={MIN_SESSION_SIZE}
+                                    max={MAX_SESSION_SIZE}
+                                    className="h-9 w-20 py-0 text-center text-xs"
+                                    value={bands[level].sessionSize}
+                                    onChange={(event) =>
+                                        setBands((value) => ({
+                                            ...value,
+                                            [level]: {
+                                                ...value[level],
+                                                sessionSize: Number(event.target.value),
+                                            },
+                                        }))
+                                    }
+                                />
+                            </div>
+                            <label className="mt-2 flex items-center gap-2 text-[11px] text-muted">
+                                <input
+                                    type="checkbox"
+                                    checked={bands[level].shuffle}
+                                    onChange={(event) =>
+                                        setBands((value) => ({
+                                            ...value,
+                                            [level]: { ...value[level], shuffle: event.target.checked },
+                                        }))
+                                    }
+                                    className="accent-[var(--accent)]"
+                                />
+                                {t("bandShuffle")}
+                            </label>
+                        </div>
+                    ))}
                 </div>
+                <p className="mt-3 text-[11px] text-muted">{t("bandsResetHint")}</p>
             </section>
 
             <section className="surface-card p-5">

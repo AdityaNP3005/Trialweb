@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import {
     ArrowLeft,
     Plus,
+    RotateCcw,
     Search,
     Sparkles,
     Trash2,
@@ -12,7 +13,7 @@ import {
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
-import type { Card, Deck, DeckCounts } from "@/types";
+import type { Card, Deck, DeckProgress } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonStyles } from "@/components/ui/button";
@@ -35,7 +36,7 @@ export default function DeckDetailPage() {
 
     const [deck, setDeck] = useState<Deck | null>(null);
     const [cards, setCards] = useState<Card[] | null>(null);
-    const [counts, setCounts] = useState<DeckCounts | null>(null);
+    const [counts, setCounts] = useState<DeckProgress | null>(null);
     const [search, setSearch] = useState("");
     const [selected, setSelected] = useState<Card | null>(null);
     const [formOpen, setFormOpen] = useState(false);
@@ -50,7 +51,7 @@ export default function DeckDetailPage() {
             const [nextDeck, nextCards, nextCounts] = await Promise.all([
                 store.getDeck(deckId),
                 store.listCards(deckId),
-                store.getDeckCounts(deckId),
+                store.getDeckProgress(deckId),
             ]);
             setDeck(nextDeck);
             setCards(nextCards);
@@ -136,16 +137,28 @@ export default function DeckDetailPage() {
                             <div className="flex flex-wrap items-center gap-2">
                                 <h1 className="text-xl font-extrabold tracking-tight">{deck.name}</h1>
                                 <Badge tone="accent">{deck.level}</Badge>
-                                {deck.source === "seed" ? <Badge tone="neutral">seed</Badge> : null}
+                                {deck.readOnly ? <Badge tone="neutral">content</Badge> : null}
                             </div>
                             {deck.description ? (
                                 <p className="mt-1 text-sm text-muted">{deck.description}</p>
                             ) : null}
                             <p className="mt-2 text-xs text-muted">
                                 {t("cardCount", { count: deck.cardCount })} ·{" "}
-                                {t("due", { count: counts?.due ?? 0 })} ·{" "}
-                                {t("new", { count: counts?.new ?? 0 })}
+                                {t("cycleLabel", { cycle: counts?.cycle ?? 1 })} ·{" "}
+                                {t("knownProgress", {
+                                    known: counts?.known ?? 0,
+                                    total: deck.cardCount,
+                                })}
+                                {counts?.pending ? (
+                                    <> · {t("pendingCount", { count: counts.pending })}</>
+                                ) : null}
                             </p>
+                            <div className="mt-3 h-1.5 w-full max-w-xs overflow-hidden rounded-full bg-surface-2">
+                                <div
+                                    className="h-full rounded-full bg-accent transition-all"
+                                    style={{ width: `${counts?.percent ?? 0}%` }}
+                                />
+                            </div>
                         </div>
 
                         <div className="flex flex-wrap items-center gap-2">
@@ -156,11 +169,25 @@ export default function DeckDetailPage() {
                             <Button
                                 variant="ghost"
                                 size="sm"
-                                onClick={() => setConfirmDelete(true)}
-                                aria-label={t("deleteDeck")}
+                                onClick={() => {
+                                    if (!window.confirm(t("resetCycleBody"))) return;
+                                    void store?.resetDeckCycle(deck.id).then(load);
+                                }}
+                                aria-label={t("resetCycle")}
+                                title={t("resetCycle")}
                             >
-                                <Trash2 className="size-3.5 text-danger" />
+                                <RotateCcw className="size-3.5" />
                             </Button>
+                            {deck.readOnly ? null : (
+                                <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    onClick={() => setConfirmDelete(true)}
+                                    aria-label={t("deleteDeck")}
+                                >
+                                    <Trash2 className="size-3.5 text-danger" />
+                                </Button>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -182,15 +209,26 @@ export default function DeckDetailPage() {
                         setSelected(null);
                         setFormOpen(true);
                     }}
+                    disabled={deck.readOnly}
                 >
                     <Plus className="size-3.5" />
                     {t("addCard")}
                 </Button>
-                <Button variant="secondary" size="sm" onClick={() => setImportOpen(true)}>
+                <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={() => setImportOpen(true)}
+                    disabled={deck.readOnly}
+                >
                     <Upload className="size-3.5" />
                     CSV
                 </Button>
-                <Button variant="secondary" size="sm" onClick={() => setAiOpen(true)}>
+                <Button
+                    variant="secondary"
+                    size="sm"
+                    onClick={() => setAiOpen(true)}
+                    disabled={deck.readOnly}
+                >
                     <Sparkles className="size-3.5" />
                     AI
                 </Button>
@@ -220,6 +258,7 @@ export default function DeckDetailPage() {
             ) : (
                 <CardList
                     cards={filtered}
+                    readOnly={deck.readOnly}
                     onEdit={(card) => {
                         setSelected(card);
                         setFormOpen(true);

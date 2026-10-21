@@ -9,71 +9,17 @@
                     "order": "ASCENDING"
                 },
                 {
-                    "fieldPath": "isNew",
-                    "order": "ASCENDING"
-                },
-                {
-                    "fieldPath": "dueMs",
+                    "fieldPath": "createdAt",
                     "order": "ASCENDING"
                 }
             ]
         },
         {
-            "collectionGroup": "cards",
+            "collectionGroup": "progress",
             "queryScope": "COLLECTION",
             "fields": [
                 {
                     "fieldPath": "deckId",
-                    "order": "ASCENDING"
-                },
-                {
-                    "fieldPath": "isNew",
-                    "order": "ASCENDING"
-                },
-                {
-                    "fieldPath": "createdAt",
-                    "order": "ASCENDING"
-                }
-            ]
-        },
-        {
-            "collectionGroup": "cards",
-            "queryScope": "COLLECTION",
-            "fields": [
-                {
-                    "fieldPath": "deckId",
-                    "order": "ASCENDING"
-                },
-                {
-                    "fieldPath": "createdAt",
-                    "order": "ASCENDING"
-                }
-            ]
-        },
-        {
-            "collectionGroup": "cards",
-            "queryScope": "COLLECTION",
-            "fields": [
-                {
-                    "fieldPath": "isNew",
-                    "order": "ASCENDING"
-                },
-                {
-                    "fieldPath": "dueMs",
-                    "order": "ASCENDING"
-                }
-            ]
-        },
-        {
-            "collectionGroup": "cards",
-            "queryScope": "COLLECTION",
-            "fields": [
-                {
-                    "fieldPath": "isNew",
-                    "order": "ASCENDING"
-                },
-                {
-                    "fieldPath": "createdAt",
                     "order": "ASCENDING"
                 }
             ]
@@ -87,7 +33,7 @@
                     "order": "ASCENDING"
                 },
                 {
-                    "fieldPath": "reviewMs",
+                    "fieldPath": "createdAt",
                     "order": "DESCENDING"
                 }
             ]

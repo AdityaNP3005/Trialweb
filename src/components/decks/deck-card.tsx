@@ -1,18 +1,20 @@
 "use client";
 
-import { ArrowRight, BookOpen } from "lucide-react";
+import { ArrowRight, BookOpen, Lock } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import type { Deck } from "@/types";
+import type { Deck, DeckProgress } from "@/types";
 import { Badge } from "@/components/ui/badge";
 
-const sourceTone = {
-    seed: "accent",
-    user: "neutral",
-} as const;
-
-export function DeckCard({ deck }: { deck: Deck }) {
+export function DeckCard({
+    deck,
+    progress,
+}: {
+    deck: Deck;
+    progress?: DeckProgress;
+}) {
     const t = useTranslations("decks");
+    const percent = progress?.percent ?? 0;
 
     return (
         <Link
@@ -31,7 +33,27 @@ export function DeckCard({ deck }: { deck: Deck }) {
                         </p>
                     </div>
                 </div>
-                <Badge tone={sourceTone[deck.source]}>{deck.level}</Badge>
+                <div className="flex flex-col items-end gap-1">
+                    <Badge tone="accent">{deck.level}</Badge>
+                    {deck.readOnly ? (
+                        <Lock className="size-3 text-muted" aria-label="read-only" />
+                    ) : null}
+                </div>
+            </div>
+
+            <div>
+                <div className="mb-1 flex justify-between text-[10px] font-semibold uppercase tracking-wide text-muted">
+                    <span>{t("cycleLabel", { cycle: progress?.cycle ?? 1 })}</span>
+                    <span>
+                        {progress?.known ?? 0}/{deck.cardCount}
+                    </span>
+                </div>
+                <div className="h-1.5 w-full overflow-hidden rounded-full bg-surface-2">
+                    <div
+                        className="h-full rounded-full bg-accent transition-all"
+                        style={{ width: `${percent}%` }}
+                    />
+                </div>
             </div>
 
             {deck.description ? (

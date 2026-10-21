@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const cefrLevels = ["A1", "A2", "B1"] as const;
+export const cefrLevels = ["A1", "A2", "B1", "B2", "C1", "C2"] as const;
 export const wordTypes = [
     "noun",
     "verb",
@@ -41,14 +41,11 @@ export const deckInputSchema = z.object({
     description: trimmed(240).default(""),
     level: z.enum(cefrLevels).default("A1"),
     tags: z.array(trimmed(40)).max(12).default([]),
-    newPerDay: z.number().int().min(0).max(200).default(10),
 });
 
-export const settingsSchema = z.object({
-    dailyGoal: z.number().int().min(1).max(500),
-    newPerDay: z.number().int().min(0).max(200),
-    ttsRate: z.number().min(0.5).max(2),
-    ttsVoiceURI: z.string().nullable(),
+export const bandSettingSchema = z.object({
+    sessionSize: z.number().int().min(5).max(100),
+    shuffle: z.boolean().default(false),
 });
 
 /** Shape returned by the AI route after validation. */

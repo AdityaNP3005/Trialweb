@@ -1,20 +1,18 @@
 import {
     addDoc,
-    doc,
     getDocs,
     increment,
-    limit,
     orderBy,
     query,
     updateDoc,
     where,
     writeBatch,
+    doc,
 } from "firebase/firestore";
 import type { Card, CardInput } from "@/types";
 import { cardInputSchema } from "@/lib/validation/schemas";
 import { cardDocRef, cardsColRef, deckDocRef } from "@/lib/firebase/paths";
 import { getDb } from "@/lib/firebase/client";
-import { newSrsState } from "@/lib/srs/fsrs";
 
 function mapCard(id: string, data: Record<string, unknown>): Card {
     return { ...(data as Omit<Card, "id">), id };
@@ -23,55 +21,45 @@ function mapCard(id: string, data: Record<string, unknown>): Card {
 export async function listCards(
     uid: string,
     deckId: string,
-    max = 500,
+    max = 5000,
 ): Promise<Card[]> {
     const snapshot = await getDocs(
         query(
             cardsColRef(uid),
             where("deckId", "==", deckId),
             orderBy("createdAt", "asc"),
-            limit(max),
         ),
     );
-    return snapshot.docs.map((entry) => mapCard(entry.id, entry.data()));
+    return snapshot.docs.slice(0, max).map((entry) => mapCard(entry.id, entry.data()));
 }
 
 export function buildCardDocument(input: CardInput, now: number) {
     const parsed = cardInputSchema.parse(input);
-    const srs = newSrsState(now);
-
     return {
-        document: {
-            deckId: parsed.deckId,
-            courseId: parsed.courseId,
-            front: parsed.front,
-            meaningId: parsed.meaningId,
-            meaningEn: parsed.meaningEn,
-            gender: parsed.gender,
-            wordType: parsed.wordType,
-            plural: parsed.plural,
-            ipa: parsed.ipa,
-            exampleDe: parsed.exampleDe,
-            exampleId: parsed.exampleId,
-            exampleEn: parsed.exampleEn,
-            tags: parsed.tags,
-            level: parsed.level,
-            source: parsed.source,
-            suspended: parsed.suspended,
-            isNew: true,
-            dueMs: srs.dueMs,
-            srs,
-            createdAt: now,
-            updatedAt: now,
-        },
-        srs,
+        deckId: parsed.deckId,
+        courseId: parsed.courseId,
+        front: parsed.front,
+        meaningId: parsed.meaningId,
+        meaningEn: parsed.meaningEn,
+        gender: parsed.gender,
+        wordType: parsed.wordType,
+        plural: parsed.plural,
+        ipa: parsed.ipa,
+        exampleDe: parsed.exampleDe,
+        exampleId: parsed.exampleId,
+        exampleEn: parsed.exampleEn,
+        tags: parsed.tags,
+        level: parsed.level,
+        source: parsed.source,
+        suspended: parsed.suspended,
+        createdAt: now,
+        updatedAt: now,
     };
 }
 
 export async function createCard(uid: string, input: CardInput): Promise<string> {
     const now = Date.now();
-    const { document } = buildCardDocument(input, now);
-    const created = await addDoc(cardsColRef(uid), document);
+    const created = await addDoc(cardsColRef(uid), buildCardDocument(input, now));
 
     await updateDoc(deckDocRef(uid, input.deckId), {
         cardCount: increment(1),
@@ -133,8 +121,7 @@ export async function bulkCreateCards(
         const now = Date.now();
 
         for (const input of chunk) {
-            const { document } = buildCardDocument({ ...input, deckId }, now);
-            batch.set(doc(cardsColRef(uid)), document);
+            batch.set(doc(cardsColRef(uid)), buildCardDocument({ ...input, deckId }, now));
         }
 
         batch.update(deckDocRef(uid, deckId), {
@@ -148,62 +135,4 @@ export async function bulkCreateCards(
     }
 
     return done;
-}
-
-export type StudyQueueOptions = {
-    deckId?: string | null;
-    reviewLimit?: number;
-    newLimit?: number;
-    now?: number;
-};
-
-export type StudyQueue = {
-    cards: Card[];
-    dueCount: number;
-    newCount: number;
-};
-
-/** Due reviews first, then new cards, capped by the caller's limits. */
-export async function getStudyQueue(
-    uid: string,
-    options: StudyQueueOptions = {},
-): Promise<StudyQueue> {
-    const now = options.now ?? Date.now();
-    const reviewLimit = options.reviewLimit ?? 100;
-    const newLimit = options.newLimit ?? 10;
-
-    const reviewConstraints = [
-        where("isNew", "==", false),
-        where("dueMs", "<=", now),
-        orderBy("dueMs", "asc"),
-        limit(reviewLimit),
-    ];
-    const newConstraints = [
-        where("isNew", "==", true),
-        orderBy("createdAt", "asc"),
-        limit(newLimit),
-    ];
-
-    if (options.deckId) {
-        reviewConstraints.unshift(where("deckId", "==", options.deckId));
-        newConstraints.unshift(where("deckId", "==", options.deckId));
-    }
-
-    const [reviews, fresh] = await Promise.all([
-        getDocs(query(cardsColRef(uid), ...reviewConstraints)),
-        getDocs(query(cardsColRef(uid), ...newConstraints)),
-    ]);
-
-    const reviewCards = reviews.docs
-        .map((entry) => mapCard(entry.id, entry.data()))
-        .filter((card) => !card.suspended);
-    const newCards = fresh.docs
-        .map((entry) => mapCard(entry.id, entry.data()))
-        .filter((card) => !card.suspended);
-
-    return {
-        cards: [...reviewCards, ...newCards],
-        dueCount: reviewCards.length,
-        newCount: newCards.length,
-    };
 }

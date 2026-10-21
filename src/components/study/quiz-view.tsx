@@ -37,7 +37,6 @@ export function QuizView({
             <div className="surface-card flex min-h-[180px] flex-col items-center justify-center p-6 text-center">
                 <div className="flex items-center gap-2">
                     <Badge tone="neutral">{card.level}</Badge>
-                    {card.isNew ? <Badge tone="accent">new</Badge> : null}
                 </div>
                 <div className="mt-4 flex items-center gap-2">
                     <h2 className="text-3xl font-extrabold tracking-tight">{card.front}</h2>

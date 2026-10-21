@@ -1,52 +1,49 @@
 import type {
+    BandSettings,
     Card,
     CardInput,
+    CardProgress,
+    CefrLevel,
     DailyStat,
     Deck,
-    DeckCounts,
+    DeckCycle,
     DeckInput,
+    DeckProgress,
     Profile,
-    ReviewLogEntry,
-    SrsState,
+    StudyLogEntry,
 } from "@/types";
-import { newSrsState, scheduleReview } from "@/lib/srs/fsrs";
 import { cardInputSchema, deckInputSchema } from "@/lib/validation/schemas";
 import { dateKey } from "@/lib/utils/date";
-import { loadSeed } from "@/lib/data/seedLoader";
+import { listContentDecks } from "@/content/courses";
+import { getContentDeck, loadContentCards } from "@/lib/content/registry";
+import { buildSession, cycleProgress, emptyCycle } from "@/lib/study/session";
+import { normalizeBands, progressPercent } from "@/lib/study/progress";
 import {
     defaultProfileFor,
-    type CountSummary,
-    type StudyQueue,
-    type StudyQueueOptions,
+    emptyStat,
+    type CardTotals,
     type StudyStore,
-    type SubmitReviewArgs,
+    type SubmitActionArgs,
 } from "./types";
 
-export const GUEST_STORAGE_KEY = "goabroad.guest.v1";
-export const SEED_DECK_ID = "de-a1-core-seed";
-const MAX_REVIEWS = 5000;
+export const GUEST_STORAGE_KEY = "goabroad.guest.v2";
+export const LEGACY_GUEST_STORAGE_KEY = "goabroad.guest.v1";
+const MAX_LOGS = 5000;
+const MAX_PENDING = 200;
+
+export const LEGACY_SEED_DECK_ID = "de-a1-core-seed";
+export const SEED_DECK_ID = "de-a1-core";
 
 export type GuestDb = {
-    version: 1;
+    version: 2;
     profile: Profile;
     decks: Deck[];
     cards: Card[];
-    reviews: ReviewLogEntry[];
+    progress: Record<string, CardProgress>;
+    cycles: Record<string, DeckCycle>;
+    logs: StudyLogEntry[];
     dailyStats: Record<string, DailyStat>;
 };
-
-const emptyStat = (date: string): DailyStat => ({
-    date,
-    reviews: 0,
-    again: 0,
-    hard: 0,
-    good: 0,
-    easy: 0,
-    newCards: 0,
-    studyMs: 0,
-    quizCorrect: 0,
-    quizTotal: 0,
-});
 
 function readRaw(): GuestDb | null {
     if (typeof window === "undefined") return null;
@@ -54,14 +51,19 @@ function readRaw(): GuestDb | null {
         const raw = window.localStorage.getItem(GUEST_STORAGE_KEY);
         if (!raw) return null;
         const parsed = JSON.parse(raw) as GuestDb;
-        if (parsed?.version !== 1 || !Array.isArray(parsed.cards)) return null;
+        if (parsed?.version !== 2 || !Array.isArray(parsed.cards)) return null;
+        parsed.profile = { ...parsed.profile, bands: normalizeBands(parsed.profile.bands) };
+        parsed.progress ??= {};
+        parsed.cycles ??= {};
+        parsed.logs ??= [];
+        parsed.dailyStats ??= {};
         return parsed;
     } catch {
         return null;
     }
 }
 
-/** Used by the sign-in migration. */
+/** Used by the cloud migration. */
 export function readGuestSnapshot(): GuestDb | null {
     return readRaw();
 }
@@ -78,7 +80,23 @@ function uid(): string {
     return `id-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 }
 
-/** Guest mode: everything (deck, progress, stats) lives in localStorage. */
+function emptyProgress(card: Pick<Card, "id" | "deckId" | "courseId">, cycle: number): CardProgress {
+    const now = Date.now();
+    return {
+        cardId: card.id,
+        deckId: card.deckId,
+        courseId: card.courseId,
+        cycle,
+        known: false,
+        repeatsInCycle: 0,
+        totalRepeats: 0,
+        knownCount: 0,
+        lastSeenAt: now,
+        lastActionAt: now,
+    };
+}
+
+/** Guest mode: deck content, progress and stats live in localStorage. */
 export class GuestStore implements StudyStore {
     readonly mode = "guest" as const;
     private db: GuestDb | null = null;
@@ -88,13 +106,25 @@ export class GuestStore implements StudyStore {
     private async ensure(): Promise<GuestDb> {
         if (this.db) return this.db;
 
-        const existing = readRaw();
+        const existing = readRaw() ?? migrateLegacyGuest();
         if (existing) {
             this.db = existing;
-            return existing;
+        } else {
+            this.db = {
+                version: 2,
+                profile: defaultProfileFor({
+                    displayName: null,
+                    email: null,
+                    uiLocale: this.uiLocale,
+                }),
+                decks: [],
+                cards: [],
+                progress: {},
+                cycles: {},
+                logs: [],
+                dailyStats: {},
+            };
         }
-
-        this.db = await buildEmptyDb(this.uiLocale);
         this.persist();
         return this.db;
     }
@@ -102,7 +132,7 @@ export class GuestStore implements StudyStore {
     private persist() {
         if (typeof window === "undefined" || !this.db) return;
         try {
-            this.db.reviews = this.db.reviews.slice(-MAX_REVIEWS);
+            this.db.logs = this.db.logs.slice(-MAX_LOGS);
             window.localStorage.setItem(GUEST_STORAGE_KEY, JSON.stringify(this.db));
         } catch {
             // Quota exceeded: keep working in memory.
@@ -115,16 +145,39 @@ export class GuestStore implements StudyStore {
 
     async updateProfile(patch: Partial<Omit<Profile, "createdAt">>) {
         const db = await this.ensure();
-        db.profile = { ...db.profile, ...patch, updatedAt: Date.now() };
+        db.profile = {
+            ...db.profile,
+            ...patch,
+            bands: patch.bands ? normalizeBands(patch.bands) : db.profile.bands,
+            updatedAt: Date.now(),
+        };
+        this.persist();
+    }
+
+    async updateBandSetting(level: CefrLevel, patch: Partial<BandSettings[CefrLevel]>) {
+        const db = await this.ensure();
+        const bands = normalizeBands({
+            ...db.profile.bands,
+            [level]: { ...db.profile.bands[level], ...patch },
+        });
+        db.profile = { ...db.profile, bands, updatedAt: Date.now() };
         this.persist();
     }
 
     async listDecks(): Promise<Deck[]> {
         const db = await this.ensure();
-        return [...db.decks].sort((a, b) => a.createdAt - b.createdAt);
+        const content = listContentDecks(db.profile.activeCourseId);
+        const user = [...db.decks].sort((a, b) => a.createdAt - b.createdAt);
+        return [...content, ...user];
     }
 
     async getDeck(deckId: string): Promise<Deck | null> {
+        const content = getContentDeck(deckId);
+        if (content) {
+            return (
+                listContentDecks(content.courseId).find((deck) => deck.id === deckId) ?? null
+            );
+        }
         const db = await this.ensure();
         return db.decks.find((deck) => deck.id === deckId) ?? null;
     }
@@ -141,9 +194,9 @@ export class GuestStore implements StudyStore {
             level: input.level,
             tags: input.tags,
             cardCount: 0,
-            newPerDay: input.newPerDay,
             source: "user",
             isDefault: false,
+            readOnly: false,
             createdAt: now,
             updatedAt: now,
         };
@@ -152,42 +205,22 @@ export class GuestStore implements StudyStore {
         return deck.id;
     }
 
-    async deleteDeck(deckId: string) {
+    async deleteDeck(deckId: string): Promise<void> {
         const db = await this.ensure();
+        if (getContentDeck(deckId)) return;
         db.decks = db.decks.filter((deck) => deck.id !== deckId);
+        const removed = db.cards.filter((card) => card.deckId === deckId);
         db.cards = db.cards.filter((card) => card.deckId !== deckId);
+        for (const card of removed) delete db.progress[card.id];
+        delete db.cycles[deckId];
         this.persist();
     }
 
-    async getDeckCounts(deckId: string): Promise<DeckCounts> {
-        const db = await this.ensure();
-        const now = Date.now();
-        const cards = db.cards.filter((card) => card.deckId === deckId);
-        return {
-            total: cards.length,
-            due: cards.filter((card) => !card.isNew && card.dueMs <= now).length,
-            new: cards.filter((card) => card.isNew).length,
-        };
-    }
-
-    async getGlobalCounts(): Promise<CountSummary> {
-        const db = await this.ensure();
-        const now = Date.now();
-        return {
-            due: db.cards.filter((card) => !card.isNew && card.dueMs <= now).length,
-            newCount: db.cards.filter((card) => card.isNew).length,
-        };
-    }
-
-    async getCardTotals() {
-        const db = await this.ensure();
-        return {
-            total: db.cards.length,
-            studied: db.cards.filter((card) => !card.isNew).length,
-        };
-    }
-
-    async listCards(deckId: string, max = 500): Promise<Card[]> {
+    async listCards(deckId: string, max = 5000): Promise<Card[]> {
+        if (getContentDeck(deckId)) {
+            const cards = await loadContentCards(deckId);
+            return cards.slice(0, max);
+        }
         const db = await this.ensure();
         return db.cards
             .filter((card) => card.deckId === deckId)
@@ -199,14 +232,10 @@ export class GuestStore implements StudyStore {
         const db = await this.ensure();
         const parsed = cardInputSchema.parse(input);
         const now = Date.now();
-        const srs = newSrsState(now);
         const card: Card = {
             ...parsed,
             id: uid(),
             suspended: parsed.suspended ?? false,
-            isNew: true,
-            dueMs: srs.dueMs,
-            srs,
             createdAt: now,
             updatedAt: now,
         };
@@ -228,6 +257,7 @@ export class GuestStore implements StudyStore {
     async deleteCard(card: Pick<Card, "id" | "deckId">) {
         const db = await this.ensure();
         db.cards = db.cards.filter((entry) => entry.id !== card.id);
+        delete db.progress[card.id];
         bumpDeck(db, card.deckId, -1);
         this.persist();
     }
@@ -250,14 +280,10 @@ export class GuestStore implements StudyStore {
 
         for (const input of inputs) {
             const parsed = cardInputSchema.parse({ ...input, deckId });
-            const srs = newSrsState(now);
             db.cards.push({
                 ...parsed,
                 id: uid(),
                 suspended: parsed.suspended ?? false,
-                isNew: true,
-                dueMs: srs.dueMs,
-                srs,
                 createdAt: now,
                 updatedAt: now,
             });
@@ -269,92 +295,150 @@ export class GuestStore implements StudyStore {
         return inputs.length;
     }
 
-    async getStudyQueue(options: StudyQueueOptions = {}): Promise<StudyQueue> {
+    async getDeckProgress(deckId: string): Promise<DeckProgress> {
         const db = await this.ensure();
-        const now = options.now ?? Date.now();
-        const reviewLimit = options.reviewLimit ?? 100;
-        const newLimit = options.newLimit ?? 10;
-
-        const pool = db.cards.filter(
-            (card) =>
-                !card.suspended &&
-                (options.deckId ? card.deckId === options.deckId : true),
-        );
-
-        const reviews = pool
-            .filter((card) => !card.isNew && card.dueMs <= now)
-            .sort((a, b) => a.dueMs - b.dueMs)
-            .slice(0, reviewLimit);
-
-        const fresh = pool
-            .filter((card) => card.isNew)
-            .sort((a, b) => a.createdAt - b.createdAt)
-            .slice(0, newLimit);
-
-        return {
-            cards: [...reviews, ...fresh],
-            dueCount: reviews.length,
-            newCount: fresh.length,
-        };
+        const deck = await this.getDeck(deckId);
+        const total = deck?.cardCount ?? 0;
+        const stats = cycleProgress(db.cycles[deckId] ?? null, total);
+        return { deckId, level: deck?.level ?? "A1", ...stats };
     }
 
-    async submitReview({
+    async listDeckProgress(): Promise<DeckProgress[]> {
+        const decks = await this.listDecks();
+        return Promise.all(decks.map((deck) => this.getDeckProgress(deck.id)));
+    }
+
+    async getCardTotals(): Promise<CardTotals> {
+        const db = await this.ensure();
+        const content = listContentDecks(db.profile.activeCourseId);
+        const total = content.reduce((sum, deck) => sum + deck.cardCount, 0) + db.cards.length;
+        const studied = Object.values(db.cycles).reduce(
+            (sum, cycle) => sum + cycle.knownInCycle,
+            0,
+        );
+        return { total, studied };
+    }
+
+    async getSession(deckId: string, sessionSize?: number) {
+        const db = await this.ensure();
+        const deck = await this.getDeck(deckId);
+        const cards = await this.listCards(deckId, 20000);
+        const level = deck?.level ?? "A1";
+        const size = sessionSize ?? db.profile.bands[level]?.sessionSize ?? 20;
+
+        const plan = buildSession({
+            deckId,
+            cards,
+            cycle: db.cycles[deckId] ?? emptyCycle(deckId),
+            sessionSize: size,
+            shuffle: db.profile.bands[level]?.shuffle ?? false,
+        });
+
+        db.cycles[deckId] = {
+            ...(db.cycles[deckId] ?? emptyCycle(deckId)),
+            cycle: plan.cycle,
+            cursor: plan.nextCursor,
+            knownInCycle: plan.cycleReset ? 0 : plan.knownInCycle,
+            pendingCardIds: plan.pendingLeft,
+            lastActivityAt: Date.now(),
+            startedAt: plan.cycleReset
+                ? Date.now()
+                : (db.cycles[deckId]?.startedAt ?? Date.now()),
+            completedAt: null,
+        };
+        this.persist();
+        return plan;
+    }
+
+    async submitAction({
         card,
-        rating,
+        action,
         mode,
         correct,
         durationMs,
         now = new Date(),
-    }: SubmitReviewArgs): Promise<SrsState> {
+    }: SubmitActionArgs): Promise<void> {
         const db = await this.ensure();
-        const reviewedAt = now.getTime();
-        const { srs, log } = scheduleReview(card.srs, rating, now);
+        const at = now.getTime();
+        const cycle = db.cycles[card.deckId] ?? emptyCycle(card.deckId, at);
+        const existing = db.progress[card.id] ?? emptyProgress(card, cycle.cycle);
 
-        const index = db.cards.findIndex((entry) => entry.id === card.id);
-        if (index !== -1) {
-            db.cards[index] = {
-                ...db.cards[index],
-                srs,
-                dueMs: srs.dueMs,
-                isNew: false,
-                updatedAt: reviewedAt,
-            };
+        const known = action === "next" ? true : existing.known;
+        db.progress[card.id] = {
+            ...existing,
+            cycle: cycle.cycle,
+            known,
+            repeatsInCycle:
+                action === "repeat" ? existing.repeatsInCycle + 1 : 0,
+            totalRepeats: existing.totalRepeats + (action === "repeat" ? 1 : 0),
+            knownCount: existing.knownCount + (action === "next" ? 1 : 0),
+            lastSeenAt: at,
+            lastActionAt: at,
+        };
+
+        let pending = cycle.pendingCardIds.filter((id) => id !== card.id);
+        if (action === "repeat") {
+            pending = [...pending, card.id].slice(-MAX_PENDING);
         }
 
-        db.reviews.push({
+        const knownInCycle =
+            action === "next"
+                ? Math.min(deckCardCount(db, card.deckId), cycle.knownInCycle + 1)
+                : cycle.knownInCycle;
+
+        db.cycles[card.deckId] = {
+            ...cycle,
+            pendingCardIds: pending,
+            knownInCycle,
+            lastActivityAt: at,
+            completedAt: null,
+        };
+
+        db.logs.push({
             cardId: card.id,
             deckId: card.deckId,
             courseId: card.courseId,
-            rating,
+            action,
             mode,
             correct,
             durationMs,
-            reviewMs: log.reviewMs,
-            stateBefore: log.stateBefore,
-            stateAfter: log.stateAfter,
-            dueMs: log.dueMs,
-            stability: log.stability,
-            difficulty: log.difficulty,
-            elapsedDays: log.elapsedDays,
-            scheduledDays: log.scheduledDays,
+            cycle: cycle.cycle,
+            createdAt: at,
         });
 
         const key = dateKey(now);
         const stat = db.dailyStats[key] ?? emptyStat(key);
-        const ratingField = (["again", "hard", "good", "easy"] as const)[rating - 1];
-
         db.dailyStats[key] = {
             ...stat,
             reviews: stat.reviews + 1,
-            [ratingField]: stat[ratingField] + 1,
-            newCards: stat.newCards + (card.isNew ? 1 : 0),
+            next: stat.next + (action === "next" ? 1 : 0),
+            repeat: stat.repeat + (action === "repeat" ? 1 : 0),
+            known: stat.known + (action === "next" ? 1 : 0),
             studyMs: stat.studyMs + Math.max(0, Math.round(durationMs)),
             quizCorrect: stat.quizCorrect + (mode === "quiz" && correct ? 1 : 0),
             quizTotal: stat.quizTotal + (mode === "quiz" ? 1 : 0),
         };
 
         this.persist();
-        return srs;
+    }
+
+    async resetDeckCycle(deckId: string): Promise<void> {
+        const db = await this.ensure();
+        db.cycles[deckId] = {
+            ...emptyCycle(deckId),
+            startedAt: Date.now(),
+            lastActivityAt: Date.now(),
+        };
+        for (const card of await this.listCards(deckId, 20000)) {
+            if (db.progress[card.id]) {
+                db.progress[card.id] = {
+                    ...db.progress[card.id],
+                    known: false,
+                    repeatsInCycle: 0,
+                };
+            }
+        }
+        this.persist();
     }
 
     async getTodayStat(): Promise<DailyStat> {
@@ -382,61 +466,110 @@ function bumpDeck(db: GuestDb, deckId: string, delta: number) {
     };
 }
 
-async function buildEmptyDb(uiLocale: "id" | "en"): Promise<GuestDb> {
-    const seed = await loadSeed();
-    const now = Date.now();
-    const srs = newSrsState(now);
+function deckCardCount(db: GuestDb, deckId: string): number {
+    if (getContentDeck(deckId)) {
+        return getContentDeck(deckId)?.cardCount ?? 0;
+    }
+    const deck = db.decks.find((entry) => entry.id === deckId);
+    return deck?.cardCount ?? 0;
+}
 
-    const cards: Card[] = seed.cards.map((card, index) => ({
-        id: `seed-${seed.courseId}-${String(index + 1).padStart(4, "0")}`,
-        deckId: SEED_DECK_ID,
-        courseId: seed.courseId,
-        front: card.front,
-        meaningId: card.meaningId,
-        meaningEn: card.meaningEn,
-        gender: card.gender ?? null,
-        wordType: card.wordType ?? "other",
-        plural: card.plural ?? null,
-        ipa: card.ipa ?? null,
-        exampleDe: card.exampleDe ?? null,
-        exampleId: card.exampleId ?? null,
-        exampleEn: card.exampleEn ?? null,
-        tags: card.tags ?? [],
-        level: card.level ?? "A1",
-        source: "seed",
-        suspended: false,
-        isNew: true,
-        dueMs: srs.dueMs,
-        srs: { ...srs },
-        createdAt: now,
-        updatedAt: now,
-    }));
+/** Converts the FSRS-era snapshot (v1) into the cycle model (v2). */
+function migrateLegacyGuest(): GuestDb | null {
+    if (typeof window === "undefined") return null;
+
+    let legacy: {
+        profile?: Partial<Profile>;
+        decks?: Deck[];
+        cards?: (Card & { isNew?: boolean })[];
+        dailyStats?: Record<string, DailyStat>;
+    } | null = null;
+
+    try {
+        const raw = window.localStorage.getItem(LEGACY_GUEST_STORAGE_KEY);
+        if (!raw) return null;
+        legacy = JSON.parse(raw);
+    } catch {
+        return null;
+    }
+    if (!legacy) return null;
+
+    const now = Date.now();
+    const progress: Record<string, CardProgress> = {};
+    const cycles: Record<string, DeckCycle> = {};
+    const cards: Card[] = [];
+
+    for (const old of legacy.cards ?? []) {
+        const isSeed = old.deckId === LEGACY_SEED_DECK_ID;
+        const suffix = old.id.split("-").pop() ?? "";
+        const cardId = isSeed ? `${SEED_DECK_ID}-${suffix}` : old.id;
+        const deckId = isSeed ? SEED_DECK_ID : old.deckId;
+        const known = !old.isNew;
+
+        if (!isSeed) {
+            cards.push({
+                ...old,
+                id: cardId,
+                deckId,
+                suspended: Boolean(old.suspended),
+            });
+        }
+
+        progress[cardId] = {
+            cardId,
+            deckId,
+            courseId: old.courseId ?? "de",
+            cycle: 1,
+            known,
+            repeatsInCycle: 0,
+            totalRepeats: 0,
+            knownCount: known ? 1 : 0,
+            lastSeenAt: now,
+            lastActionAt: now,
+        };
+
+        const cycle = cycles[deckId] ?? emptyCycle(deckId, now);
+        const position = Number(suffix);
+        cycles[deckId] = {
+            ...cycle,
+            cursor: Math.max(cycle.cursor, Number.isFinite(position) ? position : 0),
+            knownInCycle: cycle.knownInCycle + (known ? 1 : 0),
+            lastActivityAt: now,
+        };
+    }
+
+    const userDecks = (legacy.decks ?? [])
+        .filter((deck) => deck.id !== LEGACY_SEED_DECK_ID)
+        .map((deck) => ({
+            ...deck,
+            source: "user" as const,
+            readOnly: false,
+        }));
+
+    const profile = {
+        ...defaultProfileFor({
+            displayName: legacy.profile?.displayName ?? null,
+            email: legacy.profile?.email ?? null,
+            uiLocale: legacy.profile?.uiLocale ?? "id",
+        }),
+        ...legacy.profile,
+        bands: normalizeBands(legacy.profile?.bands),
+        engineV2: true,
+    } as Profile;
+
+    window.localStorage.removeItem(LEGACY_GUEST_STORAGE_KEY);
 
     return {
-        version: 1,
-        profile: defaultProfileFor({
-            displayName: null,
-            email: null,
-            uiLocale,
-        }),
-        decks: [
-            {
-                id: SEED_DECK_ID,
-                courseId: seed.courseId,
-                name: seed.deck.name,
-                description: seed.deck.description,
-                level: seed.deck.level,
-                tags: seed.deck.tags,
-                cardCount: cards.length,
-                newPerDay: 10,
-                source: "seed",
-                isDefault: true,
-                createdAt: now,
-                updatedAt: now,
-            },
-        ],
+        version: 2,
+        profile,
+        decks: userDecks,
         cards,
-        reviews: [],
-        dailyStats: {},
+        progress,
+        cycles,
+        logs: [],
+        dailyStats: legacy.dailyStats ?? {},
     };
 }
+
+/** Percent helper re-exported for UI code that only has counts. */
+export { progressPercent };

@@ -1,18 +1,19 @@
 import type {
+    BandSettings,
     Card,
     CardInput,
+    CefrLevel,
     DailyStat,
     Deck,
-    DeckCounts,
+    DeckCycle,
     DeckInput,
+    DeckProgress,
     Profile,
-    SrsState,
 } from "@/types";
 import {
     bulkCreateCards as bulkCreateCardsCloud,
     createCard as createCardCloud,
     deleteCard as deleteCardCloud,
-    getStudyQueue as getStudyQueueCloud,
     listCards as listCardsCloud,
     setCardSuspended as setCardSuspendedCloud,
     updateCard as updateCardCloud,
@@ -20,22 +21,29 @@ import {
 import {
     createDeck as createDeckCloud,
     deleteDeck as deleteDeckCloud,
-    fetchCardTotals,
     fetchDeck,
-    fetchDeckCounts,
-    fetchGlobalCounts,
     listDecks as listDecksCloud,
 } from "@/lib/data/decks";
 import { fetchProfile, patchProfile } from "@/lib/data/profile";
 import { fetchRecentStats, fetchTodayStat } from "@/lib/data/dailyStats";
-import { submitReview as submitReviewCloud } from "@/lib/data/reviews";
+import {
+    fetchAllCycles,
+    fetchDeckCycle,
+    saveDeckCycle,
+    submitAction as submitActionCloud,
+} from "@/lib/data/progress";
+import { getDocs, query, where, writeBatch } from "firebase/firestore";
+import { progressColRef } from "@/lib/firebase/paths";
+import { getDb } from "@/lib/firebase/client";
+import { listContentDecks } from "@/content/courses";
+import { getContentDeck, loadContentCards } from "@/lib/content/registry";
+import { buildSession, cycleProgress, emptyCycle } from "@/lib/study/session";
+import { normalizeBands } from "@/lib/study/progress";
 import {
     defaultProfileFor,
-    type CountSummary,
-    type StudyQueue,
-    type StudyQueueOptions,
+    type CardTotals,
     type StudyStore,
-    type SubmitReviewArgs,
+    type SubmitActionArgs,
 } from "./types";
 
 /** Cloud mode: Firestore under /users/{uid}. Requires a signed-in account. */
@@ -49,25 +57,43 @@ export class CloudStore implements StudyStore {
 
     async getProfile(): Promise<Profile> {
         const profile = await fetchProfile(this.uid);
-        return (
-            profile ??
-            defaultProfileFor({
+        if (!profile) {
+            return defaultProfileFor({
                 displayName: null,
                 email: null,
                 uiLocale: this.uiLocale,
-            })
-        );
+            });
+        }
+        return { ...profile, bands: normalizeBands(profile.bands) };
     }
 
     async updateProfile(patch: Partial<Omit<Profile, "createdAt">>) {
         await patchProfile(this.uid, patch);
     }
 
-    listDecks(): Promise<Deck[]> {
-        return listDecksCloud(this.uid);
+    async updateBandSetting(level: CefrLevel, patch: Partial<BandSettings[CefrLevel]>) {
+        const profile = await this.getProfile();
+        const bands = normalizeBands({
+            ...profile.bands,
+            [level]: { ...profile.bands[level], ...patch },
+        });
+        await patchProfile(this.uid, { bands });
     }
 
-    getDeck(deckId: string): Promise<Deck | null> {
+    async listDecks(): Promise<Deck[]> {
+        const profile = await this.getProfile();
+        const content = listContentDecks(profile.activeCourseId);
+        const user = await listDecksCloud(this.uid).catch(() => []);
+        return [...content, ...user];
+    }
+
+    async getDeck(deckId: string): Promise<Deck | null> {
+        const bundled = getContentDeck(deckId);
+        if (bundled) {
+            return (
+                listContentDecks(bundled.courseId).find((deck) => deck.id === deckId) ?? null
+            );
+        }
         return fetchDeck(this.uid, deckId);
     }
 
@@ -79,20 +105,11 @@ export class CloudStore implements StudyStore {
         return deleteDeckCloud(this.uid, deckId);
     }
 
-    getDeckCounts(deckId: string): Promise<DeckCounts> {
-        return fetchDeckCounts(this.uid, deckId);
-    }
-
-    async getGlobalCounts(): Promise<CountSummary> {
-        const counts = await fetchGlobalCounts(this.uid);
-        return { due: counts.due, newCount: counts.new };
-    }
-
-    getCardTotals() {
-        return fetchCardTotals(this.uid);
-    }
-
-    listCards(deckId: string, max?: number): Promise<Card[]> {
+    async listCards(deckId: string, max = 5000): Promise<Card[]> {
+        if (getContentDeck(deckId)) {
+            const cards = await loadContentCards(deckId);
+            return cards.slice(0, max);
+        }
         return listCardsCloud(this.uid, deckId, max);
     }
 
@@ -120,12 +137,102 @@ export class CloudStore implements StudyStore {
         return bulkCreateCardsCloud(this.uid, deckId, inputs, onProgress);
     }
 
-    getStudyQueue(options: StudyQueueOptions = {}): Promise<StudyQueue> {
-        return getStudyQueueCloud(this.uid, options);
+    async getDeckProgress(deckId: string): Promise<DeckProgress> {
+        const deck = await this.getDeck(deckId);
+        const cycle = await fetchDeckCycle(this.uid, deckId).catch(() => null);
+        const stats = cycleProgress(cycle, deck?.cardCount ?? 0);
+        return { deckId, level: deck?.level ?? "A1", ...stats };
     }
 
-    submitReview(args: SubmitReviewArgs): Promise<SrsState> {
-        return submitReviewCloud({ ...args, uid: this.uid });
+    async listDeckProgress(): Promise<DeckProgress[]> {
+        const [decks, cycles] = await Promise.all([
+            this.listDecks(),
+            fetchAllCycles(this.uid).catch(() => [] as DeckCycle[]),
+        ]);
+        const byDeck = new Map(cycles.map((cycle) => [cycle.deckId, cycle]));
+        return decks.map((deck) => {
+            const stats = cycleProgress(byDeck.get(deck.id) ?? null, deck.cardCount);
+            return { deckId: deck.id, level: deck.level, ...stats };
+        });
+    }
+
+    async getCardTotals(): Promise<CardTotals> {
+        const [decks, cycles] = await Promise.all([
+            this.listDecks(),
+            fetchAllCycles(this.uid).catch(() => [] as DeckCycle[]),
+        ]);
+        const total = decks.reduce((sum, deck) => sum + deck.cardCount, 0);
+        const studied = cycles.reduce((sum, cycle) => sum + (cycle.knownInCycle ?? 0), 0);
+        return { total, studied: Math.min(total, studied) };
+    }
+
+    async getSession(deckId: string, sessionSize?: number) {
+        const [deck, profile, stored] = await Promise.all([
+            this.getDeck(deckId),
+            this.getProfile(),
+            fetchDeckCycle(this.uid, deckId).catch(() => null),
+        ]);
+        if (!deck) throw new Error("Deck not found");
+
+        const cards = await this.listCards(deckId, 20000);
+        const size = sessionSize ?? profile.bands[deck.level]?.sessionSize ?? 20;
+        const now = Date.now();
+
+        const plan = buildSession({
+            deckId,
+            cards,
+            cycle: stored ?? emptyCycle(deckId, now),
+            sessionSize: size,
+            shuffle: profile.bands[deck.level]?.shuffle ?? false,
+        });
+
+        await saveDeckCycle(this.uid, {
+            deckId,
+            cycle: plan.cycle,
+            cursor: plan.nextCursor,
+            knownInCycle: plan.cycleReset ? 0 : plan.knownInCycle,
+            pendingCardIds: plan.pendingLeft,
+            startedAt: plan.cycleReset ? now : (stored?.startedAt ?? now),
+            completedAt: null,
+            lastActivityAt: now,
+        });
+
+        return plan;
+    }
+
+    submitAction(args: SubmitActionArgs): Promise<void> {
+        return submitActionCloud({
+            uid: this.uid,
+            card: args.card,
+            action: args.action,
+            mode: args.mode,
+            correct: args.correct,
+            durationMs: args.durationMs,
+            cycle: args.session?.cycle,
+            now: args.now,
+        });
+    }
+
+    async resetDeckCycle(deckId: string): Promise<void> {
+        const now = Date.now();
+        const deck = await this.getDeck(deckId);
+        await saveDeckCycle(this.uid, {
+            ...emptyCycle(deckId, now),
+            deckId,
+        });
+
+        if (!deck) return;
+
+        const snapshot = await getDocs(
+            query(progressColRef(this.uid), where("deckId", "==", deckId)),
+        );
+        for (let index = 0; index < snapshot.docs.length; index += 400) {
+            const batch = writeBatch(getDb());
+            for (const entry of snapshot.docs.slice(index, index + 400)) {
+                batch.delete(entry.ref);
+            }
+            await batch.commit();
+        }
     }
 
     getTodayStat(): Promise<DailyStat> {

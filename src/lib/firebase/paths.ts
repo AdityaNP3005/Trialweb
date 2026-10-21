@@ -16,3 +16,15 @@ export const dailyStatsColRef = (uid: string) =>
     collection(getDb(), "users", uid, "dailyStats");
 export const dailyStatDocRef = (uid: string, key: string) =>
     doc(getDb(), "users", uid, "dailyStats", key);
+
+/** Per-card progress for the cycle engine (one document per touched card). */
+export const progressColRef = (uid: string) =>
+    collection(getDb(), "users", uid, "progress");
+export const progressDocRef = (uid: string, cardId: string) =>
+    doc(getDb(), "users", uid, "progress", cardId);
+
+/** Cursor + pending list per deck (one document per deck). */
+export const deckCyclesColRef = (uid: string) =>
+    collection(getDb(), "users", uid, "deckCycles");
+export const deckCycleDocRef = (uid: string, deckId: string) =>
+    doc(getDb(), "users", uid, "deckCycles", deckId);

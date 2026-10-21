@@ -39,25 +39,24 @@ export default function StatsPage() {
     }, [store]);
 
     const aggregate = useMemo(() => {
-        const result = { reviews: 0, again: 0, hard: 0, good: 0, easy: 0 };
+        const result = { reviews: 0, next: 0, repeat: 0, known: 0 };
         for (const entry of stats ?? []) {
             result.reviews += entry.reviews;
-            result.again += entry.again;
-            result.hard += entry.hard;
-            result.good += entry.good;
-            result.easy += entry.easy;
+            result.next += entry.next ?? 0;
+            result.repeat += entry.repeat ?? 0;
+            result.known += entry.known ?? 0;
         }
         return result;
     }, [stats]);
 
-    const weekRetention = useMemo(() => {
+    const understandRate = useMemo(() => {
         if (!stats) return 0;
         const start = dateKey(addDays(new Date(), -6));
         const slice = stats.filter((entry) => entry.date >= start);
         const reviews = slice.reduce((sum, entry) => sum + entry.reviews, 0);
-        const again = slice.reduce((sum, entry) => sum + entry.again, 0);
+        const next = slice.reduce((sum, entry) => sum + (entry.next ?? 0), 0);
         if (reviews === 0) return 0;
-        return Math.round(((reviews - again) / reviews) * 100);
+        return Math.round((next / reviews) * 100);
     }, [stats]);
 
     const streak = stats ? computeStreak(stats) : { current: 0, longest: 0 };
@@ -81,16 +80,11 @@ export default function StatsPage() {
         return <EmptyState title={t("noData")} icon={<BarChart3 className="size-5" />} />;
     }
 
-    const totalRatings = Math.max(
-        1,
-        aggregate.again + aggregate.hard + aggregate.good + aggregate.easy,
-    );
+    const totalRatings = Math.max(1, aggregate.next + aggregate.repeat);
 
     const breakdown = [
-        { key: "again", value: aggregate.again, color: "bg-danger" },
-        { key: "hard", value: aggregate.hard, color: "bg-warning" },
-        { key: "good", value: aggregate.good, color: "bg-success" },
-        { key: "easy", value: aggregate.easy, color: "bg-accent" },
+        { key: t("actionNext"), value: aggregate.next, color: "bg-success" },
+        { key: t("actionRepeat"), value: aggregate.repeat, color: "bg-warning" },
     ];
 
     return (
@@ -103,8 +97,8 @@ export default function StatsPage() {
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 <Tile
                     icon={<TrendingUp className="size-4" />}
-                    label={t("retention")}
-                    value={`${weekRetention}%`}
+                    label={t("understandRate")}
+                    value={`${understandRate}%`}
                 />
                 <Tile
                     icon={<Layers className="size-4" />}
