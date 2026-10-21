@@ -9,6 +9,10 @@ ditampilkan. Band tidak pernah dicampur dalam satu sesi.
 > Prinsip produk: **fitur belajar gratis tanpa akun**. Akun hanya dibutuhkan untuk sinkronisasi
 > cloud dan fitur **AI** (generate kartu).
 
+📄 **Dokumentasi lengkap:** [`docs/PRD.md`](./docs/PRD.md) (kebutuhan produk, acceptance
+criteria, roadmap) dan [`docs/BRIEFING.md`](./docs/BRIEFING.md) (status teknis terkini,
+invariant, gotchas, TODO — baca ini dulu sebelum mengubah kode).
+
 ---
 
 ## Tiga mode
@@ -123,12 +127,14 @@ arti Indonesia, lalu aturan sufiks (`-ung`, `-heit`, `-schaft`, `-platz`, `-zeug
 
 - `src/content/manifest.json` = level → topik berurutan (id, ikon, jumlah kartu, file).
 - `src/content/de/{a1..c2}.json` = daftar topik + semua kartu level itu (tiap kartu punya `topic`).
-- `scripts/content/topics.json` + `topic-id-keywords.json` = definisi topik dan kata kunci
-(Jerman dan Indonesia) untuk mengklasifikasikan kartu.
+- `scripts/content/topics.json` = katalog topik: kata kunci Jerman, kata kunci arti Indonesia
+(`idKeywords`), aturan sufiks, `fallbackWordTypes`, dan urutan topik per band (`orders`).
+- `scripts/content/proper-names.json` = blocklist nama diri (negara, kota, nama orang).
 - Dedupe lintas level: satu lemma hanya muncul di level terendah (dijaga validator).
 - ID topik `de-a1-greetings`, ID kartu `de-a1-greetings-0001` — **stabil dan hanya append**,
 karena progres pengguna merujuk ke ID ini.
-- `src/content/migration-map.json` memetakan ID lama (`de-a1-core-0001`) ke ID topik baru.
+- `src/content/migration-map.json` (id kartu lama `de-a1-core-0001` → id topik v3) dan
+`src/content/topic-map.json` (id topik v3 → id topik v4) dipakai saat migrasi progres.
 
 Membangun ulang konten:
 
@@ -179,10 +185,14 @@ src/
     manifest.json          # level → topik berurutan
     de/a1.json … c2.json   # topik + kartu per level
     de/source/curated-a1.json
-    migration-map.json     # id kartu lama → id topik
+    migration-map.json     # id kartu lama → id topik v3
+    topic-map.json         # id topik v3 → id topik v4
 scripts/
-  content/{topics.json,topic-id-keywords.json,build-decks.py}
+  content/{topics.json,proper-names.json,build-decks.py}
   validate-content.ts      # validator konten
+docs/
+  PRD.md                   # kebutuhan produk + acceptance criteria + roadmap
+  BRIEFING.md              # status terkini untuk AI/kontributor berikutnya
 ```
 
 ### Model data (mode cloud)
