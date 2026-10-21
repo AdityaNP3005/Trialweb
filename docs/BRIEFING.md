@@ -249,6 +249,10 @@ npm run content:build && npm run seed:validate
 - **Polling status deploy lewat GitHub API bisa kena rate limit** → verifikasi dengan
   mengambil halaman produksi (angka topik di `/id/dashboard`) bukan API.
 - **AI route**: tanpa `firebase-admin`; jangan tambah dependency itu untuk "mempermudah".
+- **Login Google**: domain produksi harus terdaftar di Firebase Console →
+  Authentication → Settings → **Authorized domains**. Kalau belum, SDK menolak dengan
+  `auth/unauthorized-domain` (UI sekarang menampilkan pesan khusus + kode error itu).
+  Email/password tidak terpengaruh.
 - **Kartu pending** dulu hilang saat pindah halaman — sudah diperbaiki di `de33029`;
   jangan kembalikan perilaku lama saat refactor `buildSession`.
 - **`window`/`localStorage`** hanya di komponen client; store provider sudah menangani guard.

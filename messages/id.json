@@ -307,6 +307,9 @@
         "authPopup": "Popup login diblokir. Coba lagi atau gunakan email.",
         "network": "Koneksi bermasalah. Coba lagi.",
         "unknown": "Terjadi kesalahan.",
+        "authDomainBlocked": "Domain aplikasi ini belum diizinkan untuk login Google. Tambahkan domain di Firebase Console → Authentication → Settings → Authorized domains.",
+        "authProviderDisabled": "Login Google belum diaktifkan. Aktifkan di Firebase Console → Authentication → Sign-in method.",
+        "authDifferentMethod": "Email ini sudah terdaftar dengan metode lain. Masuk dengan email dan kata sandi.",
         "notFound": "Tidak ditemukan"
     }
 }

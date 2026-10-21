@@ -307,6 +307,9 @@
         "authPopup": "Login popup was blocked. Try again or use email.",
         "network": "Connection problem. Try again.",
         "unknown": "Something went wrong.",
+        "authDomainBlocked": "This app domain is not allowed to use Google sign-in. Add it in Firebase Console → Authentication → Settings → Authorized domains.",
+        "authProviderDisabled": "Google sign-in is not enabled. Turn it on in Firebase Console → Authentication → Sign-in method.",
+        "authDifferentMethod": "This email is already registered with another method. Sign in with email and password.",
         "notFound": "Not found"
     }
 }

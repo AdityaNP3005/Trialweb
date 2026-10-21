@@ -11,11 +11,14 @@ import {
 import { getFirebaseAuth } from "./client";
 
 /** Maps Firebase auth error codes to translation keys in `errors.*`. */
+export function authErrorCode(error: unknown): string {
+    return typeof error === "object" && error !== null && "code" in error
+        ? String((error as { code: unknown }).code)
+        : "";
+}
+
 export function authErrorKey(error: unknown): string {
-    const code =
-        typeof error === "object" && error !== null && "code" in error
-            ? String((error as { code: unknown }).code)
-            : "";
+    const code = authErrorCode(error);
 
     switch (code) {
         case "auth/invalid-credential":
@@ -32,6 +35,12 @@ export function authErrorKey(error: unknown): string {
         case "auth/cancelled-popup-request":
         case "auth/operation-not-supported-in-this-environment":
             return "authPopup";
+        case "auth/unauthorized-domain":
+            return "authDomainBlocked";
+        case "auth/operation-not-allowed":
+            return "authProviderDisabled";
+        case "auth/account-exists-with-different-credential":
+            return "authDifferentMethod";
         case "auth/network-request-failed":
             return "network";
         default:

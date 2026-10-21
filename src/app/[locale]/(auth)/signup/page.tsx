@@ -6,7 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Input, Label } from "@/components/ui/field";
 import { AuthCard, GoogleButton } from "@/components/auth/auth-card";
-import { authErrorKey, signInWithGoogle, signUpWithEmail } from "@/lib/firebase/auth";
+import { authErrorCode, authErrorKey, signInWithGoogle, signUpWithEmail } from "@/lib/firebase/auth";
 
 export default function SignupPage() {
     const t = useTranslations("auth");
@@ -17,6 +17,7 @@ export default function SignupPage() {
     const [password, setPassword] = useState("");
     const [busy, setBusy] = useState<"email" | "google" | null>(null);
     const [errorKey, setErrorKey] = useState<string | null>(null);
+    const [errorCode, setErrorCode] = useState<string | null>(null);
 
     async function handleSubmit(event: React.FormEvent) {
         event.preventDefault();
@@ -30,6 +31,7 @@ export default function SignupPage() {
             await signUpWithEmail(email, password, name.trim() || undefined);
         } catch (error) {
             setErrorKey(authErrorKey(error));
+            setErrorCode(authErrorCode(error));
         } finally {
             setBusy(null);
         }
@@ -38,10 +40,12 @@ export default function SignupPage() {
     async function handleGoogle() {
         setBusy("google");
         setErrorKey(null);
+        setErrorCode(null);
         try {
             await signInWithGoogle();
         } catch (error) {
             setErrorKey(authErrorKey(error));
+            setErrorCode(authErrorCode(error));
         } finally {
             setBusy(null);
         }
@@ -112,6 +116,11 @@ export default function SignupPage() {
                 {errorKey ? (
                     <p role="alert" className="rounded-lg bg-danger/10 px-3 py-2 text-xs text-danger">
                         {te(errorKey)}
+                        {errorKey === "unknown" && errorCode ? (
+                            <span className="mt-1 block font-mono text-[10px] opacity-70">
+                                {errorCode}
+                            </span>
+                        ) : null}
                     </p>
                 ) : null}
 
