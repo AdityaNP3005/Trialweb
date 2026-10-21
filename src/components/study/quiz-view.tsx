@@ -3,10 +3,11 @@
 import { Check, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import type { Card } from "@/types";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils/cn";
 import { TtsButton } from "./tts-button";
+
+const letters = ["A", "B", "C", "D", "E", "F"];
 
 export function QuizView({
     card,
@@ -38,21 +39,19 @@ export function QuizView({
 
     return (
         <div className="space-y-4">
-            <div className="surface-card flex min-h-[180px] flex-col items-center justify-center p-6 text-center">
-                <div className="flex items-center gap-2">
-                    <Badge tone="neutral">{badgeLabel ?? card.level}</Badge>
-                </div>
-                <div className="mt-4 flex items-center gap-2">
-                    <h2
+            <div className="panel flex min-h-[11rem] flex-col items-center justify-center p-5 text-center">
+                <span className="eyebrow">{badgeLabel ?? card.level}</span>
+                <div className="mt-3 flex items-center gap-3">
+                    <p
                         className={cn(
-                            "font-extrabold tracking-tight",
+                            "tracking-tight",
                             card.script === "hanzi"
-                                ? "font-cjk text-4xl sm:text-5xl"
-                                : "text-3xl",
+                                ? "font-cjk text-[2.5rem] leading-tight sm:text-[3rem]"
+                                : "display text-[2rem] leading-tight sm:text-[2.5rem]",
                         )}
                     >
                         {card.front}
-                    </h2>
+                    </p>
                     <TtsButton
                         text={card.front}
                         voiceURI={voiceURI}
@@ -60,38 +59,52 @@ export function QuizView({
                         lang={lang}
                     />
                 </div>
-                <p className="mt-2 text-xs text-muted">{t("question")}</p>
+                <p className="meta mt-3">{t("question")}</p>
             </div>
 
-            <div className="grid gap-2">
-                {options.map((option) => {
+            <ul className="border-t border-border">
+                {options.map((option, index) => {
                     const isAnswer = option === correct;
                     const isPicked = option === picked;
 
                     return (
-                        <button
-                            key={option}
-                            type="button"
-                            disabled={answered || busy}
-                            onClick={() => onPick(option)}
-                            className={cn(
-                                "flex items-center justify-between rounded-xl border px-4 py-3 text-left text-sm font-semibold transition",
-                                !answered && "border-border bg-surface hover:border-accent/50 hover:bg-surface-2",
-                                answered && isAnswer && "border-success/40 bg-success/10 text-success",
-                                answered &&
-                                isPicked &&
-                                !isAnswer &&
-                                "border-danger/40 bg-danger/10 text-danger",
-                                answered && !isAnswer && !isPicked && "border-border bg-surface opacity-60",
-                            )}
-                        >
-                            {option}
-                            {answered && isAnswer ? <Check className="size-4" /> : null}
-                            {answered && isPicked && !isAnswer ? <X className="size-4" /> : null}
-                        </button>
+                        <li key={option} className="border-b border-border">
+                            <button
+                                type="button"
+                                disabled={answered || busy}
+                                onClick={() => onPick(option)}
+                                className={cn(
+                                    "flex w-full items-center gap-3 py-3 pr-3 text-left text-sm transition-colors",
+                                    !answered && "hover:bg-surface-2/60",
+                                    answered && isAnswer && "text-success",
+                                    answered && isPicked && !isAnswer && "text-danger",
+                                    answered && !isAnswer && !isPicked && "text-muted",
+                                )}
+                            >
+                                <span
+                                    className={cn(
+                                        "grid size-6 shrink-0 place-items-center rounded-[0.25rem] border font-mono text-[10px] uppercase",
+                                        answered && isAnswer
+                                            ? "border-success text-success"
+                                            : answered && isPicked
+                                                ? "border-danger text-danger"
+                                                : "border-border text-muted",
+                                    )}
+                                >
+                                    {letters[index] ?? index + 1}
+                                </span>
+                                <span className="font-semibold">{option}</span>
+                                {answered && isAnswer ? (
+                                    <Check className="ml-auto size-4" />
+                                ) : null}
+                                {answered && isPicked && !isAnswer ? (
+                                    <X className="ml-auto size-4" />
+                                ) : null}
+                            </button>
+                        </li>
                     );
                 })}
-            </div>
+            </ul>
 
             {answered ? (
                 <div className="animate-rise space-y-3">
@@ -105,7 +118,9 @@ export function QuizView({
                         {isCorrect ? null : ` · ${t("answerWas", { answer: correct })}`}
                     </p>
                     {card.exampleDe ? (
-                        <p className="text-xs italic text-muted">„{card.exampleDe}“</p>
+                        <p className="border-l-2 border-border pl-3 text-xs italic text-muted">
+                            „{card.exampleDe}“
+                        </p>
                     ) : null}
                     <Button className="w-full" onClick={onNext} loading={busy}>
                         {t("next")}

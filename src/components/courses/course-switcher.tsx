@@ -1,11 +1,13 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { courses } from "@/content/courses";
 import { cn } from "@/lib/utils/cn";
 
 /**
- * Language pills shared by every page that shows content, so a course can be
- * switched without going back to the dashboard.
+ * Language selector shared by every page that shows content. Reads as a set of
+ * destination tabs: the native name in its own script, a hairline underline for
+ * the active route, no pills.
  */
 export function CourseSwitcher({
     activeCourseId,
@@ -17,9 +19,10 @@ export function CourseSwitcher({
     onSelect: (courseId: string) => void | Promise<void>;
 }) {
     const enabled = courses.filter((course) => course.enabled);
+    const tc = useTranslations("common");
 
     return (
-        <div className="flex flex-wrap gap-2">
+        <div className="flex items-center gap-5" role="group" aria-label="Course">
             {enabled.map((course) => {
                 const active = course.id === activeCourseId;
                 return (
@@ -30,14 +33,19 @@ export function CourseSwitcher({
                         onClick={() => void onSelect(course.id)}
                         aria-pressed={active}
                         className={cn(
-                            "inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-semibold transition disabled:opacity-50",
+                            "-mb-px border-b-2 pb-1.5 text-sm transition-colors disabled:opacity-50",
+                            course.script === "hanzi" ? "font-cjk" : "font-semibold",
                             active
-                                ? "bg-accent font-bold text-accent-fg"
-                                : "border border-border bg-surface text-muted hover:text-fg",
+                                ? "border-accent text-fg"
+                                : "border-transparent text-muted hover:text-fg",
                         )}
                     >
-                        <span aria-hidden>{course.flag}</span>
                         {course.nativeName}
+                        <span className="meta ml-1.5 hidden font-normal tracking-[0.1em] sm:inline">
+                            {course.unitNoun === "book"
+                                ? tc("unitBook")
+                                : tc("unitBand")}
+                        </span>
                     </button>
                 );
             })}

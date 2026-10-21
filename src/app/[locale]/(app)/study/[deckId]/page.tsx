@@ -3,11 +3,12 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams } from "next/navigation";
 import { ArrowLeft, Layers, ListChecks } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Card, Deck, StudyAction, StudyMode } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
 import { getCourse } from "@/content/courses";
+import { sectionLabelFor, unitLabelFor } from "@/lib/content/labels";
 import { buildOptions, pickDistractors } from "@/lib/quiz/distractors";
 import {
     insertRepeat,
@@ -31,6 +32,8 @@ export default function StudyPage() {
     const { store, profile } = useStore();
     const t = useTranslations("study");
     const tq = useTranslations("quiz");
+    const tc = useTranslations("common");
+    const locale = useLocale();
 
     const [plan, setPlan] = useState<SessionPlan | null>(null);
     const [deck, setDeck] = useState<Deck | null>(null);
@@ -208,7 +211,7 @@ export default function StudyPage() {
 
     if (error) {
         return (
-            <div className="surface-card p-6">
+            <div className="panel p-6">
                 <p className="text-sm text-danger">{error}</p>
                 <Link
                     href="/dashboard"
@@ -249,64 +252,85 @@ export default function StudyPage() {
 
     return (
         <div className="mx-auto max-w-xl space-y-4">
-            <div className="flex items-center gap-3">
-                <Link
-                    href="/dashboard"
-                    aria-label={t("exitSession")}
-                    className="rounded-lg p-1.5 text-muted transition hover:bg-surface-2 hover:text-fg"
-                >
-                    <ArrowLeft className="size-4" />
-                </Link>
-                <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-bold">
-                        {deck
-                            ? deck.sectionLabel
-                                ? `${deck.sectionLabel} · ${deck.name}`
-                                : deck.name
-                            : t("sessionTitle")}
-                    </p>
-                    <p className="text-[11px] text-muted">
-                        {t("cycleLine", { cycle: plan?.cycle ?? 1 })} ·{" "}
-                        {t("knownLine", { known: knownNow, total: deckTotal })} ·{" "}
-                        {t("sessionLine", { done: index, total: totalInSession })}
-                    </p>
+            <div className="border-b border-border pb-3">
+                <div className="flex items-start gap-3">
+                    <Link
+                        href="/dashboard"
+                        aria-label={t("exitSession")}
+                        className="mt-0.5 rounded-[0.25rem] p-1 text-muted transition-colors hover:bg-surface-2 hover:text-fg"
+                    >
+                        <ArrowLeft className="size-4" />
+                    </Link>
+
+                    <div className="min-w-0 flex-1">
+                        <p className="eyebrow">{t("sessionTitle")}</p>
+                        <h1 className="display mt-1 truncate text-xl leading-tight">
+                            {deck
+                                ? `${sectionLabelFor(
+                                      deck.level,
+                                      getCourse(deck.courseId).unitNoun,
+                                      tc,
+                                  )} · ${unitLabelFor(
+                                      deck.topicOrder,
+                                      deck.name,
+                                      getCourse(deck.courseId).unitNoun,
+                                      tc,
+                                      locale,
+                                  )}`
+                                : t("sessionTitle")}
+                        </h1>
+                    </div>
+
+                    <div className="flex shrink-0 items-center gap-3">
+                        <button
+                            type="button"
+                            onClick={() => {
+                                setMode("flashcard");
+                                setRevealed(false);
+                                setQuizPicked(null);
+                            }}
+                            aria-pressed={mode === "flashcard"}
+                            className={cn(
+                                "inline-flex items-center gap-1 border-b-2 pb-1 font-mono text-[10px] uppercase tracking-[0.12em] transition-colors",
+                                mode === "flashcard"
+                                    ? "border-accent text-fg"
+                                    : "border-transparent text-muted hover:text-fg",
+                            )}
+                        >
+                            <Layers className="size-3" />
+                            {t("modeFlashcard")}
+                        </button>
+                        <button
+                            type="button"
+                            disabled={!quizAvailable}
+                            title={quizAvailable ? t("modeHint") : tq("notEnoughCards")}
+                            aria-pressed={mode === "quiz"}
+                            onClick={() => {
+                                setMode("quiz");
+                                setRevealed(false);
+                                setQuizPicked(null);
+                            }}
+                            className={cn(
+                                "inline-flex items-center gap-1 border-b-2 pb-1 font-mono text-[10px] uppercase tracking-[0.12em] transition-colors disabled:opacity-40",
+                                mode === "quiz"
+                                    ? "border-accent text-fg"
+                                    : "border-transparent text-muted hover:text-fg",
+                            )}
+                        >
+                            <ListChecks className="size-3" />
+                            {t("modeQuiz")}
+                        </button>
+                    </div>
                 </div>
 
-                <div className="flex items-center rounded-lg border border-border bg-surface p-0.5">
-                    <button
-                        type="button"
-                        onClick={() => {
-                            setMode("flashcard");
-                            setRevealed(false);
-                            setQuizPicked(null);
-                        }}
-                        className={cn(
-                            "inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold transition",
-                            mode === "flashcard"
-                                ? "bg-accent text-accent-fg"
-                                : "text-muted hover:text-fg",
-                        )}
-                    >
-                        <Layers className="size-3" />
-                        {t("modeFlashcard")}
-                    </button>
-                    <button
-                        type="button"
-                        disabled={!quizAvailable}
-                        title={quizAvailable ? t("modeHint") : tq("notEnoughCards")}
-                        onClick={() => {
-                            setMode("quiz");
-                            setRevealed(false);
-                            setQuizPicked(null);
-                        }}
-                        className={cn(
-                            "inline-flex items-center gap-1 rounded-md px-2 py-1 text-[11px] font-semibold transition disabled:opacity-40",
-                            mode === "quiz" ? "bg-accent text-accent-fg" : "text-muted hover:text-fg",
-                        )}
-                    >
-                        <ListChecks className="size-3" />
-                        {t("modeQuiz")}
-                    </button>
+                <div className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 pl-7 sm:pl-7">
+                    <span className="meta">{t("cycleLine", { cycle: plan?.cycle ?? 1 })}</span>
+                    <span className="meta">
+                        {t("knownLine", { known: knownNow, total: deckTotal })}
+                    </span>
+                    <span className="meta num">
+                        {t("sessionLine", { done: index, total: totalInSession })}
+                    </span>
                 </div>
             </div>
 
@@ -326,7 +350,15 @@ export default function StudyPage() {
                         voiceURI={profile?.ttsVoices?.[deck?.courseId ?? ""] ?? profile?.ttsVoiceURI}
                         rate={profile?.ttsRate}
                         lang={deck ? getCourse(deck.courseId).speechLocale : undefined}
-                        badgeLabel={deck?.sectionLabel}
+                        badgeLabel={
+                            deck
+                                ? sectionLabelFor(
+                                      deck.level,
+                                      getCourse(deck.courseId).unitNoun,
+                                      tc,
+                                  )
+                                : undefined
+                        }
                     />
                 ) : (
                     <FlashcardView
@@ -339,7 +371,15 @@ export default function StudyPage() {
                         voiceURI={profile?.ttsVoices?.[deck?.courseId ?? ""] ?? profile?.ttsVoiceURI}
                         rate={profile?.ttsRate}
                         lang={deck ? getCourse(deck.courseId).speechLocale : undefined}
-                        badgeLabel={deck?.sectionLabel}
+                        badgeLabel={
+                            deck
+                                ? sectionLabelFor(
+                                      deck.level,
+                                      getCourse(deck.courseId).unitNoun,
+                                      tc,
+                                  )
+                                : undefined
+                        }
                         repeatCount={repeatCounts[current.id] ?? 0}
                         cycle={plan?.cycle}
                     />

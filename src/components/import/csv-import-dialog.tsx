@@ -216,7 +216,7 @@ export function CsvImportDialog({
                         ) : null}
 
                         {mapped && mapped.cards.length > 0 ? (
-                            <div className="overflow-x-auto rounded-xl border border-border">
+                            <div className="overflow-x-auto border border-border">
                                 <table className="w-full text-left text-xs">
                                     <thead className="bg-surface-2 text-muted">
                                         <tr>
@@ -244,12 +244,12 @@ export function CsvImportDialog({
                 ) : null}
 
                 {done !== null ? (
-                    <p className="rounded-lg bg-success/10 px-3 py-2 text-xs text-success">
+                    <p className="border-l-2 border-success pl-3 text-xs text-success">
                         {t("success", { count: done })}
                     </p>
                 ) : null}
                 {error ? (
-                    <p className="rounded-lg bg-danger/10 px-3 py-2 text-xs text-danger">{error}</p>
+                    <p className="border-l-2 border-danger pl-3 text-xs text-danger">{error}</p>
                 ) : null}
             </div>
         </Dialog>

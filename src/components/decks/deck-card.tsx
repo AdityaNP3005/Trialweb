@@ -1,11 +1,18 @@
 "use client";
 
-import { ArrowRight, BookOpen, Lock } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { BookOpen, Lock } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Deck, DeckProgress } from "@/types";
+import { getCourse } from "@/content/courses";
+import { sectionLabelFor, unitLabelFor } from "@/lib/content/labels";
 import { Badge } from "@/components/ui/badge";
+import { Progress } from "@/components/ui/progress";
 
+/**
+ * A pass card: route code in the rail, title and route progress in the body,
+ * a tear line before the stub with tags and the call to action.
+ */
 export function DeckCard({
     deck,
     progress,
@@ -14,66 +21,62 @@ export function DeckCard({
     progress?: DeckProgress;
 }) {
     const t = useTranslations("decks");
+    const tc = useTranslations("common");
+    const locale = useLocale();
+    const course = getCourse(deck.courseId);
     const percent = progress?.percent ?? 0;
 
     return (
         <Link
             href={`/decks/${deck.id}`}
-            className="surface-card group flex flex-col gap-3 p-4 transition duration-200 hover:-translate-y-0.5 hover:border-accent/50"
+            className="panel group flex flex-col transition-colors hover:border-fg/35"
         >
-            <div className="flex items-start justify-between gap-2">
-                <div className="flex items-center gap-2">
-                    <span className="grid size-9 place-items-center rounded-xl bg-accent-soft text-base text-accent">
-                        {deck.icon ?? <BookOpen className="size-4" />}
-                    </span>
-                    <div>
-                        <h3 className="text-sm font-bold leading-tight">{deck.name}</h3>
-                        <p className="mt-0.5 text-xs text-muted">
-                            {t("cardCount", { count: deck.cardCount })}
-                        </p>
-                    </div>
+            <div className="flex items-start justify-between gap-3 p-4 pb-3">
+                <div className="min-w-0">
+                    <p className="meta">
+                        {sectionLabelFor(deck.level, course.unitNoun, tc)}
+                    </p>
+                    <h3 className="mt-1.5 truncate text-sm font-semibold leading-tight">
+                        {unitLabelFor(deck.topicOrder, deck.name, course.unitNoun, tc, locale)}
+                    </h3>
                 </div>
-                <div className="flex flex-col items-end gap-1">
-                    <Badge tone="accent">{deck.sectionLabel ?? deck.level}</Badge>
+                <div className="flex shrink-0 flex-col items-end gap-1.5">
+                    <Badge tone={deck.readOnly ? "neutral" : "accent"}>
+                        {deck.readOnly ? t("badgeContent") : t("badgeCustom")}
+                    </Badge>
                     {deck.readOnly ? (
                         <Lock className="size-3 text-muted" aria-label="read-only" />
-                    ) : null}
+                    ) : (
+                        <BookOpen className="size-3 text-muted" aria-hidden />
+                    )}
                 </div>
             </div>
 
-            <div>
-                <div className="mb-1 flex justify-between text-[10px] font-semibold uppercase tracking-wide text-muted">
-                    <span>{t("cycleLabel", { cycle: progress?.cycle ?? 1 })}</span>
-                    <span>
+            <div className="px-4">
+                <div className="flex items-baseline justify-between gap-2">
+                    <span className="meta">
+                        {t("cardCount", { count: deck.cardCount })}
+                    </span>
+                    <span className="num text-xs font-semibold">
                         {progress?.known ?? 0}/{deck.cardCount}
                     </span>
                 </div>
-                <div className="h-1.5 w-full overflow-hidden rounded-full bg-surface-2">
-                    <div
-                        className="h-full rounded-full bg-accent transition-all"
-                        style={{ width: `${percent}%` }}
-                    />
-                </div>
+                <Progress value={percent} className="mt-1.5" />
             </div>
 
-            {deck.description ? (
-                <p className="line-clamp-2 text-xs leading-relaxed text-muted">
-                    {deck.description}
-                </p>
-            ) : null}
+            <div className="tear-flat mx-4" />
 
-            <div className="mt-auto flex items-center justify-between pt-1">
+            <div className="mt-auto flex items-center justify-between gap-2 px-4 pb-4">
                 <div className="flex flex-wrap gap-1">
                     {deck.tags.slice(0, 3).map((tag) => (
-                        <span
-                            key={tag}
-                            className="rounded-md bg-surface-2 px-1.5 py-0.5 text-[10px] font-medium text-muted"
-                        >
+                        <span key={tag} className="meta normal-case tracking-normal">
                             #{tag}
                         </span>
                     ))}
                 </div>
-                <ArrowRight className="size-4 text-muted transition group-hover:translate-x-0.5 group-hover:text-accent" />
+                <span className="font-mono text-[10px] uppercase tracking-[0.12em] text-accent">
+                    {t("cycleLabel", { cycle: progress?.cycle ?? 1 })}
+                </span>
             </div>
         </Link>
     );

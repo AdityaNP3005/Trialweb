@@ -27,6 +27,7 @@ import { downloadFile, todayStamp } from "@/lib/utils/download";
 import { Button, buttonStyles } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
 import { Label, Select } from "@/components/ui/field";
+import { PageHeader } from "@/components/ui/page-header";
 import { cn } from "@/lib/utils/cn";
 
 const themeOptions: {
@@ -172,17 +173,19 @@ export default function SettingsPage() {
     }
 
     return (
-        <div className="space-y-5">
-            <div>
-                <h1 className="text-2xl font-extrabold tracking-tight">{t("title")}</h1>
-                <p className="mt-1 text-sm text-muted">{t("subtitle")}</p>
-            </div>
+        <div className="space-y-8">
+            <PageHeader
+                eyebrow={tc("preferences")}
+                title={t("title")}
+                description={t("subtitle")}
+                className="border-b-0 pb-0"
+            />
 
-            <section className="surface-card p-5">
-                <h2 className="mb-3 text-sm font-bold">{t("appearance")}</h2>
-                <div className="flex flex-wrap items-center gap-3">
+            <section className="border-t border-border pt-5">
+                <h2 className="eyebrow text-fg">{t("appearance")}</h2>
+                <div className="mt-3 flex flex-wrap items-center gap-3">
                     <Label className="mb-0">{t("theme")}</Label>
-                    <div className="inline-flex rounded-lg border border-border bg-surface p-0.5">
+                    <div className="flex items-center gap-3">
                         {themeOptions.map(({ value, icon: Icon, key }) => (
                             <button
                                 key={value}
@@ -190,13 +193,13 @@ export default function SettingsPage() {
                                 onClick={() => setTheme(value)}
                                 aria-pressed={theme === value}
                                 className={cn(
-                                    "inline-flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-xs font-semibold transition",
+                                    "inline-flex items-center gap-1.5 border-b-2 pb-1 font-mono text-[10px] uppercase tracking-[0.1em] transition-colors",
                                     theme === value
-                                        ? "bg-accent text-accent-fg"
-                                        : "text-muted hover:text-fg",
+                                        ? "border-accent text-fg"
+                                        : "border-transparent text-muted hover:text-fg",
                                 )}
                             >
-                                <Icon className="size-3.5" />
+                                <Icon className="size-3" />
                                 {t(key)}
                             </button>
                         ))}
@@ -209,7 +212,7 @@ export default function SettingsPage() {
                         {t("language")}
                     </Label>
                     <Select
-                        className="h-9 w-auto py-0 text-xs"
+                        className="h-8 w-auto border-0 bg-transparent py-0 font-mono text-[11px] uppercase tracking-[0.08em]"
                         value={params?.locale ?? routing.defaultLocale}
                         onChange={(event) => {
                             router.replace(pathname, { locale: event.target.value as AppLocale });
@@ -221,10 +224,10 @@ export default function SettingsPage() {
                 </div>
             </section>
 
-            <section className="surface-card p-5">
-                <h2 className="mb-1 text-sm font-bold">{t("learning")}</h2>
-                <p className="mb-4 text-xs text-muted">{t("learningHint")}</p>
-                <label className="flex items-start gap-3 rounded-xl border border-border bg-surface-2/60 p-3">
+            <section className="border-t border-border pt-5">
+                <h2 className="eyebrow text-fg">{t("learning")}</h2>
+                <p className="mt-1 text-xs text-muted">{t("learningHint")}</p>
+                <label className="mt-3 flex items-start gap-3 border border-border p-3">
                     <input
                         type="checkbox"
                         checked={shuffleCards}
@@ -240,13 +243,13 @@ export default function SettingsPage() {
                 </label>
             </section>
 
-            <section className="surface-card p-5">
-                <h2 className="mb-3 flex items-center gap-2 text-sm font-bold">
-                    <Volume2 className="size-4 text-muted" />
+            <section className="border-t border-border pt-5">
+                <h2 className="eyebrow flex items-center gap-2 text-fg">
+                    <Volume2 className="size-3.5" />
                     {t("audio")} · {activeCourse.nativeName}
                 </h2>
                 {courseVoices.length === 0 ? (
-                    <p className="rounded-lg bg-warning/10 px-3 py-2 text-xs text-warning">
+                    <p className="mt-3 border-l-2 border-warning pl-3 text-xs text-warning">
                         {t("ttsNoVoice")}
                     </p>
                 ) : (
@@ -298,16 +301,16 @@ export default function SettingsPage() {
                                 }
                             >
                                 <Volume2 className="size-3.5" />
-                                Test
+                                {t("test")}
                             </Button>
                         </div>
                     </div>
                 )}
             </section>
 
-            <section className="surface-card p-5">
-                <h2 className="mb-3 text-sm font-bold">{t("data")}</h2>
-                <div className="flex flex-wrap gap-2">
+            <section className="border-t border-border pt-5">
+                <h2 className="eyebrow text-fg">{t("data")}</h2>
+                <div className="mt-3 flex flex-wrap gap-2">
                     <Button
                         variant="secondary"
                         size="sm"
@@ -338,9 +341,9 @@ export default function SettingsPage() {
                 </div>
             </section>
 
-            <section className="surface-card flex flex-wrap items-center justify-between gap-3 p-5">
+            <section className="flex flex-wrap items-center justify-between gap-3 border-t border-border pt-5">
                 <div>
-                    <h2 className="text-sm font-bold">
+                    <h2 className="eyebrow text-fg">
                         {user ? t("account") : t("guestTitle")}
                     </h2>
                     <p className="max-w-md text-xs text-muted">

@@ -104,7 +104,7 @@ export default function LoginPage() {
                 </div>
 
                 {errorKey ? (
-                    <p role="alert" className="rounded-lg bg-danger/10 px-3 py-2 text-xs text-danger">
+                    <p role="alert" className="border-l-2 border-danger pl-3 text-xs text-danger">
                         {te(errorKey)}
                         {errorKey === "unknown" && errorCode ? (
                             <span className="mt-1 block font-mono text-[10px] opacity-70">

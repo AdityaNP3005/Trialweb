@@ -1,19 +1,22 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { Filter, Plus } from "lucide-react";
+import { ChevronRight, Plus } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useStore } from "@/components/providers/store-provider";
 import type { CefrLevel, Deck, DeckProgress, SectionId } from "@/types";
 import { CEFR_LEVELS } from "@/types";
 import { courseSections, summarizeSection } from "@/content/courses";
 import { CourseSwitcher } from "@/components/courses/course-switcher";
+import { sectionLabelFor } from "@/lib/content/labels";
 import { Button } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
 import { Input, Label, Select, Textarea } from "@/components/ui/field";
 import { EmptyState } from "@/components/ui/empty-state";
-import { Skeleton } from "@/components/ui/progress";
+import { Progress, Skeleton } from "@/components/ui/progress";
+import { PageHeader } from "@/components/ui/page-header";
 import { DeckCard } from "@/components/decks/deck-card";
+import { cn } from "@/lib/utils/cn";
 
 export default function DecksPage() {
     const { store, profile, refreshProfile } = useStore();
@@ -141,80 +144,82 @@ export default function DecksPage() {
         }
     }
 
-    return (
-        <div className="space-y-5">
-            <div className="flex flex-wrap items-end justify-between gap-3">
-                <div>
-                    <h1 className="text-2xl font-extrabold tracking-tight">{t("title")}</h1>
-                    <p className="mt-1 text-sm text-muted">{t("subtitle")}</p>
-                </div>
-                <Button onClick={() => setDialogOpen(true)}>
-                    <Plus className="size-4" />
-                    {t("newDeck")}
-                </Button>
-            </div>
+    const customDecks = (decks ?? []).filter((deck) => deck.source === "user");
 
-            <CourseSwitcher
-                activeCourseId={activeCourseId}
-                disabled={switching}
-                onSelect={switchCourse}
+    return (
+        <div className="space-y-7">
+            <PageHeader
+                eyebrow={tc("appName")}
+                title={t("title")}
+                description={t("subtitle")}
+                actions={
+                    <Button size="sm" onClick={() => setDialogOpen(true)}>
+                        <Plus className="size-4" />
+                        {t("newDeck")}
+                    </Button>
+                }
             />
 
-            <div className="surface-card flex flex-wrap items-center gap-2 p-3">
-                <span className="flex items-center gap-1.5 pl-1 text-xs font-semibold text-muted">
-                    <Filter className="size-3.5" />
-                    {t("filterLevel")}
-                </span>
-                <div className="flex flex-wrap gap-1">
-                    {levels.map((entry) => (
-                        <button
-                            key={entry}
-                            type="button"
-                            onClick={() => setLevel(entry)}
-                            className={`rounded-lg px-2.5 py-1 text-xs font-semibold transition ${level === entry
-                                ? "bg-accent text-accent-fg"
-                                : "bg-surface-2 text-muted hover:text-fg"
-                                }`}
-                        >
-                            {entry === "all" ? tc("all") : entry}
-                        </button>
-                    ))}
-                </div>
+            <div className="space-y-3">
+                <CourseSwitcher
+                    activeCourseId={activeCourseId}
+                    disabled={switching}
+                    onSelect={switchCourse}
+                />
 
-                <div className="ml-auto flex flex-wrap items-center gap-2">
-                    <Select
-                        aria-label={t("filterTag")}
-                        value={tag}
-                        onChange={(event) => setTag(event.target.value)}
-                        className="h-9 w-auto py-0 text-xs"
-                    >
-                        <option value="all">
-                            {t("filterTag")}: {tc("all")}
-                        </option>
-                        {tags.map((entry) => (
-                            <option key={entry} value={entry}>
-                                #{entry}
-                            </option>
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-y border-border py-2">
+                    <div className="flex flex-wrap items-center gap-3">
+                        {levels.map((entry) => (
+                            <button
+                                key={entry}
+                                type="button"
+                                onClick={() => setLevel(entry)}
+                                aria-pressed={level === entry}
+                                className={cn(
+                                    "font-mono text-[11px] uppercase tracking-[0.1em] transition-colors",
+                                    level === entry
+                                        ? "text-fg underline decoration-accent decoration-2 underline-offset-4"
+                                        : "text-muted hover:text-fg",
+                                )}
+                            >
+                                {entry === "all" ? tc("all") : entry}
+                            </button>
                         ))}
-                    </Select>
-                    <Select
-                        aria-label={t("filterSource")}
-                        value={source}
-                        onChange={(event) =>
-                            setSource(event.target.value as "all" | "content" | "user")
-                        }
-                        className="h-9 w-auto py-0 text-xs"
-                    >
-                        <option value="all">{tc("all")}</option>
-                        <option value="content">content</option>
-                        <option value="user">user</option>
-                    </Select>
+                    </div>
+
+                    <div className="ml-auto flex flex-wrap items-center gap-2">
+                        <Select
+                            aria-label={t("filterTag")}
+                            value={tag}
+                            onChange={(event) => setTag(event.target.value)}
+                            className="h-8 w-auto border-0 bg-transparent py-0 pl-0 font-mono text-[11px] uppercase tracking-[0.08em]"
+                        >
+                            <option value="all">
+                                {t("filterTag")}: {tc("all")}
+                            </option>
+                            {tags.map((entry) => (
+                                <option key={entry} value={entry}>
+                                    #{entry}
+                                </option>
+                            ))}
+                        </Select>
+                        <Select
+                            aria-label={t("filterSource")}
+                            value={source}
+                            onChange={(event) =>
+                                setSource(event.target.value as "all" | "content" | "user")
+                            }
+                            className="h-8 w-auto border-0 bg-transparent py-0 font-mono text-[11px] uppercase tracking-[0.08em]"
+                        >
+                            <option value="all">{tc("all")}</option>
+                            <option value="content">{t("badgeContent")}</option>
+                            <option value="user">{t("badgeCustom")}</option>
+                        </Select>
+                    </div>
                 </div>
             </div>
 
-            {error ? (
-                <p className="rounded-lg bg-danger/10 px-3 py-2 text-xs text-danger">{error}</p>
-            ) : null}
+            {error ? <p className="text-xs text-danger">{error}</p> : null}
 
             {!decks ? (
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -223,8 +228,8 @@ export default function DecksPage() {
                     <Skeleton className="h-36" />
                 </div>
             ) : level === "all" && source !== "user" ? (
-                <div className="space-y-5">
-                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="space-y-8">
+                    <ul className="border-t border-border">
                         {sections.map((section) => {
                             const summary = summarizeSection(
                                 section.id,
@@ -232,47 +237,62 @@ export default function DecksPage() {
                                 new Map(Object.entries(progress)),
                             );
                             return (
-                                <button
-                                    key={section.id}
-                                    type="button"
-                                    onClick={() => setLevel(section.id)}
-                                    className="surface-card flex flex-col gap-2 p-4 text-left transition hover:border-accent/50"
-                                >
-                                    <div className="flex items-center justify-between">
-                                        <span className="text-lg font-extrabold">
-                                            {section.label}
+                                <li key={section.id} className="border-b border-border">
+                                    <button
+                                        type="button"
+                                        onClick={() => setLevel(section.id)}
+                                        className="group grid w-full grid-cols-[3rem_1fr_auto] items-center gap-4 py-4 text-left transition-colors hover:bg-surface-2/40 sm:grid-cols-[4rem_1fr_9rem_auto]"
+                                    >
+                                        <span className="display text-lg leading-none">
+                                            {sectionLabelFor(
+                                                section.id,
+                                                section.unitNoun,
+                                                tc,
+                                            )}
                                         </span>
-                                        <span className="text-sm font-extrabold text-accent">
-                                            {summary.percent}%
+                                        <span className="min-w-0">
+                                            <span className="block text-[13.5px] font-semibold">
+                                                {section.unitNoun === "book"
+                                                    ? t("bookChapters", { count: summary.topics })
+                                                    : t("bandTopics", { count: summary.topics })}
+                                            </span>
+                                            <span className="meta mt-1 block">
+                                                {summary.known}/{summary.total}
+                                            </span>
                                         </span>
-                                    </div>
-                                    <p className="text-xs text-muted">
-                                        {section.unitNoun === "book"
-                                            ? t("bookChapters", { count: summary.topics })
-                                            : t("bandTopics", { count: summary.topics })}
-                                    </p>
-                                    <div className="h-1.5 w-full overflow-hidden rounded-full bg-surface-2">
-                                        <div
-                                            className="h-full rounded-full bg-accent"
-                                            style={{ width: `${summary.percent}%` }}
-                                        />
-                                    </div>
-                                </button>
+                                        <span className="col-span-3 sm:col-span-1">
+                                            <span className="flex items-baseline justify-between gap-2">
+                                                <span className="meta">
+                                                    {tc("progressShort")}
+                                                </span>
+                                                <span className="num text-sm font-semibold">
+                                                    {summary.percent}%
+                                                </span>
+                                            </span>
+                                            <Progress
+                                                value={summary.percent}
+                                                className="mt-1.5"
+                                            />
+                                        </span>
+                                        <ChevronRight className="hidden size-4 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-fg sm:block" />
+                                    </button>
+                                </li>
                             );
                         })}
-                    </div>
+                    </ul>
 
-                    {decks.filter((deck) => deck.source === "user").length > 0 ? (
-                        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                            {decks
-                                .filter((deck) => deck.source === "user")
-                                .map((deck) => (
+                    {customDecks.length > 0 ? (
+                        <div className="space-y-3">
+                            <h2 className="eyebrow text-fg">{t("customSection")}</h2>
+                            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                                {customDecks.map((deck) => (
                                     <DeckCard
                                         key={deck.id}
                                         deck={deck}
                                         progress={progress[deck.id]}
                                     />
                                 ))}
+                            </div>
                         </div>
                     ) : null}
                 </div>

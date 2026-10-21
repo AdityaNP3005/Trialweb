@@ -8,19 +8,16 @@ export function TtsButton({
     text,
     voiceURI,
     rate,
-    lang = "de-DE",
+    lang,
     className,
-    label = "Play pronunciation",
 }: {
     text: string;
     voiceURI?: string | null;
     rate?: number;
-    /** BCP-47 locale: `de-DE` or `zh-TW`. */
     lang?: string;
     className?: string;
-    label?: string;
 }) {
-    const { supported, speak } = useSpeech(lang);
+    const { speak, supported } = useSpeech(lang);
 
     if (!supported) return null;
 
@@ -29,15 +26,16 @@ export function TtsButton({
             type="button"
             onClick={(event) => {
                 event.stopPropagation();
-                speak(text, { voiceURI, rate });
+                speak(text, { voiceURI: voiceURI ?? null, rate });
             }}
-            title={label} aria-label={label}
+            aria-label="Play pronunciation"
+            title="Play pronunciation"
             className={cn(
-                "inline-grid size-9 place-items-center rounded-full bg-surface-2 text-muted transition hover:bg-accent-soft hover:text-accent",
+                "grid size-7 shrink-0 place-items-center rounded-full border border-border text-muted transition-colors hover:border-fg/40 hover:text-fg",
                 className,
             )}
         >
-            <Volume2 className="size-4" />
+            <Volume2 className="size-3.5" />
         </button>
     );
 }

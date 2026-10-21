@@ -1,10 +1,15 @@
 "use client";
 
-import { Globe, Sparkles } from "lucide-react";
+import { Globe } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/layout/logo";
 
+/**
+ * Auth screen as a travel document: brand and eyebrow in the header strip, a
+ * tear line, then the form. No floating card on a gradient.
+ */
 export function AuthCard({
     title,
     subtitle,
@@ -19,17 +24,27 @@ export function AuthCard({
     const t = useTranslations("common");
 
     return (
-        <div className="animate-rise surface-card p-6 sm:p-7">
-            <Link href="/" className="mb-6 flex items-center gap-2 font-bold tracking-tight">
-                <span className="grid size-8 place-items-center rounded-xl bg-accent text-accent-fg">
-                    <Sparkles className="size-4" />
-                </span>
-                {t("appName")}
-            </Link>
-            <h1 className="text-xl font-extrabold tracking-tight">{title}</h1>
-            {subtitle ? <p className="mt-1 text-sm text-muted">{subtitle}</p> : null}
-            <div className="mt-6">{children}</div>
-            {footer ? <div className="mt-6 text-center text-sm text-muted">{footer}</div> : null}
+        <div className="animate-rise panel p-6 sm:p-7">
+            <div className="flex items-center justify-between gap-3">
+                <Link href="/" aria-label={t("appName")}>
+                    <Logo name={t("appName")} />
+                </Link>
+                <span className="stamp stamp--tilt text-muted">{t("accountStamp")}</span>
+            </div>
+
+            <h1 className="display mt-6 text-2xl leading-tight">{title}</h1>
+            {subtitle ? (
+                <p className="mt-1.5 text-sm leading-relaxed text-muted">{subtitle}</p>
+            ) : null}
+
+            <div className="tear" />
+
+            {children}
+            {footer ? (
+                <div className="mt-6 border-t border-border pt-4 text-center text-sm text-muted">
+                    {footer}
+                </div>
+            ) : null}
         </div>
     );
 }

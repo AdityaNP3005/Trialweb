@@ -1,11 +1,32 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
+import { Fraunces, IBM_Plex_Mono, Inter_Tight } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import "../globals.css";
+
+const interTight = Inter_Tight({
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-inter-tight",
+});
+
+const fraunces = Fraunces({
+    subsets: ["latin"],
+    display: "swap",
+    variable: "--font-fraunces",
+    axes: ["SOFT", "WONK"],
+});
+
+const plexMono = IBM_Plex_Mono({
+    subsets: ["latin"],
+    weight: ["400", "500"],
+    display: "swap",
+    variable: "--font-plex-mono",
+});
 
 const themeScript = `(function(){try{var t=localStorage.getItem("goabroad.theme");var d=window.matchMedia("(prefers-color-scheme: dark)").matches;var r=t==="dark"||(t!=="light"&&d);document.documentElement.classList.toggle("dark",r);document.documentElement.style.colorScheme=r?"dark":"light";}catch(e){}})();`;
 
@@ -44,7 +65,9 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
 
     return (
         <html lang={locale} suppressHydrationWarning>
-            <body className="min-h-dvh bg-bg text-fg antialiased">
+            <body
+                className={`${interTight.variable} ${fraunces.variable} ${plexMono.variable} min-h-dvh bg-bg text-fg antialiased`}
+            >
                 <Script id="theme-bootstrap" strategy="beforeInteractive">
                     {themeScript}
                 </Script>

@@ -7,7 +7,6 @@ import {
     LogIn,
     LogOut,
     Settings,
-    Sparkles,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/i18n/navigation";
@@ -17,6 +16,7 @@ import { useAuth } from "@/components/providers/auth-provider";
 import { useStore } from "@/components/providers/store-provider";
 import { LocaleSwitcher } from "./locale-switcher";
 import { ThemeToggle } from "./theme-toggle";
+import { Logo } from "./logo";
 import { Skeleton } from "@/components/ui/progress";
 
 const items = [
@@ -40,21 +40,16 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     const initials = isGuest ? "?" : displayName.slice(0, 2).toUpperCase() || "?";
 
     return (
-        <div className="flex min-h-dvh flex-col">
-            <header className="sticky top-0 z-30 border-b border-border bg-bg/85 backdrop-blur-md">
-                <div className="mx-auto flex w-full max-w-5xl items-center gap-3 px-4 py-3">
-                    <Link
-                        href="/dashboard"
-                        className="flex items-center gap-2 font-bold tracking-tight"
-                    >
-                        <span className="grid size-8 place-items-center rounded-xl bg-accent text-accent-fg">
-                            <Sparkles className="size-4" />
-                        </span>
-                        <span className="hidden sm:inline">{tc("appName")}</span>
+        <div className="relative flex min-h-dvh flex-col">
+            <header className="sticky top-0 z-30 border-b border-border bg-bg/92 backdrop-blur-sm">
+                <div className="mx-auto flex w-full max-w-5xl items-center gap-5 px-4 py-3 sm:px-6">
+                    <Link href="/dashboard" aria-label={tc("appName")}>
+                        <Logo name={tc("appName")} showName={false} className="sm:hidden" />
+                        <Logo name={tc("appName")} className="hidden sm:flex" />
                     </Link>
 
-                    <nav className="ml-2 flex flex-1 items-center gap-1">
-                        {items.map(({ href, key, icon: Icon }) => {
+                    <nav className="hidden flex-1 items-center gap-5 sm:flex">
+                        {items.map(({ href, key }) => {
                             const active = pathname.startsWith(href);
                             return (
                                 <Link
@@ -62,60 +57,66 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                                     href={href}
                                     aria-current={active ? "page" : undefined}
                                     className={cn(
-                                        "inline-flex items-center gap-1.5 rounded-lg px-2.5 py-1.5 text-[13px] font-semibold transition",
+                                        "-mb-[13px] border-b-2 pb-[13px] pt-1 font-mono text-[11px] font-medium uppercase tracking-[0.14em] transition-colors",
                                         active
-                                            ? "bg-accent-soft text-accent"
-                                            : "text-muted hover:bg-surface-2 hover:text-fg",
+                                            ? "border-accent text-fg"
+                                            : "border-transparent text-muted hover:text-fg",
                                     )}
                                 >
-                                    <Icon className="size-4" />
-                                    <span className="hidden sm:inline">{t(key)}</span>
+                                    {t(key)}
                                 </Link>
                             );
                         })}
                     </nav>
 
-                    <LocaleSwitcher className="hidden sm:inline-flex" />
-                    <ThemeToggle className="hidden sm:inline-flex" />
+                    <div className="ml-auto flex items-center gap-2">
+                        <LocaleSwitcher className="hidden sm:inline-flex" />
+                        <ThemeToggle className="hidden sm:inline-flex" />
 
-                    {isGuest ? (
-                        <Link
-                            href="/login"
-                            className="ml-1 inline-flex items-center gap-1.5 rounded-lg border border-border bg-surface px-2.5 py-1.5 text-[12px] font-semibold text-muted transition hover:border-accent/40 hover:text-fg"
-                            title={t("login")}
-                        >
-                            <LogIn className="size-3.5" />
-                            <span className="hidden sm:inline">{t("login")}</span>
-                        </Link>
-                    ) : (
-                        <div className="flex items-center gap-1.5 border-l border-border pl-2">
-                            <span
-                                title={user?.email ?? undefined}
-                                className="grid size-8 place-items-center rounded-full bg-surface-2 text-[11px] font-bold text-muted"
+                        {isGuest ? (
+                            <Link
+                                href="/login"
+                                className="inline-flex items-center gap-1.5 rounded-[0.375rem] border border-border px-2.5 py-1.5 text-[11px] font-semibold uppercase tracking-[0.08em] text-muted transition-colors hover:border-fg/40 hover:text-fg"
+                                title={t("login")}
                             >
-                                {initials}
-                            </span>
-                            <button
-                                type="button"
-                                onClick={async () => {
-                                    await signOutUser();
-                                    router.replace("/");
-                                }}
-                                title={t("logout")}
-                                aria-label={t("logout")}
-                                className="rounded-lg p-1.5 text-muted transition hover:bg-surface-2 hover:text-danger"
-                            >
-                                <LogOut className="size-4" />
-                            </button>
-                        </div>
-                    )}
+                                <LogIn className="size-3.5" />
+                                <span className="hidden sm:inline">{t("login")}</span>
+                            </Link>
+                        ) : (
+                            <div className="flex items-center gap-1.5 border-l border-border pl-2">
+                                <span
+                                    title={user?.email ?? undefined}
+                                    className="grid size-7 place-items-center rounded-full border border-border font-mono text-[10px] font-medium text-muted"
+                                >
+                                    {initials}
+                                </span>
+                                <button
+                                    type="button"
+                                    onClick={async () => {
+                                        await signOutUser();
+                                        router.replace("/");
+                                    }}
+                                    title={t("logout")}
+                                    aria-label={t("logout")}
+                                    className="rounded-[0.25rem] p-1.5 text-muted transition-colors hover:bg-surface-2 hover:text-danger"
+                                >
+                                    <LogOut className="size-4" />
+                                </button>
+                            </div>
+                        )}
+                    </div>
                 </div>
 
                 {isGuest ? (
-                    <div className="border-t border-border bg-accent-soft/60">
-                        <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-3 px-4 py-1.5 text-[11px] font-medium text-accent">
-                            <span>{t("guest")} · {t("guestModeHint")}</span>
-                            <Link href="/signup" className="font-bold underline-offset-2 hover:underline">
+                    <div className="border-t border-dashed border-border">
+                        <div className="mx-auto flex w-full max-w-5xl items-center justify-between gap-3 px-4 py-1.5 sm:px-6">
+                            <span className="meta">
+                                {t("guest")} · {t("guestModeHint")}
+                            </span>
+                            <Link
+                                href="/signup"
+                                className="font-mono text-[10px] font-medium uppercase tracking-[0.12em] text-accent underline-offset-4 hover:underline"
+                            >
                                 {t("signup")}
                             </Link>
                         </div>
@@ -123,7 +124,39 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 ) : null}
             </header>
 
-            <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-6">{children}</main>
+            <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8 pb-24 sm:px-6 sm:pb-12">
+                {children}
+            </main>
+
+            {/* Mobile: a quiet bottom strip instead of a floating pill bar. */}
+            <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/95 backdrop-blur-sm sm:hidden">
+                <div className="mx-auto grid max-w-md grid-cols-4">
+                    {items.map(({ href, key, icon: Icon }) => {
+                        const active = pathname.startsWith(href);
+                        return (
+                            <Link
+                                key={href}
+                                href={href}
+                                aria-current={active ? "page" : undefined}
+                                className={cn(
+                                    "flex flex-col items-center gap-1 py-2.5 text-[9px] font-medium uppercase tracking-[0.1em]",
+                                    active ? "text-fg" : "text-muted",
+                                )}
+                            >
+                                <Icon className="size-4" />
+                                {t(key)}
+                                <span
+                                    aria-hidden
+                                    className={cn(
+                                        "mt-0.5 h-[2px] w-5",
+                                        active ? "bg-accent" : "bg-transparent",
+                                    )}
+                                />
+                            </Link>
+                        );
+                    })}
+                </div>
+            </nav>
         </div>
     );
 }

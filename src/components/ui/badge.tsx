@@ -1,26 +1,39 @@
 import { cn } from "@/lib/utils/cn";
 
 const tones = {
-    neutral: "bg-surface-2 text-muted border-border",
-    accent: "bg-accent-soft text-accent border-accent/30",
-    success: "bg-success/10 text-success border-success/30",
-    warning: "bg-warning/10 text-warning border-warning/30",
-    danger: "bg-danger/10 text-danger border-danger/30",
+    neutral: "text-muted",
+    accent: "text-accent",
+    success: "text-success",
+    warning: "text-warning",
+    danger: "text-danger",
+    gold: "text-gold",
 } as const;
 
+export type StampTone = keyof typeof tones;
+
+/**
+ * A passport stamp. Status copy always sits on a straight baseline — the tilt
+ * and the double ring are decoration, so they never carry meaning on their own.
+ */
 export function Badge({
     tone = "neutral",
     className,
     children,
+    tilt = false,
+    double = false,
 }: {
-    tone?: keyof typeof tones;
+    tone?: StampTone;
     className?: string;
     children: React.ReactNode;
+    tilt?: boolean;
+    double?: boolean;
 }) {
     return (
         <span
             className={cn(
-                "inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wide",
+                "stamp",
+                tilt && "stamp--tilt",
+                double && "stamp--double",
                 tones[tone],
                 className,
             )}

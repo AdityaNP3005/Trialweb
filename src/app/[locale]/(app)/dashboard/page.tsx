@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { ArrowRight, CalendarDays, ChevronRight, Flame, Layers, Trophy } from "lucide-react";
+import { ArrowRight, ChevronRight } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { DailyStat, Deck, DeckProgress } from "@/types";
@@ -9,9 +9,12 @@ import { useStore } from "@/components/providers/store-provider";
 import { computeStreak } from "@/lib/stats/streak";
 import { getCourse, courseSections, summarizeSection } from "@/content/courses";
 import { CourseSwitcher } from "@/components/courses/course-switcher";
+import { sectionLabelFor, unitLabelFor } from "@/lib/content/labels";
 import { buttonStyles } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/progress";
-import { DeckCard } from "@/components/decks/deck-card";
+import { Badge } from "@/components/ui/badge";
+import { Progress, Skeleton } from "@/components/ui/progress";
+import { PageHeader, SectionHeading } from "@/components/ui/page-header";
+import { ManifestRow } from "@/components/ui/manifest-row";
 import { EmptyState } from "@/components/ui/empty-state";
 
 type DashboardData = {
@@ -24,6 +27,8 @@ type DashboardData = {
 export default function DashboardPage() {
     const { store, profile, refreshProfile } = useStore();
     const t = useTranslations("dashboard");
+    const td = useTranslations("decks");
+    const tc = useTranslations("common");
     const locale = useLocale();
 
     const activeCourseId = profile?.activeCourseId ?? "de";
@@ -100,145 +105,141 @@ export default function DashboardPage() {
                 (a, b) =>
                     (b.progress?.lastActivityAt ?? 0) - (a.progress?.lastActivityAt ?? 0),
             )
-            .slice(0, 3);
+            .slice(0, 4);
     }, [data, progressById]);
 
     if (error) {
         return (
-            <div className="surface-card p-6">
+            <div className="panel p-6">
                 <p className="text-sm text-danger">{error}</p>
             </div>
         );
     }
 
     return (
-        <div className="space-y-6">
-            <div className="flex flex-wrap items-end justify-between gap-3">
-                <div>
-                    <h1 className="text-2xl font-extrabold tracking-tight">
-                        {name ? t("greeting", { name }) : t("greetingFallback")}
-                    </h1>
-                    <p className="mt-1 flex items-center gap-1.5 text-sm text-muted">
-                        <CalendarDays className="size-3.5" />
-                        {new Date().toLocaleDateString(locale, {
-                            weekday: "long",
-                            day: "numeric",
-                            month: "long",
-                        })}
-                    </p>
-                </div>
-                <Link href="/decks" className={buttonStyles({ variant: "ghost", size: "sm" })}>
-                    {t("openDecks")}
-                    <ArrowRight className="size-3.5" />
-                </Link>
-            </div>
+        <div className="space-y-8">
+            <PageHeader
+                eyebrow={new Date().toLocaleDateString(locale, {
+                    weekday: "long",
+                    day: "numeric",
+                    month: "long",
+                })}
+                title={name ? t("greeting", { name }) : t("greetingFallback")}
+                meta={[
+                    { label: t("knownToday"), value: String(data?.today.known ?? 0) },
+                    { label: t("reviewsToday"), value: String(data?.today.reviews ?? 0) },
+                    { label: t("streak"), value: t("streakDays", { count: streak }) },
+                ]}
+                actions={
+                    <Link href="/decks" className={buttonStyles({ variant: "secondary", size: "sm" })}>
+                        {t("openDecks")}
+                        <ArrowRight className="size-3.5" />
+                    </Link>
+                }
+            />
 
-            <section className="grid gap-4 sm:grid-cols-3">
-                <StatTile
-                    icon={<Trophy className="size-4" />}
-                    label={t("knownToday")}
-                    value={data?.today.known ?? 0}
-                />
-                <StatTile
-                    icon={<Layers className="size-4" />}
-                    label={t("reviewsToday")}
-                    value={data?.today.reviews ?? 0}
-                />
-                <StatTile
-                    icon={<Flame className="size-4" />}
-                    label={t("streak")}
-                    value={t("streakDays", { count: streak })}
-                />
-            </section>
-
-            <section className="space-y-3">
-                <div className="flex flex-wrap items-center gap-2">
+            <section className="space-y-4">
+                <div className="flex flex-wrap items-center justify-between gap-3">
                     <CourseSwitcher
                         activeCourseId={activeCourseId}
                         disabled={switching}
                         onSelect={switchCourse}
                     />
+                    <Badge tone="neutral" tilt>
+                        {course.nativeName} · {course.speechLocale}
+                    </Badge>
                 </div>
 
-                <div>
-                    <h2 className="text-sm font-bold uppercase tracking-wide text-muted">
-                        {course.unitNoun === "book" ? t("pickBook") : t("pickBand")}
-                    </h2>
-                    <p className="mt-1 text-xs text-muted">
-                        {course.unitNoun === "book" ? t("pickBookHint") : t("pickBandHint")}
-                    </p>
-                </div>
+                <SectionHeading
+                    hint={course.unitNoun === "book" ? t("pickBookHint") : t("pickBandHint")}
+                >
+                    {course.unitNoun === "book" ? t("pickBook") : t("pickBand")}
+                </SectionHeading>
 
                 {!data ? (
-                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                        {[0, 1, 2, 3, 4, 5].map((key) => (
-                            <Skeleton key={key} className="h-32" />
+                    <div className="space-y-2">
+                        {[0, 1, 2, 3].map((key) => (
+                            <Skeleton key={key} className="h-16" />
                         ))}
                     </div>
                 ) : (
-                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                    <ul className="border-t border-border">
                         {bands.map(({ section, summary }) => (
-                            <Link
-                                key={section.id}
-                                href={`/levels/${section.id}`}
-                                className="surface-card group flex flex-col gap-3 p-4 transition hover:-translate-y-0.5 hover:border-accent/50"
-                            >
-                                <div className="flex items-start justify-between">
-                                    <div>
-                                        <p className="text-lg font-extrabold leading-none">
-                                            {section.label}
+                            <li key={section.id}>
+                                <Link
+                                    href={`/levels/${section.id}`}
+                                    className="group grid grid-cols-[auto_1fr_auto] items-center gap-4 border-b border-border py-4 transition-colors hover:bg-surface-2/40 sm:grid-cols-[5rem_1fr_12rem_auto]"
+                                >
+                                    <span className="display whitespace-nowrap text-lg leading-none text-fg">
+                                        {sectionLabelFor(section.id, course.unitNoun, tc)}
+                                    </span>
+
+                                    <div className="min-w-0">
+                                        <p className="text-[13.5px] font-semibold leading-tight">
+                                            {course.unitNoun === "book"
+                                                ? t("bookDone", {
+                                                    done: summary.topicsDone,
+                                                    total: summary.topics,
+                                                })
+                                                : t("bandDone", {
+                                                    done: summary.topicsDone,
+                                                    total: summary.topics,
+                                                })}
                                         </p>
-                                        <p className="mt-1 text-xs text-muted">
+                                        <p className="meta mt-1 truncate">
                                             {course.unitNoun === "book"
                                                 ? t("bookChapters", { count: summary.topics })
                                                 : t("bandTopics", { count: summary.topics })}
+                                            {summary.nextTopic
+                                                ? ` · ${t("continueWith")}: ${unitLabelFor(
+                                                      summary.nextTopic.topicOrder,
+                                                      summary.nextTopic.name,
+                                                      course.unitNoun,
+                                                      tc,
+                                                      locale,
+                                                  )}`
+                                                : ""}
                                         </p>
                                     </div>
-                                    <span className="text-xl font-extrabold text-accent">
-                                        {summary.percent}%
-                                    </span>
-                                </div>
 
-                                <div className="h-1.5 w-full overflow-hidden rounded-full bg-surface-2">
-                                    <div
-                                        className="h-full rounded-full bg-accent transition-all"
-                                        style={{ width: `${summary.percent}%` }}
-                                    />
-                                </div>
+                                    <div className="col-span-3 sm:col-span-1">
+                                        <div className="flex items-baseline justify-between gap-2">
+                                            <span className="meta">
+                                                {summary.known}/{summary.total}
+                                            </span>
+                                            <span className="num text-sm font-semibold">
+                                                {summary.percent}%
+                                            </span>
+                                        </div>
+                                        <Progress
+                                            value={summary.percent}
+                                            className="mt-2 h-[2px]"
+                                        />
+                                    </div>
 
-                                <div className="mt-auto flex items-center justify-between gap-2 text-[11px] text-muted">
-                                    <span>
-
-                                        {course.unitNoun === "book"
-                                            ? t("bookDone", {
-                                                done: summary.topicsDone,
-                                                total: summary.topics,
-                                            })
-                                            : t("bandDone", {
-                                                done: summary.topicsDone,
-                                                total: summary.topics,
-                                            })}
-                                    </span>
-                                    <ChevronRight className="size-4 transition group-hover:translate-x-0.5 group-hover:text-accent" />
-                                </div>
-                                {summary.nextTopic ? (
-                                    <p className="truncate text-xs">
-                                        <span className="text-muted">{t("continueWith")}: </span>
-                                        <span className="font-semibold">
-                                            {summary.nextTopic.icon} {summary.nextTopic.name}
-                                        </span>
-                                    </p>
-                                ) : null}
-                            </Link>
+                                    <ChevronRight className="hidden size-4 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-fg sm:block" />
+                                </Link>
+                            </li>
                         ))}
-                    </div>
+                    </ul>
                 )}
             </section>
 
-            <section className="space-y-3">
-                <h2 className="text-sm font-bold uppercase tracking-wide text-muted">
+            <section className="space-y-4">
+                <SectionHeading
+                    action={
+                        recentTopics.length > 0 ? (
+                            <Link
+                                href="/decks"
+                                className="font-mono text-[11px] uppercase tracking-[0.12em] text-muted transition-colors hover:text-fg"
+                            >
+                                {t("openDecks")}
+                            </Link>
+                        ) : undefined
+                    }
+                >
                     {t("recentTopics")}
-                </h2>
+                </SectionHeading>
 
                 {recentTopics.length === 0 ? (
                     <EmptyState
@@ -254,50 +255,49 @@ export default function DashboardPage() {
                                     href={`/levels/${sections[0].id}`}
                                     className={buttonStyles({ size: "sm" })}
                                 >
-                                    {t("openBook", { book: sections[0].label })}
+                                    {t("openBook", {
+                                        book: sectionLabelFor(
+                                            sections[0].id,
+                                            course.unitNoun,
+                                            tc,
+                                        ),
+                                    })}
                                 </Link>
                             ) : (
-                                <Link
-                                    href="/levels/A1"
-                                    className={buttonStyles({ size: "sm" })}
-                                >
+                                <Link href="/levels/A1" className={buttonStyles({ size: "sm" })}>
                                     {t("openA1")}
                                 </Link>
                             )
                         }
                     />
                 ) : (
-                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                        {recentTopics.map(({ deck, progress }) => (
-                            <DeckCard key={deck.id} deck={deck} progress={progress} />
+                    <ul className="border-t border-border">
+                        {recentTopics.map(({ deck, progress }, index) => (
+                            <ManifestRow
+                                key={deck.id}
+                                href={`/study/${deck.id}`}
+                                index={index + 1}
+                                title={unitLabelFor(
+                                    deck.topicOrder,
+                                    deck.name,
+                                    course.unitNoun,
+                                    tc,
+                                    locale,
+                                )}
+                                meta={[
+                                    sectionLabelFor(deck.level, course.unitNoun, tc),
+                                    progress?.cycle
+                                        ? td("cycleLabel", { cycle: progress.cycle })
+                                        : "",
+                                ]
+                                    .filter(Boolean)
+                                    .join(" · ")}
+                                percent={progress?.percent ?? 0}
+                            />
                         ))}
-                    </div>
+                    </ul>
                 )}
             </section>
-        </div>
-    );
-}
-
-function StatTile({
-    icon,
-    label,
-    value,
-}: {
-    icon: React.ReactNode;
-    label: string;
-    value: React.ReactNode;
-}) {
-    return (
-        <div className="surface-card flex items-center gap-3 p-4">
-            <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-surface-2 text-muted">
-                {icon}
-            </span>
-            <div className="min-w-0">
-                <p className="truncate text-[11px] font-semibold uppercase tracking-wide text-muted">
-                    {label}
-                </p>
-                <p className="text-lg font-extrabold leading-tight">{value}</p>
-            </div>
         </div>
     );
 }

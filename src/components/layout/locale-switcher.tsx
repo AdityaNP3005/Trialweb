@@ -16,32 +16,38 @@ export function LocaleSwitcher({ className }: { className?: string }) {
     return (
         <div
             className={cn(
-                "inline-flex items-center rounded-lg border border-border bg-surface p-0.5",
+                "inline-flex items-center gap-1.5 border-r border-border pr-2.5",
                 pending && "opacity-60",
                 className,
             )}
             role="group"
             aria-label="Language"
         >
-            {routing.locales.map((locale) => (
-                <button
-                    key={locale}
-                    type="button"
-                    aria-pressed={active === locale}
-                    onClick={() =>
-                        startTransition(() => {
-                            router.replace(pathname, { locale: locale as AppLocale });
-                        })
-                    }
-                    className={cn(
-                        "rounded-md px-2 py-1 text-[11px] font-bold tracking-wide transition",
-                        active === locale
-                            ? "bg-accent text-accent-fg"
-                            : "text-muted hover:text-fg",
-                    )}
-                >
-                    {localeShort[locale as AppLocale]}
-                </button>
+            {routing.locales.map((locale, index) => (
+                <span key={locale} className="flex items-center gap-1.5">
+                    {index > 0 ? (
+                        <span aria-hidden className="font-mono text-[10px] text-border">
+                            /
+                        </span>
+                    ) : null}
+                    <button
+                        type="button"
+                        aria-pressed={active === locale}
+                        onClick={() =>
+                            startTransition(() => {
+                                router.replace(pathname, { locale: locale as AppLocale });
+                            })
+                        }
+                        className={cn(
+                            "font-mono text-[11px] font-medium uppercase tracking-[0.12em] transition-colors",
+                            active === locale
+                                ? "text-fg"
+                                : "text-muted hover:text-fg",
+                        )}
+                    >
+                        {localeShort[locale as AppLocale]}
+                    </button>
+                </span>
             ))}
         </div>
     );

@@ -269,6 +269,14 @@ tidak menambah biaya tulis per pengguna.
 
 ## 11. Kebutuhan non-fungsional
 
+- **Identitas visual**: dokumen perjalanan (kertas krem, tinta, satu merah stempel,
+  garis rambut + perforasi). Rute = band/buku, perhentian = topik/bab, stempel = unit
+  tuntas. Token, tipografi, dan aturan komponen di `docs/DESIGN.md`; UI tidak boleh
+  kembali ke pola kartu rounded + shadow + aksen ungu.
+- **Pelokalan**: seluruh teks terlihat berasal dari `messages/{id,en}.json`; judul
+  konten ("Buku 1", "Bab 3", topik Jerman) diterjemahkan saat render lewat
+  `src/lib/content/labels.ts`, jadi build `en` tidak pernah menampilkan label `id`.
+
 - **Keamanan**: `firestore.rules` membatasi akses ke `users/{uid}` milik sendiri; tidak ada
   endpoint server yang menyimpan secret.
 - **Privasi**: mode tamu tidak mengirim data ke mana pun; tidak ada analytics pihak ketiga.

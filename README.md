@@ -9,9 +9,16 @@ unit direset otomatis setelah semua kartunya ditampilkan.
 > Prinsip produk: **semua fitur belajar gratis tanpa akun**. Akun hanya dipakai untuk
 > menyimpan progres (sinkron antar perangkat + backup cloud).
 
+Identitas visualnya **dokumen perjalanan**: kertas krem, tinta, satu merah stempel, garis
+rambut dan perforasi menggantikan kartu bershadow. Band/buku diperlakukan sebagai *rute*,
+topik/bab sebagai *perhentian*, unit yang tuntas mendapat *stempel*. Detail token,
+tipografi, dan aturan komponen ada di [`docs/DESIGN.md`](./docs/DESIGN.md).
+
 📄 **Dokumentasi lengkap:** [`docs/PRD.md`](./docs/PRD.md) (kebutuhan produk, acceptance
-criteria, roadmap) dan [`docs/BRIEFING.md`](./docs/BRIEFING.md) (status teknis terkini,
-invariant, gotchas, TODO — baca ini dulu sebelum mengubah kode).
+criteria, roadmap), [`docs/BRIEFING.md`](./docs/BRIEFING.md) (status teknis terkini,
+invariant, gotchas, TODO — baca ini dulu sebelum mengubah kode), dan
+[`docs/DESIGN.md`](./docs/DESIGN.md) (sistem visual: token, tipografi, komponen,
+checklist UI).
 
 ---
 
@@ -79,6 +86,8 @@ loader + entri manifest (dihasilkan otomatis oleh script) lalu jalankan `npm run
 
 - Next.js 16 (App Router, Turbopack) + React 19 + TypeScript strict
 - Tailwind CSS 4 (token warna di `src/app/globals.css`, dark mode berbasis class)
+- Font lewat `next/font/google`: Fraunces (display), Inter Tight (UI), IBM Plex Mono
+  (metadata). Hanzi tetap memakai font sistem CJK (`--font-cjk`) tanpa unduhan.
 - next-intl 4 (routing `/[locale]`, `src/proxy.ts`, `next/root-params`)
 - Firebase 13 (Auth: Google + email/password, Firestore dengan cache persisten)
 - Zod, PapaParse, Vitest

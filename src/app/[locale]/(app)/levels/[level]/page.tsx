@@ -2,24 +2,27 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "next/navigation";
-import { ArrowLeft, CheckCircle2, Play, RotateCcw } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { CheckCircle2, Play, RotateCcw } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import type { Deck, DeckProgress } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
-import { getCourseForSection, summarizeSection } from "@/content/courses";
-import { getSection } from "@/lib/content/registry";
+import { getCourseForSection, summarizeSection } from "@/content/courses";import { getSection } from "@/lib/content/registry";
+import { sectionLabelFor, unitLabelFor } from "@/lib/content/labels";
 import { Badge } from "@/components/ui/badge";
 import { buttonStyles } from "@/components/ui/button";
-import { Skeleton } from "@/components/ui/progress";
-import { cn } from "@/lib/utils/cn";
+import { Progress, Skeleton } from "@/components/ui/progress";
+import { PageHeader, SectionHeading } from "@/components/ui/page-header";
+import { ManifestRow } from "@/components/ui/manifest-row";
 
 export default function LevelPage() {
     const params = useParams<{ level: string }>();
     const sectionId = params?.level ?? "";
     const router = useRouter();
-    const { store } = useStore();
+    const { store, profile, refreshProfile } = useStore();
     const t = useTranslations("levels");
+    const tc = useTranslations("common");
+    const locale = useLocale();
 
     const [decks, setDecks] = useState<Deck[] | null>(null);
     const [progress, setProgress] = useState<Map<string, DeckProgress>>(new Map());
@@ -27,6 +30,17 @@ export default function LevelPage() {
     const section = getSection(sectionId);
     const course = getCourseForSection(sectionId);
     const valid = Boolean(section && course);
+
+    // Deep links may point at the other course (e.g. /levels/book2 while German
+    // is active). Switch the course first, otherwise the unit list is empty.
+    const activeCourseId = profile?.activeCourseId;
+    useEffect(() => {
+        if (!store || !course || !activeCourseId) return;
+        if (activeCourseId === course.id) return;
+        void store
+            .updateProfile({ activeCourseId: course.id })
+            .then(() => refreshProfile());
+    }, [store, course, activeCourseId, refreshProfile]);
 
     useEffect(() => {
         if (!valid) {
@@ -37,6 +51,7 @@ export default function LevelPage() {
     useEffect(() => {
         if (!store || !valid) return;
         let cancelled = false;
+        setDecks(null);
         (async () => {
             const [nextDecks, nextProgress] = await Promise.all([
                 store.listDecks(),
@@ -49,7 +64,7 @@ export default function LevelPage() {
         return () => {
             cancelled = true;
         };
-    }, [store, valid, sectionId]);
+    }, [store, valid, sectionId, activeCourseId]);
 
     const topics = useMemo(
         () =>
@@ -64,86 +79,101 @@ export default function LevelPage() {
         [sectionId, decks, progress],
     );
 
+    async function resetTopic(deckId: string) {
+        if (!store) return;
+        if (!window.confirm(t("resetBody"))) return;
+        await store.resetDeckCycle(deckId);
+        const next = await store.listDeckProgress();
+        setProgress(new Map(next.map((item) => [item.deckId, item])));
+    }
+
     if (!valid) return null;
 
     if (!decks) {
         return (
             <div className="space-y-4">
                 <Skeleton className="h-24" />
-                <Skeleton className="h-16" />
+                <Skeleton className="h-10" />
                 <Skeleton className="h-64" />
             </div>
         );
     }
 
     return (
-        <div className="space-y-5">
-            <Link
-                href="/dashboard"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted transition hover:text-fg"
-            >
-                <ArrowLeft className="size-3.5" />
-                {t("back")}
-            </Link>
-
-            <section className="surface-card p-5">
-                <div className="flex flex-wrap items-start justify-between gap-4">
-                    <div>
-                        <div className="flex items-center gap-2">
-                            <h1 className="text-2xl font-extrabold tracking-tight">
-                                {section!.label}
-                            </h1>
-                            <Badge tone="accent">{course!.nativeName}</Badge>
-                        </div>
+        <div className="space-y-7">
+            <PageHeader
+                back={{ href: "/dashboard", label: t("back") }}
+                eyebrow={`${course!.nativeName} · ${course!.unitNoun === "book" ? tc("unitBook") : tc("unitBand")}`}
+                title={
+                    <span className="flex flex-wrap items-center gap-3">
+                        {sectionLabelFor(section!.id, course!.unitNoun, tc)}
                         {course!.unitNoun === "book" ? (
-                            <p className="mt-0.5 text-xs text-muted">{section!.title}</p>
+                            <span className="text-lg font-normal text-muted">
+                                {section!.title}
+                            </span>
                         ) : null}
-                        <p className="mt-1 text-sm text-muted">
-                            {course!.unitNoun === "book"
-                                ? t("summaryBook", {
-                                    chapters: summary.topics,
-                                    done: summary.topicsDone,
-                                    known: summary.known,
-                                    total: summary.total,
-                                })
-                                : t("summary", {
-                                    topics: summary.topics,
-                                    done: summary.topicsDone,
-                                    known: summary.known,
-                                    total: summary.total,
-                                })}
-                        </p>
-                        <div className="mt-3 h-2 w-full max-w-sm overflow-hidden rounded-full bg-surface-2">
-                            <div
-                                className="h-full rounded-full bg-accent transition-all"
-                                style={{ width: `${summary.percent}%` }}
-                            />
-                        </div>
-                    </div>
-
-                    {summary.nextTopic ? (
+                    </span>
+                }
+                description={
+                    course!.unitNoun === "book"
+                        ? t("summaryBook", {
+                            chapters: summary.topics,
+                            done: summary.topicsDone,
+                            known: summary.known,
+                            total: summary.total,
+                        })
+                        : t("summary", {
+                            topics: summary.topics,
+                            done: summary.topicsDone,
+                            known: summary.known,
+                            total: summary.total,
+                        })
+                }
+                meta={[
+                    {
+                        label:
+                            course!.unitNoun === "book"
+                                ? tc("chapterShort")
+                                : tc("topicShort"),
+                        value: String(summary.topics),
+                    },
+                    {
+                        label: tc("knownShort"),
+                        value: `${summary.known}/${summary.total}`,
+                    },
+                    { label: tc("progressShort"), value: `${summary.percent}%` },
+                ]}
+                actions={
+                    summary.nextTopic ? (
                         <Link
                             href={`/study/${summary.nextTopic.id}`}
-                            className={buttonStyles({ size: "lg" })}
+                            className={buttonStyles({ size: "md" })}
                         >
                             <Play className="size-4" />
-                            {t("continueTopic", { topic: summary.nextTopic.name })}
+                            {t("continueTopic", {
+                                topic: unitLabelFor(
+                                    summary.nextTopic.topicOrder,
+                                    summary.nextTopic.name,
+                                    course!.unitNoun,
+                                    tc,
+                                    locale,
+                                ),
+                            })}
                         </Link>
-                    ) : null}
-                </div>
-            </section>
+                    ) : null
+                }
+            />
+
+            <Progress value={summary.percent} className="h-[3px]" tone="ink" />
 
             <section className="space-y-3">
-                <div>
-                    <h2 className="text-sm font-bold uppercase tracking-wide text-muted">
-                        {course!.unitNoun === "book" ? t("chaptersTitle") : t("topicsTitle")}
-                    </h2>
-                    <p className="mt-1 text-xs text-muted">
-                        {course!.unitNoun === "book" ? t("chaptersHint") : t("topicsHint")}
-                    </p>
-                </div>
+                <SectionHeading
+                    hint={course!.unitNoun === "book" ? t("chaptersHint") : t("topicsHint")}
+                >
+                    {course!.unitNoun === "book" ? t("chaptersTitle") : t("topicsTitle")}
+                </SectionHeading>
 
-                <ol className="space-y-2">
+                <ul className="border-t border-border">
                     {topics.map((topic, index) => {
                         const entry = progress.get(topic.id);
                         const percent = entry?.percent ?? 0;
@@ -153,84 +183,64 @@ export default function LevelPage() {
                         const started = Boolean(entry?.lastActivityAt);
 
                         return (
-                            <li key={topic.id}>
-                                <Link
-                                    href={`/study/${topic.id}`}
-                                    className="surface-card group flex items-center gap-3 p-3 transition hover:border-accent/50 sm:p-4"
-                                >
-                                    <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-surface-2 text-lg">
-                                        {topic.icon ?? index + 1}
-                                    </span>
-
-                                    <div className="min-w-0 flex-1">
-                                        <div className="flex flex-wrap items-center gap-2">
-                                            <p className="truncate text-sm font-bold">{topic.name}</p>
-                                            {done ? (
-                                                <Badge tone="success">
-                                                    <CheckCircle2 className="size-3" />
-                                                    {t("statusDone")}
-                                                </Badge>
-                                            ) : started ? (
-                                                <Badge tone="accent">{t("statusActive")}</Badge>
-                                            ) : (
-                                                <Badge tone="neutral">{t("statusNew")}</Badge>
-                                            )}
-                                        </div>
-                                        <p className="mt-0.5 text-[11px] text-muted">
-                                            {t("topicMeta", {
-                                                count: topic.cardCount,
-                                                known: entry?.known ?? 0,
-                                                cycle: entry?.cycle ?? 1,
-                                            })}
-                                            {entry?.pending
-                                                ? ` · ${t("pending", { count: entry.pending })}`
-                                                : ""}
-                                        </p>
-                                        <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-surface-2">
-                                            <div
-                                                className={cn(
-                                                    "h-full rounded-full transition-all",
-                                                    done ? "bg-success" : "bg-accent",
-                                                )}
-                                                style={{ width: `${percent}%` }}
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div className="flex shrink-0 items-center gap-1">
-                                        {started ? (
-                                            <span
-                                                className="rounded-lg p-1.5 text-muted transition hover:bg-surface-2 hover:text-fg"
-                                                title={t("reset")}
-                                                onClick={(event) => {
-                                                    event.preventDefault();
-                                                    event.stopPropagation();
-                                                    if (!window.confirm(t("resetBody"))) return;
-                                                    void store
-                                                        ?.resetDeckCycle(topic.id)
-                                                        .then(async () => {
-                                                            const next = await store.listDeckProgress();
-                                                            setProgress(
-                                                                new Map(
-                                                                    next.map((item) => [
-                                                                        item.deckId,
-                                                                        item,
-                                                                    ]),
-                                                                ),
-                                                            );
-                                                        });
-                                                }}
-                                            >
-                                                <RotateCcw className="size-3.5" />
-                                            </span>
-                                        ) : null}
-                                        <Play className="size-4 text-muted transition group-hover:text-accent" />
-                                    </div>
-                                </Link>
-                            </li>
+                            <ManifestRow
+                                key={topic.id}
+                                href={`/study/${topic.id}`}
+                                index={index + 1}
+                                title={unitLabelFor(
+                                    topic.topicOrder,
+                                    topic.name,
+                                    course!.unitNoun,
+                                    tc,
+                                    locale,
+                                )}
+                                meta={[
+                                    t("topicMeta", {
+                                        count: topic.cardCount,
+                                        known: entry?.known ?? 0,
+                                        cycle: entry?.cycle ?? 1,
+                                    }),
+                                    entry?.pending
+                                        ? t("pending", { count: entry.pending })
+                                        : "",
+                                ]
+                                    .filter(Boolean)
+                                    .join(" · ")}
+                                tone={done ? "success" : "ink"}
+                                status={
+                                    done ? (
+                                        <Badge tone="success">
+                                            <CheckCircle2 className="size-3" />
+                                            {t("statusDone")}
+                                        </Badge>
+                                    ) : started ? (
+                                        <Badge tone="accent">{t("statusActive")}</Badge>
+                                    ) : (
+                                        <Badge tone="neutral">{t("statusNew")}</Badge>
+                                    )
+                                }
+                                percent={percent}
+                                trailing={
+                                    started ? (
+                                        <button
+                                            type="button"
+                                            className="rounded-[0.25rem] p-1.5 text-muted transition-colors hover:bg-surface-2 hover:text-fg"
+                                            title={t("reset")}
+                                            aria-label={t("reset")}
+                                            onClick={(event) => {
+                                                event.preventDefault();
+                                                event.stopPropagation();
+                                                void resetTopic(topic.id);
+                                            }}
+                                        >
+                                            <RotateCcw className="size-3.5" />
+                                        </button>
+                                    ) : null
+                                }
+                            />
                         );
                     })}
-                </ol>
+                </ul>
             </section>
         </div>
     );

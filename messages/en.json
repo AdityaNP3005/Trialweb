@@ -25,7 +25,18 @@
         "words": "words",
         "cards": "cards",
         "of": "of",
-        "freeNoAccount": "Free without an account · Sign in to save progress"
+        "freeNoAccount": "Free without an account · Sign in to save progress",
+        "unitBook": "Book",
+        "unitBand": "Band",
+        "chapterShort": "Chapter",
+        "topicShort": "Topic",
+        "knownShort": "Known",
+        "progressShort": "Progress",
+        "accountStamp": "Account",
+        "log": "Log",
+        "preferences": "Preferences",
+        "sectionLabel": "Book {count}",
+        "chapterLabel": "Chapter {count}"
     },
     "nav": {
         "dashboard": "Home",
@@ -45,6 +56,13 @@
         "ctaSecondary": "I already have an account",
         "coursesTitle": "Two languages, one learning flow",
         "coursesSubtitle": "German uses bands, Mandarin uses books. Pick one to get started.",
+        "howTitle": "How one session works",
+        "step1Title": "Pick a route",
+        "step1Body": "Choose a German band or a Mandarin book. Units are already ordered from the most common theme.",
+        "step2Title": "Answer one card",
+        "step2Body": "Repeat it when unsure, mark it understood when you know it. Repeated cards come back a few cards later.",
+        "step3Title": "Close the cycle",
+        "step3Body": "The session ends once every card has appeared. The next cycle starts over without losing progress.",
         "courseDeName": "German",
         "courseDeBadge": "Bands A1–C2",
         "courseDeMeta": "{bands, number} bands · {cards, number} cards · {topics, number} topics",
@@ -116,7 +134,7 @@
         "knownToday": "Marked as known today",
         "reviewsToday": "Answers today",
         "streak": "Streak",
-        "streakDays": "{count} days",
+        "streakDays": "{count, plural, one {# day} other {# days}}",
         "start": "Start session",
         "startMixed": "Start mixed session",
         "continueDeck": "Continue deck",
@@ -134,6 +152,7 @@
         "tagsHint": "Separate with commas",
         "source": "Source",
         "cardCount": "{count} cards",
+        "customSection": "Your own decks",
         "bandTopics": "{count} topics",
         "bookChapters": "{count} chapters",
         "cycleLabel": "Cycle {cycle}",
@@ -167,7 +186,9 @@
         "deckSaved": "Deck saved",
         "suspend": "Suspend card",
         "unsuspend": "Unsuspend card",
-        "duplicateWarning": "A card with the same front text already exists."
+        "duplicateWarning": "A card with the same front text already exists.",
+        "badgeContent": "Content",
+        "badgeCustom": "Custom"
     },
     "study": {
         "sessionTitle": "Study session",
@@ -198,7 +219,8 @@
         "emptyQueue": "Nothing is due right now.",
         "modeFlashcard": "Flashcards",
         "modeQuiz": "Quiz",
-        "modeHint": "Press Q to switch mode"
+        "modeHint": "Press Q to switch mode",
+        "pluralShort": "Plural"
     },
     "quiz": {
         "question": "What does this word mean?",
@@ -275,7 +297,8 @@
         "account": "Account",
         "guestTitle": "Guest mode",
         "guestBody": "Your progress is stored in this browser. Sign in to sync across devices and back up to the cloud.",
-        "guestCta": "Sign in / sign up"
+        "guestCta": "Sign in / sign up",
+        "test": "Test"
     },
     "import": {
         "title": "Import CSV",

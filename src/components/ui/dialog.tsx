@@ -56,22 +56,24 @@ export function Dialog({
                 aria-label={title}
                 tabIndex={-1}
                 className={cn(
-                    "surface-card animate-rise relative z-10 max-h-[92dvh] w-full overflow-y-auto rounded-b-none p-5 sm:max-w-lg sm:rounded-2xl sm:p-6",
+                    "panel animate-rise relative z-10 max-h-[92dvh] w-full overflow-y-auto rounded-b-none p-5 sm:max-w-lg sm:rounded-[0.5rem] sm:p-6",
                     className,
                 )}
             >
                 <div className="mb-4 flex items-start justify-between gap-4">
                     <div>
-                        <h2 className="text-lg font-bold tracking-tight">{title}</h2>
+                        <h2 className="display text-xl">{title}</h2>
                         {description ? (
-                            <p className="mt-1 text-sm text-muted">{description}</p>
+                            <p className="mt-1 text-sm leading-relaxed text-muted">
+                                {description}
+                            </p>
                         ) : null}
                     </div>
                     <button
                         type="button"
                         onClick={onClose}
                         aria-label="Close"
-                        className="rounded-lg p-1.5 text-muted transition hover:bg-surface-2 hover:text-fg"
+                        className="rounded-[0.25rem] p-1.5 text-muted transition-colors hover:bg-surface-2 hover:text-fg"
                     >
                         <X className="size-4" />
                     </button>

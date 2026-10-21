@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { BarChart3, Flame, Layers, Target, TrendingUp } from "lucide-react";
+import { BarChart3 } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import type { DailyStat } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
@@ -11,12 +11,14 @@ import { courses } from "@/content/courses";
 import { cn } from "@/lib/utils/cn";
 import { addDays, dateKey } from "@/lib/utils/date";
 import { EmptyState } from "@/components/ui/empty-state";
-import { Skeleton } from "@/components/ui/progress";
-import { Heatmap } from "@/components/stats/heatmap";
+import { Progress, Skeleton } from "@/components/ui/progress";
+import { PageHeader, SectionHeading } from "@/components/ui/page-header";
+import { Heatmap, heatmapLevels } from "@/components/stats/heatmap";
 
 export default function StatsPage() {
     const { store } = useStore();
     const t = useTranslations("stats");
+    const tc = useTranslations("common");
     const locale = useLocale();
 
     const [stats, setStats] = useState<DailyStat[] | null>(null);
@@ -82,10 +84,10 @@ export default function StatsPage() {
             <div className="space-y-4">
                 <Skeleton className="h-20" />
                 <div className="grid gap-3 sm:grid-cols-4">
-                    <Skeleton className="h-24" />
-                    <Skeleton className="h-24" />
-                    <Skeleton className="h-24" />
-                    <Skeleton className="h-24" />
+                    <Skeleton className="h-20" />
+                    <Skeleton className="h-20" />
+                    <Skeleton className="h-20" />
+                    <Skeleton className="h-20" />
                 </div>
                 <Skeleton className="h-40" />
             </div>
@@ -99,30 +101,42 @@ export default function StatsPage() {
     const totalRatings = Math.max(1, aggregate.next + aggregate.repeat);
 
     const breakdown = [
-        { key: t("actionNext"), value: aggregate.next, color: "bg-success" },
+        { key: t("actionNext"), value: aggregate.next, color: "bg-fg" },
         { key: t("actionRepeat"), value: aggregate.repeat, color: "bg-warning" },
     ];
 
-    return (
-        <div className="space-y-5">
-            <div>
-                <h1 className="text-2xl font-extrabold tracking-tight">{t("title")}</h1>
-                <p className="mt-1 text-sm text-muted">{t("subtitle")}</p>
-            </div>
+    const tiles = [
+        { label: t("understandRate"), value: `${understandRate}%`, hint: "7D" },
+        {
+            label: t("studiedCards"),
+            value: `${totals.studied} / ${totals.total}`,
+            hint: "TOTAL",
+        },
+        { label: t("totalReviews"), value: String(aggregate.reviews), hint: "91D" },
+        {
+            label: t("currentStreak"),
+            value: String(streak.current),
+            hint: `${t("bestStreak")} ${streak.longest}`,
+        },
+    ];
 
-            <section className="surface-card p-5">
-                <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-                    <h2 className="text-sm font-bold">{t("byLanguage")}</h2>
-                    <div className="flex flex-wrap gap-1">
+    return (
+        <div className="space-y-8">
+            <PageHeader
+                eyebrow={tc("log")}
+                title={t("title")}
+                description={t("subtitle")}
+                actions={
+                    <div className="flex flex-wrap items-center gap-3">
                         <button
                             type="button"
                             onClick={() => setCourse("all")}
                             aria-pressed={course === "all"}
                             className={cn(
-                                "rounded-full px-2.5 py-1 text-[11px] font-semibold transition",
+                                "font-mono text-[11px] uppercase tracking-[0.1em] transition-colors",
                                 course === "all"
-                                    ? "bg-accent text-accent-fg"
-                                    : "bg-surface-2 text-muted hover:text-fg",
+                                    ? "text-fg underline decoration-accent decoration-2 underline-offset-4"
+                                    : "text-muted hover:text-fg",
                             )}
                         >
                             {t("allLanguages")}
@@ -136,19 +150,38 @@ export default function StatsPage() {
                                     onClick={() => setCourse(entry.id)}
                                     aria-pressed={course === entry.id}
                                     className={cn(
-                                        "rounded-full px-2.5 py-1 text-[11px] font-semibold transition",
+                                        entry.script === "hanzi" ? "font-cjk text-sm" : "font-mono text-[11px] uppercase tracking-[0.1em]",
+                                        "transition-colors",
                                         course === entry.id
-                                            ? "bg-accent text-accent-fg"
-                                            : "bg-surface-2 text-muted hover:text-fg",
+                                            ? "text-fg underline decoration-accent decoration-2 underline-offset-4"
+                                            : "text-muted hover:text-fg",
                                     )}
                                 >
-                                    <span aria-hidden>{entry.flag}</span> {entry.nativeName}
+                                    {entry.nativeName}
                                 </button>
                             ))}
                     </div>
-                </div>
+                }
+            />
 
-                <div className="grid gap-3 sm:grid-cols-2">
+            <dl className="grid grid-cols-2 border-t border-border sm:grid-cols-4">
+                {tiles.map((tile) => (
+                    <div
+                        key={tile.label}
+                        className="border-b border-border py-4 pr-4 sm:border-b-0 sm:border-l sm:pl-4 sm:first:border-l-0 sm:first:pl-0"
+                    >
+                        <dt className="eyebrow">{tile.label}</dt>
+                        <dd className="num mt-1.5 text-2xl font-semibold leading-none">
+                            {tile.value}
+                        </dd>
+                        <p className="meta mt-1.5">{tile.hint}</p>
+                    </div>
+                ))}
+            </dl>
+
+            <section className="space-y-4">
+                <SectionHeading>{t("byLanguage")}</SectionHeading>
+                <div className="grid gap-x-8 gap-y-4 sm:grid-cols-2">
                     {courses
                         .filter((entry) => entry.enabled)
                         .map((entry) => {
@@ -161,26 +194,22 @@ export default function StatsPage() {
                                     ? Math.round((reviews / allTimeReviews) * 100)
                                     : 0;
                             return (
-                                <div
-                                    key={entry.id}
-                                    className="rounded-xl border border-border bg-surface-2/50 p-3"
-                                >
-                                    <div className="flex items-center justify-between gap-2">
-                                        <p className="text-xs font-bold">
-                                            <span aria-hidden>{entry.flag}</span>{" "}
+                                <div key={entry.id} className="border-t border-border pt-3">
+                                    <div className="flex items-baseline justify-between gap-2">
+                                        <p
+                                            className={cn(
+                                                "text-sm font-semibold",
+                                                entry.script === "hanzi" && "font-cjk",
+                                            )}
+                                        >
                                             {entry.nativeName}
                                         </p>
-                                        <span className="text-[11px] font-semibold text-accent">
+                                        <span className="num text-sm font-semibold text-accent">
                                             {share}%
                                         </span>
                                     </div>
-                                    <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-surface">
-                                        <div
-                                            className="h-full rounded-full bg-accent"
-                                            style={{ width: `${share}%` }}
-                                        />
-                                    </div>
-                                    <p className="mt-2 text-[11px] text-muted">
+                                    <Progress value={share} className="mt-2" />
+                                    <p className="meta mt-2">
                                         {t("languageStats", {
                                             reviews,
                                             known: data?.known ?? 0,
@@ -193,61 +222,27 @@ export default function StatsPage() {
                 </div>
             </section>
 
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-                <Tile
-                    icon={<TrendingUp className="size-4" />}
-                    label={t("understandRate")}
-                    value={`${understandRate}%`}
-                />
-                <Tile
-                    icon={<Layers className="size-4" />}
-                    label={t("studiedCards")}
-                    value={`${totals.studied} / ${totals.total}`}
-                />
-                <Tile
-                    icon={<BarChart3 className="size-4" />}
-                    label={t("totalReviews")}
-                    value={aggregate.reviews}
-                />
-                <Tile
-                    icon={<Flame className="size-4" />}
-                    label={t("currentStreak")}
-                    value={`${streak.current} · ${streak.longest}`}
-                />
-            </div>
-
-            <section className="surface-card p-5">
-                <div className="mb-4 flex items-center justify-between">
-                    <h2 className="text-sm font-bold">{t("heatmap")}</h2>
-                    <div className="flex items-center gap-1 text-[10px] text-muted">
-                        <span>{t("heatmapLess")}</span>
-                        {[0, 1, 2, 3, 4].map((level) => (
+            <section className="space-y-4">
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                    <SectionHeading>{t("heatmap")}</SectionHeading>
+                    <div className="flex items-center gap-1.5">
+                        <span className="meta">{t("heatmapLess")}</span>
+                        {heatmapLevels.map((level) => (
                             <span
                                 key={level}
-                                className={
-                                    [
-                                        "size-2.5 rounded-[2px]",
-                                        "bg-surface-2",
-                                        "bg-accent/20",
-                                        "bg-accent/40",
-                                        "bg-accent/65",
-                                        "bg-accent",
-                                    ][level]
-                                }
+                                className={cn("size-[11px] rounded-[2px]", level)}
+                                aria-hidden
                             />
                         ))}
-                        <span>{t("heatmapMore")}</span>
+                        <span className="meta">{t("heatmapMore")}</span>
                     </div>
                 </div>
                 <Heatmap stats={visibleStats} locale={locale} />
             </section>
 
-            <section className="surface-card p-5">
-                <h2 className="mb-3 flex items-center gap-2 text-sm font-bold">
-                    <Target className="size-4 text-muted" />
-                    {t("ratingBreakdown")}
-                </h2>
-                <div className="flex h-3 overflow-hidden rounded-full bg-surface-2">
+            <section className="space-y-3">
+                <SectionHeading>{t("ratingBreakdown")}</SectionHeading>
+                <div className="flex h-2 overflow-hidden bg-surface-2">
                     {breakdown.map((entry) => (
                         <div
                             key={entry.key}
@@ -257,36 +252,16 @@ export default function StatsPage() {
                         />
                     ))}
                 </div>
-                <div className="mt-3 grid grid-cols-2 gap-2 text-xs sm:grid-cols-4">
+                <div className="flex flex-wrap gap-x-8 gap-y-2">
                     {breakdown.map((entry) => (
-                        <div key={entry.key} className="flex items-center gap-1.5">
-                            <span className={`size-2 rounded-full ${entry.color}`} />
-                            <span className="capitalize text-muted">{entry.key}</span>
-                            <span className="ml-auto font-semibold">{entry.value}</span>
+                        <div key={entry.key} className="flex items-center gap-2">
+                            <span className={cn("size-2 rounded-full", entry.color)} />
+                            <span className="text-xs text-muted">{entry.key}</span>
+                            <span className="num text-xs font-semibold">{entry.value}</span>
                         </div>
                     ))}
                 </div>
             </section>
-        </div>
-    );
-}
-
-function Tile({
-    icon,
-    label,
-    value,
-}: {
-    icon: React.ReactNode;
-    label: string;
-    value: React.ReactNode;
-}) {
-    return (
-        <div className="surface-card p-4">
-            <div className="mb-2 flex items-center gap-1.5 text-muted">
-                {icon}
-                <span className="text-[10px] font-bold uppercase tracking-wide">{label}</span>
-            </div>
-            <p className="text-xl font-extrabold tracking-tight">{value}</p>
         </div>
     );
 }

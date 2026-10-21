@@ -42,7 +42,7 @@ export default function ResetPasswordPage() {
             }
         >
             {sent ? (
-                <p className="rounded-lg bg-success/10 px-3 py-2 text-sm text-success">
+                <p className="border-l-2 border-success pl-3 text-sm text-success">
                     {t("resetSent")}
                 </p>
             ) : (
@@ -60,7 +60,7 @@ export default function ResetPasswordPage() {
                     </div>
 
                     {errorKey ? (
-                        <p role="alert" className="rounded-lg bg-danger/10 px-3 py-2 text-xs text-danger">
+                        <p role="alert" className="border-l-2 border-danger pl-3 text-xs text-danger">
                             {te(errorKey)}
                         </p>
                     ) : null}

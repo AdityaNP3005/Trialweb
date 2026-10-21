@@ -37,15 +37,11 @@ function AuthFrame({ children }: { children: React.ReactNode }) {
 
     return (
         <div className="relative flex min-h-dvh flex-col">
-            <div
-                aria-hidden
-                className="pointer-events-none absolute inset-x-0 top-0 h-[380px] bg-[radial-gradient(60%_60%_at_50%_0%,var(--accent-soft),transparent_70%)]"
-            />
-            <div className="relative flex items-center justify-between px-5 py-4">
+            <div className="flex items-center justify-between border-b border-border px-5 py-3">
                 <LocaleSwitcher />
                 <ThemeToggle />
             </div>
-            <div className="relative flex flex-1 items-start justify-center px-5 pb-16 pt-4 sm:items-center sm:pt-0">
+            <div className="flex flex-1 items-start justify-center px-5 pb-16 pt-10 sm:items-center sm:pt-0">
                 <div className="w-full max-w-sm">
                     {configured ? children : <SetupNotice />}
                 </div>

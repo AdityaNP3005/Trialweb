@@ -15,10 +15,7 @@ export function ThemeToggle({ className }: { className?: string }) {
 
     return (
         <div
-            className={cn(
-                "inline-flex items-center rounded-lg border border-border bg-surface p-0.5",
-                className,
-            )}
+            className={cn("inline-flex items-center gap-0.5", className)}
             role="group"
             aria-label="Theme"
         >
@@ -31,10 +28,10 @@ export function ThemeToggle({ className }: { className?: string }) {
                     aria-pressed={theme === value}
                     onClick={() => setTheme(value)}
                     className={cn(
-                        "rounded-md p-1.5 transition",
+                        "rounded-[0.25rem] p-1.5 transition-colors",
                         theme === value
-                            ? "bg-accent text-accent-fg"
-                            : "text-muted hover:text-fg",
+                            ? "text-fg"
+                            : "text-muted/70 hover:text-fg",
                     )}
                 >
                     <Icon className="size-3.5" />

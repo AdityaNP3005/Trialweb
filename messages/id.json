@@ -25,7 +25,18 @@
         "words": "kata",
         "cards": "kartu",
         "of": "dari",
-        "freeNoAccount": "Gratis tanpa akun · Akun menyimpan progres"
+        "freeNoAccount": "Gratis tanpa akun · Akun menyimpan progres",
+        "unitBook": "Buku",
+        "unitBand": "Band",
+        "chapterShort": "Bab",
+        "topicShort": "Topik",
+        "knownShort": "Paham",
+        "progressShort": "Progres",
+        "accountStamp": "Akun",
+        "log": "Catatan",
+        "preferences": "Preferensi",
+        "sectionLabel": "Buku {count}",
+        "chapterLabel": "Bab {count}"
     },
     "nav": {
         "dashboard": "Beranda",
@@ -45,6 +56,13 @@
         "ctaSecondary": "Sudah punya akun",
         "coursesTitle": "Dua bahasa, satu alur belajar",
         "coursesSubtitle": "Jerman memakai band, Mandarin memakai buku. Pilih salah satu untuk mulai.",
+        "howTitle": "Cara satu sesi bekerja",
+        "step1Title": "Pilih rute",
+        "step1Body": "Pilih band Jerman atau buku Mandarin. Urutan unit sudah disusun dari tema paling umum.",
+        "step2Title": "Jawab satu kartu",
+        "step2Body": "Ulangi kalau belum yakin, tandai paham kalau sudah. Kartu yang diulang kembali beberapa kartu kemudian.",
+        "step3Title": "Tutup putaran",
+        "step3Body": "Sesi selesai setelah semua kartu tampil. Putaran berikutnya mulai lagi tanpa kehilangan progres.",
         "courseDeName": "Bahasa Jerman",
         "courseDeBadge": "Band A1–C2",
         "courseDeMeta": "{bands, number} band · {cards, number} kartu · {topics, number} topik",
@@ -134,6 +152,7 @@
         "tagsHint": "Pisahkan dengan koma",
         "source": "Sumber",
         "cardCount": "{count} kartu",
+        "customSection": "Deck buatan sendiri",
         "bandTopics": "{count} topik",
         "bookChapters": "{count} bab",
         "cycleLabel": "Putaran {cycle}",
@@ -167,7 +186,9 @@
         "deckSaved": "Deck disimpan",
         "suspend": "Tunda kartu",
         "unsuspend": "Aktifkan kartu",
-        "duplicateWarning": "Kartu dengan teks yang sama sudah ada."
+        "duplicateWarning": "Kartu dengan teks yang sama sudah ada.",
+        "badgeContent": "Konten",
+        "badgeCustom": "Kustom"
     },
     "study": {
         "sessionTitle": "Sesi belajar",
@@ -198,7 +219,8 @@
         "emptyQueue": "Tidak ada kartu yang perlu diulang sekarang.",
         "modeFlashcard": "Flashcard",
         "modeQuiz": "Kuis",
-        "modeHint": "Tekan Q untuk berganti mode"
+        "modeHint": "Tekan Q untuk berganti mode",
+        "pluralShort": "Jamak"
     },
     "quiz": {
         "question": "Apa arti kata ini?",
@@ -275,7 +297,8 @@
         "account": "Akun",
         "guestTitle": "Mode tamu",
         "guestBody": "Progresmu disimpan di browser ini. Masuk dengan akun untuk sinkronisasi antar perangkat dan backup cloud.",
-        "guestCta": "Masuk / daftar"
+        "guestCta": "Masuk / daftar",
+        "test": "Coba"
     },
     "import": {
         "title": "Impor CSV",

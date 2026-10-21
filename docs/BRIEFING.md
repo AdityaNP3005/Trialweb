@@ -236,6 +236,19 @@ npm run content:build && npm run seed:validate
 
 ## 9. Gotchas (yang sudah pernah menggigit)
 
+- **Font**: stack tipografi dideklarasikan di `body`, bukan `:root`. `next/font`
+  menaruh variabelnya di `<body>`; kalau `--font-display` dideklarasikan di `:root`
+  dengan `var(--font-fraunces)` yang belum ada, nilainya invalid-by-inheritance dan
+  seluruh UI diam-diam jatuh ke sans sistem. Hanzi tetap `font-cjk`, tidak pernah
+  `display`.
+- **Label konten**: manifest menyimpan satu judul (`Buku 1`, `Bab 3`, `Sapaan &
+  perkenalan`). Jangan render `deck.name` / `section.label` langsung — pakai
+  `sectionLabelFor` / `unitLabelFor` dari `src/lib/content/labels.ts`, kalau tidak
+  mode `en` akan menampilkan bahasa Indonesia.
+- **Deep link lintas course**: `/levels/A1` saat course aktif `zh` (atau sebaliknya)
+  harus mengganti `activeCourseId` dulu, kalau tidak daftar unit kosong. Lihat efek
+  sinkronisasi di `levels/[level]/page.tsx`.
+
 - **Next 16**: middleware bernama `src/proxy.ts` (bukan `middleware.ts`). `partialPrefetching`
   butuh `cacheComponents`; repo ini memakai `cacheComponents: false`.
 - **next-intl**: root layout ada di `app/[locale]/layout.tsx`; guard `generateMetadata` dengan

@@ -10,13 +10,13 @@ export function SetupNotice() {
     const ta = useTranslations("auth");
 
     return (
-        <div className="surface-card w-full p-6">
+        <div className="panel w-full p-6">
             <div className="mb-3 flex items-center gap-2 text-warning">
-                <AlertTriangle className="size-5" />
-                <h1 className="text-base font-bold text-fg">{t("title")}</h1>
+                <AlertTriangle className="size-4" />
+                <h1 className="eyebrow text-fg">{t("title")}</h1>
             </div>
             <p className="text-sm leading-relaxed text-muted">{t("body")}</p>
-            <code className="mt-4 block rounded-lg bg-surface-2 p-3 text-xs">
+            <code className="mt-4 block border border-border p-3 font-mono text-xs">
                 cp .env.example .env.local
             </code>
             <a

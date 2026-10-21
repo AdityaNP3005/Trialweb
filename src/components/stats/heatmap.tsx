@@ -4,12 +4,13 @@ import type { DailyStat } from "@/types";
 import { addDays, dateKey } from "@/lib/utils/date";
 import { cn } from "@/lib/utils/cn";
 
+/* Ink density: the busier the day, the darker the square. No colour glow. */
 const levels = [
     "bg-surface-2",
-    "bg-accent/20",
-    "bg-accent/40",
-    "bg-accent/65",
-    "bg-accent",
+    "bg-fg/15",
+    "bg-fg/35",
+    "bg-fg/60",
+    "bg-fg/85",
 ];
 
 export function Heatmap({
@@ -36,11 +37,11 @@ export function Heatmap({
     return (
         <div className="overflow-x-auto">
             <div
-                className="grid w-max grid-flow-col grid-rows-7 gap-1"
-                style={{ gridAutoColumns: "0.75rem" }}
+                className="grid w-max grid-flow-col grid-rows-7 gap-[3px]"
+                style={{ gridAutoColumns: "0.6875rem" }}
             >
                 {Array.from({ length: leading }).map((_, index) => (
-                    <div key={`pad-${index}`} aria-hidden className="size-3" />
+                    <div key={`pad-${index}`} aria-hidden className="size-[11px]" />
                 ))}
                 {cells.map((cell) => {
                     const level =
@@ -56,7 +57,7 @@ export function Heatmap({
                                 month: "short",
                                 year: "numeric",
                             })}: ${cell.count}`}
-                            className={cn("size-3 rounded-[3px]", levels[level])}
+                            className={cn("size-[11px] rounded-[2px]", levels[level])}
                         />
                     );
                 })}
@@ -64,3 +65,5 @@ export function Heatmap({
         </div>
     );
 }
+
+export const heatmapLevels = levels;
