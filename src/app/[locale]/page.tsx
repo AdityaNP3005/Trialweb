@@ -12,11 +12,45 @@ import { buttonStyles } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { LocaleSwitcher } from "@/components/layout/locale-switcher";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { contentCardCount, contentUnits, sectionsForCourse } from "@/lib/content/registry";
 
 export default async function LandingPage() {
     const t = await getTranslations("landing");
     const tc = await getTranslations("common");
     const tn = await getTranslations("nav");
+
+    const deCards = contentCardCount("de");
+    const deTopics = contentUnits.filter((unit) => unit.courseId === "de").length;
+    const deBands = sectionsForCourse("de").length;
+
+    const zhCards = contentCardCount("zh");
+    const zhChapters = contentUnits.filter((unit) => unit.courseId === "zh").length;
+    const zhBooks = sectionsForCourse("zh").length;
+
+    const courseCards = [
+        {
+            id: "de",
+            flag: "🇩🇪",
+            name: t("courseDeName"),
+            meta: t("courseDeMeta", {
+                bands: deBands,
+                cards: deCards,
+                topics: deTopics,
+            }),
+            badge: t("courseDeBadge"),
+        },
+        {
+            id: "zh",
+            flag: "🇹🇼",
+            name: t("courseZhName"),
+            meta: t("courseZhMeta", {
+                books: zhBooks,
+                cards: zhCards,
+                chapters: zhChapters,
+            }),
+            badge: t("courseZhBadge"),
+        },
+    ];
 
     const features = [
         { icon: Brain, title: t("featureSrsTitle"), body: t("featureSrsBody") },
@@ -60,9 +94,14 @@ export default async function LandingPage() {
             <main className="relative mx-auto w-full max-w-6xl px-5">
                 <section className="grid items-center gap-12 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:py-20">
                     <div className="animate-rise">
-                        <Badge tone="accent" className="mb-5">
-                            <span className="mr-1">🇩🇪</span> A1 · Deutsch
-                        </Badge>
+                        <div className="mb-5 flex flex-wrap gap-2">
+                            <Badge tone="accent">
+                                <span className="mr-1">🇩🇪</span> {t("badgeDe")}
+                            </Badge>
+                            <Badge tone="accent">
+                                <span className="mr-1">🇹🇼</span> {t("badgeZh")}
+                            </Badge>
+                        </div>
                         <h1 className="text-balance text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl">
                             {t("heroTitle")}
                         </h1>
@@ -89,36 +128,70 @@ export default async function LandingPage() {
                             aria-hidden
                             className="absolute -inset-6 -z-10 rounded-[2rem] bg-accent/10 blur-2xl"
                         />
-                        <div className="surface-card p-6">
+                        <div className="surface-card p-5">
                             <div className="flex items-center justify-between">
-                                <Badge tone="neutral">A1 · Makanan</Badge>
-                                <span className="text-xs font-medium text-muted">1 / 42</span>
+                                <Badge tone="neutral">{t("previewDeBadge")}</Badge>
+                                <span className="text-xs font-medium text-muted">1 / 29</span>
                             </div>
-                            <div className="mt-10 text-center">
+                            <div className="mt-6 text-center">
                                 <p className="text-3xl font-extrabold tracking-tight">der Apfel</p>
                                 <p className="mt-1 font-mono text-xs text-muted">[ˈapfl̩]</p>
-                                <div className="my-6 h-px bg-border" />
+                                <div className="my-4 h-px bg-border" />
                                 <p className="text-lg font-semibold">apel · apple</p>
-                                <p className="mt-2 text-sm italic text-muted">
-                                    „Ich esse einen Apfel.“
-                                </p>
-                            </div>
-                            <div className="mt-8 grid grid-cols-4 gap-2">
-                                {["1", "2", "3", "4"].map((key, index) => (
-                                    <div
-                                        key={key}
-                                        className="rounded-xl border border-border bg-surface-2 px-2 py-2 text-center"
-                                    >
-                                        <span className="block text-[10px] font-bold text-muted">
-                                            {key}
-                                        </span>
-                                        <span className="block text-[10px] text-muted">
-                                            {["10m", "1h", "1d", "4d"][index]}
-                                        </span>
-                                    </div>
-                                ))}
                             </div>
                         </div>
+
+                        <div className="surface-card mt-4 p-5">
+                            <div className="flex items-center justify-between">
+                                <Badge tone="neutral">{t("previewZhBadge")}</Badge>
+                                <span className="text-xs font-medium text-muted">3 / 40</span>
+                            </div>
+                            <div className="mt-5 text-center">
+                                <p className="font-cjk text-4xl font-extrabold tracking-tight">週末</p>
+                                <p className="mt-1 font-mono text-xs text-accent">zhōumò</p>
+                                <div className="my-4 h-px bg-border" />
+                                <p className="text-sm font-semibold">{t("previewZhMeaning")}</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="pb-16">
+                    <div className="mb-4">
+                        <h2 className="text-lg font-extrabold tracking-tight">
+                            {t("coursesTitle")}
+                        </h2>
+                        <p className="mt-1 text-sm text-muted">{t("coursesSubtitle")}</p>
+                    </div>
+                    <div className="grid gap-4 sm:grid-cols-2">
+                        {courseCards.map((course) => (
+                            <Link
+                                key={course.id}
+                                href="/dashboard"
+                                className="surface-card group flex flex-col gap-3 p-5 transition hover:-translate-y-0.5 hover:border-accent/50"
+                            >
+                                <div className="flex items-center justify-between">
+                                    <div className="flex items-center gap-3">
+                                        <span
+                                            aria-hidden
+                                            className="grid size-10 place-items-center rounded-xl bg-accent-soft text-lg"
+                                        >
+                                            {course.flag}
+                                        </span>
+                                        <div>
+                                            <p className="text-sm font-bold">{course.name}</p>
+                                            <p className="mt-0.5 text-[11px] text-muted">
+                                                {course.meta}
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ArrowRight className="size-4 text-muted transition group-hover:translate-x-0.5 group-hover:text-accent" />
+                                </div>
+                                <Badge tone="neutral" className="w-fit">
+                                    {course.badge}
+                                </Badge>
+                            </Link>
+                        ))}
                     </div>
                 </section>
 
@@ -140,7 +213,7 @@ export default async function LandingPage() {
                     <p>
                         {tc("appName")} · {tc("tagline")}
                     </p>
-                    <p>SRS: FSRS · UI: ID / EN · Courses: DE</p>
+                    <p>{t("footerNote")}</p>
                 </div>
             </footer>
         </div>
