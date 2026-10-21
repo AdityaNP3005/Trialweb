@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { notFound } from "next/navigation";
-import { Fraunces, IBM_Plex_Mono, Inter_Tight } from "next/font/google";
+import { IBM_Plex_Mono, Inter_Tight, Source_Serif_4 } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { routing } from "@/i18n/routing";
@@ -14,11 +14,11 @@ const interTight = Inter_Tight({
     variable: "--font-inter-tight",
 });
 
-const fraunces = Fraunces({
+const display = Source_Serif_4({
     subsets: ["latin"],
     display: "swap",
-    variable: "--font-fraunces",
-    axes: ["SOFT", "WONK"],
+    variable: "--font-display-face",
+    weight: ["400", "500", "600", "700"],
 });
 
 const plexMono = IBM_Plex_Mono({
@@ -66,7 +66,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
     return (
         <html lang={locale} suppressHydrationWarning>
             <body
-                className={`${interTight.variable} ${fraunces.variable} ${plexMono.variable} min-h-dvh bg-bg text-fg antialiased`}
+                className={`${interTight.variable} ${display.variable} ${plexMono.variable} min-h-dvh bg-bg text-fg antialiased`}
             >
                 <Script id="theme-bootstrap" strategy="beforeInteractive">
                     {themeScript}

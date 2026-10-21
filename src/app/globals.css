@@ -74,7 +74,7 @@
 
     --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, -apple-system,
         "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    --font-display: var(--font-fraunces), "Iowan Old Style", "Palatino Linotype",
+    --font-display: var(--font-display-face), "Iowan Old Style", "Palatino Linotype",
         Palatino, Georgia, ui-serif, serif;
     --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, "SF Mono",
         Menlo, monospace;
@@ -99,7 +99,7 @@
            fall back to the system sans. */
         --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, -apple-system,
             "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        --font-display: var(--font-fraunces), "Iowan Old Style",
+        --font-display: var(--font-display-face), "Iowan Old Style",
             "Palatino Linotype", Palatino, Georgia, ui-serif, serif;
         --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular,
             "SF Mono", Menlo, monospace;
@@ -192,8 +192,9 @@
     .display {
         font-family: var(--font-display);
         font-weight: 600;
-        letter-spacing: -0.015em;
-        font-variation-settings: "SOFT" 30, "WONK" 1;
+        letter-spacing: -0.012em;
+        font-optical-sizing: auto;
+        font-synthesis-weight: none;
     }
 
     /* Passport stamp: outlines only, slightly pressed. Tilt is decorative only. */
