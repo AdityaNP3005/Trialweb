@@ -1,0 +1,97 @@
+{
+    "indexes": [
+        {
+            "collectionGroup": "cards",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "deckId",
+                    "order": "ASCENDING"
+                },
+                {
+                    "fieldPath": "isNew",
+                    "order": "ASCENDING"
+                },
+                {
+                    "fieldPath": "dueMs",
+                    "order": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "cards",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "deckId",
+                    "order": "ASCENDING"
+                },
+                {
+                    "fieldPath": "isNew",
+                    "order": "ASCENDING"
+                },
+                {
+                    "fieldPath": "createdAt",
+                    "order": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "cards",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "deckId",
+                    "order": "ASCENDING"
+                },
+                {
+                    "fieldPath": "createdAt",
+                    "order": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "cards",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "isNew",
+                    "order": "ASCENDING"
+                },
+                {
+                    "fieldPath": "dueMs",
+                    "order": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "cards",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "isNew",
+                    "order": "ASCENDING"
+                },
+                {
+                    "fieldPath": "createdAt",
+                    "order": "ASCENDING"
+                }
+            ]
+        },
+        {
+            "collectionGroup": "reviews",
+            "queryScope": "COLLECTION",
+            "fields": [
+                {
+                    "fieldPath": "deckId",
+                    "order": "ASCENDING"
+                },
+                {
+                    "fieldPath": "reviewMs",
+                    "order": "DESCENDING"
+                }
+            ]
+        }
+    ],
+    "fieldOverrides": []
+}

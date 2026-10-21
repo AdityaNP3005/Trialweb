@@ -1,0 +1,2312 @@
+{
+    "courseId": "de",
+    "deck": {
+        "slug": "a1-core",
+        "name": "Deutsch A1 · Kosakata Inti",
+        "description": "Kata dan frasa paling sering dipakai untuk level A1: sapaan, angka, keluarga, makanan, rumah, kata kerja dasar, dan tempat.",
+        "level": "A1",
+        "tags": [
+            "a1",
+            "kosakata",
+            "dasar"
+        ]
+    },
+    "cards": [
+        {
+            "front": "Hallo",
+            "meaningId": "halo",
+            "meaningEn": "hello",
+            "wordType": "phrase",
+            "tags": [
+                "sapaan"
+            ],
+            "level": "A1",
+            "exampleDe": "Hallo, wie heißt du?",
+            "exampleId": "Halo, siapa namamu?",
+            "exampleEn": "Hello, what is your name?"
+        },
+        {
+            "front": "Guten Morgen",
+            "meaningId": "selamat pagi",
+            "meaningEn": "good morning",
+            "wordType": "phrase",
+            "tags": [
+                "sapaan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Guten Tag",
+            "meaningId": "selamat siang",
+            "meaningEn": "good day",
+            "wordType": "phrase",
+            "tags": [
+                "sapaan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Guten Abend",
+            "meaningId": "selamat malam",
+            "meaningEn": "good evening",
+            "wordType": "phrase",
+            "tags": [
+                "sapaan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Gute Nacht",
+            "meaningId": "selamat tidur",
+            "meaningEn": "good night",
+            "wordType": "phrase",
+            "tags": [
+                "sapaan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Auf Wiedersehen",
+            "meaningId": "sampai jumpa",
+            "meaningEn": "goodbye",
+            "wordType": "phrase",
+            "tags": [
+                "sapaan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Tschüss",
+            "meaningId": "dadah",
+            "meaningEn": "bye",
+            "wordType": "phrase",
+            "tags": [
+                "sapaan"
+            ],
+            "level": "A1",
+            "ipa": "[t͡ʃʏs]"
+        },
+        {
+            "front": "Bitte",
+            "meaningId": "tolong / silakan",
+            "meaningEn": "please / you are welcome",
+            "wordType": "phrase",
+            "tags": [
+                "sapaan",
+                "sopan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Danke",
+            "meaningId": "terima kasih",
+            "meaningEn": "thank you",
+            "wordType": "phrase",
+            "tags": [
+                "sapaan",
+                "sopan"
+            ],
+            "level": "A1",
+            "ipa": "[ˈdaŋkə]"
+        },
+        {
+            "front": "Entschuldigung",
+            "meaningId": "maaf / permisi",
+            "meaningEn": "excuse me / sorry",
+            "wordType": "phrase",
+            "tags": [
+                "sapaan",
+                "sopan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Ja",
+            "meaningId": "ya",
+            "meaningEn": "yes",
+            "wordType": "other",
+            "tags": [
+                "dasar"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Nein",
+            "meaningId": "tidak",
+            "meaningEn": "no",
+            "wordType": "other",
+            "tags": [
+                "dasar"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Wie geht es dir?",
+            "meaningId": "apa kabar?",
+            "meaningEn": "how are you?",
+            "wordType": "phrase",
+            "tags": [
+                "sapaan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Ich heiße …",
+            "meaningId": "nama saya …",
+            "meaningEn": "my name is …",
+            "wordType": "phrase",
+            "tags": [
+                "perkenalan"
+            ],
+            "level": "A1",
+            "exampleDe": "Ich heiße Anna.",
+            "exampleId": "Nama saya Anna.",
+            "exampleEn": "My name is Anna."
+        },
+        {
+            "front": "Ich verstehe nicht",
+            "meaningId": "saya tidak mengerti",
+            "meaningEn": "I do not understand",
+            "wordType": "phrase",
+            "tags": [
+                "perkenalan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Sprechen Sie Englisch?",
+            "meaningId": "apakah Anda bisa bahasa Inggris?",
+            "meaningEn": "do you speak English?",
+            "wordType": "phrase",
+            "tags": [
+                "perkenalan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "eins",
+            "meaningId": "satu",
+            "meaningEn": "one",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "zwei",
+            "meaningId": "dua",
+            "meaningEn": "two",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "drei",
+            "meaningId": "tiga",
+            "meaningEn": "three",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "vier",
+            "meaningId": "empat",
+            "meaningEn": "four",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "fünf",
+            "meaningId": "lima",
+            "meaningEn": "five",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "sechs",
+            "meaningId": "enam",
+            "meaningEn": "six",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "sieben",
+            "meaningId": "tujuh",
+            "meaningEn": "seven",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "acht",
+            "meaningId": "delapan",
+            "meaningEn": "eight",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "neun",
+            "meaningId": "sembilan",
+            "meaningEn": "nine",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "zehn",
+            "meaningId": "sepuluh",
+            "meaningEn": "ten",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "elf",
+            "meaningId": "sebelas",
+            "meaningEn": "eleven",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "zwölf",
+            "meaningId": "dua belas",
+            "meaningEn": "twelve",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "zwanzig",
+            "meaningId": "dua puluh",
+            "meaningEn": "twenty",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "hundert",
+            "meaningId": "seratus",
+            "meaningEn": "one hundred",
+            "wordType": "number",
+            "tags": [
+                "angka"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Vater",
+            "meaningId": "ayah",
+            "meaningEn": "father",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Väter",
+            "tags": [
+                "keluarga"
+            ],
+            "level": "A1",
+            "exampleDe": "Mein Vater kocht gern.",
+            "exampleId": "Ayah saya suka memasak.",
+            "exampleEn": "My father likes cooking."
+        },
+        {
+            "front": "die Mutter",
+            "meaningId": "ibu",
+            "meaningEn": "mother",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Mütter",
+            "tags": [
+                "keluarga"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Sohn",
+            "meaningId": "anak laki-laki",
+            "meaningEn": "son",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Söhne",
+            "tags": [
+                "keluarga"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Tochter",
+            "meaningId": "anak perempuan",
+            "meaningEn": "daughter",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Töchter",
+            "tags": [
+                "keluarga"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Bruder",
+            "meaningId": "kakak/adik laki-laki",
+            "meaningEn": "brother",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Brüder",
+            "tags": [
+                "keluarga"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Schwester",
+            "meaningId": "kakak/adik perempuan",
+            "meaningEn": "sister",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Schwestern",
+            "tags": [
+                "keluarga"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Eltern",
+            "meaningId": "orang tua",
+            "meaningEn": "parents",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Eltern",
+            "tags": [
+                "keluarga"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Großvater",
+            "meaningId": "kakek",
+            "meaningEn": "grandfather",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Großväter",
+            "tags": [
+                "keluarga"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Großmutter",
+            "meaningId": "nenek",
+            "meaningEn": "grandmother",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Großmütter",
+            "tags": [
+                "keluarga"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Kind",
+            "meaningId": "anak",
+            "meaningEn": "child",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Kinder",
+            "tags": [
+                "keluarga"
+            ],
+            "level": "A1",
+            "exampleDe": "Das Kind spielt im Garten.",
+            "exampleId": "Anak itu bermain di taman.",
+            "exampleEn": "The child is playing in the garden."
+        },
+        {
+            "front": "der Mann",
+            "meaningId": "laki-laki / suami",
+            "meaningEn": "man / husband",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Männer",
+            "tags": [
+                "orang"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Frau",
+            "meaningId": "perempuan / istri",
+            "meaningEn": "woman / wife",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Frauen",
+            "tags": [
+                "orang"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Freund",
+            "meaningId": "teman (laki-laki)",
+            "meaningEn": "friend (male)",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Freunde",
+            "tags": [
+                "orang"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Freundin",
+            "meaningId": "teman (perempuan)",
+            "meaningEn": "friend (female)",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Freundinnen",
+            "tags": [
+                "orang"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Brot",
+            "meaningId": "roti",
+            "meaningEn": "bread",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Brote",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1",
+            "ipa": "[bʁoːt]",
+            "exampleDe": "Ich kaufe frisches Brot.",
+            "exampleId": "Saya membeli roti segar.",
+            "exampleEn": "I am buying fresh bread."
+        },
+        {
+            "front": "die Butter",
+            "meaningId": "mentega",
+            "meaningEn": "butter",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": null,
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Käse",
+            "meaningId": "keju",
+            "meaningEn": "cheese",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Käse",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Ei",
+            "meaningId": "telur",
+            "meaningEn": "egg",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Eier",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Milch",
+            "meaningId": "susu",
+            "meaningEn": "milk",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": null,
+            "tags": [
+                "minuman"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Wasser",
+            "meaningId": "air",
+            "meaningEn": "water",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Wasser",
+            "tags": [
+                "minuman"
+            ],
+            "level": "A1",
+            "ipa": "[ˈvasɐ]",
+            "exampleDe": "Ein Glas Wasser, bitte.",
+            "exampleId": "Satu gelas air, tolong.",
+            "exampleEn": "A glass of water, please."
+        },
+        {
+            "front": "der Kaffee",
+            "meaningId": "kopi",
+            "meaningEn": "coffee",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Kaffees",
+            "tags": [
+                "minuman"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Tee",
+            "meaningId": "teh",
+            "meaningEn": "tea",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Tees",
+            "tags": [
+                "minuman"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Bier",
+            "meaningId": "bir",
+            "meaningEn": "beer",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Biere",
+            "tags": [
+                "minuman"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Wein",
+            "meaningId": "anggur (minuman)",
+            "meaningEn": "wine",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Weine",
+            "tags": [
+                "minuman"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Apfel",
+            "meaningId": "apel",
+            "meaningEn": "apple",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Äpfel",
+            "tags": [
+                "makanan",
+                "buah"
+            ],
+            "level": "A1",
+            "ipa": "[ˈapfl̩]",
+            "exampleDe": "Ich esse einen Apfel.",
+            "exampleId": "Saya makan sebuah apel.",
+            "exampleEn": "I am eating an apple."
+        },
+        {
+            "front": "die Banane",
+            "meaningId": "pisang",
+            "meaningEn": "banana",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Bananen",
+            "tags": [
+                "makanan",
+                "buah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Orange",
+            "meaningId": "jeruk",
+            "meaningEn": "orange",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Orangen",
+            "tags": [
+                "makanan",
+                "buah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Fleisch",
+            "meaningId": "daging",
+            "meaningEn": "meat",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": null,
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Fisch",
+            "meaningId": "ikan",
+            "meaningEn": "fish",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Fische",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Hähnchen",
+            "meaningId": "ayam (daging)",
+            "meaningEn": "chicken",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Hähnchen",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Reis",
+            "meaningId": "nasi / beras",
+            "meaningEn": "rice",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": null,
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Kartoffel",
+            "meaningId": "kentang",
+            "meaningEn": "potato",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Kartoffeln",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Salat",
+            "meaningId": "salad",
+            "meaningEn": "salad",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Salate",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Gemüse",
+            "meaningId": "sayuran",
+            "meaningEn": "vegetables",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Gemüse",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Zucker",
+            "meaningId": "gula",
+            "meaningEn": "sugar",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": null,
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Salz",
+            "meaningId": "garam",
+            "meaningEn": "salt",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Salze",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Kuchen",
+            "meaningId": "kue",
+            "meaningEn": "cake",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Kuchen",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Frühstück",
+            "meaningId": "sarapan",
+            "meaningEn": "breakfast",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Frühstücke",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Mittagessen",
+            "meaningId": "makan siang",
+            "meaningEn": "lunch",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Mittagessen",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Abendessen",
+            "meaningId": "makan malam",
+            "meaningEn": "dinner",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Abendessen",
+            "tags": [
+                "makanan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Speisekarte",
+            "meaningId": "menu",
+            "meaningEn": "menu",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Speisekarten",
+            "tags": [
+                "restoran"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Rechnung",
+            "meaningId": "tagihan",
+            "meaningEn": "bill",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Rechnungen",
+            "tags": [
+                "restoran"
+            ],
+            "level": "A1",
+            "exampleDe": "Die Rechnung, bitte!",
+            "exampleId": "Tagihannya, tolong!",
+            "exampleEn": "The bill, please!"
+        },
+        {
+            "front": "das Haus",
+            "meaningId": "rumah",
+            "meaningEn": "house",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Häuser",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1",
+            "ipa": "[haʊ̯s]"
+        },
+        {
+            "front": "die Wohnung",
+            "meaningId": "apartemen",
+            "meaningEn": "apartment",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Wohnungen",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Küche",
+            "meaningId": "dapur",
+            "meaningEn": "kitchen",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Küchen",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Bad",
+            "meaningId": "kamar mandi",
+            "meaningEn": "bathroom",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Bäder",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Schlafzimmer",
+            "meaningId": "kamar tidur",
+            "meaningEn": "bedroom",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Schlafzimmer",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Wohnzimmer",
+            "meaningId": "ruang tamu",
+            "meaningEn": "living room",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Wohnzimmer",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Tisch",
+            "meaningId": "meja",
+            "meaningEn": "table",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Tische",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Stuhl",
+            "meaningId": "kursi",
+            "meaningEn": "chair",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Stühle",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Bett",
+            "meaningId": "tempat tidur",
+            "meaningEn": "bed",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Betten",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Tür",
+            "meaningId": "pintu",
+            "meaningEn": "door",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Türen",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1",
+            "exampleDe": "Bitte schließe die Tür.",
+            "exampleId": "Tolong tutup pintunya.",
+            "exampleEn": "Please close the door."
+        },
+        {
+            "front": "das Fenster",
+            "meaningId": "jendela",
+            "meaningEn": "window",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Fenster",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Lampe",
+            "meaningId": "lampu",
+            "meaningEn": "lamp",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Lampen",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Buch",
+            "meaningId": "buku",
+            "meaningEn": "book",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Bücher",
+            "tags": [
+                "rumah",
+                "belajar"
+            ],
+            "level": "A1",
+            "ipa": "[buːx]"
+        },
+        {
+            "front": "der Schlüssel",
+            "meaningId": "kunci",
+            "meaningEn": "key",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Schlüssel",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Handy",
+            "meaningId": "ponsel",
+            "meaningEn": "mobile phone",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Handys",
+            "tags": [
+                "rumah",
+                "teknologi"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Computer",
+            "meaningId": "komputer",
+            "meaningEn": "computer",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Computer",
+            "tags": [
+                "teknologi"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Tasche",
+            "meaningId": "tas",
+            "meaningEn": "bag",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Taschen",
+            "tags": [
+                "rumah"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Geld",
+            "meaningId": "uang",
+            "meaningEn": "money",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Gelder",
+            "tags": [
+                "belanja"
+            ],
+            "level": "A1",
+            "exampleDe": "Ich habe kein Geld.",
+            "exampleId": "Saya tidak punya uang.",
+            "exampleEn": "I have no money."
+        },
+        {
+            "front": "rot",
+            "meaningId": "merah",
+            "meaningEn": "red",
+            "wordType": "adjective",
+            "tags": [
+                "warna"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "blau",
+            "meaningId": "biru",
+            "meaningEn": "blue",
+            "wordType": "adjective",
+            "tags": [
+                "warna"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "gelb",
+            "meaningId": "kuning",
+            "meaningEn": "yellow",
+            "wordType": "adjective",
+            "tags": [
+                "warna"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "grün",
+            "meaningId": "hijau",
+            "meaningEn": "green",
+            "wordType": "adjective",
+            "tags": [
+                "warna"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "schwarz",
+            "meaningId": "hitam",
+            "meaningEn": "black",
+            "wordType": "adjective",
+            "tags": [
+                "warna"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "weiß",
+            "meaningId": "putih",
+            "meaningEn": "white",
+            "wordType": "adjective",
+            "tags": [
+                "warna"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "grau",
+            "meaningId": "abu-abu",
+            "meaningEn": "grey",
+            "wordType": "adjective",
+            "tags": [
+                "warna"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "braun",
+            "meaningId": "cokelat",
+            "meaningEn": "brown",
+            "wordType": "adjective",
+            "tags": [
+                "warna"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Tag",
+            "meaningId": "hari",
+            "meaningEn": "day",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Tage",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1",
+            "exampleDe": "Guten Tag! Schönen Tag noch.",
+            "exampleId": "Selamat siang! Semoga harimu menyenangkan.",
+            "exampleEn": "Good day! Have a nice day."
+        },
+        {
+            "front": "die Woche",
+            "meaningId": "minggu",
+            "meaningEn": "week",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Wochen",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Monat",
+            "meaningId": "bulan",
+            "meaningEn": "month",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Monate",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Jahr",
+            "meaningId": "tahun",
+            "meaningEn": "year",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Jahre",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "heute",
+            "meaningId": "hari ini",
+            "meaningEn": "today",
+            "wordType": "adverb",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "morgen",
+            "meaningId": "besok",
+            "meaningEn": "tomorrow",
+            "wordType": "adverb",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "gestern",
+            "meaningId": "kemarin",
+            "meaningEn": "yesterday",
+            "wordType": "adverb",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "jetzt",
+            "meaningId": "sekarang",
+            "meaningEn": "now",
+            "wordType": "adverb",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Morgen",
+            "meaningId": "pagi",
+            "meaningEn": "morning",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Morgen",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Abend",
+            "meaningId": "malam",
+            "meaningEn": "evening",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Abende",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Nacht",
+            "meaningId": "malam (gelap)",
+            "meaningEn": "night",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Nächte",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Uhr",
+            "meaningId": "jam (alat)",
+            "meaningEn": "clock",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Uhren",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Stunde",
+            "meaningId": "jam (durasi)",
+            "meaningEn": "hour",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Stunden",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Minute",
+            "meaningId": "menit",
+            "meaningEn": "minute",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Minuten",
+            "tags": [
+                "waktu"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Montag",
+            "meaningId": "Senin",
+            "meaningEn": "Monday",
+            "wordType": "noun",
+            "tags": [
+                "hari"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Dienstag",
+            "meaningId": "Selasa",
+            "meaningEn": "Tuesday",
+            "wordType": "noun",
+            "tags": [
+                "hari"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Mittwoch",
+            "meaningId": "Rabu",
+            "meaningEn": "Wednesday",
+            "wordType": "noun",
+            "tags": [
+                "hari"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Donnerstag",
+            "meaningId": "Kamis",
+            "meaningEn": "Thursday",
+            "wordType": "noun",
+            "tags": [
+                "hari"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Freitag",
+            "meaningId": "Jumat",
+            "meaningEn": "Friday",
+            "wordType": "noun",
+            "tags": [
+                "hari"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Samstag",
+            "meaningId": "Sabtu",
+            "meaningEn": "Saturday",
+            "wordType": "noun",
+            "tags": [
+                "hari"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "Sonntag",
+            "meaningId": "Minggu",
+            "meaningEn": "Sunday",
+            "wordType": "noun",
+            "tags": [
+                "hari"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "sein",
+            "meaningId": "adalah / berada",
+            "meaningEn": "to be",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1",
+            "exampleDe": "Ich bin müde.",
+            "exampleId": "Saya lelah.",
+            "exampleEn": "I am tired."
+        },
+        {
+            "front": "haben",
+            "meaningId": "punya",
+            "meaningEn": "to have",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1",
+            "exampleDe": "Wir haben Zeit.",
+            "exampleId": "Kami punya waktu.",
+            "exampleEn": "We have time."
+        },
+        {
+            "front": "gehen",
+            "meaningId": "pergi / berjalan",
+            "meaningEn": "to go",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "kommen",
+            "meaningId": "datang",
+            "meaningEn": "to come",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "machen",
+            "meaningId": "membuat / melakukan",
+            "meaningEn": "to do / to make",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "sprechen",
+            "meaningId": "berbicara",
+            "meaningEn": "to speak",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1",
+            "exampleDe": "Sprechen Sie Deutsch?",
+            "exampleId": "Apakah Anda berbicara bahasa Jerman?",
+            "exampleEn": "Do you speak German?"
+        },
+        {
+            "front": "lesen",
+            "meaningId": "membaca",
+            "meaningEn": "to read",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "schreiben",
+            "meaningId": "menulis",
+            "meaningEn": "to write",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "essen",
+            "meaningId": "makan",
+            "meaningEn": "to eat",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "trinken",
+            "meaningId": "minum",
+            "meaningEn": "to drink",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "kaufen",
+            "meaningId": "membeli",
+            "meaningEn": "to buy",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "arbeiten",
+            "meaningId": "bekerja",
+            "meaningEn": "to work",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "lernen",
+            "meaningId": "belajar",
+            "meaningEn": "to learn",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1",
+            "exampleDe": "Ich lerne jeden Tag Deutsch.",
+            "exampleId": "Saya belajar bahasa Jerman setiap hari.",
+            "exampleEn": "I study German every day."
+        },
+        {
+            "front": "wohnen",
+            "meaningId": "tinggal / bermukim",
+            "meaningEn": "to live / to reside",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "fahren",
+            "meaningId": "berkendara / pergi (dengan kendaraan)",
+            "meaningEn": "to drive / to travel",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "sehen",
+            "meaningId": "melihat",
+            "meaningEn": "to see",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "hören",
+            "meaningId": "mendengar",
+            "meaningEn": "to hear",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "verstehen",
+            "meaningId": "mengerti",
+            "meaningEn": "to understand",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "brauchen",
+            "meaningId": "membutuhkan",
+            "meaningEn": "to need",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "möchten",
+            "meaningId": "ingin",
+            "meaningEn": "would like",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1",
+            "exampleDe": "Ich möchte einen Kaffee.",
+            "exampleId": "Saya ingin kopi.",
+            "exampleEn": "I would like a coffee."
+        },
+        {
+            "front": "können",
+            "meaningId": "bisa",
+            "meaningEn": "can / to be able to",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "spielen",
+            "meaningId": "bermain",
+            "meaningEn": "to play",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "schlafen",
+            "meaningId": "tidur",
+            "meaningEn": "to sleep",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "aufstehen",
+            "meaningId": "bangun (dari tidur)",
+            "meaningEn": "to get up",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "bezahlen",
+            "meaningId": "membayar",
+            "meaningEn": "to pay",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "helfen",
+            "meaningId": "membantu",
+            "meaningEn": "to help",
+            "wordType": "verb",
+            "tags": [
+                "kata kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "groß",
+            "meaningId": "besar / tinggi",
+            "meaningEn": "big / tall",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "klein",
+            "meaningId": "kecil",
+            "meaningEn": "small",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "gut",
+            "meaningId": "baik / bagus",
+            "meaningEn": "good",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "schlecht",
+            "meaningId": "buruk",
+            "meaningEn": "bad",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "neu",
+            "meaningId": "baru",
+            "meaningEn": "new",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "alt",
+            "meaningId": "tua / lama",
+            "meaningEn": "old",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "schnell",
+            "meaningId": "cepat",
+            "meaningEn": "fast",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "langsam",
+            "meaningId": "lambat",
+            "meaningEn": "slow",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "teuer",
+            "meaningId": "mahal",
+            "meaningEn": "expensive",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "billig",
+            "meaningId": "murah",
+            "meaningEn": "cheap",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "warm",
+            "meaningId": "hangat",
+            "meaningEn": "warm",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "kalt",
+            "meaningId": "dingin",
+            "meaningEn": "cold",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "schön",
+            "meaningId": "indah / cantik",
+            "meaningEn": "beautiful",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "müde",
+            "meaningId": "lelah",
+            "meaningEn": "tired",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "glücklich",
+            "meaningId": "bahagia",
+            "meaningEn": "happy",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "einfach",
+            "meaningId": "mudah / sederhana",
+            "meaningEn": "easy / simple",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "schwierig",
+            "meaningId": "sulit",
+            "meaningEn": "difficult",
+            "wordType": "adjective",
+            "tags": [
+                "sifat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Bahnhof",
+            "meaningId": "stasiun kereta",
+            "meaningEn": "train station",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Bahnhöfe",
+            "tags": [
+                "tempat",
+                "transportasi"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Flughafen",
+            "meaningId": "bandara",
+            "meaningEn": "airport",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Flughäfen",
+            "tags": [
+                "tempat",
+                "transportasi"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Schule",
+            "meaningId": "sekolah",
+            "meaningEn": "school",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Schulen",
+            "tags": [
+                "tempat",
+                "belajar"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Universität",
+            "meaningId": "universitas",
+            "meaningEn": "university",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Universitäten",
+            "tags": [
+                "tempat",
+                "belajar"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Krankenhaus",
+            "meaningId": "rumah sakit",
+            "meaningEn": "hospital",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Krankenhäuser",
+            "tags": [
+                "tempat",
+                "kesehatan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Supermarkt",
+            "meaningId": "supermarket",
+            "meaningEn": "supermarket",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Supermärkte",
+            "tags": [
+                "tempat",
+                "belanja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Restaurant",
+            "meaningId": "restoran",
+            "meaningEn": "restaurant",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Restaurants",
+            "tags": [
+                "tempat",
+                "restoran"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Apotheke",
+            "meaningId": "apotek",
+            "meaningEn": "pharmacy",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Apotheken",
+            "tags": [
+                "tempat",
+                "kesehatan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Bank",
+            "meaningId": "bank",
+            "meaningEn": "bank",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Banken",
+            "tags": [
+                "tempat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Park",
+            "meaningId": "taman",
+            "meaningEn": "park",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Parks",
+            "tags": [
+                "tempat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Straße",
+            "meaningId": "jalan",
+            "meaningEn": "street",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Straßen",
+            "tags": [
+                "tempat"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Zug",
+            "meaningId": "kereta",
+            "meaningEn": "train",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Züge",
+            "tags": [
+                "transportasi"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Bus",
+            "meaningId": "bus",
+            "meaningEn": "bus",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Busse",
+            "tags": [
+                "transportasi"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Auto",
+            "meaningId": "mobil",
+            "meaningEn": "car",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Autos",
+            "tags": [
+                "transportasi"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Fahrrad",
+            "meaningId": "sepeda",
+            "meaningEn": "bicycle",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Fahrräder",
+            "tags": [
+                "transportasi"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die U-Bahn",
+            "meaningId": "kereta bawah tanah",
+            "meaningEn": "subway",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die U-Bahnen",
+            "tags": [
+                "transportasi"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Fahrkarte",
+            "meaningId": "tiket (transportasi)",
+            "meaningEn": "ticket",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Fahrkarten",
+            "tags": [
+                "transportasi"
+            ],
+            "level": "A1",
+            "exampleDe": "Eine Fahrkarte nach Berlin, bitte.",
+            "exampleId": "Satu tiket ke Berlin, tolong.",
+            "exampleEn": "One ticket to Berlin, please."
+        },
+        {
+            "front": "der Kopf",
+            "meaningId": "kepala",
+            "meaningEn": "head",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Köpfe",
+            "tags": [
+                "tubuh"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Auge",
+            "meaningId": "mata",
+            "meaningEn": "eye",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Augen",
+            "tags": [
+                "tubuh"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Hand",
+            "meaningId": "tangan",
+            "meaningEn": "hand",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Hände",
+            "tags": [
+                "tubuh"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Arm",
+            "meaningId": "lengan",
+            "meaningEn": "arm",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Arme",
+            "tags": [
+                "tubuh"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Bein",
+            "meaningId": "kaki",
+            "meaningEn": "leg",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Beine",
+            "tags": [
+                "tubuh"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Bauch",
+            "meaningId": "perut",
+            "meaningEn": "stomach",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Bäuche",
+            "tags": [
+                "tubuh"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Zahn",
+            "meaningId": "gigi",
+            "meaningEn": "tooth",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Zähne",
+            "tags": [
+                "tubuh"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "krank",
+            "meaningId": "sakit",
+            "meaningEn": "sick / ill",
+            "wordType": "adjective",
+            "tags": [
+                "kesehatan"
+            ],
+            "level": "A1",
+            "exampleDe": "Ich bin krank.",
+            "exampleId": "Saya sakit.",
+            "exampleEn": "I am sick."
+        },
+        {
+            "front": "der Arzt",
+            "meaningId": "dokter",
+            "meaningEn": "doctor",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Ärzte",
+            "tags": [
+                "kesehatan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Medikament",
+            "meaningId": "obat",
+            "meaningEn": "medicine",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Medikamente",
+            "tags": [
+                "kesehatan"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Arbeit",
+            "meaningId": "pekerjaan",
+            "meaningEn": "work",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Arbeiten",
+            "tags": [
+                "kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Beruf",
+            "meaningId": "profesi",
+            "meaningEn": "profession",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Berufe",
+            "tags": [
+                "kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "das Büro",
+            "meaningId": "kantor",
+            "meaningEn": "office",
+            "gender": "das",
+            "wordType": "noun",
+            "plural": "die Büros",
+            "tags": [
+                "kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Lehrer",
+            "meaningId": "guru (laki-laki)",
+            "meaningEn": "teacher (male)",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Lehrer",
+            "tags": [
+                "kerja",
+                "belajar"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Lehrerin",
+            "meaningId": "guru (perempuan)",
+            "meaningEn": "teacher (female)",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Lehrerinnen",
+            "tags": [
+                "kerja",
+                "belajar"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Student",
+            "meaningId": "mahasiswa",
+            "meaningEn": "student",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Studenten",
+            "tags": [
+                "belajar"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Prüfung",
+            "meaningId": "ujian",
+            "meaningEn": "exam",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Prüfungen",
+            "tags": [
+                "belajar"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Hausaufgabe",
+            "meaningId": "pekerjaan rumah (PR)",
+            "meaningEn": "homework",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Hausaufgaben",
+            "tags": [
+                "belajar"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "der Termin",
+            "meaningId": "janji temu",
+            "meaningEn": "appointment",
+            "gender": "der",
+            "wordType": "noun",
+            "plural": "die Termine",
+            "tags": [
+                "kerja"
+            ],
+            "level": "A1"
+        },
+        {
+            "front": "die Frage",
+            "meaningId": "pertanyaan",
+            "meaningEn": "question",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Fragen",
+            "tags": [
+                "dasar"
+            ],
+            "level": "A1",
+            "exampleDe": "Ich habe eine Frage.",
+            "exampleId": "Saya punya pertanyaan.",
+            "exampleEn": "I have a question."
+        },
+        {
+            "front": "die Antwort",
+            "meaningId": "jawaban",
+            "meaningEn": "answer",
+            "gender": "die",
+            "wordType": "noun",
+            "plural": "die Antworten",
+            "tags": [
+                "dasar"
+            ],
+            "level": "A1"
+        }
+    ]
+}
