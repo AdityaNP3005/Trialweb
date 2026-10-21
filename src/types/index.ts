@@ -65,6 +65,12 @@ export type Deck = {
     isDefault: boolean;
     /** Content decks are bundled; user decks live in the account store. */
     readOnly: boolean;
+    /** Topic key for bundled decks (e.g. "greetings"). */
+    topicKey?: string;
+    /** Emoji shown in the topic lists. */
+    icon?: string;
+    /** Position of the topic inside its band (1-based). */
+    topicOrder?: number;
     createdAt: number;
     updatedAt: number;
 };
@@ -123,6 +129,12 @@ export type LevelSetting = {
 
 export type BandSettings = Record<CefrLevel, LevelSetting>;
 
+/** Small, non-band-specific preferences for the topic flow. */
+export type StudyPrefs = {
+    /** Shuffle cards inside a topic instead of frequency order. */
+    shuffleCards: boolean;
+};
+
 export type DeckProgress = {
     deckId: string;
     level: CefrLevel;
@@ -171,12 +183,16 @@ export type Profile = {
     email: string | null;
     uiLocale: "id" | "en";
     activeCourseId: string;
-    bands: BandSettings;
+    prefs: StudyPrefs;
     ttsVoiceURI: string | null;
     ttsRate: number;
     onboardingComplete: boolean;
     /** Set once the FSRS → cycle migration has run for this account. */
     engineV2?: boolean;
+    /** Set once progress has been remapped to topic deck ids. */
+    topicsV3?: boolean;
+    /** Legacy per-band settings, kept so old documents still load. */
+    bands?: BandSettings;
     /** Legacy fields, kept optional so old documents still load. */
     dailyGoal?: number;
     newPerDay?: number;

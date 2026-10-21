@@ -1,21 +1,16 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import {
-    ArrowRight,
-    CalendarDays,
-    Flame,
-    Layers,
-    Sparkles,
-    Trophy,
-} from "lucide-react";
+import { ArrowRight, CalendarDays, ChevronRight, Flame, Layers, Trophy } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { DailyStat, Deck, DeckProgress } from "@/types";
+import { CEFR_LEVELS } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
 import { computeStreak } from "@/lib/stats/streak";
+import { summarizeBand } from "@/content/courses";
 import { buttonStyles } from "@/components/ui/button";
-import { Progress, Skeleton } from "@/components/ui/progress";
+import { Skeleton } from "@/components/ui/progress";
 import { DeckCard } from "@/components/decks/deck-card";
 import { EmptyState } from "@/components/ui/empty-state";
 
@@ -67,20 +62,27 @@ export default function DashboardPage() {
         [data],
     );
 
-    const totals = useMemo(() => {
-        const list = data?.progress ?? [];
-        const total = list.reduce((sum, entry) => sum + entry.total, 0);
-        const known = list.reduce((sum, entry) => sum + entry.known, 0);
-        return { total, known, percent: total ? Math.round((known / total) * 100) : 0 };
-    }, [data]);
+    const bands = useMemo(
+        () =>
+            data
+                ? CEFR_LEVELS.map((level) => ({
+                    summary: summarizeBand(level, data.decks, progressById),
+                }))
+                : [],
+        [data, progressById],
+    );
 
-    const nextDeck = useMemo(() => {
-        if (!data) return null;
-        return (
-            data.decks.find((deck) => (progressById.get(deck.id)?.percent ?? 0) < 100) ??
-            data.decks[0] ??
-            null
-        );
+    const recentTopics = useMemo(() => {
+        if (!data) return [];
+        return data.decks
+            .filter((deck) => deck.source === "content")
+            .map((deck) => ({ deck, progress: progressById.get(deck.id) }))
+            .filter((entry) => entry.progress?.lastActivityAt)
+            .sort(
+                (a, b) =>
+                    (b.progress?.lastActivityAt ?? 0) - (a.progress?.lastActivityAt ?? 0),
+            )
+            .slice(0, 3);
     }, [data, progressById]);
 
     if (error) {
@@ -113,107 +115,117 @@ export default function DashboardPage() {
                 </Link>
             </div>
 
-            {!data ? (
-                <div className="grid gap-4 sm:grid-cols-3">
-                    <Skeleton className="h-32 sm:col-span-2" />
-                    <Skeleton className="h-32" />
+            <section className="grid gap-4 sm:grid-cols-3">
+                <StatTile
+                    icon={<Trophy className="size-4" />}
+                    label={t("knownToday")}
+                    value={data?.today.known ?? 0}
+                />
+                <StatTile
+                    icon={<Layers className="size-4" />}
+                    label={t("reviewsToday")}
+                    value={data?.today.reviews ?? 0}
+                />
+                <StatTile
+                    icon={<Flame className="size-4" />}
+                    label={t("streak")}
+                    value={t("streakDays", { count: streak })}
+                />
+            </section>
+
+            <section className="space-y-3">
+                <div>
+                    <h2 className="text-sm font-bold uppercase tracking-wide text-muted">
+                        {t("pickBand")}
+                    </h2>
+                    <p className="mt-1 text-xs text-muted">{t("pickBandHint")}</p>
                 </div>
-            ) : (
-                <>
-                    <section className="surface-card relative overflow-hidden p-5 sm:p-6">
-                        <div
-                            aria-hidden
-                            className="pointer-events-none absolute -right-16 -top-20 size-56 rounded-full bg-accent/10 blur-2xl"
-                        />
-                        <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-                            <div className="min-w-0">
-                                <p className="text-xs font-semibold uppercase tracking-wide text-muted">
-                                    {t("cycleProgress")}
-                                </p>
-                                <div className="mt-1 flex items-end gap-3">
-                                    <span className="text-5xl font-extrabold leading-none tracking-tight">
-                                        {totals.percent}%
-                                    </span>
-                                    <span className="mb-1 text-sm text-muted">
-                                        {t("knownOf", { known: totals.known, total: totals.total })}
+
+                {!data ? (
+                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                        {[0, 1, 2, 3, 4, 5].map((key) => (
+                            <Skeleton key={key} className="h-32" />
+                        ))}
+                    </div>
+                ) : (
+                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                        {bands.map(({ summary }) => (
+                            <Link
+                                key={summary.level}
+                                href={`/levels/${summary.level}`}
+                                className="surface-card group flex flex-col gap-3 p-4 transition hover:-translate-y-0.5 hover:border-accent/50"
+                            >
+                                <div className="flex items-start justify-between">
+                                    <div>
+                                        <p className="text-lg font-extrabold leading-none">
+                                            {summary.level}
+                                        </p>
+                                        <p className="mt-1 text-xs text-muted">
+                                            {t("bandTopics", { count: summary.topics })}
+                                        </p>
+                                    </div>
+                                    <span className="text-xl font-extrabold text-accent">
+                                        {summary.percent}%
                                     </span>
                                 </div>
-                                <div className="mt-4 max-w-sm">
-                                    <Progress
-                                        value={totals.known}
-                                        max={Math.max(1, totals.total)}
-                                        label={t("cycleProgress")}
+
+                                <div className="h-1.5 w-full overflow-hidden rounded-full bg-surface-2">
+                                    <div
+                                        className="h-full rounded-full bg-accent transition-all"
+                                        style={{ width: `${summary.percent}%` }}
                                     />
-                                    <p className="mt-1.5 text-[11px] text-muted">
-                                        {t("resetHint")}
-                                    </p>
                                 </div>
-                            </div>
 
-                            <div className="shrink-0">
-                                {nextDeck ? (
-                                    <Link
-                                        href={`/study/${nextDeck.id}`}
-                                        className={buttonStyles({ size: "lg", className: "w-full sm:w-auto" })}
-                                    >
-                                        <Sparkles className="size-4" />
-                                        {t("start")}
-                                    </Link>
-                                ) : (
-                                    <p className="max-w-[15rem] rounded-xl bg-surface-2 px-4 py-3 text-sm text-muted">
-                                        {t("noDecks")}
+                                <div className="mt-auto flex items-center justify-between gap-2 text-[11px] text-muted">
+                                    <span>
+                                        {summary.known}/{summary.total} ·{" "}
+                                        {t("bandDone", {
+                                            done: summary.topicsDone,
+                                            total: summary.topics,
+                                        })}
+                                    </span>
+                                    <ChevronRight className="size-4 transition group-hover:translate-x-0.5 group-hover:text-accent" />
+                                </div>
+                                {summary.nextTopic ? (
+                                    <p className="truncate text-xs">
+                                        <span className="text-muted">{t("continueWith")}: </span>
+                                        <span className="font-semibold">
+                                            {summary.nextTopic.icon} {summary.nextTopic.name}
+                                        </span>
                                     </p>
-                                )}
-                            </div>
-                        </div>
-                    </section>
+                                ) : null}
+                            </Link>
+                        ))}
+                    </div>
+                )}
+            </section>
 
-                    <section className="grid gap-4 sm:grid-cols-3">
-                        <StatTile
-                            icon={<Trophy className="size-4" />}
-                            label={t("knownToday")}
-                            value={data.today.known ?? data.today.next ?? 0}
-                        />
-                        <StatTile
-                            icon={<Layers className="size-4" />}
-                            label={t("reviewsToday")}
-                            value={data.today.reviews}
-                        />
-                        <StatTile
-                            icon={<Flame className="size-4" />}
-                            label={t("streak")}
-                            value={t("streakDays", { count: streak })}
-                        />
-                    </section>
+            <section className="space-y-3">
+                <h2 className="text-sm font-bold uppercase tracking-wide text-muted">
+                    {t("recentTopics")}
+                </h2>
 
-                    <section className="space-y-3">
-                        <h2 className="text-sm font-bold uppercase tracking-wide text-muted">
-                            {t("continueDeck")}
-                        </h2>
-
-                        {data.decks.length === 0 ? (
-                            <EmptyState
-                                title={t("noDecks")}
-                                action={
-                                    <Link href="/decks" className={buttonStyles({ size: "sm" })}>
-                                        {t("openDecks")}
-                                    </Link>
-                                }
-                            />
-                        ) : (
-                            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                                {data.decks.slice(0, 6).map((deck) => (
-                                    <DeckCard
-                                        key={deck.id}
-                                        deck={deck}
-                                        progress={progressById.get(deck.id)}
-                                    />
-                                ))}
-                            </div>
-                        )}
-                    </section>
-                </>
-            )}
+                {recentTopics.length === 0 ? (
+                    <EmptyState
+                        title={t("noRecent")}
+                        body={t("noRecentBody")}
+                        action={
+                            <Link
+                                href="/levels/A1"
+                                className={buttonStyles({ size: "sm" })}
+                            >
+                                {t("openA1")}
+                            </Link>
+                        }
+                    />
+                ) : (
+                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                        {recentTopics.map(({ deck, progress }) => (
+                            <DeckCard key={deck.id} deck={deck} progress={progress} />
+                        ))}
+                    </div>
+                )}
+            </section>
         </div>
     );
 }

@@ -14,98 +14,89 @@ export type SeedCard = {
     exampleEn?: string | null;
     tags?: string[];
     level?: CefrLevel;
+    topic?: string;
 };
 
-export type SeedFile = {
+export type LevelFile = {
     courseId: string;
-    deck: {
-        slug: string;
-        name: string;
-        description: string;
-        level: CefrLevel;
-        tags: string[];
-    };
+    level: CefrLevel;
+    topics: { id: string; key: string; title: string; icon: string; order: number; cardCount: number }[];
     cards: SeedCard[];
 };
 
-export type ContentDeck = {
+export type ContentTopic = {
+    /** Deck id, e.g. `de-a1-greetings`. */
     id: string;
     courseId: string;
     level: CefrLevel;
-    name: string;
-    description: string;
-    tags: string[];
+    key: string;
+    title: string;
+    icon: string;
+    order: number;
     cardCount: number;
-    loader: () => Promise<SeedFile>;
+    file: string;
 };
 
-/**
- * Static loader map. Bundlers need literal specifiers, so a new deck must add
- * one entry here plus one entry in `src/content/manifest.json`.
- */
-const loaders: Record<string, () => Promise<SeedFile>> = {
-    "de-a1-core": async () => {
-        const loaded = await import("@/content/de/a1-core.json");
-        return loaded.default as SeedFile;
-    },
-    "de-a2-core": async () => {
-        const loaded = await import("@/content/de/a2-core.json");
-        return loaded.default as SeedFile;
-    },
-    "de-b1-core": async () => {
-        const loaded = await import("@/content/de/b1-core.json");
-        return loaded.default as SeedFile;
-    },
-    "de-b2-core": async () => {
-        const loaded = await import("@/content/de/b2-core.json");
-        return loaded.default as SeedFile;
-    },
-    "de-c1-core": async () => {
-        const loaded = await import("@/content/de/c1-core.json");
-        return loaded.default as SeedFile;
-    },
-    "de-c2-core": async () => {
-        const loaded = await import("@/content/de/c2-core.json");
-        return loaded.default as SeedFile;
-    },
+/** Static loader map (bundlers need literal specifiers). */
+const loaders: Record<string, () => Promise<LevelFile>> = {
+    a1: async () => (await import("@/content/de/a1.json")).default as LevelFile,
+    a2: async () => (await import("@/content/de/a2.json")).default as LevelFile,
+    b1: async () => (await import("@/content/de/b1.json")).default as LevelFile,
+    b2: async () => (await import("@/content/de/b2.json")).default as LevelFile,
+    c1: async () => (await import("@/content/de/c1.json")).default as LevelFile,
+    c2: async () => (await import("@/content/de/c2.json")).default as LevelFile,
 };
 
-export const contentDecks: ContentDeck[] = manifest.decks.map((deck) => ({
-    id: deck.id,
-    courseId: manifest.courseId,
-    level: deck.level as CefrLevel,
-    name: deck.name,
-    description: deck.description,
-    tags: deck.tags,
-    cardCount: deck.cardCount,
-    loader: loaders[deck.id],
-}));
+export const contentTopics: ContentTopic[] = manifest.levels.flatMap((level) =>
+    level.topics.map((topic) => ({
+        id: topic.id,
+        courseId: manifest.courseId,
+        level: level.level as CefrLevel,
+        key: topic.key,
+        title: topic.title,
+        icon: topic.icon,
+        order: topic.order,
+        cardCount: topic.cardCount,
+        file: level.file,
+    })),
+);
 
-export const contentDeckIds = new Set(contentDecks.map((deck) => deck.id));
+export const contentDeckIds = new Set(contentTopics.map((topic) => topic.id));
 
 export function isContentDeckId(deckId: string): boolean {
     return contentDeckIds.has(deckId);
 }
 
-export function getContentDeck(deckId: string): ContentDeck | null {
-    return contentDecks.find((deck) => deck.id === deckId) ?? null;
+export function getContentDeck(deckId: string): ContentTopic | null {
+    return contentTopics.find((topic) => topic.id === deckId) ?? null;
+}
+
+export function topicsForLevel(level: CefrLevel): ContentTopic[] {
+    return contentTopics
+        .filter((topic) => topic.level === level)
+        .sort((a, b) => a.order - b.order);
 }
 
 const cardCache = new Map<string, Card[]>();
 
-/** Builds cards for a bundled deck, with stable ids derived from the index. */
+/** Builds the cards of one topic, with ids derived from the topic position. */
 export async function loadContentCards(deckId: string): Promise<Card[]> {
     const cached = cardCache.get(deckId);
     if (cached) return cached;
 
-    const deck = getContentDeck(deckId);
-    if (!deck || !deck.loader) return [];
+    const topic = getContentDeck(deckId);
+    if (!topic) return [];
 
-    const seed = await deck.loader();
-    const cards: Card[] = seed.cards.map((card, index) => ({
-        id: `${deck.id}-${String(index + 1).padStart(4, "0")}`,
-        deckId: deck.id,
-        courseId: deck.courseId,
+    const loader = loaders[topic.file.replace(".json", "")];
+    if (!loader) return [];
+
+    const level = await loader();
+    const topicCards = level.cards.filter((card) => card.topic === topic.key);
+
+    const cards: Card[] = topicCards.map((card, index) => ({
+        id: `${topic.id}-${String(index + 1).padStart(4, "0")}`,
+        deckId: topic.id,
+        courseId: topic.courseId,
         front: card.front,
         meaningId: card.meaningId,
         meaningEn: card.meaningEn,
@@ -117,7 +108,7 @@ export async function loadContentCards(deckId: string): Promise<Card[]> {
         exampleId: card.exampleId ?? null,
         exampleEn: card.exampleEn ?? null,
         tags: card.tags ?? [],
-        level: card.level ?? deck.level,
+        level: card.level ?? topic.level,
         source: "seed",
         suspended: false,
         createdAt: 0,
@@ -128,9 +119,8 @@ export async function loadContentCards(deckId: string): Promise<Card[]> {
     return cards;
 }
 
-/** Total number of bundled cards for a course, used by the stats page. */
 export function contentCardCount(courseId = manifest.courseId): number {
-    return contentDecks
-        .filter((deck) => deck.courseId === courseId)
-        .reduce((sum, deck) => sum + deck.cardCount, 0);
+    return contentTopics
+        .filter((topic) => topic.courseId === courseId)
+        .reduce((sum, topic) => sum + topic.cardCount, 0);
 }

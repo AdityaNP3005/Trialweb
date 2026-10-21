@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { useStore } from "@/components/providers/store-provider";
 import type { CefrLevel, Deck, DeckProgress } from "@/types";
 import { CEFR_LEVELS } from "@/types";
+import { summarizeBand } from "@/content/courses";
 import { Button } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
 import { Input, Label, Select, Textarea } from "@/components/ui/field";
@@ -62,17 +63,29 @@ export default function DecksPage() {
 
     const tags = useMemo(() => {
         const set = new Set<string>();
-        decks?.forEach((deck) => deck.tags.forEach((entry) => set.add(entry)));
+        decks?.forEach((deck) =>
+            deck.tags
+                // Only band tags are useful here; topic keys would flood the list.
+                .filter((entry) => /^[abc][12]$/.test(entry))
+                .forEach((entry) => set.add(entry)),
+        );
         return [...set].sort();
     }, [decks]);
 
     const filtered = useMemo(() => {
-        return (decks ?? []).filter((deck) => {
-            if (level !== "all" && deck.level !== level) return false;
-            if (tag !== "all" && !deck.tags.includes(tag)) return false;
-            if (source !== "all" && deck.source !== source) return false;
-            return true;
-        });
+        return (decks ?? [])
+            .filter((deck) => {
+                if (level !== "all" && deck.level !== level) return false;
+                if (tag !== "all" && !deck.tags.includes(tag)) return false;
+                if (source !== "all" && deck.source !== source) return false;
+                return true;
+            })
+            .sort((a, b) => {
+                if (a.level !== b.level) {
+                    return CEFR_LEVELS.indexOf(a.level) - CEFR_LEVELS.indexOf(b.level);
+                }
+                return (a.topicOrder ?? 0) - (b.topicOrder ?? 0);
+            });
     }, [decks, level, tag, source]);
 
     async function handleCreate(event: React.FormEvent) {
@@ -175,6 +188,53 @@ export default function DecksPage() {
                     <Skeleton className="h-36" />
                     <Skeleton className="h-36" />
                 </div>
+            ) : level === "all" && source !== "user" ? (
+                <div className="space-y-5">
+                    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                        {CEFR_LEVELS.map((entry) => {
+                            const summary = summarizeBand(entry, decks, new Map(Object.entries(progress)));
+                            return (
+                                <button
+                                    key={entry}
+                                    type="button"
+                                    onClick={() => setLevel(entry)}
+                                    className="surface-card flex flex-col gap-2 p-4 text-left transition hover:border-accent/50"
+                                >
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-lg font-extrabold">{entry}</span>
+                                        <span className="text-sm font-extrabold text-accent">
+                                            {summary.percent}%
+                                        </span>
+                                    </div>
+                                    <p className="text-xs text-muted">
+                                        {t("bandTopics", { count: summary.topics })} · {summary.known}/
+                                        {summary.total}
+                                    </p>
+                                    <div className="h-1.5 w-full overflow-hidden rounded-full bg-surface-2">
+                                        <div
+                                            className="h-full rounded-full bg-accent"
+                                            style={{ width: `${summary.percent}%` }}
+                                        />
+                                    </div>
+                                </button>
+                            );
+                        })}
+                    </div>
+
+                    {decks.filter((deck) => deck.source === "user").length > 0 ? (
+                        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                            {decks
+                                .filter((deck) => deck.source === "user")
+                                .map((deck) => (
+                                    <DeckCard
+                                        key={deck.id}
+                                        deck={deck}
+                                        progress={progress[deck.id]}
+                                    />
+                                ))}
+                        </div>
+                    ) : null}
+                </div>
             ) : filtered.length === 0 ? (
                 <EmptyState
                     title={t("emptyTitle")}
@@ -188,7 +248,7 @@ export default function DecksPage() {
                 />
             ) : (
                 <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {filtered.map((deck) => (
+                    {filtered.slice(0, 60).map((deck) => (
                         <DeckCard key={deck.id} deck={deck} progress={progress[deck.id]} />
                     ))}
                 </div>

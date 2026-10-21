@@ -1,83 +1,1440 @@
 {
+  "version": 2,
   "courseId": "de",
-  "decks": [
+  "levels": [
     {
-      "id": "de-a1-core",
-      "file": "a1-core.json",
       "level": "A1",
-      "name": "Deutsch A1 · Kosakata Inti",
-      "description": "Kata-kata Jerman level A1 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
-      "tags": [
-        "a1",
-        "kosakata",
-        "inti"
-      ],
-      "cardCount": 600
+      "order": 1,
+      "file": "a1.json",
+      "topics": [
+        {
+          "id": "de-a1-greetings",
+          "key": "greetings",
+          "title": "Sapaan & perkenalan",
+          "icon": "👋",
+          "order": 1,
+          "cardCount": 37
+        },
+        {
+          "id": "de-a1-numbers-time",
+          "key": "numbers-time",
+          "title": "Angka, tanggal & waktu",
+          "icon": "🔢",
+          "order": 2,
+          "cardCount": 57
+        },
+        {
+          "id": "de-a1-family-people",
+          "key": "family-people",
+          "title": "Keluarga & orang",
+          "icon": "👨‍👩‍👧",
+          "order": 3,
+          "cardCount": 21
+        },
+        {
+          "id": "de-a1-food-drink",
+          "key": "food-drink",
+          "title": "Makanan & minuman",
+          "icon": "🍎",
+          "order": 4,
+          "cardCount": 31
+        },
+        {
+          "id": "de-a1-home-daily",
+          "key": "home-daily",
+          "title": "Rumah & benda sehari-hari",
+          "icon": "🏠",
+          "order": 5,
+          "cardCount": 19
+        },
+        {
+          "id": "de-a1-colors-shapes",
+          "key": "colors-shapes",
+          "title": "Warna & bentuk",
+          "icon": "🎨",
+          "order": 6,
+          "cardCount": 14
+        },
+        {
+          "id": "de-a1-body-health",
+          "key": "body-health",
+          "title": "Tubuh & kesehatan",
+          "icon": "🩺",
+          "order": 7,
+          "cardCount": 15
+        },
+        {
+          "id": "de-a1-directions-places",
+          "key": "directions-places",
+          "title": "Arah & tempat",
+          "icon": "🧭",
+          "order": 8,
+          "cardCount": 30
+        },
+        {
+          "id": "de-a1-travel-transport",
+          "key": "travel-transport",
+          "title": "Perjalanan & transportasi",
+          "icon": "🚆",
+          "order": 9,
+          "cardCount": 11
+        },
+        {
+          "id": "de-a1-work-school",
+          "key": "work-school",
+          "title": "Kerja & sekolah",
+          "icon": "🏫",
+          "order": 10,
+          "cardCount": 14
+        },
+        {
+          "id": "de-a1-verbs-basic",
+          "key": "verbs-basic",
+          "title": "Kata kerja dasar",
+          "icon": "🔁",
+          "order": 11,
+          "cardCount": 76
+        },
+        {
+          "id": "de-a1-adjectives-basic",
+          "key": "adjectives-basic",
+          "title": "Kata sifat dasar",
+          "icon": "✨",
+          "order": 12,
+          "cardCount": 64
+        },
+        {
+          "id": "de-a1-general-1",
+          "key": "general-1",
+          "title": "Kosakata umum (1/3)",
+          "icon": "📚",
+          "order": 13,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a1-general-2",
+          "key": "general-2",
+          "title": "Kosakata umum (2/3)",
+          "icon": "📚",
+          "order": 14,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a1-general-3",
+          "key": "general-3",
+          "title": "Kosakata umum (3/3)",
+          "icon": "📚",
+          "order": 15,
+          "cardCount": 51
+        }
+      ]
     },
     {
-      "id": "de-a2-core",
-      "file": "a2-core.json",
       "level": "A2",
-      "name": "Deutsch A2 · Kosakata Inti",
-      "description": "Kata-kata Jerman level A2 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
-      "tags": [
-        "a2",
-        "kosakata",
-        "inti"
-      ],
-      "cardCount": 1200
+      "order": 2,
+      "file": "a2.json",
+      "topics": [
+        {
+          "id": "de-a2-numbers-time",
+          "key": "numbers-time",
+          "title": "Angka, tanggal & waktu",
+          "icon": "🔢",
+          "order": 1,
+          "cardCount": 26
+        },
+        {
+          "id": "de-a2-home-daily",
+          "key": "home-daily",
+          "title": "Rumah & benda sehari-hari",
+          "icon": "🏠",
+          "order": 2,
+          "cardCount": 14
+        },
+        {
+          "id": "de-a2-food-drink",
+          "key": "food-drink",
+          "title": "Makanan & minuman",
+          "icon": "🍎",
+          "order": 3,
+          "cardCount": 13
+        },
+        {
+          "id": "de-a2-family-people",
+          "key": "family-people",
+          "title": "Keluarga & orang",
+          "icon": "👨‍👩‍👧",
+          "order": 4,
+          "cardCount": 10
+        },
+        {
+          "id": "de-a2-travel-transport",
+          "key": "travel-transport",
+          "title": "Perjalanan & transportasi",
+          "icon": "🚆",
+          "order": 5,
+          "cardCount": 17
+        },
+        {
+          "id": "de-a2-work-school",
+          "key": "work-school",
+          "title": "Kerja & sekolah",
+          "icon": "🏫",
+          "order": 6,
+          "cardCount": 15
+        },
+        {
+          "id": "de-a2-clothes-shopping",
+          "key": "clothes-shopping",
+          "title": "Pakaian & belanja",
+          "icon": "🛍️",
+          "order": 7,
+          "cardCount": 16
+        },
+        {
+          "id": "de-a2-body-health",
+          "key": "body-health",
+          "title": "Tubuh & kesehatan",
+          "icon": "🩺",
+          "order": 8,
+          "cardCount": 21
+        },
+        {
+          "id": "de-a2-directions-places",
+          "key": "directions-places",
+          "title": "Arah & tempat",
+          "icon": "🧭",
+          "order": 9,
+          "cardCount": 23
+        },
+        {
+          "id": "de-a2-colors-shapes",
+          "key": "colors-shapes",
+          "title": "Warna & bentuk",
+          "icon": "🎨",
+          "order": 10,
+          "cardCount": 13
+        },
+        {
+          "id": "de-a2-verbs-basic-1",
+          "key": "verbs-basic-1",
+          "title": "Kata kerja dasar (1/4)",
+          "icon": "🔁",
+          "order": 11,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a2-verbs-basic-2",
+          "key": "verbs-basic-2",
+          "title": "Kata kerja dasar (2/4)",
+          "icon": "🔁",
+          "order": 12,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a2-verbs-basic-3",
+          "key": "verbs-basic-3",
+          "title": "Kata kerja dasar (3/4)",
+          "icon": "🔁",
+          "order": 13,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a2-verbs-basic-4",
+          "key": "verbs-basic-4",
+          "title": "Kata kerja dasar (4/4)",
+          "icon": "🔁",
+          "order": 14,
+          "cardCount": 26
+        },
+        {
+          "id": "de-a2-adjectives-basic-1",
+          "key": "adjectives-basic-1",
+          "title": "Kata sifat dasar (1/2)",
+          "icon": "✨",
+          "order": 15,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a2-adjectives-basic-2",
+          "key": "adjectives-basic-2",
+          "title": "Kata sifat dasar (2/2)",
+          "icon": "✨",
+          "order": 16,
+          "cardCount": 59
+        },
+        {
+          "id": "de-a2-general-1",
+          "key": "general-1",
+          "title": "Kosakata umum (1/8)",
+          "icon": "📚",
+          "order": 17,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a2-general-2",
+          "key": "general-2",
+          "title": "Kosakata umum (2/8)",
+          "icon": "📚",
+          "order": 18,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a2-general-3",
+          "key": "general-3",
+          "title": "Kosakata umum (3/8)",
+          "icon": "📚",
+          "order": 19,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a2-general-4",
+          "key": "general-4",
+          "title": "Kosakata umum (4/8)",
+          "icon": "📚",
+          "order": 20,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a2-general-5",
+          "key": "general-5",
+          "title": "Kosakata umum (5/8)",
+          "icon": "📚",
+          "order": 21,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a2-general-6",
+          "key": "general-6",
+          "title": "Kosakata umum (6/8)",
+          "icon": "📚",
+          "order": 22,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a2-general-7",
+          "key": "general-7",
+          "title": "Kosakata umum (7/8)",
+          "icon": "📚",
+          "order": 23,
+          "cardCount": 80
+        },
+        {
+          "id": "de-a2-general-8",
+          "key": "general-8",
+          "title": "Kosakata umum (8/8)",
+          "icon": "📚",
+          "order": 24,
+          "cardCount": 67
+        }
+      ]
     },
     {
-      "id": "de-b1-core",
-      "file": "b1-core.json",
       "level": "B1",
-      "name": "Deutsch B1 · Kosakata Inti",
-      "description": "Kata-kata Jerman level B1 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
-      "tags": [
-        "b1",
-        "kosakata",
-        "inti"
-      ],
-      "cardCount": 1800
+      "order": 3,
+      "file": "b1.json",
+      "topics": [
+        {
+          "id": "de-b1-general-advanced",
+          "key": "general-advanced",
+          "title": "Umum tingkat lanjut",
+          "icon": "🧩",
+          "order": 1,
+          "cardCount": 12
+        },
+        {
+          "id": "de-b1-work-economy",
+          "key": "work-economy",
+          "title": "Pekerjaan & ekonomi",
+          "icon": "💼",
+          "order": 2,
+          "cardCount": 19
+        },
+        {
+          "id": "de-b1-society-politics",
+          "key": "society-politics",
+          "title": "Masyarakat & politik",
+          "icon": "🏛️",
+          "order": 3,
+          "cardCount": 13
+        },
+        {
+          "id": "de-b1-media-tech",
+          "key": "media-tech",
+          "title": "Media & teknologi",
+          "icon": "💻",
+          "order": 4,
+          "cardCount": 19
+        },
+        {
+          "id": "de-b1-environment-nature",
+          "key": "environment-nature",
+          "title": "Lingkungan & alam",
+          "icon": "🌱",
+          "order": 5,
+          "cardCount": 10
+        },
+        {
+          "id": "de-b1-education-science",
+          "key": "education-science",
+          "title": "Pendidikan & ilmu",
+          "icon": "🔬",
+          "order": 6,
+          "cardCount": 14
+        },
+        {
+          "id": "de-b1-culture-arts",
+          "key": "culture-arts",
+          "title": "Budaya & seni",
+          "icon": "🎭",
+          "order": 7,
+          "cardCount": 13
+        },
+        {
+          "id": "de-b1-emotions-opinion",
+          "key": "emotions-opinion",
+          "title": "Emosi & opini",
+          "icon": "💬",
+          "order": 8,
+          "cardCount": 10
+        },
+        {
+          "id": "de-b1-verbs-advanced-1",
+          "key": "verbs-advanced-1",
+          "title": "Kata kerja lanjutan (1/5)",
+          "icon": "🔁",
+          "order": 9,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-verbs-advanced-2",
+          "key": "verbs-advanced-2",
+          "title": "Kata kerja lanjutan (2/5)",
+          "icon": "🔁",
+          "order": 10,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-verbs-advanced-3",
+          "key": "verbs-advanced-3",
+          "title": "Kata kerja lanjutan (3/5)",
+          "icon": "🔁",
+          "order": 11,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-verbs-advanced-4",
+          "key": "verbs-advanced-4",
+          "title": "Kata kerja lanjutan (4/5)",
+          "icon": "🔁",
+          "order": 12,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-verbs-advanced-5",
+          "key": "verbs-advanced-5",
+          "title": "Kata kerja lanjutan (5/5)",
+          "icon": "🔁",
+          "order": 13,
+          "cardCount": 24
+        },
+        {
+          "id": "de-b1-adjectives-advanced-1",
+          "key": "adjectives-advanced-1",
+          "title": "Kata sifat lanjutan (1/3)",
+          "icon": "✨",
+          "order": 14,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-adjectives-advanced-2",
+          "key": "adjectives-advanced-2",
+          "title": "Kata sifat lanjutan (2/3)",
+          "icon": "✨",
+          "order": 15,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-adjectives-advanced-3",
+          "key": "adjectives-advanced-3",
+          "title": "Kata sifat lanjutan (3/3)",
+          "icon": "✨",
+          "order": 16,
+          "cardCount": 15
+        },
+        {
+          "id": "de-b1-general-1",
+          "key": "general-1",
+          "title": "Kosakata umum (1/15)",
+          "icon": "📚",
+          "order": 17,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-2",
+          "key": "general-2",
+          "title": "Kosakata umum (2/15)",
+          "icon": "📚",
+          "order": 18,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-3",
+          "key": "general-3",
+          "title": "Kosakata umum (3/15)",
+          "icon": "📚",
+          "order": 19,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-4",
+          "key": "general-4",
+          "title": "Kosakata umum (4/15)",
+          "icon": "📚",
+          "order": 20,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-5",
+          "key": "general-5",
+          "title": "Kosakata umum (5/15)",
+          "icon": "📚",
+          "order": 21,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-6",
+          "key": "general-6",
+          "title": "Kosakata umum (6/15)",
+          "icon": "📚",
+          "order": 22,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-7",
+          "key": "general-7",
+          "title": "Kosakata umum (7/15)",
+          "icon": "📚",
+          "order": 23,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-8",
+          "key": "general-8",
+          "title": "Kosakata umum (8/15)",
+          "icon": "📚",
+          "order": 24,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-9",
+          "key": "general-9",
+          "title": "Kosakata umum (9/15)",
+          "icon": "📚",
+          "order": 25,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-10",
+          "key": "general-10",
+          "title": "Kosakata umum (10/15)",
+          "icon": "📚",
+          "order": 26,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-11",
+          "key": "general-11",
+          "title": "Kosakata umum (11/15)",
+          "icon": "📚",
+          "order": 27,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-12",
+          "key": "general-12",
+          "title": "Kosakata umum (12/15)",
+          "icon": "📚",
+          "order": 28,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-13",
+          "key": "general-13",
+          "title": "Kosakata umum (13/15)",
+          "icon": "📚",
+          "order": 29,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-14",
+          "key": "general-14",
+          "title": "Kosakata umum (14/15)",
+          "icon": "📚",
+          "order": 30,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b1-general-15",
+          "key": "general-15",
+          "title": "Kosakata umum (15/15)",
+          "icon": "📚",
+          "order": 31,
+          "cardCount": 51
+        }
+      ]
     },
     {
-      "id": "de-b2-core",
-      "file": "b2-core.json",
       "level": "B2",
-      "name": "Deutsch B2 · Kosakata Inti",
-      "description": "Kata-kata Jerman level B2 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
-      "tags": [
-        "b2",
-        "kosakata",
-        "inti"
-      ],
-      "cardCount": 2000
+      "order": 4,
+      "file": "b2.json",
+      "topics": [
+        {
+          "id": "de-b2-work-economy",
+          "key": "work-economy",
+          "title": "Pekerjaan & ekonomi",
+          "icon": "💼",
+          "order": 1,
+          "cardCount": 11
+        },
+        {
+          "id": "de-b2-society-politics",
+          "key": "society-politics",
+          "title": "Masyarakat & politik",
+          "icon": "🏛️",
+          "order": 2,
+          "cardCount": 18
+        },
+        {
+          "id": "de-b2-media-tech",
+          "key": "media-tech",
+          "title": "Media & teknologi",
+          "icon": "💻",
+          "order": 3,
+          "cardCount": 11
+        },
+        {
+          "id": "de-b2-general-advanced",
+          "key": "general-advanced",
+          "title": "Umum tingkat lanjut",
+          "icon": "🧩",
+          "order": 4,
+          "cardCount": 19
+        },
+        {
+          "id": "de-b2-environment-nature",
+          "key": "environment-nature",
+          "title": "Lingkungan & alam",
+          "icon": "🌱",
+          "order": 5,
+          "cardCount": 17
+        },
+        {
+          "id": "de-b2-health-psychology",
+          "key": "health-psychology",
+          "title": "Kesehatan & psikologi",
+          "icon": "🧠",
+          "order": 6,
+          "cardCount": 11
+        },
+        {
+          "id": "de-b2-culture-arts",
+          "key": "culture-arts",
+          "title": "Budaya & seni",
+          "icon": "🎭",
+          "order": 7,
+          "cardCount": 12
+        },
+        {
+          "id": "de-b2-verbs-advanced-1",
+          "key": "verbs-advanced-1",
+          "title": "Kata kerja lanjutan (1/5)",
+          "icon": "🔁",
+          "order": 8,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-verbs-advanced-2",
+          "key": "verbs-advanced-2",
+          "title": "Kata kerja lanjutan (2/5)",
+          "icon": "🔁",
+          "order": 9,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-verbs-advanced-3",
+          "key": "verbs-advanced-3",
+          "title": "Kata kerja lanjutan (3/5)",
+          "icon": "🔁",
+          "order": 10,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-verbs-advanced-4",
+          "key": "verbs-advanced-4",
+          "title": "Kata kerja lanjutan (4/5)",
+          "icon": "🔁",
+          "order": 11,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-verbs-advanced-5",
+          "key": "verbs-advanced-5",
+          "title": "Kata kerja lanjutan (5/5)",
+          "icon": "🔁",
+          "order": 12,
+          "cardCount": 19
+        },
+        {
+          "id": "de-b2-adjectives-advanced-1",
+          "key": "adjectives-advanced-1",
+          "title": "Kata sifat lanjutan (1/2)",
+          "icon": "✨",
+          "order": 13,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-adjectives-advanced-2",
+          "key": "adjectives-advanced-2",
+          "title": "Kata sifat lanjutan (2/2)",
+          "icon": "✨",
+          "order": 14,
+          "cardCount": 71
+        },
+        {
+          "id": "de-b2-general-1",
+          "key": "general-1",
+          "title": "Kosakata umum (1/18)",
+          "icon": "📚",
+          "order": 15,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-2",
+          "key": "general-2",
+          "title": "Kosakata umum (2/18)",
+          "icon": "📚",
+          "order": 16,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-3",
+          "key": "general-3",
+          "title": "Kosakata umum (3/18)",
+          "icon": "📚",
+          "order": 17,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-4",
+          "key": "general-4",
+          "title": "Kosakata umum (4/18)",
+          "icon": "📚",
+          "order": 18,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-5",
+          "key": "general-5",
+          "title": "Kosakata umum (5/18)",
+          "icon": "📚",
+          "order": 19,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-6",
+          "key": "general-6",
+          "title": "Kosakata umum (6/18)",
+          "icon": "📚",
+          "order": 20,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-7",
+          "key": "general-7",
+          "title": "Kosakata umum (7/18)",
+          "icon": "📚",
+          "order": 21,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-8",
+          "key": "general-8",
+          "title": "Kosakata umum (8/18)",
+          "icon": "📚",
+          "order": 22,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-9",
+          "key": "general-9",
+          "title": "Kosakata umum (9/18)",
+          "icon": "📚",
+          "order": 23,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-10",
+          "key": "general-10",
+          "title": "Kosakata umum (10/18)",
+          "icon": "📚",
+          "order": 24,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-11",
+          "key": "general-11",
+          "title": "Kosakata umum (11/18)",
+          "icon": "📚",
+          "order": 25,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-12",
+          "key": "general-12",
+          "title": "Kosakata umum (12/18)",
+          "icon": "📚",
+          "order": 26,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-13",
+          "key": "general-13",
+          "title": "Kosakata umum (13/18)",
+          "icon": "📚",
+          "order": 27,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-14",
+          "key": "general-14",
+          "title": "Kosakata umum (14/18)",
+          "icon": "📚",
+          "order": 28,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-15",
+          "key": "general-15",
+          "title": "Kosakata umum (15/18)",
+          "icon": "📚",
+          "order": 29,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-16",
+          "key": "general-16",
+          "title": "Kosakata umum (16/18)",
+          "icon": "📚",
+          "order": 30,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-17",
+          "key": "general-17",
+          "title": "Kosakata umum (17/18)",
+          "icon": "📚",
+          "order": 31,
+          "cardCount": 80
+        },
+        {
+          "id": "de-b2-general-18",
+          "key": "general-18",
+          "title": "Kosakata umum (18/18)",
+          "icon": "📚",
+          "order": 32,
+          "cardCount": 51
+        }
+      ]
     },
     {
-      "id": "de-c1-core",
-      "file": "c1-core.json",
       "level": "C1",
-      "name": "Deutsch C1 · Kosakata Inti",
-      "description": "Kata-kata Jerman level C1 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
-      "tags": [
-        "c1",
-        "kosakata",
-        "inti"
-      ],
-      "cardCount": 2400
+      "order": 5,
+      "file": "c1.json",
+      "topics": [
+        {
+          "id": "de-c1-society-politics",
+          "key": "society-politics",
+          "title": "Masyarakat & politik",
+          "icon": "🏛️",
+          "order": 1,
+          "cardCount": 18
+        },
+        {
+          "id": "de-c1-work-economy",
+          "key": "work-economy",
+          "title": "Pekerjaan & ekonomi",
+          "icon": "💼",
+          "order": 2,
+          "cardCount": 16
+        },
+        {
+          "id": "de-c1-media-tech",
+          "key": "media-tech",
+          "title": "Media & teknologi",
+          "icon": "💻",
+          "order": 3,
+          "cardCount": 19
+        },
+        {
+          "id": "de-c1-education-science",
+          "key": "education-science",
+          "title": "Pendidikan & ilmu",
+          "icon": "🔬",
+          "order": 4,
+          "cardCount": 15
+        },
+        {
+          "id": "de-c1-environment-nature",
+          "key": "environment-nature",
+          "title": "Lingkungan & alam",
+          "icon": "🌱",
+          "order": 5,
+          "cardCount": 20
+        },
+        {
+          "id": "de-c1-health-psychology",
+          "key": "health-psychology",
+          "title": "Kesehatan & psikologi",
+          "icon": "🧠",
+          "order": 6,
+          "cardCount": 8
+        },
+        {
+          "id": "de-c1-emotions-opinion",
+          "key": "emotions-opinion",
+          "title": "Emosi & opini",
+          "icon": "💬",
+          "order": 7,
+          "cardCount": 8
+        },
+        {
+          "id": "de-c1-general-advanced",
+          "key": "general-advanced",
+          "title": "Umum tingkat lanjut",
+          "icon": "🧩",
+          "order": 8,
+          "cardCount": 8
+        },
+        {
+          "id": "de-c1-verbs-advanced-1",
+          "key": "verbs-advanced-1",
+          "title": "Kata kerja lanjutan (1/5)",
+          "icon": "🔁",
+          "order": 9,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-verbs-advanced-2",
+          "key": "verbs-advanced-2",
+          "title": "Kata kerja lanjutan (2/5)",
+          "icon": "🔁",
+          "order": 10,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-verbs-advanced-3",
+          "key": "verbs-advanced-3",
+          "title": "Kata kerja lanjutan (3/5)",
+          "icon": "🔁",
+          "order": 11,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-verbs-advanced-4",
+          "key": "verbs-advanced-4",
+          "title": "Kata kerja lanjutan (4/5)",
+          "icon": "🔁",
+          "order": 12,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-verbs-advanced-5",
+          "key": "verbs-advanced-5",
+          "title": "Kata kerja lanjutan (5/5)",
+          "icon": "🔁",
+          "order": 13,
+          "cardCount": 28
+        },
+        {
+          "id": "de-c1-adjectives-advanced-1",
+          "key": "adjectives-advanced-1",
+          "title": "Kata sifat lanjutan (1/3)",
+          "icon": "✨",
+          "order": 14,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-adjectives-advanced-2",
+          "key": "adjectives-advanced-2",
+          "title": "Kata sifat lanjutan (2/3)",
+          "icon": "✨",
+          "order": 15,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-adjectives-advanced-3",
+          "key": "adjectives-advanced-3",
+          "title": "Kata sifat lanjutan (3/3)",
+          "icon": "✨",
+          "order": 16,
+          "cardCount": 52
+        },
+        {
+          "id": "de-c1-general-1",
+          "key": "general-1",
+          "title": "Kosakata umum (1/22)",
+          "icon": "📚",
+          "order": 17,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-2",
+          "key": "general-2",
+          "title": "Kosakata umum (2/22)",
+          "icon": "📚",
+          "order": 18,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-3",
+          "key": "general-3",
+          "title": "Kosakata umum (3/22)",
+          "icon": "📚",
+          "order": 19,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-4",
+          "key": "general-4",
+          "title": "Kosakata umum (4/22)",
+          "icon": "📚",
+          "order": 20,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-5",
+          "key": "general-5",
+          "title": "Kosakata umum (5/22)",
+          "icon": "📚",
+          "order": 21,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-6",
+          "key": "general-6",
+          "title": "Kosakata umum (6/22)",
+          "icon": "📚",
+          "order": 22,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-7",
+          "key": "general-7",
+          "title": "Kosakata umum (7/22)",
+          "icon": "📚",
+          "order": 23,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-8",
+          "key": "general-8",
+          "title": "Kosakata umum (8/22)",
+          "icon": "📚",
+          "order": 24,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-9",
+          "key": "general-9",
+          "title": "Kosakata umum (9/22)",
+          "icon": "📚",
+          "order": 25,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-10",
+          "key": "general-10",
+          "title": "Kosakata umum (10/22)",
+          "icon": "📚",
+          "order": 26,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-11",
+          "key": "general-11",
+          "title": "Kosakata umum (11/22)",
+          "icon": "📚",
+          "order": 27,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-12",
+          "key": "general-12",
+          "title": "Kosakata umum (12/22)",
+          "icon": "📚",
+          "order": 28,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-13",
+          "key": "general-13",
+          "title": "Kosakata umum (13/22)",
+          "icon": "📚",
+          "order": 29,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-14",
+          "key": "general-14",
+          "title": "Kosakata umum (14/22)",
+          "icon": "📚",
+          "order": 30,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-15",
+          "key": "general-15",
+          "title": "Kosakata umum (15/22)",
+          "icon": "📚",
+          "order": 31,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-16",
+          "key": "general-16",
+          "title": "Kosakata umum (16/22)",
+          "icon": "📚",
+          "order": 32,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-17",
+          "key": "general-17",
+          "title": "Kosakata umum (17/22)",
+          "icon": "📚",
+          "order": 33,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-18",
+          "key": "general-18",
+          "title": "Kosakata umum (18/22)",
+          "icon": "📚",
+          "order": 34,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-19",
+          "key": "general-19",
+          "title": "Kosakata umum (19/22)",
+          "icon": "📚",
+          "order": 35,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-20",
+          "key": "general-20",
+          "title": "Kosakata umum (20/22)",
+          "icon": "📚",
+          "order": 36,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-21",
+          "key": "general-21",
+          "title": "Kosakata umum (21/22)",
+          "icon": "📚",
+          "order": 37,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c1-general-22",
+          "key": "general-22",
+          "title": "Kosakata umum (22/22)",
+          "icon": "📚",
+          "order": 38,
+          "cardCount": 48
+        }
+      ]
     },
     {
-      "id": "de-c2-core",
-      "file": "c2-core.json",
       "level": "C2",
-      "name": "Deutsch C2 · Kosakata Inti",
-      "description": "Kata-kata Jerman level C2 yang paling sering muncul, diurutkan menurut frekuensi pemakaian nyata. Bebas duplikat dengan level di bawahnya.",
-      "tags": [
-        "c2",
-        "kosakata",
-        "inti"
-      ],
-      "cardCount": 2200
+      "order": 6,
+      "file": "c2.json",
+      "topics": [
+        {
+          "id": "de-c2-education-science",
+          "key": "education-science",
+          "title": "Pendidikan & ilmu",
+          "icon": "🔬",
+          "order": 1,
+          "cardCount": 8
+        },
+        {
+          "id": "de-c2-society-politics",
+          "key": "society-politics",
+          "title": "Masyarakat & politik",
+          "icon": "🏛️",
+          "order": 2,
+          "cardCount": 21
+        },
+        {
+          "id": "de-c2-culture-arts",
+          "key": "culture-arts",
+          "title": "Budaya & seni",
+          "icon": "🎭",
+          "order": 3,
+          "cardCount": 11
+        },
+        {
+          "id": "de-c2-media-tech",
+          "key": "media-tech",
+          "title": "Media & teknologi",
+          "icon": "💻",
+          "order": 4,
+          "cardCount": 10
+        },
+        {
+          "id": "de-c2-environment-nature",
+          "key": "environment-nature",
+          "title": "Lingkungan & alam",
+          "icon": "🌱",
+          "order": 5,
+          "cardCount": 32
+        },
+        {
+          "id": "de-c2-work-economy",
+          "key": "work-economy",
+          "title": "Pekerjaan & ekonomi",
+          "icon": "💼",
+          "order": 6,
+          "cardCount": 11
+        },
+        {
+          "id": "de-c2-verbs-advanced-1",
+          "key": "verbs-advanced-1",
+          "title": "Kata kerja lanjutan (1/4)",
+          "icon": "🔁",
+          "order": 7,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-verbs-advanced-2",
+          "key": "verbs-advanced-2",
+          "title": "Kata kerja lanjutan (2/4)",
+          "icon": "🔁",
+          "order": 8,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-verbs-advanced-3",
+          "key": "verbs-advanced-3",
+          "title": "Kata kerja lanjutan (3/4)",
+          "icon": "🔁",
+          "order": 9,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-verbs-advanced-4",
+          "key": "verbs-advanced-4",
+          "title": "Kata kerja lanjutan (4/4)",
+          "icon": "🔁",
+          "order": 10,
+          "cardCount": 27
+        },
+        {
+          "id": "de-c2-adjectives-advanced-1",
+          "key": "adjectives-advanced-1",
+          "title": "Kata sifat lanjutan (1/3)",
+          "icon": "✨",
+          "order": 11,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-adjectives-advanced-2",
+          "key": "adjectives-advanced-2",
+          "title": "Kata sifat lanjutan (2/3)",
+          "icon": "✨",
+          "order": 12,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-adjectives-advanced-3",
+          "key": "adjectives-advanced-3",
+          "title": "Kata sifat lanjutan (3/3)",
+          "icon": "✨",
+          "order": 13,
+          "cardCount": 34
+        },
+        {
+          "id": "de-c2-general-1",
+          "key": "general-1",
+          "title": "Kosakata umum (1/21)",
+          "icon": "📚",
+          "order": 14,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-2",
+          "key": "general-2",
+          "title": "Kosakata umum (2/21)",
+          "icon": "📚",
+          "order": 15,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-3",
+          "key": "general-3",
+          "title": "Kosakata umum (3/21)",
+          "icon": "📚",
+          "order": 16,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-4",
+          "key": "general-4",
+          "title": "Kosakata umum (4/21)",
+          "icon": "📚",
+          "order": 17,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-5",
+          "key": "general-5",
+          "title": "Kosakata umum (5/21)",
+          "icon": "📚",
+          "order": 18,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-6",
+          "key": "general-6",
+          "title": "Kosakata umum (6/21)",
+          "icon": "📚",
+          "order": 19,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-7",
+          "key": "general-7",
+          "title": "Kosakata umum (7/21)",
+          "icon": "📚",
+          "order": 20,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-8",
+          "key": "general-8",
+          "title": "Kosakata umum (8/21)",
+          "icon": "📚",
+          "order": 21,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-9",
+          "key": "general-9",
+          "title": "Kosakata umum (9/21)",
+          "icon": "📚",
+          "order": 22,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-10",
+          "key": "general-10",
+          "title": "Kosakata umum (10/21)",
+          "icon": "📚",
+          "order": 23,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-11",
+          "key": "general-11",
+          "title": "Kosakata umum (11/21)",
+          "icon": "📚",
+          "order": 24,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-12",
+          "key": "general-12",
+          "title": "Kosakata umum (12/21)",
+          "icon": "📚",
+          "order": 25,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-13",
+          "key": "general-13",
+          "title": "Kosakata umum (13/21)",
+          "icon": "📚",
+          "order": 26,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-14",
+          "key": "general-14",
+          "title": "Kosakata umum (14/21)",
+          "icon": "📚",
+          "order": 27,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-15",
+          "key": "general-15",
+          "title": "Kosakata umum (15/21)",
+          "icon": "📚",
+          "order": 28,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-16",
+          "key": "general-16",
+          "title": "Kosakata umum (16/21)",
+          "icon": "📚",
+          "order": 29,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-17",
+          "key": "general-17",
+          "title": "Kosakata umum (17/21)",
+          "icon": "📚",
+          "order": 30,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-18",
+          "key": "general-18",
+          "title": "Kosakata umum (18/21)",
+          "icon": "📚",
+          "order": 31,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-19",
+          "key": "general-19",
+          "title": "Kosakata umum (19/21)",
+          "icon": "📚",
+          "order": 32,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-20",
+          "key": "general-20",
+          "title": "Kosakata umum (20/21)",
+          "icon": "📚",
+          "order": 33,
+          "cardCount": 80
+        },
+        {
+          "id": "de-c2-general-21",
+          "key": "general-21",
+          "title": "Kosakata umum (21/21)",
+          "icon": "📚",
+          "order": 34,
+          "cardCount": 46
+        }
+      ]
     }
   ]
 }

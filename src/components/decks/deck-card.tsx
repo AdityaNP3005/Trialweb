@@ -23,8 +23,8 @@ export function DeckCard({
         >
             <div className="flex items-start justify-between gap-2">
                 <div className="flex items-center gap-2">
-                    <span className="grid size-9 place-items-center rounded-xl bg-accent-soft text-accent">
-                        <BookOpen className="size-4" />
+                    <span className="grid size-9 place-items-center rounded-xl bg-accent-soft text-base text-accent">
+                        {deck.icon ?? <BookOpen className="size-4" />}
                     </span>
                     <div>
                         <h3 className="text-sm font-bold leading-tight">{deck.name}</h3>

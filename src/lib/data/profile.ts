@@ -1,13 +1,14 @@
 import { getDoc, setDoc, updateDoc } from "firebase/firestore";
 import type { Profile } from "@/types";
 import { userDocRef } from "@/lib/firebase/paths";
-import { defaultBands, normalizeBands } from "@/lib/study/progress";
+
+const fallbackPrefs = { shuffleCards: false };
 
 export async function fetchProfile(uid: string): Promise<Profile | null> {
     const snapshot = await getDoc(userDocRef(uid));
     if (!snapshot.exists()) return null;
     const profile = snapshot.data() as Profile;
-    return { ...profile, bands: normalizeBands(profile.bands) };
+    return { ...profile, prefs: profile.prefs ?? fallbackPrefs };
 }
 
 export function defaultProfile(input: {
@@ -21,11 +22,12 @@ export function defaultProfile(input: {
         email: input.email,
         uiLocale: input.uiLocale,
         activeCourseId: "de",
-        bands: defaultBands(),
+        prefs: { ...fallbackPrefs },
         ttsVoiceURI: null,
         ttsRate: 1,
         onboardingComplete: false,
         engineV2: true,
+        topicsV3: true,
         createdAt: now,
         updatedAt: now,
     };

@@ -1,9 +1,10 @@
 # GoAbroad
 
 Flashcard web app untuk belajar bahasa asing — mulai dari **Bahasa Jerman A1 sampai C2**
-(10.200 kartu), dengan engine **siklus per level**: kamu menentukan berapa kartu per sesi untuk
-tiap band CEFR, setiap kartu dijawab **Ulangi** atau **Sudah paham**, dan putaran baru dimulai
-otomatis setelah semua kartu pernah ditampilkan.
+(10.200 kartu dalam **174 topik**), dengan engine **siklus per topik**: pilih **band** (A1–C2),
+lalu pilih **topik** (mis. "Sapaan & perkenalan"). Satu sesi menyelesaikan satu topik penuh,
+kartu dijawab **Ulangi** atau **Sudah paham**, dan topik direset otomatis setelah semua kartunya
+ditampilkan. Band tidak pernah dicampur dalam satu sesi.
 
 > Prinsip produk: **fitur belajar gratis tanpa akun**. Akun hanya dibutuhkan untuk sinkronisasi
 > cloud dan fitur **AI** (generate kartu).
@@ -26,18 +27,16 @@ otomatis setelah semua kartu pernah ditampilkan.
 
 ## Cara belajar
 
-1. **Pengaturan → Belajar**: tentukan jumlah kartu per sesi untuk tiap level (5–100, default 20)
-   dan opsional acak urutan.
-2. Mulai sesi dari dashboard/deck. Sesi mengambil kartu dari deck level tersebut sesuai urutan
-   (atau acak), dimulai dari posisi terakhir.
-3. Setiap kartu: **Ulangi** (kartu muncul lagi ±3 kartu kemudian, tidak menambah slot sesi) atau
-   **Sudah paham** (dihitung selesai untuk putaran ini).
-4. Kartu yang masih "Ulangi" saat sesi berakhir masuk daftar pending dan ditampilkan lebih dulu
-   pada sesi berikutnya.
-5. Ketika semua kartu deck sudah pernah ditampilkan dan tidak ada pending, siklus **reset
-   otomatis**: `Putaran 2` dimulai dari kartu pertama dan hitungan "paham" kembali 0.
-6. Progres per deck (putaran, x/y paham, pending) tampil di dashboard dan halaman Deck; tombol
-   "Mulai ulang putaran" ada di detail deck.
+1. **Dashboard → Pilih band**: 6 kartu band menampilkan progres gabungan, jumlah topik, dan
+topik yang harus dilanjutkan. Tidak ada tombol "Mulai sesi".
+2. Halaman band (`/levels/A1` … `/levels/C2`) menampilkan **daftar topik berurutan** dari yang
+paling umum ke khusus. Urutan topik berbeda untuk setiap band.
+3. Buka satu topik → sesi berisi **seluruh kartu topik itu** (maksimal 80 kartu per topik).
+4. Setiap kartu: **Ulangi** (`1`/`R`) atau **Sudah paham** (`2`/`N`). Kartu yang diulang muncul
+lagi ±3 kartu kemudian dan tetap "pending" sampai dijawab paham.
+5. Setelah semua kartu topik ditampilkan dan tidak ada pending, siklus topik **reset otomatis**
+(`Putaran 2`) dan hitungan paham kembali 0. Tombol "Mulai ulang topik" tersedia di daftar topik.
+6. Progres tampil per topik (x/y paham, putaran, pending), per band, dan di Statistik.
 
 Keyboard: `Space` untuk membuka jawaban, `1`/`R` untuk Ulangi, `2`/`N` untuk Sudah paham,
 `Q` untuk berganti flashcard/kuis.
@@ -104,22 +103,25 @@ GEMINI_MODEL=gemini-2.5-flash # opsional
 
 ## Konten Jerman A1–C2
 
-Deck dibundel dari data terbuka (lihat [`NOTICE.md`](./NOTICE.md) untuk atribusi & lisensi):
+Deck dibundel dari data terbuka (lihat [`NOTICE.md`](./NOTICE.md)) dan dipecah menjadi topik:
 
-| Deck | Kartu | Sumber |
-| --- | --- | --- |
-| `de-a1-core` | 600 | 200 kartu kurasi manual + 400 kata paling sering (Wikdict) |
-| `de-a2-core` | 1.200 | frekuensi kata + terjemahan Wikdict |
-| `de-b1-core` | 1.800 | idem |
-| `de-b2-core` | 2.000 | idem |
-| `de-c1-core` | 2.400 | idem |
-| `de-c2-core` | 2.200 | idem |
+| Band | Topik | Kartu | Contoh topik pertama |
+| --- | --- | --- | --- |
+| A1 | 15 | 600 | Sapaan & perkenalan, Angka & waktu |
+| A2 | 24 | 1.200 | Angka & waktu, Sapaan |
+| B1 | 31 | 1.800 | Umum tingkat lanjut, Pekerjaan & ekonomi |
+| B2 | 32 | 2.000 | Pekerjaan & ekonomi, Masyarakat & politik |
+| C1 | 38 | 2.400 | Masyarakat & politik, Pekerjaan & ekonomi |
+| C2 | 34 | 2.200 | Pendidikan & ilmu, Masyarakat & politik |
 
-- `src/content/manifest.json` = daftar deck (id, file, level, jumlah kartu).
-- `src/content/de/source/curated-a1.json` = 200 kartu A1 kurasi (punya artikel & contoh kalimat).
-- Dedupe lintas level: satu lemma hanya muncul di level terendah (dijaga oleh validator).
-- ID kartu stabil (`de-a1-core-0001`) dan hanya boleh *append*, karena progres pengguna
-  merujuk ke ID tersebut.
+- `src/content/manifest.json` = level → topik berurutan (id, ikon, jumlah kartu, file).
+- `src/content/de/{a1..c2}.json` = daftar topik + semua kartu level itu (tiap kartu punya `topic`).
+- `scripts/content/topics.json` + `topic-id-keywords.json` = definisi topik dan kata kunci
+(Jerman dan Indonesia) untuk mengklasifikasikan kartu.
+- Dedupe lintas level: satu lemma hanya muncul di level terendah (dijaga validator).
+- ID topik `de-a1-greetings`, ID kartu `de-a1-greetings-0001` — **stabil dan hanya append**,
+karena progres pengguna merujuk ke ID ini.
+- `src/content/migration-map.json` memetakan ID lama (`de-a1-core-0001`) ke ID topik baru.
 
 Membangun ulang konten:
 
@@ -163,17 +165,16 @@ src/
   hooks/use-speech.ts      # Web Speech API (de-DE)
   lib/
     study/session.ts       # engine siklus: buildSession, insertRepeat, cycleProgress
-    study/progress.ts      # default & normalisasi pengaturan band
-    store/                 # StudyStore: GuestStore (localStorage v2) & CloudStore
-    content/registry.ts    # manifest deck + loader statis
+    content/registry.ts    # manifest topik + loader per level
     data/                  # akses Firestore per koleksi (cards, decks, progress, ...)
     quiz/ import/ validation/ stats/
   content/
-    manifest.json          # daftar deck bundel
-    de/a1-core.json … c2-core.json
+    manifest.json          # level → topik berurutan
+    de/a1.json … c2.json   # topik + kartu per level
     de/source/curated-a1.json
+    migration-map.json     # id kartu lama → id topik
 scripts/
-  content/build-decks.py   # pipeline data terbuka
+  content/{topics.json,topic-id-keywords.json,build-decks.py}
   validate-content.ts      # validator konten
 ```
 
@@ -194,12 +195,12 @@ progress `(deckId)`, reviews `(deckId, createdAt)`.
 
 ## Migrasi dari versi FSRS
 
-Versi lama menyimpan `srs` + `isNew/dueMs` di setiap kartu yang disalin ke akun. Saat login
-pertama setelah upgrade, `migrateLegacyEngine()` membuat dokumen `progress` + `deckCycles`
-(kartu yang pernah direview dianggap "paham"), lalu menandai profil `engineV2: true`. Dokumen
-kartu lama dibiarkan apa adanya sebagai jaring aman (tidak lagi dibaca aplikasi).
-
-Snapshot tamu generasi lama (`goabroad.guest.v1`) juga dimigrasikan ke `goabroad.guest.v2`.
+1. **FSRS → siklus** (`engineV2`): kartu lama yang pernah direview dianggap "paham" dan dipetakan
+ke `progress` + `deckCycles`.
+2. **Per-level → per-topik** (`topicsV3`): `src/lib/data/migrate-topics.ts` memakai
+`migration-map.json` untuk memindahkan progres `de-a1-core-0001` ke `de-a1-greetings-0007`.
+Kartu yang dulu "paham" dimasukkan sebagai **pending** topik barunya agar tampil dulu, lalu
+dokumen progres/cycle lama dihapus. Snapshot tamu (`goabroad.guest.v2`) di-remap saat dibuka.
 
 ## Deployment (Vercel)
 
@@ -230,9 +231,9 @@ Snapshot tamu generasi lama (`goabroad.guest.v1`) juga dimigrasikan ke `goabroad
 
 ## Catatan & batasan
 
-- Membuka sesi langsung memajukan posisi (cursor) deck, karena kartu yang ditampilkan dianggap
-  sudah "diperkenalkan" pada putaran itu. Kalau sesi ditinggalkan, kartu tersebut tidak
-  dihitung paham dan akan muncul lagi pada putaran berikutnya.
+- Membuka topik langsung memajukan posisi (cursor) topik, karena kartu yang ditampilkan dianggap
+sudah "diperkenalkan" pada putaran itu. Kalau sesi ditinggalkan, kartu tersebut tidak dihitung
+paham dan akan muncul lagi pada putaran berikutnya.
 - Artikel/gender kata benda dan contoh kalimat belum tersedia untuk kartu hasil pipeline
   (hanya 200 kartu A1 kurasi). Lihat peringatan `npm run seed:validate`.
 - Pembagian level A2–C2 diambil dari peringkat frekuensi, bukan daftar resmi Goethe/ÖSD

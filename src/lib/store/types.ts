@@ -1,8 +1,6 @@
 import type {
-    BandSettings,
     Card,
     CardInput,
-    CefrLevel,
     DailyStat,
     Deck,
     DeckInput,
@@ -10,9 +8,9 @@ import type {
     Profile,
     StudyAction,
     StudyMode,
+    StudyPrefs,
 } from "@/types";
 import type { SessionPlan } from "@/lib/study/session";
-import { defaultBands } from "@/lib/study/progress";
 
 export type StoreMode = "guest" | "cloud";
 
@@ -48,7 +46,6 @@ export interface StudyStore {
 
     getProfile(): Promise<Profile>;
     updateProfile(patch: Partial<Omit<Profile, "createdAt">>): Promise<void>;
-    updateBandSetting(level: CefrLevel, patch: Partial<BandSettings[CefrLevel]>): Promise<void>;
 
     listDecks(): Promise<Deck[]>;
     getDeck(deckId: string): Promise<Deck | null>;
@@ -89,6 +86,8 @@ export const emptyStat = (date: string): DailyStat => ({
     quizTotal: 0,
 });
 
+export const defaultPrefs = (): StudyPrefs => ({ shuffleCards: false });
+
 export const defaultProfileFor = (input: {
     displayName: string | null;
     email: string | null;
@@ -98,11 +97,12 @@ export const defaultProfileFor = (input: {
     email: input.email,
     uiLocale: input.uiLocale,
     activeCourseId: "de",
-    bands: defaultBands(),
+    prefs: defaultPrefs(),
     ttsVoiceURI: null,
     ttsRate: 1,
     onboardingComplete: true,
     engineV2: true,
+    topicsV3: true,
     createdAt: Date.now(),
     updatedAt: Date.now(),
 });

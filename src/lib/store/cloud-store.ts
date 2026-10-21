@@ -1,8 +1,6 @@
 import type {
-    BandSettings,
     Card,
     CardInput,
-    CefrLevel,
     DailyStat,
     Deck,
     DeckCycle,
@@ -38,7 +36,6 @@ import { getDb } from "@/lib/firebase/client";
 import { listContentDecks } from "@/content/courses";
 import { getContentDeck, loadContentCards } from "@/lib/content/registry";
 import { buildSession, cycleProgress, emptyCycle } from "@/lib/study/session";
-import { normalizeBands } from "@/lib/study/progress";
 import {
     defaultProfileFor,
     type CardTotals,
@@ -64,20 +61,11 @@ export class CloudStore implements StudyStore {
                 uiLocale: this.uiLocale,
             });
         }
-        return { ...profile, bands: normalizeBands(profile.bands) };
+        return { ...profile, prefs: profile.prefs ?? { shuffleCards: false } };
     }
 
     async updateProfile(patch: Partial<Omit<Profile, "createdAt">>) {
         await patchProfile(this.uid, patch);
-    }
-
-    async updateBandSetting(level: CefrLevel, patch: Partial<BandSettings[CefrLevel]>) {
-        const profile = await this.getProfile();
-        const bands = normalizeBands({
-            ...profile.bands,
-            [level]: { ...profile.bands[level], ...patch },
-        });
-        await patchProfile(this.uid, { bands });
     }
 
     async listDecks(): Promise<Deck[]> {
@@ -175,7 +163,7 @@ export class CloudStore implements StudyStore {
         if (!deck) throw new Error("Deck not found");
 
         const cards = await this.listCards(deckId, 20000);
-        const size = sessionSize ?? profile.bands[deck.level]?.sessionSize ?? 20;
+        const size = sessionSize ?? deck.cardCount;
         const now = Date.now();
 
         const plan = buildSession({
@@ -183,7 +171,7 @@ export class CloudStore implements StudyStore {
             cards,
             cycle: stored ?? emptyCycle(deckId, now),
             sessionSize: size,
-            shuffle: profile.bands[deck.level]?.shuffle ?? false,
+            shuffle: profile.prefs?.shuffleCards ?? false,
         });
 
         await saveDeckCycle(this.uid, {

@@ -1,9 +1,7 @@
 import type {
-    BandSettings,
     Card,
     CardInput,
     CardProgress,
-    CefrLevel,
     DailyStat,
     Deck,
     DeckCycle,
@@ -36,6 +34,8 @@ export const SEED_DECK_ID = "de-a1-core";
 
 export type GuestDb = {
     version: 2;
+    /** 3 = progress keys use topic deck ids. */
+    contentVersion?: number;
     profile: Profile;
     decks: Deck[];
     cards: Card[];
@@ -112,6 +112,7 @@ export class GuestStore implements StudyStore {
         } else {
             this.db = {
                 version: 2,
+                contentVersion: 3,
                 profile: defaultProfileFor({
                     displayName: null,
                     email: null,
@@ -124,6 +125,10 @@ export class GuestStore implements StudyStore {
                 logs: [],
                 dailyStats: {},
             };
+        }
+
+        if (this.db.contentVersion !== 3) {
+            await remapTopics(this.db);
         }
         this.persist();
         return this.db;
@@ -148,19 +153,9 @@ export class GuestStore implements StudyStore {
         db.profile = {
             ...db.profile,
             ...patch,
-            bands: patch.bands ? normalizeBands(patch.bands) : db.profile.bands,
+            prefs: patch.prefs ?? db.profile.prefs,
             updatedAt: Date.now(),
         };
-        this.persist();
-    }
-
-    async updateBandSetting(level: CefrLevel, patch: Partial<BandSettings[CefrLevel]>) {
-        const db = await this.ensure();
-        const bands = normalizeBands({
-            ...db.profile.bands,
-            [level]: { ...db.profile.bands[level], ...patch },
-        });
-        db.profile = { ...db.profile, bands, updatedAt: Date.now() };
         this.persist();
     }
 
@@ -323,15 +318,14 @@ export class GuestStore implements StudyStore {
         const db = await this.ensure();
         const deck = await this.getDeck(deckId);
         const cards = await this.listCards(deckId, 20000);
-        const level = deck?.level ?? "A1";
-        const size = sessionSize ?? db.profile.bands[level]?.sessionSize ?? 20;
+        const size = sessionSize ?? deck?.cardCount ?? cards.length;
 
         const plan = buildSession({
             deckId,
             cards,
             cycle: db.cycles[deckId] ?? emptyCycle(deckId),
             sessionSize: size,
-            shuffle: db.profile.bands[level]?.shuffle ?? false,
+            shuffle: db.profile.prefs?.shuffleCards ?? false,
         });
 
         db.cycles[deckId] = {
@@ -472,6 +466,52 @@ function deckCardCount(db: GuestDb, deckId: string): number {
     }
     const deck = db.decks.find((entry) => entry.id === deckId);
     return deck?.cardCount ?? 0;
+}
+
+/**
+ * Remaps progress created for the old per-level decks (`de-a1-core-0001`) to
+ * the new topic deck ids (`de-a1-greetings-0001`). Progress that belongs to
+ * user decks is left untouched.
+ */
+async function remapTopics(db: GuestDb): Promise<void> {
+    const map = (await import("@/content/migration-map.json"))
+        .default as Record<string, string>;
+
+    const progress: Record<string, CardProgress> = {};
+    const knownByDeck = new Map<string, number>();
+
+    for (const [oldId, entry] of Object.entries(db.progress)) {
+        const newId = map[oldId];
+        if (!newId) {
+            // User-deck card: keep as is.
+            if (!getContentDeck(entry.deckId)) progress[oldId] = entry;
+            continue;
+        }
+        const deckId = newId.replace(/-\d{4}$/, "");
+        progress[newId] = { ...entry, cardId: newId, deckId };
+        if (entry.known) {
+            knownByDeck.set(deckId, (knownByDeck.get(deckId) ?? 0) + 1);
+        }
+    }
+
+    const cycles: Record<string, DeckCycle> = {};
+    for (const [deckId, cycle] of Object.entries(db.cycles)) {
+        if (!getContentDeck(deckId)) cycles[deckId] = cycle;
+    }
+    for (const [deckId, known] of knownByDeck) {
+        const deck = getContentDeck(deckId);
+        if (!deck) continue;
+        cycles[deckId] = {
+            ...emptyCycle(deckId),
+            cursor: deck.cardCount,
+            knownInCycle: Math.min(known, deck.cardCount),
+            pendingCardIds: [],
+        };
+    }
+
+    db.progress = progress;
+    db.cycles = cycles;
+    db.contentVersion = 3;
 }
 
 /** Converts the FSRS-era snapshot (v1) into the cycle model (v2). */
