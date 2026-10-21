@@ -24,11 +24,17 @@ function deck(id: string, level: Deck["level"], order: number, cardCount: number
     };
 }
 
-function progress(deckId: string, level: Deck["level"], known: number, total: number): DeckProgress {
+function progress(
+    deckId: string,
+    level: Deck["level"],
+    known: number,
+    total: number,
+    cycle = 1,
+): DeckProgress {
     return {
         deckId,
         level,
-        cycle: 1,
+        cycle,
         known,
         total,
         pending: 0,
@@ -55,9 +61,29 @@ describe("summarizeBand", () => {
         expect(summary.topics).toBe(2);
         expect(summary.total).toBe(100);
         expect(summary.known).toBe(60);
-        expect(summary.percent).toBe(60);
+        // Percent follows completed units, not the running cycle's cards.
+        expect(summary.percent).toBe(50);
         expect(summary.topicsDone).toBe(1);
         expect(summary.nextTopic?.id).toBe("de-a1-two");
+    });
+
+    it("keeps a finished topic done after the cycle resets", () => {
+        const decks = [
+            deck("zh-book1-l01", "book1", 1, 40),
+            deck("zh-book1-l02", "book1", 2, 33),
+        ];
+        const byId = new Map([
+            // Cycle 2 means the learner finished one full cycle already;
+            // knownInCycle is back to 0.
+            ["zh-book1-l01", progress("zh-book1-l01", "book1", 0, 40, 2)],
+            ["zh-book1-l02", progress("zh-book1-l02", "book1", 0, 33, 1)],
+        ]);
+
+        const summary = summarizeBand("book1", decks, byId);
+
+        expect(summary.topicsDone).toBe(1);
+        expect(summary.percent).toBe(50);
+        expect(summary.nextTopic?.id).toBe("zh-book1-l02");
     });
 
     it("falls back to the first topic when everything is done", () => {

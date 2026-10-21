@@ -210,6 +210,9 @@
         "heatmap": "90-day activity",
         "heatmapLess": "Less",
         "heatmapMore": "More",
+        "byLanguage": "Activity per language",
+        "allLanguages": "All languages",
+        "languageStats": "{reviews} answers · {known} known · {minutes} min",
         "ratingBreakdown": "Answer distribution",
         "noData": "No activity yet. Finish one session first."
     },

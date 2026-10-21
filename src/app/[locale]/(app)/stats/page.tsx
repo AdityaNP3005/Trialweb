@@ -6,6 +6,9 @@ import { useLocale, useTranslations } from "next-intl";
 import type { DailyStat } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
 import { computeStreak } from "@/lib/stats/streak";
+import { courseActivity, filterStatsByCourse } from "@/lib/stats/course-stats";
+import { courses } from "@/content/courses";
+import { cn } from "@/lib/utils/cn";
 import { addDays, dateKey } from "@/lib/utils/date";
 import { EmptyState } from "@/components/ui/empty-state";
 import { Skeleton } from "@/components/ui/progress";
@@ -20,6 +23,7 @@ export default function StatsPage() {
     const [totals, setTotals] = useState<{ total: number; studied: number } | null>(
         null,
     );
+    const [course, setCourse] = useState<"all" | string>("all");
 
     useEffect(() => {
         if (!store) return;
@@ -27,7 +31,7 @@ export default function StatsPage() {
         (async () => {
             const [recent, counts] = await Promise.all([
                 store.getRecentStats(91),
-                store.getCardTotals(),
+                store.getCardTotals(course === "all" ? undefined : course),
             ]);
             if (cancelled) return;
             setStats(recent);
@@ -36,30 +40,42 @@ export default function StatsPage() {
         return () => {
             cancelled = true;
         };
-    }, [store]);
+    }, [store, course]);
+
+    const visibleStats = useMemo(
+        () => filterStatsByCourse(stats ?? [], course),
+        [stats, course],
+    );
+
+    const perCourse = useMemo(() => courseActivity(stats ?? []), [stats]);
 
     const aggregate = useMemo(() => {
         const result = { reviews: 0, next: 0, repeat: 0, known: 0 };
-        for (const entry of stats ?? []) {
+        for (const entry of visibleStats) {
             result.reviews += entry.reviews;
             result.next += entry.next ?? 0;
             result.repeat += entry.repeat ?? 0;
             result.known += entry.known ?? 0;
         }
         return result;
-    }, [stats]);
+    }, [visibleStats]);
+
+    const allTimeReviews = useMemo(
+        () => (stats ?? []).reduce((sum, entry) => sum + entry.reviews, 0),
+        [stats],
+    );
 
     const understandRate = useMemo(() => {
         if (!stats) return 0;
         const start = dateKey(addDays(new Date(), -6));
-        const slice = stats.filter((entry) => entry.date >= start);
+        const slice = visibleStats.filter((entry) => entry.date >= start);
         const reviews = slice.reduce((sum, entry) => sum + entry.reviews, 0);
         const next = slice.reduce((sum, entry) => sum + (entry.next ?? 0), 0);
         if (reviews === 0) return 0;
         return Math.round((next / reviews) * 100);
-    }, [stats]);
+    }, [visibleStats, stats]);
 
-    const streak = stats ? computeStreak(stats) : { current: 0, longest: 0 };
+    const streak = stats ? computeStreak(visibleStats) : { current: 0, longest: 0 };
 
     if (!stats || !totals) {
         return (
@@ -76,7 +92,7 @@ export default function StatsPage() {
         );
     }
 
-    if (aggregate.reviews === 0) {
+    if (allTimeReviews === 0) {
         return <EmptyState title={t("noData")} icon={<BarChart3 className="size-5" />} />;
     }
 
@@ -93,6 +109,89 @@ export default function StatsPage() {
                 <h1 className="text-2xl font-extrabold tracking-tight">{t("title")}</h1>
                 <p className="mt-1 text-sm text-muted">{t("subtitle")}</p>
             </div>
+
+            <section className="surface-card p-5">
+                <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+                    <h2 className="text-sm font-bold">{t("byLanguage")}</h2>
+                    <div className="flex flex-wrap gap-1">
+                        <button
+                            type="button"
+                            onClick={() => setCourse("all")}
+                            aria-pressed={course === "all"}
+                            className={cn(
+                                "rounded-full px-2.5 py-1 text-[11px] font-semibold transition",
+                                course === "all"
+                                    ? "bg-accent text-accent-fg"
+                                    : "bg-surface-2 text-muted hover:text-fg",
+                            )}
+                        >
+                            {t("allLanguages")}
+                        </button>
+                        {courses
+                            .filter((entry) => entry.enabled)
+                            .map((entry) => (
+                                <button
+                                    key={entry.id}
+                                    type="button"
+                                    onClick={() => setCourse(entry.id)}
+                                    aria-pressed={course === entry.id}
+                                    className={cn(
+                                        "rounded-full px-2.5 py-1 text-[11px] font-semibold transition",
+                                        course === entry.id
+                                            ? "bg-accent text-accent-fg"
+                                            : "bg-surface-2 text-muted hover:text-fg",
+                                    )}
+                                >
+                                    <span aria-hidden>{entry.flag}</span> {entry.nativeName}
+                                </button>
+                            ))}
+                    </div>
+                </div>
+
+                <div className="grid gap-3 sm:grid-cols-2">
+                    {courses
+                        .filter((entry) => entry.enabled)
+                        .map((entry) => {
+                            const data = perCourse.find(
+                                (item) => item.courseId === entry.id,
+                            );
+                            const reviews = data?.reviews ?? 0;
+                            const share =
+                                allTimeReviews > 0
+                                    ? Math.round((reviews / allTimeReviews) * 100)
+                                    : 0;
+                            return (
+                                <div
+                                    key={entry.id}
+                                    className="rounded-xl border border-border bg-surface-2/50 p-3"
+                                >
+                                    <div className="flex items-center justify-between gap-2">
+                                        <p className="text-xs font-bold">
+                                            <span aria-hidden>{entry.flag}</span>{" "}
+                                            {entry.nativeName}
+                                        </p>
+                                        <span className="text-[11px] font-semibold text-accent">
+                                            {share}%
+                                        </span>
+                                    </div>
+                                    <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-surface">
+                                        <div
+                                            className="h-full rounded-full bg-accent"
+                                            style={{ width: `${share}%` }}
+                                        />
+                                    </div>
+                                    <p className="mt-2 text-[11px] text-muted">
+                                        {t("languageStats", {
+                                            reviews,
+                                            known: data?.known ?? 0,
+                                            minutes: Math.round((data?.studyMs ?? 0) / 60000),
+                                        })}
+                                    </p>
+                                </div>
+                            );
+                        })}
+                </div>
+            </section>
 
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                 <Tile
@@ -140,7 +239,7 @@ export default function StatsPage() {
                         <span>{t("heatmapMore")}</span>
                     </div>
                 </div>
-                <Heatmap stats={stats} locale={locale} />
+                <Heatmap stats={visibleStats} locale={locale} />
             </section>
 
             <section className="surface-card p-5">

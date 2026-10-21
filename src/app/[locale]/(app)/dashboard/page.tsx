@@ -7,7 +7,8 @@ import { Link } from "@/i18n/navigation";
 import type { DailyStat, Deck, DeckProgress } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
 import { computeStreak } from "@/lib/stats/streak";
-import { courses, courseSections, getCourse, summarizeSection } from "@/content/courses";
+import { getCourse, courseSections, summarizeSection } from "@/content/courses";
+import { CourseSwitcher } from "@/components/courses/course-switcher";
 import { buttonStyles } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/progress";
 import { DeckCard } from "@/components/decks/deck-card";
@@ -152,25 +153,11 @@ export default function DashboardPage() {
 
             <section className="space-y-3">
                 <div className="flex flex-wrap items-center gap-2">
-                    {courses
-                        .filter((entry) => entry.enabled)
-                        .map((entry) => (
-                            <button
-                                key={entry.id}
-                                type="button"
-                                disabled={switching}
-                                onClick={() => void switchCourse(entry.id)}
-                                aria-pressed={entry.id === activeCourseId}
-                                className={
-                                    entry.id === activeCourseId
-                                        ? "inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 text-xs font-bold text-accent-fg"
-                                        : "inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-semibold text-muted transition hover:text-fg disabled:opacity-50"
-                                }
-                            >
-                                <span aria-hidden>{entry.flag}</span>
-                                {entry.nativeName}
-                            </button>
-                        ))}
+                    <CourseSwitcher
+                        activeCourseId={activeCourseId}
+                        disabled={switching}
+                        onSelect={switchCourse}
+                    />
                 </div>
 
                 <div>
@@ -221,7 +208,7 @@ export default function DashboardPage() {
 
                                 <div className="mt-auto flex items-center justify-between gap-2 text-[11px] text-muted">
                                     <span>
-                                        {summary.known}/{summary.total} ·{" "}
+
                                         {course.unitNoun === "book"
                                             ? t("bookDone", {
                                                 done: summary.topicsDone,

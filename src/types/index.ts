@@ -185,6 +185,8 @@ export type DailyStat = {
     studyMs: number;
     quizCorrect: number;
     quizTotal: number;
+    /** Same counters split per course ("de", "zh"); total stays combined. */
+    byCourse?: Record<string, CourseDayStat>;
     /** Legacy FSRS counters kept so old documents still parse. */
     again?: number;
     hard?: number;
@@ -192,6 +194,16 @@ export type DailyStat = {
     easy?: number;
     newCards?: number;
     updatedAt?: number;
+};
+
+export type CourseDayStat = {
+    reviews: number;
+    next: number;
+    repeat: number;
+    known: number;
+    studyMs: number;
+    quizCorrect: number;
+    quizTotal: number;
 };
 
 export type Profile = {

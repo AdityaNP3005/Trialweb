@@ -116,6 +116,19 @@ export async function submitAction({
             studyMs: increment(Math.max(0, Math.round(durationMs))),
             quizCorrect: increment(mode === "quiz" && correct ? 1 : 0),
             quizTotal: increment(mode === "quiz" ? 1 : 0),
+            // Same activity, split by language; the totals above stay combined.
+            // Nested maps (not dotted keys) so `set(..., { merge: true })` deep-merges.
+            byCourse: {
+                [card.courseId]: {
+                    reviews: increment(1),
+                    next: increment(action === "next" ? 1 : 0),
+                    repeat: increment(action === "repeat" ? 1 : 0),
+                    known: increment(action === "next" ? 1 : 0),
+                    studyMs: increment(Math.max(0, Math.round(durationMs))),
+                    quizCorrect: increment(mode === "quiz" && correct ? 1 : 0),
+                    quizTotal: increment(mode === "quiz" ? 1 : 0),
+                },
+            },
             updatedAt: at,
         },
         { merge: true },

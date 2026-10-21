@@ -147,7 +147,9 @@ export default function LevelPage() {
                     {topics.map((topic, index) => {
                         const entry = progress.get(topic.id);
                         const percent = entry?.percent ?? 0;
-                        const done = percent >= 100;
+                        // A unit stays done after a cycle reset: the learner did
+                        // finish it once, even if the new cycle starts at 0 known.
+                        const done = (entry?.cycle ?? 1) > 1;
                         const started = Boolean(entry?.lastActivityAt);
 
                         return (

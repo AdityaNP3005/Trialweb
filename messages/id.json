@@ -210,6 +210,9 @@
         "heatmap": "Aktivitas 90 hari",
         "heatmapLess": "Sedikit",
         "heatmapMore": "Banyak",
+        "byLanguage": "Aktivitas per bahasa",
+        "allLanguages": "Semua bahasa",
+        "languageStats": "{reviews} jawaban · {known} paham · {minutes} menit",
         "ratingBreakdown": "Distribusi jawaban",
         "noData": "Belum ada aktivitas. Selesaikan satu sesi dulu."
     },

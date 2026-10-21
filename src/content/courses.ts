@@ -133,20 +133,31 @@ export function summarizeSection(
         (sum, deck) => sum + (progress.get(deck.id)?.known ?? 0),
         0,
     );
-    const topicsDone = bandDecks.filter(
-        (deck) => (progress.get(deck.id)?.percent ?? 0) >= 100,
-    ).length;
+
+    /**
+     * A unit is done once the learner finished a whole cycle, not when the
+     * running cycle happens to be full. Cycles reset to 0 known cards, so
+     * using the running cycle would send "continue" back to chapter 1 forever.
+     */
+    const isDone = (deckId: string) => {
+        const entry = progress.get(deckId);
+        if (!entry) return false;
+        return entry.cycle > 1 || (entry.total > 0 && entry.known >= entry.total);
+    };
+
+    const topicsDone = bandDecks.filter((deck) => isDone(deck.id)).length;
     const nextTopic =
-        bandDecks.find((deck) => (progress.get(deck.id)?.percent ?? 0) < 100) ??
-        bandDecks[0] ??
-        null;
+        bandDecks.find((deck) => !isDone(deck.id)) ?? bandDecks[0] ?? null;
 
     return {
         level,
         topics: bandDecks.length,
         total,
         known,
-        percent: total > 0 ? Math.round((known / total) * 100) : 0,
+        percent:
+            bandDecks.length > 0
+                ? Math.round((topicsDone / bandDecks.length) * 100)
+                : 0,
         topicsDone,
         nextTopic,
     };

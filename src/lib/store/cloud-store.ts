@@ -33,7 +33,7 @@ import {
 import { getDocs, query, where, writeBatch } from "firebase/firestore";
 import { progressColRef } from "@/lib/firebase/paths";
 import { getDb } from "@/lib/firebase/client";
-import { listContentDecks } from "@/content/courses";
+import { courses, listContentDecks } from "@/content/courses";
 import { getContentDeck, loadContentCards } from "@/lib/content/registry";
 import { buildSession, cycleProgress, emptyCycle } from "@/lib/study/session";
 import {
@@ -144,13 +144,20 @@ export class CloudStore implements StudyStore {
         });
     }
 
-    async getCardTotals(): Promise<CardTotals> {
-        const [decks, cycles] = await Promise.all([
-            this.listDecks(),
-            fetchAllCycles(this.uid).catch(() => [] as DeckCycle[]),
-        ]);
-        const total = decks.reduce((sum, deck) => sum + deck.cardCount, 0);
-        const studied = cycles.reduce((sum, cycle) => sum + (cycle.knownInCycle ?? 0), 0);
+    async getCardTotals(courseId?: string): Promise<CardTotals> {
+        const courseIds = courseId ? [courseId] : courses.filter((course) => course.enabled).map((course) => course.id);
+        const deckIds = new Set<string>();
+        let total = 0;
+        for (const id of courseIds) {
+            for (const deck of listContentDecks(id)) {
+                deckIds.add(deck.id);
+                total += deck.cardCount;
+            }
+        }
+        const cycles = await fetchAllCycles(this.uid).catch(() => [] as DeckCycle[]);
+        const studied = cycles
+            .filter((cycle) => deckIds.has(cycle.deckId))
+            .reduce((sum, cycle) => sum + (cycle.knownInCycle ?? 0), 0);
         return { total, studied: Math.min(total, studied) };
     }
 

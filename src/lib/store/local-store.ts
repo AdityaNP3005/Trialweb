@@ -12,7 +12,7 @@ import type {
 } from "@/types";
 import { cardInputSchema, deckInputSchema } from "@/lib/validation/schemas";
 import { dateKey } from "@/lib/utils/date";
-import { listContentDecks } from "@/content/courses";
+import { courses, listContentDecks } from "@/content/courses";
 import { getContentDeck, loadContentCards } from "@/lib/content/registry";
 import { buildSession, cycleProgress, emptyCycle } from "@/lib/study/session";
 import { normalizeBands, progressPercent } from "@/lib/study/progress";
@@ -303,14 +303,15 @@ export class GuestStore implements StudyStore {
         return Promise.all(decks.map((deck) => this.getDeckProgress(deck.id)));
     }
 
-    async getCardTotals(): Promise<CardTotals> {
+    async getCardTotals(courseId?: string): Promise<CardTotals> {
         const db = await this.ensure();
-        const content = listContentDecks(db.profile.activeCourseId);
-        const total = content.reduce((sum, deck) => sum + deck.cardCount, 0) + db.cards.length;
-        const studied = Object.values(db.cycles).reduce(
-            (sum, cycle) => sum + cycle.knownInCycle,
-            0,
-        );
+        const courseIds = courseId ? [courseId] : courses.filter((course) => course.enabled).map((course) => course.id);
+        const content = courseIds.flatMap((id) => listContentDecks(id));
+        const deckIds = new Set(content.map((deck) => deck.id));
+        const total = content.reduce((sum, deck) => sum + deck.cardCount, 0);
+        const studied = Object.entries(db.cycles)
+            .filter(([deckId]) => deckIds.has(deckId))
+            .reduce((sum, [, cycle]) => sum + cycle.knownInCycle, 0);
         return { total, studied };
     }
 
@@ -402,6 +403,15 @@ export class GuestStore implements StudyStore {
 
         const key = dateKey(now);
         const stat = db.dailyStats[key] ?? emptyStat(key);
+        const perCourse = stat.byCourse?.[card.courseId] ?? {
+            reviews: 0,
+            next: 0,
+            repeat: 0,
+            known: 0,
+            studyMs: 0,
+            quizCorrect: 0,
+            quizTotal: 0,
+        };
         db.dailyStats[key] = {
             ...stat,
             reviews: stat.reviews + 1,
@@ -411,6 +421,20 @@ export class GuestStore implements StudyStore {
             studyMs: stat.studyMs + Math.max(0, Math.round(durationMs)),
             quizCorrect: stat.quizCorrect + (mode === "quiz" && correct ? 1 : 0),
             quizTotal: stat.quizTotal + (mode === "quiz" ? 1 : 0),
+            byCourse: {
+                ...(stat.byCourse ?? {}),
+                [card.courseId]: {
+                    reviews: perCourse.reviews + 1,
+                    next: perCourse.next + (action === "next" ? 1 : 0),
+                    repeat: perCourse.repeat + (action === "repeat" ? 1 : 0),
+                    known: perCourse.known + (action === "next" ? 1 : 0),
+                    studyMs:
+                        perCourse.studyMs + Math.max(0, Math.round(durationMs)),
+                    quizCorrect:
+                        perCourse.quizCorrect + (mode === "quiz" && correct ? 1 : 0),
+                    quizTotal: perCourse.quizTotal + (mode === "quiz" ? 1 : 0),
+                },
+            },
         };
 
         this.persist();

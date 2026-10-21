@@ -7,6 +7,7 @@ import { useStore } from "@/components/providers/store-provider";
 import type { CefrLevel, Deck, DeckProgress, SectionId } from "@/types";
 import { CEFR_LEVELS } from "@/types";
 import { courseSections, summarizeSection } from "@/content/courses";
+import { CourseSwitcher } from "@/components/courses/course-switcher";
 import { Button } from "@/components/ui/button";
 import { Dialog } from "@/components/ui/dialog";
 import { Input, Label, Select, Textarea } from "@/components/ui/field";
@@ -15,13 +16,14 @@ import { Skeleton } from "@/components/ui/progress";
 import { DeckCard } from "@/components/decks/deck-card";
 
 export default function DecksPage() {
-    const { store, profile } = useStore();
+    const { store, profile, refreshProfile } = useStore();
     const t = useTranslations("decks");
     const tc = useTranslations("common");
 
+    const activeCourseId = profile?.activeCourseId ?? "de";
     const sections = useMemo(
-        () => courseSections(profile?.activeCourseId ?? "de"),
-        [profile?.activeCourseId],
+        () => courseSections(activeCourseId),
+        [activeCourseId],
     );
     const levels: (SectionId | "all")[] = useMemo(
         () => ["all", ...sections.map((section) => section.id)],
@@ -35,6 +37,7 @@ export default function DecksPage() {
     const [source, setSource] = useState<"all" | "content" | "user">("all");
     const [dialogOpen, setDialogOpen] = useState(false);
     const [saving, setSaving] = useState(false);
+    const [switching, setSwitching] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
     const [form, setForm] = useState({
@@ -47,6 +50,7 @@ export default function DecksPage() {
     useEffect(() => {
         if (!store) return;
         let cancelled = false;
+        setDecks(null);
         (async () => {
             try {
                 const [next, nextProgress] = await Promise.all([
@@ -66,7 +70,20 @@ export default function DecksPage() {
         return () => {
             cancelled = true;
         };
-    }, [store]);
+    }, [store, activeCourseId]);
+
+    async function switchCourse(courseId: string) {
+        if (!store || courseId === activeCourseId) return;
+        setSwitching(true);
+        setLevel("all");
+        setTag("all");
+        try {
+            await store.updateProfile({ activeCourseId: courseId });
+            await refreshProfile();
+        } finally {
+            setSwitching(false);
+        }
+    }
 
     const tags = useMemo(() => {
         const set = new Set<string>();
@@ -136,6 +153,12 @@ export default function DecksPage() {
                     {t("newDeck")}
                 </Button>
             </div>
+
+            <CourseSwitcher
+                activeCourseId={activeCourseId}
+                disabled={switching}
+                onSelect={switchCourse}
+            />
 
             <div className="surface-card flex flex-wrap items-center gap-2 p-3">
                 <span className="flex items-center gap-1.5 pl-1 text-xs font-semibold text-muted">
@@ -226,8 +249,7 @@ export default function DecksPage() {
                                     <p className="text-xs text-muted">
                                         {section.unitNoun === "book"
                                             ? t("bookChapters", { count: summary.topics })
-                                            : t("bandTopics", { count: summary.topics })}{" "}
-                                        · {summary.known}/{summary.total}
+                                            : t("bandTopics", { count: summary.topics })}
                                     </p>
                                     <div className="h-1.5 w-full overflow-hidden rounded-full bg-surface-2">
                                         <div

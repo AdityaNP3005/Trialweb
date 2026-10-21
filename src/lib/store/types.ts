@@ -65,7 +65,7 @@ export interface StudyStore {
 
     getDeckProgress(deckId: string): Promise<DeckProgress>;
     listDeckProgress(): Promise<DeckProgress[]>;
-    getCardTotals(): Promise<CardTotals>;
+    getCardTotals(courseId?: string): Promise<CardTotals>;
 
     getSession(deckId: string, sessionSize?: number): Promise<SessionPlan>;
     submitAction(args: SubmitActionArgs): Promise<void>;
@@ -84,6 +84,7 @@ export const emptyStat = (date: string): DailyStat => ({
     studyMs: 0,
     quizCorrect: 0,
     quizTotal: 0,
+    byCourse: {},
 });
 
 export const defaultPrefs = (): StudyPrefs => ({ shuffleCards: false });
