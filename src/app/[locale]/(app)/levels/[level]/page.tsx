@@ -2,13 +2,14 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useParams } from "next/navigation";
-import { CheckCircle2, Play, RotateCcw } from "lucide-react";
+import { CheckCircle2, Clapperboard, Play, RotateCcw } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, useRouter } from "@/i18n/navigation";
 import type { Deck, DeckProgress } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
 import { getCourseForSection, summarizeSection } from "@/content/courses"; import { getSection } from "@/lib/content/registry";
 import { sectionLabelFor, unitLabelFor } from "@/lib/content/labels";
+import { videoPlaylist } from "@/lib/content/videos";
 import { Badge } from "@/components/ui/badge";
 import { buttonStyles } from "@/components/ui/button";
 import { Progress, Skeleton } from "@/components/ui/progress";
@@ -22,6 +23,7 @@ export default function LevelPage() {
     const { store, profile, refreshProfile } = useStore();
     const t = useTranslations("levels");
     const tc = useTranslations("common");
+    const tv = useTranslations("video");
     const locale = useLocale();
 
     const [decks, setDecks] = useState<Deck[] | null>(null);
@@ -30,6 +32,7 @@ export default function LevelPage() {
     const section = getSection(sectionId);
     const course = getCourseForSection(sectionId);
     const valid = Boolean(section && course);
+    const playlist = course ? videoPlaylist(course.id, sectionId) : null;
 
     // Deep links may point at the other course (e.g. /levels/book2 while German
     // is active). Switch the course first, otherwise the unit list is empty.
@@ -144,23 +147,34 @@ export default function LevelPage() {
                     { label: tc("progressShort"), value: `${summary.percent}%` },
                 ]}
                 actions={
-                    summary.nextTopic ? (
-                        <Link
-                            href={`/study/${summary.nextTopic.id}`}
-                            className={buttonStyles({ size: "md" })}
-                        >
-                            <Play className="size-4" />
-                            {t("continueTopic", {
-                                topic: unitLabelFor(
-                                    summary.nextTopic.topicOrder,
-                                    summary.nextTopic.name,
-                                    course!.unitNoun,
-                                    tc,
-                                    locale,
-                                ),
-                            })}
-                        </Link>
-                    ) : null
+                    <div className="flex flex-wrap items-center gap-2">
+                        {playlist ? (
+                            <Link
+                                href={`/videos/${sectionId}`}
+                                className={buttonStyles({ variant: "secondary", size: "md" })}
+                            >
+                                <Clapperboard className="size-4" />
+                                {tv("title")}
+                            </Link>
+                        ) : null}
+                        {summary.nextTopic ? (
+                            <Link
+                                href={`/study/${summary.nextTopic.id}`}
+                                className={buttonStyles({ size: "md" })}
+                            >
+                                <Play className="size-4" />
+                                {t("continueTopic", {
+                                    topic: unitLabelFor(
+                                        summary.nextTopic.topicOrder,
+                                        summary.nextTopic.name,
+                                        course!.unitNoun,
+                                        tc,
+                                        locale,
+                                    ),
+                                })}
+                            </Link>
+                        ) : null}
+                    </div>
                 }
             />
 

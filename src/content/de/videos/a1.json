@@ -1,0 +1,407 @@
+{
+    "version": 1,
+    "courseId": "de",
+    "sectionId": "A1",
+    "playlistId": "PLF9mJC4RrjIhS4MMm0x72-qWEn1LRvPuW",
+    "title": "A1 (Free Course) | Learn German for beginners",
+    "channel": "Learn German",
+    "channelUrl": "https://www.youtube.com/@LearnGermanOriginal",
+    "videos": [
+        {
+            "id": "RuGmc662HDg",
+            "lesson": 1,
+            "title": "Begrüßungen · Greetings",
+            "durationSec": 604
+        },
+        {
+            "id": "S8ukFF6SdGk",
+            "lesson": 2,
+            "title": "Common Phrases",
+            "durationSec": 640
+        },
+        {
+            "id": "d54ioeKA-jc",
+            "lesson": 3,
+            "title": "Numbers 0-20 · Zahlen",
+            "durationSec": 624
+        },
+        {
+            "id": "IaerX0Y6wmE",
+            "lesson": 4,
+            "title": "Numbers 21-100 · Zahlen",
+            "durationSec": 673
+        },
+        {
+            "id": "HCytWm3RC9g",
+            "lesson": 5,
+            "title": "Alphabets · das Alphabet",
+            "durationSec": 636
+        },
+        {
+            "id": "RElBVZ1Wke0",
+            "lesson": 6,
+            "title": "sich vorstellen · introducing yourself in German",
+            "durationSec": 609
+        },
+        {
+            "id": "KDkQOXcEr4o",
+            "lesson": 7,
+            "title": "jemanden kennenlernen · Getting to know someone",
+            "durationSec": 618
+        },
+        {
+            "id": "iWyOKwIf_94",
+            "lesson": 8,
+            "title": "Wie geht's? · How are you?",
+            "durationSec": 377
+        },
+        {
+            "id": "n6db5VSUm2o",
+            "lesson": 9,
+            "title": "Satzstruktur · Sentence Structure Part 1",
+            "durationSec": 608
+        },
+        {
+            "id": "ZNc0y2Dy5N8",
+            "lesson": 10,
+            "title": "Satzstruktur · Sentence Structure Part 2",
+            "durationSec": 416
+        },
+        {
+            "id": "hY4lHC6YZuQ",
+            "lesson": 11,
+            "title": "Personalpronomen · Personal pronouns ich du wir",
+            "durationSec": 601
+        },
+        {
+            "id": "xy4a1c7W7k0",
+            "lesson": 12,
+            "title": "haben und sein · Verb conjugation",
+            "durationSec": 604
+        },
+        {
+            "id": "07WCBZRchY0",
+            "lesson": 13,
+            "title": "Was ist ein Verb? · Verb structure in German",
+            "durationSec": 614
+        },
+        {
+            "id": "IowuDehrLFk",
+            "lesson": 14,
+            "title": "Regelmäßige Verben · Regular Verbs in German",
+            "durationSec": 913
+        },
+        {
+            "id": "15hmmpt15ag",
+            "lesson": 15,
+            "title": "Unregelmäßige Verben · Irregular Verbs in German",
+            "durationSec": 780
+        },
+        {
+            "id": "BISRFfjDKfY",
+            "lesson": 16,
+            "title": "Numbers above 100 in German · Zahlen Teil 3",
+            "durationSec": 711
+        },
+        {
+            "id": "PARun113NuA",
+            "lesson": 17,
+            "title": "Adjectives and Opposites · Adjektive und Gegenteile",
+            "durationSec": 622
+        },
+        {
+            "id": "zNh1CmEP-B0",
+            "lesson": 18,
+            "title": "Introducing someone in German · jemanden vorstellen",
+            "durationSec": 481
+        },
+        {
+            "id": "b2feLAJX9gI",
+            "lesson": 19,
+            "title": "Articles in German · Bestimmte Artikel im Nominativ",
+            "durationSec": 505
+        },
+        {
+            "id": "4M6PN4yfwgI",
+            "lesson": 20,
+            "title": "Indefinite Articles in German · Unbestimmte Artike",
+            "durationSec": 416
+        },
+        {
+            "id": "LULFzldtkyk",
+            "lesson": 21,
+            "title": "Negative Articles in German · Negative Artike",
+            "durationSec": 337
+        },
+        {
+            "id": "MQhR0AMNr_U",
+            "lesson": 22,
+            "title": "official time in German · Zeit offizie",
+            "durationSec": 604
+        },
+        {
+            "id": "svbe7Q0FJlI",
+            "lesson": 23,
+            "title": "unofficial time in German · Uhrzeit inoffizie",
+            "durationSec": 600
+        },
+        {
+            "id": "sBUR0Q9ZTN4",
+            "lesson": 24,
+            "title": "possessive articles in German · Possessivartike",
+            "durationSec": 834
+        },
+        {
+            "id": "VuCqbaBXiQs",
+            "lesson": 25,
+            "title": "the family in German · die Familie",
+            "durationSec": 421
+        },
+        {
+            "id": "p4whuXE_f94",
+            "lesson": 26,
+            "title": "Accusative case · Akkusativ",
+            "durationSec": 777
+        },
+        {
+            "id": "6w-HrxZcIBU",
+            "lesson": 27,
+            "title": "Possessive Artike · Accusative case",
+            "durationSec": 567
+        },
+        {
+            "id": "aS5ZdypKsZE",
+            "lesson": 28,
+            "title": "möchten · Modal verbs",
+            "durationSec": 381
+        },
+        {
+            "id": "jKTtQb6qJgY",
+            "lesson": 29,
+            "title": "W-Fragen · Question Words in German",
+            "durationSec": 272
+        },
+        {
+            "id": "jJiE4Rfcl9w",
+            "lesson": 30,
+            "title": "Ordering in a Restaurant or Café in German",
+            "durationSec": 565
+        },
+        {
+            "id": "_pQICJjSB-c",
+            "lesson": 31,
+            "title": "Personal Pronouns in German · Accusative Case",
+            "durationSec": 668
+        },
+        {
+            "id": "ywhdo-UQjBM",
+            "lesson": 32,
+            "title": "Artikel im Dativ · Dative Case",
+            "durationSec": 588
+        },
+        {
+            "id": "l_KjteqzRqE",
+            "lesson": 33,
+            "title": "Ordinalzahlen · Ordinal numbers",
+            "durationSec": 711
+        },
+        {
+            "id": "FnLx4nV3_fs",
+            "lesson": 34,
+            "title": "Zeit - Fragewörter der Zeit · Time related questions",
+            "durationSec": 623
+        },
+        {
+            "id": "-rU7DBOPGXg",
+            "lesson": 35,
+            "title": "Dative case · Possessive articles",
+            "durationSec": 584
+        },
+        {
+            "id": "_EvcUxsmE6k",
+            "lesson": 36,
+            "title": "mir, dir, euch, Ihnen · Personal Pronouns",
+            "durationSec": 637
+        },
+        {
+            "id": "le-mSvX_Ekk",
+            "lesson": 37,
+            "title": "Trennbare Verben · Separable verbs in German",
+            "durationSec": 639
+        },
+        {
+            "id": "L7-SK1cA1kQ",
+            "lesson": 38,
+            "title": "Tagesablauf · Daily routine",
+            "durationSec": 705
+        },
+        {
+            "id": "2b44fRJYg5Y",
+            "lesson": 39,
+            "title": "Imperativ · Imperative",
+            "durationSec": 704
+        },
+        {
+            "id": "JsH6DAh0Pqw",
+            "lesson": 40,
+            "title": "Wegbeschreibung · Directions",
+            "durationSec": 535
+        },
+        {
+            "id": "nmyEEsPEv-k",
+            "lesson": 41,
+            "title": "war oder hatte",
+            "durationSec": 483
+        },
+        {
+            "id": "SkEBKVWh94Y",
+            "lesson": 42,
+            "title": "Untrennbare Verben · Non separable verbs",
+            "durationSec": 694
+        },
+        {
+            "id": "NIrQgPq6C8I",
+            "lesson": 43,
+            "title": "krank sein · Being unwe",
+            "durationSec": 785
+        },
+        {
+            "id": "qX4aVgbD6YY",
+            "lesson": 44,
+            "title": "Perfekt · Past tense",
+            "durationSec": 676
+        },
+        {
+            "id": "4XXtiNfuwhY",
+            "lesson": 45,
+            "title": "Perfekt · Past tense",
+            "durationSec": 786
+        },
+        {
+            "id": "PqboPq6pSUU",
+            "lesson": 46,
+            "title": "Perfekt Teil 3 · Past tense",
+            "durationSec": 749
+        },
+        {
+            "id": "CUjRSS7R8Yc",
+            "lesson": 47,
+            "title": "Was hast du im Urlaub gemacht? · What did you do on vacation?",
+            "durationSec": 639
+        },
+        {
+            "id": "B_muZm2XT8M",
+            "lesson": 48,
+            "title": "Im Supermarkt · In the supermarket",
+            "durationSec": 814
+        },
+        {
+            "id": "5pIb0epkyAk",
+            "lesson": 49,
+            "title": "Wie ist das Wetter? · How's the weather?",
+            "durationSec": 705
+        },
+        {
+            "id": "bIUOSQZGVZ8",
+            "lesson": 50,
+            "title": "Verabredungen · Appointments",
+            "durationSec": 613
+        },
+        {
+            "id": "5alTxRuLvdM",
+            "lesson": 51,
+            "title": "Brief schreiben-Einladung · Letter writing-Invitation",
+            "durationSec": 603
+        },
+        {
+            "id": "ClJUVsjoDM8",
+            "lesson": 52,
+            "title": "Gefallen und Missfallen ausdrücken · Express likes & dislikes",
+            "durationSec": 233
+        },
+        {
+            "id": "VI3VNRWKHiw",
+            "lesson": 53,
+            "title": "Fragepronomen \"welch-\" · Interrogative pronoun",
+            "durationSec": 642
+        },
+        {
+            "id": "w_LJT0FZTYE",
+            "lesson": 54,
+            "title": "Demonstrativartikel \"dies-\" · Demonstrative article \"dies-\"",
+            "durationSec": 606
+        },
+        {
+            "id": "trzgP5-zy84",
+            "lesson": 55,
+            "title": "Im Kaufhaus · Buying clothes",
+            "durationSec": 608
+        },
+        {
+            "id": "L9fzpvT3Ops",
+            "lesson": 56,
+            "title": "Mit dem Taxi fahren · Taxi",
+            "durationSec": 610
+        },
+        {
+            "id": "nFBOwzDCzrg",
+            "lesson": 57,
+            "title": "Zeitadverbien · Adverbs of time",
+            "durationSec": 618
+        },
+        {
+            "id": "YhURm1cnQww",
+            "lesson": 58,
+            "title": "am Telefon sprechen · To make telephone conversation",
+            "durationSec": 604
+        },
+        {
+            "id": "JybuldB6q5M",
+            "lesson": 59,
+            "title": "Beim Arzt · At the Doctor's",
+            "durationSec": 711
+        },
+        {
+            "id": "ATLnq06AfrA",
+            "lesson": 60,
+            "title": "Brief schreiben · Formal Letter",
+            "durationSec": 678
+        },
+        {
+            "id": "ZdBp66rzA0o",
+            "lesson": 61,
+            "title": "Formular ausfüllen · How to fill in a form",
+            "durationSec": 635
+        },
+        {
+            "id": "8vLRrKgOkD0",
+            "lesson": 62,
+            "title": "Die Post · The post office",
+            "durationSec": 608
+        },
+        {
+            "id": "b8lHjfAklgM",
+            "lesson": 63,
+            "title": "die Bank · the Bank",
+            "durationSec": 601
+        },
+        {
+            "id": "JphfVvja3Bs",
+            "lesson": 64,
+            "title": "Wohnungssuche · Apartment - hunting",
+            "durationSec": 602
+        },
+        {
+            "id": "1_WSkHySOqs",
+            "lesson": 65,
+            "title": "eine Fahrkarte kaufen · Buying a train ticket",
+            "durationSec": 616
+        },
+        {
+            "id": "-3TFXzLlJ38",
+            "lesson": 66,
+            "title": "Test Your German · Level A1",
+            "durationSec": 691
+        }
+    ]
+}

@@ -47,7 +47,8 @@
         "signup": "Sign up",
         "logout": "Sign out",
         "guest": "Guest",
-        "guestModeHint": "progress saved in this browser"
+        "guestModeHint": "progress saved in this browser",
+        "videos": "Videos"
     },
     "landing": {
         "heroTitle": "Memorise German and Mandarin vocabulary, one chapter per session.",
@@ -334,5 +335,33 @@
         "authProviderDisabled": "Google sign-in is not enabled. Turn it on in Firebase Console → Authentication → Sign-in method.",
         "authDifferentMethod": "This email is already registered with another method. Sign in with email and password.",
         "notFound": "Not found"
+    },
+    "video": {
+        "title": "Video lessons",
+        "subtitle": "Watch the lessons in order. Your progress is saved to the account, so you can pick up any time.",
+        "back": "Back to the band",
+        "backToVideos": "Back to videos",
+        "metaVideos": "Videos",
+        "metaDone": "Watched",
+        "metaWatched": "Time",
+        "progressLine": "{done}/{total} lessons watched",
+        "lessonLabel": "Lesson {number}",
+        "openOnYoutube": "Open on YouTube",
+        "autoplay": "Play the next video automatically",
+        "resumeHint": "Continue: {title}",
+        "allDone": "Every video is finished — rewatch any time.",
+        "lessonsTitle": "Lessons",
+        "guestNote": "Guest mode keeps video progress in this browser only. Sign in to sync it across devices.",
+        "reset": "Reset progress",
+        "resetBody": "This clears the watch history for these videos. Continue?",
+        "statusDone": "Done",
+        "statusActive": "In progress",
+        "statusNew": "New",
+        "statusPlaying": "Playing",
+        "embedError": "This video cannot play here. Open it on YouTube instead.",
+        "loading": "Loading player…",
+        "emptyTitle": "No video material yet",
+        "emptyBody": "Video lessons are available for German A1. Other languages will follow.",
+        "emptyCta": "Back to studying"
     }
 }

@@ -5,6 +5,7 @@ import type {
     Deck,
     DeckInput,
     DeckProgress,
+    PlaylistProgress,
     Profile,
     StudyAction,
     StudyMode,
@@ -73,6 +74,10 @@ export interface StudyStore {
 
     getTodayStat(): Promise<DailyStat>;
     getRecentStats(days?: number): Promise<DailyStat[]>;
+
+    /** Watch progress for one video playlist, or null when never watched. */
+    getVideoProgress(playlistId: string): Promise<PlaylistProgress | null>;
+    saveVideoProgress(progress: PlaylistProgress): Promise<void>;
 }
 
 export const emptyStat = (date: string): DailyStat => ({

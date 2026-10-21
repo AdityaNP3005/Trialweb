@@ -28,3 +28,9 @@ export const deckCyclesColRef = (uid: string) =>
     collection(getDb(), "users", uid, "deckCycles");
 export const deckCycleDocRef = (uid: string, deckId: string) =>
     doc(getDb(), "users", uid, "deckCycles", deckId);
+
+/** Watch progress per video playlist (one document per playlist). */
+export const videoPlaylistsColRef = (uid: string) =>
+    collection(getDb(), "users", uid, "videoPlaylists");
+export const videoPlaylistDocRef = (uid: string, playlistId: string) =>
+    doc(getDb(), "users", uid, "videoPlaylists", playlistId);

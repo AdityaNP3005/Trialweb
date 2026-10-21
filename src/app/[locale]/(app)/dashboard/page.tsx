@@ -1,15 +1,17 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { ArrowRight, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronRight, Clapperboard } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import type { DailyStat, Deck, DeckProgress } from "@/types";
+import type { DailyStat, Deck, DeckProgress, PlaylistProgress } from "@/types";
 import { useStore } from "@/components/providers/store-provider";
 import { computeStreak } from "@/lib/stats/streak";
 import { getCourse, courseSections, summarizeSection } from "@/content/courses";
 import { CourseSwitcher } from "@/components/courses/course-switcher";
 import { sectionLabelFor, unitLabelFor } from "@/lib/content/labels";
+import { videoPlaylist, videoSections } from "@/lib/content/videos";
+import { emptyPlaylistProgress, playlistSummary } from "@/lib/video/progress";
 import { buttonStyles } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress, Skeleton } from "@/components/ui/progress";
@@ -22,6 +24,7 @@ type DashboardData = {
     progress: DeckProgress[];
     today: DailyStat;
     recent: DailyStat[];
+    video: PlaylistProgress | null;
 };
 
 export default function DashboardPage() {
@@ -29,6 +32,7 @@ export default function DashboardPage() {
     const t = useTranslations("dashboard");
     const td = useTranslations("decks");
     const tc = useTranslations("common");
+    const tv = useTranslations("video");
     const locale = useLocale();
 
     const activeCourseId = profile?.activeCourseId ?? "de";
@@ -38,6 +42,9 @@ export default function DashboardPage() {
     const [data, setData] = useState<DashboardData | null>(null);
     const [error, setError] = useState<string | null>(null);
     const [switching, setSwitching] = useState(false);
+
+    const videoSection = videoSections(activeCourseId)[0];
+    const video = videoSection ? videoPlaylist(activeCourseId, videoSection) : null;
 
     useEffect(() => {
         if (!store) return;
@@ -51,7 +58,11 @@ export default function DashboardPage() {
                     store.getTodayStat(),
                     store.getRecentStats(30),
                 ]);
-                if (!cancelled) setData({ decks, progress, today, recent });
+                const videoProgress = video
+                    ? await store.getVideoProgress(video.id).catch(() => null)
+                    : null;
+                if (!cancelled)
+                    setData({ decks, progress, today, recent, video: videoProgress });
             } catch (cause) {
                 if (!cancelled) {
                     setError(cause instanceof Error ? cause.message : "error");
@@ -62,7 +73,7 @@ export default function DashboardPage() {
         return () => {
             cancelled = true;
         };
-    }, [store, activeCourseId]);
+    }, [store, activeCourseId, video]);
 
     const name = profile?.displayName ?? "";
     const streak = data ? computeStreak(data.recent).current : 0;
@@ -94,6 +105,17 @@ export default function DashboardPage() {
             setSwitching(false);
         }
     }
+
+    const videoSummary = useMemo(
+        () =>
+            video
+                ? playlistSummary(
+                    data?.video ?? emptyPlaylistProgress(video),
+                    video,
+                )
+                : null,
+        [data, video],
+    );
 
     const recentTopics = useMemo(() => {
         if (!data) return [];
@@ -223,6 +245,36 @@ export default function DashboardPage() {
                         ))}
                     </ul>
                 )}
+
+                {video ? (
+                    <Link
+                        href={`/videos/${video.sectionId}`}
+                        className="group flex items-center gap-4 border-y border-border py-3 transition-colors hover:bg-surface-2/40"
+                    >
+                        <span className="grid size-9 shrink-0 place-items-center rounded-[0.25rem] border border-border text-accent">
+                            <Clapperboard className="size-4" />
+                        </span>
+                        <div className="min-w-0 flex-1">
+                            <p className="text-[13.5px] font-semibold leading-tight">
+                                {tv("title")} ·{" "}
+                                {sectionLabelFor(
+                                    video.sectionId,
+                                    course.unitNoun,
+                                    tc,
+                                )}
+                            </p>
+                            <p className="meta mt-1">
+                                {videoSummary?.done ?? 0}/{videoSummary?.total ?? 0} ·{" "}
+                                {video.channel}
+                            </p>
+                            <Progress
+                                value={videoSummary?.percent ?? 0}
+                                className="mt-2 h-[2px] max-w-md"
+                            />
+                        </div>
+                        <ChevronRight className="size-4 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-fg" />
+                    </Link>
+                ) : null}
             </section>
 
             <section className="space-y-4">

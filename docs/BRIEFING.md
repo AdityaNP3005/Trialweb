@@ -129,6 +129,14 @@ npm run deploy:rules      # firestore.rules + firestore.indexes.json
 | `src/app/[locale]/(app)/study/[deckId]/page.tsx` | sesi topik (repeat/next, header putaran) |
 | `src/app/[locale]/(app)/decks/page.tsx` | ringkasan band + daftar topik + filter tag |
 | `src/app/[locale]/(app)/decks/[deckId]/page.tsx` | deck kustom, impor CSV |
+| `src/app/[locale]/(app)/videos/[section]/page.tsx` | halaman materi video (client), fallback EmptyState bila belum ada playlist |
+| `src/components/video/video-hub.tsx` | orkestrasi tontonan: pilih pelajaran, simpan progres, auto-play, reset |
+| `src/components/video/youtube-player.tsx` | pembungkus YouTube IFrame API (singleton loader, ticker 1 s, fallback embed diblokir) |
+| `src/components/video/video-lesson-row.tsx` | baris pelajaran: nomor, judul, stamp status, durasi |
+| `src/lib/video/progress.ts` | fungsi murni: `applyWatch`, `resumePoint`, `playlistSummary`, `mergePlaylistProgress` |
+| `src/lib/content/videos.ts` | loader manifest playlist statis |
+| `src/content/de/videos/a1.json` | manifest playlist A1 (66 video) |
+| `src/lib/data/videos.ts` | baca/tulis `users/{uid}/videoPlaylists/{playlistId}` |
 | `src/lib/study/session.ts` | `buildSession`, `insertRepeat` (gap 3), `cycleProgress`, `MAX_REPEATS_PER_CARD` |
 | `src/lib/data/progress.ts` | `submitAction`: progress + deckCycle + dailyStats + review log (batch) |
 | `src/lib/data/migrate-topics.ts` | remap id topik cloud (`migration-map.json` → `topic-map.json`) |
@@ -145,7 +153,7 @@ npm run deploy:rules      # firestore.rules + firestore.indexes.json
 | `scripts/content/proper-names.json` | blocklist nama diri (negara/kota/nama orang) |
 | `scripts/content/build-decks.py` | pipeline build konten |
 | `scripts/validate-content.ts` | validator konten (`npm run seed:validate`) |
-| `tests/unit/{session,topics,csv,quiz,streak}.test.ts` | 34 test |
+| `tests/unit/{session,topics,csv,quiz,streak,course-stats,video}.test.ts` | 53 test |
 
 ---
 
@@ -188,6 +196,11 @@ Urutan migrasi yang sudah berjalan, dijalankan otomatis oleh
    `topicMap[doc.id] ?? (coreMap[doc.id] ? topicMap[coreMap[doc.id]] : null)`,
    hapus progres/cycle usang, buat ulang cycle per topik dari `progress`,
    set `profile.topicsV3 = true` dan `profile.topicsV4 = true`.
+
+Khusus video, `migrateGuestVideos` dijalankan **sebelum** `migrateGuestData` (snapshot tamu
+langsung dibersihkan langkah itu). Fungsinya menggabungkan `videos` tamu dengan cloud
+(`seconds` terjauh, `completedAt` terawal), berjalan walau deck sudah ada, dan menandai
+`profile.videosV1 = true`.
 
 Sudah terverifikasi pada akun pilot: `topicsV3 = true`, `topicsV4 = true`, 15 dokumen
 `deckCycles` memakai id topik baru (mis. `de-a1-function-words-1`, `knownInCycle = 7`,
@@ -274,6 +287,17 @@ npm run content:build && npm run seed:validate
 - **`window`/`localStorage`** hanya di komponen client; store provider sudah menangani guard.
 - **Test konten** bergantung pada `topic-map.json`; kalau map belum dibuat ulang, test migrasi
   akan gagal (bukan bug kode).
+- **YouTube IFrame API**: butuh `enablejsapi=1` + `origin`; repo ini memakai host
+  `youtube-nocookie.com`. Skrip `iframe_api` bisa diblokir pembaca feed/adblock sehingga
+  `onReady` tidak pernah datang — loader punya timeout 12 detik lalu jatuh ke kartu error
+  berisi tautan YouTube. Kode error pemutar: `2` id tidak valid, `5` tidak bisa diputar di
+  HTML5, `100` video dihapus/privat, `101`/`150` embed dimatikan pemiliknya.
+- **Progres video** menyimpan dua nilai: `seconds` (terjauh, monoton naik, dipakai untuk
+  stamp selesai) dan `lastPositionSec` (posisi terakhir, boleh mundur). Jangan satukan —
+  seek mundur akan menghapus capaian. Map Firestore ditulis dengan `set(..., {merge:true})`
+  dan field bersarang, bukan dotted path.
+- **Auto-play antar pelajaran** disimpan di `localStorage: goabroad.video.autoplay`; browser
+  bisa memblokir play bersuara, jadi kegagalan `playVideo()` tidak boleh dianggap error fatal.
 
 ---
 

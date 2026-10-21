@@ -105,9 +105,10 @@ Legenda: ✅ rilis & terverifikasi di produksi · 🟡 ada tapi terbatas · ⛔ 
 | F-12 | ~~Generate kartu dengan AI~~ | ❌ | Dibatalkan: akun hanya untuk menyimpan progres; tidak ada dependensi API/LLM |
 | F-13 | Ekspor JSON (backup) | ✅ | `/settings` |
 | F-14 | Migrasi otomatis data lama | ✅ | FSRS→siklus (`engineV2`), per-level→per-topik (`topicsV3`, `topicsV4`) |
-| F-15 | Validator konten + unit test | ✅ | `npm run seed:validate`, 34 test Vitest |
+| F-15 | Validator konten + unit test | ✅ | `npm run seed:validate`, 53 test Vitest |
 | F-16 | Offline/PWA | ⛔ | Firestore punya cache persisten; tamu tetap jalan tanpa jaringan setelah load |
 | F-17 | Bahasa target kedua | ⛔ | Registry & `courseId` siap, konten belum |
+| F-18 | Materi video + tracking tontonan | 🟡 | `/videos/[section]`, playlist YouTube A1 (66 pelajaran) diputar lewat IFrame API; progres per akun di `videoPlaylists`. Band lain belum punya playlist |
 
 ---
 
@@ -147,6 +148,24 @@ PILIH BAND ──▶ PILIH TOPIK ──▶ SESI (kartu 1..N)
 - Progres band = jumlah kartu `known` di semua topik ÷ total kartu band.
 - Statistik harian mencatat `reviews`, `next`, `repeat`, `known`, `studyMs`, `quizCorrect`,
   `quizTotal` (dipakai streak & heatmap; legacy field opsional).
+
+### 7.4 Materi video (saat ini hanya A1)
+
+- Playlist: "A1 (Free Course) | Learn German for beginners" (kanal *Learn German*),
+  `PLF9mJC4RrjIhS4MMm0x72-qWEn1LRvPuW`, 66 pelajaran. Manifest dibundel di
+  `src/content/de/videos/a1.json` (id, nomor pelajaran, judul bersih, durasi).
+- Halaman `/videos` → `/videos/A1`. Masuk lewat menu **Video**, tombol di halaman band A1,
+  dan baris progres di dashboard.
+- Pemutar: YouTube IFrame API (`youtube-nocookie.com`), ticker 1 detik saat play, progres
+  disimpan tiap 15 detik, saat pause, ganti pelajaran, atau selesai.
+- Satu pelajaran dianggap selesai bila `seconds/duration ≥ 0.92` atau pemutar mengirim `ENDED`.
+  Setelah selesai, pelajaran berikutnya auto-play (bisa dimatikan, disimpan di
+  `localStorage: goabroad.video.autoplay`).
+- Tanpa akun: progres tetap tersimpan lokal; saat login, `migrateGuestVideos()` menggabungkan
+  capaian tamu dengan cloud (ambil `seconds` terjauh, `completedAt` terawal) dan menandai
+  flag profil `videosV1 = true`.
+- Judul video `Lesson N` dan embel-embel boilerplate dibuang dari manifest; nomor pelajaran
+  disimpan di field `lesson`, jadi label band mengikuti versi bahasa aktif.
 
 ---
 
@@ -235,13 +254,17 @@ users/{uid}/dailyStats/{YYYY-MM-DD} {reviews, next, repeat, known, studyMs, quiz
 users/{uid}/reviews/{id}            log jawaban (audit)
 users/{uid}/decks/{deckId}          deck buatan sendiri
 users/{uid}/cards/{cardId}          kartu deck kustom / impor
+users/{uid}/videoPlaylists/{playlistId}
+                                    {courseId, sectionId, lastVideoId, lastPositionSec,
+                                     videos:{videoId:{seconds,duration,completedAt,updatedAt}}, updatedAt}
 ```
 
 Index komposit: `cards(deckId, createdAt)`, `progress(deckId)`, `reviews(deckId, createdAt)`.
 
 ### Tamu (localStorage `goabroad.guest.v2`)
 
-`{contentVersion, profile, progress, cycles, dailyStats, reviews}` — struktur sama dengan cloud.
+`{contentVersion, profile, progress, cycles, dailyStats, reviews, videos?}` — struktur sama dengan cloud.
+`videos` bersifat opsional agar snapshot lama tetap valid.
 `contentVersion = 4`; saat dibuka, id topik lama di-remap lewat `topic-map.json` lalu
 `migration-map.json`, dan siklus dibangun ulang dari `progress`.
 
@@ -264,6 +287,8 @@ tidak menambah biaya tulis per pengguna.
 | A8 | Migrasi data bertahap dengan flag (`engineV2`, `topicsV3`, `topicsV4`) | Perubahan model tidak menghapus progres pengguna |
 | A9 | ID kartu/topik stabil, hanya append | Progres merujuk ke ID |
 | A10 | i18n `id` (default) + `en` | Pengguna utama Indonesia |
+| A11 | Playlist video dibundel sebagai JSON (`src/content/de/videos/*.json`), diputar via YouTube IFrame API | Manifest tetap statis (judul & durasi tidak diambil saat runtime), video tetap di YouTube sehingga tidak ada hosting/bandwidth dan tidak butuh API key |
+| A12 | Progres video menyimpan `seconds` terjauh + `lastPositionSec` terpisah | Seek mundur tidak menghapus capaian; "lanjutkan" tetap di posisi terakhir. Selesai jika 92% durasi atau event `ENDED` |
 
 ---
 

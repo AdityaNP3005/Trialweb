@@ -7,6 +7,7 @@ import type {
     DeckCycle,
     DeckInput,
     DeckProgress,
+    PlaylistProgress,
     Profile,
     StudyLogEntry,
 } from "@/types";
@@ -43,6 +44,8 @@ export type GuestDb = {
     cycles: Record<string, DeckCycle>;
     logs: StudyLogEntry[];
     dailyStats: Record<string, DailyStat>;
+    /** Video watch progress per playlist id. */
+    videos?: Record<string, PlaylistProgress>;
 };
 
 function readRaw(): GuestDb | null {
@@ -57,6 +60,7 @@ function readRaw(): GuestDb | null {
         parsed.cycles ??= {};
         parsed.logs ??= [];
         parsed.dailyStats ??= {};
+        parsed.videos ??= {};
         return parsed;
     } catch {
         return null;
@@ -124,6 +128,7 @@ export class GuestStore implements StudyStore {
                 cycles: {},
                 logs: [],
                 dailyStats: {},
+                videos: {},
             };
         }
 
@@ -471,6 +476,17 @@ export class GuestStore implements StudyStore {
             .sort()
             .slice(-days)
             .map((key) => db.dailyStats[key] ?? emptyStat(key));
+    }
+
+    async getVideoProgress(playlistId: string): Promise<PlaylistProgress | null> {
+        const db = await this.ensure();
+        return db.videos?.[playlistId] ?? null;
+    }
+
+    async saveVideoProgress(progress: PlaylistProgress): Promise<void> {
+        const db = await this.ensure();
+        db.videos = { ...(db.videos ?? {}), [progress.playlistId]: progress };
+        this.persist();
     }
 }
 

@@ -73,6 +73,18 @@ diganti. Jangan menambah warna baru di luar tabel ini.
   notches (panel yang tepinya inset).
 - `Logo` + `LogoMark`: cincin stempel dengan rute putus-putus dan satu titik aksen.
 
+### Halaman video
+
+- Pemutar duduk di dalam satu `.panel` tanpa bayangan: iframe `aspect-video` full-bleed,
+  lalu footer info di bawahnya dipisah `border-t` (judul pelajaran, nomor mono, durasi,
+  tautan "buka di YouTube", toggle auto-play, jam tonton).
+- Pelajaran memakai baris hairline seperti `ManifestRow`: nomor mono 2 digit, judul,
+  stempel status (`SELESAI` / `SEDANG` / `BARU`, plus stempel emas "diputar").
+- Progres playlist dirender sebagai satu `Progress` 3px di bawah `PageHeader`, dengan
+  hitungan `n/total` dan total menit sebagai `.meta`.
+- Tidak ada thumbnail YouTube: manifest tidak menyimpan gambar, dan permintaan thumbnail
+  per baris akan membuat 66 request pihak ketiga.
+
 ## Gerak
 
 - 150–180 ms, `cubic-bezier(.2,.7,.3,1)`. `animate-rise` untuk konten masuk,

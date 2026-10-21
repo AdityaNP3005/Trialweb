@@ -47,7 +47,8 @@
         "signup": "Daftar",
         "logout": "Keluar",
         "guest": "Tamu",
-        "guestModeHint": "progres tersimpan di browser ini"
+        "guestModeHint": "progres tersimpan di browser ini",
+        "videos": "Video"
     },
     "landing": {
         "heroTitle": "Hafalkan kosakata Jerman dan Mandarin, satu bab setiap sesi.",
@@ -334,5 +335,33 @@
         "authProviderDisabled": "Login Google belum diaktifkan. Aktifkan di Firebase Console → Authentication → Sign-in method.",
         "authDifferentMethod": "Email ini sudah terdaftar dengan metode lain. Masuk dengan email dan kata sandi.",
         "notFound": "Tidak ditemukan"
+    },
+    "video": {
+        "title": "Materi video",
+        "subtitle": "Tonton pelajaran sesuai urutan. Progres tersimpan di akunmu, jadi bisa dilanjutkan kapan saja.",
+        "back": "Kembali ke halaman band",
+        "backToVideos": "Kembali ke video",
+        "metaVideos": "Video",
+        "metaDone": "Selesai",
+        "metaWatched": "Durasi",
+        "progressLine": "{done}/{total} video selesai",
+        "lessonLabel": "Pelajaran {number}",
+        "openOnYoutube": "Buka di YouTube",
+        "autoplay": "Putar otomatis video berikutnya",
+        "resumeHint": "Lanjutkan: {title}",
+        "allDone": "Semua video sudah selesai — tonton ulang kapan saja.",
+        "lessonsTitle": "Daftar pelajaran",
+        "guestNote": "Mode tamu menyimpan progres video di browser ini saja. Masuk dengan akun agar tersinkron antar perangkat.",
+        "reset": "Reset progres",
+        "resetBody": "Semua riwayat tontonan video ini akan dihapus. Lanjutkan?",
+        "statusDone": "Selesai",
+        "statusActive": "Sedang",
+        "statusNew": "Baru",
+        "statusPlaying": "Diputar",
+        "embedError": "Video tidak bisa diputar di sini. Buka langsung di YouTube.",
+        "loading": "Memuat pemutar…",
+        "emptyTitle": "Belum ada materi video",
+        "emptyBody": "Materi video baru tersedia untuk Deutsch A1. Bahasa lain menyusul.",
+        "emptyCta": "Kembali ke belajar"
     }
 }

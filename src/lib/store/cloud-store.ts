@@ -6,6 +6,7 @@ import type {
     DeckCycle,
     DeckInput,
     DeckProgress,
+    PlaylistProgress,
     Profile,
 } from "@/types";
 import {
@@ -24,6 +25,10 @@ import {
 } from "@/lib/data/decks";
 import { fetchProfile, patchProfile } from "@/lib/data/profile";
 import { fetchRecentStats, fetchTodayStat } from "@/lib/data/dailyStats";
+import {
+    fetchVideoProgress,
+    saveVideoProgress as saveVideoProgressCloud,
+} from "@/lib/data/videos";
 import {
     fetchAllCycles,
     fetchDeckCycle,
@@ -236,5 +241,13 @@ export class CloudStore implements StudyStore {
 
     getRecentStats(days?: number): Promise<DailyStat[]> {
         return fetchRecentStats(this.uid, days);
+    }
+
+    getVideoProgress(playlistId: string): Promise<PlaylistProgress | null> {
+        return fetchVideoProgress(this.uid, playlistId);
+    }
+
+    saveVideoProgress(progress: PlaylistProgress): Promise<void> {
+        return saveVideoProgressCloud(this.uid, progress);
     }
 }

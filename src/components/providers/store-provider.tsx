@@ -17,7 +17,7 @@ import { migrateLegacyEngine } from "@/lib/data/migrate-legacy";
 import { migrateTopicProgress } from "@/lib/data/migrate-topics";
 import { CloudStore } from "@/lib/store/cloud-store";
 import { GuestStore } from "@/lib/store/local-store";
-import { migrateGuestData } from "@/lib/store/migrate";
+import { migrateGuestData, migrateGuestVideos } from "@/lib/store/migrate";
 import type { StudyStore } from "@/lib/store/types";
 
 type StoreContextValue = {
@@ -52,8 +52,11 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
             try {
                 if (user) {
                     const decks = await listDecks(user.uid).catch(() => []);
-                    await migrateGuestData(user.uid, decks.length).catch(() => false);
                     const storedProfile = await fetchProfile(user.uid).catch(() => null);
+                    // Video progress merges first: the deck migration clears the
+                    // guest snapshot when it finishes.
+                    await migrateGuestVideos(user.uid, storedProfile).catch(() => false);
+                    await migrateGuestData(user.uid, decks.length).catch(() => false);
                     await migrateLegacyEngine(user.uid, storedProfile).catch(() => false);
                     const afterEngine = await fetchProfile(user.uid).catch(() => null);
                     await migrateTopicProgress(user.uid, afterEngine).catch(() => false);

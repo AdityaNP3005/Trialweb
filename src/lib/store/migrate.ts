@@ -8,6 +8,10 @@ import {
     progressDocRef,
     userDocRef,
 } from "@/lib/firebase/paths";
+import type { Profile } from "@/types";
+import { fetchProfile, patchProfile } from "@/lib/data/profile";
+import { fetchVideoProgress, saveVideoProgress } from "@/lib/data/videos";
+import { mergePlaylistProgress } from "@/lib/video/progress";
 import { clearGuestSnapshot, readGuestSnapshot } from "./local-store";
 
 /**
@@ -74,5 +78,32 @@ export async function migrateGuestData(
         .commit();
 
     clearGuestSnapshot();
+    return true;
+}
+
+/**
+ * Merges guest video watching into the account. Runs separately from the deck
+ * migration because accounts that already own decks would otherwise skip it,
+ * and because it must run before `migrateGuestData` clears the snapshot.
+ */
+export async function migrateGuestVideos(
+    uid: string,
+    profile?: Profile | null,
+): Promise<boolean> {
+    const current = profile ?? (await fetchProfile(uid).catch(() => null));
+    if (current?.videosV1) return false;
+
+    const guest = readGuestSnapshot();
+    const guestVideos = guest?.videos ?? {};
+
+    for (const [playlistId, guestProgress] of Object.entries(guestVideos)) {
+        const cloud = await fetchVideoProgress(uid, playlistId).catch(() => null);
+        const merged = mergePlaylistProgress(guestProgress, cloud);
+        if (merged) {
+            await saveVideoProgress(uid, { ...merged, playlistId }).catch(() => { });
+        }
+    }
+
+    await patchProfile(uid, { videosV1: true }).catch(() => { });
     return true;
 }

@@ -189,6 +189,28 @@ npm run seed:validate      # schema, duplikat lintas level, jumlah kartu vs mani
 Setelah menambah deck: daftarkan loader-nya di `src/lib/content/registry.ts`
 (import statis) dan tambahkan entri manifest (script build melakukannya otomatis).
 
+## Materi video (A1)
+
+Playlist **A1 (Free Course) | Learn German for beginners** dari kanal *Learn German*
+(66 pelajaran) bisa ditonton langsung di dalam aplikasi. Video tetap diputar dari YouTube
+lewat IFrame API — tidak ada salinan atau hosting video di repo ini — dan **tidak butuh API key**.
+
+- Buka dari menu **Video**, dari tombol di halaman band A1, atau dari baris progres di dashboard.
+- Tiap akun (dan mode tamu) menyimpan sisa tontonan per pelajaran: posisi terakhir untuk
+  melanjutkan, dan titik terjauh untuk menandai selesai (92% durasi atau video habis).
+- Pelajaran yang selesai dicap `SELESAI`; pelajaran berikutnya auto-play (bisa dimatikan).
+- Progres tamu ikut dipindahkan ke akun saat login (`videosV1`).
+
+Manifest dibundel sebagai JSON agar judul/durasi tidak diambil saat runtime:
+
+```
+src/content/de/videos/a1.json   # playlistId, kanal, 66 {id, lesson, title, durationSec}
+```
+
+Menambah band lain = tambahkan `src/content/de/videos/<band>.json` dengan bentuk yang sama,
+import di `src/lib/content/videos.ts`, lalu tautkan dari halaman band-nya. Tidak ada perubahan
+skema Firestore (`users/{uid}/videoPlaylists/{playlistId}` sudah generik).
+
 ## Script
 
 | Script | Fungsi |
@@ -228,6 +250,7 @@ src/
     topic-map.json         # id topik v3 → id topik v4
     zh/manifest.json       # buku → bab berurutan (Mandarin)
     zh/book1.json … book4.json
+    de/videos/a1.json      # manifest playlist video A1 (66 pelajaran)
 scripts/
   content/{topics.json,proper-names.json,build-decks.py}
   content/zh/{build-zh.py,person-names.json,en-id-*.tsv,id-glosses.jsonl}
@@ -247,6 +270,8 @@ users/{uid}/decks/{deckId}           deck buatan sendiri (opsional)
 users/{uid}/cards/{cardId}           kartu deck buatan sendiri / hasil impor
 users/{uid}/reviews/{reviewId}       log jawaban (repeat/next)
 users/{uid}/dailyStats/{YYYY-MM-DD}  counter harian (streak & heatmap)
+users/{uid}/videoPlaylists/{playlistId}  progres tontonan: lastVideoId, lastPositionSec,
+                                         videos{videoId: {seconds, duration, completedAt, updatedAt}}
 ```
 
 Index komposit ada di `firestore.indexes.json`: cards `(deckId, createdAt)`,
@@ -297,3 +322,6 @@ paham dan akan muncul lagi pada putaran berikutnya.
 - Heatmap/streak dihitung dari `dailyStats` (bukan seluruh log) demi menghemat read.
 - Mode tamu terikat ke browser; gunakan Export JSON (Pengaturan) untuk backup manual.
 - Google Sign-In memerlukan domain terdaftar di Firebase Auth.
+- Video butuh jaringan dan `youtube-nocookie.com` yang tidak diblokir; bila iframe gagal
+dimuat, halaman menampilkan tautan ke YouTube sebagai gantinya. Status `SELESAI` hanya
+tercatat setelah pemutar benar-benar diputar.

@@ -223,6 +223,8 @@ export type Profile = {
     topicsV3?: boolean;
     /** Set once progress has been remapped to the current topic ids. */
     topicsV4?: boolean;
+    /** Set once guest video progress has been merged into the account. */
+    videosV1?: boolean;
     /** Legacy per-band settings, kept so old documents still load. */
     bands?: BandSettings;
     /** Legacy fields, kept optional so old documents still load. */
@@ -236,4 +238,45 @@ export type DeckCounts = {
     total: number;
     known: number;
     pending: number;
+};
+
+/** One bundled YouTube lesson. `id` is the YouTube video id. */
+export type VideoLesson = {
+    id: string;
+    /** 1-based position inside the playlist. */
+    lesson: number;
+    /** Short display title, e.g. "Begrüßungen · Greetings". */
+    title: string;
+    durationSec: number;
+};
+
+/** A YouTube playlist attached to one course section (band/book). */
+export type VideoPlaylist = {
+    id: string;
+    courseId: string;
+    sectionId: SectionId;
+    title: string;
+    channel: string;
+    channelUrl: string;
+    videos: VideoLesson[];
+};
+
+/** Per-video watch state. `seconds` is the furthest point ever reached. */
+export type VideoWatch = {
+    seconds: number;
+    duration: number;
+    completedAt: number | null;
+    updatedAt: number;
+};
+
+/** Account progress for one playlist (one Firestore document). */
+export type PlaylistProgress = {
+    playlistId: string;
+    courseId: string;
+    sectionId: SectionId;
+    lastVideoId: string | null;
+    /** Player position to resume from (seconds). */
+    lastPositionSec: number;
+    videos: Record<string, VideoWatch>;
+    updatedAt: number;
 };
