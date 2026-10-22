@@ -283,7 +283,7 @@
    "exampleEn": "Hello, what is your name?",
    "id": "de-a1-greetings-0001",
    "reviewedSenses": true,
-   "readingId": "halo"
+   "readingId": "ha-lo"
   },
   {
    "front": "Guten Morgen",
@@ -296,7 +296,7 @@
    "level": "A1",
    "topic": "greetings",
    "id": "de-a1-greetings-0002",
-   "readingId": "guten morgen"
+   "readingId": "gu-tên mor-gên"
   },
   {
    "front": "Guten Tag",
@@ -309,7 +309,7 @@
    "level": "A1",
    "topic": "greetings",
    "id": "de-a1-greetings-0003",
-   "readingId": "guten tak"
+   "readingId": "gu-tên tak"
   },
   {
    "front": "Guten Abend",
@@ -322,7 +322,7 @@
    "level": "A1",
    "topic": "greetings",
    "id": "de-a1-greetings-0004",
-   "readingId": "guten abent"
+   "readingId": "gu-tên a-bênt"
   },
   {
    "front": "Gute Nacht",
@@ -335,7 +335,7 @@
    "level": "A1",
    "topic": "greetings",
    "id": "de-a1-greetings-0005",
-   "readingId": "gute nakht"
+   "readingId": "gu-tê nakht"
   },
   {
    "front": "Auf Wiedersehen",
@@ -348,7 +348,7 @@
    "level": "A1",
    "topic": "greetings",
    "id": "de-a1-greetings-0006",
-   "readingId": "auf widazéen"
+   "readingId": "auf wi-da-ze-ên"
   },
   {
    "front": "Tschüss",
@@ -377,7 +377,7 @@
    "topic": "greetings",
    "id": "de-a1-greetings-0008",
    "reviewedSenses": true,
-   "readingId": "bite"
+   "readingId": "bi-tê"
   },
   {
    "front": "Danke",
@@ -392,7 +392,7 @@
    "ipa": "[ˈdaŋkə]",
    "id": "de-a1-greetings-0009",
    "reviewedSenses": true,
-   "readingId": "dangke"
+   "readingId": "dang-kê"
   },
   {
    "front": "Entschuldigung",
@@ -406,7 +406,7 @@
    "topic": "greetings",
    "id": "de-a1-greetings-0010",
    "reviewedSenses": true,
-   "readingId": "éntsyuldigung"
+   "readingId": "ent-syul-di-gung"
   },
   {
    "front": "Wie geht es dir?",
@@ -419,7 +419,7 @@
    "level": "A1",
    "topic": "greetings",
    "id": "de-a1-greetings-0013",
-   "readingId": "wi gét és dia?"
+   "readingId": "wi get es dia?"
   },
   {
    "front": "Ich heiße …",
@@ -435,7 +435,7 @@
    "exampleId": "Nama saya Anna.",
    "exampleEn": "My name is Anna.",
    "id": "de-a1-greetings-0014",
-   "readingId": "isy haise …"
+   "readingId": "ih hai-sê …"
   },
   {
    "front": "Willkommen",
@@ -449,7 +449,7 @@
    "topic": "greetings",
    "id": "de-a1-greetings-0035",
    "reviewedSenses": true,
-   "readingId": "wilkomen"
+   "readingId": "wil-ko-mên"
   },
   {
    "front": "hey",
@@ -462,7 +462,7 @@
    "level": "A1",
    "topic": "greetings",
    "id": "de-a1-function-words-1-0045",
-   "readingId": "héi"
+   "readingId": "hei"
   },
   {
    "front": "hi",
@@ -571,7 +571,7 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0006",
    "reviewedSenses": true,
-   "readingId": "zéks"
+   "readingId": "zeks"
   },
   {
    "front": "sieben",
@@ -584,7 +584,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0007",
-   "readingId": "ziben"
+   "readingId": "zi-bên"
   },
   {
    "front": "acht",
@@ -626,7 +626,7 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0010",
    "reviewedSenses": true,
-   "readingId": "tsén"
+   "readingId": "tsen"
   },
   {
    "front": "elf",
@@ -639,7 +639,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0011",
-   "readingId": "élf"
+   "readingId": "elf"
   },
   {
    "front": "zwölf",
@@ -665,7 +665,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0013",
-   "readingId": "tswantsisy"
+   "readingId": "tswan-tsih"
   },
   {
    "front": "hundert",
@@ -679,7 +679,7 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0014",
    "reviewedSenses": true,
-   "readingId": "hundat"
+   "readingId": "hun-dat"
   },
   {
    "front": "der Tag",
@@ -697,7 +697,7 @@
    "exampleId": "Selamat siang! Semoga harimu menyenangkan.",
    "exampleEn": "Good day! Have a nice day.",
    "id": "de-a1-numbers-time-0015",
-   "readingId": "déa tak"
+   "readingId": "dea tak"
   },
   {
    "front": "die Woche",
@@ -712,7 +712,7 @@
    "gender": "die",
    "plural": "die Wochen",
    "id": "de-a1-numbers-time-0016",
-   "readingId": "di wokhe"
+   "readingId": "di wo-khê"
   },
   {
    "front": "der Monat",
@@ -727,7 +727,7 @@
    "gender": "der",
    "plural": "die Monate",
    "id": "de-a1-numbers-time-0017",
-   "readingId": "déa monat"
+   "readingId": "dea mo-nat"
   },
   {
    "front": "das Jahr",
@@ -756,7 +756,7 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0019",
    "reviewedSenses": true,
-   "readingId": "hoite"
+   "readingId": "hoi-tê"
   },
   {
    "front": "morgen",
@@ -770,7 +770,7 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0020",
    "reviewedSenses": true,
-   "readingId": "morgen"
+   "readingId": "mor-gên"
   },
   {
    "front": "gestern",
@@ -783,7 +783,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0021",
-   "readingId": "géstan"
+   "readingId": "ges-tan"
   },
   {
    "front": "jetzt",
@@ -796,7 +796,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0022",
-   "readingId": "yétst"
+   "readingId": "yetst"
   },
   {
    "front": "der Abend",
@@ -811,7 +811,7 @@
    "gender": "der",
    "plural": "die Abende",
    "id": "de-a1-numbers-time-0024",
-   "readingId": "déa abent"
+   "readingId": "dea a-bênt"
   },
   {
    "front": "die Nacht",
@@ -856,7 +856,7 @@
    "gender": "die",
    "plural": "die Stunden",
    "id": "de-a1-numbers-time-0027",
-   "readingId": "di sytunde"
+   "readingId": "di sytun-dê"
   },
   {
    "front": "die Minute",
@@ -871,7 +871,7 @@
    "gender": "die",
    "plural": "die Minuten",
    "id": "de-a1-numbers-time-0028",
-   "readingId": "di minute"
+   "readingId": "di mi-nu-tê"
   },
   {
    "front": "Montag",
@@ -884,7 +884,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0029",
-   "readingId": "montak"
+   "readingId": "mon-tak"
   },
   {
    "front": "Dienstag",
@@ -897,7 +897,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0030",
-   "readingId": "dinstak"
+   "readingId": "dins-tak"
   },
   {
    "front": "Mittwoch",
@@ -910,7 +910,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0031",
-   "readingId": "mitwokh"
+   "readingId": "mit-wokh"
   },
   {
    "front": "Donnerstag",
@@ -923,7 +923,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0032",
-   "readingId": "donastak"
+   "readingId": "do-nas-tak"
   },
   {
    "front": "Freitag",
@@ -936,7 +936,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0033",
-   "readingId": "fraitak"
+   "readingId": "frai-tak"
   },
   {
    "front": "Samstag",
@@ -949,7 +949,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0034",
-   "readingId": "zamstak"
+   "readingId": "zam-stak"
   },
   {
    "front": "Sonntag",
@@ -962,7 +962,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0035",
-   "readingId": "zontak"
+   "readingId": "zon-tak"
   },
   {
    "front": "ein",
@@ -1002,7 +1002,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0038",
-   "readingId": "ima"
+   "readingId": "i-ma"
   },
   {
    "front": "nie",
@@ -1042,7 +1042,7 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0044",
    "reviewedSenses": true,
-   "readingId": "sypéta"
+   "readingId": "sype-ta"
   },
   {
    "front": "Erste",
@@ -1056,7 +1056,7 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0047",
    "reviewedSenses": true,
-   "readingId": "éaste"
+   "readingId": "eas-tê"
   },
   {
    "front": "manchmal",
@@ -1069,7 +1069,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0050",
-   "readingId": "mansymal"
+   "readingId": "manh-mal"
   },
   {
    "front": "oft",
@@ -1123,7 +1123,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-function-words-2-0017",
-   "readingId": "damals"
+   "readingId": "da-mals"
   },
   {
    "front": "letzte",
@@ -1136,7 +1136,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-adjectives-basic-0033",
-   "readingId": "létste"
+   "readingId": "lets-tê"
   },
   {
    "front": "früher",
@@ -1149,7 +1149,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-adjectives-basic-0052",
-   "readingId": "fria"
+   "readingId": "fri-a"
   },
   {
    "front": "Ende",
@@ -1162,7 +1162,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-general-1-0034",
-   "readingId": "énde"
+   "readingId": "en-dê"
   },
   {
    "front": "Nummer",
@@ -1175,7 +1175,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-general-1-0063",
-   "readingId": "numa"
+   "readingId": "nu-ma"
   },
   {
    "front": "Zukunft",
@@ -1188,7 +1188,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-general-2-0007",
-   "readingId": "tsukunft"
+   "readingId": "tsu-kunft"
   },
   {
    "front": "Moment",
@@ -1201,7 +1201,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-general-2-0025",
-   "readingId": "momént"
+   "readingId": "mo-ment"
   },
   {
    "front": "der Vater",
@@ -1219,7 +1219,7 @@
    "exampleId": "Ayah saya suka memasak.",
    "exampleEn": "My father likes cooking.",
    "id": "de-a1-family-people-0001",
-   "readingId": "déa fata"
+   "readingId": "dea fa-ta"
   },
   {
    "front": "die Mutter",
@@ -1234,7 +1234,7 @@
    "gender": "die",
    "plural": "die Mütter",
    "id": "de-a1-family-people-0002",
-   "readingId": "di muta"
+   "readingId": "di mu-ta"
   },
   {
    "front": "der Sohn",
@@ -1249,7 +1249,7 @@
    "gender": "der",
    "plural": "die Söhne",
    "id": "de-a1-family-people-0003",
-   "readingId": "déa zon"
+   "readingId": "dea zon"
   },
   {
    "front": "die Tochter",
@@ -1264,7 +1264,7 @@
    "gender": "die",
    "plural": "die Töchter",
    "id": "de-a1-family-people-0004",
-   "readingId": "di tokhta"
+   "readingId": "di tokh-ta"
   },
   {
    "front": "der Bruder",
@@ -1279,7 +1279,7 @@
    "gender": "der",
    "plural": "die Brüder",
    "id": "de-a1-family-people-0005",
-   "readingId": "déa bruda"
+   "readingId": "dea bru-da"
   },
   {
    "front": "die Schwester",
@@ -1294,7 +1294,7 @@
    "gender": "die",
    "plural": "die Schwestern",
    "id": "de-a1-family-people-0006",
-   "readingId": "di sywésta"
+   "readingId": "di sywes-ta"
   },
   {
    "front": "die Eltern",
@@ -1309,7 +1309,7 @@
    "gender": "die",
    "plural": "die Eltern",
    "id": "de-a1-family-people-0007",
-   "readingId": "di éltan"
+   "readingId": "di el-tan"
   },
   {
    "front": "der Großvater",
@@ -1324,7 +1324,7 @@
    "gender": "der",
    "plural": "die Großväter",
    "id": "de-a1-family-people-0008",
-   "readingId": "déa grosfata"
+   "readingId": "dea gros-fa-ta"
   },
   {
    "front": "die Großmutter",
@@ -1339,7 +1339,7 @@
    "gender": "die",
    "plural": "die Großmütter",
    "id": "de-a1-family-people-0009",
-   "readingId": "di grosmuta"
+   "readingId": "di gros-mu-ta"
   },
   {
    "front": "das Kind",
@@ -1372,7 +1372,7 @@
    "gender": "der",
    "plural": "die Männer",
    "id": "de-a1-family-people-0011",
-   "readingId": "déa man"
+   "readingId": "dea man"
   },
   {
    "front": "die Frau",
@@ -1402,7 +1402,7 @@
    "gender": "der",
    "plural": "die Freunde",
    "id": "de-a1-family-people-0013",
-   "readingId": "déa froint"
+   "readingId": "dea froint"
   },
   {
    "front": "die Freundin",
@@ -1417,7 +1417,7 @@
    "gender": "die",
    "plural": "die Freundinnen",
    "id": "de-a1-family-people-0014",
-   "readingId": "di froindin"
+   "readingId": "di froin-din"
   },
   {
    "front": "Leute",
@@ -1430,7 +1430,7 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0015",
-   "readingId": "loite"
+   "readingId": "loi-tê"
   },
   {
    "front": "Mädchen",
@@ -1443,7 +1443,7 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0016",
-   "readingId": "métsyen"
+   "readingId": "met-hên"
   },
   {
    "front": "Junge",
@@ -1456,7 +1456,7 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0017",
-   "readingId": "yunge"
+   "readingId": "yu-ngê"
   },
   {
    "front": "Familie",
@@ -1469,7 +1469,7 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0018",
-   "readingId": "familie"
+   "readingId": "fa-mi-li-ê"
   },
   {
    "front": "Baby",
@@ -1482,7 +1482,7 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0019",
-   "readingId": "bébi"
+   "readingId": "be-bi"
   },
   {
    "front": "Mensch",
@@ -1495,7 +1495,7 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0020",
-   "readingId": "ménsy"
+   "readingId": "mensy"
   },
   {
    "front": "Onkel",
@@ -1508,7 +1508,7 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0021",
-   "readingId": "ongkel"
+   "readingId": "ong-kêl"
   },
   {
    "front": "treffen",
@@ -1522,7 +1522,7 @@
    "topic": "family-people",
    "id": "de-a1-verbs-basic-0046",
    "reviewedSenses": true,
-   "readingId": "tréfen"
+   "readingId": "tre-fên"
   },
   {
    "front": "lieben",
@@ -1535,7 +1535,7 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-verbs-basic-0062",
-   "readingId": "liben"
+   "readingId": "li-bên"
   },
   {
    "front": "heiraten",
@@ -1548,7 +1548,7 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-verbs-basic-0072",
-   "readingId": "hairaten"
+   "readingId": "hai-ra-tên"
   },
   {
    "front": "Paar",
@@ -1574,7 +1574,7 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-general-1-0040",
-   "readingId": "mama"
+   "readingId": "ma-ma"
   },
   {
    "front": "Schatz",
@@ -1602,7 +1602,7 @@
    "gender": "der",
    "plural": "die Bahnhöfe",
    "id": "de-a1-directions-places-0001",
-   "readingId": "déa banhof"
+   "readingId": "dea ban-hof"
   },
   {
    "front": "der Flughafen",
@@ -1617,7 +1617,7 @@
    "gender": "der",
    "plural": "die Flughäfen",
    "id": "de-a1-directions-places-0002",
-   "readingId": "déa fluk-hafen"
+   "readingId": "dea fluk-ha-fên"
   },
   {
    "front": "hier",
@@ -1669,7 +1669,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-directions-places-0022",
-   "readingId": "oben"
+   "readingId": "o-bên"
   },
   {
    "front": "unten",
@@ -1682,7 +1682,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-directions-places-0025",
-   "readingId": "unten"
+   "readingId": "un-tên"
   },
   {
    "front": "fahren",
@@ -1695,7 +1695,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-travel-transport-0001",
-   "readingId": "faren"
+   "readingId": "fa-rên"
   },
   {
    "front": "der Zug",
@@ -1710,7 +1710,7 @@
    "gender": "der",
    "plural": "die Züge",
    "id": "de-a1-travel-transport-0002",
-   "readingId": "déa tsuk"
+   "readingId": "dea tsuk"
   },
   {
    "front": "das Auto",
@@ -1725,7 +1725,7 @@
    "gender": "das",
    "plural": "die Autos",
    "id": "de-a1-travel-transport-0003",
-   "readingId": "das auto"
+   "readingId": "das au-to"
   },
   {
    "front": "das Fahrrad",
@@ -1740,7 +1740,7 @@
    "gender": "das",
    "plural": "die Fahrräder",
    "id": "de-a1-travel-transport-0004",
-   "readingId": "das farat"
+   "readingId": "das fa-rat"
   },
   {
    "front": "die U-Bahn",
@@ -1755,7 +1755,7 @@
    "gender": "die",
    "plural": "die U-Bahnen",
    "id": "de-a1-travel-transport-0005",
-   "readingId": "di uban"
+   "readingId": "di u-ban"
   },
   {
    "front": "die Fahrkarte",
@@ -1773,7 +1773,7 @@
    "exampleId": "Satu tiket ke Berlin, tolong.",
    "exampleEn": "One ticket to Berlin, please.",
    "id": "de-a1-travel-transport-0006",
-   "readingId": "di fakarte"
+   "readingId": "di fa-kar-tê"
   },
   {
    "front": "Wagen",
@@ -1787,7 +1787,7 @@
    "topic": "travel-transport",
    "id": "de-a1-travel-transport-0008",
    "reviewedSenses": true,
-   "readingId": "wagen"
+   "readingId": "wa-gên"
   },
   {
    "front": "Pass",
@@ -1853,7 +1853,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-function-words-2-0011",
-   "readingId": "hiahéa"
+   "readingId": "hia-hea"
   },
   {
    "front": "überall",
@@ -1866,7 +1866,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-function-words-2-0014",
-   "readingId": "iba'al"
+   "readingId": "i-ba-al"
   },
   {
    "front": "irgendwo",
@@ -1879,7 +1879,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-function-words-2-0019",
-   "readingId": "irgentwo"
+   "readingId": "ir-gênt-wo"
   },
   {
    "front": "drüben",
@@ -1892,7 +1892,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-function-words-2-0020",
-   "readingId": "driben"
+   "readingId": "dri-bên"
   },
   {
    "front": "gehen",
@@ -1905,7 +1905,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-verbs-basic-0002",
-   "readingId": "géen"
+   "readingId": "ge-ên"
   },
   {
    "front": "kommen",
@@ -1918,7 +1918,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-verbs-basic-0003",
-   "readingId": "komen"
+   "readingId": "ko-mên"
   },
   {
    "front": "laufen",
@@ -1931,7 +1931,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-verbs-basic-0065",
-   "readingId": "laufen"
+   "readingId": "lau-fên"
   },
   {
    "front": "rein",
@@ -1977,7 +1977,7 @@
    "topic": "food-drink",
    "gender": "die",
    "id": "de-a1-food-drink-0002",
-   "readingId": "di buta"
+   "readingId": "di bu-ta"
   },
   {
    "front": "der Käse",
@@ -1992,7 +1992,7 @@
    "gender": "der",
    "plural": "die Käse",
    "id": "de-a1-food-drink-0003",
-   "readingId": "déa kéze"
+   "readingId": "dea ke-zê"
   },
   {
    "front": "das Ei",
@@ -2021,7 +2021,7 @@
    "topic": "food-drink",
    "gender": "die",
    "id": "de-a1-food-drink-0005",
-   "readingId": "di milsy"
+   "readingId": "di milh"
   },
   {
    "front": "der Kaffee",
@@ -2036,7 +2036,7 @@
    "gender": "der",
    "plural": "die Kaffees",
    "id": "de-a1-food-drink-0007",
-   "readingId": "déa kafé"
+   "readingId": "dea ka-fe"
   },
   {
    "front": "der Tee",
@@ -2051,7 +2051,7 @@
    "gender": "der",
    "plural": "die Tees",
    "id": "de-a1-food-drink-0008",
-   "readingId": "déa té"
+   "readingId": "dea te"
   },
   {
    "front": "das Bier",
@@ -2081,7 +2081,7 @@
    "gender": "der",
    "plural": "die Weine",
    "id": "de-a1-food-drink-0010",
-   "readingId": "déa wain"
+   "readingId": "dea wain"
   },
   {
    "front": "der Apfel",
@@ -2100,7 +2100,7 @@
    "exampleId": "Saya makan sebuah apel.",
    "exampleEn": "I am eating an apple.",
    "id": "de-a1-food-drink-0011",
-   "readingId": "déa apfel"
+   "readingId": "dea a-pfêl"
   },
   {
    "front": "die Banane",
@@ -2115,7 +2115,7 @@
    "gender": "die",
    "plural": "die Bananen",
    "id": "de-a1-food-drink-0012",
-   "readingId": "di banane"
+   "readingId": "di ba-na-nê"
   },
   {
    "front": "die Orange",
@@ -2131,7 +2131,7 @@
    "plural": "die Orangen",
    "id": "de-a1-food-drink-0013",
    "reviewedSenses": true,
-   "readingId": "di orangje"
+   "readingId": "di o-rang-jê"
   },
   {
    "front": "das Fleisch",
@@ -2160,7 +2160,7 @@
    "gender": "der",
    "plural": "die Fische",
    "id": "de-a1-food-drink-0015",
-   "readingId": "déa fisy"
+   "readingId": "dea fisy"
   },
   {
    "front": "das Hähnchen",
@@ -2175,7 +2175,7 @@
    "gender": "das",
    "plural": "die Hähnchen",
    "id": "de-a1-food-drink-0016",
-   "readingId": "das hénsyen"
+   "readingId": "das hen-hên"
   },
   {
    "front": "der Reis",
@@ -2189,7 +2189,7 @@
    "topic": "food-drink",
    "gender": "der",
    "id": "de-a1-food-drink-0017",
-   "readingId": "déa rais"
+   "readingId": "dea rais"
   },
   {
    "front": "die Kartoffel",
@@ -2204,7 +2204,7 @@
    "gender": "die",
    "plural": "die Kartoffeln",
    "id": "de-a1-food-drink-0018",
-   "readingId": "di kartofel"
+   "readingId": "di kar-to-fêl"
   },
   {
    "front": "der Salat",
@@ -2219,7 +2219,7 @@
    "gender": "der",
    "plural": "die Salate",
    "id": "de-a1-food-drink-0019",
-   "readingId": "déa zalat"
+   "readingId": "dea za-lat"
   },
   {
    "front": "das Gemüse",
@@ -2234,7 +2234,7 @@
    "gender": "das",
    "plural": "die Gemüse",
    "id": "de-a1-food-drink-0020",
-   "readingId": "das gemize"
+   "readingId": "das gê-mi-zê"
   },
   {
    "front": "der Zucker",
@@ -2248,7 +2248,7 @@
    "topic": "food-drink",
    "gender": "der",
    "id": "de-a1-food-drink-0021",
-   "readingId": "déa tsuka"
+   "readingId": "dea tsu-ka"
   },
   {
    "front": "das Salz",
@@ -2278,7 +2278,7 @@
    "gender": "der",
    "plural": "die Kuchen",
    "id": "de-a1-food-drink-0023",
-   "readingId": "déa kukhen"
+   "readingId": "dea ku-khên"
   },
   {
    "front": "das Frühstück",
@@ -2293,7 +2293,7 @@
    "gender": "das",
    "plural": "die Frühstücke",
    "id": "de-a1-food-drink-0024",
-   "readingId": "das frisytik"
+   "readingId": "das fri-sytik"
   },
   {
    "front": "das Mittagessen",
@@ -2308,7 +2308,7 @@
    "gender": "das",
    "plural": "die Mittagessen",
    "id": "de-a1-food-drink-0025",
-   "readingId": "das mitakésen"
+   "readingId": "das mi-tak-e-sên"
   },
   {
    "front": "das Abendessen",
@@ -2323,7 +2323,7 @@
    "gender": "das",
    "plural": "die Abendessen",
    "id": "de-a1-food-drink-0026",
-   "readingId": "das abentésen"
+   "readingId": "das a-bênt-e-sên"
   },
   {
    "front": "die Speisekarte",
@@ -2338,7 +2338,7 @@
    "gender": "die",
    "plural": "die Speisekarten",
    "id": "de-a1-food-drink-0027",
-   "readingId": "di sypaizekarte"
+   "readingId": "di sypai-zê-kar-tê"
   },
   {
    "front": "trinken",
@@ -2352,7 +2352,7 @@
    "topic": "food-drink",
    "id": "de-a1-food-drink-0028",
    "reviewedSenses": true,
-   "readingId": "tringken"
+   "readingId": "tring-kên"
   },
   {
    "front": "das Restaurant",
@@ -2367,7 +2367,7 @@
    "gender": "das",
    "plural": "die Restaurants",
    "id": "de-a1-directions-places-0007",
-   "readingId": "das réstorang"
+   "readingId": "das res-to-rang"
   },
   {
    "front": "heißen",
@@ -2380,7 +2380,7 @@
    "level": "A1",
    "topic": "food-drink",
    "id": "de-a1-verbs-basic-0077",
-   "readingId": "haisen"
+   "readingId": "hai-sên"
   },
   {
    "front": "gar",
@@ -2424,7 +2424,7 @@
    "gender": "die",
    "plural": "die Wohnungen",
    "id": "de-a1-home-daily-0002",
-   "readingId": "di wonung"
+   "readingId": "di wo-nung"
   },
   {
    "front": "die Küche",
@@ -2439,7 +2439,7 @@
    "gender": "die",
    "plural": "die Küchen",
    "id": "de-a1-home-daily-0003",
-   "readingId": "di kisye"
+   "readingId": "di ki-hê"
   },
   {
    "front": "das Bad",
@@ -2469,7 +2469,7 @@
    "gender": "das",
    "plural": "die Schlafzimmer",
    "id": "de-a1-home-daily-0005",
-   "readingId": "das sylaftsima"
+   "readingId": "das sylaf-tsi-ma"
   },
   {
    "front": "das Wohnzimmer",
@@ -2484,7 +2484,7 @@
    "gender": "das",
    "plural": "die Wohnzimmer",
    "id": "de-a1-home-daily-0006",
-   "readingId": "das wontsima"
+   "readingId": "das won-tsi-ma"
   },
   {
    "front": "der Tisch",
@@ -2499,7 +2499,7 @@
    "gender": "der",
    "plural": "die Tische",
    "id": "de-a1-home-daily-0007",
-   "readingId": "déa tisy"
+   "readingId": "dea tisy"
   },
   {
    "front": "der Stuhl",
@@ -2514,7 +2514,7 @@
    "gender": "der",
    "plural": "die Stühle",
    "id": "de-a1-home-daily-0008",
-   "readingId": "déa sytul"
+   "readingId": "dea sytul"
   },
   {
    "front": "das Bett",
@@ -2529,7 +2529,7 @@
    "gender": "das",
    "plural": "die Betten",
    "id": "de-a1-home-daily-0009",
-   "readingId": "das bét"
+   "readingId": "das bet"
   },
   {
    "front": "die Tür",
@@ -2562,7 +2562,7 @@
    "gender": "das",
    "plural": "die Fenster",
    "id": "de-a1-home-daily-0011",
-   "readingId": "das fénsta"
+   "readingId": "das fen-sta"
   },
   {
    "front": "die Lampe",
@@ -2577,7 +2577,7 @@
    "gender": "die",
    "plural": "die Lampen",
    "id": "de-a1-home-daily-0012",
-   "readingId": "di lampe"
+   "readingId": "di lam-pê"
   },
   {
    "front": "der Schlüssel",
@@ -2592,7 +2592,7 @@
    "gender": "der",
    "plural": "die Schlüssel",
    "id": "de-a1-home-daily-0014",
-   "readingId": "déa sylisel"
+   "readingId": "dea syli-sêl"
   },
   {
    "front": "wohnen",
@@ -2605,7 +2605,7 @@
    "level": "A1",
    "topic": "home-daily",
    "id": "de-a1-home-daily-0017",
-   "readingId": "wonen"
+   "readingId": "wo-nên"
   },
   {
    "front": "Zimmer",
@@ -2618,7 +2618,7 @@
    "level": "A1",
    "topic": "home-daily",
    "id": "de-a1-home-daily-0018",
-   "readingId": "tsima"
+   "readingId": "tsi-ma"
   },
   {
    "front": "Platz",
@@ -2646,7 +2646,7 @@
    "gender": "die",
    "plural": "die Taschen",
    "id": "de-a1-home-daily-0016",
-   "readingId": "di tasye"
+   "readingId": "di ta-syê"
   },
   {
    "front": "der Supermarkt",
@@ -2661,7 +2661,7 @@
    "gender": "der",
    "plural": "die Supermärkte",
    "id": "de-a1-directions-places-0006",
-   "readingId": "déa zupamarkt"
+   "readingId": "dea zu-pa-markt"
   },
   {
    "front": "die Rechnung",
@@ -2679,7 +2679,7 @@
    "exampleId": "Tagihannya, tolong!",
    "exampleEn": "The bill, please!",
    "id": "de-a1-general-2-0019",
-   "readingId": "di résynung"
+   "readingId": "di reh-nung"
   },
   {
    "front": "das Geld",
@@ -2697,7 +2697,7 @@
    "exampleId": "Saya tidak punya uang.",
    "exampleEn": "I have no money.",
    "id": "de-a1-general-2-0020",
-   "readingId": "das gélt"
+   "readingId": "das gelt"
   },
   {
    "front": "kaufen",
@@ -2710,7 +2710,7 @@
    "level": "A1",
    "topic": "clothes-shopping",
    "id": "de-a1-general-2-0021",
-   "readingId": "kaufen"
+   "readingId": "kau-fên"
   },
   {
    "front": "bezahlen",
@@ -2723,7 +2723,7 @@
    "level": "A1",
    "topic": "clothes-shopping",
    "id": "de-a1-general-2-0022",
-   "readingId": "betsalen"
+   "readingId": "bê-tsa-lên"
   },
   {
    "front": "rot",
@@ -2765,7 +2765,7 @@
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0003",
    "reviewedSenses": true,
-   "readingId": "gélp"
+   "readingId": "gelp"
   },
   {
    "front": "grün",
@@ -2913,7 +2913,7 @@
    "topic": "colors-shapes",
    "id": "de-a1-directions-places-0015",
    "reviewedSenses": true,
-   "readingId": "gerade"
+   "readingId": "gê-ra-dê"
   },
   {
    "front": "Seite",
@@ -2926,7 +2926,7 @@
    "level": "A1",
    "topic": "colors-shapes",
    "id": "de-a1-directions-places-0023",
-   "readingId": "zaite"
+   "readingId": "zai-tê"
   },
   {
    "front": "eben",
@@ -2940,7 +2940,7 @@
    "topic": "colors-shapes",
    "id": "de-a1-function-words-2-0003",
    "reviewedSenses": true,
-   "readingId": "ében"
+   "readingId": "e-bên"
   },
   {
    "front": "licht",
@@ -2954,7 +2954,7 @@
    "topic": "colors-shapes",
    "id": "de-a1-adjectives-basic-0063",
    "reviewedSenses": true,
-   "readingId": "lisyt"
+   "readingId": "liht"
   },
   {
    "front": "der Kopf",
@@ -2969,7 +2969,7 @@
    "gender": "der",
    "plural": "die Köpfe",
    "id": "de-a1-body-health-0001",
-   "readingId": "déa kopf"
+   "readingId": "dea kopf"
   },
   {
    "front": "das Auge",
@@ -2984,7 +2984,7 @@
    "gender": "das",
    "plural": "die Augen",
    "id": "de-a1-body-health-0002",
-   "readingId": "das auge"
+   "readingId": "das au-gê"
   },
   {
    "front": "die Hand",
@@ -3029,7 +3029,7 @@
    "gender": "der",
    "plural": "die Bäuche",
    "id": "de-a1-body-health-0006",
-   "readingId": "déa baukh"
+   "readingId": "dea baukh"
   },
   {
    "front": "der Zahn",
@@ -3044,7 +3044,7 @@
    "gender": "der",
    "plural": "die Zähne",
    "id": "de-a1-body-health-0007",
-   "readingId": "déa tsan"
+   "readingId": "dea tsan"
   },
   {
    "front": "Gesicht",
@@ -3057,7 +3057,7 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-body-health-0011",
-   "readingId": "gezisyt"
+   "readingId": "gê-ziht"
   },
   {
    "front": "Blut",
@@ -3083,7 +3083,7 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-body-health-0013",
-   "readingId": "hérts"
+   "readingId": "herts"
   },
   {
    "front": "Körper",
@@ -3096,7 +3096,7 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-body-health-0014",
-   "readingId": "kerpa"
+   "readingId": "ker-pa"
   },
   {
    "front": "sehen",
@@ -3110,7 +3110,7 @@
    "topic": "body-health",
    "id": "de-a1-verbs-basic-0008",
    "reviewedSenses": true,
-   "readingId": "zéen"
+   "readingId": "ze-ên"
   },
   {
    "front": "hören",
@@ -3123,7 +3123,7 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-verbs-basic-0009",
-   "readingId": "heren"
+   "readingId": "he-rên"
   },
   {
    "front": "Arsch",
@@ -3149,7 +3149,7 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-general-2-0017",
-   "readingId": "séks"
+   "readingId": "seks"
   },
   {
    "front": "krank",
@@ -3180,7 +3180,7 @@
    "gender": "der",
    "plural": "die Ärzte",
    "id": "de-a1-body-health-0009",
-   "readingId": "déa atst"
+   "readingId": "dea atst"
   },
   {
    "front": "das Medikament",
@@ -3195,7 +3195,7 @@
    "gender": "das",
    "plural": "die Medikamente",
    "id": "de-a1-body-health-0010",
-   "readingId": "das médikamént"
+   "readingId": "das me-di-ka-ment"
   },
   {
    "front": "das Krankenhaus",
@@ -3210,7 +3210,7 @@
    "gender": "das",
    "plural": "die Krankenhäuser",
    "id": "de-a1-directions-places-0005",
-   "readingId": "das krangkenhaus"
+   "readingId": "das krang-kên-haus"
   },
   {
    "front": "die Apotheke",
@@ -3225,7 +3225,7 @@
    "gender": "die",
    "plural": "die Apotheken",
    "id": "de-a1-directions-places-0008",
-   "readingId": "di apotéke"
+   "readingId": "di a-po-te-kê"
   },
   {
    "front": "schlafen",
@@ -3238,7 +3238,7 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-verbs-basic-0015",
-   "readingId": "sylafen"
+   "readingId": "syla-fên"
   },
   {
    "front": "sterben",
@@ -3251,7 +3251,7 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-verbs-basic-0045",
-   "readingId": "sytérben"
+   "readingId": "syter-bên"
   },
   {
    "front": "müde",
@@ -3264,7 +3264,7 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-adjectives-basic-0010",
-   "readingId": "mide"
+   "readingId": "mi-dê"
   },
   {
    "front": "Angst",
@@ -3303,7 +3303,7 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-general-1-0074",
-   "readingId": "doktoa"
+   "readingId": "dok-toa"
   },
   {
    "front": "Weh",
@@ -3316,7 +3316,7 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-general-2-0018",
-   "readingId": "wé"
+   "readingId": "we"
   },
   {
    "front": "der Park",
@@ -3331,7 +3331,7 @@
    "gender": "der",
    "plural": "die Parks",
    "id": "de-a1-directions-places-0009",
-   "readingId": "déa park"
+   "readingId": "dea park"
   },
   {
    "front": "die Straße",
@@ -3346,7 +3346,7 @@
    "gender": "die",
    "plural": "die Straßen",
    "id": "de-a1-directions-places-0010",
-   "readingId": "di sytrase"
+   "readingId": "di sytra-sê"
   },
   {
    "front": "Weg",
@@ -3359,7 +3359,7 @@
    "level": "A1",
    "topic": "directions-places",
    "id": "de-a1-directions-places-0014",
-   "readingId": "wék"
+   "readingId": "wek"
   },
   {
    "front": "Stadt",
@@ -3411,7 +3411,7 @@
    "level": "A1",
    "topic": "places-geography",
    "id": "de-a1-general-1-0020",
-   "readingId": "wélt"
+   "readingId": "welt"
   },
   {
    "front": "Erde",
@@ -3424,7 +3424,7 @@
    "level": "A1",
    "topic": "places-geography",
    "id": "de-a1-general-2-0011",
-   "readingId": "éade"
+   "readingId": "ea-dê"
   },
   {
    "front": "Hund",
@@ -3450,7 +3450,7 @@
    "level": "A1",
    "topic": "environment-nature",
    "id": "de-a1-general-1-0076",
-   "readingId": "foia"
+   "readingId": "foi-a"
   },
   {
    "front": "Luft",
@@ -3476,7 +3476,7 @@
    "level": "A1",
    "topic": "environment-nature",
    "id": "de-a1-general-2-0031",
-   "readingId": "himel"
+   "readingId": "hi-mêl"
   },
   {
    "front": "der Arm",
@@ -3492,7 +3492,7 @@
    "plural": "die Arme",
    "id": "de-a1-body-health-0004",
    "reviewedSenses": true,
-   "readingId": "déa arm"
+   "readingId": "dea arm"
   },
   {
    "front": "arbeiten",
@@ -3505,7 +3505,7 @@
    "level": "A1",
    "topic": "work-economy",
    "id": "de-a1-work-school-0001",
-   "readingId": "arbaiten"
+   "readingId": "ar-bai-tên"
   },
   {
    "front": "die Arbeit",
@@ -3520,7 +3520,7 @@
    "gender": "die",
    "plural": "die Arbeiten",
    "id": "de-a1-work-school-0003",
-   "readingId": "di arbait"
+   "readingId": "di ar-bait"
   },
   {
    "front": "der Beruf",
@@ -3535,7 +3535,7 @@
    "gender": "der",
    "plural": "die Berufe",
    "id": "de-a1-work-school-0004",
-   "readingId": "déa beruf"
+   "readingId": "dea bê-ruf"
   },
   {
    "front": "das Büro",
@@ -3550,7 +3550,7 @@
    "gender": "das",
    "plural": "die Büros",
    "id": "de-a1-work-school-0005",
-   "readingId": "das biro"
+   "readingId": "das bi-ro"
   },
   {
    "front": "der Termin",
@@ -3565,7 +3565,7 @@
    "gender": "der",
    "plural": "die Termine",
    "id": "de-a1-work-school-0011",
-   "readingId": "déa términ"
+   "readingId": "dea ter-min"
   },
   {
    "front": "Job",
@@ -3591,7 +3591,7 @@
    "level": "A1",
    "topic": "work-economy",
    "id": "de-a1-general-1-0068",
-   "readingId": "dolar"
+   "readingId": "do-lar"
   },
   {
    "front": "Stelle",
@@ -3604,7 +3604,7 @@
    "level": "A1",
    "topic": "work-economy",
    "id": "de-a1-general-1-0077",
-   "readingId": "sytéle"
+   "readingId": "syte-lê"
   },
   {
    "front": "teuer",
@@ -3617,7 +3617,7 @@
    "level": "A1",
    "topic": "work-economy",
    "id": "de-a1-general-2-0023",
-   "readingId": "toia"
+   "readingId": "toi-a"
   },
   {
    "front": "billig",
@@ -3630,7 +3630,7 @@
    "level": "A1",
    "topic": "work-economy",
    "id": "de-a1-general-2-0024",
-   "readingId": "bilisy"
+   "readingId": "bi-lih"
   },
   {
    "front": "die Schule",
@@ -3645,7 +3645,7 @@
    "gender": "die",
    "plural": "die Schulen",
    "id": "de-a1-directions-places-0003",
-   "readingId": "di syule"
+   "readingId": "di syu-lê"
   },
   {
    "front": "die Universität",
@@ -3660,7 +3660,7 @@
    "gender": "die",
    "plural": "die Universitäten",
    "id": "de-a1-directions-places-0004",
-   "readingId": "di uniwérzitét"
+   "readingId": "di u-ni-wer-zi-tet"
   },
   {
    "front": "lernen",
@@ -3677,7 +3677,7 @@
    "exampleEn": "I study German every day.",
    "id": "de-a1-work-school-0002",
    "reviewedSenses": true,
-   "readingId": "lérnen"
+   "readingId": "ler-nên"
   },
   {
    "front": "der Lehrer",
@@ -3692,7 +3692,7 @@
    "gender": "der",
    "plural": "die Lehrer",
    "id": "de-a1-work-school-0006",
-   "readingId": "déa léra"
+   "readingId": "dea le-ra"
   },
   {
    "front": "die Lehrerin",
@@ -3707,7 +3707,7 @@
    "gender": "die",
    "plural": "die Lehrerinnen",
    "id": "de-a1-work-school-0007",
-   "readingId": "di lérerin"
+   "readingId": "di le-rê-rin"
   },
   {
    "front": "der Student",
@@ -3722,7 +3722,7 @@
    "gender": "der",
    "plural": "die Studenten",
    "id": "de-a1-work-school-0008",
-   "readingId": "déa sytudént"
+   "readingId": "dea sytu-dent"
   },
   {
    "front": "die Prüfung",
@@ -3737,7 +3737,7 @@
    "gender": "die",
    "plural": "die Prüfungen",
    "id": "de-a1-work-school-0009",
-   "readingId": "di prifung"
+   "readingId": "di pri-fung"
   },
   {
    "front": "die Hausaufgabe",
@@ -3752,7 +3752,7 @@
    "gender": "die",
    "plural": "die Hausaufgaben",
    "id": "de-a1-work-school-0010",
-   "readingId": "di hausaufgabe"
+   "readingId": "di haus-auf-ga-bê"
   },
   {
    "front": "lesen",
@@ -3766,7 +3766,7 @@
    "topic": "education-science",
    "id": "de-a1-verbs-basic-0006",
    "reviewedSenses": true,
-   "readingId": "lézen"
+   "readingId": "le-zên"
   },
   {
    "front": "wissen",
@@ -3780,7 +3780,7 @@
    "topic": "education-science",
    "id": "de-a1-verbs-basic-0022",
    "reviewedSenses": true,
-   "readingId": "wisen"
+   "readingId": "wi-sên"
   },
   {
    "front": "kennen",
@@ -3793,7 +3793,7 @@
    "level": "A1",
    "topic": "education-science",
    "id": "de-a1-verbs-basic-0040",
-   "readingId": "kénen"
+   "readingId": "ke-nên"
   },
   {
    "front": "Geschichte",
@@ -3806,7 +3806,7 @@
    "level": "A1",
    "topic": "education-science",
    "id": "de-a1-general-1-0046",
-   "readingId": "gesyisyte"
+   "readingId": "gê-syih-tê"
   },
   {
    "front": "Versuch",
@@ -3819,7 +3819,7 @@
    "level": "A1",
    "topic": "education-science",
    "id": "de-a1-general-2-0016",
-   "readingId": "féazukh"
+   "readingId": "fea-zukh"
   },
   {
    "front": "fest",
@@ -3833,7 +3833,7 @@
    "topic": "culture-arts",
    "id": "de-a1-adjectives-basic-0050",
    "reviewedSenses": true,
-   "readingId": "fést"
+   "readingId": "fest"
   },
   {
    "front": "Musik",
@@ -3846,7 +3846,7 @@
    "level": "A1",
    "topic": "culture-arts",
    "id": "de-a1-general-1-0022",
-   "readingId": "muzik"
+   "readingId": "mu-zik"
   },
   {
    "front": "Schau",
@@ -3885,7 +3885,7 @@
    "level": "A1",
    "topic": "culture-arts",
    "id": "de-a1-general-2-0002",
-   "readingId": "pati"
+   "readingId": "pa-ti"
   },
   {
    "front": "glauben",
@@ -3898,7 +3898,7 @@
    "level": "A1",
    "topic": "religion-mythology",
    "id": "de-a1-verbs-basic-0034",
-   "readingId": "glauben"
+   "readingId": "glau-bên"
   },
   {
    "front": "Gott",
@@ -3924,7 +3924,7 @@
    "level": "A1",
    "topic": "religion-mythology",
    "id": "de-a1-general-1-0013",
-   "readingId": "glaube"
+   "readingId": "glau-bê"
   },
   {
    "front": "Teufel",
@@ -3937,7 +3937,7 @@
    "level": "A1",
    "topic": "religion-mythology",
    "id": "de-a1-general-1-0038",
-   "readingId": "toifel"
+   "readingId": "toi-fêl"
   },
   {
    "front": "Hölle",
@@ -3950,7 +3950,7 @@
    "level": "A1",
    "topic": "religion-mythology",
    "id": "de-a1-general-1-0073",
-   "readingId": "hele"
+   "readingId": "he-lê"
   },
   {
    "front": "töten",
@@ -3963,7 +3963,7 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-verbs-basic-0043",
-   "readingId": "teten"
+   "readingId": "te-tên"
   },
   {
    "front": "retten",
@@ -3976,7 +3976,7 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-verbs-basic-0061",
-   "readingId": "réten"
+   "readingId": "re-tên"
   },
   {
    "front": "recht",
@@ -3990,7 +3990,7 @@
    "topic": "law-crime",
    "id": "de-a1-adjectives-basic-0023",
    "reviewedSenses": true,
-   "readingId": "résyt"
+   "readingId": "reht"
   },
   {
    "front": "Fall",
@@ -4016,7 +4016,7 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-general-2-0013",
-   "readingId": "opfa"
+   "readingId": "o-pfa"
   },
   {
    "front": "Polizei",
@@ -4029,7 +4029,7 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-general-2-0027",
-   "readingId": "politsai"
+   "readingId": "po-li-tsai"
   },
   {
    "front": "Gefängnis",
@@ -4042,7 +4042,7 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-general-2-0039",
-   "readingId": "geféngnis"
+   "readingId": "gê-feng-nis"
   },
   {
    "front": "Krieg",
@@ -4068,7 +4068,7 @@
    "level": "A1",
    "topic": "conflict-military",
    "id": "de-a1-general-1-0061",
-   "readingId": "wafe"
+   "readingId": "wa-fê"
   },
   {
    "front": "Macht",
@@ -4107,7 +4107,7 @@
    "level": "A1",
    "topic": "society-politics",
    "id": "de-a1-general-2-0029",
-   "readingId": "kenisy"
+   "readingId": "ke-nih"
   },
   {
    "front": "Ordnung",
@@ -4120,7 +4120,7 @@
    "level": "A1",
    "topic": "society-politics",
    "id": "de-a1-general-2-0036",
-   "readingId": "ordnung"
+   "readingId": "ord-nung"
   },
   {
    "front": "das Handy",
@@ -4135,7 +4135,7 @@
    "gender": "das",
    "plural": "die Handys",
    "id": "de-a1-home-daily-0015",
-   "readingId": "das héndi"
+   "readingId": "das hen-di"
   },
   {
    "front": "der Computer",
@@ -4150,7 +4150,7 @@
    "gender": "der",
    "plural": "die Computer",
    "id": "de-a1-general-1-0001",
-   "readingId": "déa kompyuta"
+   "readingId": "dea komp-yu-ta"
   },
   {
    "front": "Telefon",
@@ -4163,7 +4163,7 @@
    "level": "A1",
    "topic": "media-tech",
    "id": "de-a1-general-1-0065",
-   "readingId": "télefon"
+   "readingId": "te-lê-fon"
   },
   {
    "front": "Nachricht",
@@ -4176,7 +4176,7 @@
    "level": "A1",
    "topic": "media-tech",
    "id": "de-a1-general-2-0009",
-   "readingId": "nakhrisyt"
+   "readingId": "nakh-riht"
   },
   {
    "front": "spielen",
@@ -4189,7 +4189,7 @@
    "level": "A1",
    "topic": "sports-hobby",
    "id": "de-a1-verbs-basic-0014",
-   "readingId": "sypilen"
+   "readingId": "sypi-lên"
   },
   {
    "front": "verlieren",
@@ -4202,7 +4202,7 @@
    "level": "A1",
    "topic": "sports-hobby",
    "id": "de-a1-verbs-basic-0067",
-   "readingId": "féaliren"
+   "readingId": "fea-li-rên"
   },
   {
    "front": "Spiel",
@@ -4228,7 +4228,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-function-words-2-0013",
-   "readingId": "laida"
+   "readingId": "lai-da"
   },
   {
    "front": "denken",
@@ -4242,7 +4242,7 @@
    "topic": "emotions-opinion",
    "id": "de-a1-verbs-basic-0039",
    "reviewedSenses": true,
-   "readingId": "déngken"
+   "readingId": "deng-kên"
   },
   {
    "front": "sorgen",
@@ -4255,7 +4255,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-verbs-basic-0047",
-   "readingId": "zorgen"
+   "readingId": "zor-gên"
   },
   {
    "front": "gefallen",
@@ -4268,7 +4268,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-verbs-basic-0052",
-   "readingId": "gefalen"
+   "readingId": "gê-fa-lên"
   },
   {
    "front": "erinnern",
@@ -4281,7 +4281,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-verbs-basic-0066",
-   "readingId": "éa'inan"
+   "readingId": "ea-i-nan"
   },
   {
    "front": "glücklich",
@@ -4294,7 +4294,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-adjectives-basic-0011",
-   "readingId": "gliklisy"
+   "readingId": "glik-lih"
   },
   {
    "front": "ernst",
@@ -4308,7 +4308,7 @@
    "topic": "emotions-opinion",
    "id": "de-a1-adjectives-basic-0043",
    "reviewedSenses": true,
-   "readingId": "érnst"
+   "readingId": "ernst"
   },
   {
    "front": "ehrlich",
@@ -4321,7 +4321,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-adjectives-basic-0047",
-   "readingId": "éalisy"
+   "readingId": "ea-lih"
   },
   {
    "front": "froh",
@@ -4360,7 +4360,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0008",
-   "readingId": "wirde"
+   "readingId": "wir-dê"
   },
   {
    "front": "Leid",
@@ -4386,7 +4386,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0015",
-   "readingId": "libe"
+   "readingId": "li-bê"
   },
   {
    "front": "Glück",
@@ -4412,7 +4412,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0041",
-   "readingId": "rue"
+   "readingId": "ru-ê"
   },
   {
    "front": "Sorge",
@@ -4425,7 +4425,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0058",
-   "readingId": "zorge"
+   "readingId": "zor-gê"
   },
   {
    "front": "Ruf",
@@ -4451,7 +4451,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-2-0004",
-   "readingId": "féatrauen"
+   "readingId": "fea-trau-ên"
   },
   {
    "front": "Gefühl",
@@ -4464,7 +4464,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-2-0005",
-   "readingId": "gefil"
+   "readingId": "gê-fil"
   },
   {
    "front": "allein",
@@ -4477,7 +4477,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-2-0026",
-   "readingId": "alain"
+   "readingId": "a-lain"
   },
   {
    "front": "Ahnung",
@@ -4490,7 +4490,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-2-0037",
-   "readingId": "anung"
+   "readingId": "a-nung"
   },
   {
    "front": "Ich verstehe nicht",
@@ -4503,7 +4503,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-greetings-0015",
-   "readingId": "isy féasytée nisyt"
+   "readingId": "ih fea-syte-ê niht"
   },
   {
    "front": "Sprechen Sie Englisch?",
@@ -4516,7 +4516,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-greetings-0016",
-   "readingId": "syprésyen zi énglisy?"
+   "readingId": "sypre-hên zi eng-lisy?"
   },
   {
    "front": "Name",
@@ -4529,7 +4529,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-greetings-0032",
-   "readingId": "name"
+   "readingId": "na-mê"
   },
   {
    "front": "Scheiße",
@@ -4543,7 +4543,7 @@
    "topic": "language-communication",
    "id": "de-a1-function-words-1-0065",
    "reviewedSenses": true,
-   "readingId": "syaise"
+   "readingId": "syai-sê"
   },
   {
    "front": "laut",
@@ -4574,7 +4574,7 @@
    "exampleEn": "Do you speak German?",
    "id": "de-a1-verbs-basic-0005",
    "reviewedSenses": true,
-   "readingId": "syprésyen"
+   "readingId": "sypre-hên"
   },
   {
    "front": "schreiben",
@@ -4588,7 +4588,7 @@
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0007",
    "reviewedSenses": true,
-   "readingId": "syraiben"
+   "readingId": "syrai-bên"
   },
   {
    "front": "verstehen",
@@ -4601,7 +4601,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0010",
-   "readingId": "féasytéen"
+   "readingId": "fea-syte-ên"
   },
   {
    "front": "sagen",
@@ -4614,7 +4614,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0020",
-   "readingId": "zagen"
+   "readingId": "za-gên"
   },
   {
    "front": "meinen",
@@ -4627,7 +4627,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0027",
-   "readingId": "mainen"
+   "readingId": "mai-nên"
   },
   {
    "front": "reden",
@@ -4640,7 +4640,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0028",
-   "readingId": "réden"
+   "readingId": "re-dên"
   },
   {
    "front": "fragen",
@@ -4653,7 +4653,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0036",
-   "readingId": "fragen"
+   "readingId": "fra-gên"
   },
   {
    "front": "erzählen",
@@ -4666,7 +4666,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0055",
-   "readingId": "éatsélen"
+   "readingId": "ea-tse-lên"
   },
   {
    "front": "nennen",
@@ -4679,7 +4679,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0064",
-   "readingId": "nénen"
+   "readingId": "ne-nên"
   },
   {
    "front": "rufen",
@@ -4692,7 +4692,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0071",
-   "readingId": "rufen"
+   "readingId": "ru-fên"
   },
   {
    "front": "erklären",
@@ -4705,7 +4705,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0073",
-   "readingId": "éakléren"
+   "readingId": "ea-kle-rên"
   },
   {
    "front": "die Frage",
@@ -4723,7 +4723,7 @@
    "exampleId": "Saya punya pertanyaan.",
    "exampleEn": "I have a question.",
    "id": "de-a1-general-1-0002",
-   "readingId": "di frage"
+   "readingId": "di fra-gê"
   },
   {
    "front": "die Antwort",
@@ -4738,7 +4738,7 @@
    "gender": "die",
    "plural": "die Antworten",
    "id": "de-a1-general-1-0003",
-   "readingId": "di antwort"
+   "readingId": "di an-twort"
   },
   {
    "front": "Idee",
@@ -4751,7 +4751,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-general-1-0036",
-   "readingId": "idé"
+   "readingId": "i-de"
   },
   {
    "front": "Wort",
@@ -4777,7 +4777,7 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-general-1-0062",
-   "readingId": "réde"
+   "readingId": "re-dê"
   },
   {
    "front": "Scheiß",
@@ -4832,7 +4832,7 @@
    "level": "A1",
    "topic": "objects-tech",
    "id": "de-a1-general-1-0027",
-   "readingId": "zakhe"
+   "readingId": "za-khê"
   },
   {
    "front": "Etwas",
@@ -4845,7 +4845,7 @@
    "level": "A1",
    "topic": "objects-tech",
    "id": "de-a1-general-2-0033",
-   "readingId": "étwas"
+   "readingId": "et-was"
   },
   {
    "front": "Ding",
@@ -4877,7 +4877,7 @@
    "exampleId": "Satu gelas air, tolong.",
    "exampleEn": "A glass of water, please.",
    "id": "de-a1-food-drink-0006",
-   "readingId": "das wasa"
+   "readingId": "das wa-sa"
   },
   {
    "front": "Teil",
@@ -4903,7 +4903,7 @@
    "level": "A1",
    "topic": "materials-measures",
    "id": "de-a1-general-1-0069",
-   "readingId": "ménge"
+   "readingId": "me-ngê"
   },
   {
    "front": "Stück",
@@ -4929,7 +4929,7 @@
    "level": "A1",
    "topic": "persons",
    "id": "de-a1-general-1-0023",
-   "readingId": "hér"
+   "readingId": "her"
   },
   {
    "front": "Kerl",
@@ -4942,7 +4942,7 @@
    "level": "A1",
    "topic": "persons",
    "id": "de-a1-general-1-0037",
-   "readingId": "kérl"
+   "readingId": "kerl"
   },
   {
    "front": "Miss",
@@ -4968,7 +4968,7 @@
    "level": "A1",
    "topic": "persons",
    "id": "de-a1-general-1-0047",
-   "readingId": "alta"
+   "readingId": "al-ta"
   },
   {
    "front": "Kumpel",
@@ -4981,7 +4981,7 @@
    "level": "A1",
    "topic": "persons",
    "id": "de-a1-general-1-0078",
-   "readingId": "kumpel"
+   "readingId": "kum-pêl"
   },
   {
    "front": "Ja",
@@ -5063,7 +5063,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-greetings-0027",
-   "readingId": "filaisyt"
+   "readingId": "fi-laiht"
   },
   {
    "front": "bis",
@@ -5102,7 +5102,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-directions-places-0013",
-   "readingId": "iba"
+   "readingId": "i-ba"
   },
   {
    "front": "unter",
@@ -5115,7 +5115,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-directions-places-0018",
-   "readingId": "unta"
+   "readingId": "un-ta"
   },
   {
    "front": "hinter",
@@ -5128,7 +5128,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-directions-places-0021",
-   "readingId": "hinta"
+   "readingId": "hin-ta"
   },
   {
    "front": "zwischen",
@@ -5141,7 +5141,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-directions-places-0024",
-   "readingId": "tswisyen"
+   "readingId": "tswi-syên"
   },
   {
    "front": "Du",
@@ -5167,7 +5167,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0003",
-   "readingId": "nisyt"
+   "readingId": "niht"
   },
   {
    "front": "die",
@@ -5206,7 +5206,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0006",
-   "readingId": "déa"
+   "readingId": "dea"
   },
   {
    "front": "was",
@@ -5271,7 +5271,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0016",
-   "readingId": "aba"
+   "readingId": "a-ba"
   },
   {
    "front": "so",
@@ -5324,7 +5324,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0021",
-   "readingId": "wén"
+   "readingId": "wen"
   },
   {
    "front": "an",
@@ -5429,7 +5429,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0035",
-   "readingId": "oda"
+   "readingId": "o-da"
   },
   {
    "front": "nach",
@@ -5468,7 +5468,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0038",
-   "readingId": "méa"
+   "readingId": "mea"
   },
   {
    "front": "bei",
@@ -5494,7 +5494,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0040",
-   "readingId": "alzo"
+   "readingId": "al-zo"
   },
   {
    "front": "warum",
@@ -5507,7 +5507,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0041",
-   "readingId": "warum"
+   "readingId": "wa-rum"
   },
   {
    "front": "los",
@@ -5534,7 +5534,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0043",
-   "readingId": "wida"
+   "readingId": "wi-da"
   },
   {
    "front": "denn",
@@ -5547,7 +5547,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0044",
-   "readingId": "dén"
+   "readingId": "den"
   },
   {
    "front": "weil",
@@ -5574,7 +5574,7 @@
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0047",
    "reviewedSenses": true,
-   "readingId": "damit"
+   "readingId": "da-mit"
   },
   {
    "front": "nun",
@@ -5600,7 +5600,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0050",
-   "readingId": "tsurik"
+   "readingId": "tsu-rik"
   },
   {
    "front": "ab",
@@ -5640,7 +5640,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0053",
-   "readingId": "dursy"
+   "readingId": "durh"
   },
   {
    "front": "ob",
@@ -5666,7 +5666,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0056",
-   "readingId": "wizo"
+   "readingId": "wi-zo"
   },
   {
    "front": "selbst",
@@ -5680,7 +5680,7 @@
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0057",
    "reviewedSenses": true,
-   "readingId": "zélpst"
+   "readingId": "zelpst"
   },
   {
    "front": "ohne",
@@ -5693,7 +5693,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0058",
-   "readingId": "one"
+   "readingId": "o-nê"
   },
   {
    "front": "her",
@@ -5706,7 +5706,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0059",
-   "readingId": "héa"
+   "readingId": "hea"
   },
   {
    "front": "lange",
@@ -5719,7 +5719,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0060",
-   "readingId": "lange"
+   "readingId": "la-ngê"
   },
   {
    "front": "seit",
@@ -5745,7 +5745,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0062",
-   "readingId": "wégen"
+   "readingId": "we-gên"
   },
   {
    "front": "zusammen",
@@ -5758,7 +5758,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0063",
-   "readingId": "tsuzamen"
+   "readingId": "tsu-za-mên"
   },
   {
    "front": "erst",
@@ -5771,7 +5771,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0064",
-   "readingId": "éast"
+   "readingId": "east"
   },
   {
    "front": "gegen",
@@ -5784,7 +5784,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0066",
-   "readingId": "gégen"
+   "readingId": "ge-gên"
   },
   {
    "front": "sonst",
@@ -5810,7 +5810,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0068",
-   "readingId": "zofort"
+   "readingId": "zo-fort"
   },
   {
    "front": "wann",
@@ -5864,7 +5864,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0072",
-   "readingId": "liba"
+   "readingId": "li-ba"
   },
   {
    "front": "fast",
@@ -5890,7 +5890,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0075",
-   "readingId": "foabai"
+   "readingId": "foa-bai"
   },
   {
    "front": "darum",
@@ -5903,7 +5903,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0076",
-   "readingId": "darum"
+   "readingId": "da-rum"
   },
   {
    "front": "sogar",
@@ -5916,7 +5916,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0077",
-   "readingId": "zoga"
+   "readingId": "zo-ga"
   },
   {
    "front": "woher",
@@ -5929,7 +5929,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0078",
-   "readingId": "wohéa"
+   "readingId": "wo-hea"
   },
   {
    "front": "überhaupt",
@@ -5942,7 +5942,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0079",
-   "readingId": "ibahaupt"
+   "readingId": "i-ba-haupt"
   },
   {
    "front": "etwa",
@@ -5955,7 +5955,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0080",
-   "readingId": "étwa"
+   "readingId": "et-wa"
   },
   {
    "front": "anders",
@@ -5968,7 +5968,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-2-0001",
-   "readingId": "andas"
+   "readingId": "an-das"
   },
   {
    "front": "niemals",
@@ -5981,7 +5981,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-2-0002",
-   "readingId": "nimals"
+   "readingId": "ni-mals"
   },
   {
    "front": "während",
@@ -5994,7 +5994,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-2-0004",
-   "readingId": "wérent"
+   "readingId": "we-rênt"
   },
   {
    "front": "falls",
@@ -6033,7 +6033,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-2-0007",
-   "readingId": "wén"
+   "readingId": "wen"
   },
   {
    "front": "sondern",
@@ -6047,7 +6047,7 @@
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0008",
    "reviewedSenses": true,
-   "readingId": "zondan"
+   "readingId": "zon-dan"
   },
   {
    "front": "außer",
@@ -6060,7 +6060,7 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0009",
-   "readingId": "ausa"
+   "readingId": "au-sa"
   },
   {
    "front": "zuerst",
@@ -6073,7 +6073,7 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0010",
-   "readingId": "tsu'éast"
+   "readingId": "tsu-east"
   },
   {
    "front": "bereits",
@@ -6086,7 +6086,7 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0012",
-   "readingId": "beraits"
+   "readingId": "bê-raits"
   },
   {
    "front": "wem",
@@ -6099,7 +6099,7 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0015",
-   "readingId": "wém"
+   "readingId": "wem"
   },
   {
    "front": "danach",
@@ -6112,7 +6112,7 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0016",
-   "readingId": "danakh"
+   "readingId": "da-nakh"
   },
   {
    "front": "nachdem",
@@ -6125,7 +6125,7 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0018",
-   "readingId": "nakhdém"
+   "readingId": "nakh-dem"
   },
   {
    "front": "eher",
@@ -6138,7 +6138,7 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0022",
-   "readingId": "éa"
+   "readingId": "e-a"
   },
   {
    "front": "wohin",
@@ -6151,7 +6151,7 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-general-2-0028",
-   "readingId": "wohin"
+   "readingId": "wo-hin"
   },
   {
    "front": "wahrscheinlich",
@@ -6164,7 +6164,7 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-general-2-0035",
-   "readingId": "wasyainlisy"
+   "readingId": "wa-syain-lih"
   },
   {
    "front": "sein",
@@ -6197,7 +6197,7 @@
    "exampleId": "Kami punya waktu.",
    "exampleEn": "We have time.",
    "id": "de-a1-verbs-basic-0001",
-   "readingId": "haben"
+   "readingId": "ha-bên"
   },
   {
    "front": "machen",
@@ -6210,7 +6210,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0004",
-   "readingId": "makhen"
+   "readingId": "ma-khên"
   },
   {
    "front": "brauchen",
@@ -6223,7 +6223,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0011",
-   "readingId": "braukhen"
+   "readingId": "brau-khên"
   },
   {
    "front": "möchten",
@@ -6239,7 +6239,7 @@
    "exampleId": "Saya ingin kopi.",
    "exampleEn": "I would like a coffee.",
    "id": "de-a1-verbs-basic-0012",
-   "readingId": "mesyten"
+   "readingId": "meh-tên"
   },
   {
    "front": "können",
@@ -6252,7 +6252,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0013",
-   "readingId": "kenen"
+   "readingId": "ke-nên"
   },
   {
    "front": "aufstehen",
@@ -6265,7 +6265,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0016",
-   "readingId": "aufsytéen"
+   "readingId": "auf-syte-ên"
   },
   {
    "front": "helfen",
@@ -6278,7 +6278,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0017",
-   "readingId": "hélfen"
+   "readingId": "hel-fên"
   },
   {
    "front": "einen",
@@ -6291,7 +6291,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0018",
-   "readingId": "ainen"
+   "readingId": "ai-nên"
   },
   {
    "front": "werden",
@@ -6304,7 +6304,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0019",
-   "readingId": "wéaden"
+   "readingId": "wea-dên"
   },
   {
    "front": "tun",
@@ -6330,7 +6330,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0023",
-   "readingId": "misen"
+   "readingId": "mi-sên"
   },
   {
    "front": "leben",
@@ -6344,7 +6344,7 @@
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0024",
    "reviewedSenses": true,
-   "readingId": "lében"
+   "readingId": "le-bên"
   },
   {
    "front": "wollen",
@@ -6357,7 +6357,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0025",
-   "readingId": "wolen"
+   "readingId": "wo-lên"
   },
   {
    "front": "lassen",
@@ -6370,7 +6370,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0026",
-   "readingId": "lasen"
+   "readingId": "la-sên"
   },
   {
    "front": "finden",
@@ -6383,7 +6383,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0029",
-   "readingId": "finden"
+   "readingId": "fin-dên"
   },
   {
    "front": "geben",
@@ -6396,7 +6396,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0030",
-   "readingId": "gében"
+   "readingId": "ge-bên"
   },
   {
    "front": "sollen",
@@ -6409,7 +6409,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0031",
-   "readingId": "zolen"
+   "readingId": "zo-lên"
   },
   {
    "front": "bleiben",
@@ -6422,7 +6422,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0032",
-   "readingId": "blaiben"
+   "readingId": "blai-bên"
   },
   {
    "front": "nehmen",
@@ -6435,7 +6435,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0033",
-   "readingId": "némen"
+   "readingId": "ne-mên"
   },
   {
    "front": "bringen",
@@ -6448,7 +6448,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0035",
-   "readingId": "bringen"
+   "readingId": "bri-ngên"
   },
   {
    "front": "warten",
@@ -6461,7 +6461,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0037",
-   "readingId": "warten"
+   "readingId": "war-tên"
   },
   {
    "front": "halten",
@@ -6474,7 +6474,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0038",
-   "readingId": "halten"
+   "readingId": "hal-tên"
   },
   {
    "front": "vergessen",
@@ -6487,7 +6487,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0041",
-   "readingId": "féagésen"
+   "readingId": "fea-ge-sên"
   },
   {
    "front": "bekommen",
@@ -6500,7 +6500,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0042",
-   "readingId": "bekomen"
+   "readingId": "bê-ko-mên"
   },
   {
    "front": "stehen",
@@ -6513,7 +6513,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0044",
-   "readingId": "sytéen"
+   "readingId": "syte-ên"
   },
   {
    "front": "suchen",
@@ -6526,7 +6526,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0048",
-   "readingId": "zukhen"
+   "readingId": "zu-khên"
   },
   {
    "front": "versuchen",
@@ -6539,7 +6539,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0049",
-   "readingId": "féazukhen"
+   "readingId": "fea-zu-khên"
   },
   {
    "front": "holen",
@@ -6552,7 +6552,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0050",
-   "readingId": "holen"
+   "readingId": "ho-lên"
   },
   {
    "front": "verlassen",
@@ -6565,7 +6565,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0053",
-   "readingId": "féalasen"
+   "readingId": "fea-la-sên"
   },
   {
    "front": "zeigen",
@@ -6578,7 +6578,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0054",
-   "readingId": "tsaigen"
+   "readingId": "tsai-gên"
   },
   {
    "front": "stellen",
@@ -6591,7 +6591,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0056",
-   "readingId": "sytélen"
+   "readingId": "syte-lên"
   },
   {
    "front": "kriegen",
@@ -6605,7 +6605,7 @@
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0057",
    "reviewedSenses": true,
-   "readingId": "krigen"
+   "readingId": "kri-gên"
   },
   {
    "front": "setzen",
@@ -6618,7 +6618,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0059",
-   "readingId": "zétsen"
+   "readingId": "ze-tsên"
   },
   {
    "front": "dürfen",
@@ -6631,7 +6631,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0060",
-   "readingId": "dirfen"
+   "readingId": "dir-fên"
   },
   {
    "front": "schaffen",
@@ -6645,7 +6645,7 @@
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0063",
    "reviewedSenses": true,
-   "readingId": "syafen"
+   "readingId": "sya-fên"
   },
   {
    "front": "ziehen",
@@ -6658,7 +6658,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0068",
-   "readingId": "tsien"
+   "readingId": "tsi-ên"
   },
   {
    "front": "verschwinden",
@@ -6671,7 +6671,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0069",
-   "readingId": "féasywinden"
+   "readingId": "fea-sywin-dên"
   },
   {
    "front": "aufhören",
@@ -6684,7 +6684,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0070",
-   "readingId": "aufheren"
+   "readingId": "auf-he-rên"
   },
   {
    "front": "tagen",
@@ -6697,7 +6697,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0074",
-   "readingId": "tagen"
+   "readingId": "ta-gên"
   },
   {
    "front": "sitzen",
@@ -6710,7 +6710,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0075",
-   "readingId": "zitsen"
+   "readingId": "zi-tsên"
   },
   {
    "front": "vorstellen",
@@ -6723,7 +6723,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0076",
-   "readingId": "foasytélen"
+   "readingId": "foa-syte-lên"
   },
   {
    "front": "zu",
@@ -6764,7 +6764,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0002",
-   "readingId": "sylésyt"
+   "readingId": "syleht"
   },
   {
    "front": "neu",
@@ -6803,7 +6803,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0005",
-   "readingId": "synél"
+   "readingId": "synel"
   },
   {
    "front": "langsam",
@@ -6816,7 +6816,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0006",
-   "readingId": "langzam"
+   "readingId": "lang-zam"
   },
   {
    "front": "warm",
@@ -6868,7 +6868,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0012",
-   "readingId": "ainfakh"
+   "readingId": "ain-fakh"
   },
   {
    "front": "schwierig",
@@ -6881,7 +6881,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0013",
-   "readingId": "sywirisy"
+   "readingId": "sywi-rih"
   },
   {
    "front": "viel",
@@ -6920,7 +6920,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0016",
-   "readingId": "zisya"
+   "readingId": "zi-ha"
   },
   {
    "front": "genau",
@@ -6933,7 +6933,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0017",
-   "readingId": "genau"
+   "readingId": "gê-nau"
   },
   {
    "front": "klar",
@@ -6959,7 +6959,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0019",
-   "readingId": "bésa"
+   "readingId": "be-sa"
   },
   {
    "front": "natürlich",
@@ -6972,7 +6972,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0020",
-   "readingId": "natialisy"
+   "readingId": "na-tia-lih"
   },
   {
    "front": "gleich",
@@ -6985,7 +6985,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0022",
-   "readingId": "glaisy"
+   "readingId": "glaih"
   },
   {
    "front": "richtig",
@@ -6998,7 +6998,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0024",
-   "readingId": "risytisy"
+   "readingId": "rih-tih"
   },
   {
    "front": "tot",
@@ -7024,7 +7024,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0027",
-   "readingId": "genuk"
+   "readingId": "gê-nuk"
   },
   {
    "front": "fertig",
@@ -7037,7 +7037,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0029",
-   "readingId": "fértisy"
+   "readingId": "fer-tih"
   },
   {
    "front": "verdammt",
@@ -7050,7 +7050,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0030",
-   "readingId": "féadamt"
+   "readingId": "fea-damt"
   },
   {
    "front": "wahr",
@@ -7076,7 +7076,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0032",
-   "readingId": "ésyt"
+   "readingId": "eht"
   },
   {
    "front": "toll",
@@ -7102,7 +7102,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0035",
-   "readingId": "berait"
+   "readingId": "bê-rait"
   },
   {
    "front": "verrückt",
@@ -7115,7 +7115,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0036",
-   "readingId": "féarikt"
+   "readingId": "fea-rikt"
   },
   {
    "front": "ruhig",
@@ -7128,7 +7128,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0037",
-   "readingId": "ruisy"
+   "readingId": "ru-ih"
   },
   {
    "front": "endlich",
@@ -7141,7 +7141,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0038",
-   "readingId": "éntlisy"
+   "readingId": "ent-lih"
   },
   {
    "front": "schwer",
@@ -7154,7 +7154,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0039",
-   "readingId": "sywéa"
+   "readingId": "sywea"
   },
   {
    "front": "wenig",
@@ -7167,7 +7167,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0040",
-   "readingId": "wénisy"
+   "readingId": "we-nih"
   },
   {
    "front": "bestimmt",
@@ -7180,7 +7180,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0041",
-   "readingId": "besytimt"
+   "readingId": "bê-sytimt"
   },
   {
    "front": "schuld",
@@ -7207,7 +7207,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0045",
-   "readingId": "wisytisy"
+   "readingId": "wih-tih"
   },
   {
    "front": "bloß",
@@ -7246,7 +7246,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0049",
-   "readingId": "meklisy"
+   "readingId": "mek-lih"
   },
   {
    "front": "falsch",
@@ -7285,7 +7285,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0054",
-   "readingId": "dirékt"
+   "readingId": "di-rekt"
   },
   {
    "front": "völlig",
@@ -7298,7 +7298,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0055",
-   "readingId": "felisy"
+   "readingId": "fe-lih"
   },
   {
    "front": "wert",
@@ -7312,7 +7312,7 @@
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0056",
    "reviewedSenses": true,
-   "readingId": "wéat"
+   "readingId": "weat"
   },
   {
    "front": "super",
@@ -7325,7 +7325,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0058",
-   "readingId": "zupa"
+   "readingId": "zu-pa"
   },
   {
    "front": "total",
@@ -7338,7 +7338,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0059",
-   "readingId": "total"
+   "readingId": "to-tal"
   },
   {
    "front": "leicht",
@@ -7351,7 +7351,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0060",
-   "readingId": "laisyt"
+   "readingId": "laiht"
   },
   {
    "front": "interessiert",
@@ -7364,7 +7364,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0061",
-   "readingId": "interésiat"
+   "readingId": "in-tê-re-siat"
   },
   {
    "front": "cool",
@@ -7390,7 +7390,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0065",
-   "readingId": "beze"
+   "readingId": "be-zê"
   },
   {
    "front": "Problem",
@@ -7403,7 +7403,7 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0024",
-   "readingId": "problém"
+   "readingId": "pro-blem"
   },
   {
    "front": "Hilfe",
@@ -7416,7 +7416,7 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0028",
-   "readingId": "hilfe"
+   "readingId": "hil-fê"
   },
   {
    "front": "Mache",
@@ -7429,7 +7429,7 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0032",
-   "readingId": "makhe"
+   "readingId": "ma-khê"
   },
   {
    "front": "Grund",
@@ -7494,7 +7494,7 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0067",
-   "readingId": "féla"
+   "readingId": "fe-la"
   },
   {
    "front": "Tat",
@@ -7520,7 +7520,7 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0080",
-   "readingId": "zukhe"
+   "readingId": "zu-khê"
   },
   {
    "front": "Rest",
@@ -7533,7 +7533,7 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-2-0012",
-   "readingId": "rést"
+   "readingId": "rest"
   },
   {
    "front": "Wahrheit",
@@ -7546,7 +7546,7 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-2-0038",
-   "readingId": "wahait"
+   "readingId": "wa-hait"
   }
  ]
 }

@@ -4,7 +4,8 @@
 Source of truth is IPA from the German Wiktionary (CC BY-SA 4.0, via the
 wiktextract dump at kaikki.org), stored per card front in `de-ipa.json` so the
 transcription can be reviewed. The IPA is respelled with Indonesian letter
-values; see docs/GERMAN-PRONUNCIATION.md for the table and its references.
+values (EYD V) and split into syllables; see docs/GERMAN-PRONUNCIATION.md
+for the table and its references.
 
 Run: python3 scripts/content/de-pronunciation.py            (apply de-ipa.json)
      python3 scripts/content/de-pronunciation.py DUMP.jsonl.gz  (refresh IPA first)
@@ -40,77 +41,109 @@ MANUAL_IPA = {
     "constable": "ˈkanstəbl̩",
 }
 
-# Longest match first: affricates and diphthong-like pairs before single symbols.
+# IPA → letters with their EYD V value (Badan Bahasa 2022): c=[tʃ], j=[dʒ], y=[j],
+# kh=[x], ng=[ŋ], sy=[ʃ], ê=[ə]. EYD V says v is read [f], so German [v] is "w".
 CONSONANTS = {
     "t͡s": "ts", "t͡ʃ": "c", "d͡ʒ": "j", "p͡f": "pf", "d͡z": "dz",
-    "ʃ": "sy", "ʒ": "j", "ç": "sy", "ɕ": "sy", "x": "kh", "χ": "kh",
+    "ʃ": "sy", "ʒ": "j", "ç": "h", "ɕ": "sy", "x": "kh", "χ": "kh",
     "ŋ": "ng", "ɡ": "g", "g": "g", "ʁ": "r", "r": "r", "ɾ": "r",
     "j": "y", "v": "w", "w": "w", "z": "z", "s": "s", "θ": "t", "ð": "d",
     "p": "p", "b": "b", "t": "t", "d": "d", "k": "k", "f": "f", "h": "h",
     "m": "m", "n": "n", "l": "l",
 }
 VOWELS = {
-    "a": "a", "ɑ": "a", "ʌ": "a", "ɐ": "a", "æ": "é",
-    "e": "é", "ɛ": "é", "ə": "e",
+    "a": "a", "ɑ": "a", "ʌ": "a", "ɐ": "a", "æ": "e",
+    "e": "e", "ɛ": "e", "ə": "ê",
     "i": "i", "ɪ": "i", "y": "i", "ʏ": "i",
     "o": "o", "ɔ": "o", "ø": "e", "œ": "e",
     "u": "u", "ʊ": "u", "ɯ": "u",
 }
 SYMBOLS = sorted({**CONSONANTS, **VOWELS}, key=len, reverse=True)
-DROP = set("ˈˌːˑ.‿̥̯̩̃̍͡()[]/ꜜ")
-# Indonesian reads these pairs as one diphthong; mark German hiatus with '.
-DIPHTHONGS = {"ai", "au", "oi", "ei", "éi"}
-# Letter pairs that would be read as a different Indonesian digraph.
-DIGRAPH_CLASH = {("n", "g"), ("n", "y"), ("k", "h"), ("s", "y")}
+BOUNDARY = set("ˈˌʔ.")  # Wiktionary marks stressed-syllable starts and glottal onsets
+DROP = set("ːˑ‿̥̯̩̃̍͡()[]/ꜜ")
+DIGRAPHS = {"kh", "ng", "ny", "sy"}  # EYD V: one sound, never split
+# Consonant clusters German allows at the start of a syllable (letters per unit).
+LEGAL_ONSETS = {
+    tuple(onset.split())
+    for onset in (
+        "p l|p r|b l|b r|t r|d r|k l|k r|k n|k w|g l|g r|g n|f l|f r|w r|"
+        "pf l|pf r|ts w|sy l|sy m|sy n|sy r|sy w|sy t|sy p|sy t r|sy p r|sy p l|"
+        "s k|s l|s m|s n|s p|s t|s w|s f|p s|t w|s t r|s k r|s p r"
+    ).split("|")
+}
 
 
-def respell(ipa: str) -> str:
-    """IPA (Wiktionary style) → Indonesian respelling, lower case."""
-    ipa = unicodedata.normalize("NFC", ipa).replace("\u00f5", "o\u0303")
-    out: list[str] = []
-    prev_kind = ""  # "v" vowel, "c" consonant, "" boundary
+def _units(word: str) -> list[tuple[str, str]]:
+    """Splits one IPA word into (kind, letters): V nucleus, C consonant, B boundary."""
+    units: list[tuple[str, str]] = []
     i = 0
-    while i < len(ipa):
-        ch = ipa[i]
-        if ch == " ":
-            out.append(" ")
-            prev_kind = ""
+    while i < len(word):
+        ch = word[i]
+        if ch in BOUNDARY:
+            units.append(("B", ""))
             i += 1
             continue
-        if ch == "ʔ":
-            if prev_kind == "v":
-                out.append("'")
-            i += 1
-            continue
-        symbol = next((s for s in SYMBOLS if ipa.startswith(s, i)), None)
+        symbol = next((s for s in SYMBOLS if word.startswith(s, i)), None)
         if symbol is None:
             if ch not in DROP:
-                out.append(ch)  # punctuation such as … ? -
+                units.append(("P", ch))  # punctuation such as … ? -
             i += 1
             continue
         i += len(symbol)
         marks = ""
-        while i < len(ipa) and unicodedata.combining(ipa[i]) and ipa[i] != "͡":
-            marks += ipa[i]
+        while i < len(word) and unicodedata.combining(word[i]) and word[i] != "͡":
+            marks += word[i]
             i += 1
         if symbol in VOWELS:
-            letter = VOWELS[symbol]
-            nonsyllabic = "̯" in marks
-            if symbol == "ɐ" and nonsyllabic and out and out[-1] == "a":
-                continue  # [aːɐ̯] "gar" is a long a
-            if prev_kind == "v" and not nonsyllabic and (out[-1][-1] + letter) in DIPHTHONGS:
-                out.append("'")
-            out.append(letter + ("ng" if "̃" in marks else ""))
-            prev_kind = "v"
+            letter = VOWELS[symbol] + ("ng" if "̃" in marks else "")
+            if "̯" in marks and units and units[-1][0] == "V":
+                # Second half of a diphthong or vocalic r: [aɪ̯] ai, [iːɐ̯] ia.
+                if not (symbol == "ɐ" and units[-1][1].endswith("a")):
+                    units[-1] = ("V", units[-1][1] + letter)
+                continue
+            units.append(("V", letter))
         else:
             letter = CONSONANTS[symbol]
             if "̩" in marks or "̍" in marks:
-                letter = "e" + letter  # syllabic [n̩] in "guten" → "en"
-            elif out and (out[-1][-1], letter[0]) in DIGRAPH_CLASH:
-                out.append("-")
-            out.append(letter)
-            prev_kind = "c"
-    return re.sub(r"\s+", " ", "".join(out)).strip()
+                units.append(("V", "ê"))  # syllabic [n̩] in "guten" → tên
+            units.append(("C", letter))
+    return units
+
+
+def _syllabify(units: list[tuple[str, str]]) -> str:
+    """Joins units into syllables with EYD V pemenggalan rules (C.1.a–g)."""
+    nuclei = [k for k, (kind, _) in enumerate(units) if kind == "V"]
+    cuts = set()
+    for left, right in zip(nuclei, nuclei[1:]):
+        middle = range(left + 1, right)
+        marks = [k for k in middle if units[k][0] == "B"]
+        cons = [k for k in middle if units[k][0] == "C"]
+        if not cons:
+            cuts.add(marks[-1] if marks else right)  # ma-in
+            continue
+        if marks:
+            cut = sum(1 for k in cons if k < marks[-1])  # Wiktionary's syllable start
+        else:
+            cut = 0 if len(cons) == 1 else 1  # ba-pak, ban-tu, am-bruk
+        onset = lambda c: tuple(units[k][1] for k in cons[c:])
+        while len(cons) - cut > 1 and onset(cut) not in LEGAL_ONSETS:
+            cut += 1  # [ˈɛksaːmən] ek-sa-mên, not e-ksa-mên
+        cuts.add(cons[cut] if cut < len(cons) else right)
+    out = ""
+    for k, (kind, letters) in enumerate(units):
+        if k in cuts and out:
+            out += "-"
+        elif kind == "C" and (out[-1:] + letters[:1]) in DIGRAPHS:
+            out += "-"  # n+g, s+y inside a syllable would read as one sound
+        out += letters
+    return out
+
+
+def respell(ipa: str) -> str:
+    """IPA (Wiktionary style) → Indonesian respelling with syllable hyphens."""
+    ipa = unicodedata.normalize("NFC", ipa).replace("\u00f5", "o\u0303")
+    words = [_syllabify(_units(word)) for word in ipa.split()]
+    return " ".join(word.strip("-") for word in words if word)
 
 
 def strip_ipa(raw: str) -> str:
@@ -203,26 +236,33 @@ def apply_pronunciation() -> None:
 
 def _self_check() -> None:
     cases = {
-        "ˈvasɐ": "wasa",
+        "ˈvasɐ": "wa-sa",
         "bʁoːt": "brot",
-        "ˈdaŋkə": "dangke",
-        "ˈɡuːtn̩ ˈmɔʁɡn̩": "guten morgen",
+        "ˈdaŋkə": "dang-kê",
+        "ˈɡuːtn̩ ˈmɔʁɡn̩": "gu-tên mor-gên",
         "haʊ̯s": "haus",
-        "ˈhɔɪ̯tə": "hoite",
+        "ˈhɔɪ̯tə": "hoi-tê",
         "t͡ʃʏs": "cis",
         "ʃøːn": "syen",
-        "ɪç": "isy",
+        "ɪç": "ih",
         "buːx": "bukh",
-        "t͡seːn": "tsén",
+        "t͡seːn": "tsen",
         "ɡaːɐ̯": "ga",
-        "deːɐ̯": "déa",
-        "ˈapfl̩": "apfel",
-        "naˈiːf": "na'if",
-        "bəˈʔaxtn̩": "be'akhten",
-        "ˈanˌɡeːbn̩": "an-gében",
-        "ʁɛstoˈʁɑ̃ː": "réstorang",
-        "zaˈlõː": "zalong",
-        "ɪnʒeˈni̯øːɐ̯": "injéniea",
+        "fiːɐ̯": "fia",
+        "ˈapfl̩": "ap-fêl",
+        "naˈiːf": "na-if",
+        "bəˈʔaxtn̩": "bê-akh-tên",
+        "ˈanˌɡeːbn̩": "an-ge-bên",
+        "ʁɛstoˈʁɑ̃ː": "res-to-rang",
+        "ʃtaˈt͡si̯oːn": "syta-tsi-on",
+        "ˈkʁaŋkhaɪ̯t": "krangk-hait",
+        "ɛˈksaːmən": "ek-sa-mên",
+        "ˈfɛstʃtɛlʊŋ": "fest-syte-lung",
+        "ˈhaɪ̯t͡sʊŋ": "hai-tsung",
+        "ˈhɔɪ̯ptlɪŋ": "hoipt-ling",
+        "ɛntˈʃʊldɪɡʊŋ": "ent-syul-di-gung",
+        "vaɪ̯n": "wain",
+        "ˈaɪ̯nˌkaʊ̯fn̩": "ain-kau-fên",
     }
     for ipa, expected in cases.items():
         got = respell(ipa)
