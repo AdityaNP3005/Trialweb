@@ -19,16 +19,16 @@ import { useStore } from "@/components/providers/store-provider";
 import { LocaleSwitcher } from "./locale-switcher";
 import { ThemeToggle } from "./theme-toggle";
 import { Logo } from "./logo";
+import { HeaderCourseSwitcher } from "./header-course-switcher";
 import { Skeleton } from "@/components/ui/progress";
 
 const items = [
-    { href: "/dashboard", key: "dashboard", icon: Home, course: null },
-    { href: "/decks", key: "decks", icon: BookOpen, course: null },
-    { href: "/videos", key: "videos", icon: Clapperboard, course: null },
-    // Hanzi writing practice; only shown while Mandarin is the active course.
-    { href: "/writing", key: "writing", icon: PenLine, course: "zh" },
-    { href: "/stats", key: "stats", icon: BarChart3, course: null },
-    { href: "/settings", key: "settings", icon: Settings, course: null },
+    { href: "/dashboard", key: "dashboard", icon: Home },
+    { href: "/decks", key: "decks", icon: BookOpen },
+    { href: "/videos", key: "videos", icon: Clapperboard },
+    { href: "/writing", key: "writing", icon: PenLine },
+    { href: "/stats", key: "stats", icon: BarChart3 },
+    { href: "/settings", key: "settings", icon: Settings },
 ] as const;
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -38,7 +38,6 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     const router = useRouter();
     const { user } = useAuth();
     const { profile } = useStore();
-    const navItems = items.filter((item) => !item.course || item.course === profile?.activeCourseId);
 
     const isGuest = !user;
     const displayName =
@@ -55,7 +54,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                     </Link>
 
                     <nav className="hidden flex-1 items-center gap-5 sm:flex">
-                        {navItems.map(({ href, key }) => {
+                        {items.map(({ href, key }) => {
                             const active = pathname.startsWith(href);
                             return (
                                 <Link
@@ -76,6 +75,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                     </nav>
 
                     <div className="ml-auto flex items-center gap-2">
+                        <HeaderCourseSwitcher />
                         <LocaleSwitcher className="hidden sm:inline-flex" />
                         <ThemeToggle className="hidden sm:inline-flex" />
 
@@ -138,9 +138,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/95 backdrop-blur-sm sm:hidden">
                 <div
                     className="mx-auto grid max-w-md"
-                    style={{ gridTemplateColumns: `repeat(${navItems.length}, minmax(0, 1fr))` }}
+                    style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))` }}
                 >
-                    {navItems.map(({ href, key, icon: Icon }) => {
+                    {items.map(({ href, key, icon: Icon }) => {
                         const active = pathname.startsWith(href);
                         return (
                             <Link

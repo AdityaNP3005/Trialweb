@@ -48,6 +48,8 @@ export type GuestDb = {
     dailyStats: Record<string, DailyStat>;
     /** Video watch progress per playlist id. */
     videos?: Record<string, PlaylistProgress>;
+    /** Writing practice: finished Hanzi per course id. */
+    writing?: Record<string, string[]>;
 };
 
 function readRaw(): GuestDb | null {
@@ -506,6 +508,19 @@ export class GuestStore implements StudyStore {
     async saveVideoProgress(progress: PlaylistProgress): Promise<void> {
         const db = await this.ensure();
         db.videos = { ...(db.videos ?? {}), [progress.playlistId]: progress };
+        this.persist();
+    }
+
+    async getWrittenCharacters(courseId: string): Promise<string[]> {
+        const db = await this.ensure();
+        return db.writing?.[courseId] ?? [];
+    }
+
+    async markCharacterWritten(courseId: string, char: string): Promise<void> {
+        const db = await this.ensure();
+        const written = db.writing?.[courseId] ?? [];
+        if (written.includes(char)) return;
+        db.writing = { ...(db.writing ?? {}), [courseId]: [...written, char] };
         this.persist();
     }
 }

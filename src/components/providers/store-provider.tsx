@@ -19,7 +19,7 @@ import { migrateReviewedVocab } from "@/lib/data/migrate-reviewed-vocab";
 import { migrateSemanticTopics } from "@/lib/data/migrate-semantic-topics";
 import { CloudStore } from "@/lib/store/cloud-store";
 import { GuestStore } from "@/lib/store/local-store";
-import { migrateGuestData, migrateGuestVideos } from "@/lib/store/migrate";
+import { migrateGuestData, migrateGuestVideos, migrateGuestWriting } from "@/lib/store/migrate";
 import type { StudyStore } from "@/lib/store/types";
 
 type StoreContextValue = {
@@ -58,6 +58,7 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
                     // Video progress merges first: the deck migration clears the
                     // guest snapshot when it finishes.
                     await migrateGuestVideos(user.uid, storedProfile).catch(() => false);
+                    await migrateGuestWriting(user.uid).catch(() => undefined);
                     await migrateLegacyEngine(user.uid, storedProfile).catch(() => false);
                     const afterEngine = await fetchProfile(user.uid).catch(() => null);
                     await migrateTopicProgress(user.uid, afterEngine).catch(() => false);

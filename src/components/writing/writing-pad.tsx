@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 import type HanziWriter from "hanzi-writer";
-import { Eye, EyeOff, PenLine, Play } from "lucide-react";
+import { Eye, EyeOff, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const SIZE = 260;
@@ -17,22 +17,53 @@ function palette() {
 }
 
 /**
- * Stroke-order animation and a tracing quiz for one character. Stroke data is
- * fetched by hanzi-writer from the hanzi-writer-data package on jsDelivr.
+ * Tracing practice for one character: writing starts as soon as the stroke data
+ * loads. "Show stroke order" animates only the strokes not written yet, then
+ * writing resumes from that stroke. Stroke data comes from hanzi-writer-data
+ * on jsDelivr.
  */
-export function WritingPad({ char }: { char: string }) {
+export function WritingPad({ char, onComplete }: { char: string; onComplete?: () => void }) {
     const t = useTranslations("writing");
     const target = useRef<HTMLDivElement>(null);
     const writer = useRef<HanziWriter | null>(null);
     const [status, setStatus] = useState<"loading" | "ready" | "missing">("loading");
     const [outline, setOutline] = useState(true);
     const [message, setMessage] = useState<string | null>(null);
+    const [animating, setAnimating] = useState(false);
+    // Index of the first stroke the learner has not written yet.
+    const nextStroke = useRef(0);
+    const strokeCount = useRef(0);
+
+    function practice(fromStroke: number) {
+        nextStroke.current = fromStroke;
+        void writer.current?.quiz({
+            quizStartStrokeNum: fromStroke,
+            showHintAfterMisses: 3,
+            onMistake: () => setMessage(t("mistakeHint")),
+            onCorrectStroke: ({ strokeNum }) => {
+                nextStroke.current = strokeNum + 1;
+                setMessage(null);
+            },
+            onComplete: ({ totalMistakes }) => {
+                nextStroke.current = strokeCount.current;
+                setMessage(t("done", { mistakes: totalMistakes }));
+                onComplete?.();
+            },
+        });
+    }
+    // The load callback runs later; it must call the latest `practice`.
+    const practiceRef = useRef(practice);
+    useEffect(() => {
+        practiceRef.current = practice;
+    });
 
     useEffect(() => {
         let cancelled = false;
         setStatus("loading");
         setMessage(null);
         setOutline(true);
+        setAnimating(false);
+        nextStroke.current = 0;
         (async () => {
             const { default: Writer } = await import("hanzi-writer");
             if (cancelled || !target.current) return;
@@ -46,8 +77,14 @@ export function WritingPad({ char }: { char: string }) {
                 strokeAnimationSpeed: 1,
                 delayBetweenStrokes: 250,
                 ...palette(),
-                onLoadCharDataSuccess: () => {
-                    if (!cancelled) setStatus("ready");
+                onLoadCharDataSuccess: (data) => {
+                    if (cancelled) return;
+                    strokeCount.current = data.strokes.length;
+                    setStatus("ready");
+                    // Writing is the default; the quiz needs `writer.current`, set below.
+                    setTimeout(() => {
+                        if (!cancelled) practiceRef.current(0);
+                    });
                 },
                 onLoadCharDataError: () => {
                     if (!cancelled) setStatus("missing");
@@ -61,21 +98,22 @@ export function WritingPad({ char }: { char: string }) {
         };
     }, [char]);
 
-    function animate() {
+    /** Animates the strokes still to write, then resumes writing at the same stroke. */
+    async function showRemainingStrokes() {
+        const current = writer.current;
+        if (!current || animating) return;
         setMessage(null);
-        writer.current?.cancelQuiz();
-        void writer.current?.animateCharacter();
-    }
-
-    function practice() {
-        setMessage(null);
-        writer.current?.hideCharacter();
-        void writer.current?.quiz({
-            showHintAfterMisses: 3,
-            onMistake: () => setMessage(t("mistakeHint")),
-            onCorrectStroke: () => setMessage(null),
-            onComplete: ({ totalMistakes }) => setMessage(t("done", { mistakes: totalMistakes })),
-        });
+        setAnimating(true);
+        // A finished character replays from the start and is written again.
+        const from = nextStroke.current >= strokeCount.current ? 0 : nextStroke.current;
+        if (from === 0) await current.hideCharacter();
+        for (let stroke = from; stroke < strokeCount.current; stroke += 1) {
+            if (writer.current !== current) return; // moved to another character
+            await current.animateStroke(stroke);
+        }
+        if (writer.current !== current) return;
+        setAnimating(false);
+        practice(from);
     }
 
     function toggleOutline() {
@@ -110,13 +148,14 @@ export function WritingPad({ char }: { char: string }) {
             </div>
 
             <div className="flex flex-wrap justify-center gap-2">
-                <Button size="sm" variant="secondary" onClick={animate} disabled={status !== "ready"}>
+                <Button
+                    size="sm"
+                    variant="secondary"
+                    onClick={() => void showRemainingStrokes()}
+                    disabled={status !== "ready" || animating}
+                >
                     <Play className="size-3.5" />
                     {t("animate")}
-                </Button>
-                <Button size="sm" onClick={practice} disabled={status !== "ready"}>
-                    <PenLine className="size-3.5" />
-                    {t("practice")}
                 </Button>
                 <Button size="sm" variant="secondary" onClick={toggleOutline} disabled={status !== "ready"}>
                     {outline ? <EyeOff className="size-3.5" /> : <Eye className="size-3.5" />}

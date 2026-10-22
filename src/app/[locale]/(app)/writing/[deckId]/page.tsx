@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams } from "next/navigation";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Check, ChevronLeft, ChevronRight } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import type { Card } from "@/types";
 import { getCourse } from "@/content/courses";
@@ -19,6 +19,7 @@ import { TONE_COLOR } from "@/components/study/tone-text";
 import { WritingPad } from "@/components/writing/writing-pad";
 import { useStore } from "@/components/providers/store-provider";
 import { useActiveCourse } from "@/hooks/use-active-course";
+import { cn } from "@/lib/utils/cn";
 
 export default function WritingChapterPage() {
     const params = useParams<{ deckId: string }>();
@@ -26,13 +27,27 @@ export default function WritingChapterPage() {
     const t = useTranslations("writing");
     const tc = useTranslations("common");
     const locale = useLocale();
-    const { profile } = useStore();
+    const { store, profile } = useStore();
     const unit = getContentDeck(deckId);
     const course = getCourse("zh");
-    useActiveCourse("zh");
+    const courseId = unit?.courseId ?? "zh";
+    useActiveCourse(unit?.courseId ?? null);
 
     const [cards, setCards] = useState<Card[] | null>(null);
     const [index, setIndex] = useState(0);
+    const [written, setWritten] = useState<Set<string> | null>(null);
+    const startedAtFirstOpen = useRef(false);
+
+    useEffect(() => {
+        if (!store) return;
+        let cancelled = false;
+        void store.getWrittenCharacters(courseId).then((chars) => {
+            if (!cancelled) setWritten(new Set(chars));
+        });
+        return () => {
+            cancelled = true;
+        };
+    }, [store, courseId]);
 
     useEffect(() => {
         let cancelled = false;
@@ -46,6 +61,20 @@ export default function WritingChapterPage() {
 
     const chars = useMemo(() => (cards ? practiceCharacters(cards) : []), [cards]);
     const current = chars[index];
+    const doneCount = written ? chars.filter((entry) => written.has(entry.char)).length : 0;
+
+    // Open the chapter at the first character not written yet.
+    useEffect(() => {
+        if (startedAtFirstOpen.current || !written || chars.length === 0) return;
+        startedAtFirstOpen.current = true;
+        const firstOpen = chars.findIndex((entry) => !written.has(entry.char));
+        if (firstOpen > 0) setIndex(firstOpen);
+    }, [chars, written]);
+
+    function markWritten(char: string) {
+        setWritten((value) => new Set(value ?? []).add(char));
+        void store?.markCharacterWritten(courseId, char);
+    }
 
     if (!unit || unit.courseId !== "zh") {
         return <EmptyState title={t("empty")} />;
@@ -55,7 +84,10 @@ export default function WritingChapterPage() {
         <PageHeader
             eyebrow={`${getSection(unit.sectionId)?.label ?? ""} · ${t("title")}`}
             title={unitLabelFor(unit.order, unit.title, course.unitNoun, tc, locale)}
-            meta={[{ label: t("characterLabel"), value: String(chars.length) }]}
+            meta={[
+                { label: t("characterLabel"), value: String(chars.length) },
+                { label: t("progressLabel"), value: t("progressValue", { done: doneCount, total: chars.length }) },
+            ]}
             back={{ href: "/writing", label: t("back") }}
         />
     );
@@ -111,7 +143,7 @@ export default function WritingChapterPage() {
                     />
                 </div>
 
-                <WritingPad char={current.char} />
+                <WritingPad char={current.char} onComplete={() => markWritten(current.char)} />
 
                 {current.words.length ? (
                     <p className="meta">
@@ -121,19 +153,28 @@ export default function WritingChapterPage() {
             </div>
 
             <div className="flex flex-wrap justify-center gap-1">
-                {chars.map((entry, position) => (
-                    <button
-                        key={entry.char}
-                        type="button"
-                        onClick={() => setIndex(position)}
-                        aria-current={position === index}
-                        className={`grid size-9 place-items-center rounded-[0.25rem] border font-cjk text-lg transition-colors ${
-                            position === index ? "border-fg" : "border-border text-muted hover:border-fg/40"
-                        }`}
-                    >
-                        {entry.char}
-                    </button>
-                ))}
+                {chars.map((entry, position) => {
+                    const done = written?.has(entry.char) ?? false;
+                    return (
+                        <button
+                            key={entry.char}
+                            type="button"
+                            onClick={() => setIndex(position)}
+                            aria-current={position === index}
+                            aria-label={done ? `${entry.char} · ${t("writtenMark")}` : entry.char}
+                            className={cn(
+                                "relative grid size-9 place-items-center rounded-[0.25rem] border font-cjk text-lg transition-colors",
+                                done ? "border-success/50 bg-success/10 text-success" : "border-border text-muted hover:border-fg/40",
+                                position === index && "border-fg text-fg",
+                            )}
+                        >
+                            {entry.char}
+                            {done ? (
+                                <Check className="absolute -right-1 -top-1 size-3 rounded-full bg-success p-[1px] text-bg" />
+                            ) : null}
+                        </button>
+                    );
+                })}
             </div>
         </div>
     );

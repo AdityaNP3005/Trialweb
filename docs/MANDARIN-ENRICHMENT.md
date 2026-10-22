@@ -57,19 +57,35 @@ Hanzi/kata, pinyin, arti, dan contoh kalimat. Di statistik, mode ini dihitung se
 
 Halaman tersendiri, terpisah dari hafalan flashcard dan tidak memengaruhi progres siklus.
 
-- `/writing` berisi daftar Buku → Bab. `/writing/[deckId]` berisi semua Hanzi unik bab
-  itu, sesuai urutan kemunculannya.
-- Per karakter tersedia warna nada, pinyin, arti, audio, dan kata di bab yang
-  memakainya, ditambah:
-  - **Lihat urutan goresan**: animasi; radikal diberi warna lain.
-  - **Tulis**: latihan menelusuri goresan. Setelah 3 kali salah, petunjuk goresan
-    muncul, dan di akhir jumlah goresan salah ditampilkan.
-  - **Garis bantu**: menampilkan atau menyembunyikan bayangan karakter.
+- `/writing` mengikuti bahasa aktif. Untuk 華語 isinya daftar Buku → Bab dengan progres
+  "x / y" per bab. Untuk Deutsch, halaman menampilkan "materi belum tersedia" sampai
+  materi menulis Jerman ditambahkan; menunya tetap ada di navigasi.
+- `/writing/[deckId]` berisi semua Hanzi unik bab itu, sesuai urutan kemunculannya, dan
+  langsung membuka karakter pertama yang **belum ditulis**.
+- **Mode tulis langsung aktif** begitu data goresan dimuat; tidak ada tombol "Tulis".
+  Setelah 3 kali salah, petunjuk goresan muncul. Di akhir, jumlah goresan salah
+  ditampilkan.
+- **Lihat urutan goresan** hanya menganimasikan goresan yang **belum** ditulis, lalu
+  latihan berlanjut dari goresan itu. Goresan yang sudah ditulis tetap tampil. Kalau
+  karakternya sudah selesai, seluruh urutan diputar ulang dan latihan mulai dari awal.
+- **Progres**: karakter yang selesai ditulis ditandai centang hijau di kisi karakter dan
+  dihitung di "Selesai x / y". Progres disimpan per karakter dan per kursus, jadi 你 yang
+  sudah ditulis di Bab 1 juga tercentang di bab lain.
+  - Tamu: `localStorage` (`writing` di `goabroad.guest.v2`).
+  - Akun: Firestore `users/{uid}/writing/{courseId}` → `chars` (ditulis dengan
+    `arrayUnion`). Progres tamu ikut disalin ke akun saat login (`migrateGuestWriting`).
 - Kisi 米字格 membantu menempatkan goresan.
 - Data goresan dimuat dari `hanzi-writer-data` di jsDelivr. 1.556 dari 1.561 karakter
   buku 1–4 tersedia; 嚐 嬤 汙 崁 舺 menampilkan pesan "data belum tersedia".
-- Menu **Menulis** hanya muncul saat kursus Mandarin aktif. Membuka link `/writing`
-  langsung akan mengaktifkan kursus Mandarin, sama seperti halaman level.
+
+## Ganti bahasa di setiap halaman
+
+Header setiap halaman punya pemilih **Deutsch · 華語** (`HeaderCourseSwitcher`). Beranda
+dan Deck memakai pemilih besar mereka sendiri. Navigasi bawah selalu sama untuk kedua
+bahasa. Halaman yang terikat ke satu bahasa (sesi, level, dek tertentu, bab menulis,
+bagian video) kembali ke halaman induknya saat bahasa diganti. Link langsung ke halaman
+bahasa lain mengganti kursus **sekali** saat dibuka (`useActiveCourse`), jadi pilihan
+dari header tidak dibatalkan.
 
 ## Batasan
 
@@ -79,7 +95,6 @@ Halaman tersendiri, terpisah dari hafalan flashcard dan tidak memengaruhi progre
   bisa berasal dari makna lain karakter itu (中 "sedang" di 客服中心), jadi arti Inggris
   CC-CEDICT selalu ditampilkan di sampingnya.
 - Untuk kata 1–2 karakter, kalimat dicocokkan per kata, tapi tidak per arti.
-- Latihan menulis belum menyimpan progres. Setiap kunjungan dimulai dari awal.
 
 ## Membangun ulang
 

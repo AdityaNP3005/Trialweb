@@ -372,11 +372,10 @@
         "emptyCta": "Kembali ke belajar"
     },
     "writing": {
-        "title": "Latihan menulis Hanzi",
-        "subtitle": "Pilih bab, lihat urutan goresan, lalu tulis sendiri karakternya. Latihan ini terpisah dari hafalan flashcard.",
+        "title": "Latihan menulis",
+        "subtitle": "Pilih bab, lalu tulis sendiri setiap karakternya. Jika lupa, tekan \"Lihat urutan goresan\" untuk melihat goresan yang belum kamu tulis. Latihan ini terpisah dari hafalan flashcard.",
         "chooseChapter": "Pilih bab",
         "animate": "Lihat urutan goresan",
-        "practice": "Tulis",
         "outline": "Garis bantu",
         "next": "Berikutnya",
         "prev": "Sebelumnya",
@@ -387,6 +386,11 @@
         "position": "{index} / {total}",
         "back": "Kembali ke daftar bab",
         "empty": "Belum ada kursus Mandarin.",
-        "characterLabel": "Karakter"
+        "characterLabel": "Karakter",
+        "progressLabel": "Selesai",
+        "progressValue": "{done} / {total}",
+        "writtenMark": "sudah ditulis",
+        "noMaterialTitle": "Materi menulis {course} belum tersedia",
+        "noMaterialBody": "Latihan menulis saat ini tersedia untuk 華語. Ganti bahasa di bagian atas halaman untuk mencobanya."
     }
 }

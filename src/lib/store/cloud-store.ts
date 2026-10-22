@@ -29,6 +29,7 @@ import {
     fetchVideoProgress,
     saveVideoProgress as saveVideoProgressCloud,
 } from "@/lib/data/videos";
+import { fetchWrittenCharacters, saveWrittenCharacters } from "@/lib/data/writing";
 import {
     fetchAllCycles,
     fetchDeckCycle,
@@ -249,5 +250,13 @@ export class CloudStore implements StudyStore {
 
     saveVideoProgress(progress: PlaylistProgress): Promise<void> {
         return saveVideoProgressCloud(this.uid, progress);
+    }
+
+    getWrittenCharacters(courseId: string): Promise<string[]> {
+        return fetchWrittenCharacters(this.uid, courseId);
+    }
+
+    markCharacterWritten(courseId: string, char: string): Promise<void> {
+        return saveWrittenCharacters(this.uid, courseId, [char]);
     }
 }

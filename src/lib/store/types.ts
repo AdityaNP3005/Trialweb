@@ -78,6 +78,10 @@ export interface StudyStore {
     /** Watch progress for one video playlist, or null when never watched. */
     getVideoProgress(playlistId: string): Promise<PlaylistProgress | null>;
     saveVideoProgress(progress: PlaylistProgress): Promise<void>;
+
+    /** Hanzi written to the end in writing practice (per course). */
+    getWrittenCharacters(courseId: string): Promise<string[]>;
+    markCharacterWritten(courseId: string, char: string): Promise<void>;
 }
 
 export const emptyStat = (date: string): DailyStat => ({

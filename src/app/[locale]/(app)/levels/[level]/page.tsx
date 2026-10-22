@@ -15,12 +15,13 @@ import { buttonStyles } from "@/components/ui/button";
 import { Progress, Skeleton } from "@/components/ui/progress";
 import { PageHeader, SectionHeading } from "@/components/ui/page-header";
 import { ManifestRow } from "@/components/ui/manifest-row";
+import { useActiveCourse } from "@/hooks/use-active-course";
 
 export default function LevelPage() {
     const params = useParams<{ level: string }>();
     const sectionId = params?.level ?? "";
     const router = useRouter();
-    const { store, profile, refreshProfile } = useStore();
+    const { store, profile } = useStore();
     const t = useTranslations("levels");
     const tc = useTranslations("common");
     const tv = useTranslations("video");
@@ -36,14 +37,10 @@ export default function LevelPage() {
 
     // Deep links may point at the other course (e.g. /levels/book2 while German
     // is active). Switch the course first, otherwise the unit list is empty.
+    // Only once on open, so a switch from the header is not undone.
+    useActiveCourse(course?.id ?? null);
+    // Decks are listed for the active course, so reload once the switch lands.
     const activeCourseId = profile?.activeCourseId;
-    useEffect(() => {
-        if (!store || !course || !activeCourseId) return;
-        if (activeCourseId === course.id) return;
-        void store
-            .updateProfile({ activeCourseId: course.id })
-            .then(() => refreshProfile());
-    }, [store, course, activeCourseId, refreshProfile]);
 
     useEffect(() => {
         if (!valid) {

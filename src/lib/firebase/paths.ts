@@ -34,3 +34,7 @@ export const videoPlaylistsColRef = (uid: string) =>
     collection(getDb(), "users", uid, "videoPlaylists");
 export const videoPlaylistDocRef = (uid: string, playlistId: string) =>
     doc(getDb(), "users", uid, "videoPlaylists", playlistId);
+
+/** Characters finished in writing practice, one document per course. */
+export const writingDocRef = (uid: string, courseId: string) =>
+    doc(getDb(), "users", uid, "writing", courseId);

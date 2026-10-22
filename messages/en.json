@@ -372,11 +372,10 @@
         "emptyCta": "Back to studying"
     },
     "writing": {
-        "title": "Hanzi writing practice",
-        "subtitle": "Pick a chapter, watch the stroke order, then write each character yourself. This is separate from flashcard review.",
+        "title": "Writing practice",
+        "subtitle": "Pick a chapter and write each character yourself. If you get stuck, \"Show stroke order\" shows the strokes you have not written yet. This is separate from flashcard review.",
         "chooseChapter": "Choose a chapter",
         "animate": "Show stroke order",
-        "practice": "Write",
         "outline": "Guide outline",
         "next": "Next",
         "prev": "Previous",
@@ -387,6 +386,11 @@
         "position": "{index} / {total}",
         "back": "Back to chapters",
         "empty": "No Mandarin course yet.",
-        "characterLabel": "Characters"
+        "characterLabel": "Characters",
+        "progressLabel": "Done",
+        "progressValue": "{done} / {total}",
+        "writtenMark": "written",
+        "noMaterialTitle": "No {course} writing material yet",
+        "noMaterialBody": "Writing practice is currently available for 華語. Switch the language at the top of the page to try it."
     }
 }

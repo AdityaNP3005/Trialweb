@@ -11,6 +11,7 @@ import {
 import type { Profile } from "@/types";
 import { fetchProfile, patchProfile } from "@/lib/data/profile";
 import { fetchVideoProgress, saveVideoProgress } from "@/lib/data/videos";
+import { saveWrittenCharacters } from "@/lib/data/writing";
 import { mergePlaylistProgress } from "@/lib/video/progress";
 import { clearGuestSnapshot, GuestStore, readGuestSnapshot } from "./local-store";
 
@@ -113,4 +114,15 @@ export async function migrateGuestVideos(
 
     await patchProfile(uid, { videosV1: true }).catch(() => { });
     return true;
+}
+
+/**
+ * Copies guest writing practice into the account. `arrayUnion` makes it safe to
+ * run on every sign-in; the snapshot is gone once `migrateGuestData` clears it.
+ */
+export async function migrateGuestWriting(uid: string): Promise<void> {
+    const writing = readGuestSnapshot()?.writing ?? {};
+    for (const [courseId, chars] of Object.entries(writing)) {
+        await saveWrittenCharacters(uid, courseId, chars).catch(() => { });
+    }
 }

@@ -46,7 +46,8 @@ dijalankan untuk akun pilot.
 | Tombol audio pelan (60% kecepatan) | ✅ | `TtsButton slow`, di flashcard & kuis |
 | Mandarin: warna nada, kata satuan, rincian karakter, contoh kalimat | ✅ | 2.891/2.891 kartu berpinyin per suku kata, 2.253 bercontoh, `scripts/content/zh/zh-enrich.py`, [`MANDARIN-ENRICHMENT.md`](./MANDARIN-ENRICHMENT.md) |
 | Mode kuis "Dengar" (semua kursus) | ✅ | `StudyMode = "listen"`, dihitung sebagai kuis di statistik |
-| Latihan menulis Hanzi (halaman terpisah) | ✅ | `/writing`, `/writing/[deckId]`, `hanzi-writer`; menu hanya muncul saat kursus Mandarin aktif |
+| Latihan menulis Hanzi (halaman terpisah) | ✅ | `/writing`, `/writing/[deckId]`, `hanzi-writer`; mode tulis otomatis, animasi melanjutkan goresan yang belum ditulis, progres per karakter (`getWrittenCharacters`/`markCharacterWritten`) |
+| Ganti bahasa di setiap halaman, navigasi tetap | ✅ | `HeaderCourseSwitcher` di header; menu Menulis selalu tampil, Deutsch menampilkan "materi belum tersedia" |
 | Cara baca Jerman ejaan Indonesia (`readingId`) | ✅ | 9.483/9.483 kartu, IPA Wiktionary → huruf EYD V + pemenggalan, `scripts/content/de-pronunciation.py`, [`GERMAN-PRONUNCIATION.md`](./GERMAN-PRONUNCIATION.md) |
 
 ---
