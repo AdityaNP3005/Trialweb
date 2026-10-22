@@ -444,8 +444,8 @@ export class GuestStore implements StudyStore {
             repeat: stat.repeat + (action === "repeat" ? 1 : 0),
             known: stat.known + (action === "next" ? 1 : 0),
             studyMs: stat.studyMs + Math.max(0, Math.round(durationMs)),
-            quizCorrect: stat.quizCorrect + (mode === "quiz" && correct ? 1 : 0),
-            quizTotal: stat.quizTotal + (mode === "quiz" ? 1 : 0),
+            quizCorrect: stat.quizCorrect + (mode !== "flashcard" && correct ? 1 : 0),
+            quizTotal: stat.quizTotal + (mode !== "flashcard" ? 1 : 0),
             byCourse: {
                 ...(stat.byCourse ?? {}),
                 [card.courseId]: {
@@ -456,8 +456,8 @@ export class GuestStore implements StudyStore {
                     studyMs:
                         perCourse.studyMs + Math.max(0, Math.round(durationMs)),
                     quizCorrect:
-                        perCourse.quizCorrect + (mode === "quiz" && correct ? 1 : 0),
-                    quizTotal: perCourse.quizTotal + (mode === "quiz" ? 1 : 0),
+                        perCourse.quizCorrect + (mode !== "flashcard" && correct ? 1 : 0),
+                    quizTotal: perCourse.quizTotal + (mode !== "flashcard" ? 1 : 0),
                 },
             },
         };

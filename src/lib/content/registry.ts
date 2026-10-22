@@ -1,4 +1,4 @@
-import type { Card, CardScript, SectionId } from "@/types";
+import type { Card, CardScript, CharacterInfo, SectionId } from "@/types";
 import deManifest from "@/content/manifest.json";
 import zhManifest from "@/content/zh/manifest.json";
 
@@ -16,6 +16,10 @@ export type SeedCard = {
     readingId?: string | null;
     /** Mandarin: tone-marked pinyin. */
     pinyin?: string | null;
+    pinyinParts?: string[] | null;
+    measureWords?: string | null;
+    characters?: CharacterInfo[] | null;
+    examplePinyin?: string | null;
     exampleDe?: string | null;
     exampleId?: string | null;
     exampleEn?: string | null;
@@ -261,6 +265,10 @@ export async function loadContentCards(deckId: string): Promise<Card[]> {
         ipa: card.ipa ?? null,
         readingId: card.readingId ?? null,
         pinyin: card.pinyin ?? null,
+        pinyinParts: card.pinyinParts ?? null,
+        measureWords: card.measureWords ?? null,
+        characters: card.characters ?? null,
+        examplePinyin: card.examplePinyin ?? null,
         script: unit.script,
         exampleDe: card.exampleDe ?? null,
         exampleId: card.exampleId ?? null,

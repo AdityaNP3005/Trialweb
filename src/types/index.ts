@@ -45,6 +45,14 @@ export type Card = {
     readingId?: string | null;
     /** Mandarin only: tone-marked pinyin, shown after the card is revealed. */
     pinyin?: string | null;
+    /** Mandarin only: pinyin split per Hanzi ("kè", "tīng"), for tone colours. */
+    pinyinParts?: string[] | null;
+    /** Mandarin only: classifiers from CC-CEDICT, e.g. "本 běn · 冊 cè". */
+    measureWords?: string | null;
+    /** Mandarin only: per-character breakdown of a multi-character word. */
+    characters?: CharacterInfo[] | null;
+    /** Mandarin only: pinyin of the example sentence (`exampleDe` holds the Hanzi). */
+    examplePinyin?: string | null;
     /** Script used on the front side; affects fonts and TTS locale. */
     script?: CardScript;
     exampleDe: string | null;
@@ -56,6 +64,14 @@ export type Card = {
     suspended: boolean;
     createdAt: number;
     updatedAt: number;
+};
+
+export type CharacterInfo = {
+    char: string;
+    pinyin: string | null;
+    meaningId: string | null;
+    meaningEn: string | null;
+    radical: string | null;
 };
 
 export type CardInput = Omit<
@@ -102,7 +118,8 @@ export type DeckInput = {
 
 /** Binary answer for every card in the new study flow. */
 export type StudyAction = "repeat" | "next";
-export type StudyMode = "flashcard" | "quiz";
+/** `listen`: hear the word, pick it from four written options. */
+export type StudyMode = "flashcard" | "quiz" | "listen";
 
 /**
  * Per-card state for one account. One document per card that was ever shown,

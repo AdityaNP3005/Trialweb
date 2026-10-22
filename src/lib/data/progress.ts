@@ -114,8 +114,8 @@ export async function submitAction({
             repeat: increment(action === "repeat" ? 1 : 0),
             known: increment(action === "next" ? 1 : 0),
             studyMs: increment(Math.max(0, Math.round(durationMs))),
-            quizCorrect: increment(mode === "quiz" && correct ? 1 : 0),
-            quizTotal: increment(mode === "quiz" ? 1 : 0),
+            quizCorrect: increment(mode !== "flashcard" && correct ? 1 : 0),
+            quizTotal: increment(mode !== "flashcard" ? 1 : 0),
             // Same activity, split by language; the totals above stay combined.
             // Nested maps (not dotted keys) so `set(..., { merge: true })` deep-merges.
             byCourse: {
@@ -125,8 +125,8 @@ export async function submitAction({
                     repeat: increment(action === "repeat" ? 1 : 0),
                     known: increment(action === "next" ? 1 : 0),
                     studyMs: increment(Math.max(0, Math.round(durationMs))),
-                    quizCorrect: increment(mode === "quiz" && correct ? 1 : 0),
-                    quizTotal: increment(mode === "quiz" ? 1 : 0),
+                    quizCorrect: increment(mode !== "flashcard" && correct ? 1 : 0),
+                    quizTotal: increment(mode !== "flashcard" ? 1 : 0),
                 },
             },
             updatedAt: at,

@@ -48,7 +48,8 @@
         "logout": "Sign out",
         "guest": "Guest",
         "guestModeHint": "progress saved in this browser",
-        "videos": "Videos"
+        "videos": "Videos",
+        "writing": "Writing"
     },
     "landing": {
         "heroTitle": "Memorise German and Mandarin vocabulary, one chapter per session.",
@@ -221,8 +222,12 @@
         "emptyQueue": "Nothing is due right now.",
         "modeFlashcard": "Flashcards",
         "modeQuiz": "Quiz",
-        "modeHint": "Press Q to switch mode",
-        "pluralShort": "Plural"
+        "modeHint": "Press Q to switch mode (cards → quiz → listen)",
+        "pluralShort": "Plural",
+        "modeListen": "Listen",
+        "measureWords": "Measure words",
+        "radical": "radical",
+        "pinyinGuide": "Pinyin reading guide"
     },
     "quiz": {
         "question": "What does this word mean?",
@@ -232,7 +237,9 @@
         "answerWas": "Answer: {answer}",
         "next": "Next",
         "notEnoughCards": "You need at least 4 cards in the deck for quiz mode.",
-        "score": "{correct} correct out of {total}"
+        "score": "{correct} correct out of {total}",
+        "listenQuestion": "Listen, then pick the word you heard",
+        "playAgain": "Play again"
     },
     "stats": {
         "title": "Statistics",
@@ -363,5 +370,23 @@
         "emptyTitle": "No video material yet",
         "emptyBody": "Video lessons are available for German A1. Other languages will follow.",
         "emptyCta": "Back to studying"
+    },
+    "writing": {
+        "title": "Hanzi writing practice",
+        "subtitle": "Pick a chapter, watch the stroke order, then write each character yourself. This is separate from flashcard review.",
+        "chooseChapter": "Choose a chapter",
+        "animate": "Show stroke order",
+        "practice": "Write",
+        "outline": "Guide outline",
+        "next": "Next",
+        "prev": "Previous",
+        "done": "Done! {mistakes} wrong strokes.",
+        "mistakeHint": "Wrong stroke. After 3 misses the stroke hint appears.",
+        "noData": "No stroke data for this character yet.",
+        "usedIn": "Used in",
+        "position": "{index} / {total}",
+        "back": "Back to chapters",
+        "empty": "No Mandarin course yet.",
+        "characterLabel": "Characters"
     }
 }

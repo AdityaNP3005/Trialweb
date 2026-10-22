@@ -8,7 +8,10 @@ Deck Jerman A1–C2 di `src/content/de/` dibangun dari data terbuka berikut.
 | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) (`de_50k.txt`, dari OpenSubtitles) | urutan frekuensi & pembagian level | CC BY-SA 4.0 (konten) |
 | Wiktionary (lewat WikDict) | verifikasi lemma | CC BY-SA 4.0 |
 | [Wiktionary Jerman](https://de.wiktionary.org/) lewat dump [wiktextract/kaikki.org](https://kaikki.org/dewiktionary/) | IPA sumber cara baca (`readingId`, `scripts/content/de-ipa.json`); gender, jamak, dan contoh kalimat cadangan (`scripts/content/de-enrichment.json`) | CC BY-SA 4.0 |
-| [Tatoeba](https://tatoeba.org/) (ekspor `deu`, `ind`, `eng` + tautan terjemahan) | contoh kalimat beserta terjemahan Indonesia/Inggris buatan manusia; ID kalimat dicatat di `exampleSource` | [CC BY 2.0 FR](https://creativecommons.org/licenses/by/2.0/fr/) |
+| [Tatoeba](https://tatoeba.org/) (ekspor `deu`, `cmn`, `ind`, `eng` + tautan terjemahan, transkripsi `cmn`) | contoh kalimat Jerman & Mandarin beserta pinyin dan terjemahan Indonesia/Inggris buatan manusia; ID kalimat dicatat di `exampleSource` | [CC BY 2.0 FR](https://creativecommons.org/licenses/by/2.0/fr/) |
+| [CC-CEDICT](https://cc-cedict.org/) (MDBG) | Mandarin: kata satuan, arti per karakter, inventaris suku kata pinyin, konversi sederhana→tradisional per kata (`scripts/content/zh/zh-enrichment.json`) | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| [Make Me a Hanzi](https://github.com/skishore/makemeahanzi) `dictionary.txt` | Mandarin: radikal tiap karakter | [Arphic Public License](https://github.com/skishore/makemeahanzi/blob/master/APL/ARPHICPL.TXT) / LGPL |
+| [Hanzi Writer](https://hanziwriter.org/) + `hanzi-writer-data` (dimuat dari jsDelivr) | animasi urutan goresan & latihan menulis | MIT; data goresan dari Make Me a Hanzi (Arphic Public License) |
 
 Kartu A1 yang dikurasi manual (`src/content/de/source/curated-a1.json`) ditulis
 untuk proyek ini dan mengikuti lisensi yang sama.

@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { FrontText } from "@/components/study/front-text";
+import { TonePinyin } from "@/components/study/tone-text";
 import { Eye, EyeOff, Pencil, Trash2 } from "lucide-react";
 import type { Card } from "@/types";
 import { Badge } from "@/components/ui/badge";
@@ -42,7 +43,7 @@ export function CardList({
                             </span>
                             {card.pinyin ? (
                                 <span className="font-mono text-[11px] text-accent">
-                                    {card.pinyin}
+                                    <TonePinyin card={card} />
                                 </span>
                             ) : null}
                             {card.plural ? (
@@ -59,8 +60,14 @@ export function CardList({
                             {card.meaningId} · {card.meaningEn}
                         </p>
                         {card.exampleDe ? (
-                            <p className="mt-1 truncate border-l-2 border-border pl-2 text-xs italic text-muted">
-                                „{card.exampleDe}“
+                            <p
+                                className={
+                                    card.script === "hanzi"
+                                        ? "mt-1 truncate border-l-2 border-border pl-2 font-cjk text-xs text-muted"
+                                        : "mt-1 truncate border-l-2 border-border pl-2 text-xs italic text-muted"
+                                }
+                            >
+                                {card.script === "hanzi" ? card.exampleDe : `„${card.exampleDe}“`}
                             </p>
                         ) : null}
                     </div>

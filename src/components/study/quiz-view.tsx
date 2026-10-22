@@ -1,6 +1,7 @@
 "use client";
 
-import { Check, X } from "lucide-react";
+import { useEffect } from "react";
+import { Check, Headphones, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import type { Card } from "@/types";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,9 @@ import { cn } from "@/lib/utils/cn";
 import { FrontText } from "./front-text";
 import { TtsButton } from "./tts-button";
 import { spokenFront } from "@/lib/content/german";
+import { useSpeech } from "@/hooks/use-speech";
+import { ExampleBlock } from "./example-block";
+import { TonePinyin } from "./tone-text";
 
 const letters = ["A", "B", "C", "D", "E", "F"];
 
@@ -22,6 +26,7 @@ export function QuizView({
     rate,
     lang,
     badgeLabel,
+    listen = false,
 }: {
     card: Card;
     options: string[];
@@ -33,9 +38,17 @@ export function QuizView({
     rate?: number;
     lang?: string;
     badgeLabel?: string;
+    /** Listening quiz: the word is only heard; options are written words. */
+    listen?: boolean;
 }) {
     const t = useTranslations("quiz");
-    const correct = card.meaningId;
+    const { speak } = useSpeech(lang);
+    const correct = listen ? card.front : card.meaningId;
+    const spoken = spokenFront(card);
+
+    useEffect(() => {
+        if (listen) speak(spoken, { voiceURI: voiceURI ?? null, rate });
+    }, [listen, card.id, spoken, speak, voiceURI, rate]);
     const answered = picked !== null;
     const isCorrect = picked === correct;
 
@@ -43,33 +56,61 @@ export function QuizView({
         <div className="space-y-4">
             <div className="panel flex min-h-[11rem] flex-col items-center justify-center p-5 text-center">
                 <span className="eyebrow">{badgeLabel ?? card.level}</span>
-                <div className="mt-3 flex items-center gap-3">
-                    <p
-                        className={cn(
-                            "tracking-tight",
-                            card.script === "hanzi"
-                                ? "font-cjk font-medium text-[2.5rem] leading-tight sm:text-[3rem]"
-                                : "display text-[2rem] leading-tight sm:text-[2.5rem]",
+                {listen && !answered ? (
+                    <div className="mt-3 flex flex-col items-center gap-3">
+                        <button
+                            type="button"
+                            onClick={() => speak(spoken, { voiceURI: voiceURI ?? null, rate })}
+                            aria-label={t("playAgain")}
+                            className="grid size-16 place-items-center rounded-full border border-border text-fg transition-colors hover:border-fg/40"
+                        >
+                            <Headphones className="size-7" />
+                        </button>
+                        <TtsButton text={spoken} voiceURI={voiceURI} rate={rate} lang={lang} slow />
+                        <p className="meta">{t("listenQuestion")}</p>
+                    </div>
+                ) : (
+                    <>
+                        <div className="mt-3 flex items-center gap-3">
+                            <p
+                                className={cn(
+                                    "tracking-tight",
+                                    card.script === "hanzi"
+                                        ? "font-cjk font-medium text-[2.5rem] leading-tight sm:text-[3rem]"
+                                        : "display text-[2rem] leading-tight sm:text-[2.5rem]",
+                                )}
+                            >
+                                <FrontText card={card} />
+                            </p>
+                            <TtsButton
+                                text={spokenFront(card)}
+                                voiceURI={voiceURI}
+                                rate={rate}
+                                lang={lang}
+                            />
+                            <TtsButton
+                                text={spokenFront(card)}
+                                voiceURI={voiceURI}
+                                rate={rate}
+                                lang={lang}
+                                slow
+                            />
+                        </div>
+                        {card.readingId ? <p className="meta mt-2">{card.readingId}</p> : null}
+                        {listen ? (
+                            <p className="mt-2 text-sm">
+                                {card.pinyin ? (
+                                    <span className="font-mono">
+                                        <TonePinyin card={card} />{" "}
+                                    </span>
+                                ) : null}
+                                {card.meaningId}
+                            </p>
+                        ) : (
+                            <p className="meta mt-3">{t("question")}</p>
                         )}
-                    >
-                        <FrontText card={card} />
-                    </p>
-                    <TtsButton
-                        text={spokenFront(card)}
-                        voiceURI={voiceURI}
-                        rate={rate}
-                        lang={lang}
-                    />
-                    <TtsButton
-                        text={spokenFront(card)}
-                        voiceURI={voiceURI}
-                        rate={rate}
-                        lang={lang}
-                        slow
-                    />
-                </div>
-                {card.readingId ? <p className="meta mt-2">{card.readingId}</p> : null}
-                <p className="meta mt-3">{t("question")}</p>
+                    </>
+                )}
             </div>
 
             <ul className="border-t border-border">
@@ -103,7 +144,14 @@ export function QuizView({
                                 >
                                     {letters[index] ?? index + 1}
                                 </span>
-                                <span className="font-semibold">{option}</span>
+                                <span
+                                    className={cn(
+                                        "font-semibold",
+                                        listen && card.script === "hanzi" && "font-cjk text-xl font-medium",
+                                    )}
+                                >
+                                    {option}
+                                </span>
                                 {answered && isAnswer ? (
                                     <Check className="ml-auto size-4" />
                                 ) : null}
@@ -127,11 +175,7 @@ export function QuizView({
                         {isCorrect ? t("correct") : t("wrong")}
                         {isCorrect ? null : ` · ${t("answerWas", { answer: correct })}`}
                     </p>
-                    {card.exampleDe ? (
-                        <p className="border-l-2 border-border pl-3 text-xs italic text-muted">
-                            „{card.exampleDe}“
-                        </p>
-                    ) : null}
+                    <ExampleBlock card={card} />
                     <Button className="w-full" onClick={onNext} loading={busy}>
                         {t("next")}
                     </Button>

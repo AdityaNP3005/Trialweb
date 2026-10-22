@@ -48,7 +48,8 @@
         "logout": "Keluar",
         "guest": "Tamu",
         "guestModeHint": "progres tersimpan di browser ini",
-        "videos": "Video"
+        "videos": "Video",
+        "writing": "Menulis"
     },
     "landing": {
         "heroTitle": "Hafalkan kosakata Jerman dan Mandarin, satu bab setiap sesi.",
@@ -221,8 +222,12 @@
         "emptyQueue": "Tidak ada kartu yang perlu diulang sekarang.",
         "modeFlashcard": "Flashcard",
         "modeQuiz": "Kuis",
-        "modeHint": "Tekan Q untuk berganti mode",
-        "pluralShort": "Jamak"
+        "modeHint": "Tekan Q untuk berganti mode (kartu → kuis → dengar)",
+        "pluralShort": "Jamak",
+        "modeListen": "Dengar",
+        "measureWords": "Kata satuan",
+        "radical": "radikal",
+        "pinyinGuide": "Panduan membaca pinyin"
     },
     "quiz": {
         "question": "Apa arti kata ini?",
@@ -232,7 +237,9 @@
         "answerWas": "Jawaban: {answer}",
         "next": "Lanjut",
         "notEnoughCards": "Butuh minimal 4 kartu di deck untuk mode kuis.",
-        "score": "{correct} benar dari {total}"
+        "score": "{correct} benar dari {total}",
+        "listenQuestion": "Dengarkan, lalu pilih kata yang kamu dengar",
+        "playAgain": "Putar lagi"
     },
     "stats": {
         "title": "Statistik",
@@ -363,5 +370,23 @@
         "emptyTitle": "Belum ada materi video",
         "emptyBody": "Materi video baru tersedia untuk Deutsch A1. Bahasa lain menyusul.",
         "emptyCta": "Kembali ke belajar"
+    },
+    "writing": {
+        "title": "Latihan menulis Hanzi",
+        "subtitle": "Pilih bab, lihat urutan goresan, lalu tulis sendiri karakternya. Latihan ini terpisah dari hafalan flashcard.",
+        "chooseChapter": "Pilih bab",
+        "animate": "Lihat urutan goresan",
+        "practice": "Tulis",
+        "outline": "Garis bantu",
+        "next": "Berikutnya",
+        "prev": "Sebelumnya",
+        "done": "Selesai! {mistakes} goresan salah.",
+        "mistakeHint": "Goresan salah. Setelah 3 kali salah, petunjuk goresan akan muncul.",
+        "noData": "Data goresan untuk karakter ini belum tersedia.",
+        "usedIn": "Dipakai di",
+        "position": "{index} / {total}",
+        "back": "Kembali ke daftar bab",
+        "empty": "Belum ada kursus Mandarin.",
+        "characterLabel": "Karakter"
     }
 }

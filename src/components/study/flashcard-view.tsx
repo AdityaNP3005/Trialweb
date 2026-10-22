@@ -1,10 +1,13 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { CornerDownRight, Repeat2 } from "lucide-react";
+import { Repeat2 } from "lucide-react";
 import type { Card } from "@/types";
 import { cn } from "@/lib/utils/cn";
+import { ChineseDetails } from "./chinese-details";
+import { ExampleBlock } from "./example-block";
 import { FrontText } from "./front-text";
+import { TonePinyin } from "./tone-text";
 import { TtsButton } from "./tts-button";
 import { spokenFront } from "@/lib/content/german";
 
@@ -117,8 +120,8 @@ export function FlashcardView({
                     {revealed ? (
                         <div className="animate-rise space-y-2 text-center">
                             {card.pinyin ? (
-                                <p className="font-mono text-lg font-medium tracking-wide text-accent">
-                                    {card.pinyin}
+                                <p className="font-mono text-lg font-medium tracking-wide">
+                                    <TonePinyin card={card} />
                                 </p>
                             ) : null}
                             <p className="text-lg font-semibold leading-snug">
@@ -135,24 +138,9 @@ export function FlashcardView({
                                 </p>
                             ) : null}
 
-                            {card.exampleDe ? (
-                                <div className="mt-3 border-l-2 border-border pl-3 text-left">
-                                    <p className="flex items-start gap-1.5 text-sm italic leading-relaxed">
-                                        <CornerDownRight className="mt-0.5 size-3.5 shrink-0 text-muted" />
-                                        „{card.exampleDe}“
-                                    </p>
-                                    {card.exampleId ? (
-                                        <p className="mt-1 pl-5 text-xs text-muted">
-                                            {card.exampleId}
-                                        </p>
-                                    ) : null}
-                                    {card.exampleEn ? (
-                                        <p className="mt-0.5 pl-5 text-xs text-muted">
-                                            {card.exampleEn}
-                                        </p>
-                                    ) : null}
-                                </div>
-                            ) : null}
+                            {card.script === "hanzi" ? <ChineseDetails card={card} /> : null}
+
+                            <ExampleBlock card={card} />
                         </div>
                     ) : (
                         <p className="flex items-center justify-center gap-2 pt-4 text-xs text-muted">

@@ -380,6 +380,16 @@ def build(source: Path, books: set[int], require_id: bool) -> dict:
     return report
 
 
+def apply_enrichment() -> None:
+    """Re-applies tones, measure words, characters and examples (zh-enrich.py)."""
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location("zh_enrich", Path(__file__).with_name("zh-enrich.py"))
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    module.apply_enrichment()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Build the Mandarin course decks")
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
@@ -399,6 +409,7 @@ def main() -> None:
         )
 
     report = build(args.source, books, require_id=args.require_id)
+    apply_enrichment()
     print(
         f"{report['cards']} kartu · {report['parsedRows']} baris · "
         f"duplikat {report['duplicatesDropped']} · "

@@ -44,6 +44,9 @@ dijalankan untuk akun pilot.
 | **Mandarin tradisional (buku 1–4)** | ✅ | course `zh`, 54 bab, 2.891 kartu, TTS `zh-TW` |
 | Artikel/gender, jamak, contoh kalimat Jerman | ✅ | 6.359/6.534 kata benda berartikel, 9.061 kartu bercontoh (3.180 dengan terjemahan ID), `scripts/content/de-enrich.py`, [`GERMAN-ENRICHMENT.md`](./GERMAN-ENRICHMENT.md) |
 | Tombol audio pelan (60% kecepatan) | ✅ | `TtsButton slow`, di flashcard & kuis |
+| Mandarin: warna nada, kata satuan, rincian karakter, contoh kalimat | ✅ | 2.891/2.891 kartu berpinyin per suku kata, 2.253 bercontoh, `scripts/content/zh/zh-enrich.py`, [`MANDARIN-ENRICHMENT.md`](./MANDARIN-ENRICHMENT.md) |
+| Mode kuis "Dengar" (semua kursus) | ✅ | `StudyMode = "listen"`, dihitung sebagai kuis di statistik |
+| Latihan menulis Hanzi (halaman terpisah) | ✅ | `/writing`, `/writing/[deckId]`, `hanzi-writer`; menu hanya muncul saat kursus Mandarin aktif |
 | Cara baca Jerman ejaan Indonesia (`readingId`) | ✅ | 9.483/9.483 kartu, IPA Wiktionary → huruf EYD V + pemenggalan, `scripts/content/de-pronunciation.py`, [`GERMAN-PRONUNCIATION.md`](./GERMAN-PRONUNCIATION.md) |
 
 ---

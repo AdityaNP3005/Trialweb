@@ -7,6 +7,7 @@ import {
     Home,
     LogIn,
     LogOut,
+    PenLine,
     Settings,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -21,11 +22,13 @@ import { Logo } from "./logo";
 import { Skeleton } from "@/components/ui/progress";
 
 const items = [
-    { href: "/dashboard", key: "dashboard", icon: Home },
-    { href: "/decks", key: "decks", icon: BookOpen },
-    { href: "/videos", key: "videos", icon: Clapperboard },
-    { href: "/stats", key: "stats", icon: BarChart3 },
-    { href: "/settings", key: "settings", icon: Settings },
+    { href: "/dashboard", key: "dashboard", icon: Home, course: null },
+    { href: "/decks", key: "decks", icon: BookOpen, course: null },
+    { href: "/videos", key: "videos", icon: Clapperboard, course: null },
+    // Hanzi writing practice; only shown while Mandarin is the active course.
+    { href: "/writing", key: "writing", icon: PenLine, course: "zh" },
+    { href: "/stats", key: "stats", icon: BarChart3, course: null },
+    { href: "/settings", key: "settings", icon: Settings, course: null },
 ] as const;
 
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -35,6 +38,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
     const router = useRouter();
     const { user } = useAuth();
     const { profile } = useStore();
+    const navItems = items.filter((item) => !item.course || item.course === profile?.activeCourseId);
 
     const isGuest = !user;
     const displayName =
@@ -51,7 +55,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                     </Link>
 
                     <nav className="hidden flex-1 items-center gap-5 sm:flex">
-                        {items.map(({ href, key }) => {
+                        {navItems.map(({ href, key }) => {
                             const active = pathname.startsWith(href);
                             return (
                                 <Link
@@ -132,8 +136,11 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
             {/* Mobile: a quiet bottom strip instead of a floating pill bar. */}
             <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/95 backdrop-blur-sm sm:hidden">
-                <div className="mx-auto grid max-w-md grid-cols-5">
-                    {items.map(({ href, key, icon: Icon }) => {
+                <div
+                    className="mx-auto grid max-w-md"
+                    style={{ gridTemplateColumns: `repeat(${navItems.length}, minmax(0, 1fr))` }}
+                >
+                    {navItems.map(({ href, key, icon: Icon }) => {
                         const active = pathname.startsWith(href);
                         return (
                             <Link
@@ -141,7 +148,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                                 href={href}
                                 aria-current={active ? "page" : undefined}
                                 className={cn(
-                                    "flex flex-col items-center gap-1 py-2.5 text-[9px] font-medium uppercase tracking-[0.1em]",
+                                    "flex min-w-0 flex-col items-center gap-1 py-2.5 text-[9px] font-medium uppercase tracking-[0.04em]",
                                     active ? "text-fg" : "text-muted",
                                 )}
                             >

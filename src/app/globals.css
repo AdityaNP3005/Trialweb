@@ -28,6 +28,12 @@
     --gender-der: oklch(0.48 0.13 255);
     --gender-die: oklch(0.52 0.16 22);
     --gender-das: oklch(0.48 0.11 150);
+    /* Mandarin tones (Pleco/MDBG convention): 1 red, 2 orange, 3 green, 4 blue, neutral grey. */
+    --tone-1: oklch(0.53 0.19 27);
+    --tone-2: oklch(0.6 0.15 60);
+    --tone-3: oklch(0.5 0.13 150);
+    --tone-4: oklch(0.47 0.15 260);
+    --tone-5: oklch(0.55 0.01 70);
 
     --shadow-card: 0 1px 0 oklch(0.23 0.014 70 / 0.04);
     --shadow-lift: 0 1px 0 oklch(0.23 0.014 70 / 0.05),
@@ -55,6 +61,11 @@
     --gender-der: oklch(0.74 0.11 255);
     --gender-die: oklch(0.74 0.13 22);
     --gender-das: oklch(0.76 0.11 150);
+    --tone-1: oklch(0.72 0.16 27);
+    --tone-2: oklch(0.8 0.13 70);
+    --tone-3: oklch(0.76 0.13 150);
+    --tone-4: oklch(0.74 0.12 255);
+    --tone-5: oklch(0.7 0.01 90);
 
     --shadow-card: 0 1px 0 oklch(0 0 0 / 0.3);
     --shadow-lift: 0 1px 0 oklch(0 0 0 / 0.35), 0 14px 28px -22px oklch(0 0 0 / 0.9);
@@ -81,6 +92,11 @@
     --color-der: var(--gender-der);
     --color-die: var(--gender-die);
     --color-das: var(--gender-das);
+    --color-tone-1: var(--tone-1);
+    --color-tone-2: var(--tone-2);
+    --color-tone-3: var(--tone-3);
+    --color-tone-4: var(--tone-4);
+    --color-tone-5: var(--tone-5);
 
     /* Hanzi never renders in Inter/Source Serif 4: both stacks fall through to
        the self-hosted Noto Sans TC (traditional forms, unambiguous strokes). */

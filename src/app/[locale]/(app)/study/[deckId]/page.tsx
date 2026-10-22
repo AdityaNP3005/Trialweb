@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useParams } from "next/navigation";
-import { ArrowLeft, Layers, ListChecks } from "lucide-react";
+import { ArrowLeft, Headphones, Layers, ListChecks } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Card, Deck, StudyAction, StudyMode } from "@/types";
@@ -42,6 +42,7 @@ export default function StudyPage() {
     const [revealed, setRevealed] = useState(false);
     const [mode, setMode] = useState<StudyMode>("flashcard");
     const [pool, setPool] = useState<string[]>([]);
+    const [frontPool, setFrontPool] = useState<string[]>([]);
     const [quizPicked, setQuizPicked] = useState<string | null>(null);
     const [busy, setBusy] = useState(false);
     const [error, setError] = useState<string | null>(null);
@@ -82,6 +83,7 @@ export default function StudyPage() {
                 setPlan(nextPlan);
                 setQueue(nextPlan.cards);
                 setPool(cards.map((card) => card.meaningId));
+                setFrontPool(cards.map((card) => card.front));
                 startedAt.current = Date.now();
                 cardShownAt.current = Date.now();
             } catch (cause) {
@@ -103,12 +105,16 @@ export default function StudyPage() {
 
     const quizAvailable = useMemo(() => new Set(pool.filter(Boolean)).size >= 4, [pool]);
 
+    // Meaning quiz picks among meanings; listening picks among written words.
+    const quizAnswer = current ? (mode === "listen" ? current.front : current.meaningId) : "";
+
     const quizOptions = useMemo(() => {
-        if (!current || mode !== "quiz" || !quizAvailable) return [];
-        const distractors = pickDistractors(pool, current.meaningId, 3);
+        if (!current || mode === "flashcard" || !quizAvailable) return [];
+        const source = mode === "listen" ? frontPool : pool;
+        const distractors = pickDistractors(source, quizAnswer, 3);
         if (distractors.length < 3) return [];
-        return buildOptions(current.meaningId, distractors);
-    }, [current, mode, pool, quizAvailable]);
+        return buildOptions(quizAnswer, distractors);
+    }, [current, mode, pool, frontPool, quizAnswer, quizAvailable]);
 
     function finish(next: number, repeat: number) {
         setSummary({
@@ -127,8 +133,8 @@ export default function StudyPage() {
         setBusy(true);
         setError(null);
 
-        const isQuiz = mode === "quiz";
-        const correct = isQuiz ? quizPicked === current.meaningId : action === "next";
+        const isQuiz = mode !== "flashcard";
+        const correct = isQuiz ? quizPicked === quizAnswer : action === "next";
 
         try {
             await store.submitAction({
@@ -185,7 +191,9 @@ export default function StudyPage() {
             if (summary) return;
 
             if (event.key.toLowerCase() === "q" && quizAvailable) {
-                setMode((value) => (value === "flashcard" ? "quiz" : "flashcard"));
+                setMode((value) =>
+                    value === "flashcard" ? "quiz" : value === "quiz" ? "listen" : "flashcard",
+                );
                 setRevealed(false);
                 setQuizPicked(null);
                 return;
@@ -304,6 +312,26 @@ export default function StudyPage() {
                             type="button"
                             disabled={!quizAvailable}
                             title={quizAvailable ? t("modeHint") : tq("notEnoughCards")}
+                            aria-pressed={mode === "listen"}
+                            onClick={() => {
+                                setMode("listen");
+                                setRevealed(false);
+                                setQuizPicked(null);
+                            }}
+                            className={cn(
+                                "inline-flex items-center gap-1 border-b-2 pb-1 font-mono text-[10px] uppercase tracking-[0.12em] transition-colors disabled:opacity-40",
+                                mode === "listen"
+                                    ? "border-accent text-fg"
+                                    : "border-transparent text-muted hover:text-fg",
+                            )}
+                        >
+                            <Headphones className="size-3" />
+                            {t("modeListen")}
+                        </button>
+                        <button
+                            type="button"
+                            disabled={!quizAvailable}
+                            title={quizAvailable ? t("modeHint") : tq("notEnoughCards")}
                             aria-pressed={mode === "quiz"}
                             onClick={() => {
                                 setMode("quiz");
@@ -337,15 +365,14 @@ export default function StudyPage() {
             <Progress value={index} max={totalInSession} label={t("sessionTitle")} />
 
             {current ? (
-                mode === "quiz" && quizOptions.length === 4 ? (
+                mode !== "flashcard" && quizOptions.length === 4 ? (
                     <QuizView
                         card={current}
                         options={quizOptions}
                         picked={quizPicked}
                         onPick={setQuizPicked}
-                        onNext={() =>
-                            void answer(quizPicked === current.meaningId ? "next" : "repeat")
-                        }
+                        onNext={() => void answer(quizPicked === quizAnswer ? "next" : "repeat")}
+                        listen={mode === "listen"}
                         busy={busy}
                         voiceURI={profile?.ttsVoices?.[deck?.courseId ?? ""] ?? profile?.ttsVoiceURI}
                         rate={profile?.ttsRate}
