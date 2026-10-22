@@ -530,7 +530,7 @@
    "level": "B2",
    "topic": "numbers-time",
    "id": "de-b2-general-1-0011",
-   "readingId": "finf-tsen"
+   "readingId": "fiunf-tsen"
   },
   {
    "front": "Zeitalter",
@@ -595,7 +595,7 @@
    "level": "B2",
    "topic": "numbers-time",
    "id": "de-b2-general-3-0016",
-   "readingId": "finf-tsih"
+   "readingId": "fiunf-tsih"
   },
   {
    "front": "Morgengrauen",
@@ -686,7 +686,7 @@
    "level": "B2",
    "topic": "numbers-time",
    "id": "de-b2-general-5-0070",
-   "readingId": "fri-ya"
+   "readingId": "friu-ya"
   },
   {
    "front": "Ära",
@@ -946,7 +946,7 @@
    "level": "B2",
    "topic": "family-people",
    "id": "de-b2-verbs-advanced-3-0047",
-   "readingId": "fea-we-nên"
+   "readingId": "fea-weo-nên"
   },
   {
    "front": "kuscheln",
@@ -1362,7 +1362,7 @@
    "level": "B2",
    "topic": "travel-transport",
    "id": "de-b2-verbs-advanced-2-0048",
-   "readingId": "tsu-rik-fa-rên"
+   "readingId": "tsu-riuk-fa-rên"
   },
   {
    "front": "kreuzen",
@@ -1427,7 +1427,7 @@
    "level": "B2",
    "topic": "travel-transport",
    "id": "de-b2-verbs-advanced-5-0002",
-   "readingId": "i-ba-ho-lên"
+   "readingId": "iu-ba-ho-lên"
   },
   {
    "front": "durchqueren",
@@ -1505,7 +1505,7 @@
    "level": "B2",
    "topic": "travel-transport",
    "id": "de-b2-general-3-0002",
-   "readingId": "au-to-syli-sêl"
+   "readingId": "au-to-syliu-sêl"
   },
   {
    "front": "Passagier",
@@ -1830,7 +1830,7 @@
    "level": "B2",
    "topic": "travel-transport",
    "id": "de-b2-general-10-0021",
-   "readingId": "tsi-gêl"
+   "readingId": "tsiu-gêl"
   },
   {
    "front": "Rampe",
@@ -2480,7 +2480,7 @@
    "level": "B2",
    "topic": "food-drink",
    "id": "de-b2-general-6-0056",
-   "readingId": "kir-bis"
+   "readingId": "kiur-bis"
   },
   {
    "front": "Eiscreme",
@@ -2584,7 +2584,7 @@
    "level": "B2",
    "topic": "food-drink",
    "id": "de-b2-general-8-0016",
-   "readingId": "cis-bea-ga"
+   "readingId": "cis-beoa-ga"
   },
   {
    "front": "Cookie",
@@ -2623,7 +2623,7 @@
    "level": "B2",
    "topic": "food-drink",
    "id": "de-b2-general-9-0009",
-   "readingId": "kri-mêl"
+   "readingId": "kriu-mêl"
   },
   {
    "front": "Imbiss",
@@ -2909,7 +2909,7 @@
    "level": "B2",
    "topic": "food-drink",
    "id": "de-b2-general-13-0016",
-   "readingId": "ke-ri"
+   "readingId": "keo-ri"
   },
   {
    "front": "Festmahl",
@@ -3104,7 +3104,7 @@
    "level": "B2",
    "topic": "home-daily",
    "id": "de-b2-verbs-advanced-3-0031",
-   "readingId": "sypi-lên"
+   "readingId": "sypiu-lên"
   },
   {
    "front": "abwaschen",
@@ -3130,7 +3130,7 @@
    "level": "B2",
    "topic": "home-daily",
    "id": "de-b2-verbs-advanced-5-0007",
-   "readingId": "lif-tên"
+   "readingId": "liuf-tên"
   },
   {
    "front": "Arbeitszimmer",
@@ -3286,7 +3286,7 @@
    "level": "B2",
    "topic": "home-daily",
    "id": "de-b2-general-7-0018",
-   "readingId": "tia-glo-kê"
+   "readingId": "tiua-glo-kê"
   },
   {
    "front": "Mikrowelle",
@@ -3599,7 +3599,7 @@
    "level": "B2",
    "topic": "clothes-shopping",
    "id": "de-b2-verbs-advanced-5-0001",
-   "readingId": "symi-kên"
+   "readingId": "symiu-kên"
   },
   {
    "front": "bügeln",
@@ -3612,7 +3612,7 @@
    "level": "B2",
    "topic": "clothes-shopping",
    "id": "de-b2-verbs-advanced-5-0018",
-   "readingId": "bi-gêln"
+   "readingId": "biu-gêln"
   },
   {
    "front": "geschmacklos",
@@ -3703,7 +3703,7 @@
    "level": "B2",
    "topic": "clothes-shopping",
    "id": "de-b2-general-2-0033",
-   "readingId": "tsan-bir-stê"
+   "readingId": "tsan-biur-stê"
   },
   {
    "front": "Unterhose",
@@ -3807,7 +3807,7 @@
    "level": "B2",
    "topic": "clothes-shopping",
    "id": "de-b2-general-6-0027",
-   "readingId": "pi-ja-ma"
+   "readingId": "piu-ja-ma"
   },
   {
    "front": "Rabatt",
@@ -4093,7 +4093,7 @@
    "level": "B2",
    "topic": "colors-shapes",
    "id": "de-b2-verbs-advanced-1-0022",
-   "readingId": "fea-gre-san"
+   "readingId": "fea-greo-san"
   },
   {
    "front": "beugen",
@@ -4327,7 +4327,7 @@
    "level": "B2",
    "topic": "colors-shapes",
    "id": "de-b2-general-3-0011",
-   "readingId": "li-kê"
+   "readingId": "liu-kê"
   },
   {
    "front": "Rutsch",
@@ -4405,7 +4405,7 @@
    "level": "B2",
    "topic": "colors-shapes",
    "id": "de-b2-general-9-0043",
-   "readingId": "tsi-lin-da"
+   "readingId": "tsiu-lin-da"
   },
   {
    "front": "Pyramide",
@@ -4418,7 +4418,7 @@
    "level": "B2",
    "topic": "colors-shapes",
    "id": "de-b2-general-9-0077",
-   "readingId": "pi-ra-mi-dê"
+   "readingId": "piu-ra-mi-dê"
   },
   {
    "front": "Umlauf",
@@ -4483,7 +4483,7 @@
    "level": "B2",
    "topic": "body-health",
    "id": "de-b2-media-tech-0009",
-   "readingId": "ner-fên-zis-tem"
+   "readingId": "ner-fên-zius-tem"
   },
   {
    "front": "Atmung",
@@ -4678,7 +4678,7 @@
    "level": "B2",
    "topic": "body-health",
    "id": "de-b2-general-1-0028",
-   "readingId": "gê-hea"
+   "readingId": "gê-heoa"
   },
   {
    "front": "Busen",
@@ -4873,7 +4873,7 @@
    "level": "B2",
    "topic": "body-health",
    "id": "de-b2-general-4-0070",
-   "readingId": "kepf-hên"
+   "readingId": "keopf-hên"
   },
   {
    "front": "Rückgrat",
@@ -4886,7 +4886,7 @@
    "level": "B2",
    "topic": "body-health",
    "id": "de-b2-general-5-0004",
-   "readingId": "rik-grat"
+   "readingId": "riuk-grat"
   },
   {
    "front": "Zeh",
@@ -5146,7 +5146,7 @@
    "level": "B2",
    "topic": "body-health",
    "id": "de-b2-general-10-0057",
-   "readingId": "me-zê"
+   "readingId": "meo-zê"
   },
   {
    "front": "Pimmel",
@@ -5341,7 +5341,7 @@
    "level": "B2",
    "topic": "health-psychology-1",
    "id": "de-b2-persons-0073",
-   "readingId": "zi-fi-lis"
+   "readingId": "ziu-fi-lis"
   },
   {
    "front": "Psychologin",
@@ -5354,7 +5354,7 @@
    "level": "B2",
    "topic": "health-psychology-1",
    "id": "de-b2-persons-0079",
-   "readingId": "psi-ho-lo-gin"
+   "readingId": "psiu-ho-lo-gin"
   },
   {
    "front": "Erkältung",
@@ -5380,7 +5380,7 @@
    "level": "B2",
    "topic": "health-psychology-1",
    "id": "de-b2-abstract-nouns-1-0013",
-   "readingId": "gê-hirn-ea-syi-tê-rung"
+   "readingId": "gê-hirn-ea-syiu-tê-rung"
   },
   {
    "front": "Abtreibung",
@@ -5432,7 +5432,7 @@
    "level": "B2",
    "topic": "health-psychology-1",
    "id": "de-b2-abstract-nouns-2-0031",
-   "readingId": "lu-ngên-ent-tsin-dung"
+   "readingId": "lu-ngên-ent-tsiun-dung"
   },
   {
    "front": "Erholung",
@@ -5458,7 +5458,7 @@
    "level": "B2",
    "topic": "health-psychology-1",
    "id": "de-b2-abstract-nouns-2-0049",
-   "readingId": "i-bêl-kait"
+   "readingId": "iu-bêl-kait"
   },
   {
    "front": "Halluzination",
@@ -5838,7 +5838,7 @@
    "level": "B2",
    "topic": "health-psychology-1",
    "id": "de-b2-general-2-0038",
-   "readingId": "psi-ho-pat"
+   "readingId": "psiu-ho-pat"
   },
   {
    "front": "Massage",
@@ -6033,7 +6033,7 @@
    "level": "B2",
    "topic": "health-psychology-1",
    "id": "de-b2-general-6-0046",
-   "readingId": "hip-no-zê"
+   "readingId": "hiup-no-zê"
   },
   {
    "front": "Migräne",
@@ -6189,7 +6189,7 @@
    "level": "B2",
    "topic": "health-psychology-1",
    "id": "de-b2-general-10-0018",
-   "readingId": "zimp-tom"
+   "readingId": "ziump-tom"
   },
   {
    "front": "Blutprobe",
@@ -6267,7 +6267,7 @@
    "level": "B2",
    "topic": "health-psychology-1",
    "id": "de-b2-general-12-0015",
-   "readingId": "psi-ho-lo-gê"
+   "readingId": "psiu-ho-lo-gê"
   },
   {
    "front": "Krampf",
@@ -6332,7 +6332,7 @@
    "level": "B2",
    "topic": "health-psychology-1",
    "id": "de-b2-general-14-0028",
-   "readingId": "psi-ho-lo-gi"
+   "readingId": "psiu-ho-lo-gi"
   },
   {
    "front": "Depression",
@@ -6384,7 +6384,7 @@
    "level": "B2",
    "topic": "health-psychology-2",
    "id": "de-b2-general-14-0032",
-   "readingId": "psi-hê"
+   "readingId": "psiu-hê"
   },
   {
    "front": "Gerichtsmedizin",
@@ -6657,7 +6657,7 @@
    "level": "B2",
    "topic": "directions-places",
    "id": "de-b2-general-12-0035",
-   "readingId": "bir-ga-sytaik"
+   "readingId": "biur-ga-sytaik"
   },
   {
    "front": "Taverne",
@@ -6787,7 +6787,7 @@
    "level": "B2",
    "topic": "places-geography",
    "id": "de-b2-persons-0049",
-   "readingId": "fran-tse-zin"
+   "readingId": "fran-tseo-zin"
   },
   {
    "front": "Pole",
@@ -6839,7 +6839,7 @@
    "level": "B2",
    "topic": "places-geography",
    "id": "de-b2-places-geography-0005",
-   "readingId": "bi-hê-rai"
+   "readingId": "biu-hê-rai"
   },
   {
    "front": "Großstadt",
@@ -6879,7 +6879,7 @@
    "topic": "places-geography",
    "id": "de-b2-adjectives-advanced-2-0061",
    "reviewedSenses": true,
-   "readingId": "tir-kisy"
+   "readingId": "tiur-kisy"
   },
   {
    "front": "hebräisch",
@@ -6958,7 +6958,7 @@
    "level": "B2",
    "topic": "places-geography",
    "id": "de-b2-general-2-0043",
-   "readingId": "zit-a-me-ri-ka"
+   "readingId": "ziut-a-me-ri-ka"
   },
   {
    "front": "Pascha",
@@ -7556,7 +7556,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-nature-animals-0016",
-   "readingId": "kre-tê"
+   "readingId": "kreo-tê"
   },
   {
    "front": "Kalb",
@@ -7582,7 +7582,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-nature-animals-0018",
-   "readingId": "bli-tê"
+   "readingId": "bliu-tê"
   },
   {
    "front": "Viper",
@@ -7738,7 +7738,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-nature-animals-0037",
-   "readingId": "hin-din"
+   "readingId": "hiun-din"
   },
   {
    "front": "Fohlen",
@@ -7803,7 +7803,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-verbs-advanced-3-0001",
-   "readingId": "bli-ên"
+   "readingId": "bliu-ên"
   },
   {
    "front": "krähen",
@@ -7842,7 +7842,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-verbs-advanced-3-0064",
-   "readingId": "tsih-tên"
+   "readingId": "tsiuh-tên"
   },
   {
    "front": "pflücken",
@@ -7855,7 +7855,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-verbs-advanced-3-0065",
-   "readingId": "pfli-kên"
+   "readingId": "pfliu-kên"
   },
   {
    "front": "verjagen",
@@ -7881,7 +7881,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-verbs-advanced-4-0046",
-   "readingId": "syli-pfên"
+   "readingId": "syliu-pfên"
   },
   {
    "front": "Schildkröte",
@@ -7894,7 +7894,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-general-1-0004",
-   "readingId": "syilt-kre-tê"
+   "readingId": "syilt-kreo-tê"
   },
   {
    "front": "Kuckuck",
@@ -8089,7 +8089,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-general-5-0060",
-   "readingId": "gê-syepf"
+   "readingId": "gê-syeopf"
   },
   {
    "front": "Ren",
@@ -8128,7 +8128,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-general-6-0062",
-   "readingId": "bi-fêl"
+   "readingId": "biu-fêl"
   },
   {
    "front": "Pelz",
@@ -8154,7 +8154,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-general-7-0046",
-   "readingId": "ki-kên"
+   "readingId": "kiu-kên"
   },
   {
    "front": "Unkraut",
@@ -8206,7 +8206,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-general-8-0061",
-   "readingId": "sytea"
+   "readingId": "syteoa"
   },
   {
    "front": "Aquarium",
@@ -8414,7 +8414,7 @@
    "level": "B2",
    "topic": "nature-animals-1",
    "id": "de-b2-general-11-0073",
-   "readingId": "gê-bisy"
+   "readingId": "gê-biusy"
   },
   {
    "front": "Rabe",
@@ -8531,7 +8531,7 @@
    "level": "B2",
    "topic": "nature-animals-2",
    "id": "de-b2-general-12-0077",
-   "readingId": "di-nga"
+   "readingId": "diu-nga"
   },
   {
    "front": "Dorn",
@@ -8583,7 +8583,7 @@
    "level": "B2",
    "topic": "nature-animals-2",
    "id": "de-b2-general-13-0045",
-   "readingId": "mi-kê"
+   "readingId": "miu-kê"
   },
   {
    "front": "Ochse",
@@ -8674,7 +8674,7 @@
    "level": "B2",
    "topic": "environment-nature",
    "id": "de-b2-verbs-advanced-4-0010",
-   "readingId": "sytre-mên"
+   "readingId": "sytreo-mên"
   },
   {
    "front": "Fels",
@@ -8752,7 +8752,7 @@
    "level": "B2",
    "topic": "environment-nature",
    "id": "de-b2-general-11-0034",
-   "readingId": "di-rê"
+   "readingId": "diu-rê"
   },
   {
    "front": "Schneesturm",
@@ -8908,7 +8908,7 @@
    "level": "B2",
    "topic": "work-economy-1",
    "id": "de-b2-work-economy-0002",
-   "readingId": "ber-zê"
+   "readingId": "beor-zê"
   },
   {
    "front": "Bewerbung",
@@ -9168,7 +9168,7 @@
    "level": "B2",
    "topic": "work-economy-1",
    "id": "de-b2-abstract-nouns-1-0017",
-   "readingId": "kin-di-gung"
+   "readingId": "kiun-di-gung"
   },
   {
    "front": "Präsentation",
@@ -9337,7 +9337,7 @@
    "level": "B2",
    "topic": "work-economy-1",
    "id": "de-b2-abstract-nouns-2-0022",
-   "readingId": "gê-halts-ea-he-ung"
+   "readingId": "gê-halts-ea-heo-ung"
   },
   {
    "front": "Versetzung",
@@ -9506,7 +9506,7 @@
    "level": "B2",
    "topic": "work-economy-1",
    "id": "de-b2-verbs-advanced-2-0027",
-   "readingId": "bê-fer-dan"
+   "readingId": "bê-feor-dan"
   },
   {
    "front": "buchen",
@@ -9545,7 +9545,7 @@
    "level": "B2",
    "topic": "work-economy-1",
    "id": "de-b2-verbs-advanced-2-0056",
-   "readingId": "fer-dan"
+   "readingId": "feor-dan"
   },
   {
    "front": "bewerben",
@@ -9610,7 +9610,7 @@
    "level": "B2",
    "topic": "work-economy-1",
    "id": "de-b2-adjectives-advanced-1-0003",
-   "readingId": "gin-stih"
+   "readingId": "giun-stih"
   },
   {
    "front": "kostenlos",
@@ -9676,7 +9676,7 @@
    "level": "B2",
    "topic": "work-economy-1",
    "id": "de-b2-general-2-0027",
-   "readingId": "hi-po-tek"
+   "readingId": "hiu-po-tek"
   },
   {
    "front": "Millionär",
@@ -9910,7 +9910,7 @@
    "level": "B2",
    "topic": "work-economy-1",
    "id": "de-b2-general-8-0041",
-   "readingId": "i-ba-na-mê"
+   "readingId": "iu-ba-na-mê"
   },
   {
    "front": "Honorar",
@@ -10079,7 +10079,7 @@
    "level": "B2",
    "topic": "work-economy-2",
    "id": "de-b2-general-13-0007",
-   "readingId": "gelt-ber-zê"
+   "readingId": "gelt-beor-zê"
   },
   {
    "front": "Milliardär",
@@ -10170,7 +10170,7 @@
    "level": "B2",
    "topic": "education-science",
    "id": "de-b2-media-tech-0008",
-   "readingId": "zo-nên-zis-tem"
+   "readingId": "zo-nên-zius-tem"
   },
   {
    "front": "Studentin",
@@ -10456,7 +10456,7 @@
    "level": "B2",
    "topic": "education-science",
    "id": "de-b2-general-6-0020",
-   "readingId": "pro-to-tip"
+   "readingId": "pro-to-tiup"
   },
   {
    "front": "Grundschule",
@@ -10833,7 +10833,7 @@
    "level": "B2",
    "topic": "education-science",
    "id": "de-b2-general-14-0035",
-   "readingId": "fi-zik"
+   "readingId": "fiu-zik"
   },
   {
    "front": "Biologie",
@@ -10872,7 +10872,7 @@
    "level": "B2",
    "topic": "education-science",
    "id": "de-b2-general-14-0039",
-   "readingId": "hi-po-te-zê"
+   "readingId": "hiu-po-te-zê"
   },
   {
    "front": "Meisterwerk",
@@ -10963,7 +10963,7 @@
    "level": "B2",
    "topic": "culture-arts",
    "id": "de-b2-abstract-nouns-1-0024",
-   "readingId": "auf-fi-rung"
+   "readingId": "auf-fiu-rung"
   },
   {
    "front": "Verkleidung",
@@ -11028,7 +11028,7 @@
    "level": "B2",
    "topic": "culture-arts",
    "id": "de-b2-abstract-nouns-2-0060",
-   "readingId": "bê-rimt-hait"
+   "readingId": "bê-riumt-hait"
   },
   {
    "front": "Fiktion",
@@ -11132,7 +11132,7 @@
    "level": "B2",
    "topic": "culture-arts",
    "id": "de-b2-verbs-advanced-3-0006",
-   "readingId": "foa-fi-rên"
+   "readingId": "foa-fiu-rên"
   },
   {
    "front": "aufführen",
@@ -11145,7 +11145,7 @@
    "level": "B2",
    "topic": "culture-arts",
    "id": "de-b2-verbs-advanced-3-0056",
-   "readingId": "auf-fi-rên"
+   "readingId": "auf-fiu-rên"
   },
   {
    "front": "rocken",
@@ -11288,7 +11288,7 @@
    "level": "B2",
    "topic": "culture-arts",
    "id": "de-b2-general-3-0017",
-   "readingId": "ko-me-di-ê"
+   "readingId": "ko-meo-di-ê"
   },
   {
    "front": "Medium",
@@ -11431,7 +11431,7 @@
    "level": "B2",
    "topic": "culture-arts",
    "id": "de-b2-general-8-0022",
-   "readingId": "fle-tê"
+   "readingId": "fleo-tê"
   },
   {
    "front": "Denkmal",
@@ -11639,7 +11639,7 @@
    "level": "B2",
    "topic": "culture-arts",
    "id": "de-b2-general-12-0073",
-   "readingId": "te-a-ta-sytik"
+   "readingId": "te-a-ta-sytiuk"
   },
   {
    "front": "Cutter",
@@ -11678,7 +11678,7 @@
    "level": "B2",
    "topic": "culture-arts",
    "id": "de-b2-general-13-0065",
-   "readingId": "glek-hên"
+   "readingId": "gleok-hên"
   },
   {
    "front": "Stuntman",
@@ -11795,7 +11795,7 @@
    "level": "B2",
    "topic": "religion-mythology",
    "id": "de-b2-abstract-nouns-2-0009",
-   "readingId": "kre-nung"
+   "readingId": "kreo-nung"
   },
   {
    "front": "Erzbischof",
@@ -11873,7 +11873,7 @@
    "level": "B2",
    "topic": "religion-mythology",
    "id": "de-b2-verbs-advanced-3-0016",
-   "readingId": "ea-le-zên"
+   "readingId": "ea-leo-zên"
   },
   {
    "front": "auferstehen",
@@ -11899,7 +11899,7 @@
    "level": "B2",
    "topic": "religion-mythology",
    "id": "de-b2-verbs-advanced-5-0003",
-   "readingId": "bê-sywe-rên"
+   "readingId": "bê-syweo-rên"
   },
   {
    "front": "selig",
@@ -11938,7 +11938,7 @@
    "level": "B2",
    "topic": "religion-mythology",
    "id": "de-b2-adjectives-advanced-1-0075",
-   "readingId": "re-li-gi-es"
+   "readingId": "re-li-gi-eos"
   },
   {
    "front": "himmlisch",
@@ -11977,7 +11977,7 @@
    "level": "B2",
    "topic": "religion-mythology",
    "id": "de-b2-adjectives-advanced-2-0008",
-   "readingId": "he-lisy"
+   "readingId": "heo-lisy"
   },
   {
    "front": "jüdisch",
@@ -11990,7 +11990,7 @@
    "level": "B2",
    "topic": "religion-mythology",
    "id": "de-b2-adjectives-advanced-2-0030",
-   "readingId": "yi-disy"
+   "readingId": "yiu-disy"
   },
   {
    "front": "göttlich",
@@ -12003,7 +12003,7 @@
    "level": "B2",
    "topic": "religion-mythology",
    "id": "de-b2-adjectives-advanced-2-0036",
-   "readingId": "get-lih"
+   "readingId": "geot-lih"
   },
   {
    "front": "Sankt",
@@ -12055,7 +12055,7 @@
    "level": "B2",
    "topic": "religion-mythology",
    "id": "de-b2-general-2-0044",
-   "readingId": "mi-tos"
+   "readingId": "miu-tos"
   },
   {
    "front": "Gespenst",
@@ -12146,7 +12146,7 @@
    "level": "B2",
    "topic": "religion-mythology",
    "id": "de-b2-general-5-0041",
-   "readingId": "mer-ti-ra"
+   "readingId": "mer-tiu-ra"
   },
   {
    "front": "Riese",
@@ -12185,7 +12185,7 @@
    "level": "B2",
    "topic": "religion-mythology",
    "id": "de-b2-general-6-0053",
-   "readingId": "zin-dên-bok"
+   "readingId": "ziun-dên-bok"
   },
   {
    "front": "Scheich",
@@ -12250,7 +12250,7 @@
    "level": "B2",
    "topic": "religion-mythology",
    "id": "de-b2-general-7-0045",
-   "readingId": "gliks-bri-nga"
+   "readingId": "gliuks-bri-nga"
   },
   {
    "front": "Schutzengel",
@@ -12705,7 +12705,7 @@
    "level": "B2",
    "topic": "law-crime",
    "id": "de-b2-law-crime-0017",
-   "readingId": "te-tung"
+   "readingId": "teo-tung"
   },
   {
    "front": "Verbot",
@@ -13069,7 +13069,7 @@
    "level": "B2",
    "topic": "law-crime",
    "id": "de-b2-verbs-advanced-3-0014",
-   "readingId": "ea-wir-gên"
+   "readingId": "ea-wiur-gên"
   },
   {
    "front": "bestehlen",
@@ -13238,7 +13238,7 @@
    "level": "B2",
    "topic": "law-crime",
    "id": "de-b2-general-2-0072",
-   "readingId": "be-zê-wiht"
+   "readingId": "beo-zê-wiht"
   },
   {
    "front": "Zeugenstand",
@@ -13433,7 +13433,7 @@
    "level": "B2",
    "topic": "law-crime",
    "id": "de-b2-general-11-0017",
-   "readingId": "pri-gê-lai"
+   "readingId": "priu-gê-lai"
   },
   {
    "front": "Urkunde",
@@ -13498,7 +13498,7 @@
    "level": "B2",
    "topic": "law-crime",
    "id": "de-b2-general-14-0008",
-   "readingId": "foi-a-le-sya"
+   "readingId": "foi-a-leo-sya"
   },
   {
    "front": "Geburtsurkunde",
@@ -13537,7 +13537,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-persons-0036",
-   "readingId": "ko-man-dea"
+   "readingId": "ko-man-deoa"
   },
   {
    "front": "Spezialeinheit",
@@ -13589,7 +13589,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-abstract-nouns-2-0017",
-   "readingId": "bint-nis"
+   "readingId": "biunt-nis"
   },
   {
    "front": "Unterdrückung",
@@ -13602,7 +13602,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-abstract-nouns-2-0067",
-   "readingId": "un-ta-dri-kung"
+   "readingId": "un-ta-driu-kung"
   },
   {
    "front": "Belagerung",
@@ -13654,7 +13654,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-verbs-advanced-2-0073",
-   "readingId": "plin-dan"
+   "readingId": "pliun-dan"
   },
   {
    "front": "abfeuern",
@@ -13849,7 +13849,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-general-2-0008",
-   "readingId": "zeld-na"
+   "readingId": "zeold-na"
   },
   {
    "front": "Garde",
@@ -13875,7 +13875,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-general-2-0049",
-   "readingId": "sytits-pungkt"
+   "readingId": "sytiuts-pungkt"
   },
   {
    "front": "Feldwebel",
@@ -13966,7 +13966,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-general-3-0037",
-   "readingId": "bir-ga-krik"
+   "readingId": "biur-ga-krik"
   },
   {
    "front": "Waffenstillstand",
@@ -14096,7 +14096,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-general-7-0021",
-   "readingId": "ma-ne-wa"
+   "readingId": "ma-neo-wa"
   },
   {
    "front": "Legion",
@@ -14135,7 +14135,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-general-8-0048",
-   "readingId": "bik-sê"
+   "readingId": "biuk-sê"
   },
   {
    "front": "Einfall",
@@ -14187,7 +14187,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-general-9-0033",
-   "readingId": "tsea-syte-ra"
+   "readingId": "tsea-syteo-ra"
   },
   {
    "front": "Schrotflinte",
@@ -14226,7 +14226,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-general-10-0003",
-   "readingId": "syarf-syi-tsê"
+   "readingId": "syarf-syiu-tsê"
   },
   {
    "front": "Degen",
@@ -14434,7 +14434,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-general-13-0003",
-   "readingId": "ap-leng-kung-sma-ne-wa"
+   "readingId": "ap-leng-kung-sma-neo-wa"
   },
   {
    "front": "Verbündeter",
@@ -14447,7 +14447,7 @@
    "level": "B2",
    "topic": "conflict-military",
    "id": "de-b2-general-13-0061",
-   "readingId": "fea-bin-dê-ta"
+   "readingId": "fea-biun-dê-ta"
   },
   {
    "front": "Machete",
@@ -14551,7 +14551,7 @@
    "level": "B2",
    "topic": "society-politics",
    "id": "de-b2-persons-0046",
-   "readingId": "yi-din"
+   "readingId": "yiu-din"
   },
   {
    "front": "Flüchtling",
@@ -14564,7 +14564,7 @@
    "level": "B2",
    "topic": "society-politics",
    "id": "de-b2-persons-0050",
-   "readingId": "fliht-ling"
+   "readingId": "fliuht-ling"
   },
   {
    "front": "Kabinett",
@@ -14720,7 +14720,7 @@
    "level": "B2",
    "topic": "society-politics",
    "id": "de-b2-places-geography-0010",
-   "readingId": "bir-ga-mais-tê-rin"
+   "readingId": "biur-ga-mais-tê-rin"
   },
   {
    "front": "Vaterland",
@@ -14955,7 +14955,7 @@
    "level": "B2",
    "topic": "society-politics",
    "id": "de-b2-general-5-0067",
-   "readingId": "grin-da"
+   "readingId": "griun-da"
   },
   {
    "front": "Stellvertreter",
@@ -15046,7 +15046,7 @@
    "level": "B2",
    "topic": "society-politics",
    "id": "de-b2-general-8-0013",
-   "readingId": "a-zil"
+   "readingId": "a-ziul"
   },
   {
    "front": "Adel",
@@ -15111,7 +15111,7 @@
    "level": "B2",
    "topic": "society-politics",
    "id": "de-b2-general-11-0022",
-   "readingId": "rik-trit"
+   "readingId": "riuk-trit"
   },
   {
    "front": "Norm",
@@ -15150,7 +15150,7 @@
    "level": "B2",
    "topic": "society-politics",
    "id": "de-b2-general-12-0020",
-   "readingId": "ti-ra-nai"
+   "readingId": "tiu-ra-nai"
   },
   {
    "front": "Taliban",
@@ -15176,7 +15176,7 @@
    "level": "B2",
    "topic": "society-politics",
    "id": "de-b2-general-13-0049",
-   "readingId": "sytats-bir-ga"
+   "readingId": "sytats-biur-ga"
   },
   {
    "front": "Diplomatie",
@@ -15215,7 +15215,7 @@
    "level": "B2",
    "topic": "society-politics",
    "id": "de-b2-general-14-0018",
-   "readingId": "bê-hea-dê"
+   "readingId": "bê-heoa-dê"
   },
   {
    "front": "Verwaltung",
@@ -15267,7 +15267,7 @@
    "level": "B2",
    "topic": "media-tech",
    "id": "de-b2-media-tech-0001",
-   "readingId": "se-wêr"
+   "readingId": "seo-wêr"
   },
   {
    "front": "Redakteur",
@@ -15280,7 +15280,7 @@
    "level": "B2",
    "topic": "media-tech",
    "id": "de-b2-persons-0057",
-   "readingId": "re-dak-tea"
+   "readingId": "re-dak-teoa"
   },
   {
    "front": "Fernbedienung",
@@ -15384,7 +15384,7 @@
    "level": "B2",
    "topic": "media-tech",
    "id": "de-b2-abstract-nouns-3-0021",
-   "readingId": "fea-e-fênt-li-hung"
+   "readingId": "fea-eo-fênt-li-hung"
   },
   {
    "front": "Schreibmaschine",
@@ -15787,7 +15787,7 @@
    "level": "B2",
    "topic": "media-tech",
    "id": "de-b2-general-7-0059",
-   "readingId": "kopf-he-ra"
+   "readingId": "kopf-heo-ra"
   },
   {
    "front": "Schlagzeile",
@@ -16060,7 +16060,7 @@
    "level": "B2",
    "topic": "sports-hobby",
    "id": "de-b2-persons-0047",
-   "readingId": "a-ma-tea"
+   "readingId": "a-ma-teoa"
   },
   {
    "front": "Spielfeld",
@@ -16151,7 +16151,7 @@
    "level": "B2",
    "topic": "sports-hobby",
    "id": "de-b2-verbs-advanced-2-0047",
-   "readingId": "hi-pfên"
+   "readingId": "hiu-pfên"
   },
   {
    "front": "ringen",
@@ -16307,7 +16307,7 @@
    "level": "B2",
    "topic": "sports-hobby",
    "id": "de-b2-general-2-0018",
-   "readingId": "wir-fêl"
+   "readingId": "wiur-fêl"
   },
   {
    "front": "Pfadfinder",
@@ -16645,7 +16645,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-abstract-nouns-1-0043",
-   "readingId": "hef-lih-kait"
+   "readingId": "heof-lih-kait"
   },
   {
    "front": "Traurigkeit",
@@ -16697,7 +16697,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-abstract-nouns-1-0077",
-   "readingId": "gros-tsi-gih-kait"
+   "readingId": "gros-tsiu-gih-kait"
   },
   {
    "front": "Freundlichkeit",
@@ -16801,7 +16801,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-abstract-nouns-2-0033",
-   "readingId": "de-mi-ti-gung"
+   "readingId": "de-miu-ti-gung"
   },
   {
    "front": "Eitelkeit",
@@ -16853,7 +16853,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-abstract-nouns-2-0046",
-   "readingId": "glaup-wir-dih-kait"
+   "readingId": "glaup-wiur-dih-kait"
   },
   {
    "front": "Genugtuung",
@@ -16905,7 +16905,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-abstract-nouns-3-0009",
-   "readingId": "i-ba-le-gung"
+   "readingId": "iu-ba-le-gung"
   },
   {
    "front": "Erwartung",
@@ -16983,7 +16983,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-verbs-advanced-2-0061",
-   "readingId": "de-mi-ti-gên"
+   "readingId": "de-miu-ti-gên"
   },
   {
    "front": "kritisieren",
@@ -17310,7 +17310,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-adjectives-advanced-2-0017",
-   "readingId": "bes-a-tih"
+   "readingId": "beos-a-tih"
   },
   {
    "front": "undankbar",
@@ -17336,7 +17336,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-adjectives-advanced-2-0026",
-   "readingId": "zelpst-zih-tih"
+   "readingId": "zelpst-ziuh-tih"
   },
   {
    "front": "scheu",
@@ -17375,7 +17375,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-adjectives-advanced-2-0044",
-   "readingId": "tsi-nisy"
+   "readingId": "tsiu-nisy"
   },
   {
    "front": "betrübt",
@@ -17388,7 +17388,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-adjectives-advanced-2-0049",
-   "readingId": "bê-tript"
+   "readingId": "bê-triupt"
   },
   {
    "front": "nachlässig",
@@ -17440,7 +17440,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-adjectives-advanced-2-0070",
-   "readingId": "tsu-rik-hal-tênt"
+   "readingId": "tsu-riuk-hal-tênt"
   },
   {
    "front": "sarkastisch",
@@ -17466,7 +17466,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-adjectives-advanced-2-0076",
-   "readingId": "em-peat"
+   "readingId": "em-peoat"
   },
   {
    "front": "verblüfft",
@@ -17479,7 +17479,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-adjectives-advanced-2-0077",
-   "readingId": "fea-blift"
+   "readingId": "fea-bliuft"
   },
   {
    "front": "dickköpfig",
@@ -17492,7 +17492,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-adjectives-advanced-2-0080",
-   "readingId": "dik-ke-pfih"
+   "readingId": "dik-keo-pfih"
   },
   {
    "front": "schamlos",
@@ -17596,7 +17596,7 @@
    "level": "B2",
    "topic": "emotions-opinion-1",
    "id": "de-b2-general-4-0041",
-   "readingId": "ua-tail-sfea-me-gên"
+   "readingId": "ua-tail-sfea-meo-gên"
   },
   {
    "front": "List",
@@ -17687,7 +17687,7 @@
    "level": "B2",
    "topic": "emotions-opinion-2",
    "id": "de-b2-general-8-0076",
-   "readingId": "gê-sypia"
+   "readingId": "gê-sypiua"
   },
   {
    "front": "Demut",
@@ -17778,7 +17778,7 @@
    "level": "B2",
    "topic": "emotions-opinion-2",
    "id": "de-b2-general-12-0040",
-   "readingId": "gê-mit"
+   "readingId": "gê-miut"
   },
   {
    "front": "Wahn",
@@ -17843,7 +17843,7 @@
    "level": "B2",
    "topic": "emotions-opinion-2",
    "id": "de-b2-general-14-0034",
-   "readingId": "zelpst-tsea-syte-rung"
+   "readingId": "zelpst-tsea-syteo-rung"
   },
   {
    "front": "Überzeugung",
@@ -17856,7 +17856,7 @@
    "level": "B2",
    "topic": "emotions-opinion-2",
    "id": "de-b2-general-14-0045",
-   "readingId": "i-ba-tsoi-gung"
+   "readingId": "iu-ba-tsoi-gung"
   },
   {
    "front": "Scham",
@@ -17999,7 +17999,7 @@
    "level": "B2",
    "topic": "language-communication-1",
    "id": "de-b2-abstract-nouns-2-0027",
-   "readingId": "an-kin-di-gung"
+   "readingId": "an-kiun-di-gung"
   },
   {
    "front": "Bezeichnung",
@@ -18038,7 +18038,7 @@
    "level": "B2",
    "topic": "language-communication-1",
    "id": "de-b2-abstract-nouns-2-0066",
-   "readingId": "ain-fi-rung"
+   "readingId": "ain-fiu-rung"
   },
   {
    "front": "Begründung",
@@ -18051,7 +18051,7 @@
    "level": "B2",
    "topic": "language-communication-1",
    "id": "de-b2-abstract-nouns-3-0013",
-   "readingId": "bê-grin-dung"
+   "readingId": "bê-griun-dung"
   },
   {
    "front": "Schreiber",
@@ -18155,7 +18155,7 @@
    "level": "B2",
    "topic": "language-communication-1",
    "id": "de-b2-verbs-advanced-2-0053",
-   "readingId": "i-ba-mi-têln"
+   "readingId": "iu-ba-mi-têln"
   },
   {
    "front": "fluchen",
@@ -18246,7 +18246,7 @@
    "level": "B2",
    "topic": "language-communication-1",
    "id": "de-b2-verbs-advanced-3-0019",
-   "readingId": "ent-hi-lên"
+   "readingId": "ent-hiu-lên"
   },
   {
    "front": "vorgeben",
@@ -18493,7 +18493,7 @@
    "level": "B2",
    "topic": "language-communication-1",
    "id": "de-b2-adjectives-advanced-1-0068",
-   "readingId": "wert-lih"
+   "readingId": "weort-lih"
   },
   {
    "front": "sprachlos",
@@ -18519,7 +18519,7 @@
    "level": "B2",
    "topic": "language-communication-1",
    "id": "de-b2-adjectives-advanced-2-0045",
-   "readingId": "wort-wert-lih"
+   "readingId": "wort-weort-lih"
   },
   {
    "front": "gesprächig",
@@ -19208,7 +19208,7 @@
    "level": "B2",
    "topic": "language-communication-2",
    "id": "de-b2-general-13-0002",
-   "readingId": "wer-ta-bukh"
+   "readingId": "weor-ta-bukh"
   },
   {
    "front": "Dolmetscher",
@@ -19898,7 +19898,7 @@
    "level": "B2",
    "topic": "objects-tech",
    "id": "de-b2-general-10-0043",
-   "readingId": "syir-tsê"
+   "readingId": "syiur-tsê"
   },
   {
    "front": "Katalog",
@@ -19989,7 +19989,7 @@
    "level": "B2",
    "topic": "objects-tech",
    "id": "de-b2-general-11-0040",
-   "readingId": "re-rê"
+   "readingId": "reo-rê"
   },
   {
    "front": "Pinsel",
@@ -20106,7 +20106,7 @@
    "level": "B2",
    "topic": "objects-tech",
    "id": "de-b2-general-12-0045",
-   "readingId": "syti-tsê"
+   "readingId": "sytiu-tsê"
   },
   {
    "front": "Säule",
@@ -20366,7 +20366,7 @@
    "level": "B2",
    "topic": "materials-measures",
    "id": "de-b2-verbs-advanced-1-0078",
-   "readingId": "auf-le-zên"
+   "readingId": "auf-leo-zên"
   },
   {
    "front": "wiegen",
@@ -20444,7 +20444,7 @@
    "level": "B2",
    "topic": "materials-measures",
    "id": "de-b2-adjectives-advanced-2-0007",
-   "readingId": "fi-zisy"
+   "readingId": "fiu-zisy"
   },
   {
    "front": "gleichmäßig",
@@ -20470,7 +20470,7 @@
    "level": "B2",
    "topic": "materials-measures",
    "id": "de-b2-adjectives-advanced-2-0078",
-   "readingId": "fli-sih"
+   "readingId": "fliu-sih"
   },
   {
    "front": "Länge",
@@ -20783,7 +20783,7 @@
    "level": "B2",
    "topic": "materials-measures",
    "id": "de-b2-general-7-0079",
-   "readingId": "krip-ton"
+   "readingId": "kriup-ton"
   },
   {
    "front": "Gips",
@@ -20835,7 +20835,7 @@
    "level": "B2",
    "topic": "materials-measures",
    "id": "de-b2-general-9-0016",
-   "readingId": "rik-sytant"
+   "readingId": "riuk-sytant"
   },
   {
    "front": "Balance",
@@ -20926,7 +20926,7 @@
    "level": "B2",
    "topic": "materials-measures",
    "id": "de-b2-general-11-0015",
-   "readingId": "bin-dêl"
+   "readingId": "biun-dêl"
   },
   {
    "front": "Kreide",
@@ -21316,7 +21316,7 @@
    "level": "B2",
    "topic": "persons",
    "id": "de-b2-general-2-0035",
-   "readingId": "tsi-rus"
+   "readingId": "tsiu-rus"
   },
   {
    "front": "Teilnehmer",
@@ -21589,7 +21589,7 @@
    "level": "B2",
    "topic": "persons",
    "id": "de-b2-general-11-0043",
-   "readingId": "tsu-he-ra"
+   "readingId": "tsu-heo-ra"
   },
   {
    "front": "Unternehmer",
@@ -21979,7 +21979,7 @@
    "level": "B2",
    "topic": "verbs-advanced-1",
    "id": "de-b2-verbs-advanced-1-0008",
-   "readingId": "tsin-dên"
+   "readingId": "tsiun-dên"
   },
   {
    "front": "bumsen",
@@ -22044,7 +22044,7 @@
    "level": "B2",
    "topic": "verbs-advanced-1",
    "id": "de-b2-verbs-advanced-1-0014",
-   "readingId": "an-tsin-dên"
+   "readingId": "an-tsiun-dên"
   },
   {
    "front": "weiterhelfen",
@@ -22317,7 +22317,7 @@
    "level": "B2",
    "topic": "verbs-advanced-1",
    "id": "de-b2-verbs-advanced-1-0052",
-   "readingId": "tsu-rik-ha-bên"
+   "readingId": "tsu-riuk-ha-bên"
   },
   {
    "front": "abreißen",
@@ -22642,7 +22642,7 @@
    "level": "B2",
    "topic": "verbs-advanced-1",
    "id": "de-b2-verbs-advanced-2-0023",
-   "readingId": "un-ta-dri-kên"
+   "readingId": "un-ta-driu-kên"
   },
   {
    "front": "weitergeben",
@@ -22759,7 +22759,7 @@
    "level": "B2",
    "topic": "verbs-advanced-1",
    "id": "de-b2-verbs-advanced-2-0045",
-   "readingId": "wir-di-gên"
+   "readingId": "wiur-di-gên"
   },
   {
    "front": "erleiden",
@@ -22785,7 +22785,7 @@
    "level": "B2",
    "topic": "verbs-advanced-1",
    "id": "de-b2-verbs-advanced-2-0055",
-   "readingId": "i-ba-syrai-tên"
+   "readingId": "iu-ba-syrai-tên"
   },
   {
    "front": "belegen",
@@ -22915,7 +22915,7 @@
    "level": "B2",
    "topic": "verbs-advanced-1",
    "id": "de-b2-verbs-advanced-2-0075",
-   "readingId": "tsu-rik-ne-mên"
+   "readingId": "tsu-riuk-ne-mên"
   },
   {
    "front": "vorenthalten",
@@ -22941,7 +22941,7 @@
    "level": "B2",
    "topic": "verbs-advanced-1",
    "id": "de-b2-verbs-advanced-3-0008",
-   "readingId": "syti-tsên"
+   "readingId": "sytiu-tsên"
   },
   {
    "front": "steigern",
@@ -22993,7 +22993,7 @@
    "level": "B2",
    "topic": "verbs-advanced-2",
    "id": "de-b2-verbs-advanced-3-0021",
-   "readingId": "i-ba-rai-hên"
+   "readingId": "iu-ba-rai-hên"
   },
   {
    "front": "bessern",
@@ -23098,7 +23098,7 @@
    "level": "B2",
    "topic": "verbs-advanced-2",
    "id": "de-b2-verbs-advanced-3-0034",
-   "readingId": "i-ba-ge-ên"
+   "readingId": "iu-ba-ge-ên"
   },
   {
    "front": "betreffen",
@@ -23346,7 +23346,7 @@
    "level": "B2",
    "topic": "verbs-advanced-2",
    "id": "de-b2-verbs-advanced-3-0078",
-   "readingId": "bê-rik-zih-ti-gên"
+   "readingId": "bê-riuk-zih-ti-gên"
   },
   {
    "front": "vollenden",
@@ -23515,7 +23515,7 @@
    "level": "B2",
    "topic": "verbs-advanced-2",
    "id": "de-b2-verbs-advanced-4-0023",
-   "readingId": "ain-fi-rên"
+   "readingId": "ain-fiu-rên"
   },
   {
    "front": "spendieren",
@@ -23658,7 +23658,7 @@
    "level": "B2",
    "topic": "verbs-advanced-2",
    "id": "de-b2-verbs-advanced-4-0042",
-   "readingId": "ap-sytir-tsên"
+   "readingId": "ap-sytiur-tsên"
   },
   {
    "front": "eintragen",
@@ -23762,7 +23762,7 @@
    "level": "B2",
    "topic": "verbs-advanced-2",
    "id": "de-b2-verbs-advanced-4-0062",
-   "readingId": "i-ba-tre-fên"
+   "readingId": "iu-ba-tre-fên"
   },
   {
    "front": "bedecken",
@@ -23892,7 +23892,7 @@
    "level": "B2",
    "topic": "verbs-advanced-2",
    "id": "de-b2-verbs-advanced-5-0008",
-   "readingId": "wai-ta-fi-rên"
+   "readingId": "wai-ta-fiu-rên"
   },
   {
    "front": "vorrücken",
@@ -23905,7 +23905,7 @@
    "level": "B2",
    "topic": "verbs-advanced-2",
    "id": "de-b2-verbs-advanced-5-0009",
-   "readingId": "foa-ri-kên"
+   "readingId": "foa-riu-kên"
   },
   {
    "front": "einweihen",
@@ -24087,7 +24087,7 @@
    "level": "B2",
    "topic": "verbs-advanced-3",
    "id": "de-b2-verbs-advanced-5-0037",
-   "readingId": "sye-pfên"
+   "readingId": "syeo-pfên"
   },
   {
    "front": "ohrfeigen",
@@ -24113,7 +24113,7 @@
    "level": "B2",
    "topic": "verbs-advanced-3",
    "id": "de-b2-verbs-advanced-5-0039",
-   "readingId": "i-ba-lau-fên"
+   "readingId": "iu-ba-lau-fên"
   },
   {
    "front": "relevant",
@@ -24454,7 +24454,7 @@
    "level": "B2",
    "topic": "adjectives-advanced",
    "id": "de-b2-adjectives-advanced-1-0048",
-   "readingId": "i-ba-wel-ti-gênt"
+   "readingId": "iu-ba-wel-ti-gênt"
   },
   {
    "front": "easy",
@@ -24519,7 +24519,7 @@
    "level": "B2",
    "topic": "adjectives-advanced",
    "id": "de-b2-adjectives-advanced-1-0057",
-   "readingId": "kalt-bli-tih"
+   "readingId": "kalt-bliu-tih"
   },
   {
    "front": "instabil",
@@ -24584,7 +24584,7 @@
    "level": "B2",
    "topic": "adjectives-advanced",
    "id": "de-b2-adjectives-advanced-1-0070",
-   "readingId": "dis-ta"
+   "readingId": "dius-ta"
   },
   {
    "front": "beschränkt",
@@ -24649,7 +24649,7 @@
    "level": "B2",
    "topic": "adjectives-advanced",
    "id": "de-b2-adjectives-advanced-2-0001",
-   "readingId": "flih-tih"
+   "readingId": "fliuh-tih"
   },
   {
    "front": "bekloppt",
@@ -24740,7 +24740,7 @@
    "level": "B2",
    "topic": "adjectives-advanced",
    "id": "de-b2-adjectives-advanced-2-0024",
-   "readingId": "kinst-lih"
+   "readingId": "kiunst-lih"
   },
   {
    "front": "grundsätzlich",
@@ -24922,7 +24922,7 @@
    "level": "B2",
    "topic": "adjectives-advanced",
    "id": "de-b2-adjectives-advanced-2-0072",
-   "readingId": "gil-tih"
+   "readingId": "giul-tih"
   },
   {
    "front": "lebhaft",
@@ -25013,7 +25013,7 @@
    "level": "B2",
    "topic": "adjectives-advanced",
    "id": "de-b2-adjectives-advanced-3-0008",
-   "readingId": "kin"
+   "readingId": "kiun"
   },
   {
    "front": "allgemein",
@@ -25143,7 +25143,7 @@
    "level": "B2",
    "topic": "abstract-nouns-1",
    "id": "de-b2-abstract-nouns-1-0015",
-   "readingId": "ea-ef-nung"
+   "readingId": "ea-eof-nung"
   },
   {
    "front": "Vermittlung",
@@ -25208,7 +25208,7 @@
    "level": "B2",
    "topic": "abstract-nouns-1",
    "id": "de-b2-abstract-nouns-1-0025",
-   "readingId": "i-ba-ain-syti-mung"
+   "readingId": "iu-ba-ain-syti-mung"
   },
   {
    "front": "Täuschung",
@@ -25351,7 +25351,7 @@
    "level": "B2",
    "topic": "abstract-nouns-1",
    "id": "de-b2-abstract-nouns-1-0072",
-   "readingId": "fea-tse-gê-rung"
+   "readingId": "fea-tseo-gê-rung"
   },
   {
    "front": "Inspektion",
@@ -25442,7 +25442,7 @@
    "level": "B2",
    "topic": "abstract-nouns-1",
    "id": "de-b2-abstract-nouns-2-0032",
-   "readingId": "sytre-mung"
+   "readingId": "sytreo-mung"
   },
   {
    "front": "Auseinandersetzung",
@@ -25585,7 +25585,7 @@
    "level": "B2",
    "topic": "abstract-nouns-1",
    "id": "de-b2-abstract-nouns-3-0006",
-   "readingId": "auf-le-zung"
+   "readingId": "auf-leo-zung"
   },
   {
    "front": "Einmischung",
@@ -25624,7 +25624,7 @@
    "level": "B2",
    "topic": "abstract-nouns-1",
    "id": "de-b2-general-1-0042",
-   "readingId": "mi-lê"
+   "readingId": "miu-lê"
   },
   {
    "front": "Effekt",
@@ -25689,7 +25689,7 @@
    "level": "B2",
    "topic": "abstract-nouns-1",
    "id": "de-b2-general-2-0028",
-   "readingId": "aus-le-za"
+   "readingId": "aus-leo-za"
   },
   {
    "front": "Komplex",
@@ -25754,7 +25754,7 @@
    "level": "B2",
    "topic": "abstract-nouns-1",
    "id": "de-b2-general-4-0034",
-   "readingId": "la-bi-rint"
+   "readingId": "la-biu-rint"
   },
   {
    "front": "Aufwand",
@@ -25871,7 +25871,7 @@
    "level": "B2",
    "topic": "abstract-nouns-1",
    "id": "de-b2-general-6-0070",
-   "readingId": "bir-dê"
+   "readingId": "biur-dê"
   },
   {
    "front": "Ansatz",
@@ -25936,7 +25936,7 @@
    "level": "B2",
    "topic": "abstract-nouns-1",
    "id": "de-b2-general-8-0032",
-   "readingId": "i-ba-gang"
+   "readingId": "iu-ba-gang"
   },
   {
    "front": "Wehr",

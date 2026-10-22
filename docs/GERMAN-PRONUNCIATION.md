@@ -15,6 +15,8 @@ kartu. Contoh: *Wasser* → `wa-sa`, *Guten Morgen* → `gu-tên mor-gên`,
 | Kontras Jerman–Indonesia | Jahrani dkk. 2023, *Perbedaan Fonologi Bahasa Indonesia dan Bahasa Jerman*, Sintaksis 1(4), [doi:10.61132/sintaksis.v1i4.208](https://doi.org/10.61132/sintaksis.v1i4.208) | vokal umlaut dan [ç], [x] tidak ada dalam bahasa Indonesia |
 | Kesalahan pelajar Indonesia | Sabriana (UNY), *Analisis Kesalahan Pelafalan Bahasa Jerman Peserta Didik SMA Negeri I Majene* ([PDF](https://journal.student.uny.ac.id/jerman/article/viewFile/14489/14065)) | ö/ü salah lafal 100%, [v], [ts], [z], -er [ɐ] sering meleset |
 | Ich-Laut | Hirschfeld & Reinke, lembar kerja *Ich- und Ach-Laut* ([ESV](https://www.esv.info/.download/homepage-addons/phonetik/lehrende/LB_Kapitel_9_Schwerpunkt_15_AB_Lehrende_2.Aufl._13.10.22.pdf)) | [ç] berbeda dari [ʃ] dan dari [x] |
+| Umlaut ü/ö | Kristin Kopf (linguis), [*How to pronounce German ö and ü*](https://sprachlog.de/?p=1902), Sprachlog 2010: "ü shares its position with i and its roundedness with u"; ö = e lalu bibir dibulatkan | dasar `iu` dan `eo` |
+| Umlaut ü/ö | [eNunciate! German Umlaut Vowels](https://blogs.ubc.ca/germanpronunciation/german-umlaut-vowels/) (UBC): ö "keeping the same lip-roundedness of o", ü sama dengan bibir u | dasar `iu` dan `eo` |
 | Panduan pelajar | [masuk-ptn.com](https://masuk-ptn.com/materi/pemahaman-teks-materi-bahasa-jerman-kelas-10/pengenalan-alfabet-dan-pelafalan-dasar) | ü = bibir "u" bunyi "i", ö = bibir "o" bunyi "e" |
 
 ## Tabel konversi (IPA → huruf EYD V)
@@ -37,12 +39,29 @@ kartu. Contoh: *Wasser* → `wa-sa`, *Guten Morgen* → `gu-tên mor-gên`,
 | e, ä | e, ɛ | `e` | EYD V: e tanpa diakritik | *Tee* → te |
 | e lemah | ə | `ê` | EYD V: ê dilafalkan [ə] | *Danke* → dang-kê |
 | -en, -el silabis | n̩, l̩ | `ên`, `êl` | | *Apfel* → a-pfêl |
-| ü | y, ʏ | `i` | tidak ada di bahasa Indonesia: ucapkan `i` dengan bibir bulat | *fünf* → finf |
-| ö | ø, œ | `e` | tidak ada di bahasa Indonesia: ucapkan `e` dengan bibir bulat | *schön* → syen |
+| ü | y, ʏ | `iu` | lidah posisi **i** + bibir bulat **u**, diucapkan sebagai **satu bunyi** | *müde* → miu-dê, *Tschüss* → cius |
+| ö | ø, œ | `eo` | lidah posisi **e** + bibir bulat **o**, diucapkan sebagai **satu bunyi** | *schön* → syeon, *zwölf* → tsweolf |
 | ei, ai | aɪ̯ | `ai` | EYD V: diftong *ai* | *Wein* → wain |
 | au | aʊ̯ | `au` | EYD V: diftong *au* | *Haus* → haus |
 | eu, äu | ɔʏ̯ | `oi` | EYD V: diftong *oi* (*eu* di EYD V adalah monoftong [ɘ], jadi tidak dipakai) | *heute* → hoi-tê |
 | vokal sengau (pinjaman Prancis) | ɑ̃ | `ang` | | *Restaurant* → res-to-rang |
+
+## Membaca `iu` dan `eo`
+
+Bahasa Indonesia tidak punya huruf untuk ü dan ö, jadi keduanya ditulis dengan dua
+huruf. Huruf pertama adalah **posisi lidah**, huruf kedua **bentuk bibir**:
+
+- `iu` = ucapkan **i**, tahan, lalu bulatkan bibir seperti **u** → ü
+- `eo` = ucapkan **e**, tahan, lalu bulatkan bibir seperti **o** → ö
+
+Keduanya **satu bunyi, bukan dua**. Itu sebabnya `iu`/`eo` tidak pernah dipenggal:
+*müde* → `miu-dê`, bukan `mi-u-dê`. Kalau di sebuah kata memang ada dua vokal
+terpisah, tanda hubung selalu muncul di antaranya (*Meteorit* → `me-te-o-rit`).
+Pasangan minimal untuk latihan: *schon* `syon` (sudah) dan *schön* `syeon` (indah);
+*Mutter* `mu-ta` (ibu) dan *Mütter* `miu-ta` (ibu-ibu).
+
+Di dalam diftong eu/äu [ɔʏ̯], bagian ü tetap ditulis `oi` sesuai diftong EYD V
+(*heute* → `hoi-tê`).
 
 ## Pemenggalan suku kata (`-`)
 
@@ -66,8 +85,9 @@ Dua penyesuaian untuk bahasa Jerman:
 
 - **Panjang vokal dan tekanan tidak ditandai**, karena EYD V tidak punya penandanya
   (*Staat* dan *statt* sama-sama `sytat`). IPA lengkapnya ada di `de-ipa.json`.
-- ü dan ö ditulis `i` dan `e`. Bibir tetap perlu dibulatkan; di penelitian UNY,
-  bunyi inilah yang paling sering salah.
+- `iu`/`eo` bukan ejaan Indonesia baku. Ini konvensi aplikasi untuk dua bunyi yang
+  tidak ada dalam bahasa Indonesia; di penelitian UNY, bunyi inilah yang paling
+  sering salah. Pengguna perlu membaca penjelasan di atas sekali.
 - Jika satu kata punya beberapa lafal di Wiktionary, yang dipakai adalah lafal pertama.
 - Token yang tidak ada di Wiktionary (*Guten/Gute*, *Pyjama*, *Malware*, dan 7 entri
   yang IPA-nya hanya "…") diisi manual di `MANUAL_IPA`.

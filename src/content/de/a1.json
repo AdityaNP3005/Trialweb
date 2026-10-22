@@ -363,7 +363,7 @@
    "ipa": "[t͡ʃʏs]",
    "id": "de-a1-greetings-0007",
    "reviewedSenses": true,
-   "readingId": "cis"
+   "readingId": "cius"
   },
   {
    "front": "Bitte",
@@ -557,7 +557,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0005",
-   "readingId": "finf"
+   "readingId": "fiunf"
   },
   {
    "front": "sechs",
@@ -652,7 +652,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0012",
-   "readingId": "tswelf"
+   "readingId": "tsweolf"
   },
   {
    "front": "zwanzig",
@@ -1096,7 +1096,7 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0052",
    "reviewedSenses": true,
-   "readingId": "fri"
+   "readingId": "friu"
   },
   {
    "front": "Mal",
@@ -1149,7 +1149,7 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-adjectives-basic-0052",
-   "readingId": "fri-a"
+   "readingId": "friu-a"
   },
   {
    "front": "Ende",
@@ -1866,7 +1866,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-function-words-2-0014",
-   "readingId": "i-ba-al"
+   "readingId": "iu-ba-al"
   },
   {
    "front": "irgendwo",
@@ -1892,7 +1892,7 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-function-words-2-0020",
-   "readingId": "dri-bên"
+   "readingId": "driu-bên"
   },
   {
    "front": "gehen",
@@ -2234,7 +2234,7 @@
    "gender": "das",
    "plural": "die Gemüse",
    "id": "de-a1-food-drink-0020",
-   "readingId": "das gê-mi-zê"
+   "readingId": "das gê-miu-zê"
   },
   {
    "front": "der Zucker",
@@ -2293,7 +2293,7 @@
    "gender": "das",
    "plural": "die Frühstücke",
    "id": "de-a1-food-drink-0024",
-   "readingId": "das fri-sytik"
+   "readingId": "das friu-sytiuk"
   },
   {
    "front": "das Mittagessen",
@@ -2439,7 +2439,7 @@
    "gender": "die",
    "plural": "die Küchen",
    "id": "de-a1-home-daily-0003",
-   "readingId": "di ki-hê"
+   "readingId": "di kiu-hê"
   },
   {
    "front": "das Bad",
@@ -2547,7 +2547,7 @@
    "exampleId": "Tolong tutup pintunya.",
    "exampleEn": "Please close the door.",
    "id": "de-a1-home-daily-0010",
-   "readingId": "di tia"
+   "readingId": "di tiua"
   },
   {
    "front": "das Fenster",
@@ -2592,7 +2592,7 @@
    "gender": "der",
    "plural": "die Schlüssel",
    "id": "de-a1-home-daily-0014",
-   "readingId": "dea syli-sêl"
+   "readingId": "dea syliu-sêl"
   },
   {
    "front": "wohnen",
@@ -2779,7 +2779,7 @@
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0004",
    "reviewedSenses": true,
-   "readingId": "grin"
+   "readingId": "griun"
   },
   {
    "front": "schwarz",
@@ -3096,7 +3096,7 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-body-health-0014",
-   "readingId": "ker-pa"
+   "readingId": "keor-pa"
   },
   {
    "front": "sehen",
@@ -3123,7 +3123,7 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-verbs-basic-0009",
-   "readingId": "he-rên"
+   "readingId": "heo-rên"
   },
   {
    "front": "Arsch",
@@ -3264,7 +3264,7 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-adjectives-basic-0010",
-   "readingId": "mi-dê"
+   "readingId": "miu-dê"
   },
   {
    "front": "Angst",
@@ -3550,7 +3550,7 @@
    "gender": "das",
    "plural": "die Büros",
    "id": "de-a1-work-school-0005",
-   "readingId": "das bi-ro"
+   "readingId": "das biu-ro"
   },
   {
    "front": "der Termin",
@@ -3737,7 +3737,7 @@
    "gender": "die",
    "plural": "die Prüfungen",
    "id": "de-a1-work-school-0009",
-   "readingId": "di pri-fung"
+   "readingId": "di priu-fung"
   },
   {
    "front": "die Hausaufgabe",
@@ -3950,7 +3950,7 @@
    "level": "A1",
    "topic": "religion-mythology",
    "id": "de-a1-general-1-0073",
-   "readingId": "he-lê"
+   "readingId": "heo-lê"
   },
   {
    "front": "töten",
@@ -3963,7 +3963,7 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-verbs-basic-0043",
-   "readingId": "te-tên"
+   "readingId": "teo-tên"
   },
   {
    "front": "retten",
@@ -4107,7 +4107,7 @@
    "level": "A1",
    "topic": "society-politics",
    "id": "de-a1-general-2-0029",
-   "readingId": "ke-nih"
+   "readingId": "keo-nih"
   },
   {
    "front": "Ordnung",
@@ -4294,7 +4294,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-adjectives-basic-0011",
-   "readingId": "glik-lih"
+   "readingId": "gliuk-lih"
   },
   {
    "front": "ernst",
@@ -4360,7 +4360,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0008",
-   "readingId": "wir-dê"
+   "readingId": "wiur-dê"
   },
   {
    "front": "Leid",
@@ -4399,7 +4399,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0033",
-   "readingId": "glik"
+   "readingId": "gliuk"
   },
   {
    "front": "Ruhe",
@@ -4464,7 +4464,7 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-2-0005",
-   "readingId": "gê-fil"
+   "readingId": "gê-fiul"
   },
   {
    "front": "allein",
@@ -4916,7 +4916,7 @@
    "level": "A1",
    "topic": "materials-measures",
    "id": "de-a1-general-2-0006",
-   "readingId": "sytik"
+   "readingId": "sytiuk"
   },
   {
    "front": "Herr",
@@ -5102,7 +5102,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-directions-places-0013",
-   "readingId": "i-ba"
+   "readingId": "iu-ba"
   },
   {
    "front": "unter",
@@ -5298,7 +5298,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0019",
-   "readingId": "fia"
+   "readingId": "fiua"
   },
   {
    "front": "von",
@@ -5600,7 +5600,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0050",
-   "readingId": "tsu-rik"
+   "readingId": "tsu-riuk"
   },
   {
    "front": "ab",
@@ -5942,7 +5942,7 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0079",
-   "readingId": "i-ba-haupt"
+   "readingId": "iu-ba-haupt"
   },
   {
    "front": "etwa",
@@ -6239,7 +6239,7 @@
    "exampleId": "Saya ingin kopi.",
    "exampleEn": "I would like a coffee.",
    "id": "de-a1-verbs-basic-0012",
-   "readingId": "meh-tên"
+   "readingId": "meoh-tên"
   },
   {
    "front": "können",
@@ -6252,7 +6252,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0013",
-   "readingId": "ke-nên"
+   "readingId": "keo-nên"
   },
   {
    "front": "aufstehen",
@@ -6330,7 +6330,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0023",
-   "readingId": "mi-sên"
+   "readingId": "miu-sên"
   },
   {
    "front": "leben",
@@ -6631,7 +6631,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0060",
-   "readingId": "dir-fên"
+   "readingId": "diur-fên"
   },
   {
    "front": "schaffen",
@@ -6684,7 +6684,7 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0070",
-   "readingId": "auf-he-rên"
+   "readingId": "auf-heo-rên"
   },
   {
    "front": "tagen",
@@ -6855,7 +6855,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0009",
-   "readingId": "syen"
+   "readingId": "syeon"
   },
   {
    "front": "einfach",
@@ -6972,7 +6972,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0020",
-   "readingId": "na-tia-lih"
+   "readingId": "na-tiua-lih"
   },
   {
    "front": "gleich",
@@ -7115,7 +7115,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0036",
-   "readingId": "fea-rikt"
+   "readingId": "fea-riukt"
   },
   {
    "front": "ruhig",
@@ -7246,7 +7246,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0049",
-   "readingId": "mek-lih"
+   "readingId": "meok-lih"
   },
   {
    "front": "falsch",
@@ -7298,7 +7298,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0055",
-   "readingId": "fe-lih"
+   "readingId": "feo-lih"
   },
   {
    "front": "wert",
@@ -7390,7 +7390,7 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0065",
-   "readingId": "be-zê"
+   "readingId": "beo-zê"
   },
   {
    "front": "Problem",

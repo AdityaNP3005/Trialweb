@@ -417,7 +417,7 @@
    "level": "C1",
    "topic": "numbers-time",
    "id": "de-c1-persons-2-0002",
-   "readingId": "finf-hun-dat"
+   "readingId": "fiunf-hun-dat"
   },
   {
    "front": "dreihundert",
@@ -508,7 +508,7 @@
    "level": "C1",
    "topic": "numbers-time",
    "id": "de-c1-adjectives-advanced-1-0074",
-   "readingId": "we-hênt-lih"
+   "readingId": "weo-hênt-lih"
   },
   {
    "front": "langfristig",
@@ -547,7 +547,7 @@
    "level": "C1",
    "topic": "numbers-time",
    "id": "de-c1-adjectives-advanced-2-0038",
-   "readingId": "fri-tsai-tih"
+   "readingId": "friu-tsai-tih"
   },
   {
    "front": "zukünftig",
@@ -560,7 +560,7 @@
    "level": "C1",
    "topic": "numbers-time",
    "id": "de-c1-adjectives-advanced-2-0049",
-   "readingId": "tsu-kinf-tih"
+   "readingId": "tsu-kiunf-tih"
   },
   {
    "front": "vorletzte",
@@ -1275,7 +1275,7 @@
    "level": "C1",
    "topic": "family-people",
    "id": "de-c1-general-15-0005",
-   "readingId": "gê-bri-da"
+   "readingId": "gê-briu-da"
   },
   {
    "front": "Triebwerk",
@@ -1509,7 +1509,7 @@
    "level": "C1",
    "topic": "travel-transport-1",
    "id": "de-c1-objects-tech-0010",
-   "readingId": "mil-wa-gên"
+   "readingId": "miul-wa-gên"
   },
   {
    "front": "absteigen",
@@ -1782,7 +1782,7 @@
    "level": "C1",
    "topic": "travel-transport-1",
    "id": "de-c1-general-3-0062",
-   "readingId": "rai-zê-bi-ro"
+   "readingId": "rai-zê-biu-ro"
   },
   {
    "front": "Schaffner",
@@ -2094,7 +2094,7 @@
    "level": "C1",
    "topic": "travel-transport-1",
    "id": "de-c1-general-9-0060",
-   "readingId": "rik-sypi-gêl"
+   "readingId": "riuk-sypi-gêl"
   },
   {
    "front": "Ausstieg",
@@ -2146,7 +2146,7 @@
    "level": "C1",
    "topic": "travel-transport-1",
    "id": "de-c1-general-10-0045",
-   "readingId": "rai-zê-fi-ra"
+   "readingId": "rai-zê-fiu-ra"
   },
   {
    "front": "Sicherheitsgurt",
@@ -2289,7 +2289,7 @@
    "level": "C1",
    "topic": "travel-transport-1",
    "id": "de-c1-general-13-0001",
-   "readingId": "kot-fli-gêl"
+   "readingId": "kot-fliu-gêl"
   },
   {
    "front": "Wagenheber",
@@ -2445,7 +2445,7 @@
    "level": "C1",
    "topic": "travel-transport-2",
    "id": "de-c1-general-16-0064",
-   "readingId": "ka-yi-tê"
+   "readingId": "ka-yiu-tê"
   },
   {
    "front": "Fluggesellschaft",
@@ -2536,7 +2536,7 @@
    "level": "C1",
    "topic": "food-drink-1",
    "id": "de-c1-nature-animals-0005",
-   "readingId": "ais-wir-fêl"
+   "readingId": "ais-wiur-fêl"
   },
   {
    "front": "Erdnuss",
@@ -2614,7 +2614,7 @@
    "level": "C1",
    "topic": "food-drink-1",
    "id": "de-c1-verbs-advanced-4-0055",
-   "readingId": "res-tên"
+   "readingId": "reos-tên"
   },
   {
    "front": "knusprig",
@@ -2692,7 +2692,7 @@
    "level": "C1",
    "topic": "food-drink-1",
    "id": "de-c1-general-1-0003",
-   "readingId": "ri-bê"
+   "readingId": "riu-bê"
   },
   {
    "front": "Omelett",
@@ -2796,7 +2796,7 @@
    "level": "C1",
    "topic": "food-drink-1",
    "id": "de-c1-general-2-0049",
-   "readingId": "bri-ê"
+   "readingId": "briu-ê"
   },
   {
    "front": "Pfirsich",
@@ -3121,7 +3121,7 @@
    "level": "C1",
    "topic": "food-drink-1",
    "id": "de-c1-general-7-0022",
-   "readingId": "o-li-wên-el"
+   "readingId": "o-li-wên-eol"
   },
   {
    "front": "Spargel",
@@ -3212,7 +3212,7 @@
    "level": "C1",
    "topic": "food-drink-1",
    "id": "de-c1-general-9-0020",
-   "readingId": "me-rês-frih-tê"
+   "readingId": "me-rês-friuh-tê"
   },
   {
    "front": "Taro",
@@ -3420,7 +3420,7 @@
    "level": "C1",
    "topic": "food-drink-1",
    "id": "de-c1-general-12-0055",
-   "readingId": "li-kea"
+   "readingId": "li-keoa"
   },
   {
    "front": "Hühnersuppe",
@@ -3433,7 +3433,7 @@
    "level": "C1",
    "topic": "food-drink-1",
    "id": "de-c1-general-12-0064",
-   "readingId": "hi-na-zu-pê"
+   "readingId": "hiu-na-zu-pê"
   },
   {
    "front": "Würze",
@@ -3446,7 +3446,7 @@
    "level": "C1",
    "topic": "food-drink-1",
    "id": "de-c1-general-12-0077",
-   "readingId": "wir-tsê"
+   "readingId": "wiur-tsê"
   },
   {
    "front": "Eiweiß",
@@ -4031,7 +4031,7 @@
    "level": "C1",
    "topic": "home-daily",
    "id": "de-c1-nature-animals-0033",
-   "readingId": "wint-mi-lê"
+   "readingId": "wint-miu-lê"
   },
   {
    "front": "fegen",
@@ -4148,7 +4148,7 @@
    "level": "C1",
    "topic": "home-daily",
    "id": "de-c1-general-1-0044",
-   "readingId": "bir-stê"
+   "readingId": "biur-stê"
   },
   {
    "front": "Wartezimmer",
@@ -4200,7 +4200,7 @@
    "level": "C1",
    "topic": "home-daily",
    "id": "de-c1-general-2-0006",
-   "readingId": "gli-bir-nê"
+   "readingId": "gliu-bir-nê"
   },
   {
    "front": "Toilettenpapier",
@@ -4317,7 +4317,7 @@
    "level": "C1",
    "topic": "home-daily",
    "id": "de-c1-general-7-0049",
-   "readingId": "hi-na-sytal"
+   "readingId": "hiu-na-sytal"
   },
   {
    "front": "Parkett",
@@ -4369,7 +4369,7 @@
    "level": "C1",
    "topic": "home-daily",
    "id": "de-c1-general-9-0071",
-   "readingId": "tia-sywe-lê"
+   "readingId": "tiua-sywe-lê"
   },
   {
    "front": "Altenheim",
@@ -4434,7 +4434,7 @@
    "level": "C1",
    "topic": "home-daily",
    "id": "de-c1-general-13-0003",
-   "readingId": "bi-gêl-ai-zên"
+   "readingId": "biu-gêl-ai-zên"
   },
   {
    "front": "Schaukelstuhl",
@@ -4473,7 +4473,7 @@
    "level": "C1",
    "topic": "home-daily",
    "id": "de-c1-general-14-0012",
-   "readingId": "bi-ha-re-gal"
+   "readingId": "biu-ha-re-gal"
   },
   {
    "front": "Leitungswasser",
@@ -4512,7 +4512,7 @@
    "level": "C1",
    "topic": "home-daily",
    "id": "de-c1-general-16-0031",
-   "readingId": "zu-pên-ki-hê"
+   "readingId": "zu-pên-kiu-hê"
   },
   {
    "front": "Schneiderin",
@@ -4590,7 +4590,7 @@
    "level": "C1",
    "topic": "clothes-shopping",
    "id": "de-c1-verbs-advanced-1-0042",
-   "readingId": "kne-pfên"
+   "readingId": "kneo-pfên"
   },
   {
    "front": "stricken",
@@ -4616,7 +4616,7 @@
    "level": "C1",
    "topic": "clothes-shopping",
    "id": "de-c1-verbs-advanced-2-0009",
-   "readingId": "i-ba-tsi-ên"
+   "readingId": "iu-ba-tsi-ên"
   },
   {
    "front": "bürsten",
@@ -4629,7 +4629,7 @@
    "level": "C1",
    "topic": "clothes-shopping",
    "id": "de-c1-verbs-advanced-3-0045",
-   "readingId": "bir-stên"
+   "readingId": "biur-stên"
   },
   {
    "front": "ausmalen",
@@ -4850,7 +4850,7 @@
    "level": "C1",
    "topic": "clothes-shopping",
    "id": "de-c1-general-8-0025",
-   "readingId": "syen-haits-za-long"
+   "readingId": "syeon-haits-za-long"
   },
   {
    "front": "Pediküre",
@@ -4863,7 +4863,7 @@
    "level": "C1",
    "topic": "clothes-shopping",
    "id": "de-c1-general-10-0040",
-   "readingId": "pe-di-ki-rê"
+   "readingId": "pe-di-kiu-rê"
   },
   {
    "front": "Schönheitswettbewerb",
@@ -4876,7 +4876,7 @@
    "level": "C1",
    "topic": "clothes-shopping",
    "id": "de-c1-general-10-0044",
-   "readingId": "syen-haits-wet-bê-werp"
+   "readingId": "syeon-haits-wet-bê-werp"
   },
   {
    "front": "Strumpf",
@@ -4941,7 +4941,7 @@
    "level": "C1",
    "topic": "clothes-shopping",
    "id": "de-c1-general-16-0080",
-   "readingId": "fri-zea-za-long"
+   "readingId": "fri-zeoa-za-long"
   },
   {
    "front": "senkrecht",
@@ -5255,7 +5255,7 @@
    "level": "C1",
    "topic": "colors-shapes",
    "id": "de-c1-adjectives-advanced-3-0032",
-   "readingId": "dir"
+   "readingId": "diur"
   },
   {
    "front": "Spalte",
@@ -5398,7 +5398,7 @@
    "level": "C1",
    "topic": "body-health",
    "id": "de-c1-persons-1-0046",
-   "readingId": "syli-sêl-bain"
+   "readingId": "syliu-sêl-bain"
   },
   {
    "front": "Schienbein",
@@ -5607,7 +5607,7 @@
    "level": "C1",
    "topic": "body-health",
    "id": "de-c1-verbs-advanced-3-0067",
-   "readingId": "ril-psên"
+   "readingId": "riul-psên"
   },
   {
    "front": "gähnen",
@@ -5985,7 +5985,7 @@
    "level": "C1",
    "topic": "body-health",
    "id": "de-c1-general-8-0016",
-   "readingId": "luft-re-rê"
+   "readingId": "luft-reo-rê"
   },
   {
    "front": "Stäbchen",
@@ -6076,7 +6076,7 @@
    "level": "C1",
    "topic": "body-health",
    "id": "de-c1-general-9-0022",
-   "readingId": "ri-kên-mark"
+   "readingId": "riu-kên-mark"
   },
   {
    "front": "Prostata",
@@ -6128,7 +6128,7 @@
    "level": "C1",
    "topic": "body-health",
    "id": "de-c1-general-10-0012",
-   "readingId": "grip-hên"
+   "readingId": "griup-hên"
   },
   {
    "front": "Augenbraue",
@@ -6245,7 +6245,7 @@
    "level": "C1",
    "topic": "body-health",
    "id": "de-c1-general-15-0011",
-   "readingId": "sypai-zê-re-rê"
+   "readingId": "sypai-zê-reo-rê"
   },
   {
    "front": "Nabel",
@@ -6349,7 +6349,7 @@
    "level": "C1",
    "topic": "body-health",
    "id": "de-c1-general-16-0052",
-   "readingId": "baukh-sypai-hêl-dri-zê"
+   "readingId": "baukh-sypai-hêl-driu-zê"
   },
   {
    "front": "Popel",
@@ -6414,7 +6414,7 @@
    "level": "C1",
    "topic": "health-psychology-1",
    "id": "de-c1-health-psychology-0002",
-   "readingId": "hi-gi-e-nê"
+   "readingId": "hiu-gi-e-nê"
   },
   {
    "front": "Wohlbefinden",
@@ -6453,7 +6453,7 @@
    "level": "C1",
    "topic": "health-psychology-1",
    "id": "de-c1-health-psychology-0007",
-   "readingId": "ap-fia-mi-têl"
+   "readingId": "ap-fiua-mi-têl"
   },
   {
    "front": "Physiotherapie",
@@ -6466,7 +6466,7 @@
    "level": "C1",
    "topic": "health-psychology-1",
    "id": "de-c1-health-psychology-0008",
-   "readingId": "fi-zi-o-te-ra-pi"
+   "readingId": "fiu-zi-o-te-ra-pi"
   },
   {
    "front": "Geschlechtskrankheit",
@@ -6492,7 +6492,7 @@
    "level": "C1",
    "topic": "health-psychology-1",
    "id": "de-c1-persons-1-0011",
-   "readingId": "psi-hi-a-tê-rin"
+   "readingId": "psiu-hi-a-tê-rin"
   },
   {
    "front": "impotent",
@@ -6687,7 +6687,7 @@
    "level": "C1",
    "topic": "health-psychology-1",
    "id": "de-c1-abstract-nouns-1-0060",
-   "readingId": "fi-lung"
+   "readingId": "fiu-lung"
   },
   {
    "front": "Verrücktheit",
@@ -6700,7 +6700,7 @@
    "level": "C1",
    "topic": "health-psychology-1",
    "id": "de-c1-abstract-nouns-1-0077",
-   "readingId": "fea-rikt-hait"
+   "readingId": "fea-riukt-hait"
   },
   {
    "front": "Demenz",
@@ -6739,7 +6739,7 @@
    "level": "C1",
    "topic": "health-psychology-1",
    "id": "de-c1-abstract-nouns-2-0009",
-   "readingId": "ent-tsin-dung"
+   "readingId": "ent-tsiun-dung"
   },
   {
    "front": "Homosexualität",
@@ -6960,7 +6960,7 @@
    "level": "C1",
    "topic": "health-psychology-1",
    "id": "de-c1-abstract-nouns-4-0002",
-   "readingId": "un-ta-ki-lung"
+   "readingId": "un-ta-kiu-lung"
   },
   {
    "front": "Wahnvorstellung",
@@ -6986,7 +6986,7 @@
    "level": "C1",
    "topic": "health-psychology-1",
    "id": "de-c1-objects-tech-0007",
-   "readingId": "hea-gê-ret"
+   "readingId": "heoa-gê-ret"
   },
   {
    "front": "Sonnenbrand",
@@ -7351,7 +7351,7 @@
    "level": "C1",
    "topic": "health-psychology-1",
    "id": "de-c1-adjectives-advanced-3-0035",
-   "readingId": "in-tra-we-nes"
+   "readingId": "in-tra-we-neos"
   },
   {
    "front": "erblich",
@@ -7559,7 +7559,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-4-0068",
-   "readingId": "a-noi-ris-ma"
+   "readingId": "a-noi-rius-ma"
   },
   {
    "front": "Cholera",
@@ -7598,7 +7598,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-5-0019",
-   "readingId": "gê-sywia"
+   "readingId": "gê-sywiua"
   },
   {
    "front": "Schizophrenie",
@@ -7624,7 +7624,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-5-0056",
-   "readingId": "zin-drom"
+   "readingId": "ziun-drom"
   },
   {
    "front": "Masern",
@@ -7650,7 +7650,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-5-0078",
-   "readingId": "an-ti-ker-pa"
+   "readingId": "an-ti-keor-pa"
   },
   {
    "front": "Tripper",
@@ -7676,7 +7676,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-6-0030",
-   "readingId": "psi-ho-zê"
+   "readingId": "psiu-ho-zê"
   },
   {
    "front": "Hysterie",
@@ -7689,7 +7689,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-6-0047",
-   "readingId": "his-te-ri"
+   "readingId": "hius-te-ri"
   },
   {
    "front": "Lungenkrebs",
@@ -7754,7 +7754,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-7-0033",
-   "readingId": "ti-fus"
+   "readingId": "tiu-fus"
   },
   {
    "front": "Brustkrebs",
@@ -7780,7 +7780,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-7-0072",
-   "readingId": "zelpst-mer-da"
+   "readingId": "zelpst-meor-da"
   },
   {
    "front": "Dialyse",
@@ -7793,7 +7793,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-8-0027",
-   "readingId": "di-a-li-zê"
+   "readingId": "di-a-liu-zê"
   },
   {
    "front": "Quacksalber",
@@ -7884,7 +7884,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-10-0074",
-   "readingId": "rent-gên-bilt"
+   "readingId": "reont-gên-bilt"
   },
   {
    "front": "Mittagsschlaf",
@@ -8014,7 +8014,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-13-0032",
-   "readingId": "kri-kê"
+   "readingId": "kriu-kê"
   },
   {
    "front": "Haschisch",
@@ -8144,7 +8144,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-15-0010",
-   "readingId": "psi-ho-a-na-li-zê"
+   "readingId": "psiu-ho-a-na-liu-zê"
   },
   {
    "front": "Enzym",
@@ -8157,7 +8157,7 @@
    "level": "C1",
    "topic": "health-psychology-2",
    "id": "de-c1-general-15-0024",
-   "readingId": "en-tsim"
+   "readingId": "en-tsium"
   },
   {
    "front": "Bluthochdruck",
@@ -8365,7 +8365,7 @@
    "level": "C1",
    "topic": "directions-places",
    "id": "de-c1-places-geography-0009",
-   "readingId": "fea-gni-gungs-park"
+   "readingId": "fea-gniu-gungs-park"
   },
   {
    "front": "Schlachthof",
@@ -8573,7 +8573,7 @@
    "level": "C1",
    "topic": "directions-places",
    "id": "de-c1-general-6-0066",
-   "readingId": "zi-na-go-gê"
+   "readingId": "ziu-na-go-gê"
   },
   {
    "front": "Schlachthaus",
@@ -8820,7 +8820,7 @@
    "level": "C1",
    "topic": "places-geography-1",
    "id": "de-c1-persons-1-0054",
-   "readingId": "tir-kê"
+   "readingId": "tiur-kê"
   },
   {
    "front": "Chinesin",
@@ -8898,7 +8898,7 @@
    "level": "C1",
    "topic": "places-geography-1",
    "id": "de-c1-abstract-nouns-3-0071",
-   "readingId": "min-dung"
+   "readingId": "miun-dung"
   },
   {
    "front": "Vorstadt",
@@ -9201,7 +9201,7 @@
    "level": "C1",
    "topic": "places-geography-1",
    "id": "de-c1-general-3-0033",
-   "readingId": "zit"
+   "readingId": "ziut"
   },
   {
    "front": "Troja",
@@ -9357,7 +9357,7 @@
    "level": "C1",
    "topic": "places-geography-1",
    "id": "de-c1-general-6-0053",
-   "readingId": "zit-wes-tên"
+   "readingId": "ziut-wes-tên"
   },
   {
    "front": "Nordamerika",
@@ -9656,7 +9656,7 @@
    "level": "C1",
    "topic": "places-geography-1",
    "id": "de-c1-general-11-0059",
-   "readingId": "tsi-pan"
+   "readingId": "tsiu-pan"
   },
   {
    "front": "Abhang",
@@ -9747,7 +9747,7 @@
    "level": "C1",
    "topic": "places-geography-2",
    "id": "de-c1-general-12-0057",
-   "readingId": "gren-lant"
+   "readingId": "greon-lant"
   },
   {
    "front": "Arktis",
@@ -9864,7 +9864,7 @@
    "level": "C1",
    "topic": "places-geography-2",
    "id": "de-c1-general-14-0041",
-   "readingId": "zit-os-tên"
+   "readingId": "ziut-os-tên"
   },
   {
    "front": "Meeresboden",
@@ -9968,7 +9968,7 @@
    "level": "C1",
    "topic": "places-geography-2",
    "id": "de-c1-general-16-0061",
-   "readingId": "o-di-se"
+   "readingId": "o-diu-se"
   },
   {
    "front": "Raubtier",
@@ -10202,7 +10202,7 @@
    "level": "C1",
    "topic": "nature-animals-1",
    "id": "de-c1-nature-animals-0031",
-   "readingId": "le-win"
+   "readingId": "leo-win"
   },
   {
    "front": "Rennpferd",
@@ -10307,7 +10307,7 @@
    "level": "C1",
    "topic": "nature-animals-1",
    "id": "de-c1-verbs-advanced-1-0050",
-   "readingId": "tsi-gêln"
+   "readingId": "tsiu-gêln"
   },
   {
    "front": "zähmen",
@@ -10697,7 +10697,7 @@
    "level": "C1",
    "topic": "nature-animals-1",
    "id": "de-c1-general-5-0028",
-   "readingId": "fer-sta"
+   "readingId": "feor-sta"
   },
   {
    "front": "Kaktus",
@@ -10840,7 +10840,7 @@
    "level": "C1",
    "topic": "nature-animals-1",
    "id": "de-c1-general-7-0041",
-   "readingId": "me-wê"
+   "readingId": "meo-wê"
   },
   {
    "front": "Bienenstock",
@@ -10866,7 +10866,7 @@
    "level": "C1",
    "topic": "nature-animals-1",
    "id": "de-c1-general-7-0043",
-   "readingId": "gli-wirm-hên"
+   "readingId": "gliu-wiurm-hên"
   },
   {
    "front": "Raupe",
@@ -11191,7 +11191,7 @@
    "level": "C1",
    "topic": "nature-animals-2",
    "id": "de-c1-general-10-0072",
-   "readingId": "ri-sêl"
+   "readingId": "riu-sêl"
   },
   {
    "front": "Hyäne",
@@ -11204,7 +11204,7 @@
    "level": "C1",
    "topic": "nature-animals-2",
    "id": "de-c1-general-11-0018",
-   "readingId": "hi-e-nê"
+   "readingId": "hiu-e-nê"
   },
   {
    "front": "Fischchen",
@@ -11230,7 +11230,7 @@
    "level": "C1",
    "topic": "nature-animals-2",
    "id": "de-c1-general-11-0040",
-   "readingId": "ker-na"
+   "readingId": "keor-na"
   },
   {
    "front": "Flosse",
@@ -11256,7 +11256,7 @@
    "level": "C1",
    "topic": "nature-animals-2",
    "id": "de-c1-general-11-0050",
-   "readingId": "gras-hi-pfa"
+   "readingId": "gras-hiu-pfa"
   },
   {
    "front": "Wespe",
@@ -11620,7 +11620,7 @@
    "level": "C1",
    "topic": "nature-animals-2",
    "id": "de-c1-general-16-0051",
-   "readingId": "gê-fli-gêl"
+   "readingId": "gê-fliu-gêl"
   },
   {
    "front": "Tentakel",
@@ -11659,7 +11659,7 @@
    "level": "C1",
    "topic": "environment-nature",
    "id": "de-c1-media-tech-0012",
-   "readingId": "e-ko-zis-tem"
+   "readingId": "eo-ko-zius-tem"
   },
   {
    "front": "Gestein",
@@ -11698,7 +11698,7 @@
    "level": "C1",
    "topic": "environment-nature",
    "id": "de-c1-abstract-nouns-3-0032",
-   "readingId": "i-ba-sywe-mung"
+   "readingId": "iu-ba-sywe-mung"
   },
   {
    "front": "Fruchtbarkeit",
@@ -12167,7 +12167,7 @@
    "level": "C1",
    "topic": "work-economy-1",
    "id": "de-c1-abstract-nouns-1-0006",
-   "readingId": "i-ba-wai-zung"
+   "readingId": "iu-ba-wai-zung"
   },
   {
    "front": "Transaktion",
@@ -12245,7 +12245,7 @@
    "level": "C1",
    "topic": "work-economy-1",
    "id": "de-c1-abstract-nouns-2-0049",
-   "readingId": "fer-dê-rung"
+   "readingId": "feor-dê-rung"
   },
   {
    "front": "Bereicherung",
@@ -12297,7 +12297,7 @@
    "level": "C1",
    "topic": "work-economy-1",
    "id": "de-c1-abstract-nouns-3-0001",
-   "readingId": "bukh-fi-rung"
+   "readingId": "bukh-fiu-rung"
   },
   {
    "front": "Versteigerung",
@@ -12336,7 +12336,7 @@
    "level": "C1",
    "topic": "work-economy-1",
    "id": "de-c1-abstract-nouns-3-0051",
-   "readingId": "rik-tsa-lung"
+   "readingId": "riuk-tsa-lung"
   },
   {
    "front": "Geschäftsleitung",
@@ -12700,7 +12700,7 @@
    "level": "C1",
    "topic": "work-economy-1",
    "id": "de-c1-general-4-0043",
-   "readingId": "gê-bia"
+   "readingId": "gê-biua"
   },
   {
    "front": "Aufsichtsrat",
@@ -12843,7 +12843,7 @@
    "level": "C1",
    "topic": "work-economy-1",
    "id": "de-c1-general-10-0078",
-   "readingId": "ber-zên-mak-la"
+   "readingId": "beor-zên-mak-la"
   },
   {
    "front": "Broker",
@@ -12882,7 +12882,7 @@
    "level": "C1",
    "topic": "work-economy-1",
    "id": "de-c1-general-12-0041",
-   "readingId": "rik-ga-bê"
+   "readingId": "riuk-ga-bê"
   },
   {
    "front": "Wirtschaftskrise",
@@ -13155,7 +13155,7 @@
    "level": "C1",
    "topic": "education-science-1",
    "id": "de-c1-education-science-0006",
-   "readingId": "fi-zi-o-lo-gi"
+   "readingId": "fiu-zi-o-lo-gi"
   },
   {
    "front": "Anthropologie",
@@ -13376,7 +13376,7 @@
    "level": "C1",
    "topic": "education-science-1",
    "id": "de-c1-abstract-nouns-3-0016",
-   "readingId": "auf-na-mê-pri-fung"
+   "readingId": "auf-na-mê-priu-fung"
   },
   {
    "front": "Rekonstruktion",
@@ -13637,7 +13637,7 @@
    "level": "C1",
    "topic": "education-science-1",
    "id": "de-c1-adjectives-advanced-1-0048",
-   "readingId": "psi-ho-lo-gisy"
+   "readingId": "psiu-ho-lo-gisy"
   },
   {
    "front": "irrational",
@@ -13689,7 +13689,7 @@
    "level": "C1",
    "topic": "education-science-1",
    "id": "de-c1-general-1-0011",
-   "readingId": "mis-te-ri-um"
+   "readingId": "mius-te-ri-um"
   },
   {
    "front": "Geysir",
@@ -13715,7 +13715,7 @@
    "level": "C1",
    "topic": "education-science-1",
    "id": "de-c1-general-1-0078",
-   "readingId": "gim-na-zi-um"
+   "readingId": "gium-na-zi-um"
   },
   {
    "front": "Präzision",
@@ -13754,7 +13754,7 @@
    "level": "C1",
    "topic": "education-science-1",
    "id": "de-c1-general-2-0053",
-   "readingId": "tsik-lus"
+   "readingId": "tsiuk-lus"
   },
   {
    "front": "Uran",
@@ -13871,7 +13871,7 @@
    "level": "C1",
    "topic": "education-science-1",
    "id": "de-c1-general-5-0036",
-   "readingId": "hi-brit"
+   "readingId": "hiu-brit"
   },
   {
    "front": "Mathematiker",
@@ -13949,7 +13949,7 @@
    "level": "C1",
    "topic": "education-science-1",
    "id": "de-c1-general-7-0008",
-   "readingId": "di-na-mik"
+   "readingId": "diu-na-mik"
   },
   {
    "front": "Grundsatz",
@@ -14235,7 +14235,7 @@
    "level": "C1",
    "topic": "education-science-2",
    "id": "de-c1-general-14-0069",
-   "readingId": "en-tsik-lo-pe-di"
+   "readingId": "en-tsiuk-lo-pe-di"
   },
   {
    "front": "Stundenplan",
@@ -14495,7 +14495,7 @@
    "level": "C1",
    "topic": "culture-arts-1",
    "id": "de-c1-verbs-advanced-2-0051",
-   "readingId": "fle-tên"
+   "readingId": "fleo-tên"
   },
   {
    "front": "inszenieren",
@@ -14547,7 +14547,7 @@
    "level": "C1",
    "topic": "culture-arts-1",
    "id": "de-c1-general-1-0013",
-   "readingId": "dorn-res-hên"
+   "readingId": "dorn-reos-hên"
   },
   {
    "front": "Rutsche",
@@ -14768,7 +14768,7 @@
    "level": "C1",
    "topic": "culture-arts-1",
    "id": "de-c1-general-6-0020",
-   "readingId": "na-tsi-o-nal-him-nê"
+   "readingId": "na-tsi-o-nal-hium-nê"
   },
   {
    "front": "Äußeres",
@@ -14833,7 +14833,7 @@
    "level": "C1",
    "topic": "culture-arts-1",
    "id": "de-c1-general-7-0017",
-   "readingId": "fe-niks"
+   "readingId": "feo-niks"
   },
   {
    "front": "Freiheitsstatue",
@@ -14989,7 +14989,7 @@
    "level": "C1",
    "topic": "culture-arts-1",
    "id": "de-c1-general-10-0026",
-   "readingId": "kunst-sytik"
+   "readingId": "kunst-sytiuk"
   },
   {
    "front": "Bildhauer",
@@ -15041,7 +15041,7 @@
    "level": "C1",
    "topic": "culture-arts-1",
    "id": "de-c1-general-11-0030",
-   "readingId": "pea-foa-mêns"
+   "readingId": "peoa-foa-mêns"
   },
   {
    "front": "Feuerwerkskörper",
@@ -15054,7 +15054,7 @@
    "level": "C1",
    "topic": "culture-arts-1",
    "id": "de-c1-general-11-0071",
-   "readingId": "foi-a-werks-ker-pa"
+   "readingId": "foi-a-werks-keor-pa"
   },
   {
    "front": "Debüt",
@@ -15067,7 +15067,7 @@
    "level": "C1",
    "topic": "culture-arts-1",
    "id": "de-c1-general-12-0004",
-   "readingId": "de-bi"
+   "readingId": "de-biu"
   },
   {
    "front": "Zeichner",
@@ -15366,7 +15366,7 @@
    "level": "C1",
    "topic": "religion-mythology",
    "id": "de-c1-education-science-0001",
-   "readingId": "mi-to-lo-gi"
+   "readingId": "miu-to-lo-gi"
   },
   {
    "front": "Christin",
@@ -15574,7 +15574,7 @@
    "level": "C1",
    "topic": "religion-mythology",
    "id": "de-c1-verbs-advanced-4-0072",
-   "readingId": "kre-nên"
+   "readingId": "kreo-nên"
   },
   {
    "front": "fromm",
@@ -16055,7 +16055,7 @@
    "level": "C1",
    "topic": "religion-mythology",
    "id": "de-c1-general-12-0026",
-   "readingId": "tot-zin-dê"
+   "readingId": "tot-ziun-dê"
   },
   {
    "front": "Passion",
@@ -16250,7 +16250,7 @@
    "level": "C1",
    "topic": "law-crime",
    "id": "de-c1-law-crime-0010",
-   "readingId": "plin-dê-ra"
+   "readingId": "pliun-dê-ra"
   },
   {
    "front": "Gewaltverbrechen",
@@ -16315,7 +16315,7 @@
    "level": "C1",
    "topic": "law-crime",
    "id": "de-c1-law-crime-0015",
-   "readingId": "fel-ka-mort"
+   "readingId": "feol-ka-mort"
   },
   {
    "front": "juristisch",
@@ -16445,7 +16445,7 @@
    "level": "C1",
    "topic": "law-crime",
    "id": "de-c1-persons-1-0019",
-   "readingId": "bê-tri-gê-rin"
+   "readingId": "bê-triu-gê-rin"
   },
   {
    "front": "Terroristin",
@@ -16562,7 +16562,7 @@
    "level": "C1",
    "topic": "law-crime",
    "id": "de-c1-abstract-nouns-2-0055",
-   "readingId": "ne-ti-gung"
+   "readingId": "neo-ti-gung"
   },
   {
    "front": "Misshandlung",
@@ -16731,7 +16731,7 @@
    "level": "C1",
    "topic": "law-crime",
    "id": "de-c1-verbs-advanced-4-0053",
-   "readingId": "fea-i-bên"
+   "readingId": "fea-iu-bên"
   },
   {
    "front": "ertappen",
@@ -16809,7 +16809,7 @@
    "level": "C1",
    "topic": "law-crime",
    "id": "de-c1-general-3-0030",
-   "readingId": "synif-la"
+   "readingId": "syniuf-la"
   },
   {
    "front": "Generalstaatsanwalt",
@@ -17251,7 +17251,7 @@
    "level": "C1",
    "topic": "conflict-military",
    "id": "de-c1-persons-1-0024",
-   "readingId": "de-zer-tea"
+   "readingId": "de-zer-teoa"
   },
   {
    "front": "Oberstleutnant",
@@ -17303,7 +17303,7 @@
    "level": "C1",
    "topic": "conflict-military",
    "id": "de-c1-abstract-nouns-2-0047",
-   "readingId": "fea-wis-tung"
+   "readingId": "fea-wius-tung"
   },
   {
    "front": "Luftunterstützung",
@@ -17316,7 +17316,7 @@
    "level": "C1",
    "topic": "conflict-military",
    "id": "de-c1-abstract-nouns-3-0003",
-   "readingId": "luft-un-ta-syti-tsung"
+   "readingId": "luft-un-ta-sytiu-tsung"
   },
   {
    "front": "Bombardierung",
@@ -17459,7 +17459,7 @@
    "level": "C1",
    "topic": "conflict-military",
    "id": "de-c1-verbs-advanced-5-0006",
-   "readingId": "ris-tên"
+   "readingId": "rius-tên"
   },
   {
    "front": "niederschlagen",
@@ -17615,7 +17615,7 @@
    "level": "C1",
    "topic": "conflict-military",
    "id": "de-c1-general-3-0078",
-   "readingId": "gê-syits"
+   "readingId": "gê-syiuts"
   },
   {
    "front": "Kreuzer",
@@ -18057,7 +18057,7 @@
    "level": "C1",
    "topic": "conflict-military",
    "id": "de-c1-general-15-0070",
-   "readingId": "mer-za"
+   "readingId": "meor-za"
   },
   {
    "front": "Kriegsverbrecher",
@@ -18213,7 +18213,7 @@
    "level": "C1",
    "topic": "society-politics-1",
    "id": "de-c1-persons-1-0073",
-   "readingId": "bir-gê-rin"
+   "readingId": "biur-gê-rin"
   },
   {
    "front": "Monarch",
@@ -18447,7 +18447,7 @@
    "level": "C1",
    "topic": "society-politics-1",
    "id": "de-c1-abstract-nouns-3-0052",
-   "readingId": "kon-fe-de-ra-tsi-on"
+   "readingId": "kon-feo-de-ra-tsi-on"
   },
   {
    "front": "Kundgebung",
@@ -18512,7 +18512,7 @@
    "level": "C1",
    "topic": "society-politics-1",
    "id": "de-c1-abstract-nouns-3-0068",
-   "readingId": "sytats-bir-ga-syaft"
+   "readingId": "sytats-biur-ga-syaft"
   },
   {
    "front": "Satzung",
@@ -18642,7 +18642,7 @@
    "level": "C1",
    "topic": "society-politics-1",
    "id": "de-c1-adjectives-advanced-2-0008",
-   "readingId": "ke-nik-lih"
+   "readingId": "keo-nik-lih"
   },
   {
    "front": "zivil",
@@ -18707,7 +18707,7 @@
    "level": "C1",
    "topic": "society-politics-1",
    "id": "de-c1-general-1-0051",
-   "readingId": "di-nas-ti"
+   "readingId": "diu-nas-ti"
   },
   {
    "front": "Syndikat",
@@ -18720,7 +18720,7 @@
    "level": "C1",
    "topic": "society-politics-1",
    "id": "de-c1-general-1-0059",
-   "readingId": "zin-di-kat"
+   "readingId": "ziun-di-kat"
   },
   {
    "front": "Bürokratie",
@@ -18733,7 +18733,7 @@
    "level": "C1",
    "topic": "society-politics-1",
    "id": "de-c1-general-1-0073",
-   "readingId": "bi-rok-ra-ti"
+   "readingId": "biu-rok-ra-ti"
   },
   {
    "front": "Monarchie",
@@ -19123,7 +19123,7 @@
    "level": "C1",
    "topic": "society-politics-1",
    "id": "de-c1-general-15-0015",
-   "readingId": "auf-ri-ra"
+   "readingId": "auf-riu-ra"
   },
   {
    "front": "Interessenkonflikt",
@@ -19331,7 +19331,7 @@
    "level": "C1",
    "topic": "media-tech",
    "id": "de-c1-media-tech-0011",
-   "readingId": "bê-trips-zis-tem"
+   "readingId": "bê-trips-zius-tem"
   },
   {
    "front": "Kommunikationssystem",
@@ -19344,7 +19344,7 @@
    "level": "C1",
    "topic": "media-tech",
    "id": "de-c1-media-tech-0013",
-   "readingId": "ko-mu-ni-ka-tsi-ons-zis-tem"
+   "readingId": "ko-mu-ni-ka-tsi-ons-zius-tem"
   },
   {
    "front": "Computersystem",
@@ -19357,7 +19357,7 @@
    "level": "C1",
    "topic": "media-tech",
    "id": "de-c1-media-tech-0014",
-   "readingId": "komp-yu-ta-zis-tem"
+   "readingId": "komp-yu-ta-zius-tem"
   },
   {
    "front": "Automatik",
@@ -19396,7 +19396,7 @@
    "level": "C1",
    "topic": "media-tech",
    "id": "de-c1-abstract-nouns-1-0055",
-   "readingId": "ent-hi-lung"
+   "readingId": "ent-hiu-lung"
   },
   {
    "front": "Verschlüsselung",
@@ -19409,7 +19409,7 @@
    "level": "C1",
    "topic": "media-tech",
    "id": "de-c1-abstract-nouns-2-0016",
-   "readingId": "fea-syli-sê-lung"
+   "readingId": "fea-syliu-sê-lung"
   },
   {
    "front": "Animation",
@@ -19513,7 +19513,7 @@
    "level": "C1",
    "topic": "media-tech",
    "id": "de-c1-verbs-advanced-4-0018",
-   "readingId": "i-ba-ar-bai-tên"
+   "readingId": "iu-ba-ar-bai-tên"
   },
   {
    "front": "aktualisieren",
@@ -19604,7 +19604,7 @@
    "level": "C1",
    "topic": "media-tech",
    "id": "de-c1-adjectives-advanced-3-0011",
-   "readingId": "zin-kron"
+   "readingId": "ziun-kron"
   },
   {
    "front": "USB-Stick",
@@ -19643,7 +19643,7 @@
    "level": "C1",
    "topic": "media-tech",
    "id": "de-c1-general-1-0046",
-   "readingId": "dre-nên"
+   "readingId": "dreo-nên"
   },
   {
    "front": "Firewall",
@@ -19708,7 +19708,7 @@
    "level": "C1",
    "topic": "media-tech",
    "id": "de-c1-general-3-0007",
-   "readingId": "rik-ruf"
+   "readingId": "riuk-ruf"
   },
   {
    "front": "Tastatur",
@@ -19864,7 +19864,7 @@
    "level": "C1",
    "topic": "media-tech",
    "id": "de-c1-general-6-0054",
-   "readingId": "mints-te-le-fon"
+   "readingId": "miunts-te-le-fon"
   },
   {
    "front": "Relais",
@@ -20280,7 +20280,7 @@
    "level": "C1",
    "topic": "sports-hobby",
    "id": "de-c1-persons-2-0020",
-   "readingId": "sytir-ma"
+   "readingId": "sytiur-ma"
   },
   {
    "front": "Konkurrent",
@@ -20540,7 +20540,7 @@
    "level": "C1",
    "topic": "sports-hobby",
    "id": "de-c1-verbs-advanced-4-0023",
-   "readingId": "tsu-rik-ea-o-ban"
+   "readingId": "tsu-riuk-ea-o-ban"
   },
   {
    "front": "trampeln",
@@ -20670,7 +20670,7 @@
    "level": "C1",
    "topic": "sports-hobby",
    "id": "de-c1-general-3-0018",
-   "readingId": "o-lim-pi-a-dê"
+   "readingId": "o-lium-pi-a-dê"
   },
   {
    "front": "Konsole",
@@ -20774,7 +20774,7 @@
    "level": "C1",
    "topic": "sports-hobby",
    "id": "de-c1-general-6-0052",
-   "readingId": "tri-bi-nê"
+   "readingId": "tri-biu-nê"
   },
   {
    "front": "Camping",
@@ -20917,7 +20917,7 @@
    "level": "C1",
    "topic": "sports-hobby",
    "id": "de-c1-general-11-0005",
-   "readingId": "gim-nas-tik"
+   "readingId": "gium-nas-tik"
   },
   {
    "front": "Quiz",
@@ -21086,7 +21086,7 @@
    "level": "C1",
    "topic": "sports-hobby",
    "id": "de-c1-general-14-0052",
-   "readingId": "ke"
+   "readingId": "keo"
   },
   {
    "front": "Halbfinale",
@@ -21333,7 +21333,7 @@
    "level": "C1",
    "topic": "emotions-opinion-1",
    "id": "de-c1-abstract-nouns-2-0019",
-   "readingId": "glaih-gil-tih-kait"
+   "readingId": "glaih-giul-tih-kait"
   },
   {
    "front": "Schwierigkeit",
@@ -21385,7 +21385,7 @@
    "level": "C1",
    "topic": "emotions-opinion-1",
    "id": "de-c1-abstract-nouns-3-0025",
-   "readingId": "ain-syih-tê-rung"
+   "readingId": "ain-syiuh-tê-rung"
   },
   {
    "front": "Zynismus",
@@ -21398,7 +21398,7 @@
    "level": "C1",
    "topic": "emotions-opinion-1",
    "id": "de-c1-abstract-nouns-3-0033",
-   "readingId": "tsi-nis-mus"
+   "readingId": "tsiu-nis-mus"
   },
   {
    "front": "Geltung",
@@ -21606,7 +21606,7 @@
    "level": "C1",
    "topic": "emotions-opinion-1",
    "id": "de-c1-verbs-advanced-2-0020",
-   "readingId": "ea-syi-tan"
+   "readingId": "ea-syiu-tan"
   },
   {
    "front": "motivieren",
@@ -21684,7 +21684,7 @@
    "level": "C1",
    "topic": "emotions-opinion-1",
    "id": "de-c1-verbs-advanced-4-0005",
-   "readingId": "ner-gêln"
+   "readingId": "neor-gêln"
   },
   {
    "front": "anfeuern",
@@ -21775,7 +21775,7 @@
    "level": "C1",
    "topic": "emotions-opinion-1",
    "id": "de-c1-verbs-advanced-5-0025",
-   "readingId": "ea-re-tên"
+   "readingId": "ea-reo-tên"
   },
   {
    "front": "mürrisch",
@@ -21788,7 +21788,7 @@
    "level": "C1",
    "topic": "emotions-opinion-1",
    "id": "de-c1-adjectives-advanced-1-0003",
-   "readingId": "mi-risy"
+   "readingId": "miu-risy"
   },
   {
    "front": "kleinlich",
@@ -21853,7 +21853,7 @@
    "level": "C1",
    "topic": "emotions-opinion-1",
    "id": "de-c1-adjectives-advanced-1-0069",
-   "readingId": "de-mi-tih"
+   "readingId": "de-miu-tih"
   },
   {
    "front": "hämisch",
@@ -21996,7 +21996,7 @@
    "level": "C1",
    "topic": "emotions-opinion-1",
    "id": "de-c1-adjectives-advanced-2-0070",
-   "readingId": "gut-mi-tih"
+   "readingId": "gut-miu-tih"
   },
   {
    "front": "pessimistisch",
@@ -22139,7 +22139,7 @@
    "level": "C1",
    "topic": "emotions-opinion-1",
    "id": "de-c1-adjectives-advanced-3-0040",
-   "readingId": "fain-fi-lih"
+   "readingId": "fain-fiu-lih"
   },
   {
    "front": "umstritten",
@@ -22191,7 +22191,7 @@
    "level": "C1",
    "topic": "emotions-opinion-2",
    "id": "de-c1-general-2-0080",
-   "readingId": "gê-ni-gê"
+   "readingId": "gê-niu-gê"
   },
   {
    "front": "Amok",
@@ -22932,7 +22932,7 @@
    "level": "C1",
    "topic": "language-communication-1",
    "id": "de-c1-verbs-advanced-2-0002",
-   "readingId": "an-kin-di-gên"
+   "readingId": "an-kiun-di-gên"
   },
   {
    "front": "ertönen",
@@ -22945,7 +22945,7 @@
    "level": "C1",
    "topic": "language-communication-1",
    "id": "de-c1-verbs-advanced-2-0021",
-   "readingId": "ea-te-nên"
+   "readingId": "ea-teo-nên"
   },
   {
    "front": "argumentieren",
@@ -22984,7 +22984,7 @@
    "level": "C1",
    "topic": "language-communication-1",
    "id": "de-c1-verbs-advanced-2-0056",
-   "readingId": "ea-er-tan"
+   "readingId": "ea-eor-tan"
   },
   {
    "front": "umschreiben",
@@ -23258,7 +23258,7 @@
    "level": "C1",
    "topic": "language-communication-1",
    "id": "de-c1-general-1-0072",
-   "readingId": "bro-syi-rê"
+   "readingId": "bro-syiu-rê"
   },
   {
    "front": "Dialekt",
@@ -23310,7 +23310,7 @@
    "level": "C1",
    "topic": "language-communication-1",
    "id": "de-c1-general-3-0010",
-   "readingId": "psoi-do-nim"
+   "readingId": "psoi-do-nium"
   },
   {
    "front": "Tratsch",
@@ -23375,7 +23375,7 @@
    "level": "C1",
    "topic": "language-communication-1",
    "id": "de-c1-general-4-0013",
-   "readingId": "i-ba-ze-tsa"
+   "readingId": "iu-ba-ze-tsa"
   },
   {
    "front": "Absage",
@@ -23505,7 +23505,7 @@
    "level": "C1",
    "topic": "language-communication-1",
    "id": "de-c1-general-5-0070",
-   "readingId": "gê-sypet"
+   "readingId": "gê-sypeot"
   },
   {
    "front": "Zoff",
@@ -23622,7 +23622,7 @@
    "level": "C1",
    "topic": "language-communication-2",
    "id": "de-c1-general-8-0020",
-   "readingId": "ker-pa-sypra-khê"
+   "readingId": "keor-pa-sypra-khê"
   },
   {
    "front": "Hymne",
@@ -23635,7 +23635,7 @@
    "level": "C1",
    "topic": "language-communication-2",
    "id": "de-c1-general-8-0028",
-   "readingId": "him-nê"
+   "readingId": "hium-nê"
   },
   {
    "front": "Verschwörer",
@@ -23648,7 +23648,7 @@
    "level": "C1",
    "topic": "language-communication-2",
    "id": "de-c1-general-8-0030",
-   "readingId": "fea-sywe-ra"
+   "readingId": "fea-syweo-ra"
   },
   {
    "front": "Manifest",
@@ -23921,7 +23921,7 @@
    "level": "C1",
    "topic": "language-communication-2",
    "id": "de-c1-general-12-0069",
-   "readingId": "i-ba-ziht"
+   "readingId": "iu-ba-ziht"
   },
   {
    "front": "Familienname",
@@ -24038,7 +24038,7 @@
    "level": "C1",
    "topic": "language-communication-2",
    "id": "de-c1-general-15-0047",
-   "readingId": "i-ba-syrift"
+   "readingId": "iu-ba-syrift"
   },
   {
    "front": "Bekanntgabe",
@@ -24519,7 +24519,7 @@
    "level": "C1",
    "topic": "objects-tech",
    "id": "de-c1-general-4-0005",
-   "readingId": "syrau-bên-syli-sêl"
+   "readingId": "syrau-bên-syliu-sêl"
   },
   {
    "front": "Kettensäge",
@@ -24558,7 +24558,7 @@
    "level": "C1",
    "topic": "objects-tech",
    "id": "de-c1-general-4-0077",
-   "readingId": "fi-la"
+   "readingId": "fiu-la"
   },
   {
    "front": "Tube",
@@ -24727,7 +24727,7 @@
    "level": "C1",
    "topic": "objects-tech",
    "id": "de-c1-general-8-0076",
-   "readingId": "plas-tik-ti-tê"
+   "readingId": "plas-tik-tiu-tê"
   },
   {
    "front": "Gehäuse",
@@ -24766,7 +24766,7 @@
    "level": "C1",
    "topic": "objects-tech",
    "id": "de-c1-general-10-0024",
-   "readingId": "tsu-bê-hea"
+   "readingId": "tsu-bê-heoa"
   },
   {
    "front": "Folie",
@@ -24792,7 +24792,7 @@
    "level": "C1",
    "topic": "objects-tech",
    "id": "de-c1-general-10-0039",
-   "readingId": "kerp-hên"
+   "readingId": "keorp-hên"
   },
   {
    "front": "Gerüst",
@@ -24805,7 +24805,7 @@
    "level": "C1",
    "topic": "objects-tech",
    "id": "de-c1-general-10-0053",
-   "readingId": "gê-rist"
+   "readingId": "gê-riust"
   },
   {
    "front": "Klebstoff",
@@ -24948,7 +24948,7 @@
    "level": "C1",
    "topic": "objects-tech",
    "id": "de-c1-general-13-0028",
-   "readingId": "sytep-sêl"
+   "readingId": "syteop-sêl"
   },
   {
    "front": "Schleuder",
@@ -24974,7 +24974,7 @@
    "level": "C1",
    "topic": "objects-tech",
    "id": "de-c1-general-13-0043",
-   "readingId": "syli-sêl-lokh"
+   "readingId": "syliu-sêl-lokh"
   },
   {
    "front": "Hülse",
@@ -24987,7 +24987,7 @@
    "level": "C1",
    "topic": "objects-tech",
    "id": "de-c1-general-13-0066",
-   "readingId": "hil-zê"
+   "readingId": "hiul-zê"
   },
   {
    "front": "Pinzette",
@@ -25039,7 +25039,7 @@
    "level": "C1",
    "topic": "objects-tech",
    "id": "de-c1-general-14-0080",
-   "readingId": "oa-sytep-sêl"
+   "readingId": "oa-syteop-sêl"
   },
   {
    "front": "Reibe",
@@ -25065,7 +25065,7 @@
    "level": "C1",
    "topic": "objects-tech",
    "id": "de-c1-general-15-0030",
-   "readingId": "bi-gêl"
+   "readingId": "biu-gêl"
   },
   {
    "front": "Schnickschnack",
@@ -25338,7 +25338,7 @@
    "level": "C1",
    "topic": "materials-measures-1",
    "id": "de-c1-abstract-nouns-2-0003",
-   "readingId": "ea-he-ung"
+   "readingId": "ea-heo-ung"
   },
   {
    "front": "Radioaktivität",
@@ -26054,7 +26054,7 @@
    "level": "C1",
    "topic": "materials-measures-1",
    "id": "de-c1-general-10-0079",
-   "readingId": "eat-el"
+   "readingId": "eat-eol"
   },
   {
    "front": "Erz",
@@ -26353,7 +26353,7 @@
    "level": "C1",
    "topic": "materials-measures-2",
    "id": "de-c1-general-16-0079",
-   "readingId": "tsi-a-nit"
+   "readingId": "tsiu-a-nit"
   },
   {
    "front": "Meisterin",
@@ -26457,7 +26457,7 @@
    "level": "C1",
    "topic": "persons",
    "id": "de-c1-persons-1-0072",
-   "readingId": "ma-sea"
+   "readingId": "ma-seoa"
   },
   {
    "front": "Sprecherin",
@@ -26665,7 +26665,7 @@
    "level": "C1",
    "topic": "persons",
    "id": "de-c1-general-5-0009",
-   "readingId": "grin-syna-bêl"
+   "readingId": "griun-syna-bêl"
   },
   {
    "front": "Obdachloser",
@@ -26756,7 +26756,7 @@
    "level": "C1",
    "topic": "persons",
    "id": "de-c1-general-8-0018",
-   "readingId": "a-na-li-ti-ka"
+   "readingId": "a-na-liu-ti-ka"
   },
   {
    "front": "Cougar",
@@ -26873,7 +26873,7 @@
    "level": "C1",
    "topic": "persons",
    "id": "de-c1-general-14-0029",
-   "readingId": "i-ba-le-bên-da"
+   "readingId": "iu-ba-le-bên-da"
   },
   {
    "front": "Gehilfe",
@@ -26990,7 +26990,7 @@
    "level": "C1",
    "topic": "function-words",
    "id": "de-c1-general-5-0052",
-   "readingId": "i-ba-wi-gênt"
+   "readingId": "iu-ba-wi-gênt"
   },
   {
    "front": "infolge",
@@ -27016,7 +27016,7 @@
    "level": "C1",
    "topic": "function-words",
    "id": "de-c1-general-14-0042",
-   "readingId": "i-ba-ra-syên-da-wai-zê"
+   "readingId": "iu-ba-ra-syên-da-wai-zê"
   },
   {
    "front": "dito",
@@ -27329,7 +27329,7 @@
    "level": "C1",
    "topic": "verbs-advanced-1",
    "id": "de-c1-verbs-advanced-1-0041",
-   "readingId": "syi-tên"
+   "readingId": "syiu-tên"
   },
   {
    "front": "beschädigen",
@@ -27394,7 +27394,7 @@
    "level": "C1",
    "topic": "verbs-advanced-1",
    "id": "de-c1-verbs-advanced-1-0061",
-   "readingId": "wi-lên"
+   "readingId": "wiu-lên"
   },
   {
    "front": "winden",
@@ -27693,7 +27693,7 @@
    "level": "C1",
    "topic": "verbs-advanced-1",
    "id": "de-c1-verbs-advanced-2-0042",
-   "readingId": "ri-têln"
+   "readingId": "riu-têln"
   },
   {
    "front": "spaßen",
@@ -27758,7 +27758,7 @@
    "level": "C1",
    "topic": "verbs-advanced-1",
    "id": "de-c1-verbs-advanced-2-0047",
-   "readingId": "tir-mên"
+   "readingId": "tiur-mên"
   },
   {
    "front": "dampfen",
@@ -27823,7 +27823,7 @@
    "level": "C1",
    "topic": "verbs-advanced-1",
    "id": "de-c1-verbs-advanced-2-0059",
-   "readingId": "te-nên"
+   "readingId": "teo-nên"
   },
   {
    "front": "voraussagen",
@@ -27901,7 +27901,7 @@
    "level": "C1",
    "topic": "verbs-advanced-1",
    "id": "de-c1-verbs-advanced-2-0076",
-   "readingId": "tsu-rik-le-nên"
+   "readingId": "tsu-riuk-le-nên"
   },
   {
    "front": "längen",
@@ -28018,7 +28018,7 @@
    "level": "C1",
    "topic": "verbs-advanced-1",
    "id": "de-c1-verbs-advanced-3-0016",
-   "readingId": "tsea-tri-man"
+   "readingId": "tsea-triu-man"
   },
   {
    "front": "verwehren",
@@ -28291,7 +28291,7 @@
    "level": "C1",
    "topic": "verbs-advanced-2",
    "id": "de-c1-verbs-advanced-3-0059",
-   "readingId": "bê-fia-wor-tên"
+   "readingId": "bê-fiua-wor-tên"
   },
   {
    "front": "vorzeigen",
@@ -28343,7 +28343,7 @@
    "level": "C1",
    "topic": "verbs-advanced-2",
    "id": "de-c1-verbs-advanced-3-0069",
-   "readingId": "ain-fi-gên"
+   "readingId": "ain-fiu-gên"
   },
   {
    "front": "vertiefen",
@@ -28499,7 +28499,7 @@
    "level": "C1",
    "topic": "verbs-advanced-2",
    "id": "de-c1-verbs-advanced-4-0010",
-   "readingId": "fea-syi-tên"
+   "readingId": "fea-syiu-tên"
   },
   {
    "front": "enttarnen",
@@ -28785,7 +28785,7 @@
    "level": "C1",
    "topic": "verbs-advanced-2",
    "id": "de-c1-verbs-advanced-4-0054",
-   "readingId": "pfli-gên"
+   "readingId": "pfliu-gên"
   },
   {
    "front": "stimulieren",
@@ -28811,7 +28811,7 @@
    "level": "C1",
    "topic": "verbs-advanced-2",
    "id": "de-c1-verbs-advanced-4-0058",
-   "readingId": "ap-gê-we-nên"
+   "readingId": "ap-gê-weo-nên"
   },
   {
    "front": "durchkreuzen",
@@ -28902,7 +28902,7 @@
    "level": "C1",
    "topic": "verbs-advanced-2",
    "id": "de-c1-verbs-advanced-4-0068",
-   "readingId": "bin-dêln"
+   "readingId": "biun-dêln"
   },
   {
    "front": "zermalmen",
@@ -29071,7 +29071,7 @@
    "level": "C1",
    "topic": "verbs-advanced-2",
    "id": "de-c1-verbs-advanced-5-0021",
-   "readingId": "i-ba-sye-tsên"
+   "readingId": "iu-ba-sye-tsên"
   },
   {
    "front": "entgegentreten",
@@ -29266,7 +29266,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-1-0007",
-   "readingId": "e-bên-bir-tih"
+   "readingId": "e-bên-biur-tih"
   },
   {
    "front": "anfällig",
@@ -29305,7 +29305,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-1-0013",
-   "readingId": "mis-te-ri-es"
+   "readingId": "mius-te-ri-eos"
   },
   {
    "front": "einfallsreich",
@@ -29384,7 +29384,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-1-0024",
-   "readingId": "aus-fia-lih"
+   "readingId": "aus-fiua-lih"
   },
   {
    "front": "veraltet",
@@ -29527,7 +29527,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-1-0045",
-   "readingId": "ze-ri-es"
+   "readingId": "ze-ri-eos"
   },
   {
    "front": "heldenhaft",
@@ -29670,7 +29670,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-1-0072",
-   "readingId": "un-ea-winsyt"
+   "readingId": "un-ea-wiunsyt"
   },
   {
    "front": "rar",
@@ -29735,7 +29735,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-2-0012",
-   "readingId": "zis-te-ma-tisy"
+   "readingId": "zius-te-ma-tisy"
   },
   {
    "front": "reibungslos",
@@ -29774,7 +29774,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-2-0017",
-   "readingId": "i-ba-dri-sih"
+   "readingId": "iu-ba-driu-sih"
   },
   {
    "front": "geistreich",
@@ -29800,7 +29800,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-2-0019",
-   "readingId": "i-ba-me-sih"
+   "readingId": "iu-ba-me-sih"
   },
   {
    "front": "legendär",
@@ -29826,7 +29826,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-2-0023",
-   "readingId": "ops-tsen"
+   "readingId": "ops-tseon"
   },
   {
    "front": "drastisch",
@@ -29982,7 +29982,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-2-0061",
-   "readingId": "kinst-lê-risy"
+   "readingId": "kiunst-lê-risy"
   },
   {
    "front": "steigend",
@@ -30047,7 +30047,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-2-0071",
-   "readingId": "mi-ê-los"
+   "readingId": "miu-ê-los"
   },
   {
    "front": "verantwortungsvoll",
@@ -30190,7 +30190,7 @@
    "level": "C1",
    "topic": "adjectives-advanced",
    "id": "de-c1-adjectives-advanced-3-0039",
-   "readingId": "bê-welkt"
+   "readingId": "bê-weolkt"
   },
   {
    "front": "tollpatschig",
@@ -30216,7 +30216,7 @@
    "level": "C1",
    "topic": "abstract-nouns-1",
    "id": "de-c1-abstract-nouns-1-0003",
-   "readingId": "aus-fi-rung"
+   "readingId": "aus-fiu-rung"
   },
   {
    "front": "Überarbeitung",
@@ -30229,7 +30229,7 @@
    "level": "C1",
    "topic": "abstract-nouns-1",
    "id": "de-c1-abstract-nouns-1-0025",
-   "readingId": "i-ba-ar-bai-tung"
+   "readingId": "iu-ba-ar-bai-tung"
   },
   {
    "front": "Verlängerung",
@@ -30398,7 +30398,7 @@
    "level": "C1",
    "topic": "abstract-nouns-1",
    "id": "de-c1-abstract-nouns-2-0015",
-   "readingId": "aus-i-bung"
+   "readingId": "aus-iu-bung"
   },
   {
    "front": "Leichtigkeit",
@@ -30424,7 +30424,7 @@
    "level": "C1",
    "topic": "abstract-nouns-1",
    "id": "de-c1-abstract-nouns-2-0023",
-   "readingId": "ap-le-zung"
+   "readingId": "ap-leo-zung"
   },
   {
    "front": "Überlegenheit",
@@ -30437,7 +30437,7 @@
    "level": "C1",
    "topic": "abstract-nouns-1",
    "id": "de-c1-abstract-nouns-2-0026",
-   "readingId": "i-ba-le-gên-hait"
+   "readingId": "iu-ba-le-gên-hait"
   },
   {
    "front": "Ansammlung",
@@ -30463,7 +30463,7 @@
    "level": "C1",
    "topic": "abstract-nouns-1",
    "id": "de-c1-abstract-nouns-2-0035",
-   "readingId": "ge-gên-i-ba-syte-lung"
+   "readingId": "ge-gên-iu-ba-syte-lung"
   },
   {
    "front": "Imitation",
@@ -30684,7 +30684,7 @@
    "level": "C1",
    "topic": "abstract-nouns-1",
    "id": "de-c1-abstract-nouns-3-0026",
-   "readingId": "i-ba-las-tung"
+   "readingId": "iu-ba-las-tung"
   },
   {
    "front": "Kondition",
@@ -30957,7 +30957,7 @@
    "level": "C1",
    "topic": "abstract-nouns-1",
    "id": "de-c1-general-4-0017",
-   "readingId": "i-baf-lus"
+   "readingId": "iu-baf-lus"
   },
   {
    "front": "Schema",
@@ -30983,7 +30983,7 @@
    "level": "C1",
    "topic": "abstract-nouns-1",
    "id": "de-c1-general-4-0020",
-   "readingId": "pfi-tsê"
+   "readingId": "pfiu-tsê"
   },
   {
    "front": "Maßnahme",

@@ -44,7 +44,8 @@ describe("reviewed German vocabulary", () => {
         expect(cards.filter((entry) => !entry.readingId)).toEqual([]);
         expect(hallo.readingId).toBe("ha-lo");
         expect(cards.find((entry) => entry.front === "Entschuldigung")?.readingId).toBe("ent-syul-di-gung");
-        expect(cards.find((entry) => entry.front === "Tschüss")?.readingId).toBe("cis");
+        expect(cards.find((entry) => entry.front === "Tschüss")?.readingId).toBe("cius");
+        expect(cards.find((entry) => entry.front === "schön")?.readingId).toBe("syeon");
         expect(hallo.meaningId).not.toContain("saluir");
         const morgen = cards.find((entry) => entry.front === "morgen")!;
         expect(morgen.meaningId).toContain("besok");

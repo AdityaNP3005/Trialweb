@@ -54,8 +54,10 @@ CONSONANTS = {
 VOWELS = {
     "a": "a", "ɑ": "a", "ʌ": "a", "ɐ": "a", "æ": "e",
     "e": "e", "ɛ": "e", "ə": "ê",
-    "i": "i", "ɪ": "i", "y": "i", "ʏ": "i",
-    "o": "o", "ɔ": "o", "ø": "e", "œ": "e",
+    # ü/ö have no Indonesian letter: tongue of i/e + lips of u/o, written as one
+    # nucleus that is never hyphenated (see docs/GERMAN-PRONUNCIATION.md).
+    "i": "i", "ɪ": "i", "y": "iu", "ʏ": "iu",
+    "o": "o", "ɔ": "o", "ø": "eo", "œ": "eo",
     "u": "u", "ʊ": "u", "ɯ": "u",
 }
 SYMBOLS = sorted({**CONSONANTS, **VOWELS}, key=len, reverse=True)
@@ -98,6 +100,8 @@ def _units(word: str) -> list[tuple[str, str]]:
             letter = VOWELS[symbol] + ("ng" if "̃" in marks else "")
             if "̯" in marks and units and units[-1][0] == "V":
                 # Second half of a diphthong or vocalic r: [aɪ̯] ai, [iːɐ̯] ia.
+                if symbol in ("y", "ʏ"):
+                    letter = "i"  # [ɔʏ̯] eu/äu is the EYD V diphthong oi
                 if not (symbol == "ɐ" and units[-1][1].endswith("a")):
                     units[-1] = ("V", units[-1][1] + letter)
                 continue
@@ -242,8 +246,15 @@ def _self_check() -> None:
         "ˈɡuːtn̩ ˈmɔʁɡn̩": "gu-tên mor-gên",
         "haʊ̯s": "haus",
         "ˈhɔɪ̯tə": "hoi-tê",
-        "t͡ʃʏs": "cis",
-        "ʃøːn": "syen",
+        "t͡ʃʏs": "cius",
+        "ʃøːn": "syeon",
+        "ʃoːn": "syon",
+        "ˈmyːdə": "miu-dê",
+        "ˈyːbɐ": "iu-ba",
+        "t͡svœlf": "tsweolf",
+        "ˈhøːʁən": "heo-rên",
+        "ˈʃʏt͡sn̩": "syiu-tsên",
+        "tyːɐ̯": "tiua",
         "ɪç": "ih",
         "buːx": "bukh",
         "t͡seːn": "tsen",
