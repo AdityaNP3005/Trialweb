@@ -34,6 +34,7 @@ import {
     fetchAllCycles,
     fetchDeckCycle,
     saveDeckCycle,
+    fetchKnownCardIds,
     submitAction as submitActionCloud,
 } from "@/lib/data/progress";
 import { getDocs, query, where, writeBatch } from "firebase/firestore";
@@ -250,6 +251,10 @@ export class CloudStore implements StudyStore {
 
     saveVideoProgress(progress: PlaylistProgress): Promise<void> {
         return saveVideoProgressCloud(this.uid, progress);
+    }
+
+    listKnownCardIds(courseId: string): Promise<string[]> {
+        return fetchKnownCardIds(this.uid, courseId);
     }
 
     getWrittenCharacters(courseId: string): Promise<string[]> {

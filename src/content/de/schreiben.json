@@ -1,0 +1,661 @@
+{
+  "note": "Original practice tasks written for GoAbroad in the format of the Goethe-Zertifikat Schreiben modules (A1 Start Deutsch 1 to C2 GDS). Not official Goethe-Institut material.",
+  "sets": [
+    {
+      "id": "a1-1",
+      "level": "A1",
+      "title": "Deutschkurs & Schwimmbad",
+      "parts": [
+        {
+          "type": "form",
+          "id": "teil1",
+          "title": "Teil 1",
+          "minutes": 10,
+          "situation": "Ihr Freund Marco Rossi möchte einen Deutschkurs an der Volkshochschule machen. Er wohnt seit drei Monaten mit seiner Frau in Köln, in der Lindenstraße 12, 50674 Köln. Marco ist Koch von Beruf. Er arbeitet am Vormittag und möchte den Kurs deshalb am Abend besuchen. In dem Formular fehlen fünf Informationen. Helfen Sie Ihrem Freund und schreiben Sie die fünf fehlenden Informationen in das Formular.",
+          "hint": {
+            "id": "Isi 5 data yang kosong di formulir pendaftaran kursus untuk temanmu, Marco, berdasarkan teks.",
+            "en": "Fill in the 5 missing details in the course registration form for your friend Marco, using the text."
+          },
+          "given": [
+            { "label": "Familienname, Vorname", "value": "Rossi, Marco" },
+            { "label": "Kurs", "value": "Deutsch A1" }
+          ],
+          "fields": [
+            { "label": "Familienstand", "answers": ["verheiratet"] },
+            { "label": "Straße, Hausnummer", "answers": ["Lindenstraße 12", "Lindenstr. 12"] },
+            { "label": "PLZ, Wohnort", "answers": ["50674 Köln", "50674 Koeln"] },
+            { "label": "Beruf", "answers": ["Koch"] },
+            { "label": "Kurszeit (vormittags / abends)", "answers": ["abends", "am Abend", "Abend"] }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "teil2",
+          "title": "Teil 2",
+          "minutes": 10,
+          "situation": "Sie möchten am Sonntag mit Ihrer Familie ins Schwimmbad gehen. Schreiben Sie an das Schwimmbad. Schreiben Sie zu jedem Punkt ein bis zwei Sätze (circa 30 Wörter). Schreiben Sie auch eine Anrede und einen Gruß.",
+          "hint": {
+            "id": "Tulis pesan singkat (±30 kata) ke kolam renang. Jangan lupa sapaan dan salam penutup.",
+            "en": "Write a short message (about 30 words) to the swimming pool. Include a salutation and a closing."
+          },
+          "points": [
+            { "de": "Warum schreiben Sie?", "hint": { "id": "Mengapa kamu menulis?", "en": "Why are you writing?" }, "keywords": ["sonntag", "familie", "schwimm", "kommen", "besuchen", "möchte"] },
+            { "de": "Fragen Sie nach den Öffnungszeiten am Sonntag.", "hint": { "id": "Tanyakan jam buka hari Minggu.", "en": "Ask about the opening hours on Sunday." }, "keywords": ["öffnungszeit", "geöffnet", "offen", "wann", "uhr"] },
+            { "de": "Fragen Sie: Preis für Kinder?", "hint": { "id": "Tanyakan harga tiket untuk anak.", "en": "Ask the price for children." }, "keywords": ["kind", "preis", "kostet", "kosten", "eintritt", "euro"] }
+          ],
+          "words": 30,
+          "register": "formal",
+          "letter": true,
+          "rubric": "a1",
+          "model": "Sehr geehrte Damen und Herren,\nich möchte am Sonntag mit meiner Familie ins Schwimmbad kommen. Wann haben Sie am Sonntag geöffnet? Und wie viel kostet der Eintritt für Kinder?\nVielen Dank!\nMit freundlichen Grüßen\nAna Silva"
+        }
+      ]
+    },
+    {
+      "id": "a1-2",
+      "level": "A1",
+      "title": "Schwimmkurs & Wohnung",
+      "parts": [
+        {
+          "type": "form",
+          "id": "teil1",
+          "title": "Teil 1",
+          "minutes": 10,
+          "situation": "Ihre Kollegin Lena Novak meldet ihren Sohn Tim für einen Schwimmkurs an. Tim ist sieben Jahre alt und kann schon ein bisschen schwimmen. Lena wohnt in der Bahnhofstraße 5 in 80335 München. Ihre Handynummer ist 0176 2345678. Tim hat nur am Samstag Zeit. In dem Formular fehlen fünf Informationen. Helfen Sie Ihrer Kollegin und schreiben Sie die fünf fehlenden Informationen in das Formular.",
+          "hint": {
+            "id": "Isi 5 data yang kosong di formulir kursus renang untuk anak rekanmu, Lena.",
+            "en": "Fill in the 5 missing details in the swimming course form for your colleague Lena's son."
+          },
+          "given": [
+            { "label": "Name der Mutter", "value": "Novak, Lena" },
+            { "label": "Adresse", "value": "Bahnhofstraße 5, 80335 München" }
+          ],
+          "fields": [
+            { "label": "Vorname des Kindes", "answers": ["Tim"] },
+            { "label": "Alter", "answers": ["7", "sieben", "7 Jahre", "sieben Jahre"] },
+            { "label": "Telefon", "answers": ["0176 2345678", "01762345678"] },
+            { "label": "Kann Ihr Kind schon schwimmen? (ja / nein)", "answers": ["ja", "ein bisschen", "ja, ein bisschen"] },
+            { "label": "Kurstag", "answers": ["Samstag", "am Samstag", "samstags"] }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "teil2",
+          "title": "Teil 2",
+          "minutes": 10,
+          "situation": "Sie haben im Internet eine Wohnung in Hamburg gefunden. Schreiben Sie an den Vermieter, Herrn Schulz. Schreiben Sie zu jedem Punkt ein bis zwei Sätze (circa 30 Wörter). Schreiben Sie auch eine Anrede und einen Gruß.",
+          "hint": {
+            "id": "Tulis pesan (±30 kata) ke pemilik apartemen, Pak Schulz.",
+            "en": "Write a message (about 30 words) to the landlord, Mr Schulz."
+          },
+          "points": [
+            { "de": "Warum schreiben Sie?", "hint": { "id": "Mengapa kamu menulis?", "en": "Why are you writing?" }, "keywords": ["wohnung", "anzeige", "interesse", "interessiere", "gefunden", "gesehen"] },
+            { "de": "Bitten Sie um einen Termin.", "hint": { "id": "Minta waktu untuk melihat apartemen.", "en": "Ask for an appointment to view it." }, "keywords": ["termin", "besichtig", "anschauen", "ansehen", "sehen", "wann", "zeit"] },
+            { "de": "Fragen Sie: Wie hoch ist die Miete?", "hint": { "id": "Tanyakan berapa biaya sewanya.", "en": "Ask how high the rent is." }, "keywords": ["miete", "kostet", "kosten", "euro", "preis"] }
+          ],
+          "words": 30,
+          "register": "formal",
+          "letter": true,
+          "rubric": "a1",
+          "model": "Sehr geehrter Herr Schulz,\nich habe Ihre Anzeige gelesen und interessiere mich für die Wohnung. Kann ich die Wohnung am Freitag anschauen? Wie hoch ist die Miete?\nViele Grüße\nDaniel Kurniawan"
+        }
+      ]
+    },
+    {
+      "id": "a2-1",
+      "level": "A2",
+      "title": "Training & Kursausflug",
+      "parts": [
+        {
+          "type": "text",
+          "id": "teil1",
+          "title": "Teil 1",
+          "minutes": 15,
+          "situation": "Sie sind krank und können heute nicht zum Fußballtraining kommen. Schreiben Sie eine SMS an Ihren Freund Jonas. Schreiben Sie 20–30 Wörter. Schreiben Sie zu allen drei Punkten.",
+          "hint": {
+            "id": "Tulis SMS (20–30 kata) ke temanmu Jonas.",
+            "en": "Write a text message (20–30 words) to your friend Jonas."
+          },
+          "points": [
+            { "de": "Sagen Sie, dass Sie nicht kommen.", "hint": { "id": "Katakan kamu tidak datang.", "en": "Say you are not coming." }, "keywords": ["nicht kommen", "kann nicht", "komme nicht", "leider"] },
+            { "de": "Schreiben Sie, warum.", "hint": { "id": "Jelaskan alasannya.", "en": "Say why." }, "keywords": ["krank", "fieber", "kopf", "bauch", "erkält", "weil", "denn", "husten"] },
+            { "de": "Fragen Sie, wann das nächste Training ist.", "hint": { "id": "Tanyakan kapan latihan berikutnya.", "en": "Ask when the next training is." }, "keywords": ["wann", "nächste", "nächstes"] }
+          ],
+          "words": 30,
+          "register": "informal",
+          "letter": true,
+          "rubric": "a2",
+          "model": "Hallo Jonas,\nleider kann ich heute nicht zum Training kommen. Ich bin krank und habe Fieber. Wann ist das nächste Training?\nBis bald\nRina"
+        },
+        {
+          "type": "text",
+          "id": "teil2",
+          "title": "Teil 2",
+          "minutes": 15,
+          "situation": "Ihre Deutschlehrerin, Frau Berger, hat Sie zu einem Kursausflug am Samstag eingeladen. Schreiben Sie Frau Berger eine E-Mail. Schreiben Sie 30–40 Wörter. Schreiben Sie zu allen drei Punkten.",
+          "hint": {
+            "id": "Tulis surel (30–40 kata) ke gurumu, Bu Berger, tentang darmawisata kelas.",
+            "en": "Write an e-mail (30–40 words) to your teacher, Ms Berger, about the class trip."
+          },
+          "points": [
+            { "de": "Bedanken Sie sich für die Einladung.", "hint": { "id": "Ucapkan terima kasih atas undangannya.", "en": "Thank her for the invitation." }, "keywords": ["dank", "einladung"] },
+            { "de": "Sagen Sie, dass Sie erst später kommen können, und warum.", "hint": { "id": "Katakan kamu baru bisa datang terlambat, dan alasannya.", "en": "Say you can only come later, and why." }, "keywords": ["später", "erst", "weil", "denn", "arbeit", "termin"] },
+            { "de": "Fragen Sie, was Sie mitbringen sollen.", "hint": { "id": "Tanyakan apa yang perlu kamu bawa.", "en": "Ask what you should bring." }, "keywords": ["mitbringen", "bringen", "mitnehmen", "soll"] }
+          ],
+          "words": 40,
+          "register": "formal",
+          "letter": true,
+          "rubric": "a2",
+          "model": "Liebe Frau Berger,\nvielen Dank für Ihre Einladung zum Kursausflug. Ich komme gern, aber ich kann erst um 12 Uhr kommen, weil ich am Vormittag arbeiten muss. Was soll ich mitbringen?\nViele Grüße\nRina"
+        }
+      ]
+    },
+    {
+      "id": "a2-2",
+      "level": "A2",
+      "title": "Geburtstag & Hotel",
+      "parts": [
+        {
+          "type": "text",
+          "id": "teil1",
+          "title": "Teil 1",
+          "minutes": 15,
+          "situation": "Sie haben am Samstag Geburtstag und machen eine Party. Schreiben Sie eine SMS an Ihre Freundin Mia. Schreiben Sie 20–30 Wörter. Schreiben Sie zu allen drei Punkten.",
+          "hint": {
+            "id": "Tulis SMS (20–30 kata) ke temanmu Mia untuk mengundangnya ke pesta ulang tahun.",
+            "en": "Write a text message (20–30 words) inviting your friend Mia to your birthday party."
+          },
+          "points": [
+            { "de": "Laden Sie Mia ein.", "hint": { "id": "Undang Mia.", "en": "Invite Mia." }, "keywords": ["einlad", "kommst du", "party", "feier"] },
+            { "de": "Schreiben Sie, wann und wo die Party ist.", "hint": { "id": "Tulis kapan dan di mana pestanya.", "en": "Say when and where the party is." }, "keywords": ["uhr", "samstag", "bei mir", "zu hause", "wohnung", "garten"] },
+            { "de": "Bitten Sie Mia, etwas mitzubringen.", "hint": { "id": "Minta Mia membawa sesuatu.", "en": "Ask Mia to bring something." }, "keywords": ["mitbring", "bringst", "bring", "salat", "kuchen", "getränk", "musik"] }
+          ],
+          "words": 30,
+          "register": "informal",
+          "letter": true,
+          "rubric": "a2",
+          "model": "Hallo Mia,\nam Samstag habe ich Geburtstag und mache eine Party. Kommst du? Die Party ist um 19 Uhr bei mir zu Hause. Kannst du einen Salat mitbringen?\nLiebe Grüße\nDewi"
+        },
+        {
+          "type": "text",
+          "id": "teil2",
+          "title": "Teil 2",
+          "minutes": 15,
+          "situation": "Sie haben in einem Hotel in Berlin ein Zimmer für nächste Woche reserviert. Schreiben Sie dem Hotel eine E-Mail. Schreiben Sie 30–40 Wörter. Schreiben Sie zu allen drei Punkten.",
+          "hint": {
+            "id": "Tulis surel (30–40 kata) ke hotel tempat kamu memesan kamar.",
+            "en": "Write an e-mail (30–40 words) to the hotel where you booked a room."
+          },
+          "points": [
+            { "de": "Sagen Sie, dass Sie einen Tag später ankommen.", "hint": { "id": "Beri tahu bahwa kamu datang sehari lebih lambat.", "en": "Say you will arrive one day later." }, "keywords": ["später", "einen tag", "ankomm", "erst am"] },
+            { "de": "Fragen Sie nach einem Parkplatz.", "hint": { "id": "Tanyakan tempat parkir.", "en": "Ask about a parking space." }, "keywords": ["parkplatz", "parken", "garage", "auto"] },
+            { "de": "Bitten Sie um eine kurze Antwort.", "hint": { "id": "Minta balasan singkat.", "en": "Ask for a short reply." }, "keywords": ["antwort", "antworten", "bestätig", "rückmeldung"] }
+          ],
+          "words": 40,
+          "register": "formal",
+          "letter": true,
+          "rubric": "a2",
+          "model": "Sehr geehrte Damen und Herren,\nich habe ein Zimmer vom 10. bis 14. Mai reserviert. Leider komme ich erst am 11. Mai an. Gibt es bei Ihnen einen Parkplatz für mein Auto? Bitte antworten Sie mir kurz.\nMit freundlichen Grüßen\nBudi Santoso"
+        }
+      ]
+    },
+    {
+      "id": "b1-1",
+      "level": "B1",
+      "title": "Umzug, Handys in der Schule, Arzttermin",
+      "parts": [
+        {
+          "type": "text",
+          "id": "aufgabe1",
+          "title": "Aufgabe 1",
+          "minutes": 20,
+          "situation": "Sie sind vor Kurzem in eine neue Stadt umgezogen. Schreiben Sie eine E-Mail an Ihre Freundin / Ihren Freund (circa 80 Wörter). Schreiben Sie etwas zu allen drei Punkten. Achten Sie auf den Textaufbau (Anrede, Einleitung, Reihenfolge der Inhaltspunkte, Schluss).",
+          "hint": {
+            "id": "Tulis surel (±80 kata) ke teman tentang kepindahanmu ke kota baru.",
+            "en": "Write an e-mail (about 80 words) to a friend about your move to a new city."
+          },
+          "points": [
+            { "de": "Beschreiben Sie: Wie ist Ihre neue Wohnung?", "hint": { "id": "Gambarkan apartemen barumu.", "en": "Describe your new flat." }, "keywords": ["wohnung", "zimmer", "balkon", "küche", "hell", "groß", "klein"] },
+            { "de": "Begründen Sie: Warum gefällt Ihnen die Stadt (nicht)?", "hint": { "id": "Jelaskan mengapa kamu (tidak) suka kotanya.", "en": "Explain why you (don't) like the city." }, "keywords": ["gefällt", "weil", "denn", "deshalb", "stadt"] },
+            { "de": "Machen Sie einen Vorschlag für einen Besuch.", "hint": { "id": "Usulkan waktu untuk berkunjung.", "en": "Suggest a visit." }, "keywords": ["besuch", "wochenende", "lust", "komm", "vorschlag", "treffen"] }
+          ],
+          "words": 80,
+          "register": "informal",
+          "letter": true,
+          "rubric": "b1-long",
+          "model": "Liebe Sarah,\nendlich habe ich Zeit, dir zu schreiben! Seit zwei Wochen wohne ich jetzt in Leipzig. Meine neue Wohnung ist zwar klein, aber sehr hell und sie hat einen Balkon mit Blick auf einen Park. Die Stadt gefällt mir sehr gut, weil es hier viele Cafés und Museen gibt und man alles mit dem Fahrrad erreichen kann. Nur die Mieten sind leider gestiegen. Hast du Lust, mich bald zu besuchen? Wie wäre es mit dem Wochenende am 14. Juni? Dann zeige ich dir die Altstadt.\nLiebe Grüße\nDewi"
+        },
+        {
+          "type": "text",
+          "id": "aufgabe2",
+          "title": "Aufgabe 2",
+          "minutes": 25,
+          "situation": "Sie haben im Radio eine Sendung zum Thema „Handys in der Schule“ gehört. Im Online-Gästebuch der Sendung finden Sie folgende Meinung. Schreiben Sie nun Ihre Meinung zum Thema (circa 80 Wörter).",
+          "hint": {
+            "id": "Tulis pendapatmu (±80 kata) di buku tamu daring tentang ponsel di sekolah.",
+            "en": "Write your opinion (about 80 words) in the online guestbook about phones at school."
+          },
+          "stimulus": ["Markus, 12.03., 18:40 Uhr: Ich finde, Handys gehören nicht in die Schule. Die Schülerinnen und Schüler spielen nur und lernen weniger. Ein Handyverbot ist die beste Lösung."],
+          "points": [
+            { "de": "Äußern Sie Ihre Meinung.", "hint": { "id": "Nyatakan pendapatmu.", "en": "Give your opinion." }, "keywords": ["finde", "meinung", "denke", "glaube", "meiner ansicht"] },
+            { "de": "Begründen Sie Ihre Meinung (z. B. mit Beispielen).", "hint": { "id": "Beri alasan atau contoh.", "en": "Give reasons or examples." }, "keywords": ["weil", "denn", "zum beispiel", "deshalb", "außerdem"] }
+          ],
+          "words": 80,
+          "register": "neutral",
+          "letter": false,
+          "rubric": "b1-long",
+          "model": "Ich verstehe Markus, aber ich sehe das anders. Meiner Meinung nach ist ein komplettes Handyverbot keine gute Lösung. Natürlich sollen Schüler im Unterricht nicht spielen. Aber das Handy kann beim Lernen auch helfen, zum Beispiel mit Wörterbuch-Apps oder Lernvideos. Außerdem müssen Jugendliche lernen, verantwortungsvoll mit Medien umzugehen, und das kann man in der Schule gut üben. Deshalb finde ich klare Regeln besser: In den Pausen dürfen die Schüler ihr Handy benutzen, im Unterricht nur, wenn der Lehrer es erlaubt."
+        },
+        {
+          "type": "text",
+          "id": "aufgabe3",
+          "title": "Aufgabe 3",
+          "minutes": 15,
+          "situation": "Sie haben morgen einen Termin bei Ihrer Ärztin, Frau Dr. Wagner. Sie können aber nicht kommen. Schreiben Sie an die Praxis. Entschuldigen Sie sich höflich, berichten Sie, warum Sie nicht kommen können, und bitten Sie um einen neuen Termin. Schreiben Sie eine E-Mail (circa 40 Wörter). Vergessen Sie nicht die Anrede und den Gruß am Schluss.",
+          "hint": {
+            "id": "Tulis surel singkat (±40 kata) ke praktik dokter untuk membatalkan janji temu dengan sopan.",
+            "en": "Write a short e-mail (about 40 words) to the doctor's practice politely cancelling an appointment."
+          },
+          "points": [
+            { "de": "Entschuldigen Sie sich.", "hint": { "id": "Minta maaf.", "en": "Apologise." }, "keywords": ["entschuldig", "leider", "tut mir leid"] },
+            { "de": "Sagen Sie, warum Sie nicht kommen können.", "hint": { "id": "Jelaskan alasannya.", "en": "Say why." }, "keywords": ["weil", "denn", "muss", "dienstreise", "arbeit", "kind"] },
+            { "de": "Bitten Sie um einen neuen Termin.", "hint": { "id": "Minta janji temu baru.", "en": "Ask for a new appointment." }, "keywords": ["neuen termin", "anderen termin", "termin"] }
+          ],
+          "words": 40,
+          "register": "formal",
+          "letter": true,
+          "rubric": "b1-short",
+          "model": "Sehr geehrte Frau Dr. Wagner,\nleider kann ich morgen um 10 Uhr nicht zu meinem Termin kommen, weil ich kurzfristig eine Dienstreise nach Hamburg machen muss. Das tut mir sehr leid. Könnten Sie mir bitte einen neuen Termin in der nächsten Woche geben?\nMit freundlichen Grüßen\nAndi Pratama"
+        }
+      ]
+    },
+    {
+      "id": "b1-2",
+      "level": "B1",
+      "title": "Kochkurs, Homeoffice, Paket",
+      "parts": [
+        {
+          "type": "text",
+          "id": "aufgabe1",
+          "title": "Aufgabe 1",
+          "minutes": 20,
+          "situation": "Sie haben letzte Woche an einem Kochkurs teilgenommen. Schreiben Sie eine E-Mail an Ihre Freundin / Ihren Freund (circa 80 Wörter). Schreiben Sie etwas zu allen drei Punkten. Achten Sie auf den Textaufbau (Anrede, Einleitung, Reihenfolge der Inhaltspunkte, Schluss).",
+          "hint": {
+            "id": "Tulis surel (±80 kata) ke teman tentang kursus memasak yang kamu ikuti.",
+            "en": "Write an e-mail (about 80 words) to a friend about the cooking course you took."
+          },
+          "points": [
+            { "de": "Beschreiben Sie: Was haben Sie gekocht?", "hint": { "id": "Ceritakan apa yang kamu masak.", "en": "Describe what you cooked." }, "keywords": ["gekocht", "suppe", "kuchen", "nudel", "gericht", "rezept", "gemacht"] },
+            { "de": "Begründen Sie: Warum hat Ihnen der Kurs (nicht) gefallen?", "hint": { "id": "Jelaskan mengapa kamu (tidak) suka kursusnya.", "en": "Explain why you (didn't) like the course." }, "keywords": ["gefallen", "weil", "denn", "deshalb", "kursleiter"] },
+            { "de": "Machen Sie einen Vorschlag, zusammen zu kochen.", "hint": { "id": "Usulkan memasak bersama.", "en": "Suggest cooking together." }, "keywords": ["zusammen", "gemeinsam", "lust", "vorschlag", "wie wäre", "komm"] }
+          ],
+          "words": 80,
+          "register": "informal",
+          "letter": true,
+          "rubric": "b1-long",
+          "model": "Lieber Tobias,\nwie geht es dir? Stell dir vor, letzte Woche habe ich einen Kochkurs gemacht! Wir haben italienisch gekocht: zuerst eine Gemüsesuppe und danach frische Nudeln mit Tomatensoße. Der Kurs hat mir sehr gut gefallen, weil der Kursleiter alles genau erklärt hat und die Gruppe sehr nett war. Jetzt möchte ich die Rezepte unbedingt noch einmal ausprobieren. Hast du Lust, am Samstagabend mit mir zu kochen? Du kannst gern um sieben Uhr zu mir kommen, ich kaufe alles ein.\nViele Grüße\nRina"
+        },
+        {
+          "type": "text",
+          "id": "aufgabe2",
+          "title": "Aufgabe 2",
+          "minutes": 25,
+          "situation": "Sie haben in einer Zeitschrift einen Artikel zum Thema „Arbeiten im Homeoffice“ gelesen. Im Online-Forum der Zeitschrift finden Sie folgende Meinung. Schreiben Sie nun Ihre Meinung zum Thema (circa 80 Wörter).",
+          "hint": {
+            "id": "Tulis pendapatmu (±80 kata) di forum daring tentang bekerja dari rumah.",
+            "en": "Write your opinion (about 80 words) in the online forum about working from home."
+          },
+          "stimulus": ["Sabine, 04.05., 20:15 Uhr: Seit einem Jahr arbeite ich von zu Hause. Ich spare jeden Tag zwei Stunden Fahrzeit, aber manchmal fehlen mir meine Kolleginnen und Kollegen sehr."],
+          "points": [
+            { "de": "Äußern Sie Ihre Meinung.", "hint": { "id": "Nyatakan pendapatmu.", "en": "Give your opinion." }, "keywords": ["finde", "meinung", "denke", "glaube", "meiner ansicht"] },
+            { "de": "Begründen Sie Ihre Meinung (z. B. mit Beispielen).", "hint": { "id": "Beri alasan atau contoh.", "en": "Give reasons or examples." }, "keywords": ["weil", "denn", "zum beispiel", "deshalb", "außerdem"] }
+          ],
+          "words": 80,
+          "register": "neutral",
+          "letter": false,
+          "rubric": "b1-long",
+          "model": "Ich kann Sabine gut verstehen. Ich arbeite selbst zwei Tage pro Woche im Homeoffice und finde das sehr praktisch. Zu Hause kann ich mich besser konzentrieren, weil es ruhiger ist als im Großraumbüro. Außerdem habe ich mehr Zeit für meine Familie. Trotzdem denke ich, dass man nicht nur von zu Hause arbeiten sollte. Im Büro kann man schneller Probleme lösen und lernt die Kollegen besser kennen. Deshalb ist meiner Meinung nach eine Mischung aus Homeoffice und Büro die beste Lösung."
+        },
+        {
+          "type": "text",
+          "id": "aufgabe3",
+          "title": "Aufgabe 3",
+          "minutes": 15,
+          "situation": "Ihr Nachbar, Herr Krause, hat gestern ein Paket für Sie angenommen. Sie können es heute aber nicht abholen. Schreiben Sie Herrn Krause. Bedanken Sie sich, sagen Sie, warum Sie heute nicht kommen können, und schlagen Sie einen anderen Zeitpunkt vor. Schreiben Sie eine E-Mail (circa 40 Wörter). Vergessen Sie nicht die Anrede und den Gruß am Schluss.",
+          "hint": {
+            "id": "Tulis surel singkat (±40 kata) ke tetanggamu, Pak Krause, yang menerima paketmu.",
+            "en": "Write a short e-mail (about 40 words) to your neighbour Mr Krause, who took in your parcel."
+          },
+          "points": [
+            { "de": "Bedanken Sie sich.", "hint": { "id": "Ucapkan terima kasih.", "en": "Thank him." }, "keywords": ["dank"] },
+            { "de": "Sagen Sie, warum Sie heute nicht kommen können.", "hint": { "id": "Jelaskan mengapa hari ini tidak bisa.", "en": "Say why you can't come today." }, "keywords": ["weil", "denn", "leider", "arbeit", "spät", "muss"] },
+            { "de": "Schlagen Sie einen anderen Zeitpunkt vor.", "hint": { "id": "Usulkan waktu lain.", "en": "Suggest another time." }, "keywords": ["morgen", "uhr", "passt", "zeitpunkt", "abend", "vorbeikommen"] }
+          ],
+          "words": 40,
+          "register": "formal",
+          "letter": true,
+          "rubric": "b1-short",
+          "model": "Lieber Herr Krause,\nvielen Dank, dass Sie gestern mein Paket angenommen haben! Leider kann ich es heute nicht abholen, weil ich bis spät abends arbeiten muss. Passt es Ihnen morgen gegen 18 Uhr?\nViele Grüße\nNadia Putri"
+        }
+      ]
+    },
+    {
+      "id": "b2-1",
+      "level": "B2",
+      "title": "Billige Mode & Prüfungsaufsicht",
+      "parts": [
+        {
+          "type": "text",
+          "id": "teil1",
+          "title": "Teil 1",
+          "minutes": 50,
+          "situation": "Sie schreiben einen Forumsbeitrag für ein Online-Magazin zum Thema „Billige Mode – teuer für die Umwelt?“. Denken Sie an eine Einleitung und einen Schluss. Bei der Bewertung wird darauf geachtet, wie genau die Inhaltspunkte bearbeitet sind, wie korrekt der Text ist und wie gut die Sätze und Abschnitte sprachlich miteinander verknüpft sind. Schreiben Sie circa 150 Wörter.",
+          "hint": {
+            "id": "Tulis tulisan forum (±150 kata) tentang pakaian murah dan dampaknya bagi lingkungan.",
+            "en": "Write a forum post (about 150 words) on cheap fashion and its effect on the environment."
+          },
+          "points": [
+            { "de": "Äußern Sie Ihre Meinung zum Kauf billiger Kleidung.", "hint": { "id": "Nyatakan pendapatmu soal membeli pakaian murah.", "en": "Give your opinion on buying cheap clothes." }, "keywords": ["meiner meinung", "ich finde", "meiner ansicht", "ich bin der", "ich halte"] },
+            { "de": "Beschreiben Sie Folgen für Umwelt und Menschen.", "hint": { "id": "Jelaskan dampaknya bagi lingkungan dan manusia.", "en": "Describe the consequences for the environment and people." }, "keywords": ["umwelt", "wasser", "chemikal", "arbeitsbeding", "näherin", "müll", "folge"] },
+            { "de": "Nennen Sie Möglichkeiten, nachhaltig einzukaufen.", "hint": { "id": "Sebutkan cara berbelanja yang berkelanjutan.", "en": "Name ways to shop sustainably." }, "keywords": ["second", "gebraucht", "tausch", "flohmarkt", "fair", "nachhaltig", "reparier", "qualität"] },
+            { "de": "Sagen Sie, was Sie selbst ändern würden.", "hint": { "id": "Katakan apa yang akan kamu ubah sendiri.", "en": "Say what you would change yourself." }, "keywords": ["ich würde", "ich werde", "selbst", "mir vorgenommen", "in zukunft", "künftig"] }
+          ],
+          "words": 150,
+          "register": "neutral",
+          "letter": false,
+          "rubric": "b2c1-long",
+          "model": "Liebe Leserinnen und Leser,\nT-Shirts für fünf Euro sind verlockend, aber ich halte den Kauf von Billigmode für problematisch. Meiner Meinung nach zahlen andere den wahren Preis: Für die Produktion werden riesige Mengen Wasser und Chemikalien verbraucht, und die Näherinnen in den Fabriken arbeiten oft unter unsicheren Bedingungen für sehr niedrige Löhne. Hinzu kommt, dass viele Kleidungsstücke nach wenigen Wochen im Müll landen.\nDabei gibt es durchaus Alternativen. Second-Hand-Läden und Online-Flohmärkte bieten gut erhaltene Kleidung zu fairen Preisen. Auch Kleidertauschpartys werden immer beliebter. Wer neu kauft, sollte auf Fair-Trade-Siegel und gute Qualität achten, denn hochwertige Kleidung hält einfach länger.\nIch selbst habe mir vorgenommen, nur noch Dinge zu kaufen, die ich wirklich brauche, und kaputte Kleidung reparieren zu lassen, statt sie wegzuwerfen. Wenn viele Menschen so handeln, kann sich die Modebranche langfristig verändern.\nWie seht ihr das?"
+        },
+        {
+          "type": "text",
+          "id": "teil2",
+          "title": "Teil 2",
+          "minutes": 25,
+          "situation": "Sie arbeiten in einer Sprachschule. Ihr Kollege, Herr Albers, hat Sie gebeten, am Freitag eine Prüfungsaufsicht für ihn zu übernehmen. An diesem Tag haben Sie aber bereits einen wichtigen Termin. Schreiben Sie Herrn Albers eine Nachricht. Überlegen Sie sich eine passende Reihenfolge für die Inhaltspunkte. Vergessen Sie nicht Anrede und Gruß. Schreiben Sie circa 100 Wörter.",
+          "hint": {
+            "id": "Tulis pesan formal (±100 kata) ke rekan kerjamu karena kamu tidak bisa menggantikannya mengawasi ujian.",
+            "en": "Write a formal message (about 100 words) to a colleague: you can't cover his exam supervision."
+          },
+          "points": [
+            { "de": "Bedauern Sie, dass Sie nicht helfen können.", "hint": { "id": "Sampaikan penyesalan karena tidak bisa membantu.", "en": "Express regret that you can't help." }, "keywords": ["leider", "bedauer", "tut mir leid", "schade"] },
+            { "de": "Erklären Sie Ihre Situation.", "hint": { "id": "Jelaskan situasimu.", "en": "Explain your situation." }, "keywords": ["termin", "weil", "da ich", "arzt", "fortbildung", "verschieben"] },
+            { "de": "Schlagen Sie eine Lösung vor.", "hint": { "id": "Usulkan solusi.", "en": "Suggest a solution." }, "keywords": ["vorschlag", "vielleicht", "könnte", "kollegin", "fragen", "lösung"] },
+            { "de": "Bieten Sie Ihre Hilfe für einen anderen Tag an.", "hint": { "id": "Tawarkan bantuan di hari lain.", "en": "Offer help on another day." }, "keywords": ["anderen tag", "nächste woche", "gern", "übernehme", "helfe", "montag", "dienstag", "donnerstag"] }
+          ],
+          "words": 100,
+          "register": "formal",
+          "letter": true,
+          "rubric": "b2c1-short",
+          "model": "Lieber Herr Albers,\nvielen Dank für Ihre Anfrage. Leider kann ich die Prüfungsaufsicht am Freitag nicht übernehmen, was ich sehr bedauere. Ich habe an diesem Vormittag einen Termin beim Facharzt, auf den ich mehrere Monate gewartet habe und den ich nicht verschieben kann.\nVielleicht könnte Frau Yilmaz einspringen? Soweit ich weiß, unterrichtet sie freitags erst ab 14 Uhr. Ich kann sie gern heute in der Pause fragen.\nFalls Sie in der nächsten Woche Unterstützung brauchen, helfe ich Ihnen sehr gern. Am Dienstag und Donnerstag wäre ich den ganzen Tag flexibel.\nMit freundlichen Grüßen\nSiti Rahma"
+        }
+      ]
+    },
+    {
+      "id": "b2-2",
+      "level": "B2",
+      "title": "Kinder & Smartphones, Weiterbildung",
+      "parts": [
+        {
+          "type": "text",
+          "id": "teil1",
+          "title": "Teil 1",
+          "minutes": 50,
+          "situation": "Sie schreiben einen Forumsbeitrag für ein Elternportal zum Thema „Ab wann ein eigenes Smartphone?“. Denken Sie an eine Einleitung und einen Schluss. Bei der Bewertung wird darauf geachtet, wie genau die Inhaltspunkte bearbeitet sind, wie korrekt der Text ist und wie gut die Sätze und Abschnitte sprachlich miteinander verknüpft sind. Schreiben Sie circa 150 Wörter.",
+          "hint": {
+            "id": "Tulis tulisan forum (±150 kata) tentang usia yang tepat bagi anak untuk punya ponsel sendiri.",
+            "en": "Write a forum post (about 150 words) on when children should get their own smartphone."
+          },
+          "points": [
+            { "de": "Äußern Sie Ihre Meinung dazu, ob Grundschulkinder ein Smartphone brauchen.", "hint": { "id": "Nyatakan pendapatmu apakah anak SD perlu ponsel.", "en": "Say whether primary-school children need a smartphone." }, "keywords": ["meiner meinung", "ich finde", "meiner ansicht", "ich halte", "ich bin der"] },
+            { "de": "Nennen Sie Gründe, warum Eltern ihren Kindern früh ein Smartphone geben.", "hint": { "id": "Sebutkan alasan orang tua memberi ponsel sejak dini.", "en": "Name reasons why parents give children phones early." }, "keywords": ["erreichbar", "sicherheit", "freunde", "druck", "ausgeschlossen", "weil"] },
+            { "de": "Beschreiben Sie mögliche Risiken.", "hint": { "id": "Jelaskan risikonya.", "en": "Describe possible risks." }, "keywords": ["risik", "gefahr", "sucht", "mobbing", "schlaf", "konzentration", "inhalt"] },
+            { "de": "Schlagen Sie Regeln für die Nutzung vor.", "hint": { "id": "Usulkan aturan penggunaan.", "en": "Suggest rules for use." }, "keywords": ["regel", "bildschirmzeit", "begrenz", "abends", "vereinbar", "kontrolle", "minuten"] }
+          ],
+          "words": 150,
+          "register": "neutral",
+          "letter": false,
+          "rubric": "b2c1-long",
+          "model": "Hallo zusammen,\ndas Thema beschäftigt mich gerade sehr, weil meine Tochter neun Jahre alt ist. Meiner Meinung nach braucht ein Grundschulkind noch kein eigenes Smartphone; ein einfaches Handy zum Telefonieren reicht völlig aus.\nIch verstehe aber, warum viele Eltern anders entscheiden. Sie möchten ihre Kinder jederzeit erreichen können, und manche Kinder fühlen sich ausgeschlossen, wenn alle Freunde in einer Chatgruppe sind. Trotzdem sollte man die Risiken nicht unterschätzen: Kinder verbringen schnell Stunden mit Spielen und Videos, schlafen schlechter und können sich in der Schule weniger konzentrieren. Außerdem stoßen sie im Internet leicht auf Inhalte, die nicht für sie geeignet sind.\nWer seinem Kind trotzdem ein Smartphone gibt, sollte klare Regeln vereinbaren, zum Beispiel eine feste Bildschirmzeit von einer Stunde pro Tag und kein Handy im Kinderzimmer nach 20 Uhr. Wichtig ist vor allem, dass Eltern selbst ein gutes Vorbild sind.\nWelche Erfahrungen habt ihr gemacht?"
+        },
+        {
+          "type": "text",
+          "id": "teil2",
+          "title": "Teil 2",
+          "minutes": 25,
+          "situation": "Sie haben an einer Weiterbildung Ihrer Firma teilgenommen, die nicht gut organisiert war. Schreiben Sie der Organisatorin, Frau Lindner, eine Nachricht. Überlegen Sie sich eine passende Reihenfolge für die Inhaltspunkte. Vergessen Sie nicht Anrede und Gruß. Schreiben Sie circa 100 Wörter.",
+          "hint": {
+            "id": "Tulis pesan formal (±100 kata) ke penyelenggara pelatihan yang kurang terorganisasi.",
+            "en": "Write a formal message (about 100 words) to the organiser of a poorly organised training."
+          },
+          "points": [
+            { "de": "Bedanken Sie sich für die Möglichkeit, an der Weiterbildung teilzunehmen.", "hint": { "id": "Ucapkan terima kasih atas kesempatannya.", "en": "Thank her for the opportunity." }, "keywords": ["dank", "möglichkeit"] },
+            { "de": "Beschreiben Sie zwei Probleme.", "hint": { "id": "Jelaskan dua masalah.", "en": "Describe two problems." }, "keywords": ["problem", "leider", "raum", "zu spät", "technik", "unterlagen", "beamer", "pause"] },
+            { "de": "Zeigen Sie Verständnis für die Situation der Organisatorin.", "hint": { "id": "Tunjukkan pengertian atas situasi penyelenggara.", "en": "Show understanding for the organiser's situation." }, "keywords": ["verständnis", "verstehe", "weiß", "kurzfristig", "nicht leicht", "aufwand"] },
+            { "de": "Machen Sie einen Verbesserungsvorschlag.", "hint": { "id": "Beri usulan perbaikan.", "en": "Suggest an improvement." }, "keywords": ["vorschlag", "vorschlagen", "könnte", "künftig", "nächste", "besser", "wäre"] }
+          ],
+          "words": 100,
+          "register": "formal",
+          "letter": true,
+          "rubric": "b2c1-short",
+          "model": "Sehr geehrte Frau Lindner,\nzunächst möchte ich mich herzlich dafür bedanken, dass ich an der Weiterbildung „Projektmanagement“ teilnehmen durfte. Inhaltlich war das Seminar für meine Arbeit sehr nützlich.\nLeider gab es jedoch zwei Probleme: Der Raum war für 25 Personen viel zu klein, und die Unterlagen wurden erst am zweiten Tag verteilt, sodass wir den Übungen am ersten Tag kaum folgen konnten.\nMir ist bewusst, dass die Organisation sehr kurzfristig erfolgen musste und das nicht leicht war. Für künftige Seminare würde ich vorschlagen, die Unterlagen vorab per E-Mail zu verschicken und die Teilnehmerzahl an die Raumgröße anzupassen.\nMit freundlichen Grüßen\nAgus Wijaya"
+        }
+      ]
+    },
+    {
+      "id": "c1-1",
+      "level": "C1",
+      "title": "Viertagewoche & Beschwerde Online-Händler",
+      "parts": [
+        {
+          "type": "text",
+          "id": "teil1",
+          "title": "Teil 1",
+          "minutes": 50,
+          "situation": "Für das Online-Forum der Zeitschrift „Arbeit & Gesellschaft“ verfassen Sie einen Diskussionsbeitrag zum Thema: Die Viertagewoche – ein Modell für die Zukunft? Schreiben Sie circa 230 Wörter.",
+          "hint": {
+            "id": "Tulis tulisan diskusi (±230 kata) tentang minggu kerja empat hari.",
+            "en": "Write a discussion post (about 230 words) on the four-day work week."
+          },
+          "points": [
+            { "de": "Erläutern Sie, welche Erwartungen Beschäftigte an eine Viertagewoche haben.", "hint": { "id": "Jelaskan harapan para pekerja.", "en": "Explain what employees expect." }, "keywords": ["erwart", "erholung", "freizeit", "familie", "work-life", "zufrieden", "motivation"] },
+            { "de": "Erörtern Sie mögliche Folgen für Unternehmen.", "hint": { "id": "Bahas dampaknya bagi perusahaan.", "en": "Discuss consequences for companies." }, "keywords": ["unternehmen", "kosten", "produktiv", "fachkräft", "kunden", "organisation", "personal"] },
+            { "de": "Nehmen Sie Stellung, für welche Branchen das Modell (nicht) geeignet ist.", "hint": { "id": "Tentukan sikap: cocok untuk sektor apa saja.", "en": "Take a position on which sectors it suits." }, "keywords": ["branche", "pflege", "krankenhaus", "einzelhandel", "büro", "schicht", "geeignet"] },
+            { "de": "Skizzieren Sie eine alternative Lösung.", "hint": { "id": "Uraikan solusi alternatif.", "en": "Outline an alternative." }, "keywords": ["alternativ", "stattdessen", "flexibl", "teilzeit", "gleitzeit", "modell", "lebensarbeitszeit"] }
+          ],
+          "words": 230,
+          "register": "neutral",
+          "letter": false,
+          "rubric": "b2c1-long",
+          "model": "Kaum ein arbeitspolitisches Thema wird derzeit so leidenschaftlich diskutiert wie die Viertagewoche. Die Erwartungen der Beschäftigten liegen auf der Hand: Ein zusätzlicher freier Tag verspricht mehr Erholung, mehr Zeit für Familie und Ehrenamt und damit eine bessere Vereinbarkeit von Beruf und Privatleben. Viele erhoffen sich zudem, dass sie motivierter und gesünder zur Arbeit kommen.\nFür Unternehmen ist die Bilanz differenzierter. Pilotprojekte deuten darauf hin, dass die Produktivität bei verkürzter Arbeitszeit nicht zwangsläufig sinkt, mitunter sogar steigt. Zugleich kann ein solches Modell ein schlagkräftiges Argument im Wettbewerb um Fachkräfte sein. Andererseits steigen Organisationsaufwand und Personalkosten, wenn Kundinnen und Kunden weiterhin an fünf oder sechs Tagen betreut werden müssen.\nGerade deshalb halte ich die Viertagewoche nicht für ein Modell, das sich auf alle Branchen übertragen lässt. In Büroberufen mit hoher Eigenverantwortung ist sie gut umsetzbar, in der Pflege, im Einzelhandel oder in Krankenhäusern hingegen würde sie den ohnehin gravierenden Personalmangel verschärfen.\nSinnvoller erscheint mir daher ein flexibles Modell: Beschäftigte könnten ihre Wochenarbeitszeit in Absprache mit dem Team selbst verteilen, etwa durch Gleitzeit oder ein Lebensarbeitszeitkonto. So ließe sich der Wunsch nach mehr Selbstbestimmung erfüllen, ohne dass Betriebe ihre Flexibilität verlieren. Entscheidend ist letztlich nicht die Zahl der Arbeitstage, sondern eine Arbeitskultur, die Leistung an Ergebnissen statt an Anwesenheit misst."
+        },
+        {
+          "type": "text",
+          "id": "teil2",
+          "title": "Teil 2",
+          "minutes": 25,
+          "situation": "Sie haben bei einem Online-Händler einen Laptop für Ihre selbstständige Tätigkeit bestellt. Er wurde zwei Wochen zu spät und mit einem beschädigten Bildschirm geliefert. Schreiben Sie eine Beschwerde an den Kundenservice. Schreiben Sie circa 120 Wörter.",
+          "hint": {
+            "id": "Tulis surat keluhan formal (±120 kata) ke layanan pelanggan toko daring.",
+            "en": "Write a formal complaint (about 120 words) to the online shop's customer service."
+          },
+          "points": [
+            { "de": "Schildern Sie den Sachverhalt sachlich.", "hint": { "id": "Uraikan kejadiannya secara objektif.", "en": "Describe what happened objectively." }, "keywords": ["bestellt", "bestellung", "geliefert", "lieferung", "bildschirm", "beschädigt"] },
+            { "de": "Erläutern Sie, welche Folgen die Verspätung für Sie hatte.", "hint": { "id": "Jelaskan akibat keterlambatan bagimu.", "en": "Explain what the delay meant for you." }, "keywords": ["folge", "auftrag", "kunden", "verdienst", "ausfall", "arbeiten", "ersatzgerät"] },
+            { "de": "Formulieren Sie Ihre Forderung.", "hint": { "id": "Sampaikan tuntutanmu.", "en": "State your demand." }, "keywords": ["fordere", "erwarte", "bitte sie", "ersatz", "erstattung", "rückerstattung", "austausch", "entschädigung"] },
+            { "de": "Setzen Sie eine Frist.", "hint": { "id": "Tetapkan tenggat waktu.", "en": "Set a deadline." }, "keywords": ["frist", "bis zum", "innerhalb", "spätestens"] }
+          ],
+          "words": 120,
+          "register": "formal",
+          "letter": true,
+          "rubric": "b2c1-short",
+          "model": "Sehr geehrte Damen und Herren,\nam 3. März habe ich bei Ihnen einen Laptop (Bestellnummer 48-2210) bestellt, dessen Lieferung für den 6. März zugesagt war. Das Gerät traf jedoch erst am 20. März ein, und der Bildschirm war bereits beim Auspacken gesprungen.\nDa ich als freiberufliche Übersetzerin auf den Laptop angewiesen bin, musste ich mir kurzfristig ein Ersatzgerät leihen und konnte zwei Aufträge nicht fristgerecht abschließen.\nIch fordere Sie daher auf, mir umgehend ein einwandfreies Gerät zu liefern und die Kosten für das Leihgerät in Höhe von 80 Euro zu erstatten. Den beschädigten Laptop schicke ich nach Erhalt eines Rücksendeetiketts zurück.\nBitte bestätigen Sie mir Ihr Vorgehen bis spätestens 31. März.\nMit freundlichen Grüßen\nMaya Hartono"
+        }
+      ]
+    },
+    {
+      "id": "c1-2",
+      "level": "C1",
+      "title": "Ehrenamt & Baulärm",
+      "parts": [
+        {
+          "type": "text",
+          "id": "teil1",
+          "title": "Teil 1",
+          "minutes": 50,
+          "situation": "Für das Internetforum einer überregionalen Tageszeitung verfassen Sie einen Diskussionsbeitrag zum Thema: Ein soziales Pflichtjahr für alle jungen Menschen? Schreiben Sie circa 230 Wörter.",
+          "hint": {
+            "id": "Tulis tulisan diskusi (±230 kata) tentang wajib kerja sosial setahun bagi anak muda.",
+            "en": "Write a discussion post (about 230 words) on a compulsory social year for young people."
+          },
+          "points": [
+            { "de": "Erläutern Sie, welche Ziele mit einem sozialen Pflichtjahr verbunden werden.", "hint": { "id": "Jelaskan tujuan wajib kerja sosial.", "en": "Explain the aims linked to it." }, "keywords": ["ziel", "zusammenhalt", "gesellschaft", "erfahrung", "personalmangel", "solidarität"] },
+            { "de": "Erörtern Sie Argumente gegen eine Verpflichtung.", "hint": { "id": "Bahas argumen yang menentangnya.", "en": "Discuss arguments against compulsion." }, "keywords": ["freiheit", "zwang", "freiwillig", "eingriff", "lebensplanung", "billige arbeitskräfte", "dagegen"] },
+            { "de": "Beschreiben Sie eine eigene Erfahrung oder ein Beispiel.", "hint": { "id": "Ceritakan pengalaman atau contoh.", "en": "Describe an experience or example." }, "keywords": ["erfahrung", "beispiel", "selbst", "erlebt", "bekannte", "freundin", "freund"] },
+            { "de": "Nehmen Sie abschließend Stellung.", "hint": { "id": "Berikan sikap penutupmu.", "en": "Give your final position." }, "keywords": ["abschließend", "insgesamt", "meines erachtens", "fazit", "ich plädiere", "meiner meinung"] }
+          ],
+          "words": 230,
+          "register": "neutral",
+          "letter": false,
+          "rubric": "b2c1-long",
+          "model": "Die Idee eines sozialen Pflichtjahres taucht in der politischen Debatte regelmäßig auf. Ihre Befürworter verbinden damit gleich mehrere Ziele: Junge Menschen sollen Einblick in Lebenswelten erhalten, die ihnen sonst fremd blieben, der gesellschaftliche Zusammenhalt soll gestärkt und der Personalmangel in Pflege und Betreuung zumindest gelindert werden.\nSo überzeugend das klingt, so gewichtig sind die Einwände. Ein verpflichtender Dienst greift tief in die persönliche Freiheit und Lebensplanung ein, und zwar ausgerechnet bei einer Generation, die ohnehin unter erheblichem Druck steht. Zudem besteht die Gefahr, dass motivationslose Kräfte als billige Lückenfüller eingesetzt werden, was weder den Einrichtungen noch den betreuten Menschen hilft.\nWie wertvoll ein solcher Einsatz dennoch sein kann, habe ich bei einer Freundin erlebt. Sie hat nach dem Abitur freiwillig ein Jahr in einer Behindertenwerkstatt verbracht und anschließend ihren Studienwunsch geändert: Heute studiert sie Heilpädagogik. Entscheidend war allerdings, dass sie sich bewusst für diesen Weg entschieden hatte.\nAbschließend plädiere ich deshalb nicht für eine Pflicht, sondern für einen deutlich attraktiveren Freiwilligendienst. Eine angemessene Vergütung, die Anerkennung als Wartezeit für das Studium und mehr Plätze in allen Regionen würden vermutlich mehr junge Menschen erreichen als jeder Zwang. Engagement, das aus Überzeugung entsteht, ist meines Erachtens nachhaltiger als verordnete Solidarität."
+        },
+        {
+          "type": "text",
+          "id": "teil2",
+          "title": "Teil 2",
+          "minutes": 25,
+          "situation": "In Ihrem Mietshaus wird seit sechs Wochen renoviert. Die Bauarbeiten beginnen jeden Morgen um 6:30 Uhr, obwohl Sie zu Hause arbeiten. Schreiben Sie an die Hausverwaltung, Herrn Dr. Hoffmann. Schreiben Sie circa 120 Wörter.",
+          "hint": {
+            "id": "Tulis surat formal (±120 kata) ke pengelola gedung tentang kebisingan renovasi.",
+            "en": "Write a formal letter (about 120 words) to the property manager about renovation noise."
+          },
+          "points": [
+            { "de": "Eröffnen Sie Ihr Schreiben höflich und zeigen Sie Verständnis für die Renovierung.", "hint": { "id": "Buka dengan sopan dan tunjukkan pengertian atas renovasinya.", "en": "Open politely and show understanding for the renovation." }, "keywords": ["verständnis", "verstehe", "notwendig", "sinnvoll", "grundsätzlich"] },
+            { "de": "Schildern Sie, wie die Bauarbeiten Ihren Alltag beeinträchtigen.", "hint": { "id": "Jelaskan bagaimana pekerjaan itu mengganggu keseharianmu.", "en": "Describe how the works affect your daily life." }, "keywords": ["lärm", "laut", "6:30", "homeoffice", "konzentr", "telefon", "videokonferenz", "beeinträcht"] },
+            { "de": "Verweisen Sie auf geltende Regeln.", "hint": { "id": "Rujuk aturan yang berlaku.", "en": "Refer to the applicable rules." }, "keywords": ["hausordnung", "ruhezeit", "vorschrift", "gesetz", "erlaubt", "zulässig", "7 uhr"] },
+            { "de": "Machen Sie einen Vorschlag zur Lösung.", "hint": { "id": "Usulkan solusi.", "en": "Suggest a solution." }, "keywords": ["vorschlag", "vorschlagen", "würde", "könnte", "später", "ankündig", "zeitplan"] }
+          ],
+          "words": 120,
+          "register": "formal",
+          "letter": true,
+          "rubric": "b2c1-short",
+          "model": "Sehr geehrter Herr Dr. Hoffmann,\ngrundsätzlich begrüße ich die Modernisierung unseres Hauses und habe Verständnis dafür, dass Bauarbeiten nicht geräuschlos ablaufen können.\nSeit sechs Wochen beginnen die Arbeiten jedoch täglich bereits um 6:30 Uhr. Da ich im Homeoffice arbeite, kann ich mich kaum konzentrieren, und Videokonferenzen mit Kunden sind wegen des Lärms praktisch unmöglich geworden.\nIch möchte Sie darauf hinweisen, dass laut unserer Hausordnung die Ruhezeit werktags bis 7 Uhr gilt.\nDaher schlage ich vor, besonders laute Arbeiten erst ab 8 Uhr durchzuführen und die Mieter wöchentlich über den Zeitplan zu informieren, damit wir uns darauf einstellen können.\nFür eine kurze Rückmeldung wäre ich Ihnen dankbar.\nMit freundlichen Grüßen\nRizky Ananda"
+        }
+      ]
+    },
+    {
+      "id": "c2-1",
+      "level": "C2",
+      "title": "Schlaf & Künstliche Intelligenz in der Bildung",
+      "parts": [
+        {
+          "type": "reform",
+          "id": "teil1",
+          "title": "Teil 1",
+          "minutes": 20,
+          "situation": "Überarbeiten Sie das Kurzreferat „Warum wir schlafen“ in den markierten Passagen und verwenden Sie dabei die vorgegebenen Wörter, die nicht verändert werden dürfen. Nehmen Sie alle notwendigen Umformungen vor.",
+          "hint": {
+            "id": "Tulis ulang setiap kalimat memakai kata yang diberikan (kata itu tidak boleh diubah), dengan makna tetap sama.",
+            "en": "Rewrite each sentence using the given word (it may not be changed), keeping the meaning."
+          },
+          "example": { "original": "In meinem Referat möchte ich erklären, warum Schlaf wichtig ist.", "keyword": "Bedeutung", "answer": "In meinem Referat möchte ich die Bedeutung des Schlafs erklären." },
+          "items": [
+            { "original": "Fast ein Drittel unseres Lebens verbringen wir schlafend.", "keyword": "Schlaf", "answers": ["Fast ein Drittel unseres Lebens verbringen wir im Schlaf."] },
+            { "original": "Lange Zeit glaubte man, dass sich das Gehirn in der Nacht ausruht.", "keyword": "Annahme", "answers": ["Lange Zeit ging man von der Annahme aus, dass sich das Gehirn in der Nacht ausruht.", "Lange Zeit herrschte die Annahme, dass sich das Gehirn in der Nacht ausruht.", "Lange Zeit war man der Annahme, dass sich das Gehirn in der Nacht ausruht."] },
+            { "original": "Heute weiß man, dass das Gehirn nachts sehr aktiv ist.", "keyword": "Erkenntnis", "answers": ["Nach heutiger Erkenntnis ist das Gehirn nachts sehr aktiv.", "Heute ist man zu der Erkenntnis gelangt, dass das Gehirn nachts sehr aktiv ist.", "Heute ist man zu der Erkenntnis gekommen, dass das Gehirn nachts sehr aktiv ist."] },
+            { "original": "Es verarbeitet, was wir tagsüber erlebt haben.", "keyword": "Erlebnisse", "answers": ["Es verarbeitet die Erlebnisse des Tages.", "Es verarbeitet unsere Erlebnisse des Tages.", "Es verarbeitet die Erlebnisse, die wir tagsüber hatten."] },
+            { "original": "Wer zu wenig schläft, kann sich schlechter konzentrieren.", "keyword": "Schlafmangel", "answers": ["Schlafmangel führt zu Konzentrationsproblemen.", "Bei Schlafmangel kann man sich schlechter konzentrieren.", "Wer unter Schlafmangel leidet, kann sich schlechter konzentrieren."] },
+            { "original": "Außerdem wird man leichter krank.", "keyword": "anfälliger", "answers": ["Außerdem ist man anfälliger für Krankheiten.", "Außerdem wird man anfälliger für Krankheiten."] },
+            { "original": "Wie viel Schlaf man braucht, ist von Mensch zu Mensch verschieden.", "keyword": "hängt", "answers": ["Wie viel Schlaf man braucht, hängt vom einzelnen Menschen ab.", "Wie viel Schlaf man braucht, hängt von der jeweiligen Person ab.", "Der Schlafbedarf hängt vom einzelnen Menschen ab."] },
+            { "original": "Experten empfehlen Erwachsenen, sieben bis acht Stunden zu schlafen.", "keyword": "Empfehlung", "answers": ["Nach Empfehlung von Experten sollten Erwachsene sieben bis acht Stunden schlafen.", "Die Empfehlung der Experten lautet, dass Erwachsene sieben bis acht Stunden schlafen sollten.", "Laut Empfehlung von Experten sollten Erwachsene sieben bis acht Stunden schlafen."] },
+            { "original": "Wenn man abends aufs Handy verzichtet, schläft man oft besser.", "keyword": "Verzicht", "answers": ["Durch den Verzicht auf das Handy am Abend schläft man oft besser.", "Bei Verzicht auf das Handy am Abend schläft man oft besser.", "Der abendliche Verzicht auf das Handy verbessert oft den Schlaf."] },
+            { "original": "Zusammenfassend kann man sagen, dass guter Schlaf für unsere Gesundheit unverzichtbar ist.", "keyword": "Fazit", "answers": ["Als Fazit lässt sich sagen, dass guter Schlaf für unsere Gesundheit unverzichtbar ist.", "Als Fazit kann man festhalten, dass guter Schlaf für unsere Gesundheit unverzichtbar ist.", "Mein Fazit lautet, dass guter Schlaf für unsere Gesundheit unverzichtbar ist."] }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "teil2",
+          "title": "Teil 2",
+          "minutes": 60,
+          "situation": "Sie haben im Fernsehen eine Diskussion zum Thema „Künstliche Intelligenz im Unterricht“ verfolgt. Nach der Sendung wurden die Zuschauer aufgefordert, ihre Meinung abzugeben. Sie schreiben eine ausführliche E-Mail (circa 350 Wörter) an die Redaktion, in der Sie sich auf die drei folgenden Diskussionsbeiträge beziehen und Ihre Meinung dazu äußern. Begründen Sie Ihre Argumentation und geben Sie Beispiele.",
+          "hint": {
+            "id": "Tulis surel panjang (±350 kata) ke redaksi; tanggapi ketiga pernyataan tentang AI di sekolah dan beri pendapat berargumen.",
+            "en": "Write a long e-mail (about 350 words) to the editors responding to all three statements on AI in schools, with a reasoned opinion."
+          },
+          "stimulus": [
+            "„KI-Programme nehmen den Lernenden das Denken ab.“",
+            "„Mit KI kann jede Schülerin und jeder Schüler individuell gefördert werden.“",
+            "„Schulen müssen den kritischen Umgang mit KI selbst unterrichten.“"
+          ],
+          "points": [
+            { "de": "Beziehen Sie sich auf: „KI-Programme nehmen den Lernenden das Denken ab.“", "hint": { "id": "Tanggapi: AI membuat siswa berhenti berpikir.", "en": "Respond to: AI does students' thinking for them." }, "keywords": ["denken ab", "selbst denken", "abnehmen", "bequem", "eigenständig", "abschreiben"] },
+            { "de": "Beziehen Sie sich auf: „Mit KI kann jede Schülerin und jeder Schüler individuell gefördert werden.“", "hint": { "id": "Tanggapi: AI memungkinkan pembelajaran individual.", "en": "Respond to: AI enables individual support." }, "keywords": ["individuell", "förder", "tempo", "lernstand", "personalisiert", "nachhilfe"] },
+            { "de": "Beziehen Sie sich auf: „Schulen müssen den kritischen Umgang mit KI selbst unterrichten.“", "hint": { "id": "Tanggapi: sekolah harus mengajarkan penggunaan AI secara kritis.", "en": "Respond to: schools must teach critical use of AI." }, "keywords": ["kritisch", "medienkompetenz", "unterricht", "quelle", "fehler", "prüfen", "lehrkräfte"] }
+          ],
+          "words": 350,
+          "register": "formal",
+          "letter": true,
+          "rubric": "c2",
+          "model": "Sehr geehrte Redaktion,\nmit großem Interesse habe ich Ihre Diskussionsrunde zum Thema „Künstliche Intelligenz im Unterricht“ verfolgt. Als Mutter zweier Schulkinder und Dozentin in der Erwachsenenbildung bin ich von dieser Frage gleich doppelt betroffen und möchte mich daher zu den drei zentralen Thesen äußern.\nDie Befürchtung, KI-Programme nähmen den Lernenden das Denken ab, halte ich für berechtigt, aber nicht für zwingend. Wer sich einen Aufsatz vollständig generieren lässt, übt tatsächlich weder Argumentation noch Ausdruck. Das liegt jedoch weniger am Werkzeug als an Aufgaben, die sich mit einem einzigen Befehl lösen lassen. Wenn Lehrkräfte stattdessen den Entstehungsprozess eines Textes bewerten oder verlangen, dass Schülerinnen und Schüler KI-Antworten begründet überarbeiten, wird das Denken nicht ersetzt, sondern herausgefordert.\nGroßes Potenzial sehe ich in der individuellen Förderung. Ein Lernprogramm, das erkennt, an welcher Stelle mein Sohn bei der Bruchrechnung scheitert, und ihm passende Übungen in seinem Tempo anbietet, leistet etwas, wozu eine Lehrkraft mit dreißig Kindern kaum in der Lage ist. Allerdings darf man nicht übersehen, dass Motivation, Ermutigung und das Gespräch über Fehler zutiefst menschliche Aufgaben bleiben. KI kann die Lehrkraft entlasten, sie aber keinesfalls ersetzen.\nUneingeschränkt zustimmen möchte ich der dritten These. Gerade weil KI-Systeme sprachlich überzeugend formulieren, wirken ihre Antworten verlässlicher, als sie häufig sind. Schülerinnen und Schüler müssen deshalb lernen, Quellen zu prüfen, typische Fehler zu erkennen und zu hinterfragen, mit welchen Daten ein System trainiert wurde. Diese Medienkompetenz lässt sich nicht an Eltern oder Plattformen delegieren; sie gehört systematisch in den Unterricht, was wiederum eine fundierte Fortbildung der Lehrkräfte voraussetzt.\nInsgesamt plädiere ich für einen gestalteten statt eines verbotenen Einsatzes: Klare Regeln, veränderte Prüfungsformate und gut ausgebildete Lehrkräfte könnten dafür sorgen, dass KI zu einem Werkzeug des Lernens wird und nicht zu dessen Ersatz.\nMit freundlichen Grüßen\nLaras Wulandari"
+        }
+      ]
+    },
+    {
+      "id": "c2-2",
+      "level": "C2",
+      "title": "Stadtgärten & Massentourismus",
+      "parts": [
+        {
+          "type": "reform",
+          "id": "teil1",
+          "title": "Teil 1",
+          "minutes": 20,
+          "situation": "Überarbeiten Sie das Kurzreferat „Gärtnern in der Stadt“ in den markierten Passagen und verwenden Sie dabei die vorgegebenen Wörter, die nicht verändert werden dürfen. Nehmen Sie alle notwendigen Umformungen vor.",
+          "hint": {
+            "id": "Tulis ulang setiap kalimat memakai kata yang diberikan (kata itu tidak boleh diubah), dengan makna tetap sama.",
+            "en": "Rewrite each sentence using the given word (it may not be changed), keeping the meaning."
+          },
+          "example": { "original": "Heute spreche ich darüber, wie Menschen in Städten Gemüse anbauen.", "keyword": "Anbau", "answer": "Heute spreche ich über den Anbau von Gemüse in Städten." },
+          "items": [
+            { "original": "Immer mehr Stadtbewohner möchten eigenes Gemüse ziehen.", "keyword": "Wunsch", "answers": ["Immer mehr Stadtbewohner haben den Wunsch, eigenes Gemüse zu ziehen.", "Der Wunsch, eigenes Gemüse zu ziehen, wächst bei immer mehr Stadtbewohnern."] },
+            { "original": "Gemeinschaftsgärten entstehen oft auf Flächen, die niemand mehr nutzt.", "keyword": "ungenutzten", "answers": ["Gemeinschaftsgärten entstehen oft auf ungenutzten Flächen."] },
+            { "original": "Viele beteiligen sich, weil sie wissen wollen, woher ihre Lebensmittel stammen.", "keyword": "Herkunft", "answers": ["Viele beteiligen sich, weil sie die Herkunft ihrer Lebensmittel kennen wollen.", "Viele beteiligen sich aus Interesse an der Herkunft ihrer Lebensmittel."] },
+            { "original": "Die Gärten verbessern das Klima in den Stadtvierteln.", "keyword": "Beitrag", "answers": ["Die Gärten leisten einen Beitrag zur Verbesserung des Klimas in den Stadtvierteln.", "Die Gärten leisten einen Beitrag zu einem besseren Klima in den Stadtvierteln."] },
+            { "original": "Außerdem lernen sich Nachbarn kennen, die sonst kaum miteinander sprechen würden.", "keyword": "Kontakt", "answers": ["Außerdem kommen Nachbarn in Kontakt, die sonst kaum miteinander sprechen würden.", "Außerdem kommen Nachbarn miteinander in Kontakt, die sonst kaum miteinander sprechen würden."] },
+            { "original": "Kritiker meinen, dass die Erträge zu gering sind.", "keyword": "Ansicht", "answers": ["Kritiker sind der Ansicht, dass die Erträge zu gering sind.", "Nach Ansicht von Kritikern sind die Erträge zu gering."] },
+            { "original": "Die Stadt kann die Flächen jederzeit für Bauprojekte zurückverlangen.", "keyword": "Recht", "answers": ["Die Stadt hat das Recht, die Flächen jederzeit für Bauprojekte zurückzuverlangen."] },
+            { "original": "Deshalb wissen die Gärtnerinnen und Gärtner nie genau, wie lange sie bleiben können.", "keyword": "Ungewissheit", "answers": ["Deshalb leben die Gärtnerinnen und Gärtner in der Ungewissheit, wie lange sie bleiben können.", "Deshalb herrscht bei den Gärtnerinnen und Gärtnern Ungewissheit darüber, wie lange sie bleiben können."] },
+            { "original": "Einige Städte unterstützen die Projekte inzwischen finanziell.", "keyword": "Unterstützung", "answers": ["Einige Städte leisten den Projekten inzwischen finanzielle Unterstützung.", "Die Projekte erhalten von einigen Städten inzwischen finanzielle Unterstützung."] },
+            { "original": "Ob sich Stadtgärten langfristig durchsetzen, bleibt abzuwarten.", "keyword": "offen", "answers": ["Ob sich Stadtgärten langfristig durchsetzen, ist noch offen.", "Es bleibt offen, ob sich Stadtgärten langfristig durchsetzen."] }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "teil2",
+          "title": "Teil 2",
+          "minutes": 60,
+          "situation": "Sie haben im Radio eine Diskussion zum Thema „Massentourismus in Großstädten“ gehört. Nach der Sendung wurden die Hörerinnen und Hörer aufgefordert, ihre Meinung abzugeben. Sie schreiben einen ausführlichen Leserbrief (circa 350 Wörter) an die Redaktion, in dem Sie sich auf die drei folgenden Diskussionsbeiträge beziehen und Ihre Meinung dazu äußern. Begründen Sie Ihre Argumentation und geben Sie Beispiele.",
+          "hint": {
+            "id": "Tulis surat pembaca (±350 kata); tanggapi ketiga pernyataan tentang pariwisata massal di kota besar.",
+            "en": "Write a letter to the editor (about 350 words) responding to all three statements on mass tourism in cities."
+          },
+          "stimulus": [
+            "„Ohne Touristen könnten sich viele Städte ihre Kulturangebote gar nicht leisten.“",
+            "„Ferienwohnungen verdrängen die Einheimischen aus ihren Vierteln.“",
+            "„Eine Touristensteuer würde die Probleme lösen.“"
+          ],
+          "points": [
+            { "de": "Beziehen Sie sich auf: „Ohne Touristen könnten sich viele Städte ihre Kulturangebote gar nicht leisten.“", "hint": { "id": "Tanggapi: tanpa turis, banyak kota tak mampu membiayai budayanya.", "en": "Respond to: without tourists, cities couldn't afford culture." }, "keywords": ["kultur", "einnahmen", "museum", "theater", "wirtschaft", "arbeitsplätze", "finanzier"] },
+            { "de": "Beziehen Sie sich auf: „Ferienwohnungen verdrängen die Einheimischen aus ihren Vierteln.“", "hint": { "id": "Tanggapi: sewa liburan menggusur warga lokal.", "en": "Respond to: holiday rentals push locals out." }, "keywords": ["ferienwohnung", "miete", "verdräng", "wohnraum", "einheimisch", "viertel", "plattform"] },
+            { "de": "Beziehen Sie sich auf: „Eine Touristensteuer würde die Probleme lösen.“", "hint": { "id": "Tanggapi: pajak turis akan menyelesaikan masalah.", "en": "Respond to: a tourist tax would solve the problems." }, "keywords": ["steuer", "abgabe", "gebühr", "bettensteuer", "lenkung", "einnahmen"] }
+          ],
+          "words": 350,
+          "register": "formal",
+          "letter": true,
+          "rubric": "c2",
+          "model": "Sehr geehrte Damen und Herren,\nIhre Sendung zum Thema „Massentourismus in Großstädten“ hat mich zum Nachdenken gebracht, nicht zuletzt, weil ich selbst seit zwanzig Jahren in der Altstadt einer beliebten Reisemetropole lebe. Gestatten Sie mir daher, zu den drei Diskussionsbeiträgen Stellung zu nehmen.\nDass viele Städte ihre Kulturangebote ohne Touristen kaum finanzieren könnten, ist zweifellos richtig. Unsere Museen, Theater und Festivals leben in erheblichem Maß von Eintrittsgeldern und Übernachtungen, und unzählige Arbeitsplätze in Gastronomie und Handel hängen am Tourismus. Dennoch greift dieses Argument zu kurz, wenn es dazu dient, jede Kritik abzuwehren. Kultur, die vor allem für Besucher inszeniert wird, verliert ihre Verankerung in der Stadtgesellschaft.\nBesonders deutlich zeigt sich das auf dem Wohnungsmarkt. In meinem Haus sind inzwischen vier von zehn Wohnungen dauerhaft als Ferienwohnungen vermietet. Langjährige Nachbarn mussten wegen steigender Mieten wegziehen, die Bäckerei an der Ecke ist einem Souvenirladen gewichen. Die These, dass Ferienwohnungen Einheimische verdrängen, ist für mich daher keine abstrakte Befürchtung, sondern gelebter Alltag. Strenge Genehmigungspflichten und wirksame Kontrollen der Vermietungsplattformen halte ich für unverzichtbar.\nSkeptisch bin ich hingegen gegenüber der Annahme, eine Touristensteuer könne die Probleme lösen. Eine solche Abgabe kann sinnvoll sein, sofern die Einnahmen gezielt in Infrastruktur, sozialen Wohnungsbau und die Pflege des öffentlichen Raums fließen. Eine Lenkungswirkung entfaltet sie jedoch kaum: Wer bereit ist, mehrere hundert Euro für ein Wochenende auszugeben, lässt sich von fünf Euro pro Nacht nicht abschrecken. Ohne begleitende Maßnahmen wie Besucherlenkung, Kontingente für Kreuzfahrtschiffe und eine Begrenzung der Ferienwohnungen bliebe die Steuer ein Feigenblatt.\nAus meiner Sicht geht es letztlich nicht darum, Touristen fernzuhalten, sondern darum, das Gleichgewicht zwischen Gästen und Bewohnern wiederherzustellen. Eine Stadt, in der niemand mehr leben möchte, wird auf Dauer auch für Besucher ihren Reiz verlieren.\nMit freundlichen Grüßen\nHendra Gunawan"
+        }
+      ]
+    }
+  ]
+}

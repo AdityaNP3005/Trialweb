@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { CheckCircle2, ChevronRight } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -10,6 +10,7 @@ import { practiceCharacters } from "@/lib/content/writing";
 import { useStore } from "@/components/providers/store-provider";
 import { unitLabelFor } from "@/lib/content/labels";
 import { EmptyState } from "@/components/ui/empty-state";
+import { GermanWriting } from "@/components/writing/german-writing";
 import { PageHeader, SectionHeading } from "@/components/ui/page-header";
 
 /**
@@ -53,9 +54,17 @@ export default function WritingIndexPage() {
 
     return (
         <div className="space-y-6">
-            <PageHeader eyebrow={course.nativeName} title={t("title")} description={t("subtitle")} />
+            <PageHeader
+                eyebrow={course.nativeName}
+                title={t("title")}
+                description={course.id === "de" ? t("de.germanSubtitle") : t("subtitle")}
+            />
 
-            {sections.length === 0 ? (
+            {course.id === "de" ? (
+                <Suspense fallback={null}>
+                    <GermanWriting />
+                </Suspense>
+            ) : sections.length === 0 ? (
                 <EmptyState
                     title={t("noMaterialTitle", { course: course.nativeName })}
                     body={t("noMaterialBody")}

@@ -79,6 +79,9 @@ export interface StudyStore {
     getVideoProgress(playlistId: string): Promise<PlaylistProgress | null>;
     saveVideoProgress(progress: PlaylistProgress): Promise<void>;
 
+    /** Cards of a course marked as known at least once in flashcards. */
+    listKnownCardIds(courseId: string): Promise<string[]>;
+
     /** Hanzi written to the end in writing practice (per course). */
     getWrittenCharacters(courseId: string): Promise<string[]>;
     markCharacterWritten(courseId: string, char: string): Promise<void>;

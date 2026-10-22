@@ -511,6 +511,13 @@ export class GuestStore implements StudyStore {
         this.persist();
     }
 
+    async listKnownCardIds(courseId: string): Promise<string[]> {
+        const db = await this.ensure();
+        return Object.values(db.progress)
+            .filter((entry) => entry.courseId === courseId && (entry.knownCount > 0 || entry.known))
+            .map((entry) => entry.cardId);
+    }
+
     async getWrittenCharacters(courseId: string): Promise<string[]> {
         const db = await this.ensure();
         return db.writing?.[courseId] ?? [];

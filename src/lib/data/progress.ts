@@ -1,5 +1,7 @@
 import {
     addDoc,
+    query,
+    where,
     arrayRemove,
     arrayUnion,
     getDoc,
@@ -8,12 +10,13 @@ import {
     setDoc,
     writeBatch,
 } from "firebase/firestore";
-import type { Card, DeckCycle, StudyAction, StudyMode } from "@/types";
+import type { Card, CardProgress, DeckCycle, StudyAction, StudyMode } from "@/types";
 import { getDb } from "@/lib/firebase/client";
 import {
     dailyStatDocRef,
     deckCycleDocRef,
     deckCyclesColRef,
+    progressColRef,
     progressDocRef,
     reviewsColRef,
 } from "@/lib/firebase/paths";
@@ -147,4 +150,16 @@ export async function submitAction({
         cycle,
         createdAt: at,
     });
+}
+
+/**
+ * Cards of a course marked "Sudah paham" at least once. Filters `knownCount`
+ * here instead of in the query, so no extra composite index is needed.
+ */
+export async function fetchKnownCardIds(uid: string, courseId: string): Promise<string[]> {
+    const snapshot = await getDocs(query(progressColRef(uid), where("courseId", "==", courseId)));
+    return snapshot.docs
+        .map((entry) => entry.data() as CardProgress)
+        .filter((entry) => entry.knownCount > 0 || entry.known)
+        .map((entry) => entry.cardId);
 }
