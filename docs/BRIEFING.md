@@ -50,6 +50,8 @@ dijalankan untuk akun pilot.
 | Menulis Deutsch: latihan ejaan + Schreiben ala Goethe A1–C2 | ✅ | `/writing` (tab Ejaan/Schreiben), `/writing/schreiben/[setId]`, 12 set, rubrik resmi; [`GERMAN-SCHREIBEN.md`](./GERMAN-SCHREIBEN.md) |
 | Ganti bahasa di setiap halaman, navigasi tetap | ✅ | `HeaderCourseSwitcher` di header; menu Menulis selalu tampil, Deutsch menampilkan "materi belum tersedia" |
 | Cara baca Jerman ejaan Indonesia (`readingId`) | ✅ | 9.483/9.483 kartu, IPA Wiktionary → huruf EYD V + pemenggalan, `scripts/content/de-pronunciation.py`, [`GERMAN-PRONUNCIATION.md`](./GERMAN-PRONUNCIATION.md) |
+| Cari kata lintas semua kartu kursus aktif | ✅ | `/search` (ikon kaca pembesar di header), `src/lib/content/search.ts` (tanpa umlaut/ß/nada, kata > arti utuh > di tengah kata), hanya konten bawaan — deck kustom belum ikut |
+| Latihan ucapan "Ucapkan" di flashcard | ✅ | `SpeakCheck` + `useSpeechRecognition` (Web Speech, Chrome/Edge/Safari; tombol tersembunyi di Firefox), dinilai `gradeSpeech` (Tepat/Hampir/Belum cocok); hanya membandingkan teks, bukan nada |
 
 ---
 
@@ -155,6 +157,7 @@ npm run deploy:rules      # firestore.rules + firestore.indexes.json
 | `src/lib/content/videos.ts` | loader manifest playlist statis |
 | `src/content/de/videos/a1.json` | manifest playlist A1 (66 video) |
 | `src/lib/data/videos.ts` | baca/tulis `users/{uid}/videoPlaylists/{playlistId}` |
+| `src/app/[locale]/(app)/search/page.tsx` | cari kata (client), memuat semua unit kursus aktif lewat `loadContentCards` |
 | `src/lib/study/session.ts` | `buildSession`, `insertRepeat` (gap 3), `cycleProgress`, `MAX_REPEATS_PER_CARD` |
 | `src/lib/data/progress.ts` | `submitAction`: progress + deckCycle + dailyStats + review log (batch) |
 | `src/lib/data/migrate-topics.ts` | remap id topik cloud (`migration-map.json` → `topic-map.json`) |

@@ -167,7 +167,7 @@ export default function DecksPage() {
                     onSelect={switchCourse}
                 />
 
-                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-y border-border py-2">
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-2 border-t border-border pt-2">
                     <div className="flex flex-wrap items-center gap-3">
                         {levels.map((entry) => (
                             <button

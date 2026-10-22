@@ -8,6 +8,7 @@ import {
     LogIn,
     LogOut,
     PenLine,
+    Search,
     Settings,
 } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -30,6 +31,11 @@ const items = [
     { href: "/stats", key: "stats", icon: BarChart3 },
     { href: "/settings", key: "settings", icon: Settings },
 ] as const;
+// Settings sits in the mobile header instead, so five labels fit the bottom bar.
+const mobileItems = items.filter((item) => item.key !== "settings");
+
+const iconLinkClass =
+    "grid size-8 place-items-center rounded-[0.375rem] text-muted transition-colors hover:bg-surface-2 hover:text-fg aria-[current=page]:text-accent";
 
 export function AppShell({ children }: { children: React.ReactNode }) {
     const t = useTranslations("nav");
@@ -53,7 +59,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                         <Logo name={tc("appName")} className="hidden sm:flex" />
                     </Link>
 
-                    <nav className="hidden flex-1 items-center gap-5 sm:flex">
+                    <nav className="hidden flex-1 items-center gap-4 sm:flex">
                         {items.map(({ href, key }) => {
                             const active = pathname.startsWith(href);
                             return (
@@ -76,6 +82,23 @@ export function AppShell({ children }: { children: React.ReactNode }) {
 
                     <div className="ml-auto flex items-center gap-2">
                         <HeaderCourseSwitcher />
+                        <Link
+                            href="/search"
+                            aria-label={t("search")}
+                            title={t("search")}
+                            aria-current={pathname.startsWith("/search") ? "page" : undefined}
+                            className={iconLinkClass}
+                        >
+                            <Search className="size-4" />
+                        </Link>
+                        <Link
+                            href="/settings"
+                            aria-label={t("settings")}
+                            aria-current={pathname.startsWith("/settings") ? "page" : undefined}
+                            className={cn(iconLinkClass, "sm:hidden")}
+                        >
+                            <Settings className="size-4" />
+                        </Link>
                         <LocaleSwitcher className="hidden sm:inline-flex" />
                         <ThemeToggle className="hidden sm:inline-flex" />
 
@@ -138,9 +161,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <nav className="fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg/95 backdrop-blur-sm sm:hidden">
                 <div
                     className="mx-auto grid max-w-md"
-                    style={{ gridTemplateColumns: `repeat(${items.length}, minmax(0, 1fr))` }}
+                    style={{ gridTemplateColumns: `repeat(${mobileItems.length}, minmax(0, 1fr))` }}
                 >
-                    {items.map(({ href, key, icon: Icon }) => {
+                    {mobileItems.map(({ href, key, icon: Icon }) => {
                         const active = pathname.startsWith(href);
                         return (
                             <Link

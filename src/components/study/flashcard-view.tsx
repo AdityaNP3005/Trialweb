@@ -9,6 +9,7 @@ import { ExampleBlock } from "./example-block";
 import { FrontText } from "./front-text";
 import { TonePinyin } from "./tone-text";
 import { TtsButton } from "./tts-button";
+import { SpeakCheck } from "./speak-check";
 import { spokenFront } from "@/lib/content/german";
 
 /**
@@ -112,6 +113,11 @@ export function FlashcardView({
                     {card.readingId || card.ipa ? (
                         <p className="meta mt-3">{card.readingId ?? card.ipa}</p>
                     ) : null}
+                    <SpeakCheck
+                        key={card.id}
+                        card={card}
+                        lang={lang ?? (card.script === "hanzi" ? "zh-TW" : "de-DE")}
+                    />
                 </div>
 
                 <div className="tear -mx-5 sm:-mx-6" />

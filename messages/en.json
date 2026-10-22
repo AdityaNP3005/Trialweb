@@ -49,7 +49,8 @@
         "guest": "Guest",
         "guestModeHint": "progress saved in this browser",
         "videos": "Videos",
-        "writing": "Writing"
+        "writing": "Writing",
+        "search": "Search words"
     },
     "landing": {
         "heroTitle": "Memorise German and Mandarin vocabulary, one chapter per session.",
@@ -227,7 +228,14 @@
         "modeListen": "Listen",
         "measureWords": "Measure words",
         "radical": "radical",
-        "pinyinGuide": "Pinyin reading guide"
+        "pinyinGuide": "Pinyin reading guide",
+        "speakButton": "Say it",
+        "speakListening": "Listening…",
+        "speak_match": "Spot on",
+        "speak_close": "Almost",
+        "speak_miss": "Not yet",
+        "speakBlocked": "Microphone blocked. Allow it in the browser settings.",
+        "speakFailed": "Speech recognition is unavailable. Try again."
     },
     "quiz": {
         "question": "What does this word mean?",
@@ -464,5 +472,16 @@
             "notRated": "not rated yet",
             "unratedLeft": "{count} criteria are not rated yet; they count as 0 until you pick a level."
         }
+    },
+    "search": {
+        "title": "Search words",
+        "subtitle": "Search {count, number} cards: the word, its pinyin, or its Indonesian/English meaning.",
+        "placeholderDe": "e.g. Haus, rumah, house…",
+        "placeholderZh": "e.g. 老師, laoshi, teacher…",
+        "hint": "Capitals, umlauts, ß and tone marks do not need to be typed exactly.",
+        "resultCount": "{count, plural, one {# result} other {# results}}",
+        "noResults": "No cards for “{query}”",
+        "noResultsHint": "Try the base form, another meaning, or switch language in the header.",
+        "openTopic": "Open topic"
     }
 }

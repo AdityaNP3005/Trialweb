@@ -49,7 +49,8 @@
         "guest": "Tamu",
         "guestModeHint": "progres tersimpan di browser ini",
         "videos": "Video",
-        "writing": "Menulis"
+        "writing": "Menulis",
+        "search": "Cari kata"
     },
     "landing": {
         "heroTitle": "Hafalkan kosakata Jerman dan Mandarin, satu bab setiap sesi.",
@@ -227,7 +228,14 @@
         "modeListen": "Dengar",
         "measureWords": "Kata satuan",
         "radical": "radikal",
-        "pinyinGuide": "Panduan membaca pinyin"
+        "pinyinGuide": "Panduan membaca pinyin",
+        "speakButton": "Ucapkan",
+        "speakListening": "Mendengarkan…",
+        "speak_match": "Tepat",
+        "speak_close": "Hampir",
+        "speak_miss": "Belum cocok",
+        "speakBlocked": "Mikrofon diblokir. Izinkan di pengaturan browser.",
+        "speakFailed": "Pengenal suara tidak tersedia. Coba lagi."
     },
     "quiz": {
         "question": "Apa arti kata ini?",
@@ -464,5 +472,16 @@
             "notRated": "belum dinilai",
             "unratedLeft": "Masih ada {count} kriteria yang belum kamu nilai; skornya dihitung 0 sampai kamu memilih level."
         }
+    },
+    "search": {
+        "title": "Cari kata",
+        "subtitle": "Cari di {count, number} kartu: kata, pinyin, atau artinya dalam bahasa Indonesia/Inggris.",
+        "placeholderDe": "mis. Haus, rumah, house…",
+        "placeholderZh": "mis. 老師, laoshi, guru…",
+        "hint": "Huruf besar, umlaut, ß dan tanda nada tidak perlu diketik persis.",
+        "resultCount": "{count, plural, other {# hasil}}",
+        "noResults": "Tidak ada kartu untuk “{query}”",
+        "noResultsHint": "Coba kata dasar, arti lain, atau ganti bahasa di header.",
+        "openTopic": "Buka topik"
     }
 }

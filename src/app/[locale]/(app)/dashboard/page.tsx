@@ -13,7 +13,6 @@ import { sectionLabelFor, unitLabelFor } from "@/lib/content/labels";
 import { videoPlaylist, videoSections } from "@/lib/content/videos";
 import { emptyPlaylistProgress, playlistSummary } from "@/lib/video/progress";
 import { buttonStyles } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Progress, Skeleton } from "@/components/ui/progress";
 import { PageHeader, SectionHeading } from "@/components/ui/page-header";
 import { ManifestRow } from "@/components/ui/manifest-row";
@@ -161,16 +160,11 @@ export default function DashboardPage() {
             />
 
             <section className="space-y-4">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                    <CourseSwitcher
-                        activeCourseId={activeCourseId}
-                        disabled={switching}
-                        onSelect={switchCourse}
-                    />
-                    <Badge tone="neutral" tilt>
-                        {course.nativeName} · {course.speechLocale}
-                    </Badge>
-                </div>
+                <CourseSwitcher
+                    activeCourseId={activeCourseId}
+                    disabled={switching}
+                    onSelect={switchCourse}
+                />
 
                 <SectionHeading
                     hint={course.unitNoun === "book" ? t("pickBookHint") : t("pickBandHint")}

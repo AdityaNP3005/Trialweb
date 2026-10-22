@@ -58,6 +58,7 @@ export default function StudyPage() {
         if (!store || booted.current) return;
         booted.current = true;
         let cancelled = false;
+        let loaded = false;
 
         (async () => {
             try {
@@ -86,6 +87,7 @@ export default function StudyPage() {
                 setFrontPool(cards.map((card) => card.front));
                 startedAt.current = Date.now();
                 cardShownAt.current = Date.now();
+                loaded = true;
             } catch (cause) {
                 if (!cancelled) {
                     setError(cause instanceof Error ? cause.message : tq("notEnoughCards"));
@@ -95,6 +97,8 @@ export default function StudyPage() {
 
         return () => {
             cancelled = true;
+            // StrictMode runs the effect twice; a cancelled first load must not block the second.
+            if (!loaded) booted.current = false;
         };
     }, [store, deckIdParam, tq]);
 
@@ -263,7 +267,8 @@ export default function StudyPage() {
     return (
         <div className="mx-auto max-w-xl space-y-4">
             <div className="border-b border-border pb-3">
-                <div className="flex items-start gap-3">
+                {/* Mode tabs drop under the title on phones so the topic name keeps its width. */}
+                <div className="flex flex-wrap items-start gap-x-3 gap-y-2">
                     <Link
                         href="/dashboard"
                         aria-label={t("exitSession")}
@@ -291,7 +296,7 @@ export default function StudyPage() {
                         </h1>
                     </div>
 
-                    <div className="flex shrink-0 items-center gap-3">
+                    <div className="flex w-full shrink-0 items-center gap-3 pl-9 sm:w-auto sm:pl-0">
                         <button
                             type="button"
                             onClick={() => {
