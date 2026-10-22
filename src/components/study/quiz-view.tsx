@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Check, Headphones, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 import type { Card } from "@/types";
@@ -46,9 +46,15 @@ export function QuizView({
     const correct = listen ? card.front : card.meaningId;
     const spoken = spokenFront(card);
 
+    // `speak` changes identity when the browser's voice list loads; keep the
+    // latest in a ref so the word auto-plays once per card, not twice.
+    const playRef = useRef(() => {});
     useEffect(() => {
-        if (listen) speak(spoken, { voiceURI: voiceURI ?? null, rate });
-    }, [listen, card.id, spoken, speak, voiceURI, rate]);
+        playRef.current = () => speak(spoken, { voiceURI: voiceURI ?? null, rate });
+    });
+    useEffect(() => {
+        if (listen) playRef.current();
+    }, [listen, card.id]);
     const answered = picked !== null;
     const isCorrect = picked === correct;
 
@@ -60,7 +66,7 @@ export function QuizView({
                     <div className="mt-3 flex flex-col items-center gap-3">
                         <button
                             type="button"
-                            onClick={() => speak(spoken, { voiceURI: voiceURI ?? null, rate })}
+                            onClick={() => playRef.current()}
                             aria-label={t("playAgain")}
                             className="grid size-16 place-items-center rounded-full border border-border text-fg transition-colors hover:border-fg/40"
                         >

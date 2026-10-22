@@ -104,17 +104,20 @@ export default function StudyPage() {
     const knownNow = (plan?.knownInCycle ?? 0) + counters.next;
 
     const quizAvailable = useMemo(() => new Set(pool.filter(Boolean)).size >= 4, [pool]);
+    const listenAvailable = useMemo(() => new Set(frontPool.filter(Boolean)).size >= 4, [frontPool]);
 
     // Meaning quiz picks among meanings; listening picks among written words.
     const quizAnswer = current ? (mode === "listen" ? current.front : current.meaningId) : "";
 
     const quizOptions = useMemo(() => {
-        if (!current || mode === "flashcard" || !quizAvailable) return [];
+        if (!current || mode === "flashcard" || !(mode === "listen" ? listenAvailable : quizAvailable)) return [];
         const source = mode === "listen" ? frontPool : pool;
         const distractors = pickDistractors(source, quizAnswer, 3);
         if (distractors.length < 3) return [];
         return buildOptions(quizAnswer, distractors);
-    }, [current, mode, pool, frontPool, quizAnswer, quizAvailable]);
+    }, [current, mode, pool, frontPool, quizAnswer, quizAvailable, listenAvailable]);
+    // Without four options the page falls back to a flashcard; grade it as one.
+    const showingQuiz = mode !== "flashcard" && quizOptions.length === 4;
 
     function finish(next: number, repeat: number) {
         setSummary({
@@ -133,14 +136,13 @@ export default function StudyPage() {
         setBusy(true);
         setError(null);
 
-        const isQuiz = mode !== "flashcard";
-        const correct = isQuiz ? quizPicked === quizAnswer : action === "next";
+        const correct = showingQuiz ? quizPicked === quizAnswer : action === "next";
 
         try {
             await store.submitAction({
                 card: current,
                 action,
-                mode,
+                mode: showingQuiz ? mode : "flashcard",
                 correct,
                 durationMs,
                 session: plan
@@ -199,7 +201,7 @@ export default function StudyPage() {
                 return;
             }
 
-            if (mode !== "flashcard") return;
+            if (showingQuiz) return;
 
             if (event.code === "Space" || event.key === "Enter") {
                 event.preventDefault();
@@ -310,8 +312,8 @@ export default function StudyPage() {
                         </button>
                         <button
                             type="button"
-                            disabled={!quizAvailable}
-                            title={quizAvailable ? t("modeHint") : tq("notEnoughCards")}
+                            disabled={!listenAvailable}
+                            title={listenAvailable ? t("modeHint") : tq("notEnoughCards")}
                             aria-pressed={mode === "listen"}
                             onClick={() => {
                                 setMode("listen");
@@ -365,7 +367,7 @@ export default function StudyPage() {
             <Progress value={index} max={totalInSession} label={t("sessionTitle")} />
 
             {current ? (
-                mode !== "flashcard" && quizOptions.length === 4 ? (
+                showingQuiz ? (
                     <QuizView
                         card={current}
                         options={quizOptions}
