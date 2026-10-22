@@ -26,12 +26,14 @@ export function HeaderCourseSwitcher() {
         if (!store || courseId === activeCourseId) return;
         setSwitching(true);
         const [root, ...rest] = pathname.split("/").filter(Boolean);
-        if (rest.length > 0) {
-            router.push(root === "study" || root === "levels" ? "/dashboard" : `/${root}`);
-        }
         try {
+            // Switch first, then leave: list pages such as /videos redirect by the
+            // active course, and would send us back to the old course's content.
             await store.updateProfile({ activeCourseId: courseId });
             await refreshProfile();
+            if (rest.length > 0) {
+                router.push(root === "study" || root === "levels" ? "/dashboard" : `/${root}`);
+            }
         } finally {
             setSwitching(false);
         }
