@@ -43,6 +43,9 @@ MANUAL_IPA = {
 
 # IPA → letters with their EYD V value (Badan Bahasa 2022): c=[tʃ], j=[dʒ], y=[j],
 # kh=[x], ng=[ŋ], sy=[ʃ], ê=[ə]. EYD V says v is read [f], so German [v] is "w".
+# Wiktionary IPA of the articles, prefixed when the card shows one from `gender`.
+ARTICLE_IPA = {"der": "deːɐ̯", "die": "diː", "das": "das"}
+
 CONSONANTS = {
     "t͡s": "ts", "t͡ʃ": "c", "d͡ʒ": "j", "p͡f": "pf", "d͡z": "dz",
     "ʃ": "sy", "ʒ": "j", "ç": "h", "ɕ": "sy", "x": "kh", "χ": "kh",
@@ -228,6 +231,8 @@ def apply_pronunciation() -> None:
         payload = json.loads(path.read_text())
         for card in payload["cards"]:
             ipa = table.get(card["front"]) or MANUAL_IPA.get(card["front"].lower())
+            if ipa and card.get("gender") in ARTICLE_IPA and not re.match(r"(der|die|das) ", card["front"]):
+                ipa = f"{ARTICLE_IPA[card['gender']]} {ipa}"  # shown and spoken as "der Tisch"
             if ipa:
                 card["readingId"] = respell(ipa)
             else:

@@ -24,6 +24,10 @@
     --route: oklch(0.42 0.055 185);
     --course-de: oklch(0.42 0.09 258);
     --course-zh: oklch(0.44 0.075 165);
+    /* German article colours: der blue, die red, das green (common learner convention). */
+    --gender-der: oklch(0.48 0.13 255);
+    --gender-die: oklch(0.52 0.16 22);
+    --gender-das: oklch(0.48 0.11 150);
 
     --shadow-card: 0 1px 0 oklch(0.23 0.014 70 / 0.04);
     --shadow-lift: 0 1px 0 oklch(0.23 0.014 70 / 0.05),
@@ -48,6 +52,9 @@
     --route: oklch(0.72 0.06 185);
     --course-de: oklch(0.68 0.09 258);
     --course-zh: oklch(0.7 0.08 165);
+    --gender-der: oklch(0.74 0.11 255);
+    --gender-die: oklch(0.74 0.13 22);
+    --gender-das: oklch(0.76 0.11 150);
 
     --shadow-card: 0 1px 0 oklch(0 0 0 / 0.3);
     --shadow-lift: 0 1px 0 oklch(0 0 0 / 0.35), 0 14px 28px -22px oklch(0 0 0 / 0.9);
@@ -71,6 +78,9 @@
     --color-route: var(--route);
     --color-de: var(--course-de);
     --color-zh: var(--course-zh);
+    --color-der: var(--gender-der);
+    --color-die: var(--gender-die);
+    --color-das: var(--gender-das);
 
     /* Hanzi never renders in Inter/Source Serif 4: both stacks fall through to
        the self-hosted Noto Sans TC (traditional forms, unambiguous strokes). */

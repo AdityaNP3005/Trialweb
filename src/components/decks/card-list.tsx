@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import { FrontText } from "@/components/study/front-text";
 import { Eye, EyeOff, Pencil, Trash2 } from "lucide-react";
 import type { Card } from "@/types";
 import { Badge } from "@/components/ui/badge";
@@ -37,15 +38,12 @@ export function CardList({
                                         : "font-semibold"
                                 }
                             >
-                                {card.front}
+                                <FrontText card={card} />
                             </span>
                             {card.pinyin ? (
                                 <span className="font-mono text-[11px] text-accent">
                                     {card.pinyin}
                                 </span>
-                            ) : null}
-                            {card.gender ? (
-                                <span className="meta">{card.gender}</span>
                             ) : null}
                             {card.plural ? (
                                 <span className="meta">pl. {card.plural}</span>

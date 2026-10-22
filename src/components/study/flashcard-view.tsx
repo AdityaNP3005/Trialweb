@@ -4,7 +4,9 @@ import { useTranslations } from "next-intl";
 import { CornerDownRight, Repeat2 } from "lucide-react";
 import type { Card } from "@/types";
 import { cn } from "@/lib/utils/cn";
+import { FrontText } from "./front-text";
 import { TtsButton } from "./tts-button";
+import { spokenFront } from "@/lib/content/german";
 
 /**
  * The study card as a boarding pass: header strip, the word itself, a tear
@@ -88,13 +90,20 @@ export function FlashcardView({
                                     : "display text-[2.25rem] leading-[1.05] sm:text-[2.75rem]",
                             )}
                         >
-                            {card.front}
+                            <FrontText card={card} />
                         </p>
                         <TtsButton
-                            text={card.front}
+                            text={spokenFront(card)}
                             voiceURI={voiceURI}
                             rate={rate}
                             lang={lang}
+                        />
+                        <TtsButton
+                            text={spokenFront(card)}
+                            voiceURI={voiceURI}
+                            rate={rate}
+                            lang={lang}
+                            slow
                         />
                     </div>
                     {card.readingId || card.ipa ? (

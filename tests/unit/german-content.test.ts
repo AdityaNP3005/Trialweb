@@ -46,6 +46,13 @@ describe("reviewed German vocabulary", () => {
         expect(cards.find((entry) => entry.front === "Entschuldigung")?.readingId).toBe("ent-syul-di-gung");
         expect(cards.find((entry) => entry.front === "Tschüss")?.readingId).toBe("cius");
         expect(cards.find((entry) => entry.front === "schön")?.readingId).toBe("syeon");
+        const nouns = cards.filter((entry) => entry.wordType === "noun");
+        const withArticle = nouns.filter((entry) => entry.gender || /^(der|die|das) /.test(entry.front));
+        expect(withArticle.length / nouns.length).toBeGreaterThan(0.95);
+        const tisch = cards.find((entry) => entry.front === "der Tisch" || entry.front === "Tisch")!;
+        expect([tisch.gender, tisch.plural]).toEqual(["der", "die Tische"]);
+        expect(tisch.readingId).toBe("dea tisy");
+        expect(cards.filter((entry) => entry.exampleDe).length).toBeGreaterThan(9000);
         expect(hallo.meaningId).not.toContain("saluir");
         const morgen = cards.find((entry) => entry.front === "morgen")!;
         expect(morgen.meaningId).toContain("besok");

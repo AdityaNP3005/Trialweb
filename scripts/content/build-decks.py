@@ -504,6 +504,8 @@ def main() -> int:
     from reclassify_decks import reclassify_decks
     reclassify_decks()
     import importlib
+    # Enrichment adds noun genders, which the reading then prefixes with the article.
+    importlib.import_module("de-enrich").apply_enrichment()
     importlib.import_module("de-pronunciation").apply_pronunciation()
     return 0
 

@@ -5,7 +5,9 @@ import { useTranslations } from "next-intl";
 import type { Card } from "@/types";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils/cn";
+import { FrontText } from "./front-text";
 import { TtsButton } from "./tts-button";
+import { spokenFront } from "@/lib/content/german";
 
 const letters = ["A", "B", "C", "D", "E", "F"];
 
@@ -50,13 +52,20 @@ export function QuizView({
                                 : "display text-[2rem] leading-tight sm:text-[2.5rem]",
                         )}
                     >
-                        {card.front}
+                        <FrontText card={card} />
                     </p>
                     <TtsButton
-                        text={card.front}
+                        text={spokenFront(card)}
                         voiceURI={voiceURI}
                         rate={rate}
                         lang={lang}
+                    />
+                    <TtsButton
+                        text={spokenFront(card)}
+                        voiceURI={voiceURI}
+                        rate={rate}
+                        lang={lang}
+                        slow
                     />
                 </div>
                 {card.readingId ? <p className="meta mt-2">{card.readingId}</p> : null}

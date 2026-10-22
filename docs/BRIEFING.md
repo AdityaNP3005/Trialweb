@@ -42,6 +42,8 @@ dijalankan untuk akun pilot.
 | Deck kustom + impor CSV | ✅ | `papaparse` + `zod`, `/decks` |
 | Statistik, streak, heatmap, kuis | ✅ | `/stats`, `dailyStats` |
 | **Mandarin tradisional (buku 1–4)** | ✅ | course `zh`, 54 bab, 2.891 kartu, TTS `zh-TW` |
+| Artikel/gender, jamak, contoh kalimat Jerman | ✅ | 6.359/6.534 kata benda berartikel, 9.061 kartu bercontoh (3.180 dengan terjemahan ID), `scripts/content/de-enrich.py`, [`GERMAN-ENRICHMENT.md`](./GERMAN-ENRICHMENT.md) |
+| Tombol audio pelan (60% kecepatan) | ✅ | `TtsButton slow`, di flashcard & kuis |
 | Cara baca Jerman ejaan Indonesia (`readingId`) | ✅ | 9.483/9.483 kartu, IPA Wiktionary → huruf EYD V + pemenggalan, `scripts/content/de-pronunciation.py`, [`GERMAN-PRONUNCIATION.md`](./GERMAN-PRONUNCIATION.md) |
 
 ---

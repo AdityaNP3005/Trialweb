@@ -377,7 +377,8 @@
    "topic": "greetings",
    "id": "de-a1-greetings-0008",
    "reviewedSenses": true,
-   "readingId": "bi-tê"
+   "readingId": "bi-tê",
+   "exampleDe": "Diese Bitte kann ich nicht ablehnen."
   },
   {
    "front": "Danke",
@@ -406,7 +407,8 @@
    "topic": "greetings",
    "id": "de-a1-greetings-0010",
    "reviewedSenses": true,
-   "readingId": "ent-syul-di-gung"
+   "readingId": "ent-syul-di-gung",
+   "exampleDe": "Sie hat meine Entschuldigung nicht akzeptiert."
   },
   {
    "front": "Wie geht es dir?",
@@ -449,7 +451,11 @@
    "topic": "greetings",
    "id": "de-a1-greetings-0035",
    "reviewedSenses": true,
-   "readingId": "wil-ko-mên"
+   "readingId": "das wil-ko-mên",
+   "exampleDe": "Willkommen in Japan!",
+   "exampleId": "Selamat datang di Jepang!",
+   "gender": "das",
+   "plural": "die Willkommen"
   },
   {
    "front": "hey",
@@ -462,7 +468,10 @@
    "level": "A1",
    "topic": "greetings",
    "id": "de-a1-function-words-1-0045",
-   "readingId": "hei"
+   "readingId": "hei",
+   "exampleDe": "Hey, hör mir zu.",
+   "exampleEn": "Hey, listen to me.",
+   "exampleId": "Hei, dengarkan aku."
   },
   {
    "front": "hi",
@@ -475,7 +484,9 @@
    "level": "A1",
    "topic": "greetings",
    "id": "de-a1-function-words-1-0073",
-   "readingId": "hai"
+   "readingId": "hai",
+   "exampleDe": "Hi, ich bin Tom.",
+   "exampleEn": "Hi, my name is Tom."
   },
   {
    "front": "bald",
@@ -488,7 +499,9 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-greetings-0031",
-   "readingId": "balt"
+   "readingId": "balt",
+   "exampleDe": "Ich hoffe, wir werden uns bald wiedersehen.",
+   "exampleId": "Kuharap kita akan segera bertemu lagi."
   },
   {
    "front": "eins",
@@ -502,7 +515,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0001",
    "reviewedSenses": true,
-   "readingId": "ains"
+   "readingId": "ains",
+   "exampleDe": "Es ist halb eins.",
+   "exampleEn": "It's half past twelve.",
+   "exampleId": "Sekarang jam setengah satu."
   },
   {
    "front": "zwei",
@@ -516,7 +532,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0002",
    "reviewedSenses": true,
-   "readingId": "tswai"
+   "readingId": "tswai",
+   "exampleDe": "Komm um zwei Uhr!",
+   "exampleEn": "Come at two o'clock.",
+   "exampleId": "Datanglah pada jam dua."
   },
   {
    "front": "drei",
@@ -530,7 +549,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0003",
    "reviewedSenses": true,
-   "readingId": "drai"
+   "readingId": "drai",
+   "exampleDe": "Es ist drei Uhr.",
+   "exampleEn": "It's three o'clock.",
+   "exampleId": "Sekarang pukul tiga."
   },
   {
    "front": "vier",
@@ -544,7 +566,9 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0004",
    "reviewedSenses": true,
-   "readingId": "fia"
+   "readingId": "fia",
+   "exampleDe": "Es ist jetzt halb vier.",
+   "exampleId": "Sekarang pukul setengah empat."
   },
   {
    "front": "fünf",
@@ -557,7 +581,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0005",
-   "readingId": "fiunf"
+   "readingId": "fiunf",
+   "exampleDe": "Eins, zwei, drei, vier, fünf.",
+   "exampleEn": "One, two, three, four, five.",
+   "exampleId": "Satu, dua, tiga, empat, lima."
   },
   {
    "front": "sechs",
@@ -571,7 +598,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0006",
    "reviewedSenses": true,
-   "readingId": "zeks"
+   "readingId": "zeks",
+   "exampleDe": "Er hat einen Hund und sechs Katzen.",
+   "exampleEn": "He has one dog and six cats.",
+   "exampleId": "Dia punya seekor anjing dan enam ekor kucing."
   },
   {
    "front": "sieben",
@@ -584,7 +614,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0007",
-   "readingId": "zi-bên"
+   "readingId": "zi-bên",
+   "exampleDe": "Eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn.",
+   "exampleEn": "One, two, three, four, five, six, seven, eight, nine, ten.",
+   "exampleId": "Satu, dua, tiga, empat, lima, enam, tujuh, delapan, sembilan, sepuluh."
   },
   {
    "front": "acht",
@@ -598,7 +631,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0008",
    "reviewedSenses": true,
-   "readingId": "akht"
+   "readingId": "akht",
+   "exampleDe": "Es ist Viertel vor acht.",
+   "exampleEn": "It's a quarter to eight.",
+   "exampleId": "Sekarang jam delapan kurang seperempat."
   },
   {
    "front": "neun",
@@ -612,7 +648,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0009",
    "reviewedSenses": true,
-   "readingId": "noin"
+   "readingId": "noin",
+   "exampleDe": "Katzen haben neun Leben.",
+   "exampleEn": "Cats have nine lives.",
+   "exampleId": "Kucing punya sembilan nyawa."
   },
   {
    "front": "zehn",
@@ -626,7 +665,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0010",
    "reviewedSenses": true,
-   "readingId": "tsen"
+   "readingId": "tsen",
+   "exampleDe": "Sie leben seit zehn Jahren hier.",
+   "exampleEn": "They have lived here for ten years.",
+   "exampleId": "Mereka sudah tinggal di sini selama sepuluh tahun."
   },
   {
    "front": "elf",
@@ -639,7 +681,9 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0011",
-   "readingId": "elf"
+   "readingId": "elf",
+   "exampleDe": "Südafrika hat elf Amtssprachen.",
+   "exampleId": "Afrika Selatan memiliki sebelas bahasa resmi."
   },
   {
    "front": "zwölf",
@@ -652,7 +696,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0012",
-   "readingId": "tsweolf"
+   "readingId": "tsweolf",
+   "exampleDe": "Es ist halb zwölf.",
+   "exampleEn": "It's half past eleven.",
+   "exampleId": "Sekarang pukul setengah dua belas."
   },
   {
    "front": "zwanzig",
@@ -665,7 +712,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0013",
-   "readingId": "tswan-tsih"
+   "readingId": "tswan-tsih",
+   "exampleDe": "Er hat zwanzig Kinder.",
+   "exampleEn": "He has twenty children.",
+   "exampleId": "Dia memiliki dua puluh orang anak."
   },
   {
    "front": "hundert",
@@ -679,7 +729,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0014",
    "reviewedSenses": true,
-   "readingId": "hun-dat"
+   "readingId": "hun-dat",
+   "exampleDe": "Ich kann bis hundert zählen.",
+   "exampleEn": "I know how to count to 100.",
+   "exampleId": "Aku bisa berhitung sampai seratus."
   },
   {
    "front": "der Tag",
@@ -712,7 +765,10 @@
    "gender": "die",
    "plural": "die Wochen",
    "id": "de-a1-numbers-time-0016",
-   "readingId": "di wo-khê"
+   "readingId": "di wo-khê",
+   "exampleDe": "Ich will noch eine Woche warten.",
+   "exampleEn": "I want to wait another week.",
+   "exampleId": "Saya ingin menunggu satu minggu lagi."
   },
   {
    "front": "der Monat",
@@ -727,7 +783,10 @@
    "gender": "der",
    "plural": "die Monate",
    "id": "de-a1-numbers-time-0017",
-   "readingId": "dea mo-nat"
+   "readingId": "dea mo-nat",
+   "exampleDe": "Wie heißt der dreizehnte Monat?",
+   "exampleEn": "What's the thirteenth month?",
+   "exampleId": "Apa nama bulan ketiga belas?"
   },
   {
    "front": "das Jahr",
@@ -742,7 +801,10 @@
    "gender": "das",
    "plural": "die Jahre",
    "id": "de-a1-numbers-time-0018",
-   "readingId": "das ya"
+   "readingId": "das ya",
+   "exampleDe": "Ich bin 18 Jahre alt.",
+   "exampleEn": "I am eighteen years old.",
+   "exampleId": "Saya berusia 18 tahun."
   },
   {
    "front": "heute",
@@ -756,7 +818,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0019",
    "reviewedSenses": true,
-   "readingId": "hoi-tê"
+   "readingId": "hoi-tê",
+   "exampleDe": "Heute ist Samstag.",
+   "exampleEn": "It's Saturday today.",
+   "exampleId": "Hari ini hari Sabtu."
   },
   {
    "front": "morgen",
@@ -770,7 +835,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0020",
    "reviewedSenses": true,
-   "readingId": "mor-gên"
+   "readingId": "mor-gên",
+   "exampleDe": "Wo isst du morgen?",
+   "exampleEn": "Where will you eat tomorrow?",
+   "exampleId": "Besok kamu akan makan di mana?"
   },
   {
    "front": "gestern",
@@ -783,7 +851,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0021",
-   "readingId": "ges-tan"
+   "readingId": "ges-tan",
+   "exampleDe": "Ich kam gestern.",
+   "exampleEn": "I came yesterday.",
+   "exampleId": "Aku datang kemarin."
   },
   {
    "front": "jetzt",
@@ -796,7 +867,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0022",
-   "readingId": "yetst"
+   "readingId": "yetst",
+   "exampleDe": "Ich bin jetzt hier.",
+   "exampleEn": "I'm here now.",
+   "exampleId": "Sekarang aku di sini."
   },
   {
    "front": "der Abend",
@@ -811,7 +885,10 @@
    "gender": "der",
    "plural": "die Abende",
    "id": "de-a1-numbers-time-0024",
-   "readingId": "dea a-bênt"
+   "readingId": "dea a-bênt",
+   "exampleDe": "Ich fange heute Abend an.",
+   "exampleEn": "I am starting this evening.",
+   "exampleId": "Saya mulai malam ini."
   },
   {
    "front": "die Nacht",
@@ -826,7 +903,10 @@
    "gender": "die",
    "plural": "die Nächte",
    "id": "de-a1-numbers-time-0025",
-   "readingId": "di nakht"
+   "readingId": "di nakht",
+   "exampleDe": "Letzte Nacht wurde mein Auto gestohlen.",
+   "exampleEn": "My car was stolen last night.",
+   "exampleId": "Mobilku dicuri kemarin malam."
   },
   {
    "front": "die Uhr",
@@ -841,7 +921,10 @@
    "gender": "die",
    "plural": "die Uhren",
    "id": "de-a1-numbers-time-0026",
-   "readingId": "di ua"
+   "readingId": "di ua",
+   "exampleDe": "Es ist ein Uhr.",
+   "exampleEn": "It's one o'clock.",
+   "exampleId": "Sekarang jam satu."
   },
   {
    "front": "die Stunde",
@@ -856,7 +939,10 @@
    "gender": "die",
    "plural": "die Stunden",
    "id": "de-a1-numbers-time-0027",
-   "readingId": "di sytun-dê"
+   "readingId": "di sytun-dê",
+   "exampleDe": "Ich habe zehn Stunden geschlafen.",
+   "exampleEn": "I slept for ten hours.",
+   "exampleId": "Aku tidur sepuluh jam."
   },
   {
    "front": "die Minute",
@@ -871,7 +957,10 @@
    "gender": "die",
    "plural": "die Minuten",
    "id": "de-a1-numbers-time-0028",
-   "readingId": "di mi-nu-tê"
+   "readingId": "di mi-nu-tê",
+   "exampleDe": "Er ist vor fünf Minuten gegangen.",
+   "exampleEn": "He left five minutes ago.",
+   "exampleId": "Dia pergi lima menit yang lalu."
   },
   {
    "front": "Montag",
@@ -884,7 +973,12 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0029",
-   "readingId": "mon-tak"
+   "readingId": "dea mon-tak",
+   "exampleDe": "Gestern war Montag.",
+   "exampleEn": "Yesterday was Monday.",
+   "exampleId": "Kemarin adalah hari Senin.",
+   "gender": "der",
+   "plural": "die Montage"
   },
   {
    "front": "Dienstag",
@@ -897,7 +991,12 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0030",
-   "readingId": "dins-tak"
+   "readingId": "dea dins-tak",
+   "exampleDe": "Ist es schon Dienstag?",
+   "exampleEn": "Is it Tuesday already?",
+   "exampleId": "Apakah sekarang sudah hari Selasa?",
+   "gender": "der",
+   "plural": "die Dienstage"
   },
   {
    "front": "Mittwoch",
@@ -910,7 +1009,12 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0031",
-   "readingId": "mit-wokh"
+   "readingId": "dea mit-wokh",
+   "exampleDe": "Heute ist Mittwoch.",
+   "exampleEn": "It's Wednesday.",
+   "exampleId": "Hari ini hari Rabu.",
+   "gender": "der",
+   "plural": "die Mittwoche"
   },
   {
    "front": "Donnerstag",
@@ -923,7 +1027,12 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0032",
-   "readingId": "do-nas-tak"
+   "readingId": "dea do-nas-tak",
+   "exampleDe": "Gestern war Donnerstag.",
+   "exampleEn": "Yesterday was Thursday.",
+   "exampleId": "Kemarin hari Kamis.",
+   "gender": "der",
+   "plural": "die Donnerstage"
   },
   {
    "front": "Freitag",
@@ -936,7 +1045,12 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0033",
-   "readingId": "frai-tak"
+   "readingId": "dea frai-tak",
+   "exampleDe": "Heute ist Freitag.",
+   "exampleEn": "Today is Friday.",
+   "exampleId": "Hari ini hari Jumat.",
+   "gender": "der",
+   "plural": "die Freitage"
   },
   {
    "front": "Samstag",
@@ -949,7 +1063,12 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0034",
-   "readingId": "zam-stak"
+   "readingId": "dea zam-stak",
+   "exampleDe": "Ich mag Samstage.",
+   "exampleEn": "I like Saturdays.",
+   "exampleId": "Aku suka hari Sabtu.",
+   "gender": "der",
+   "plural": "die Samstage"
   },
   {
    "front": "Sonntag",
@@ -962,7 +1081,12 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0035",
-   "readingId": "zon-tak"
+   "readingId": "dea zon-tak",
+   "exampleDe": "Gestern war Sonntag.",
+   "exampleEn": "It was Sunday yesterday.",
+   "exampleId": "Kemarin hari Minggu.",
+   "gender": "der",
+   "plural": "die Sonntage"
   },
   {
    "front": "ein",
@@ -976,7 +1100,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0036",
    "reviewedSenses": true,
-   "readingId": "ain"
+   "readingId": "ain",
+   "exampleDe": "Er ist ein DJ.",
+   "exampleEn": "He is a DJ.",
+   "exampleId": "Dia adalah seorang DJ."
   },
   {
    "front": "dann",
@@ -989,7 +1116,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0037",
-   "readingId": "dan"
+   "readingId": "dan",
+   "exampleDe": "Wenn es jemanden gibt, der das reparieren kann, dann ist das Tom.",
+   "exampleEn": "If anybody can fix it, it's Tom.",
+   "exampleId": "Jika ada orang yang dapat memperbaikinya, orang itu adalah Tom."
   },
   {
    "front": "immer",
@@ -1002,7 +1132,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0038",
-   "readingId": "i-ma"
+   "readingId": "i-ma",
+   "exampleDe": "Ich singe immer.",
+   "exampleEn": "I'm always singing.",
+   "exampleId": "Aku selalu bernyanyi."
   },
   {
    "front": "nie",
@@ -1015,7 +1148,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0039",
-   "readingId": "ni"
+   "readingId": "ni",
+   "exampleDe": "Sie weint nie.",
+   "exampleEn": "She never cries.",
+   "exampleId": "Dia tidak pernah menangis."
   },
   {
    "front": "Zeit",
@@ -1028,7 +1164,12 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0040",
-   "readingId": "tsait"
+   "readingId": "di tsait",
+   "exampleDe": "Ich habe Zeit.",
+   "exampleEn": "I've got time.",
+   "exampleId": "Aku punya waktu.",
+   "gender": "die",
+   "plural": "die Zeiten"
   },
   {
    "front": "später",
@@ -1042,7 +1183,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0044",
    "reviewedSenses": true,
-   "readingId": "sype-ta"
+   "readingId": "sype-ta",
+   "exampleDe": "Wir werden später weiterreden.",
+   "exampleEn": "We'll talk more later.",
+   "exampleId": "Pembicaraan ini akan kita lanjutkan nanti."
   },
   {
    "front": "Erste",
@@ -1056,7 +1200,12 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0047",
    "reviewedSenses": true,
-   "readingId": "eas-tê"
+   "readingId": "di eas-tê",
+   "exampleDe": "Ich bin Erste.",
+   "exampleEn": "I'm first.",
+   "exampleId": "Aku yang pertama.",
+   "gender": "die",
+   "plural": "die Ersten"
   },
   {
    "front": "manchmal",
@@ -1069,7 +1218,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0050",
-   "readingId": "manh-mal"
+   "readingId": "manh-mal",
+   "exampleDe": "Manchmal mache ich das mit Tom.",
+   "exampleEn": "Sometimes I do that with Tom.",
+   "exampleId": "Kadang-kadang aku melakukan itu bersama Tom."
   },
   {
    "front": "oft",
@@ -1082,7 +1234,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0051",
-   "readingId": "oft"
+   "readingId": "oft",
+   "exampleDe": "Siehst du ihn oft?",
+   "exampleEn": "Do you see him often?",
+   "exampleId": "Apakah kamu sering melihatnya?"
   },
   {
    "front": "früh",
@@ -1096,7 +1251,10 @@
    "topic": "numbers-time",
    "id": "de-a1-numbers-time-0052",
    "reviewedSenses": true,
-   "readingId": "friu"
+   "readingId": "friu",
+   "exampleDe": "Mein Vater steht früh auf.",
+   "exampleEn": "My father gets up early.",
+   "exampleId": "Ayahku bangun pagi."
   },
   {
    "front": "Mal",
@@ -1110,7 +1268,12 @@
    "topic": "numbers-time",
    "id": "de-a1-function-words-1-0031",
    "reviewedSenses": true,
-   "readingId": "mal"
+   "readingId": "das mal",
+   "exampleDe": "Ich bin zum ersten Mal hier.",
+   "exampleEn": "This is the first time I've been here.",
+   "exampleId": "Ini kali pertamaku di sini.",
+   "gender": "das",
+   "plural": "die Male"
   },
   {
    "front": "damals",
@@ -1123,7 +1286,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-function-words-2-0017",
-   "readingId": "da-mals"
+   "readingId": "da-mals",
+   "exampleDe": "Damals war ich noch Student.",
+   "exampleEn": "In those days, I was still a student.",
+   "exampleId": "Pada waktu itu, aku masih seorang pelajar."
   },
   {
    "front": "letzte",
@@ -1136,7 +1302,10 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-adjectives-basic-0033",
-   "readingId": "lets-tê"
+   "readingId": "lets-tê",
+   "exampleDe": "Das ist ihre letzte Chance.",
+   "exampleEn": "This is her last chance.",
+   "exampleId": "Ini adalah kesempatan terakhirnya."
   },
   {
    "front": "früher",
@@ -1149,7 +1318,9 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-adjectives-basic-0052",
-   "readingId": "friu-a"
+   "readingId": "friu-a",
+   "exampleDe": "Wer war hier früher?",
+   "exampleId": "Siapa yang di sini duluan?"
   },
   {
    "front": "Ende",
@@ -1162,7 +1333,12 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-general-1-0034",
-   "readingId": "en-dê"
+   "readingId": "das en-dê",
+   "exampleDe": "Ich kann das Ende nicht sehen.",
+   "exampleEn": "I can't see the end.",
+   "exampleId": "Saya tidak dapat melihat akhir.",
+   "gender": "das",
+   "plural": "die Enden"
   },
   {
    "front": "Nummer",
@@ -1175,7 +1351,11 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-general-1-0063",
-   "readingId": "nu-ma"
+   "readingId": "di nu-ma",
+   "exampleDe": "Die Rosi hat ein Telefon und ich hab' ihre Nummer schon.",
+   "exampleId": "Rosi punya telepon dan aku sudah punya nomornya.",
+   "gender": "die",
+   "plural": "die Nummern"
   },
   {
    "front": "Zukunft",
@@ -1188,7 +1368,12 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-general-2-0007",
-   "readingId": "tsu-kunft"
+   "readingId": "di tsu-kunft",
+   "exampleDe": "Niemand wird wissen, was in der Zukunft geschehen wird.",
+   "exampleEn": "No one knows what'll happen in the future.",
+   "exampleId": "Tidak seorang pun akan tahu apa yang akan terjadi di masa depan.",
+   "gender": "die",
+   "plural": "die Zukünfte"
   },
   {
    "front": "Moment",
@@ -1201,7 +1386,12 @@
    "level": "A1",
    "topic": "numbers-time",
    "id": "de-a1-general-2-0025",
-   "readingId": "mo-ment"
+   "readingId": "dea mo-ment",
+   "exampleDe": "Einen Moment, bitte.",
+   "exampleEn": "Just a moment, please.",
+   "exampleId": "Mohon tunggu sebentar.",
+   "gender": "der",
+   "plural": "die Momente"
   },
   {
    "front": "der Vater",
@@ -1234,7 +1424,10 @@
    "gender": "die",
    "plural": "die Mütter",
    "id": "de-a1-family-people-0002",
-   "readingId": "di mu-ta"
+   "readingId": "di mu-ta",
+   "exampleDe": "Das ist meine Mutter.",
+   "exampleEn": "This is my mother.",
+   "exampleId": "Ini ibuku."
   },
   {
    "front": "der Sohn",
@@ -1249,7 +1442,9 @@
    "gender": "der",
    "plural": "die Söhne",
    "id": "de-a1-family-people-0003",
-   "readingId": "dea zon"
+   "readingId": "dea zon",
+   "exampleDe": "Kennst du meinen Sohn?",
+   "exampleId": "Kamu kenal anakku?"
   },
   {
    "front": "die Tochter",
@@ -1264,7 +1459,10 @@
    "gender": "die",
    "plural": "die Töchter",
    "id": "de-a1-family-people-0004",
-   "readingId": "di tokh-ta"
+   "readingId": "di tokh-ta",
+   "exampleDe": "Wie heißt deine Tochter?",
+   "exampleEn": "What's your daughter's name?",
+   "exampleId": "Siapa nama anak perempuanmu?"
   },
   {
    "front": "der Bruder",
@@ -1279,7 +1477,10 @@
    "gender": "der",
    "plural": "die Brüder",
    "id": "de-a1-family-people-0005",
-   "readingId": "dea bru-da"
+   "readingId": "dea bru-da",
+   "exampleDe": "Wo ist mein großer Bruder?",
+   "exampleEn": "Where's my big brother?",
+   "exampleId": "Di mana kakakku?"
   },
   {
    "front": "die Schwester",
@@ -1294,7 +1495,10 @@
    "gender": "die",
    "plural": "die Schwestern",
    "id": "de-a1-family-people-0006",
-   "readingId": "di sywes-ta"
+   "readingId": "di sywes-ta",
+   "exampleDe": "Sie ist Toms kleine Schwester.",
+   "exampleEn": "She's Tom's younger sister.",
+   "exampleId": "Dia adik perempuan Tom."
   },
   {
    "front": "die Eltern",
@@ -1309,7 +1513,10 @@
    "gender": "die",
    "plural": "die Eltern",
    "id": "de-a1-family-people-0007",
-   "readingId": "di el-tan"
+   "readingId": "di el-tan",
+   "exampleDe": "Wir sind Toms Eltern.",
+   "exampleEn": "We're Tom's parents.",
+   "exampleId": "Kami orang tua Tom."
   },
   {
    "front": "der Großvater",
@@ -1324,7 +1531,9 @@
    "gender": "der",
    "plural": "die Großväter",
    "id": "de-a1-family-people-0008",
-   "readingId": "dea gros-fa-ta"
+   "readingId": "dea gros-fa-ta",
+   "exampleDe": "Mein Großvater starb vor drei Jahren.",
+   "exampleId": "Kakek saya meninggal 3 tahun yang lalu."
   },
   {
    "front": "die Großmutter",
@@ -1339,7 +1548,10 @@
    "gender": "die",
    "plural": "die Großmütter",
    "id": "de-a1-family-people-0009",
-   "readingId": "di gros-mu-ta"
+   "readingId": "di gros-mu-ta",
+   "exampleDe": "Sie wuchs bei ihrer Großmutter auf.",
+   "exampleEn": "She was raised by her grandmother.",
+   "exampleId": "Dia dibesarkan oleh neneknya."
   },
   {
    "front": "das Kind",
@@ -1372,7 +1584,10 @@
    "gender": "der",
    "plural": "die Männer",
    "id": "de-a1-family-people-0011",
-   "readingId": "dea man"
+   "readingId": "dea man",
+   "exampleDe": "Der Mann isst Brot.",
+   "exampleEn": "The man is eating bread.",
+   "exampleId": "Pria itu memakan roti."
   },
   {
    "front": "die Frau",
@@ -1387,7 +1602,10 @@
    "gender": "die",
    "plural": "die Frauen",
    "id": "de-a1-family-people-0012",
-   "readingId": "di frau"
+   "readingId": "di frau",
+   "exampleDe": "Ich bin eine Frau.",
+   "exampleEn": "I am a woman.",
+   "exampleId": "Saya perempuan."
   },
   {
    "front": "der Freund",
@@ -1402,7 +1620,10 @@
    "gender": "der",
    "plural": "die Freunde",
    "id": "de-a1-family-people-0013",
-   "readingId": "dea froint"
+   "readingId": "dea froint",
+   "exampleDe": "Er ist mein Freund.",
+   "exampleEn": "He is my friend.",
+   "exampleId": "Dia temanku."
   },
   {
    "front": "die Freundin",
@@ -1417,7 +1638,10 @@
    "gender": "die",
    "plural": "die Freundinnen",
    "id": "de-a1-family-people-0014",
-   "readingId": "di froin-din"
+   "readingId": "di froin-din",
+   "exampleDe": "Maria ist meine Freundin.",
+   "exampleEn": "Mary is my girlfriend.",
+   "exampleId": "Mary adalah pacar saya."
   },
   {
    "front": "Leute",
@@ -1430,7 +1654,11 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0015",
-   "readingId": "loi-tê"
+   "readingId": "loi-tê",
+   "exampleDe": "Die Leute reden.",
+   "exampleEn": "People are talking.",
+   "exampleId": "Orang-orang sedang berbicara.",
+   "plural": "die Leute"
   },
   {
    "front": "Mädchen",
@@ -1443,7 +1671,12 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0016",
-   "readingId": "met-hên"
+   "readingId": "das met-hên",
+   "exampleDe": "Ich kenne dieses Mädchen nicht.",
+   "exampleEn": "I don't know that girl.",
+   "exampleId": "Aku tidak kenal anak perempuan ini.",
+   "gender": "das",
+   "plural": "die Mädchen"
   },
   {
    "front": "Junge",
@@ -1456,7 +1689,12 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0017",
-   "readingId": "yu-ngê"
+   "readingId": "dea yu-ngê",
+   "exampleDe": "Das ist der Junge.",
+   "exampleEn": "This is the boy.",
+   "exampleId": "Inilah anak laki-laki itu.",
+   "gender": "der",
+   "plural": "die Jungen"
   },
   {
    "front": "Familie",
@@ -1469,7 +1707,12 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0018",
-   "readingId": "fa-mi-li-ê"
+   "readingId": "di fa-mi-li-ê",
+   "exampleDe": "Unsere Familie ist groß.",
+   "exampleEn": "Our family is big.",
+   "exampleId": "Keluarga kami besar.",
+   "gender": "die",
+   "plural": "die Familien"
   },
   {
    "front": "Baby",
@@ -1482,7 +1725,12 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0019",
-   "readingId": "be-bi"
+   "readingId": "das be-bi",
+   "exampleDe": "Das Baby heißt Tom.",
+   "exampleEn": "The baby is called Tom.",
+   "exampleId": "Bayi itu namanya Tom.",
+   "gender": "das",
+   "plural": "die Babys"
   },
   {
    "front": "Mensch",
@@ -1495,7 +1743,12 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0020",
-   "readingId": "mensy"
+   "readingId": "dea mensy",
+   "exampleDe": "Tom ist ein guter Mensch.",
+   "exampleEn": "Tom is a good person.",
+   "exampleId": "Tom adalah orang yang baik.",
+   "gender": "der",
+   "plural": "die Menschen"
   },
   {
    "front": "Onkel",
@@ -1508,7 +1761,12 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-family-people-0021",
-   "readingId": "ong-kêl"
+   "readingId": "dea ong-kêl",
+   "exampleDe": "Mein Onkel hat mir dieses Buch gekauft.",
+   "exampleEn": "My uncle bought me this book.",
+   "exampleId": "Pamanku membelikanku buku ini.",
+   "gender": "der",
+   "plural": "die Onkel"
   },
   {
    "front": "treffen",
@@ -1522,7 +1780,9 @@
    "topic": "family-people",
    "id": "de-a1-verbs-basic-0046",
    "reviewedSenses": true,
-   "readingId": "tre-fên"
+   "readingId": "tre-fên",
+   "exampleDe": "Ich hoffe, wir werden uns bald wieder treffen.",
+   "exampleId": "Kuharap kita akan segera bertemu lagi."
   },
   {
    "front": "lieben",
@@ -1535,7 +1795,10 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-verbs-basic-0062",
-   "readingId": "li-bên"
+   "readingId": "li-bên",
+   "exampleDe": "Ich liebe dich.",
+   "exampleEn": "I love you.",
+   "exampleId": "Aku cinta kamu!"
   },
   {
    "front": "heiraten",
@@ -1548,7 +1811,10 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-verbs-basic-0072",
-   "readingId": "hai-ra-tên"
+   "readingId": "hai-ra-tên",
+   "exampleDe": "Er heiratete ihn.",
+   "exampleEn": "He married him.",
+   "exampleId": "Ia menikahinya."
   },
   {
    "front": "Paar",
@@ -1561,7 +1827,12 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-general-1-0016",
-   "readingId": "pa"
+   "readingId": "das pa",
+   "exampleDe": "Ich habe ein Paar Schuhe gekauft.",
+   "exampleEn": "I bought a pair of shoes.",
+   "exampleId": "Aku membeli sepasang sepatu.",
+   "gender": "das",
+   "plural": "die Paare"
   },
   {
    "front": "Mama",
@@ -1574,7 +1845,12 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-general-1-0040",
-   "readingId": "ma-ma"
+   "readingId": "di ma-ma",
+   "exampleDe": "Ist deine Mama zu Hause?",
+   "exampleEn": "Is your mum at home?",
+   "exampleId": "Apakah ibumu di rumah?",
+   "gender": "die",
+   "plural": "die Mamas"
   },
   {
    "front": "Schatz",
@@ -1587,7 +1863,12 @@
    "level": "A1",
    "topic": "family-people",
    "id": "de-a1-general-1-0044",
-   "readingId": "syats"
+   "readingId": "dea syats",
+   "exampleDe": "Guten Morgen, mein Schatz!",
+   "exampleEn": "Good morning, my love.",
+   "exampleId": "Selamat pagi, sayang.",
+   "gender": "der",
+   "plural": "die Schätze"
   },
   {
    "front": "der Bahnhof",
@@ -1602,7 +1883,10 @@
    "gender": "der",
    "plural": "die Bahnhöfe",
    "id": "de-a1-directions-places-0001",
-   "readingId": "dea ban-hof"
+   "readingId": "dea ban-hof",
+   "exampleDe": "Fährt dieser Bus zum Bahnhof?",
+   "exampleEn": "Does this bus go to the train station?",
+   "exampleId": "Apakah bus ini ke stasiun?"
   },
   {
    "front": "der Flughafen",
@@ -1617,7 +1901,9 @@
    "gender": "der",
    "plural": "die Flughäfen",
    "id": "de-a1-directions-places-0002",
-   "readingId": "dea fluk-ha-fên"
+   "readingId": "dea fluk-ha-fên",
+   "exampleDe": "Ich bin am Flughafen.",
+   "exampleId": "Aku di bandara."
   },
   {
    "front": "hier",
@@ -1630,7 +1916,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-directions-places-0011",
-   "readingId": "hia"
+   "readingId": "hia",
+   "exampleDe": "Er ist hier!",
+   "exampleEn": "He is here!",
+   "exampleId": "Dia di sini!"
   },
   {
    "front": "dort",
@@ -1643,7 +1932,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-directions-places-0017",
-   "readingId": "dort"
+   "readingId": "dort",
+   "exampleDe": "Sie sind dort.",
+   "exampleEn": "They're there.",
+   "exampleId": "Mereka di sana."
   },
   {
    "front": "weit",
@@ -1656,7 +1948,9 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-directions-places-0020",
-   "readingId": "wait"
+   "readingId": "wait",
+   "exampleDe": "Mein Haus liegt ziemlich weit vom Bahnhof entfernt.",
+   "exampleId": "Rumahku agak jauh dari stasiun."
   },
   {
    "front": "oben",
@@ -1669,7 +1963,9 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-directions-places-0022",
-   "readingId": "o-bên"
+   "readingId": "o-bên",
+   "exampleDe": "Der Drache steigt nach oben.",
+   "exampleId": "Layang-layangnya naik ke atas."
   },
   {
    "front": "unten",
@@ -1682,7 +1978,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-directions-places-0025",
-   "readingId": "un-tên"
+   "readingId": "un-tên",
+   "exampleDe": "Bist du da unten?",
+   "exampleEn": "Are you down there?",
+   "exampleId": "Apakah kamu di sana?"
   },
   {
    "front": "fahren",
@@ -1695,7 +1994,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-travel-transport-0001",
-   "readingId": "fa-rên"
+   "readingId": "fa-rên",
+   "exampleDe": "Tom fährt zu schnell.",
+   "exampleEn": "Tom drives too fast.",
+   "exampleId": "Tom mengemudi terlalu cepat."
   },
   {
    "front": "der Zug",
@@ -1710,7 +2012,9 @@
    "gender": "der",
    "plural": "die Züge",
    "id": "de-a1-travel-transport-0002",
-   "readingId": "dea tsuk"
+   "readingId": "dea tsuk",
+   "exampleDe": "Der Zug ist schon da.",
+   "exampleId": "Kereta sudah datang."
   },
   {
    "front": "das Auto",
@@ -1725,7 +2029,10 @@
    "gender": "das",
    "plural": "die Autos",
    "id": "de-a1-travel-transport-0003",
-   "readingId": "das au-to"
+   "readingId": "das au-to",
+   "exampleDe": "Tom ist im Auto.",
+   "exampleEn": "Tom is in the car.",
+   "exampleId": "Tom sedang berada di dalam mobil."
   },
   {
    "front": "das Fahrrad",
@@ -1740,7 +2047,10 @@
    "gender": "das",
    "plural": "die Fahrräder",
    "id": "de-a1-travel-transport-0004",
-   "readingId": "das fa-rat"
+   "readingId": "das fa-rat",
+   "exampleDe": "Er hat kein Fahrrad.",
+   "exampleEn": "He hasn't got a bicycle.",
+   "exampleId": "Dia tidak punya sepeda."
   },
   {
    "front": "die U-Bahn",
@@ -1755,7 +2065,10 @@
    "gender": "die",
    "plural": "die U-Bahnen",
    "id": "de-a1-travel-transport-0005",
-   "readingId": "di u-ban"
+   "readingId": "di u-ban",
+   "exampleDe": "Nehmen wir die U-Bahn!",
+   "exampleEn": "Let's take the subway.",
+   "exampleId": "Mari naik kereta bawah tanah."
   },
   {
    "front": "die Fahrkarte",
@@ -1787,7 +2100,12 @@
    "topic": "travel-transport",
    "id": "de-a1-travel-transport-0008",
    "reviewedSenses": true,
-   "readingId": "wa-gên"
+   "readingId": "dea wa-gên",
+   "exampleDe": "Ist das Ihr Wagen?",
+   "exampleEn": "Is that your car?",
+   "exampleId": "Apakah itu mobilmu?",
+   "gender": "der",
+   "plural": "die Wagen"
   },
   {
    "front": "Pass",
@@ -1800,7 +2118,12 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-travel-transport-0009",
-   "readingId": "pas"
+   "readingId": "dea pas",
+   "exampleDe": "Pass auf dich auf.",
+   "exampleEn": "Take care of yourself.",
+   "exampleId": "Jaga dirimu sendiri.",
+   "gender": "der",
+   "plural": "die Pässe"
   },
   {
    "front": "Schiff",
@@ -1813,7 +2136,12 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-travel-transport-0010",
-   "readingId": "syif"
+   "readingId": "das syif",
+   "exampleDe": "Das Schiff legte ab.",
+   "exampleEn": "The ship set sail.",
+   "exampleId": "Kapal itu mulai berlayar.",
+   "gender": "das",
+   "plural": "die Schiffe"
   },
   {
    "front": "da",
@@ -1827,7 +2155,10 @@
    "topic": "travel-transport",
    "id": "de-a1-function-words-1-0025",
    "reviewedSenses": true,
-   "readingId": "da"
+   "readingId": "da",
+   "exampleDe": "Mein Hund ist nicht da.",
+   "exampleEn": "My dog isn't here.",
+   "exampleId": "Anjingku tidak di sini."
   },
   {
    "front": "raus",
@@ -1840,7 +2171,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-function-words-1-0055",
-   "readingId": "raus"
+   "readingId": "raus",
+   "exampleDe": "Wo geht es raus?",
+   "exampleEn": "Where is the exit?",
+   "exampleId": "Di mana pintu keluarnya?"
   },
   {
    "front": "hierher",
@@ -1853,7 +2187,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-function-words-2-0011",
-   "readingId": "hia-hea"
+   "readingId": "hia-hea",
+   "exampleDe": "Tom kam hierher, um uns zu bitten, ihm zu helfen.",
+   "exampleEn": "Tom came here to ask us to help him.",
+   "exampleId": "Tom datang kemari untuk meminta kami menolongnya."
   },
   {
    "front": "überall",
@@ -1866,7 +2203,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-function-words-2-0014",
-   "readingId": "iu-ba-al"
+   "readingId": "iu-ba-al",
+   "exampleDe": "Überall sind Katzen.",
+   "exampleEn": "There are cats everywhere.",
+   "exampleId": "Ada kucing di mana-mana."
   },
   {
    "front": "irgendwo",
@@ -1879,7 +2219,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-function-words-2-0019",
-   "readingId": "ir-gênt-wo"
+   "readingId": "ir-gênt-wo",
+   "exampleDe": "Ich dachte wir werden irgendwo hingehen.",
+   "exampleEn": "I thought we were going to go somewhere.",
+   "exampleId": "Saya kira kita mau pergi ke suatu tempat."
   },
   {
    "front": "drüben",
@@ -1892,7 +2235,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-function-words-2-0020",
-   "readingId": "driu-bên"
+   "readingId": "driu-bên",
+   "exampleDe": "Toms Haus ist dort drüben.",
+   "exampleEn": "Tom's house is over there.",
+   "exampleId": "Rumah Tom ada di sebelah sana."
   },
   {
    "front": "gehen",
@@ -1905,7 +2251,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-verbs-basic-0002",
-   "readingId": "ge-ên"
+   "readingId": "ge-ên",
+   "exampleDe": "Er will gehen.",
+   "exampleEn": "He wants to go.",
+   "exampleId": "Dia ingin pergi."
   },
   {
    "front": "kommen",
@@ -1918,7 +2267,9 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-verbs-basic-0003",
-   "readingId": "ko-mên"
+   "readingId": "ko-mên",
+   "exampleDe": "Ich sehe sie kommen.",
+   "exampleId": "Aku melihat mereka datang."
   },
   {
    "front": "laufen",
@@ -1931,7 +2282,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-verbs-basic-0065",
-   "readingId": "lau-fên"
+   "readingId": "lau-fên",
+   "exampleDe": "Ich laufe jeden Tag.",
+   "exampleEn": "I run every day.",
+   "exampleId": "Aku berlari setiap hari."
   },
   {
    "front": "rein",
@@ -1944,7 +2298,10 @@
    "level": "A1",
    "topic": "travel-transport",
    "id": "de-a1-adjectives-basic-0026",
-   "readingId": "rain"
+   "readingId": "rain",
+   "exampleDe": "Schau dort rein.",
+   "exampleEn": "Look in there.",
+   "exampleId": "Lihat ke dalam situ."
   },
   {
    "front": "das Brot",
@@ -1977,7 +2334,10 @@
    "topic": "food-drink",
    "gender": "die",
    "id": "de-a1-food-drink-0002",
-   "readingId": "di bu-ta"
+   "readingId": "di bu-ta",
+   "exampleDe": "Alles ist in Butter.",
+   "exampleEn": "Everything's fine.",
+   "exampleId": "Semua baik-baik saja."
   },
   {
    "front": "der Käse",
@@ -1992,7 +2352,10 @@
    "gender": "der",
    "plural": "die Käse",
    "id": "de-a1-food-drink-0003",
-   "readingId": "dea ke-zê"
+   "readingId": "dea ke-zê",
+   "exampleDe": "Tom mag keinen Käse.",
+   "exampleEn": "Tom doesn't like cheese.",
+   "exampleId": "Tom tidak suka keju."
   },
   {
    "front": "das Ei",
@@ -2007,7 +2370,10 @@
    "gender": "das",
    "plural": "die Eier",
    "id": "de-a1-food-drink-0004",
-   "readingId": "das ai"
+   "readingId": "das ai",
+   "exampleDe": "Dieses Ei ist frisch.",
+   "exampleEn": "This egg is fresh.",
+   "exampleId": "Telur ini segar."
   },
   {
    "front": "die Milch",
@@ -2021,7 +2387,11 @@
    "topic": "food-drink",
    "gender": "die",
    "id": "de-a1-food-drink-0005",
-   "readingId": "di milh"
+   "readingId": "di milh",
+   "exampleDe": "Ist das Milch?",
+   "exampleEn": "Is that milk?",
+   "exampleId": "Ini susu?",
+   "plural": "die Milche"
   },
   {
    "front": "der Kaffee",
@@ -2036,7 +2406,9 @@
    "gender": "der",
    "plural": "die Kaffees",
    "id": "de-a1-food-drink-0007",
-   "readingId": "dea ka-fe"
+   "readingId": "dea ka-fe",
+   "exampleDe": "Tee oder Kaffee?",
+   "exampleId": "Teh atau kopi?"
   },
   {
    "front": "der Tee",
@@ -2051,7 +2423,10 @@
    "gender": "der",
    "plural": "die Tees",
    "id": "de-a1-food-drink-0008",
-   "readingId": "dea te"
+   "readingId": "dea te",
+   "exampleDe": "Willst du Tee?",
+   "exampleEn": "Do you want some tea?",
+   "exampleId": "Kamu mau teh?"
   },
   {
    "front": "das Bier",
@@ -2066,7 +2441,9 @@
    "gender": "das",
    "plural": "die Biere",
    "id": "de-a1-food-drink-0009",
-   "readingId": "das bia"
+   "readingId": "das bia",
+   "exampleDe": "Wer trinkt Bier?",
+   "exampleId": "Siapa yang minum bir?"
   },
   {
    "front": "der Wein",
@@ -2081,7 +2458,10 @@
    "gender": "der",
    "plural": "die Weine",
    "id": "de-a1-food-drink-0010",
-   "readingId": "dea wain"
+   "readingId": "dea wain",
+   "exampleDe": "Ich trinke keinen Wein.",
+   "exampleEn": "I don't drink wine.",
+   "exampleId": "Aku tidak minum anggur."
   },
   {
    "front": "der Apfel",
@@ -2115,7 +2495,9 @@
    "gender": "die",
    "plural": "die Bananen",
    "id": "de-a1-food-drink-0012",
-   "readingId": "di ba-na-nê"
+   "readingId": "di ba-na-nê",
+   "exampleDe": "Ich esse oft Bananen.",
+   "exampleId": "Aku sering makan pisang."
   },
   {
    "front": "die Orange",
@@ -2131,7 +2513,10 @@
    "plural": "die Orangen",
    "id": "de-a1-food-drink-0013",
    "reviewedSenses": true,
-   "readingId": "di o-rang-jê"
+   "readingId": "di o-rang-jê",
+   "exampleDe": "Schäl die Orange!",
+   "exampleEn": "Peel the orange.",
+   "exampleId": "Kupas jeruknya."
   },
   {
    "front": "das Fleisch",
@@ -2145,7 +2530,10 @@
    "topic": "food-drink",
    "gender": "das",
    "id": "de-a1-food-drink-0014",
-   "readingId": "das flaisy"
+   "readingId": "das flaisy",
+   "exampleDe": "Ihr esst Fleisch.",
+   "exampleEn": "You guys eat meat.",
+   "exampleId": "Kalian makan daging."
   },
   {
    "front": "der Fisch",
@@ -2160,7 +2548,10 @@
    "gender": "der",
    "plural": "die Fische",
    "id": "de-a1-food-drink-0015",
-   "readingId": "dea fisy"
+   "readingId": "dea fisy",
+   "exampleDe": "Das ist ein Fisch.",
+   "exampleEn": "This is a fish.",
+   "exampleId": "Ini ikan."
   },
   {
    "front": "das Hähnchen",
@@ -2175,7 +2566,9 @@
    "gender": "das",
    "plural": "die Hähnchen",
    "id": "de-a1-food-drink-0016",
-   "readingId": "das hen-hên"
+   "readingId": "das hen-hên",
+   "exampleDe": "Ich esse Hähnchen.",
+   "exampleEn": "I eat chicken."
   },
   {
    "front": "der Reis",
@@ -2189,7 +2582,11 @@
    "topic": "food-drink",
    "gender": "der",
    "id": "de-a1-food-drink-0017",
-   "readingId": "dea rais"
+   "readingId": "dea rais",
+   "exampleDe": "Wir essen Reis.",
+   "exampleEn": "We eat rice.",
+   "exampleId": "Kami makan nasi.",
+   "plural": "die Reise"
   },
   {
    "front": "die Kartoffel",
@@ -2204,7 +2601,9 @@
    "gender": "die",
    "plural": "die Kartoffeln",
    "id": "de-a1-food-drink-0018",
-   "readingId": "di kar-to-fêl"
+   "readingId": "di kar-to-fêl",
+   "exampleDe": "Ich mag Kartoffeln.",
+   "exampleEn": "I like potatoes."
   },
   {
    "front": "der Salat",
@@ -2219,7 +2618,10 @@
    "gender": "der",
    "plural": "die Salate",
    "id": "de-a1-food-drink-0019",
-   "readingId": "dea za-lat"
+   "readingId": "dea za-lat",
+   "exampleDe": "Ich mag Salat.",
+   "exampleEn": "I like lettuce.",
+   "exampleId": "Aku suka selada."
   },
   {
    "front": "das Gemüse",
@@ -2234,7 +2636,10 @@
    "gender": "das",
    "plural": "die Gemüse",
    "id": "de-a1-food-drink-0020",
-   "readingId": "das gê-miu-zê"
+   "readingId": "das gê-miu-zê",
+   "exampleDe": "Warum isst du kein Gemüse?",
+   "exampleEn": "Why don't you eat vegetables?",
+   "exampleId": "Kenapa kamu tidak makan sayur?"
   },
   {
    "front": "der Zucker",
@@ -2248,7 +2653,10 @@
    "topic": "food-drink",
    "gender": "der",
    "id": "de-a1-food-drink-0021",
-   "readingId": "dea tsu-ka"
+   "readingId": "dea tsu-ka",
+   "exampleDe": "Sie haben Zucker.",
+   "exampleId": "Mereka punya gula.",
+   "plural": "die Zucker"
   },
   {
    "front": "das Salz",
@@ -2263,7 +2671,10 @@
    "gender": "das",
    "plural": "die Salze",
    "id": "de-a1-food-drink-0022",
-   "readingId": "das zalts"
+   "readingId": "das zalts",
+   "exampleDe": "Es ist kein Salz da.",
+   "exampleEn": "There's no salt.",
+   "exampleId": "Tidak ada garam."
   },
   {
    "front": "der Kuchen",
@@ -2278,7 +2689,10 @@
    "gender": "der",
    "plural": "die Kuchen",
    "id": "de-a1-food-drink-0023",
-   "readingId": "dea ku-khên"
+   "readingId": "dea ku-khên",
+   "exampleDe": "Sie schnitt den Kuchen in zwei Hälften.",
+   "exampleEn": "She cut the cake in two.",
+   "exampleId": "Dia membagi dua kuenya."
   },
   {
    "front": "das Frühstück",
@@ -2293,7 +2707,10 @@
    "gender": "das",
    "plural": "die Frühstücke",
    "id": "de-a1-food-drink-0024",
-   "readingId": "das friu-sytiuk"
+   "readingId": "das friu-sytiuk",
+   "exampleDe": "Das Frühstück ist serviert.",
+   "exampleEn": "Breakfast is served.",
+   "exampleId": "Makan pagi telah dipesan."
   },
   {
    "front": "das Mittagessen",
@@ -2308,7 +2725,10 @@
    "gender": "das",
    "plural": "die Mittagessen",
    "id": "de-a1-food-drink-0025",
-   "readingId": "das mi-tak-e-sên"
+   "readingId": "das mi-tak-e-sên",
+   "exampleDe": "Hattest du schon Mittagessen?",
+   "exampleEn": "Have you eaten lunch yet?",
+   "exampleId": "Apakah kamu sudah makan?"
   },
   {
    "front": "das Abendessen",
@@ -2323,7 +2743,9 @@
    "gender": "das",
    "plural": "die Abendessen",
    "id": "de-a1-food-drink-0026",
-   "readingId": "das a-bênt-e-sên"
+   "readingId": "das a-bênt-e-sên",
+   "exampleDe": "Fertig zum Abendessen?",
+   "exampleId": "Siap untuk makan malam?"
   },
   {
    "front": "die Speisekarte",
@@ -2338,7 +2760,9 @@
    "gender": "die",
    "plural": "die Speisekarten",
    "id": "de-a1-food-drink-0027",
-   "readingId": "di sypai-zê-kar-tê"
+   "readingId": "di sypai-zê-kar-tê",
+   "exampleDe": "Die Speisekarte bitte!",
+   "exampleEn": "The menu, please."
   },
   {
    "front": "trinken",
@@ -2352,7 +2776,10 @@
    "topic": "food-drink",
    "id": "de-a1-food-drink-0028",
    "reviewedSenses": true,
-   "readingId": "tring-kên"
+   "readingId": "tring-kên",
+   "exampleDe": "Ich trinke Tee.",
+   "exampleEn": "I drink tea.",
+   "exampleId": "Aku minum teh."
   },
   {
    "front": "das Restaurant",
@@ -2367,7 +2794,10 @@
    "gender": "das",
    "plural": "die Restaurants",
    "id": "de-a1-directions-places-0007",
-   "readingId": "das res-to-rang"
+   "readingId": "das res-to-rang",
+   "exampleDe": "Wie hieß das Restaurant?",
+   "exampleEn": "What was the name of that restaurant?",
+   "exampleId": "Apa nama restoran itu?"
   },
   {
    "front": "heißen",
@@ -2380,7 +2810,10 @@
    "level": "A1",
    "topic": "food-drink",
    "id": "de-a1-verbs-basic-0077",
-   "readingId": "hai-sên"
+   "readingId": "hai-sên",
+   "exampleDe": "Wie heißt du?",
+   "exampleEn": "What is your name?",
+   "exampleId": "Siapa namamu?"
   },
   {
    "front": "gar",
@@ -2393,7 +2826,10 @@
    "level": "A1",
    "topic": "food-drink",
    "id": "de-a1-adjectives-basic-0021",
-   "readingId": "ga"
+   "readingId": "ga",
+   "exampleDe": "Ganz und gar nicht!",
+   "exampleEn": "Not at all!",
+   "exampleId": "Tidak sama sekali ！"
   },
   {
    "front": "das Haus",
@@ -2409,7 +2845,10 @@
    "plural": "die Häuser",
    "ipa": "[haʊ̯s]",
    "id": "de-a1-home-daily-0001",
-   "readingId": "das haus"
+   "readingId": "das haus",
+   "exampleDe": "Bist du zu Hause?",
+   "exampleEn": "Are you at home?",
+   "exampleId": "Apa kamu ada di rumah?"
   },
   {
    "front": "die Wohnung",
@@ -2424,7 +2863,10 @@
    "gender": "die",
    "plural": "die Wohnungen",
    "id": "de-a1-home-daily-0002",
-   "readingId": "di wo-nung"
+   "readingId": "di wo-nung",
+   "exampleDe": "In welcher Wohnung wohnt er?",
+   "exampleEn": "Which flat does he live in?",
+   "exampleId": "Dia tinggal di apartemen yang mana?"
   },
   {
    "front": "die Küche",
@@ -2439,7 +2881,10 @@
    "gender": "die",
    "plural": "die Küchen",
    "id": "de-a1-home-daily-0003",
-   "readingId": "di kiu-hê"
+   "readingId": "di kiu-hê",
+   "exampleDe": "„Wo ist Mama?“ – „In der Küche.“",
+   "exampleEn": "\"Where's mom?\" \"She's in the kitchen.\"",
+   "exampleId": "\"Mama di mana?\" \"Di dapur.\""
   },
   {
    "front": "das Bad",
@@ -2454,7 +2899,10 @@
    "gender": "das",
    "plural": "die Bäder",
    "id": "de-a1-home-daily-0004",
-   "readingId": "das bat"
+   "readingId": "das bat",
+   "exampleDe": "Er nimmt gewöhnlich abends ein Bad.",
+   "exampleEn": "He usually takes a bath in the evening.",
+   "exampleId": "Dia biasanya mandi pada malam hari."
   },
   {
    "front": "das Schlafzimmer",
@@ -2469,7 +2917,9 @@
    "gender": "das",
    "plural": "die Schlafzimmer",
    "id": "de-a1-home-daily-0005",
-   "readingId": "das sylaf-tsi-ma"
+   "readingId": "das sylaf-tsi-ma",
+   "exampleDe": "Das Schlafzimmer ist neben der Küche.",
+   "exampleId": "Kamar tidur ada di samping dapur."
   },
   {
    "front": "das Wohnzimmer",
@@ -2484,7 +2934,10 @@
    "gender": "das",
    "plural": "die Wohnzimmer",
    "id": "de-a1-home-daily-0006",
-   "readingId": "das won-tsi-ma"
+   "readingId": "das won-tsi-ma",
+   "exampleDe": "Tom ist allein im Wohnzimmer.",
+   "exampleEn": "Tom is alone in the living room.",
+   "exampleId": "Tom berada seorang diri di ruang keluarga."
   },
   {
    "front": "der Tisch",
@@ -2499,7 +2952,10 @@
    "gender": "der",
    "plural": "die Tische",
    "id": "de-a1-home-daily-0007",
-   "readingId": "dea tisy"
+   "readingId": "dea tisy",
+   "exampleDe": "Unter dem Tisch ist eine Maus.",
+   "exampleEn": "There is a mouse under the table.",
+   "exampleId": "Ada tikus di bawah meja."
   },
   {
    "front": "der Stuhl",
@@ -2514,7 +2970,10 @@
    "gender": "der",
    "plural": "die Stühle",
    "id": "de-a1-home-daily-0008",
-   "readingId": "dea sytul"
+   "readingId": "dea sytul",
+   "exampleDe": "Es gibt keine Stühle in diesem Raum.",
+   "exampleEn": "There are no chairs in this room.",
+   "exampleId": "Tidak ada kursi di ruangan ini."
   },
   {
    "front": "das Bett",
@@ -2529,7 +2988,10 @@
    "gender": "das",
    "plural": "die Betten",
    "id": "de-a1-home-daily-0009",
-   "readingId": "das bet"
+   "readingId": "das bet",
+   "exampleDe": "Du solltest jeden Morgen dein Bett machen.",
+   "exampleEn": "You should make your bed every morning.",
+   "exampleId": "Kamu harus merapikan tempat tidurmu setiap pagi."
   },
   {
    "front": "die Tür",
@@ -2562,7 +3024,9 @@
    "gender": "das",
    "plural": "die Fenster",
    "id": "de-a1-home-daily-0011",
-   "readingId": "das fen-sta"
+   "readingId": "das fen-sta",
+   "exampleDe": "Es gibt drei Fenster in diesem Raum.",
+   "exampleId": "Ada tiga jendela di ruangan ini."
   },
   {
    "front": "die Lampe",
@@ -2577,7 +3041,10 @@
    "gender": "die",
    "plural": "die Lampen",
    "id": "de-a1-home-daily-0012",
-   "readingId": "di lam-pê"
+   "readingId": "di lam-pê",
+   "exampleDe": "Ich brauche eine Lampe.",
+   "exampleEn": "I need a lamp.",
+   "exampleId": "Aku butuh sebuah lampu."
   },
   {
    "front": "der Schlüssel",
@@ -2592,7 +3059,9 @@
    "gender": "der",
    "plural": "die Schlüssel",
    "id": "de-a1-home-daily-0014",
-   "readingId": "dea syliu-sêl"
+   "readingId": "dea syliu-sêl",
+   "exampleDe": "Gib ihr die Schlüssel.",
+   "exampleId": "Berikan dia kuncinya!"
   },
   {
    "front": "wohnen",
@@ -2605,7 +3074,9 @@
    "level": "A1",
    "topic": "home-daily",
    "id": "de-a1-home-daily-0017",
-   "readingId": "wo-nên"
+   "readingId": "wo-nên",
+   "exampleDe": "Er wohnt in Paris.",
+   "exampleId": "Dia tinggal di Paris."
   },
   {
    "front": "Zimmer",
@@ -2618,7 +3089,12 @@
    "level": "A1",
    "topic": "home-daily",
    "id": "de-a1-home-daily-0018",
-   "readingId": "tsi-ma"
+   "readingId": "das tsi-ma",
+   "exampleDe": "Dies ist mein Zimmer.",
+   "exampleEn": "This is my room.",
+   "exampleId": "Ini kamarku.",
+   "gender": "das",
+   "plural": "die Zimmer"
   },
   {
    "front": "Platz",
@@ -2631,7 +3107,12 @@
    "level": "A1",
    "topic": "home-daily",
    "id": "de-a1-directions-places-0026",
-   "readingId": "plats"
+   "readingId": "dea plats",
+   "exampleDe": "Hier ist nicht genug Platz.",
+   "exampleEn": "There's not enough room here.",
+   "exampleId": "Tidak ada cukup ruang di sini.",
+   "gender": "der",
+   "plural": "die Plätze"
   },
   {
    "front": "die Tasche",
@@ -2646,7 +3127,10 @@
    "gender": "die",
    "plural": "die Taschen",
    "id": "de-a1-home-daily-0016",
-   "readingId": "di ta-syê"
+   "readingId": "di ta-syê",
+   "exampleDe": "Diese Tasche ist leichter.",
+   "exampleEn": "This bag is lighter.",
+   "exampleId": "Tas ini lebih ringan."
   },
   {
    "front": "der Supermarkt",
@@ -2661,7 +3145,10 @@
    "gender": "der",
    "plural": "die Supermärkte",
    "id": "de-a1-directions-places-0006",
-   "readingId": "dea zu-pa-markt"
+   "readingId": "dea zu-pa-markt",
+   "exampleDe": "Wo ist der nächste Supermarkt?",
+   "exampleEn": "Where is the nearest supermarket?",
+   "exampleId": "Di mana supermarket terdekat?"
   },
   {
    "front": "die Rechnung",
@@ -2710,7 +3197,9 @@
    "level": "A1",
    "topic": "clothes-shopping",
    "id": "de-a1-general-2-0021",
-   "readingId": "kau-fên"
+   "readingId": "kau-fên",
+   "exampleDe": "Tom kauft Brot.",
+   "exampleId": "Tom membeli roti."
   },
   {
    "front": "bezahlen",
@@ -2723,7 +3212,10 @@
    "level": "A1",
    "topic": "clothes-shopping",
    "id": "de-a1-general-2-0022",
-   "readingId": "bê-tsa-lên"
+   "readingId": "bê-tsa-lên",
+   "exampleDe": "Lass mich bezahlen.",
+   "exampleEn": "Let me pick up the check.",
+   "exampleId": "Biarkan saya yang membayar."
   },
   {
    "front": "rot",
@@ -2737,7 +3229,10 @@
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0001",
    "reviewedSenses": true,
-   "readingId": "rot"
+   "readingId": "rot",
+   "exampleDe": "Ihr Buch ist rot.",
+   "exampleEn": "Her book is red.",
+   "exampleId": "Bukunya merah."
   },
   {
    "front": "blau",
@@ -2751,7 +3246,10 @@
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0002",
    "reviewedSenses": true,
-   "readingId": "blau"
+   "readingId": "blau",
+   "exampleDe": "Ist Wasser blau?",
+   "exampleEn": "Is water blue?",
+   "exampleId": "Apakah air itu biru?"
   },
   {
    "front": "gelb",
@@ -2765,7 +3263,10 @@
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0003",
    "reviewedSenses": true,
-   "readingId": "gelp"
+   "readingId": "gelp",
+   "exampleDe": "Der Apfel ist gelb.",
+   "exampleEn": "The apple is yellow.",
+   "exampleId": "Apel itu kuning."
   },
   {
    "front": "grün",
@@ -2779,7 +3280,10 @@
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0004",
    "reviewedSenses": true,
-   "readingId": "griun"
+   "readingId": "griun",
+   "exampleDe": "Das Wasser ist grün.",
+   "exampleEn": "The water is green.",
+   "exampleId": "Airnya berwarna hijau."
   },
   {
    "front": "schwarz",
@@ -2793,7 +3297,10 @@
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0005",
    "reviewedSenses": true,
-   "readingId": "sywarts"
+   "readingId": "sywarts",
+   "exampleDe": "Der Hund ist schwarz.",
+   "exampleEn": "The dog is black.",
+   "exampleId": "Anjing itu hitam."
   },
   {
    "front": "weiß",
@@ -2807,7 +3314,10 @@
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0006",
    "reviewedSenses": true,
-   "readingId": "wais"
+   "readingId": "wais",
+   "exampleDe": "Ich weiß nicht.",
+   "exampleEn": "I have no idea.",
+   "exampleId": "Aku tidak tahu."
   },
   {
    "front": "grau",
@@ -2820,7 +3330,10 @@
    "level": "A1",
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0007",
-   "readingId": "grau"
+   "readingId": "grau",
+   "exampleDe": "Toms Haar ist grau geworden.",
+   "exampleEn": "Tom's hair has turned gray.",
+   "exampleId": "Rambut Tom sudah memutih."
   },
   {
    "front": "braun",
@@ -2834,7 +3347,10 @@
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0008",
    "reviewedSenses": true,
-   "readingId": "braun"
+   "readingId": "braun",
+   "exampleDe": "Das Brot ist braun.",
+   "exampleEn": "The bread is brown.",
+   "exampleId": "Rotinya berwarna cokelat."
   },
   {
    "front": "groß",
@@ -2847,7 +3363,10 @@
    "level": "A1",
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0009",
-   "readingId": "gros"
+   "readingId": "gros",
+   "exampleDe": "Das Buch ist groß.",
+   "exampleEn": "The book is big.",
+   "exampleId": "Buku itu besar."
   },
   {
    "front": "klein",
@@ -2860,7 +3379,10 @@
    "level": "A1",
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0010",
-   "readingId": "klain"
+   "readingId": "klain",
+   "exampleDe": "Das Auto ist klein.",
+   "exampleEn": "The car is small.",
+   "exampleId": "Mobilnya kecil."
   },
   {
    "front": "kurz",
@@ -2873,7 +3395,10 @@
    "level": "A1",
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0012",
-   "readingId": "kurts"
+   "readingId": "kurts",
+   "exampleDe": "Sie mag kurze Röcke.",
+   "exampleEn": "She likes short skirts.",
+   "exampleId": "Dia suka rok pendek."
   },
   {
    "front": "lang",
@@ -2886,7 +3411,10 @@
    "level": "A1",
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0013",
-   "readingId": "lang"
+   "readingId": "lang",
+   "exampleDe": "Mein Rock ist zu lang.",
+   "exampleEn": "My skirt is too long.",
+   "exampleId": "Rokku terlalu panjang."
   },
   {
    "front": "hoch",
@@ -2899,7 +3427,10 @@
    "level": "A1",
    "topic": "colors-shapes",
    "id": "de-a1-colors-shapes-0014",
-   "readingId": "hokh"
+   "readingId": "hokh",
+   "exampleDe": "Der höchste Berg der Welt ist der Mount Everest.",
+   "exampleEn": "The tallest mountain in the world is Mount Everest.",
+   "exampleId": "Gunung tertinggi di dunia adalah Gunung Everest."
   },
   {
    "front": "Gerade",
@@ -2913,7 +3444,12 @@
    "topic": "colors-shapes",
    "id": "de-a1-directions-places-0015",
    "reviewedSenses": true,
-   "readingId": "gê-ra-dê"
+   "readingId": "di gê-ra-dê",
+   "exampleDe": "Beweise, dass die Gerade AB senkrecht zur Gerade DC ist.",
+   "exampleEn": "Prove that straight line AB is perpendicular to straight line DC.",
+   "exampleId": "Buktikan bahwa garis AB tegak lurus terhadap garis DC.",
+   "gender": "die",
+   "plural": "die Geraden"
   },
   {
    "front": "Seite",
@@ -2926,7 +3462,12 @@
    "level": "A1",
    "topic": "colors-shapes",
    "id": "de-a1-directions-places-0023",
-   "readingId": "zai-tê"
+   "readingId": "di zai-tê",
+   "exampleDe": "Bitte lesen Sie Seite vierundneunzig.",
+   "exampleEn": "Please read page ninety-four.",
+   "exampleId": "Tolong baca halaman sembilan puluh empat.",
+   "gender": "die",
+   "plural": "die Seiten"
   },
   {
    "front": "eben",
@@ -2940,7 +3481,10 @@
    "topic": "colors-shapes",
    "id": "de-a1-function-words-2-0003",
    "reviewedSenses": true,
-   "readingId": "e-bên"
+   "readingId": "e-bên",
+   "exampleDe": "Tom hat eben angerufen.",
+   "exampleEn": "Tom just called.",
+   "exampleId": "Tom baru saja menelepon."
   },
   {
    "front": "licht",
@@ -2954,7 +3498,9 @@
    "topic": "colors-shapes",
    "id": "de-a1-adjectives-basic-0063",
    "reviewedSenses": true,
-   "readingId": "liht"
+   "readingId": "liht",
+   "exampleDe": "Licht ist Leben.",
+   "exampleEn": "Light is life."
   },
   {
    "front": "der Kopf",
@@ -2969,7 +3515,10 @@
    "gender": "der",
    "plural": "die Köpfe",
    "id": "de-a1-body-health-0001",
-   "readingId": "dea kopf"
+   "readingId": "dea kopf",
+   "exampleDe": "Sie hob ihren Kopf.",
+   "exampleEn": "She lifted her head.",
+   "exampleId": "Dia mengangkat kepalanya."
   },
   {
    "front": "das Auge",
@@ -2984,7 +3533,10 @@
    "gender": "das",
    "plural": "die Augen",
    "id": "de-a1-body-health-0002",
-   "readingId": "das au-gê"
+   "readingId": "das au-gê",
+   "exampleDe": "Er hat blaue Augen.",
+   "exampleEn": "He has blue eyes.",
+   "exampleId": "Matanya biru."
   },
   {
    "front": "die Hand",
@@ -2999,7 +3551,10 @@
    "gender": "die",
    "plural": "die Hände",
    "id": "de-a1-body-health-0003",
-   "readingId": "di hant"
+   "readingId": "di hant",
+   "exampleDe": "Meine Hände sind kalt.",
+   "exampleEn": "My hands are cold.",
+   "exampleId": "Tanganku dingin."
   },
   {
    "front": "das Bein",
@@ -3014,7 +3569,9 @@
    "gender": "das",
    "plural": "die Beine",
    "id": "de-a1-body-health-0005",
-   "readingId": "das bain"
+   "readingId": "das bain",
+   "exampleDe": "Ich habe zwei Hände und zwei Beine.",
+   "exampleId": "Aku punya dua tangan dan dua kaki."
   },
   {
    "front": "der Bauch",
@@ -3029,7 +3586,10 @@
    "gender": "der",
    "plural": "die Bäuche",
    "id": "de-a1-body-health-0006",
-   "readingId": "dea baukh"
+   "readingId": "dea baukh",
+   "exampleDe": "Tom tut der Bauch weh.",
+   "exampleEn": "Tom has a stomachache.",
+   "exampleId": "Tom sakit perut."
   },
   {
    "front": "der Zahn",
@@ -3044,7 +3604,9 @@
    "gender": "der",
    "plural": "die Zähne",
    "id": "de-a1-body-health-0007",
-   "readingId": "dea tsan"
+   "readingId": "dea tsan",
+   "exampleDe": "Leonor hat die Flasche mit den Zähnen geöffnet.",
+   "exampleId": "Leonor membuka botol dengan giginya."
   },
   {
    "front": "Gesicht",
@@ -3057,7 +3619,12 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-body-health-0011",
-   "readingId": "gê-ziht"
+   "readingId": "das gê-ziht",
+   "exampleDe": "Wasch dir das Gesicht.",
+   "exampleEn": "Wash your face.",
+   "exampleId": "Cuci mukamu.",
+   "gender": "das",
+   "plural": "die Gesichter"
   },
   {
    "front": "Blut",
@@ -3070,7 +3637,12 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-body-health-0012",
-   "readingId": "blut"
+   "readingId": "das blut",
+   "exampleDe": "Blut ist rot.",
+   "exampleEn": "Blood is red.",
+   "exampleId": "Darah itu merah.",
+   "gender": "das",
+   "plural": "die Blute"
   },
   {
    "front": "Herz",
@@ -3083,7 +3655,12 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-body-health-0013",
-   "readingId": "herts"
+   "readingId": "das herts",
+   "exampleDe": "Mein Herz ist schwach.",
+   "exampleEn": "My heart is weak.",
+   "exampleId": "Jantungku lemah.",
+   "gender": "das",
+   "plural": "die Herzen"
   },
   {
    "front": "Körper",
@@ -3096,7 +3673,12 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-body-health-0014",
-   "readingId": "keor-pa"
+   "readingId": "dea keor-pa",
+   "exampleDe": "Der Tod ist die Trennung von Seele und Körper.",
+   "exampleEn": "Death is the separation of the soul and the body.",
+   "exampleId": "Kematian adalah berpisahnya jiwa dan raga.",
+   "gender": "der",
+   "plural": "die Körper"
   },
   {
    "front": "sehen",
@@ -3110,7 +3692,10 @@
    "topic": "body-health",
    "id": "de-a1-verbs-basic-0008",
    "reviewedSenses": true,
-   "readingId": "ze-ên"
+   "readingId": "ze-ên",
+   "exampleDe": "Ich sehe den Hund.",
+   "exampleEn": "I see the dog.",
+   "exampleId": "Aku melihat anjing itu."
   },
   {
    "front": "hören",
@@ -3123,7 +3708,10 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-verbs-basic-0009",
-   "readingId": "heo-rên"
+   "readingId": "heo-rên",
+   "exampleDe": "Hörst du etwas?",
+   "exampleEn": "Do you hear something?",
+   "exampleId": "Apakah kamu mendengar sesuatu?"
   },
   {
    "front": "Arsch",
@@ -3136,7 +3724,12 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-general-1-0064",
-   "readingId": "arsy"
+   "readingId": "dea arsy",
+   "exampleDe": "Sie hat einen großen Arsch.",
+   "exampleEn": "She has a big butt.",
+   "exampleId": "Pantatnya besar.",
+   "gender": "der",
+   "plural": "die Ärsche"
   },
   {
    "front": "Sex",
@@ -3149,7 +3742,10 @@
    "level": "A1",
    "topic": "body-health",
    "id": "de-a1-general-2-0017",
-   "readingId": "seks"
+   "readingId": "dea seks",
+   "exampleDe": "Sex ist gut.",
+   "exampleEn": "Sex is good.",
+   "gender": "der"
   },
   {
    "front": "krank",
@@ -3180,7 +3776,10 @@
    "gender": "der",
    "plural": "die Ärzte",
    "id": "de-a1-body-health-0009",
-   "readingId": "dea atst"
+   "readingId": "dea atst",
+   "exampleDe": "Ich bin Arzt.",
+   "exampleEn": "I'm a doctor.",
+   "exampleId": "Saya dokter."
   },
   {
    "front": "das Medikament",
@@ -3195,7 +3794,10 @@
    "gender": "das",
    "plural": "die Medikamente",
    "id": "de-a1-body-health-0010",
-   "readingId": "das me-di-ka-ment"
+   "readingId": "das me-di-ka-ment",
+   "exampleDe": "Ich muss Medikamente nehmen.",
+   "exampleEn": "I have to take medicine.",
+   "exampleId": "Aku harus minum obat."
   },
   {
    "front": "das Krankenhaus",
@@ -3210,7 +3812,10 @@
    "gender": "das",
    "plural": "die Krankenhäuser",
    "id": "de-a1-directions-places-0005",
-   "readingId": "das krang-kên-haus"
+   "readingId": "das krang-kên-haus",
+   "exampleDe": "Wo ist das Krankenhaus?",
+   "exampleEn": "Where is the hospital?",
+   "exampleId": "Rumah sakitnya di mana?"
   },
   {
    "front": "die Apotheke",
@@ -3225,7 +3830,9 @@
    "gender": "die",
    "plural": "die Apotheken",
    "id": "de-a1-directions-places-0008",
-   "readingId": "di a-po-te-kê"
+   "readingId": "di a-po-te-kê",
+   "exampleDe": "Ich fahre mit meiner Frau zur Apotheke.",
+   "exampleId": "Aku pergi bersama istriku ke apotek."
   },
   {
    "front": "schlafen",
@@ -3238,7 +3845,10 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-verbs-basic-0015",
-   "readingId": "syla-fên"
+   "readingId": "syla-fên",
+   "exampleDe": "Er schläft noch.",
+   "exampleEn": "He is still sleeping.",
+   "exampleId": "Dia masih tidur."
   },
   {
    "front": "sterben",
@@ -3251,7 +3861,10 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-verbs-basic-0045",
-   "readingId": "syter-bên"
+   "readingId": "syter-bên",
+   "exampleDe": "Du wirst sterben.",
+   "exampleEn": "You will die.",
+   "exampleId": "Kau akan mati."
   },
   {
    "front": "müde",
@@ -3264,7 +3877,10 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-adjectives-basic-0010",
-   "readingId": "miu-dê"
+   "readingId": "miu-dê",
+   "exampleDe": "Ich bin sehr müde.",
+   "exampleEn": "I'm very tired.",
+   "exampleId": "Aku sangat capek."
   },
   {
    "front": "Angst",
@@ -3277,7 +3893,12 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-general-1-0019",
-   "readingId": "angst"
+   "readingId": "di angst",
+   "exampleDe": "Warum hast du Angst?",
+   "exampleEn": "Why are you afraid?",
+   "exampleId": "Kenapa kamu takut?",
+   "gender": "die",
+   "plural": "die Ängste"
   },
   {
    "front": "Tod",
@@ -3290,7 +3911,12 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-general-1-0042",
-   "readingId": "tot"
+   "readingId": "dea tot",
+   "exampleDe": "Nichts ist sicherer als der Tod.",
+   "exampleEn": "Nothing is more certain than death.",
+   "exampleId": "Tidak ada yang lebih pasti daripada kematian.",
+   "gender": "der",
+   "plural": "die Tode"
   },
   {
    "front": "Doktor",
@@ -3303,7 +3929,12 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-general-1-0074",
-   "readingId": "dok-toa"
+   "readingId": "dea dok-toa",
+   "exampleDe": "Sie ist ein Doktor.",
+   "exampleEn": "She is a doctor.",
+   "exampleId": "Dia seorang dokter.",
+   "gender": "der",
+   "plural": "die Doktoren"
   },
   {
    "front": "Weh",
@@ -3316,7 +3947,11 @@
    "level": "A1",
    "topic": "health-psychology",
    "id": "de-a1-general-2-0018",
-   "readingId": "we"
+   "readingId": "das we",
+   "exampleDe": "Ich habe Wehen.",
+   "exampleEn": "I am in labour.",
+   "gender": "das",
+   "plural": "die Wehe"
   },
   {
    "front": "der Park",
@@ -3331,7 +3966,10 @@
    "gender": "der",
    "plural": "die Parks",
    "id": "de-a1-directions-places-0009",
-   "readingId": "dea park"
+   "readingId": "dea park",
+   "exampleDe": "Die Kinder spielten Fußball im Park.",
+   "exampleEn": "The kids played football in the park.",
+   "exampleId": "Anak-anak bermain sepak bola di taman."
   },
   {
    "front": "die Straße",
@@ -3346,7 +3984,10 @@
    "gender": "die",
    "plural": "die Straßen",
    "id": "de-a1-directions-places-0010",
-   "readingId": "di sytra-sê"
+   "readingId": "di sytra-sê",
+   "exampleDe": "Ich mag diese Straße.",
+   "exampleEn": "I like this street.",
+   "exampleId": "Aku suka jalan ini."
   },
   {
    "front": "Weg",
@@ -3359,7 +4000,12 @@
    "level": "A1",
    "topic": "directions-places",
    "id": "de-a1-directions-places-0014",
-   "readingId": "wek"
+   "readingId": "dea wek",
+   "exampleDe": "Der Weg ist lang.",
+   "exampleEn": "The road is long.",
+   "exampleId": "Jalannya panjang.",
+   "gender": "der",
+   "plural": "die Wege"
   },
   {
    "front": "Stadt",
@@ -3372,7 +4018,12 @@
    "level": "A1",
    "topic": "directions-places",
    "id": "de-a1-directions-places-0019",
-   "readingId": "sytat"
+   "readingId": "di sytat",
+   "exampleDe": "Magst du diese Stadt?",
+   "exampleEn": "Do you like this city?",
+   "exampleId": "Apakah kamu suka kota ini?",
+   "gender": "die",
+   "plural": "die Städte"
   },
   {
    "front": "Ort",
@@ -3385,7 +4036,12 @@
    "level": "A1",
    "topic": "directions-places",
    "id": "de-a1-general-1-0052",
-   "readingId": "ort"
+   "readingId": "dea ort",
+   "exampleDe": "Kennst du diese Orte?",
+   "exampleEn": "Do you know these places?",
+   "exampleId": "Apakah kamu tahu tempat-tempat ini?",
+   "gender": "der",
+   "plural": "die Orte"
   },
   {
    "front": "Land",
@@ -3398,7 +4054,11 @@
    "level": "A1",
    "topic": "places-geography",
    "id": "de-a1-travel-transport-0007",
-   "readingId": "lant"
+   "readingId": "das lant",
+   "exampleDe": "Ich mag dieses Land.",
+   "exampleId": "Aku suka negara ini.",
+   "gender": "das",
+   "plural": "die Länder"
   },
   {
    "front": "Welt",
@@ -3411,7 +4071,12 @@
    "level": "A1",
    "topic": "places-geography",
    "id": "de-a1-general-1-0020",
-   "readingId": "welt"
+   "readingId": "di welt",
+   "exampleDe": "Er hatte Freunde in der ganzen Welt.",
+   "exampleEn": "He had friends all over the world.",
+   "exampleId": "Dia memiliki teman di seluruh dunia.",
+   "gender": "die",
+   "plural": "die Welten"
   },
   {
    "front": "Erde",
@@ -3424,7 +4089,12 @@
    "level": "A1",
    "topic": "places-geography",
    "id": "de-a1-general-2-0011",
-   "readingId": "ea-dê"
+   "readingId": "di ea-dê",
+   "exampleDe": "Wie sieht die Erde vom Mars aus?",
+   "exampleEn": "What does Earth look like from Mars?",
+   "exampleId": "Bagaimana Bumi terlihat dari Mars?",
+   "gender": "die",
+   "plural": "die Erden"
   },
   {
    "front": "Hund",
@@ -3437,7 +4107,12 @@
    "level": "A1",
    "topic": "nature-animals",
    "id": "de-a1-general-2-0030",
-   "readingId": "hunt"
+   "readingId": "dea hunt",
+   "exampleDe": "Der Hund schläft.",
+   "exampleEn": "The dog is sleeping.",
+   "exampleId": "Anjing itu tidur.",
+   "gender": "der",
+   "plural": "die Hunde"
   },
   {
    "front": "Feuer",
@@ -3450,7 +4125,12 @@
    "level": "A1",
    "topic": "environment-nature",
    "id": "de-a1-general-1-0076",
-   "readingId": "foi-a"
+   "readingId": "das foi-a",
+   "exampleDe": "Feuer ist heiß.",
+   "exampleEn": "Fire is hot.",
+   "exampleId": "Api itu panas.",
+   "gender": "das",
+   "plural": "die Feuer"
   },
   {
    "front": "Luft",
@@ -3463,7 +4143,12 @@
    "level": "A1",
    "topic": "environment-nature",
    "id": "de-a1-general-1-0079",
-   "readingId": "luft"
+   "readingId": "di luft",
+   "exampleDe": "So wie wir frische Luft brauchen, so brauchen die Fische sauberes Wasser.",
+   "exampleEn": "As we need fresh air, so fish need clean water.",
+   "exampleId": "Sebagaimana kita memerlukan udara yang nyaman, juga ikan memerlukan air yang bersih.",
+   "gender": "die",
+   "plural": "die Lüfte"
   },
   {
    "front": "Himmel",
@@ -3476,7 +4161,12 @@
    "level": "A1",
    "topic": "environment-nature",
    "id": "de-a1-general-2-0031",
-   "readingId": "hi-mêl"
+   "readingId": "dea hi-mêl",
+   "exampleDe": "Als ich aufstand, war die Sonne schon hoch am Himmel.",
+   "exampleEn": "When I got up, the sun was already high in the sky.",
+   "exampleId": "Ketika saya bangun, matahari sudah terbit tinggi di langit.",
+   "gender": "der",
+   "plural": "die Himmel"
   },
   {
    "front": "der Arm",
@@ -3492,7 +4182,10 @@
    "plural": "die Arme",
    "id": "de-a1-body-health-0004",
    "reviewedSenses": true,
-   "readingId": "dea arm"
+   "readingId": "dea arm",
+   "exampleDe": "Mein rechter Arm ist stärker.",
+   "exampleEn": "My right arm is stronger.",
+   "exampleId": "Tangan kananku lebih kuat."
   },
   {
    "front": "arbeiten",
@@ -3505,7 +4198,10 @@
    "level": "A1",
    "topic": "work-economy",
    "id": "de-a1-work-school-0001",
-   "readingId": "ar-bai-tên"
+   "readingId": "ar-bai-tên",
+   "exampleDe": "Er arbeitet nicht.",
+   "exampleEn": "He isn't working.",
+   "exampleId": "Dia tidak bekerja."
   },
   {
    "front": "die Arbeit",
@@ -3520,7 +4216,10 @@
    "gender": "die",
    "plural": "die Arbeiten",
    "id": "de-a1-work-school-0003",
-   "readingId": "di ar-bait"
+   "readingId": "di ar-bait",
+   "exampleDe": "Diese Arbeit ist nichts für mich.",
+   "exampleEn": "This job is not for me.",
+   "exampleId": "Pekerjaan ini tidak untukku."
   },
   {
    "front": "der Beruf",
@@ -3535,7 +4234,10 @@
    "gender": "der",
    "plural": "die Berufe",
    "id": "de-a1-work-school-0004",
-   "readingId": "dea bê-ruf"
+   "readingId": "dea bê-ruf",
+   "exampleDe": "Was ist ihr Beruf?",
+   "exampleEn": "What is her profession?",
+   "exampleId": "Apa pekerjaannya?"
   },
   {
    "front": "das Büro",
@@ -3550,7 +4252,10 @@
    "gender": "das",
    "plural": "die Büros",
    "id": "de-a1-work-school-0005",
-   "readingId": "das biu-ro"
+   "readingId": "das biu-ro",
+   "exampleDe": "Heute bin ich nicht im Büro.",
+   "exampleEn": "I'm not at work today.",
+   "exampleId": "Saya tidak ada di kantor hari ini."
   },
   {
    "front": "der Termin",
@@ -3565,7 +4270,10 @@
    "gender": "der",
    "plural": "die Termine",
    "id": "de-a1-work-school-0011",
-   "readingId": "dea ter-min"
+   "readingId": "dea ter-min",
+   "exampleDe": "Ich habe einen Termin beim Zahnarzt.",
+   "exampleEn": "I have a dentist appointment.",
+   "exampleId": "Aku ada janji dengan dokter gigi."
   },
   {
    "front": "Job",
@@ -3578,7 +4286,12 @@
    "level": "A1",
    "topic": "work-economy",
    "id": "de-a1-work-school-0012",
-   "readingId": "jop"
+   "readingId": "dea jop",
+   "exampleDe": "Tom hat seinen Job verloren.",
+   "exampleEn": "Tom lost his job.",
+   "exampleId": "Tom kehilangan pekerjaannya.",
+   "gender": "der",
+   "plural": "die Jobs"
   },
   {
    "front": "Dollar",
@@ -3591,7 +4304,12 @@
    "level": "A1",
    "topic": "work-economy",
    "id": "de-a1-general-1-0068",
-   "readingId": "do-lar"
+   "readingId": "dea do-lar",
+   "exampleDe": "Ich habe das Buch für zehn Dollar gekauft.",
+   "exampleEn": "I bought the book for ten dollars.",
+   "exampleId": "Aku membeli buku itu seharga sepuluh dolar.",
+   "gender": "der",
+   "plural": "die Dollar"
   },
   {
    "front": "Stelle",
@@ -3604,7 +4322,12 @@
    "level": "A1",
    "topic": "work-economy",
    "id": "de-a1-general-1-0077",
-   "readingId": "syte-lê"
+   "readingId": "di syte-lê",
+   "exampleDe": "Gefällt dir deine neue Stelle?",
+   "exampleEn": "Do you like your new job?",
+   "exampleId": "Apakah kamu suka dengan pekerjaan barumu?",
+   "gender": "die",
+   "plural": "die Stellen"
   },
   {
    "front": "teuer",
@@ -3617,7 +4340,10 @@
    "level": "A1",
    "topic": "work-economy",
    "id": "de-a1-general-2-0023",
-   "readingId": "toi-a"
+   "readingId": "toi-a",
+   "exampleDe": "Alles ist teuer.",
+   "exampleEn": "Everything is expensive.",
+   "exampleId": "Semuanya mahal."
   },
   {
    "front": "billig",
@@ -3630,7 +4356,10 @@
    "level": "A1",
    "topic": "work-economy",
    "id": "de-a1-general-2-0024",
-   "readingId": "bi-lih"
+   "readingId": "bi-lih",
+   "exampleDe": "Es sah billig aus.",
+   "exampleEn": "It looked cheap.",
+   "exampleId": "Kelihatannya itu murah."
   },
   {
    "front": "die Schule",
@@ -3645,7 +4374,10 @@
    "gender": "die",
    "plural": "die Schulen",
    "id": "de-a1-directions-places-0003",
-   "readingId": "di syu-lê"
+   "readingId": "di syu-lê",
+   "exampleDe": "Wo ist deine Schule?",
+   "exampleEn": "Where is your school?",
+   "exampleId": "Di mana sekolahmu?"
   },
   {
    "front": "die Universität",
@@ -3660,7 +4392,10 @@
    "gender": "die",
    "plural": "die Universitäten",
    "id": "de-a1-directions-places-0004",
-   "readingId": "di u-ni-wer-zi-tet"
+   "readingId": "di u-ni-wer-zi-tet",
+   "exampleDe": "Er geht zur Universität.",
+   "exampleEn": "He is at university.",
+   "exampleId": "Dia pergi ke universitas."
   },
   {
    "front": "lernen",
@@ -3692,7 +4427,10 @@
    "gender": "der",
    "plural": "die Lehrer",
    "id": "de-a1-work-school-0006",
-   "readingId": "dea le-ra"
+   "readingId": "dea le-ra",
+   "exampleDe": "Er ist Lehrer.",
+   "exampleEn": "He is a teacher.",
+   "exampleId": "Dia guru."
   },
   {
    "front": "die Lehrerin",
@@ -3707,7 +4445,10 @@
    "gender": "die",
    "plural": "die Lehrerinnen",
    "id": "de-a1-work-school-0007",
-   "readingId": "di le-rê-rin"
+   "readingId": "di le-rê-rin",
+   "exampleDe": "Ich war Lehrerin.",
+   "exampleEn": "I was a teacher.",
+   "exampleId": "Aku dulu seorang guru."
   },
   {
    "front": "der Student",
@@ -3722,7 +4463,10 @@
    "gender": "der",
    "plural": "die Studenten",
    "id": "de-a1-work-school-0008",
-   "readingId": "dea sytu-dent"
+   "readingId": "dea sytu-dent",
+   "exampleDe": "Er ist Student.",
+   "exampleEn": "He is a student.",
+   "exampleId": "Dia mahasiswa."
   },
   {
    "front": "die Prüfung",
@@ -3737,7 +4481,9 @@
    "gender": "die",
    "plural": "die Prüfungen",
    "id": "de-a1-work-school-0009",
-   "readingId": "di priu-fung"
+   "readingId": "di priu-fung",
+   "exampleDe": "Tom ist der Einzige, der die Prüfung nicht bestanden hat.",
+   "exampleId": "Tom adalah satu-satunya orang yang tidak lulus ujian."
   },
   {
    "front": "die Hausaufgabe",
@@ -3752,7 +4498,9 @@
    "gender": "die",
    "plural": "die Hausaufgaben",
    "id": "de-a1-work-school-0010",
-   "readingId": "di haus-auf-ga-bê"
+   "readingId": "di haus-auf-ga-bê",
+   "exampleDe": "Braucht Tom Hilfe bei seinen Hausaufgaben?",
+   "exampleId": "Apakah Tom perlu bantuan dengan PR-nya?"
   },
   {
    "front": "lesen",
@@ -3766,7 +4514,10 @@
    "topic": "education-science",
    "id": "de-a1-verbs-basic-0006",
    "reviewedSenses": true,
-   "readingId": "le-zên"
+   "readingId": "le-zên",
+   "exampleDe": "Lest ein Buch!",
+   "exampleEn": "Read a book!",
+   "exampleId": "Bacalah buku!"
   },
   {
    "front": "wissen",
@@ -3780,7 +4531,10 @@
    "topic": "education-science",
    "id": "de-a1-verbs-basic-0022",
    "reviewedSenses": true,
-   "readingId": "wi-sên"
+   "readingId": "wi-sên",
+   "exampleDe": "Ihr wisst es nicht.",
+   "exampleEn": "You don't know.",
+   "exampleId": "Kalian tidak tahu."
   },
   {
    "front": "kennen",
@@ -3793,7 +4547,9 @@
    "level": "A1",
    "topic": "education-science",
    "id": "de-a1-verbs-basic-0040",
-   "readingId": "ke-nên"
+   "readingId": "ke-nên",
+   "exampleDe": "Wir kennen es.",
+   "exampleId": "Kami mengenalnya."
   },
   {
    "front": "Geschichte",
@@ -3806,7 +4562,12 @@
    "level": "A1",
    "topic": "education-science",
    "id": "de-a1-general-1-0046",
-   "readingId": "gê-syih-tê"
+   "readingId": "di gê-syih-tê",
+   "exampleDe": "Ich studiere gern Geschichte.",
+   "exampleEn": "I like studying history.",
+   "exampleId": "Aku suka belajar sejarah.",
+   "gender": "die",
+   "plural": "die Geschichten"
   },
   {
    "front": "Versuch",
@@ -3819,7 +4580,12 @@
    "level": "A1",
    "topic": "education-science",
    "id": "de-a1-general-2-0016",
-   "readingId": "fea-zukh"
+   "readingId": "dea fea-zukh",
+   "exampleDe": "Versuch's mal!",
+   "exampleEn": "Try!",
+   "exampleId": "Cobalah!",
+   "gender": "der",
+   "plural": "die Versuche"
   },
   {
    "front": "fest",
@@ -3833,7 +4599,10 @@
    "topic": "culture-arts",
    "id": "de-a1-adjectives-basic-0050",
    "reviewedSenses": true,
-   "readingId": "fest"
+   "readingId": "fest",
+   "exampleDe": "Ich saß im Stau fest.",
+   "exampleEn": "I was caught in a traffic jam.",
+   "exampleId": "Aku terjebak dalam kemacetan lalu lintas."
   },
   {
    "front": "Musik",
@@ -3846,7 +4615,12 @@
    "level": "A1",
    "topic": "culture-arts",
    "id": "de-a1-general-1-0022",
-   "readingId": "mu-zik"
+   "readingId": "di mu-zik",
+   "exampleDe": "Magst du Musik?",
+   "exampleEn": "Do you like music?",
+   "exampleId": "Apa kamu suka musik?",
+   "gender": "die",
+   "plural": "die Musiken"
   },
   {
    "front": "Schau",
@@ -3859,7 +4633,12 @@
    "level": "A1",
    "topic": "culture-arts",
    "id": "de-a1-general-1-0048",
-   "readingId": "syau"
+   "readingId": "di syau",
+   "exampleDe": "Schau dir Tom an.",
+   "exampleEn": "Look at Tom.",
+   "exampleId": "Lihatlah ke arah Tom.",
+   "gender": "die",
+   "plural": "die Schauen"
   },
   {
    "front": "Spaß",
@@ -3872,7 +4651,12 @@
    "level": "A1",
    "topic": "culture-arts",
    "id": "de-a1-general-1-0049",
-   "readingId": "sypas"
+   "readingId": "dea sypas",
+   "exampleDe": "Ich mache Spaß.",
+   "exampleEn": "I am joking.",
+   "exampleId": "Aku bercanda.",
+   "gender": "der",
+   "plural": "die Späße"
   },
   {
    "front": "Party",
@@ -3885,7 +4669,11 @@
    "level": "A1",
    "topic": "culture-arts",
    "id": "de-a1-general-2-0002",
-   "readingId": "pa-ti"
+   "readingId": "di pa-ti",
+   "exampleDe": "Wir haben auf der Party verschiedenste Spiele gespielt.",
+   "exampleId": "Kita memainkan banyak permainan berbeda di pesta itu.",
+   "gender": "die",
+   "plural": "die Partys"
   },
   {
    "front": "glauben",
@@ -3898,7 +4686,10 @@
    "level": "A1",
    "topic": "religion-mythology",
    "id": "de-a1-verbs-basic-0034",
-   "readingId": "glau-bên"
+   "readingId": "glau-bên",
+   "exampleDe": "Ich glaube kaum.",
+   "exampleEn": "I hardly think so.",
+   "exampleId": "Sepertinya tidak."
   },
   {
    "front": "Gott",
@@ -3911,7 +4702,11 @@
    "level": "A1",
    "topic": "religion-mythology",
    "id": "de-a1-general-1-0012",
-   "readingId": "got"
+   "readingId": "dea got",
+   "exampleDe": "Es gibt keinen Gott außer Allah. Mohammed ist Allahs Gesandter.",
+   "exampleId": "Tidak ada tuhan selain Allah. Muhammad adalah utusan Allah.",
+   "gender": "der",
+   "plural": "die Götter"
   },
   {
    "front": "Glaube",
@@ -3924,7 +4719,11 @@
    "level": "A1",
    "topic": "religion-mythology",
    "id": "de-a1-general-1-0013",
-   "readingId": "glau-bê"
+   "readingId": "dea glau-bê",
+   "exampleDe": "Glaube mir doch!",
+   "exampleEn": "Believe you me.",
+   "gender": "der",
+   "plural": "die Glauben"
   },
   {
    "front": "Teufel",
@@ -3937,7 +4736,12 @@
    "level": "A1",
    "topic": "religion-mythology",
    "id": "de-a1-general-1-0038",
-   "readingId": "toi-fêl"
+   "readingId": "dea toi-fêl",
+   "exampleDe": "Was zum Teufel ist das?",
+   "exampleEn": "What the hell is this?",
+   "exampleId": "Apa-apaan ini?",
+   "gender": "der",
+   "plural": "die Teufel"
   },
   {
    "front": "Hölle",
@@ -3950,7 +4754,12 @@
    "level": "A1",
    "topic": "religion-mythology",
    "id": "de-a1-general-1-0073",
-   "readingId": "heo-lê"
+   "readingId": "di heo-lê",
+   "exampleDe": "Willkommen in der Hölle!",
+   "exampleEn": "Welcome to hell!",
+   "exampleId": "Selamat datang di neraka!",
+   "gender": "die",
+   "plural": "die Höllen"
   },
   {
    "front": "töten",
@@ -3963,7 +4772,10 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-verbs-basic-0043",
-   "readingId": "teo-tên"
+   "readingId": "teo-tên",
+   "exampleDe": "Ich töte dich.",
+   "exampleEn": "I'll kill you.",
+   "exampleId": "Aku akan membunuhmu."
   },
   {
    "front": "retten",
@@ -3976,7 +4788,10 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-verbs-basic-0061",
-   "readingId": "re-tên"
+   "readingId": "re-tên",
+   "exampleDe": "Tom rettete Maria.",
+   "exampleEn": "Tom rescued Mary.",
+   "exampleId": "Tom menyelamatkan Mary."
   },
   {
    "front": "recht",
@@ -3990,7 +4805,10 @@
    "topic": "law-crime",
    "id": "de-a1-adjectives-basic-0023",
    "reviewedSenses": true,
-   "readingId": "reht"
+   "readingId": "reht",
+   "exampleDe": "Ja, du hast recht.",
+   "exampleEn": "Yes, you're right.",
+   "exampleId": "Iya, kamu benar."
   },
   {
    "front": "Fall",
@@ -4003,7 +4821,12 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-general-1-0031",
-   "readingId": "fal"
+   "readingId": "dea fal",
+   "exampleDe": "Das ist eine Falle!",
+   "exampleEn": "It's a trap!",
+   "exampleId": "Ini jebakan!",
+   "gender": "der",
+   "plural": "die Fälle"
   },
   {
    "front": "Opfer",
@@ -4016,7 +4839,12 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-general-2-0013",
-   "readingId": "o-pfa"
+   "readingId": "das o-pfa",
+   "exampleDe": "Blasphemie ist ein Verbrechen ohne Opfer.",
+   "exampleEn": "Blasphemy is a victimless crime.",
+   "exampleId": "Penghujatan adalah kejahatan tanpa korban.",
+   "gender": "das",
+   "plural": "die Opfer"
   },
   {
    "front": "Polizei",
@@ -4029,7 +4857,12 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-general-2-0027",
-   "readingId": "po-li-tsai"
+   "readingId": "di po-li-tsai",
+   "exampleDe": "Die Polizei verhaftete drei Männer.",
+   "exampleEn": "The police arrested three men.",
+   "exampleId": "Polisi menangkap tiga orang pria.",
+   "gender": "die",
+   "plural": "die Polizeien"
   },
   {
    "front": "Gefängnis",
@@ -4042,7 +4875,12 @@
    "level": "A1",
    "topic": "law-crime",
    "id": "de-a1-general-2-0039",
-   "readingId": "gê-feng-nis"
+   "readingId": "das gê-feng-nis",
+   "exampleDe": "Die Bösen sind im Gefängnis.",
+   "exampleEn": "The bad people are in prison.",
+   "exampleId": "Orang-orang jahat ada di penjara.",
+   "gender": "das",
+   "plural": "die Gefängnisse"
   },
   {
    "front": "Krieg",
@@ -4055,7 +4893,12 @@
    "level": "A1",
    "topic": "conflict-military",
    "id": "de-a1-general-1-0055",
-   "readingId": "krik"
+   "readingId": "dea krik",
+   "exampleDe": "Wir brauchen keinen Krieg.",
+   "exampleEn": "We don't need war.",
+   "exampleId": "Kita tidak butuh perang.",
+   "gender": "der",
+   "plural": "die Kriege"
   },
   {
    "front": "Waffe",
@@ -4068,7 +4911,12 @@
    "level": "A1",
    "topic": "conflict-military",
    "id": "de-a1-general-1-0061",
-   "readingId": "wa-fê"
+   "readingId": "di wa-fê",
+   "exampleDe": "Eine Waffe könnte gelegen kommen.",
+   "exampleEn": "A gun might come in handy.",
+   "exampleId": "Pistol mungkin akan berguna.",
+   "gender": "die",
+   "plural": "die Waffen"
   },
   {
    "front": "Macht",
@@ -4081,7 +4929,12 @@
    "level": "A1",
    "topic": "society-politics",
    "id": "de-a1-general-1-0011",
-   "readingId": "makht"
+   "readingId": "di makht",
+   "exampleDe": "Macht ihr Witze?",
+   "exampleEn": "Are you joking?",
+   "exampleId": "Apa kau bercanda?",
+   "gender": "die",
+   "plural": "die Mächte"
   },
   {
    "front": "Wahl",
@@ -4094,7 +4947,12 @@
    "level": "A1",
    "topic": "society-politics",
    "id": "de-a1-general-2-0003",
-   "readingId": "wal"
+   "readingId": "di wal",
+   "exampleDe": "Bist du heute schon zur Wahl gegangen?",
+   "exampleEn": "Have you already gone to the polls today?",
+   "exampleId": "Apakah Anda sudah pergi ke tempat pemungutan suara?",
+   "gender": "die",
+   "plural": "die Wahlen"
   },
   {
    "front": "König",
@@ -4107,7 +4965,12 @@
    "level": "A1",
    "topic": "society-politics",
    "id": "de-a1-general-2-0029",
-   "readingId": "keo-nih"
+   "readingId": "dea keo-nih",
+   "exampleDe": "Wenn ich groß bin, will ich ein König sein.",
+   "exampleEn": "When I grow up, I want to be a king.",
+   "exampleId": "Saat aku dewasa, aku ingin menjadi raja.",
+   "gender": "der",
+   "plural": "die Könige"
   },
   {
    "front": "Ordnung",
@@ -4120,7 +4983,12 @@
    "level": "A1",
    "topic": "society-politics",
    "id": "de-a1-general-2-0036",
-   "readingId": "ord-nung"
+   "readingId": "di ord-nung",
+   "exampleDe": "Alles in Ordnung.",
+   "exampleEn": "Everything is all right.",
+   "exampleId": "Semuanya baik-baik saja.",
+   "gender": "die",
+   "plural": "die Ordnungen"
   },
   {
    "front": "das Handy",
@@ -4135,7 +5003,10 @@
    "gender": "das",
    "plural": "die Handys",
    "id": "de-a1-home-daily-0015",
-   "readingId": "das hen-di"
+   "readingId": "das hen-di",
+   "exampleDe": "Toms Handy klingelte.",
+   "exampleEn": "Tom's cell phone rang.",
+   "exampleId": "Ponsel Tom berdering."
   },
   {
    "front": "der Computer",
@@ -4150,7 +5021,10 @@
    "gender": "der",
    "plural": "die Computer",
    "id": "de-a1-general-1-0001",
-   "readingId": "dea komp-yu-ta"
+   "readingId": "dea komp-yu-ta",
+   "exampleDe": "Er hat zwei Computer.",
+   "exampleEn": "He has two computers.",
+   "exampleId": "Dia punya dua komputer."
   },
   {
    "front": "Telefon",
@@ -4163,7 +5037,12 @@
    "level": "A1",
    "topic": "media-tech",
    "id": "de-a1-general-1-0065",
-   "readingId": "te-lê-fon"
+   "readingId": "das te-lê-fon",
+   "exampleDe": "Das Telefon ist rot.",
+   "exampleEn": "The telephone is red.",
+   "exampleId": "Telepon itu merah.",
+   "gender": "das",
+   "plural": "die Telefone"
   },
   {
    "front": "Nachricht",
@@ -4176,7 +5055,11 @@
    "level": "A1",
    "topic": "media-tech",
    "id": "de-a1-general-2-0009",
-   "readingId": "nakh-riht"
+   "readingId": "di nakh-riht",
+   "exampleDe": "Ich schreibe gerade eine Nachricht an Tom.",
+   "exampleId": "Saya sedang menulis pesan kepada Tom.",
+   "gender": "die",
+   "plural": "die Nachrichten"
   },
   {
    "front": "spielen",
@@ -4189,7 +5072,10 @@
    "level": "A1",
    "topic": "sports-hobby",
    "id": "de-a1-verbs-basic-0014",
-   "readingId": "sypi-lên"
+   "readingId": "sypi-lên",
+   "exampleDe": "Ich will spielen.",
+   "exampleEn": "I want to play.",
+   "exampleId": "Saya ingin main."
   },
   {
    "front": "verlieren",
@@ -4202,7 +5088,10 @@
    "level": "A1",
    "topic": "sports-hobby",
    "id": "de-a1-verbs-basic-0067",
-   "readingId": "fea-li-rên"
+   "readingId": "fea-li-rên",
+   "exampleDe": "Ich glaube, ich verliere.",
+   "exampleEn": "I think I'm losing.",
+   "exampleId": "Sepertinya aku akan kalah."
   },
   {
    "front": "Spiel",
@@ -4215,7 +5104,11 @@
    "level": "A1",
    "topic": "sports-hobby",
    "id": "de-a1-general-1-0053",
-   "readingId": "sypil"
+   "readingId": "das sypil",
+   "exampleDe": "Wir haben auf der Party verschiedenste Spiele gespielt.",
+   "exampleId": "Kita memainkan banyak permainan berbeda di pesta itu.",
+   "gender": "das",
+   "plural": "die Spiele"
   },
   {
    "front": "leider",
@@ -4228,7 +5121,10 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-function-words-2-0013",
-   "readingId": "lai-da"
+   "readingId": "lai-da",
+   "exampleDe": "Leider regnete es.",
+   "exampleEn": "Unfortunately, it rained.",
+   "exampleId": "Sayang sekali hujan."
   },
   {
    "front": "denken",
@@ -4242,7 +5138,10 @@
    "topic": "emotions-opinion",
    "id": "de-a1-verbs-basic-0039",
    "reviewedSenses": true,
-   "readingId": "deng-kên"
+   "readingId": "deng-kên",
+   "exampleDe": "Was denkt Tom darüber?",
+   "exampleEn": "What does Tom think about it?",
+   "exampleId": "Apa yang Tom rasakan tentang hal itu?"
   },
   {
    "front": "sorgen",
@@ -4255,7 +5154,10 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-verbs-basic-0047",
-   "readingId": "zor-gên"
+   "readingId": "zor-gên",
+   "exampleDe": "Sie sorgt sich um deine Sicherheit.",
+   "exampleEn": "She's worried about your safety.",
+   "exampleId": "Dia khawatir akan keselamatanmu."
   },
   {
    "front": "gefallen",
@@ -4268,7 +5170,10 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-verbs-basic-0052",
-   "readingId": "gê-fa-lên"
+   "readingId": "gê-fa-lên",
+   "exampleDe": "Mir gefällt ihr Auto.",
+   "exampleEn": "I like her car.",
+   "exampleId": "Aku suka mobilnya."
   },
   {
    "front": "erinnern",
@@ -4281,7 +5186,9 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-verbs-basic-0066",
-   "readingId": "ea-i-nan"
+   "readingId": "ea-i-nan",
+   "exampleDe": "Sie erinnert sich noch an mich.",
+   "exampleId": "Dia masih mengingatku."
   },
   {
    "front": "glücklich",
@@ -4294,7 +5201,10 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-adjectives-basic-0011",
-   "readingId": "gliuk-lih"
+   "readingId": "gliuk-lih",
+   "exampleDe": "Ich bin glücklich, wenn ich lese.",
+   "exampleEn": "Reading makes me happy.",
+   "exampleId": "Saya senang ketika saya membaca."
   },
   {
    "front": "ernst",
@@ -4308,7 +5218,10 @@
    "topic": "emotions-opinion",
    "id": "de-a1-adjectives-basic-0043",
    "reviewedSenses": true,
-   "readingId": "ernst"
+   "readingId": "ernst",
+   "exampleDe": "Ich meine es ernst.",
+   "exampleEn": "I'm not bluffing.",
+   "exampleId": "Aku tidak sedang menggertakmu."
   },
   {
    "front": "ehrlich",
@@ -4321,7 +5234,10 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-adjectives-basic-0047",
-   "readingId": "ea-lih"
+   "readingId": "ea-lih",
+   "exampleDe": "Er ist ehrlich.",
+   "exampleEn": "He is honest.",
+   "exampleId": "Dia jujur."
   },
   {
    "front": "froh",
@@ -4334,7 +5250,10 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-adjectives-basic-0057",
-   "readingId": "fro"
+   "readingId": "fro",
+   "exampleDe": "Ich bin froh.",
+   "exampleEn": "I am happy.",
+   "exampleId": "Saya senang."
   },
   {
    "front": "Hast",
@@ -4347,7 +5266,11 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0004",
-   "readingId": "hast"
+   "readingId": "di hast",
+   "exampleDe": "Hast du keine Angst?",
+   "exampleEn": "Aren't you scared?",
+   "exampleId": "Kamu tidak takut?",
+   "gender": "die"
   },
   {
    "front": "Würde",
@@ -4360,7 +5283,11 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0008",
-   "readingId": "wiur-dê"
+   "readingId": "di wiur-dê",
+   "exampleDe": "Würde Tom das mögen?",
+   "exampleEn": "Would Tom like that?",
+   "gender": "die",
+   "plural": "die Würden"
   },
   {
    "front": "Leid",
@@ -4373,7 +5300,10 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0010",
-   "readingId": "lait"
+   "readingId": "das lait",
+   "exampleDe": "Keine Liebe ohne Leid.",
+   "exampleEn": "Love without sorrow cannot be.",
+   "gender": "das"
   },
   {
    "front": "Liebe",
@@ -4386,7 +5316,12 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0015",
-   "readingId": "li-bê"
+   "readingId": "di li-bê",
+   "exampleDe": "Er ist meine erste Liebe.",
+   "exampleEn": "He's my first love.",
+   "exampleId": "Dialah cinta pertamaku.",
+   "gender": "die",
+   "plural": "die Lieben"
   },
   {
    "front": "Glück",
@@ -4399,7 +5334,11 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0033",
-   "readingId": "gliuk"
+   "readingId": "das gliuk",
+   "exampleDe": "Dieses Amulett bringt Glück.",
+   "exampleEn": "This amulet brings luck.",
+   "exampleId": "Jimat ini membawa keberuntungan.",
+   "gender": "das"
   },
   {
    "front": "Ruhe",
@@ -4412,7 +5351,11 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0041",
-   "readingId": "ru-ê"
+   "readingId": "di ru-ê",
+   "exampleDe": "Lass mich in Ruhe!",
+   "exampleEn": "Leave me alone!",
+   "exampleId": "Tinggalkan aku sendiri.",
+   "gender": "die"
   },
   {
    "front": "Sorge",
@@ -4425,7 +5368,12 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0058",
-   "readingId": "zor-gê"
+   "readingId": "di zor-gê",
+   "exampleDe": "Mach dir keine Sorgen.",
+   "exampleEn": "Don't worry about it!",
+   "exampleId": "Jangan khawatir",
+   "gender": "die",
+   "plural": "die Sorgen"
   },
   {
    "front": "Ruf",
@@ -4438,7 +5386,12 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-1-0070",
-   "readingId": "ruf"
+   "readingId": "dea ruf",
+   "exampleDe": "Ruf meinen Mann an.",
+   "exampleEn": "Call my husband.",
+   "exampleId": "Panggil suamiku.",
+   "gender": "der",
+   "plural": "die Rufe"
   },
   {
    "front": "Vertrauen",
@@ -4451,7 +5404,11 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-2-0004",
-   "readingId": "fea-trau-ên"
+   "readingId": "das fea-trau-ên",
+   "exampleDe": "Vertrauen Sie mir!",
+   "exampleEn": "Trust me.",
+   "exampleId": "Percaya padaku.",
+   "gender": "das"
   },
   {
    "front": "Gefühl",
@@ -4464,7 +5421,11 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-2-0005",
-   "readingId": "gê-fiul"
+   "readingId": "das gê-fiul",
+   "exampleDe": "Hast du Gefühle für Tom?",
+   "exampleId": "Apakah kamu memiliki perasaan terhadap Tom?",
+   "gender": "das",
+   "plural": "die Gefühle"
   },
   {
    "front": "allein",
@@ -4477,7 +5438,10 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-2-0026",
-   "readingId": "a-lain"
+   "readingId": "a-lain",
+   "exampleDe": "Warum bin ich allein?",
+   "exampleEn": "Why am I alone?",
+   "exampleId": "Kenapa aku sendirian?"
   },
   {
    "front": "Ahnung",
@@ -4490,7 +5454,12 @@
    "level": "A1",
    "topic": "emotions-opinion",
    "id": "de-a1-general-2-0037",
-   "readingId": "a-nung"
+   "readingId": "di a-nung",
+   "exampleDe": "Ich habe keine Ahnung, wie man diesen Computer benutzt.",
+   "exampleEn": "I have no idea how to use this computer.",
+   "exampleId": "Saya tidak mengetahui cara penggunaan komputer ini.",
+   "gender": "die",
+   "plural": "die Ahnungen"
   },
   {
    "front": "Ich verstehe nicht",
@@ -4529,7 +5498,12 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-greetings-0032",
-   "readingId": "na-mê"
+   "readingId": "dea na-mê",
+   "exampleDe": "Wie ist Ihr Name?",
+   "exampleEn": "What is your name?",
+   "exampleId": "Siapa nama Anda?",
+   "gender": "der",
+   "plural": "die Namen"
   },
   {
    "front": "Scheiße",
@@ -4543,7 +5517,8 @@
    "topic": "language-communication",
    "id": "de-a1-function-words-1-0065",
    "reviewedSenses": true,
-   "readingId": "syai-sê"
+   "readingId": "syai-sê",
+   "exampleDe": "Die Scheiße stinkt fürchterlich."
   },
   {
    "front": "laut",
@@ -4557,7 +5532,9 @@
    "topic": "language-communication",
    "id": "de-a1-function-words-2-0021",
    "reviewedSenses": true,
-   "readingId": "laut"
+   "readingId": "laut",
+   "exampleDe": "Du sprichst sehr laut.",
+   "exampleId": "Anda berbicara dengan sangat keras."
   },
   {
    "front": "sprechen",
@@ -4588,7 +5565,10 @@
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0007",
    "reviewedSenses": true,
-   "readingId": "syrai-bên"
+   "readingId": "syrai-bên",
+   "exampleDe": "Ich schreibe ein Buch.",
+   "exampleEn": "I'm writing a book.",
+   "exampleId": "Aku menulis buku."
   },
   {
    "front": "verstehen",
@@ -4601,7 +5581,10 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0010",
-   "readingId": "fea-syte-ên"
+   "readingId": "fea-syte-ên",
+   "exampleDe": "Ich verstehe nicht.",
+   "exampleEn": "I do not understand.",
+   "exampleId": "Saya tidak mengerti."
   },
   {
    "front": "sagen",
@@ -4614,7 +5597,10 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0020",
-   "readingId": "za-gên"
+   "readingId": "za-gên",
+   "exampleDe": "Was sagt deine Mutter?",
+   "exampleEn": "What does your mom say?",
+   "exampleId": "Ibumu bilang apa?"
   },
   {
    "front": "meinen",
@@ -4627,7 +5613,10 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0027",
-   "readingId": "mai-nên"
+   "readingId": "mai-nên",
+   "exampleDe": "Wo ist mein Tee?",
+   "exampleEn": "Where's my tea?",
+   "exampleId": "Tehku di mana?"
   },
   {
    "front": "reden",
@@ -4640,7 +5629,10 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0028",
-   "readingId": "re-dên"
+   "readingId": "re-dên",
+   "exampleDe": "Wir müssen mit Ihnen reden.",
+   "exampleEn": "We have to talk to you.",
+   "exampleId": "Kami perlu bicara dengan Anda."
   },
   {
    "front": "fragen",
@@ -4653,7 +5645,9 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0036",
-   "readingId": "fra-gên"
+   "readingId": "fra-gên",
+   "exampleDe": "Ich frage nicht ihn, sondern dich.",
+   "exampleId": "Aku bukan menanyai dia, tapi kamu!"
   },
   {
    "front": "erzählen",
@@ -4666,7 +5660,10 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0055",
-   "readingId": "ea-tse-lên"
+   "readingId": "ea-tse-lên",
+   "exampleDe": "Tom erzählt Lügen.",
+   "exampleEn": "Tom tells lies.",
+   "exampleId": "Tom berbohong."
   },
   {
    "front": "nennen",
@@ -4679,7 +5676,10 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0064",
-   "readingId": "ne-nên"
+   "readingId": "ne-nên",
+   "exampleDe": "Ich will keine Namen nennen.",
+   "exampleEn": "I don't want to name names.",
+   "exampleId": "Aku tidak butuh nama apapun."
   },
   {
    "front": "rufen",
@@ -4692,7 +5692,10 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0071",
-   "readingId": "ru-fên"
+   "readingId": "ru-fên",
+   "exampleDe": "Ruft einen Krankenwagen.",
+   "exampleEn": "Call an ambulance.",
+   "exampleId": "Panggil ambulan！"
   },
   {
    "front": "erklären",
@@ -4705,7 +5708,9 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-verbs-basic-0073",
-   "readingId": "ea-kle-rên"
+   "readingId": "ea-kle-rên",
+   "exampleDe": "Frauen können alles erklären.",
+   "exampleId": "Perempuan bisa menjelaskan semuanya."
   },
   {
    "front": "die Frage",
@@ -4738,7 +5743,10 @@
    "gender": "die",
    "plural": "die Antworten",
    "id": "de-a1-general-1-0003",
-   "readingId": "di an-twort"
+   "readingId": "di an-twort",
+   "exampleDe": "Ihre Antwort ist richtig.",
+   "exampleEn": "Her answer is correct.",
+   "exampleId": "Jawabannya benar."
   },
   {
    "front": "Idee",
@@ -4751,7 +5759,12 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-general-1-0036",
-   "readingId": "i-de"
+   "readingId": "di i-de",
+   "exampleDe": "Ist das eine gute Idee?",
+   "exampleEn": "Is that a good idea?",
+   "exampleId": "Apakah ini ide yang bagus?",
+   "gender": "die",
+   "plural": "die Ideen"
   },
   {
    "front": "Wort",
@@ -4764,7 +5777,12 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-general-1-0056",
-   "readingId": "wort"
+   "readingId": "das wort",
+   "exampleDe": "Ich gebe dir mein Wort.",
+   "exampleEn": "I give you my word.",
+   "exampleId": "Aku berikan kamu kataku.",
+   "gender": "das",
+   "plural": "die Wörter"
   },
   {
    "front": "Rede",
@@ -4777,7 +5795,11 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-general-1-0062",
-   "readingId": "re-dê"
+   "readingId": "di re-dê",
+   "exampleDe": "Ich hätte gerne jemanden zum Reden.",
+   "exampleId": "Saya perlu seseorang untuk diajak bicara.",
+   "gender": "die",
+   "plural": "die Reden"
   },
   {
    "front": "Scheiß",
@@ -4790,7 +5812,11 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-general-1-0072",
-   "readingId": "syais"
+   "readingId": "dea syais",
+   "exampleDe": "Ich halte diesen Scheiß nicht mehr aus.",
+   "exampleEn": "I can't take this shit anymore.",
+   "exampleId": "Aku sudah tidak tahan dengan hal ini.",
+   "gender": "der"
   },
   {
    "front": "Mist",
@@ -4803,7 +5829,10 @@
    "level": "A1",
    "topic": "language-communication",
    "id": "de-a1-general-2-0014",
-   "readingId": "mist"
+   "readingId": "dea mist",
+   "exampleDe": "Das ist Mist!",
+   "exampleEn": "That's shit!",
+   "gender": "der"
   },
   {
    "front": "das Buch",
@@ -4819,7 +5848,10 @@
    "plural": "die Bücher",
    "ipa": "[buːx]",
    "id": "de-a1-home-daily-0013",
-   "readingId": "das bukh"
+   "readingId": "das bukh",
+   "exampleDe": "Lies ein Buch!",
+   "exampleEn": "Read a book!",
+   "exampleId": "Bacalah buku!"
   },
   {
    "front": "Sache",
@@ -4832,7 +5864,12 @@
    "level": "A1",
    "topic": "objects-tech",
    "id": "de-a1-general-1-0027",
-   "readingId": "za-khê"
+   "readingId": "di za-khê",
+   "exampleDe": "Wo hat sie diese Sachen gekauft?",
+   "exampleEn": "Where did she buy this stuff?",
+   "exampleId": "Di mana dia membeli barang-barang ini?",
+   "gender": "die",
+   "plural": "die Sachen"
   },
   {
    "front": "Etwas",
@@ -4845,7 +5882,11 @@
    "level": "A1",
    "topic": "objects-tech",
    "id": "de-a1-general-2-0033",
-   "readingId": "et-was"
+   "readingId": "das et-was",
+   "exampleDe": "Etwas Kleines kann etwas Großes hervorrufen.",
+   "exampleId": "Sesuatu yang kecil dapat menyebabkan hal yang besar.",
+   "gender": "das",
+   "plural": "die Etwas"
   },
   {
    "front": "Ding",
@@ -4858,7 +5899,11 @@
    "level": "A1",
    "topic": "objects-tech",
    "id": "de-a1-general-2-0034",
-   "readingId": "ding"
+   "readingId": "das ding",
+   "exampleDe": "Im Haus gibt es viele teure Dinge.",
+   "exampleId": "Di rumah itu terdapat banyak barang mahal.",
+   "gender": "das",
+   "plural": "die Dinge"
   },
   {
    "front": "das Wasser",
@@ -4890,7 +5935,12 @@
    "level": "A1",
    "topic": "materials-measures",
    "id": "de-a1-general-1-0057",
-   "readingId": "tail"
+   "readingId": "das tail",
+   "exampleDe": "Jetzt bist du Teil meines Lebens.",
+   "exampleEn": "Now you're part of my life.",
+   "exampleId": "Sekarang kamu adalah bagian dari hidupku.",
+   "gender": "das",
+   "plural": "die Teile"
   },
   {
    "front": "Menge",
@@ -4903,7 +5953,12 @@
    "level": "A1",
    "topic": "materials-measures",
    "id": "de-a1-general-1-0069",
-   "readingId": "me-ngê"
+   "readingId": "di me-ngê",
+   "exampleDe": "Es gab jede Menge Autos.",
+   "exampleEn": "There were lots of cars.",
+   "exampleId": "Ada banyak mobil.",
+   "gender": "die",
+   "plural": "die Mengen"
   },
   {
    "front": "Stück",
@@ -4916,7 +5971,12 @@
    "level": "A1",
    "topic": "materials-measures",
    "id": "de-a1-general-2-0006",
-   "readingId": "sytiuk"
+   "readingId": "das sytiuk",
+   "exampleDe": "Ich aß drei Stücke Kuchen.",
+   "exampleEn": "I ate three pieces of cake.",
+   "exampleId": "Saya memakan tiga potong kue.",
+   "gender": "das",
+   "plural": "die Stücke"
   },
   {
    "front": "Herr",
@@ -4929,7 +5989,11 @@
    "level": "A1",
    "topic": "persons",
    "id": "de-a1-general-1-0023",
-   "readingId": "her"
+   "readingId": "dea her",
+   "exampleDe": "Darf ich mit Herrn Sato sprechen?",
+   "exampleId": "Bolehkah aku berbicara dengan Tn. Sato?",
+   "gender": "der",
+   "plural": "die Herren"
   },
   {
    "front": "Kerl",
@@ -4942,7 +6006,12 @@
    "level": "A1",
    "topic": "persons",
    "id": "de-a1-general-1-0037",
-   "readingId": "kerl"
+   "readingId": "dea kerl",
+   "exampleDe": "Tom ist ein guter Kerl.",
+   "exampleEn": "Tom is a good guy.",
+   "exampleId": "Tom adalah pria yang baik.",
+   "gender": "der",
+   "plural": "die Kerle"
   },
   {
    "front": "Miss",
@@ -4955,7 +6024,11 @@
    "level": "A1",
    "topic": "persons",
    "id": "de-a1-general-1-0045",
-   "readingId": "mis"
+   "readingId": "di mis",
+   "exampleDe": "Sie gewann die Wahl zur Miss America.",
+   "exampleEn": "She won the Miss America pageant.",
+   "gender": "die",
+   "plural": "die Misses"
   },
   {
    "front": "Alter",
@@ -4968,7 +6041,12 @@
    "level": "A1",
    "topic": "persons",
    "id": "de-a1-general-1-0047",
-   "readingId": "al-ta"
+   "readingId": "dea al-ta",
+   "exampleDe": "Die Jungen müssen von den Alten lernen.",
+   "exampleEn": "The young people must learn from the elders.",
+   "exampleId": "Yang muda harus belajar dari yang tua.",
+   "gender": "der",
+   "plural": "die Alten"
   },
   {
    "front": "Kumpel",
@@ -4981,7 +6059,11 @@
    "level": "A1",
    "topic": "persons",
    "id": "de-a1-general-1-0078",
-   "readingId": "kum-pêl"
+   "readingId": "dea kum-pêl",
+   "exampleDe": "Nur zu, Kumpel!",
+   "exampleEn": "Go for it, mate.",
+   "gender": "der",
+   "plural": "die Kumpel"
   },
   {
    "front": "Ja",
@@ -4995,7 +6077,8 @@
    "topic": "function-words-1",
    "id": "de-a1-greetings-0011",
    "reviewedSenses": true,
-   "readingId": "ya"
+   "readingId": "ya",
+   "exampleDe": "Ein endgültiges Ja steht noch aus."
   },
   {
    "front": "Nein",
@@ -5009,7 +6092,8 @@
    "topic": "function-words-1",
    "id": "de-a1-greetings-0012",
    "reviewedSenses": true,
-   "readingId": "nain"
+   "readingId": "nain",
+   "exampleDe": "Durch das Nein des Präsidenten ist der Gesetzentwurf gescheitert."
   },
   {
    "front": "wie",
@@ -5022,7 +6106,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-greetings-0018",
-   "readingId": "wi"
+   "readingId": "wi",
+   "exampleDe": "Wie heiße ich?",
+   "exampleEn": "What is my name?",
+   "exampleId": "Siapa namaku?"
   },
   {
    "front": "auf",
@@ -5036,7 +6123,10 @@
    "topic": "function-words-1",
    "id": "de-a1-greetings-0019",
    "reviewedSenses": true,
-   "readingId": "auf"
+   "readingId": "auf",
+   "exampleDe": "Alle warten auf dich.",
+   "exampleEn": "Everybody is waiting for you.",
+   "exampleId": "Semua orang menunggumu."
   },
   {
    "front": "doch",
@@ -5050,7 +6140,10 @@
    "topic": "function-words-1",
    "id": "de-a1-greetings-0022",
    "reviewedSenses": true,
-   "readingId": "dokh"
+   "readingId": "dokh",
+   "exampleDe": "Draußen ist es kalt, doch im Hause ist es warm.",
+   "exampleEn": "It's cold outside, but warm in the house.",
+   "exampleId": "Di luar dingin, tetapi di dalam rumah hangat."
   },
   {
    "front": "vielleicht",
@@ -5063,7 +6156,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-greetings-0027",
-   "readingId": "fi-laiht"
+   "readingId": "fi-laiht",
+   "exampleDe": "Vielleicht kommt Tom heute.",
+   "exampleEn": "Maybe Tom will come today.",
+   "exampleId": "Mungkin Tom datang hari ini."
   },
   {
    "front": "bis",
@@ -5076,7 +6172,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-greetings-0028",
-   "readingId": "bis"
+   "readingId": "bis",
+   "exampleDe": "Er hat bis 100 gezählt.",
+   "exampleId": "Dia menghitung hingga seratus."
   },
   {
    "front": "vor",
@@ -5089,7 +6187,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-directions-places-0012",
-   "readingId": "foa"
+   "readingId": "foa",
+   "exampleDe": "Vor dem Essen?",
+   "exampleEn": "Before eating?",
+   "exampleId": "Sebelum makan?"
   },
   {
    "front": "über",
@@ -5102,7 +6203,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-directions-places-0013",
-   "readingId": "iu-ba"
+   "readingId": "iu-ba",
+   "exampleDe": "Ich habe viel über dich gehört.",
+   "exampleEn": "I have heard quite a lot about you.",
+   "exampleId": "Aku telah mendengar banyak tentangmu."
   },
   {
    "front": "unter",
@@ -5115,7 +6219,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-directions-places-0018",
-   "readingId": "un-ta"
+   "readingId": "un-ta",
+   "exampleDe": "Unter dem Schreibtisch ist eine Katze.",
+   "exampleEn": "There is a cat under the desk.",
+   "exampleId": "Ada kucing di bawah meja."
   },
   {
    "front": "hinter",
@@ -5128,7 +6235,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-directions-places-0021",
-   "readingId": "hin-ta"
+   "readingId": "hin-ta",
+   "exampleDe": "Mach die Tür hinter Dir zu.",
+   "exampleEn": "Close the door behind you.",
+   "exampleId": "Tolong tutup pintu di belakangmu."
   },
   {
    "front": "zwischen",
@@ -5141,7 +6251,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-directions-places-0024",
-   "readingId": "tswi-syên"
+   "readingId": "tswi-syên",
+   "exampleDe": "Er ist immer hier zwischen 5 und 6 Uhr.",
+   "exampleEn": "He is always here between 5 and 6 o'clock.",
+   "exampleId": "Dia selalu di sini antara pukul 5 dan 6."
   },
   {
    "front": "Du",
@@ -5154,7 +6267,11 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0002",
-   "readingId": "du"
+   "readingId": "das du",
+   "exampleDe": "Du bist hier.",
+   "exampleEn": "You're here.",
+   "exampleId": "Kamu di sini.",
+   "gender": "das"
   },
   {
    "front": "nicht",
@@ -5167,7 +6284,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0003",
-   "readingId": "niht"
+   "readingId": "niht",
+   "exampleDe": "Ich kann nicht.",
+   "exampleEn": "I can't.",
+   "exampleId": "Aku tidak bisa."
   },
   {
    "front": "die",
@@ -5180,7 +6300,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0004",
-   "readingId": "di"
+   "readingId": "di",
+   "exampleDe": "Mach' die Tür zu!",
+   "exampleEn": "Shut the door!",
+   "exampleId": "Tutup pintu itu!"
   },
   {
    "front": "und",
@@ -5193,7 +6316,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0005",
-   "readingId": "unt"
+   "readingId": "unt",
+   "exampleDe": "Ja und nein.",
+   "exampleEn": "Yes and no.",
+   "exampleId": "Ya dan tidak."
   },
   {
    "front": "der",
@@ -5206,7 +6332,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0006",
-   "readingId": "dea"
+   "readingId": "dea",
+   "exampleDe": "Der Arzt kam.",
+   "exampleEn": "The doctor came.",
+   "exampleId": "Pak Dokter datang."
   },
   {
    "front": "was",
@@ -5219,7 +6348,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0007",
-   "readingId": "was"
+   "readingId": "was",
+   "exampleDe": "Was liest er?",
+   "exampleId": "Apa yang dia baca?"
   },
   {
    "front": "in",
@@ -5232,7 +6363,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0013",
-   "readingId": "in"
+   "readingId": "in",
+   "exampleDe": "Ich bin in Ohio.",
+   "exampleEn": "I'm in Ohio.",
+   "exampleId": "Aku di Ohio."
   },
   {
    "front": "mit",
@@ -5245,7 +6379,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0014",
-   "readingId": "mit"
+   "readingId": "mit",
+   "exampleDe": "Sing mit mir.",
+   "exampleId": "Bernyanyilah bersamaku."
   },
   {
    "front": "dass",
@@ -5258,7 +6394,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0015",
-   "readingId": "das"
+   "readingId": "das",
+   "exampleDe": "Er will, daß du ihm hilfst.",
+   "exampleEn": "He wants you to help him.",
+   "exampleId": "Dia ingin kamu membantunya."
   },
   {
    "front": "aber",
@@ -5271,7 +6410,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0016",
-   "readingId": "a-ba"
+   "readingId": "a-ba",
+   "exampleDe": "Tut mir leid, aber ich muss gehen.",
+   "exampleId": "Maaf, tetapi saya harus pergi."
   },
   {
    "front": "so",
@@ -5285,7 +6426,10 @@
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0017",
    "reviewedSenses": true,
-   "readingId": "zo"
+   "readingId": "zo",
+   "exampleDe": "Sie sind alle so.",
+   "exampleEn": "They're all like that.",
+   "exampleId": "Mereka semua seperti itu."
   },
   {
    "front": "für",
@@ -5298,7 +6442,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0019",
-   "readingId": "fiua"
+   "readingId": "fiua",
+   "exampleDe": "Was hast du für ihn gekauft?",
+   "exampleId": "Apa yang kamu belikan untuknya?"
   },
   {
    "front": "von",
@@ -5311,7 +6457,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0020",
-   "readingId": "fon"
+   "readingId": "fon",
+   "exampleDe": "Hast du von ihnen gehört?",
+   "exampleId": "Sudahkah kamu mendengar tentang mereka?"
   },
   {
    "front": "wenn",
@@ -5324,7 +6472,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0021",
-   "readingId": "wen"
+   "readingId": "wen",
+   "exampleDe": "Wenn es nur die Wahrheit wäre!",
+   "exampleId": "Semoga itu benar."
   },
   {
    "front": "an",
@@ -5338,7 +6488,10 @@
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0022",
    "reviewedSenses": true,
-   "readingId": "an"
+   "readingId": "an",
+   "exampleDe": "Wann fängst du an?",
+   "exampleEn": "When will you start?",
+   "exampleId": "Kapan kamu mulai?"
   },
   {
    "front": "noch",
@@ -5351,7 +6504,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0024",
-   "readingId": "nokh"
+   "readingId": "nokh",
+   "exampleDe": "Er ist noch hier.",
+   "exampleEn": "He is still here.",
+   "exampleId": "Dia masih di sini."
   },
   {
    "front": "auch",
@@ -5364,7 +6520,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0027",
-   "readingId": "aukh"
+   "readingId": "aukh",
+   "exampleDe": "Ich werde auch kommen.",
+   "exampleEn": "I'll come, too.",
+   "exampleId": "Aku akan datang juga."
   },
   {
    "front": "schon",
@@ -5377,7 +6536,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0028",
-   "readingId": "syon"
+   "readingId": "syon",
+   "exampleDe": "Ich glaube schon.",
+   "exampleEn": "I do think so.",
+   "exampleId": "Sepertinya iya."
   },
   {
    "front": "als",
@@ -5390,7 +6552,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0029",
-   "readingId": "als"
+   "readingId": "als",
+   "exampleDe": "Tom ist älter als ich.",
+   "exampleEn": "Tom is older than I am.",
+   "exampleId": "Tom lebih tua daripada aku."
   },
   {
    "front": "aus",
@@ -5403,7 +6568,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0033",
-   "readingId": "aus"
+   "readingId": "aus",
+   "exampleDe": "Tom sieht jung aus.",
+   "exampleEn": "Tom looks young.",
+   "exampleId": "Tom terlihat muda."
   },
   {
    "front": "um",
@@ -5416,7 +6584,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0034",
-   "readingId": "um"
+   "readingId": "um",
+   "exampleDe": "Du kannst ihn um Hilfe bitten.",
+   "exampleEn": "You can ask him for help.",
+   "exampleId": "Kamu bisa meminta bantuan darinya."
   },
   {
    "front": "oder",
@@ -5429,7 +6600,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0035",
-   "readingId": "o-da"
+   "readingId": "o-da",
+   "exampleDe": "Du oder ich?",
+   "exampleEn": "You or I?",
+   "exampleId": "Kamu atau aku?"
   },
   {
    "front": "nach",
@@ -5442,7 +6616,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0036",
-   "readingId": "nakh"
+   "readingId": "nakh",
+   "exampleDe": "Ich gehe nach Paris.",
+   "exampleEn": "I'm going to Paris.",
+   "exampleId": "Aku pergi ke Paris."
   },
   {
    "front": "wo",
@@ -5455,7 +6632,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0037",
-   "readingId": "wo"
+   "readingId": "wo",
+   "exampleDe": "Wo ist er?",
+   "exampleEn": "Where is he?",
+   "exampleId": "Di mana dia?"
   },
   {
    "front": "mehr",
@@ -5468,7 +6648,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0038",
-   "readingId": "mea"
+   "readingId": "mea",
+   "exampleDe": "Ich liebe ihn nicht mehr.",
+   "exampleEn": "I do not love him any longer.",
+   "exampleId": "Aku tidak mencintainya lagi."
   },
   {
    "front": "bei",
@@ -5481,7 +6664,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0039",
-   "readingId": "bai"
+   "readingId": "bai",
+   "exampleDe": "Er arbeitet bei einer Bank.",
+   "exampleEn": "He works for a bank.",
+   "exampleId": "Dia bekerja di sebuah bank."
   },
   {
    "front": "also",
@@ -5494,7 +6680,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0040",
-   "readingId": "al-zo"
+   "readingId": "al-zo",
+   "exampleDe": "Ist es also wahr?",
+   "exampleEn": "Is it really true?",
+   "exampleId": "Menang benar?"
   },
   {
    "front": "warum",
@@ -5507,7 +6696,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0041",
-   "readingId": "wa-rum"
+   "readingId": "wa-rum",
+   "exampleDe": "Warum immer ich?",
+   "exampleEn": "Why always me?",
+   "exampleId": "Kenapa selalu aku?"
   },
   {
    "front": "los",
@@ -5521,7 +6713,10 @@
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0042",
    "reviewedSenses": true,
-   "readingId": "los"
+   "readingId": "los",
+   "exampleDe": "Ich muss los.",
+   "exampleEn": "Well, I have to go now.",
+   "exampleId": "Aku harus pergi."
   },
   {
    "front": "wieder",
@@ -5534,7 +6729,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0043",
-   "readingId": "wi-da"
+   "readingId": "wi-da",
+   "exampleDe": "Ich lerne wieder.",
+   "exampleId": "Saya lagi belajar."
   },
   {
    "front": "denn",
@@ -5547,7 +6744,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0044",
-   "readingId": "den"
+   "readingId": "den",
+   "exampleDe": "Was macht ihr denn am Wochenende?",
+   "exampleEn": "So, what are you doing at the weekend?",
+   "exampleId": "Apa yang kalian lakukan akhir pekan ini?"
   },
   {
    "front": "weil",
@@ -5560,7 +6760,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0046",
-   "readingId": "wail"
+   "readingId": "wail",
+   "exampleDe": "Ich esse, weil ich Hunger habe.",
+   "exampleId": "Aku makan karena aku lapar."
   },
   {
    "front": "damit",
@@ -5574,7 +6776,10 @@
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0047",
    "reviewedSenses": true,
-   "readingId": "da-mit"
+   "readingId": "da-mit",
+   "exampleDe": "Hör auf damit!",
+   "exampleEn": "Come off it!",
+   "exampleId": "Hentikan itu!"
   },
   {
    "front": "nun",
@@ -5587,7 +6792,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0049",
-   "readingId": "nun"
+   "readingId": "nun",
+   "exampleDe": "Ich muss nun weggehen.",
+   "exampleEn": "I have to leave now.",
+   "exampleId": "Saya harus pergi sekarang."
   },
   {
    "front": "zurück",
@@ -5600,7 +6808,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0050",
-   "readingId": "tsu-riuk"
+   "readingId": "tsu-riuk",
+   "exampleDe": "Komme nie mehr zurück!",
+   "exampleId": "Jangan pernah kau kembali."
   },
   {
    "front": "ab",
@@ -5613,7 +6823,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0051",
-   "readingId": "ap"
+   "readingId": "ap",
+   "exampleDe": "Was geht ab?",
+   "exampleEn": "What's up?",
+   "exampleId": "Ada apa?"
   },
   {
    "front": "wohl",
@@ -5627,7 +6840,10 @@
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0052",
    "reviewedSenses": true,
-   "readingId": "wol"
+   "readingId": "wol",
+   "exampleDe": "Ich fühle mich wohl.",
+   "exampleEn": "I feel comfortable.",
+   "exampleId": "Saya merasa nyaman."
   },
   {
    "front": "durch",
@@ -5640,7 +6856,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0053",
-   "readingId": "durh"
+   "readingId": "durh",
+   "exampleDe": "Es ist acht durch.",
+   "exampleEn": "It's past eight.",
+   "exampleId": "Sekarang jam delapan lebih."
   },
   {
    "front": "ob",
@@ -5653,7 +6872,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0054",
-   "readingId": "op"
+   "readingId": "op",
+   "exampleDe": "Er tut so, als ob er schliefe.",
+   "exampleEn": "He pretended to be sleeping.",
+   "exampleId": "Dia pura-pura tidur."
   },
   {
    "front": "wieso",
@@ -5666,7 +6888,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0056",
-   "readingId": "wi-zo"
+   "readingId": "wi-zo",
+   "exampleDe": "Wieso weinst du?",
+   "exampleEn": "Why are you crying?",
+   "exampleId": "mengapa kamu menangis ?"
   },
   {
    "front": "selbst",
@@ -5680,7 +6905,10 @@
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0057",
    "reviewedSenses": true,
-   "readingId": "zelpst"
+   "readingId": "zelpst",
+   "exampleDe": "Er selbst hat es gesagt.",
+   "exampleEn": "He said it himself.",
+   "exampleId": "Dia sendiri yang bilang."
   },
   {
    "front": "ohne",
@@ -5693,7 +6921,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0058",
-   "readingId": "o-nê"
+   "readingId": "o-nê",
+   "exampleDe": "Die Welt wird lächeln, glücklich ohne mich.",
+   "exampleEn": "The world will smile happily without me.",
+   "exampleId": "Dunia akan tersenyum bahagia tanpa diriku."
   },
   {
    "front": "her",
@@ -5706,7 +6937,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0059",
-   "readingId": "hea"
+   "readingId": "hea",
+   "exampleDe": "Tom kam her um uns zu bitten, ihm zu helfen.",
+   "exampleId": "Tom datang kemari untuk meminta kami menolongnya."
   },
   {
    "front": "lange",
@@ -5719,7 +6952,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0060",
-   "readingId": "la-ngê"
+   "readingId": "la-ngê",
+   "exampleDe": "Wie lange ist Tom schon dort?",
+   "exampleId": "Sudah berapa lama Tom di sana?"
   },
   {
    "front": "seit",
@@ -5732,7 +6967,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0061",
-   "readingId": "zait"
+   "readingId": "zait",
+   "exampleDe": "Ich warte schon seit drei Stunden.",
+   "exampleEn": "I've already waited for three hours.",
+   "exampleId": "Aku sudah menunggu selama tiga jam."
   },
   {
    "front": "wegen",
@@ -5745,7 +6983,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0062",
-   "readingId": "we-gên"
+   "readingId": "we-gên",
+   "exampleDe": "Tom ist wegen mir hier.",
+   "exampleEn": "Tom is here because of me.",
+   "exampleId": "Tom berada di sini karena aku."
   },
   {
    "front": "zusammen",
@@ -5758,7 +6999,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0063",
-   "readingId": "tsu-za-mên"
+   "readingId": "tsu-za-mên",
+   "exampleDe": "Wir haben zusammen einen Film angeschaut.",
+   "exampleId": "Kami menonton film bersama."
   },
   {
    "front": "erst",
@@ -5771,7 +7014,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0064",
-   "readingId": "east"
+   "readingId": "east",
+   "exampleDe": "Erst wägen, dann wagen!",
+   "exampleEn": "Look before you leap.",
+   "exampleId": "Berhambakan tangan, bersaksikan mata, berhakimkan hati."
   },
   {
    "front": "gegen",
@@ -5784,7 +7030,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0066",
-   "readingId": "ge-gên"
+   "readingId": "ge-gên",
+   "exampleDe": "Wir sind gegen seinen Plan, eine neue Straße zu bauen.",
+   "exampleId": "Kami bertentangan denga rencananya membangun jalan baru."
   },
   {
    "front": "sonst",
@@ -5797,7 +7045,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0067",
-   "readingId": "zonst"
+   "readingId": "zonst",
+   "exampleDe": "Was weißt du sonst noch über ihn?",
+   "exampleEn": "What else do you know about him?",
+   "exampleId": "Apa lagi yang kamu ketahui tentang dia?"
   },
   {
    "front": "sofort",
@@ -5810,7 +7061,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0068",
-   "readingId": "zo-fort"
+   "readingId": "zo-fort",
+   "exampleDe": "Mach’s sofort!",
+   "exampleEn": "Do it immediately.",
+   "exampleId": "Lakukan sekaligus."
   },
   {
    "front": "wann",
@@ -5823,7 +7077,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0069",
-   "readingId": "wan"
+   "readingId": "wan",
+   "exampleDe": "Wann kommst du?",
+   "exampleEn": "When do you come?",
+   "exampleId": "Kapan kamu datang?"
   },
   {
    "front": "halt",
@@ -5837,7 +7094,10 @@
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0070",
    "reviewedSenses": true,
-   "readingId": "halt"
+   "readingId": "halt",
+   "exampleDe": "Halt den Mund!",
+   "exampleEn": "Shut your mouth.",
+   "exampleId": "Diam!"
   },
   {
    "front": "dank",
@@ -5851,7 +7111,9 @@
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0071",
    "reviewedSenses": true,
-   "readingId": "dangk"
+   "readingId": "dangk",
+   "exampleDe": "Danke für was?",
+   "exampleId": "Terima kasih untuk apa?"
   },
   {
    "front": "lieber",
@@ -5864,7 +7126,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0072",
-   "readingId": "li-ba"
+   "readingId": "li-ba",
+   "exampleDe": "Er mag lieber Tee als Kaffee.",
+   "exampleEn": "He prefers tea to coffee.",
+   "exampleId": "Dia lebih suka teh daripada kopi."
   },
   {
    "front": "fast",
@@ -5877,7 +7142,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0074",
-   "readingId": "fast"
+   "readingId": "fast",
+   "exampleDe": "Ich habe fast einen Teller fallen lassen.",
+   "exampleEn": "I almost dropped a plate.",
+   "exampleId": "Aku hampir menjatuhkan piring-piring itu."
   },
   {
    "front": "vorbei",
@@ -5890,7 +7158,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0075",
-   "readingId": "foa-bai"
+   "readingId": "foa-bai",
+   "exampleDe": "Was vorbei ist, ist vorbei.",
+   "exampleEn": "Let bygones be bygones.",
+   "exampleId": "Buang yang keruh, ambil yang jernih."
   },
   {
    "front": "darum",
@@ -5903,7 +7174,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0076",
-   "readingId": "da-rum"
+   "readingId": "da-rum",
+   "exampleDe": "Bitte ihn darum.",
+   "exampleId": "Tanyakan padanya."
   },
   {
    "front": "sogar",
@@ -5916,7 +7189,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0077",
-   "readingId": "zo-ga"
+   "readingId": "zo-ga",
+   "exampleDe": "Es war so heiß, dass ich sogar ohnmächtig wurde.",
+   "exampleId": "Suhunya sangat panas hingga aku pun pingsan."
   },
   {
    "front": "woher",
@@ -5929,7 +7204,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0078",
-   "readingId": "wo-hea"
+   "readingId": "wo-hea",
+   "exampleDe": "Woher kannst du Russisch?",
+   "exampleId": "Dari mana kamu bisa bahasa Rusia?"
   },
   {
    "front": "überhaupt",
@@ -5942,7 +7219,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0079",
-   "readingId": "iu-ba-haupt"
+   "readingId": "iu-ba-haupt",
+   "exampleDe": "Ich sah dich nie kochen. Kannst du überhaupt kochen?",
+   "exampleEn": "I've never seen you cook. Can you cook anything at all?",
+   "exampleId": "Aku tidak pernah melihatmu memasak. Bisakah kamu memasak?"
   },
   {
    "front": "etwa",
@@ -5955,7 +7235,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-1-0080",
-   "readingId": "et-wa"
+   "readingId": "et-wa",
+   "exampleDe": "Ich bin etwa so alt wie du.",
+   "exampleEn": "I'm about the same age as you.",
+   "exampleId": "Aku hampir seusia denganmu."
   },
   {
    "front": "anders",
@@ -5968,7 +7251,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-2-0001",
-   "readingId": "an-das"
+   "readingId": "an-das",
+   "exampleDe": "Er ist anders.",
+   "exampleEn": "He's different.",
+   "exampleId": "Dia berbeda."
   },
   {
    "front": "niemals",
@@ -5981,7 +7267,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-2-0002",
-   "readingId": "ni-mals"
+   "readingId": "ni-mals",
+   "exampleDe": "Das habe ich niemals gesagt.",
+   "exampleEn": "I have never said that.",
+   "exampleId": "Saya tidak pernah mengatakan itu."
   },
   {
    "front": "während",
@@ -5994,7 +7283,9 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-2-0004",
-   "readingId": "we-rênt"
+   "readingId": "we-rênt",
+   "exampleDe": "Rede nicht über das Geschäft, während wir essen.",
+   "exampleId": "Jangan berbicara tentang bisnis saat kita makan."
   },
   {
    "front": "falls",
@@ -6007,7 +7298,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-2-0005",
-   "readingId": "fals"
+   "readingId": "fals",
+   "exampleDe": "Nimm deinen Regenschirm mit, falls es regnet.",
+   "exampleEn": "Take your umbrella with you in case it rains.",
+   "exampleId": "Bawalah payung untuk berjaga-jaga kalau hujan."
   },
   {
    "front": "dies",
@@ -6020,7 +7314,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-2-0006",
-   "readingId": "dis"
+   "readingId": "dis",
+   "exampleDe": "Dies ist ein Haus.",
+   "exampleEn": "This is a house.",
+   "exampleId": "Ini rumah."
   },
   {
    "front": "wen",
@@ -6033,7 +7330,10 @@
    "level": "A1",
    "topic": "function-words-1",
    "id": "de-a1-function-words-2-0007",
-   "readingId": "wen"
+   "readingId": "wen",
+   "exampleDe": "Wen liebst du?",
+   "exampleEn": "Who do you love?",
+   "exampleId": "Siapakah yang kamu cinta?"
   },
   {
    "front": "sondern",
@@ -6047,7 +7347,10 @@
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0008",
    "reviewedSenses": true,
-   "readingId": "zon-dan"
+   "readingId": "zon-dan",
+   "exampleDe": "Er ist kein Arzt, sondern ein Lehrer.",
+   "exampleEn": "He is not a doctor but a teacher.",
+   "exampleId": "Dia bukan dokter, melainkan guru."
   },
   {
    "front": "außer",
@@ -6060,7 +7363,9 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0009",
-   "readingId": "au-sa"
+   "readingId": "au-sa",
+   "exampleDe": "Alle kamen, außer Jim.",
+   "exampleId": "Semua datang kecuali Jim."
   },
   {
    "front": "zuerst",
@@ -6073,7 +7378,10 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0010",
-   "readingId": "tsu-east"
+   "readingId": "tsu-east",
+   "exampleDe": "Wohin gehen wir zuerst?",
+   "exampleEn": "Where are we going first?",
+   "exampleId": "Kita pergi ke mana dulu?"
   },
   {
    "front": "bereits",
@@ -6086,7 +7394,10 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0012",
-   "readingId": "bê-raits"
+   "readingId": "bê-raits",
+   "exampleDe": "Sie hat bereits mit dem Präsidenten gesprochen.",
+   "exampleEn": "She has already spoken with the President.",
+   "exampleId": "Dia sudah berbicara dengan presiden."
   },
   {
    "front": "wem",
@@ -6099,7 +7410,10 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0015",
-   "readingId": "wem"
+   "readingId": "wem",
+   "exampleDe": "Mit wem hat er gesprochen?",
+   "exampleEn": "Who was he talking to?",
+   "exampleId": "Dengan siapa ia berbicara?"
   },
   {
    "front": "danach",
@@ -6112,7 +7426,10 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0016",
-   "readingId": "da-nakh"
+   "readingId": "da-nakh",
+   "exampleDe": "Wissen Sie noch, was danach geschah?",
+   "exampleEn": "Do you remember what happened after that?",
+   "exampleId": "Apakah Anda tahu apa yang terjadi setelahnya?"
   },
   {
    "front": "nachdem",
@@ -6125,7 +7442,10 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0018",
-   "readingId": "nakh-dem"
+   "readingId": "nakh-dem",
+   "exampleDe": "Wohin kommen wir, nachdem wir sterben?",
+   "exampleEn": "Where do we go after we die?",
+   "exampleId": "Kemanakah kita pergi setelah kita mati ?"
   },
   {
    "front": "eher",
@@ -6138,7 +7458,10 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-function-words-2-0022",
-   "readingId": "e-a"
+   "readingId": "e-a",
+   "exampleDe": "Je eher, desto besser.",
+   "exampleEn": "The sooner, the better.",
+   "exampleId": "Lebih cepat lebih baik."
   },
   {
    "front": "wohin",
@@ -6151,7 +7474,10 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-general-2-0028",
-   "readingId": "wo-hin"
+   "readingId": "wo-hin",
+   "exampleDe": "Wohin gehen wir zuerst?",
+   "exampleEn": "Where are we going first?",
+   "exampleId": "Kita pergi ke mana dulu?"
   },
   {
    "front": "wahrscheinlich",
@@ -6164,7 +7490,10 @@
    "level": "A1",
    "topic": "function-words-2",
    "id": "de-a1-general-2-0035",
-   "readingId": "wa-syain-lih"
+   "readingId": "wa-syain-lih",
+   "exampleDe": "Tom schläft wahrscheinlich.",
+   "exampleEn": "Tom is probably sleeping.",
+   "exampleId": "Tom mungkin sedang tidur."
   },
   {
    "front": "sein",
@@ -6210,7 +7539,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0004",
-   "readingId": "ma-khên"
+   "readingId": "ma-khên",
+   "exampleDe": "Was machen sie?",
+   "exampleEn": "What are they doing?",
+   "exampleId": "Apa yang mereka lakukan?"
   },
   {
    "front": "brauchen",
@@ -6223,7 +7555,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0011",
-   "readingId": "brau-khên"
+   "readingId": "brau-khên",
+   "exampleDe": "Er braucht mich.",
+   "exampleEn": "He needs me.",
+   "exampleId": "Dia membutuhkanku."
   },
   {
    "front": "möchten",
@@ -6252,7 +7587,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0013",
-   "readingId": "keo-nên"
+   "readingId": "keo-nên",
+   "exampleDe": "Hunde können schwimmen.",
+   "exampleEn": "Dogs can swim.",
+   "exampleId": "Anjing bisa berenang."
   },
   {
    "front": "aufstehen",
@@ -6265,7 +7603,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0016",
-   "readingId": "auf-syte-ên"
+   "readingId": "auf-syte-ên",
+   "exampleDe": "Morgen werden wir um sieben Uhr aufstehen.",
+   "exampleEn": "We're getting up at seven tomorrow.",
+   "exampleId": "Besok kita akan bangun pukul tujuh."
   },
   {
    "front": "helfen",
@@ -6278,7 +7619,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0017",
-   "readingId": "hel-fên"
+   "readingId": "hel-fên",
+   "exampleDe": "Kann ich helfen?",
+   "exampleEn": "Can I help?",
+   "exampleId": "Boleh minta tolong?"
   },
   {
    "front": "einen",
@@ -6291,7 +7635,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0018",
-   "readingId": "ai-nên"
+   "readingId": "ai-nên",
+   "exampleDe": "Er hat einen Hund.",
+   "exampleEn": "He has a dog.",
+   "exampleId": "Dia punya anjing."
   },
   {
    "front": "werden",
@@ -6304,7 +7651,9 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0019",
-   "readingId": "wea-dên"
+   "readingId": "wea-dên",
+   "exampleDe": "Sie werden dir folgen.",
+   "exampleId": "Mereka akan mengikutimu."
   },
   {
    "front": "tun",
@@ -6317,7 +7666,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0021",
-   "readingId": "tun"
+   "readingId": "tun",
+   "exampleDe": "Er muss es jetzt tun.",
+   "exampleEn": "He must do it now.",
+   "exampleId": "Dia harus melakukan itu sekarang."
   },
   {
    "front": "müssen",
@@ -6330,7 +7682,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0023",
-   "readingId": "miu-sên"
+   "readingId": "miu-sên",
+   "exampleDe": "Ich muss gehen.",
+   "exampleEn": "I've got to go.",
+   "exampleId": "Aku harus pergi."
   },
   {
    "front": "leben",
@@ -6344,7 +7699,10 @@
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0024",
    "reviewedSenses": true,
-   "readingId": "le-bên"
+   "readingId": "le-bên",
+   "exampleDe": "Fische leben im Wasser.",
+   "exampleEn": "Fish live in the water.",
+   "exampleId": "Ikan hidup di dalam air."
   },
   {
    "front": "wollen",
@@ -6357,7 +7715,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0025",
-   "readingId": "wo-lên"
+   "readingId": "wo-lên",
+   "exampleDe": "Ich wollte Pizza essen.",
+   "exampleEn": "I wanted to eat pizza.",
+   "exampleId": "Aku ingin makan piza."
   },
   {
    "front": "lassen",
@@ -6370,7 +7731,9 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0026",
-   "readingId": "la-sên"
+   "readingId": "la-sên",
+   "exampleDe": "Lasse mich jetzt allein.",
+   "exampleId": "Tinggalkan aku sendiri sekarang."
   },
   {
    "front": "finden",
@@ -6383,7 +7746,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0029",
-   "readingId": "fin-dên"
+   "readingId": "fin-dên",
+   "exampleDe": "Ich finde das zu teuer.",
+   "exampleEn": "I think this is too expensive.",
+   "exampleId": "Menurutku itu terlalu mahal."
   },
   {
    "front": "geben",
@@ -6396,7 +7762,9 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0030",
-   "readingId": "ge-bên"
+   "readingId": "ge-bên",
+   "exampleDe": "Gebt ihm eine Chance.",
+   "exampleId": "Beri dia kesempatan."
   },
   {
    "front": "sollen",
@@ -6409,7 +7777,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0031",
-   "readingId": "zo-lên"
+   "readingId": "zo-lên",
+   "exampleDe": "Du solltest Französisch lernen.",
+   "exampleEn": "You should learn French.",
+   "exampleId": "Kamu harus belajar bahasa Prancis."
   },
   {
    "front": "bleiben",
@@ -6422,7 +7793,9 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0032",
-   "readingId": "blai-bên"
+   "readingId": "blai-bên",
+   "exampleDe": "Ich bleibe ein paar Monate hier.",
+   "exampleId": "Saya akan tinggal di sini selama beberapa bulan."
   },
   {
    "front": "nehmen",
@@ -6435,7 +7808,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0033",
-   "readingId": "ne-mên"
+   "readingId": "ne-mên",
+   "exampleDe": "Nehmt bitte Platz.",
+   "exampleEn": "Sit down, please.",
+   "exampleId": "Silakan duduk."
   },
   {
    "front": "bringen",
@@ -6448,7 +7824,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0035",
-   "readingId": "bri-ngên"
+   "readingId": "bri-ngên",
+   "exampleDe": "Du bringst mich zum Weinen.",
+   "exampleEn": "You make me want to cry.",
+   "exampleId": "Kamu membuatku menangis."
   },
   {
    "front": "warten",
@@ -6461,7 +7840,9 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0037",
-   "readingId": "war-tên"
+   "readingId": "war-tên",
+   "exampleDe": "Ich warte darauf.",
+   "exampleId": "Aku menantikannya."
   },
   {
    "front": "halten",
@@ -6474,7 +7855,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0038",
-   "readingId": "hal-tên"
+   "readingId": "hal-tên",
+   "exampleDe": "Dieser Zug hält hier nicht.",
+   "exampleEn": "That train doesn't stop here.",
+   "exampleId": "Kereta ini tidak berhenti di sini."
   },
   {
    "front": "vergessen",
@@ -6487,7 +7871,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0041",
-   "readingId": "fea-ge-sên"
+   "readingId": "fea-ge-sên",
+   "exampleDe": "Er hat meinen Geburtstag vergessen.",
+   "exampleEn": "He forgot my birthday.",
+   "exampleId": "Dia lupa ulang tahunku."
   },
   {
    "front": "bekommen",
@@ -6500,7 +7887,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0042",
-   "readingId": "bê-ko-mên"
+   "readingId": "bê-ko-mên",
+   "exampleDe": "Kann ich ein Kissen bekommen?",
+   "exampleEn": "Can I get a pillow?",
+   "exampleId": "Boleh saya mendapatkan bantal?"
   },
   {
    "front": "stehen",
@@ -6513,7 +7903,9 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0044",
-   "readingId": "syte-ên"
+   "readingId": "syte-ên",
+   "exampleDe": "Wir stehen vor der Eingangstür und begrüßen die Gäste.",
+   "exampleId": "Kami berdiri didepan pintu masuk dan menyalami para tamu."
   },
   {
    "front": "suchen",
@@ -6526,7 +7918,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0048",
-   "readingId": "zu-khên"
+   "readingId": "zu-khên",
+   "exampleDe": "Er sucht seine Katze.",
+   "exampleEn": "He's looking for his cat.",
+   "exampleId": "Dia mencari kucingnya."
   },
   {
    "front": "versuchen",
@@ -6539,7 +7934,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0049",
-   "readingId": "fea-zu-khên"
+   "readingId": "fea-zu-khên",
+   "exampleDe": "Er versucht, gesund zu leben.",
+   "exampleEn": "He tries to live healthily.",
+   "exampleId": "Dia mencoba hidup sehat."
   },
   {
    "front": "holen",
@@ -6552,7 +7950,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0050",
-   "readingId": "ho-lên"
+   "readingId": "ho-lên",
+   "exampleDe": "Ich hole Gläser.",
+   "exampleEn": "I'll get some glasses.",
+   "exampleId": "Aku akan mengambil beberapa gelas."
   },
   {
    "front": "verlassen",
@@ -6565,7 +7966,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0053",
-   "readingId": "fea-la-sên"
+   "readingId": "fea-la-sên",
+   "exampleDe": "Tom verließ sie.",
+   "exampleEn": "Tom abandoned them.",
+   "exampleId": "Tom meninggalkan mereka."
   },
   {
    "front": "zeigen",
@@ -6578,7 +7982,9 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0054",
-   "readingId": "tsai-gên"
+   "readingId": "tsai-gên",
+   "exampleDe": "Tom, ich möchte etwas zeigen.",
+   "exampleId": "Tom, aku ingin menunjukkan sesuatu."
   },
   {
    "front": "stellen",
@@ -6591,7 +7997,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0056",
-   "readingId": "syte-lên"
+   "readingId": "syte-lên",
+   "exampleDe": "Darf ich eine Frage stellen?",
+   "exampleEn": "May I ask a question?",
+   "exampleId": "Bolehkah saya mengajukan sebuah pertanyaan?"
   },
   {
    "front": "kriegen",
@@ -6605,7 +8014,10 @@
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0057",
    "reviewedSenses": true,
-   "readingId": "kri-gên"
+   "readingId": "kri-gên",
+   "exampleDe": "Ich kriege langsam Hunger.",
+   "exampleEn": "I'm getting hungry.",
+   "exampleId": "Aku mulai lapar."
   },
   {
    "front": "setzen",
@@ -6618,7 +8030,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0059",
-   "readingId": "ze-tsên"
+   "readingId": "ze-tsên",
+   "exampleDe": "Setzen Sie sich.",
+   "exampleEn": "Be seated.",
+   "exampleId": "Duduklah."
   },
   {
    "front": "dürfen",
@@ -6631,7 +8046,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0060",
-   "readingId": "diur-fên"
+   "readingId": "diur-fên",
+   "exampleDe": "Ich hätte ihn nicht anlügen dürfen.",
+   "exampleEn": "I shouldn't have lied to him.",
+   "exampleId": "Seharusnya aku tidak berbohong padanya."
   },
   {
    "front": "schaffen",
@@ -6645,7 +8063,10 @@
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0063",
    "reviewedSenses": true,
-   "readingId": "sya-fên"
+   "readingId": "sya-fên",
+   "exampleDe": "Wir schaffen das nicht ohne sie.",
+   "exampleEn": "We can't do this without them.",
+   "exampleId": "Kita tidak bisa melakukan ini tanpanya."
   },
   {
    "front": "ziehen",
@@ -6658,7 +8079,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0068",
-   "readingId": "tsi-ên"
+   "readingId": "tsi-ên",
+   "exampleDe": "„Ich ziehe nächste Woche nach Boston.“ – „Ich vermisse dich jetzt schon!“",
+   "exampleEn": "\"I'm moving to Boston next week.\" \"I miss you already.\"",
+   "exampleId": "\"Aku akan pindah ke Boston minggu depan.\" \"Aku akan merindukanmu.\""
   },
   {
    "front": "verschwinden",
@@ -6671,7 +8095,10 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0069",
-   "readingId": "fea-sywin-dên"
+   "readingId": "fea-sywin-dên",
+   "exampleDe": "Das Geld verschwand.",
+   "exampleEn": "The money disappeared.",
+   "exampleId": "Uang telah menghilang."
   },
   {
    "front": "aufhören",
@@ -6684,7 +8111,9 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0070",
-   "readingId": "auf-heo-rên"
+   "readingId": "auf-heo-rên",
+   "exampleDe": "Es ist schwer, mit dem Rauchen aufzuhören.",
+   "exampleId": "Sangat sulit untuk berhenti merokok."
   },
   {
    "front": "tagen",
@@ -6697,7 +8126,9 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0074",
-   "readingId": "ta-gên"
+   "readingId": "ta-gên",
+   "exampleDe": "Am Dienstag tagt das Parlament.",
+   "exampleEn": "The Diet will meet on Tuesday."
   },
   {
    "front": "sitzen",
@@ -6710,7 +8141,9 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0075",
-   "readingId": "zi-tsên"
+   "readingId": "zi-tsên",
+   "exampleDe": "Jetzt sitzt er unter einem Baum.",
+   "exampleId": "Sekarang dia duduk di bawah pohon."
   },
   {
    "front": "vorstellen",
@@ -6723,7 +8156,9 @@
    "level": "A1",
    "topic": "verbs-basic",
    "id": "de-a1-verbs-basic-0076",
-   "readingId": "foa-syte-lên"
+   "readingId": "foa-syte-lên",
+   "exampleDe": "Mitunter ist das Leben nicht so schön, wie man es sich vorstellt.",
+   "exampleId": "Ada kalanya hidup itu tidak seindah yang dibayangkan."
   },
   {
    "front": "zu",
@@ -6737,7 +8172,10 @@
    "topic": "adjectives-basic",
    "id": "de-a1-function-words-1-0008",
    "reviewedSenses": true,
-   "readingId": "tsu"
+   "readingId": "tsu",
+   "exampleDe": "Hör mir zu!",
+   "exampleEn": "Listen to me!",
+   "exampleId": "Dengarkan aku!"
   },
   {
    "front": "gut",
@@ -6751,7 +8189,10 @@
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0001",
    "reviewedSenses": true,
-   "readingId": "gut"
+   "readingId": "gut",
+   "exampleDe": "Tom ist ein guter Mann.",
+   "exampleEn": "Tom is a good man.",
+   "exampleId": "Tom adalah pria yang baik."
   },
   {
    "front": "schlecht",
@@ -6764,7 +8205,9 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0002",
-   "readingId": "syleht"
+   "readingId": "syleht",
+   "exampleDe": "Toms Musikgeschmack ist schlecht.",
+   "exampleId": "Selera musik Tom jelek."
   },
   {
    "front": "neu",
@@ -6777,7 +8220,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0003",
-   "readingId": "noi"
+   "readingId": "noi",
+   "exampleDe": "Tom ist neu hier.",
+   "exampleEn": "Tom is new here.",
+   "exampleId": "Tom orang baru di sini."
   },
   {
    "front": "alt",
@@ -6790,7 +8236,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0004",
-   "readingId": "alt"
+   "readingId": "alt",
+   "exampleDe": "Du bist schon alt.",
+   "exampleEn": "You're already old.",
+   "exampleId": "Kamu sudah tua."
   },
   {
    "front": "schnell",
@@ -6803,7 +8252,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0005",
-   "readingId": "synel"
+   "readingId": "synel",
+   "exampleDe": "Er kann schnell schwimmen.",
+   "exampleEn": "He can swim fast.",
+   "exampleId": "Dia dapat berenang dengan cepat."
   },
   {
    "front": "langsam",
@@ -6816,7 +8268,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0006",
-   "readingId": "lang-zam"
+   "readingId": "lang-zam",
+   "exampleDe": "Sprechen Sie bitte langsamer!",
+   "exampleEn": "Speak more slowly, please!",
+   "exampleId": "Tolong bicara lebih lambat!"
   },
   {
    "front": "warm",
@@ -6829,7 +8284,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0007",
-   "readingId": "warm"
+   "readingId": "warm",
+   "exampleDe": "Draußen ist es kalt, doch im Hause ist es warm.",
+   "exampleEn": "It's cold outside, but warm in the house.",
+   "exampleId": "Di luar dingin, tetapi di dalam rumah hangat."
   },
   {
    "front": "kalt",
@@ -6842,7 +8300,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0008",
-   "readingId": "kalt"
+   "readingId": "kalt",
+   "exampleDe": "Ist dir kalt?",
+   "exampleEn": "Are you cold?",
+   "exampleId": "Kamu kedinginan?"
   },
   {
    "front": "schön",
@@ -6855,7 +8316,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0009",
-   "readingId": "syeon"
+   "readingId": "syeon",
+   "exampleDe": "Sie ist schön.",
+   "exampleEn": "She is beautiful.",
+   "exampleId": "Dia cantik."
   },
   {
    "front": "einfach",
@@ -6868,7 +8332,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0012",
-   "readingId": "ain-fakh"
+   "readingId": "ain-fakh",
+   "exampleDe": "Es ist nicht einfach.",
+   "exampleEn": "It isn't easy.",
+   "exampleId": "Itu tidak mudah."
   },
   {
    "front": "schwierig",
@@ -6881,7 +8348,9 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0013",
-   "readingId": "sywi-rih"
+   "readingId": "sywi-rih",
+   "exampleDe": "Die deutschen Wörter sind schwierig auszusprechen.",
+   "exampleId": "Kata-kata bahasa Jerman sulit diucapkan."
   },
   {
    "front": "viel",
@@ -6894,7 +8363,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0014",
-   "readingId": "fil"
+   "readingId": "fil",
+   "exampleDe": "Du hast viele Bücher.",
+   "exampleEn": "You have many books.",
+   "exampleId": "Kamu punya banyak buku."
   },
   {
    "front": "ganz",
@@ -6907,7 +8379,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0015",
-   "readingId": "gants"
+   "readingId": "gants",
+   "exampleDe": "Er hat den ganzen Tag geschlafen.",
+   "exampleEn": "He slept all day.",
+   "exampleId": "Dia tidur seharian."
   },
   {
    "front": "sicher",
@@ -6920,7 +8395,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0016",
-   "readingId": "zi-ha"
+   "readingId": "zi-ha",
+   "exampleDe": "Ich bin mir noch nicht sicher.",
+   "exampleEn": "I'm not sure yet.",
+   "exampleId": "Saya belum yakin."
   },
   {
    "front": "genau",
@@ -6933,7 +8411,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0017",
-   "readingId": "gê-nau"
+   "readingId": "gê-nau",
+   "exampleDe": "Diese Daten sind überhaupt nicht genau.",
+   "exampleEn": "This data isn't accurate at all.",
+   "exampleId": "Data ini sama sekali tidak akurat."
   },
   {
    "front": "klar",
@@ -6946,7 +8427,9 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0018",
-   "readingId": "kla"
+   "readingId": "kla",
+   "exampleDe": "Heute kann ich den Berg klar sehen.",
+   "exampleId": "Hari ini aku bisa melihat gunung itu dengan jelas."
   },
   {
    "front": "besser",
@@ -6959,7 +8442,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0019",
-   "readingId": "be-sa"
+   "readingId": "be-sa",
+   "exampleDe": "Der erste Film war besser.",
+   "exampleEn": "The first movie was better.",
+   "exampleId": "Film pertamanya lebih baik."
   },
   {
    "front": "natürlich",
@@ -6972,7 +8458,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0020",
-   "readingId": "na-tiua-lih"
+   "readingId": "na-tiua-lih",
+   "exampleDe": "Natürlich, ich fühle mich schuldig.",
+   "exampleEn": "Of course, I feel guilty.",
+   "exampleId": "Tentu saja, aku merasa bersalah."
   },
   {
    "front": "gleich",
@@ -6985,7 +8474,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0022",
-   "readingId": "glaih"
+   "readingId": "glaih",
+   "exampleDe": "Tom trägt immer das gleiche.",
+   "exampleEn": "Tom always wears the same thing.",
+   "exampleId": "Tom selalu memakai pakaian yang sama."
   },
   {
    "front": "richtig",
@@ -6998,7 +8490,9 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0024",
-   "readingId": "rih-tih"
+   "readingId": "rih-tih",
+   "exampleDe": "Ist es richtig, dass Tom denkt, dass ich das glaube?",
+   "exampleId": "Benarkah Tom menyangka saya akan mempercayai itu?"
   },
   {
    "front": "tot",
@@ -7011,7 +8505,9 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0025",
-   "readingId": "tot"
+   "readingId": "tot",
+   "exampleDe": "Ein toter Hund kann nicht beißen.",
+   "exampleId": "Anjing yang mati tak bisa menggigit."
   },
   {
    "front": "genug",
@@ -7024,7 +8520,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0027",
-   "readingId": "gê-nuk"
+   "readingId": "gê-nuk",
+   "exampleDe": "Wir haben genug Zeit.",
+   "exampleEn": "We have enough time.",
+   "exampleId": "Kita punya cukup waktu."
   },
   {
    "front": "fertig",
@@ -7037,7 +8536,9 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0029",
-   "readingId": "fer-tih"
+   "readingId": "fer-tih",
+   "exampleDe": "Fertig, Tom; wir haben keine Zeit dafür.",
+   "exampleId": "Sudahlah, Tom, kita tidak punya waktu untuk hal ini."
   },
   {
    "front": "verdammt",
@@ -7050,7 +8551,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0030",
-   "readingId": "fea-damt"
+   "readingId": "fea-damt",
+   "exampleDe": "Verdammt noch mal, Tom! Nicht schon wieder!",
+   "exampleEn": "Dammit, Tom, not again!",
+   "exampleId": "Sialan, Tom. Jangan terulang kembali!"
   },
   {
    "front": "wahr",
@@ -7063,7 +8567,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0031",
-   "readingId": "wa"
+   "readingId": "wa",
+   "exampleDe": "Ist das wahr?",
+   "exampleEn": "Is that true?",
+   "exampleId": "Apa itu benar?"
   },
   {
    "front": "echt",
@@ -7076,7 +8583,9 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0032",
-   "readingId": "eht"
+   "readingId": "eht",
+   "exampleDe": "Sie ist ein echter Engel.",
+   "exampleId": "Dia malaikat sungguhan."
   },
   {
    "front": "toll",
@@ -7089,7 +8598,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0034",
-   "readingId": "tol"
+   "readingId": "tol",
+   "exampleDe": "Das ist ganz toll!",
+   "exampleEn": "That's wonderful.",
+   "exampleId": "Itu luar biasa."
   },
   {
    "front": "bereit",
@@ -7102,7 +8614,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0035",
-   "readingId": "bê-rait"
+   "readingId": "bê-rait",
+   "exampleDe": "Bist du bereit?",
+   "exampleEn": "Are you ready?",
+   "exampleId": "Apakah Anda siap?"
   },
   {
    "front": "verrückt",
@@ -7115,7 +8630,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0036",
-   "readingId": "fea-riukt"
+   "readingId": "fea-riukt",
+   "exampleDe": "Er ist verrückt.",
+   "exampleEn": "He's crazy.",
+   "exampleId": "Dia gila."
   },
   {
    "front": "ruhig",
@@ -7128,7 +8646,9 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0037",
-   "readingId": "ru-ih"
+   "readingId": "ru-ih",
+   "exampleDe": "Auf meinem Haus wurde es ruhig.",
+   "exampleId": "Di atas rumahku jadi tenang."
   },
   {
    "front": "endlich",
@@ -7141,7 +8661,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0038",
-   "readingId": "ent-lih"
+   "readingId": "ent-lih",
+   "exampleDe": "Endlich kam er.",
+   "exampleEn": "At last, he came.",
+   "exampleId": "Akhirnya dia datang."
   },
   {
    "front": "schwer",
@@ -7154,7 +8677,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0039",
-   "readingId": "sywea"
+   "readingId": "sywea",
+   "exampleDe": "Diese Tasche ist zu schwer.",
+   "exampleEn": "This bag is too heavy.",
+   "exampleId": "Tas ini terlalu berat."
   },
   {
    "front": "wenig",
@@ -7167,7 +8693,9 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0040",
-   "readingId": "we-nih"
+   "readingId": "we-nih",
+   "exampleDe": "Wir haben wenig Zeit, Tom.",
+   "exampleId": "Waktu kita sedikit, Tom."
   },
   {
    "front": "bestimmt",
@@ -7180,7 +8708,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0041",
-   "readingId": "bê-sytimt"
+   "readingId": "bê-sytimt",
+   "exampleDe": "Du bist bestimmt müde.",
+   "exampleEn": "You are tired, aren't you?",
+   "exampleId": "Kamu lelah, ya?"
   },
   {
    "front": "schuld",
@@ -7194,7 +8725,10 @@
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0042",
    "reviewedSenses": true,
-   "readingId": "syult"
+   "readingId": "syult",
+   "exampleDe": "Ich war schuld.",
+   "exampleEn": "It was my fault.",
+   "exampleId": "Itu salahku."
   },
   {
    "front": "wichtig",
@@ -7207,7 +8741,9 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0045",
-   "readingId": "wih-tih"
+   "readingId": "wih-tih",
+   "exampleDe": "Kondome sind wichtig.",
+   "exampleId": "Kondom itu penting."
   },
   {
    "front": "bloß",
@@ -7220,7 +8756,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0046",
-   "readingId": "blos"
+   "readingId": "blos",
+   "exampleDe": "Es ist bloß Wasser.",
+   "exampleEn": "It's just water.",
+   "exampleId": "Itu cuma air."
   },
   {
    "front": "frei",
@@ -7233,7 +8772,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0048",
-   "readingId": "frai"
+   "readingId": "frai",
+   "exampleDe": "Sie sind frei.",
+   "exampleEn": "They're free.",
+   "exampleId": "Anda bebas."
   },
   {
    "front": "möglich",
@@ -7246,7 +8788,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0049",
-   "readingId": "meok-lih"
+   "readingId": "meok-lih",
+   "exampleDe": "Es ist nicht möglich.",
+   "exampleEn": "It's not possible.",
+   "exampleId": "Ini tidak mungkin."
   },
   {
    "front": "falsch",
@@ -7259,7 +8804,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0051",
-   "readingId": "falsy"
+   "readingId": "falsy",
+   "exampleDe": "Deine Antwort ist falsch.",
+   "exampleEn": "Your answer is wrong.",
+   "exampleId": "Jawabanmu salah."
   },
   {
    "front": "voll",
@@ -7272,7 +8820,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0053",
-   "readingId": "fol"
+   "readingId": "fol",
+   "exampleDe": "Schreiben Sie Ihren vollen Namen!",
+   "exampleEn": "Write your full name.",
+   "exampleId": "Tulis nama lengkap Anda!"
   },
   {
    "front": "direkt",
@@ -7285,7 +8836,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0054",
-   "readingId": "di-rekt"
+   "readingId": "di-rekt",
+   "exampleDe": "Mein Haus liegt direkt am Meer.",
+   "exampleEn": "My house faces the sea.",
+   "exampleId": "Rumahku menghadap laut."
   },
   {
    "front": "völlig",
@@ -7298,7 +8852,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0055",
-   "readingId": "feo-lih"
+   "readingId": "feo-lih",
+   "exampleDe": "Du hast völlig recht.",
+   "exampleEn": "You are absolutely right.",
+   "exampleId": "Kau memang benar."
   },
   {
    "front": "wert",
@@ -7312,7 +8869,10 @@
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0056",
    "reviewedSenses": true,
-   "readingId": "weat"
+   "readingId": "weat",
+   "exampleDe": "Gesundheit ist mehr wert als Gold.",
+   "exampleEn": "Health is worth more than gold.",
+   "exampleId": "Kesehatan itu lebih berharga dibandingkan dengan emas."
   },
   {
    "front": "super",
@@ -7325,7 +8885,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0058",
-   "readingId": "zu-pa"
+   "readingId": "zu-pa",
+   "exampleDe": "Gott und der Teufel sind wirklich super.",
+   "exampleEn": "God and the devil are really super.",
+   "exampleId": "Tuhan dan iblis itu mengagumkan."
   },
   {
    "front": "total",
@@ -7338,7 +8901,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0059",
-   "readingId": "to-tal"
+   "readingId": "to-tal",
+   "exampleDe": "Meine Laune ist total vom Wetter abhängig.",
+   "exampleEn": "My mood depends totally on the weather.",
+   "exampleId": "Suasana hatiku benar-benar tergantung kepada cuaca."
   },
   {
    "front": "leicht",
@@ -7351,7 +8917,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0060",
-   "readingId": "laiht"
+   "readingId": "laiht",
+   "exampleDe": "Diese Tasche ist leichter.",
+   "exampleEn": "This bag is lighter.",
+   "exampleId": "Tas ini lebih ringan."
   },
   {
    "front": "interessiert",
@@ -7364,7 +8933,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0061",
-   "readingId": "in-tê-re-siat"
+   "readingId": "in-tê-re-siat",
+   "exampleDe": "Tom interessiert sich sehr für australische Geschichte.",
+   "exampleEn": "Tom is very interested in Australian history.",
+   "exampleId": "Tom sangat tertarik dengan sejarah Australia."
   },
   {
    "front": "cool",
@@ -7377,7 +8949,10 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0062",
-   "readingId": "kul"
+   "readingId": "kul",
+   "exampleDe": "Tom ist cool.",
+   "exampleEn": "Tom is cool.",
+   "exampleId": "Tom itu keren."
   },
   {
    "front": "böse",
@@ -7390,7 +8965,9 @@
    "level": "A1",
    "topic": "adjectives-basic",
    "id": "de-a1-adjectives-basic-0065",
-   "readingId": "beo-zê"
+   "readingId": "beo-zê",
+   "exampleDe": "Bist du noch böse, ja?",
+   "exampleId": "Kamu masih marah, ya?"
   },
   {
    "front": "Problem",
@@ -7403,7 +8980,11 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0024",
-   "readingId": "pro-blem"
+   "readingId": "das pro-blem",
+   "exampleDe": "Wir haben nicht viele Probleme.",
+   "exampleId": "Kami tidak punya banyak masalah.",
+   "gender": "das",
+   "plural": "die Probleme"
   },
   {
    "front": "Hilfe",
@@ -7416,7 +8997,12 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0028",
-   "readingId": "hil-fê"
+   "readingId": "di hil-fê",
+   "exampleDe": "Ich brauche seine Hilfe.",
+   "exampleEn": "I need his help.",
+   "exampleId": "Aku butuh bantuannya.",
+   "gender": "die",
+   "plural": "die Hilfen"
   },
   {
    "front": "Mache",
@@ -7429,7 +9015,11 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0032",
-   "readingId": "ma-khê"
+   "readingId": "di ma-khê",
+   "exampleDe": "Mache es doch später.",
+   "exampleEn": "Do it later.",
+   "exampleId": "Lakukan itu nanti.",
+   "gender": "die"
   },
   {
    "front": "Grund",
@@ -7442,7 +9032,11 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0039",
-   "readingId": "grunt"
+   "readingId": "dea grunt",
+   "exampleDe": "Der Preis für Grund ist in Japan sehr hoch.",
+   "exampleId": "Harga tanah di Jepang mahal sekali.",
+   "gender": "der",
+   "plural": "die Gründe"
   },
   {
    "front": "Art",
@@ -7455,7 +9049,12 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0043",
-   "readingId": "at"
+   "readingId": "di at",
+   "exampleDe": "Es ist nur eine Art Scherz.",
+   "exampleEn": "It's nothing but a kind of joke.",
+   "exampleId": "Itu tidak lebih dari sekadar lelucon.",
+   "gender": "die",
+   "plural": "die Arten"
   },
   {
    "front": "Chance",
@@ -7468,7 +9067,11 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0054",
-   "readingId": "syangs"
+   "readingId": "di syangs",
+   "exampleDe": "Gib ihm eine Chance.",
+   "exampleId": "Beri dia kesempatan.",
+   "gender": "die",
+   "plural": "die Chancen"
   },
   {
    "front": "Plan",
@@ -7481,7 +9084,12 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0066",
-   "readingId": "plan"
+   "readingId": "dea plan",
+   "exampleDe": "Dein Plan ist sehr gut.",
+   "exampleEn": "Your plan is very good.",
+   "exampleId": "Rencanamu sangat bagus.",
+   "gender": "der",
+   "plural": "die Pläne"
   },
   {
    "front": "Fehler",
@@ -7494,7 +9102,11 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0067",
-   "readingId": "fe-la"
+   "readingId": "dea fe-la",
+   "exampleDe": "Ich finde immer noch viele Fehler in meinen Sätzen.",
+   "exampleId": "Aku masih menemukan banyak kesalahan di kalimat-kalimatku.",
+   "gender": "der",
+   "plural": "die Fehler"
   },
   {
    "front": "Tat",
@@ -7507,7 +9119,12 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0075",
-   "readingId": "tat"
+   "readingId": "di tat",
+   "exampleDe": "Sie wurde auf frischer Tat ertappt.",
+   "exampleEn": "She was caught red handed.",
+   "exampleId": "Dia tertangkap basah.",
+   "gender": "die",
+   "plural": "die Taten"
   },
   {
    "front": "Suche",
@@ -7520,7 +9137,12 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-1-0080",
-   "readingId": "zu-khê"
+   "readingId": "di zu-khê",
+   "exampleDe": "Ich bin auf der Suche nach einem neuen Job.",
+   "exampleEn": "I'm looking for another job.",
+   "exampleId": "Saya sedang mencari pekerjaan yang lain.",
+   "gender": "die",
+   "plural": "die Suchen"
   },
   {
    "front": "Rest",
@@ -7533,7 +9155,12 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-2-0012",
-   "readingId": "rest"
+   "readingId": "dea rest",
+   "exampleDe": "Sie sprachen für den Rest des Schuljahres kein Wort mehr miteinander.",
+   "exampleEn": "They didn't say a word to each other for the rest of the school year.",
+   "exampleId": "Mereka tidak saling menyapa selama sisa tahun mereka bersekolah.",
+   "gender": "der",
+   "plural": "die Reste"
   },
   {
    "front": "Wahrheit",
@@ -7546,7 +9173,12 @@
    "level": "A1",
    "topic": "abstract-nouns",
    "id": "de-a1-general-2-0038",
-   "readingId": "wa-hait"
+   "readingId": "di wa-hait",
+   "exampleDe": "Es gibt nur eine Wahrheit!",
+   "exampleEn": "There is only one truth!",
+   "exampleId": "Hanya ada satu kebenaran!",
+   "gender": "die",
+   "plural": "die Wahrheiten"
   }
  ]
 }
