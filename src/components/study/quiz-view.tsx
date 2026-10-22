@@ -59,6 +59,7 @@ export function QuizView({
                         lang={lang}
                     />
                 </div>
+                {card.readingId ? <p className="meta mt-2">{card.readingId}</p> : null}
                 <p className="meta mt-3">{t("question")}</p>
             </div>
 

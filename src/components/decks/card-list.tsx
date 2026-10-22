@@ -50,7 +50,9 @@ export function CardList({
                             {card.plural ? (
                                 <span className="meta">pl. {card.plural}</span>
                             ) : null}
-                            {card.ipa ? <span className="meta">{card.ipa}</span> : null}
+                            {card.readingId || card.ipa ? (
+                                <span className="meta">{card.readingId ?? card.ipa}</span>
+                            ) : null}
                             {card.suspended ? (
                                 <Badge tone="warning">{t("suspend")}</Badge>
                             ) : null}

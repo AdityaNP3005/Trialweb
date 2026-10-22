@@ -97,7 +97,9 @@ export function FlashcardView({
                             lang={lang}
                         />
                     </div>
-                    {card.ipa ? <p className="meta mt-3">{card.ipa}</p> : null}
+                    {card.readingId || card.ipa ? (
+                        <p className="meta mt-3">{card.readingId ?? card.ipa}</p>
+                    ) : null}
                 </div>
 
                 <div className="tear -mx-5 sm:-mx-6" />

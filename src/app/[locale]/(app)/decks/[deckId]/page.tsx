@@ -70,7 +70,7 @@ export default function DeckDetailPage() {
         const term = search.trim().toLowerCase();
         if (!term) return cards;
         return cards.filter((card) =>
-            [card.front, card.meaningId, card.meaningEn, card.ipa ?? ""]
+            [card.front, card.meaningId, card.meaningEn, card.ipa ?? "", card.readingId ?? ""]
                 .join(" ")
                 .toLowerCase()
                 .includes(term),

@@ -7,6 +7,7 @@ Deck Jerman A1–C2 di `src/content/de/` dibangun dari data terbuka berikut.
 | [WikDict](https://www.wikdict.com/) — pasangan `de-id` dan `de-en`, diturunkan dari Wiktionary | arti Indonesia, arti Inggris, jenis kata | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | [FrequencyWords](https://github.com/hermitdave/FrequencyWords) (`de_50k.txt`, dari OpenSubtitles) | urutan frekuensi & pembagian level | CC BY-SA 4.0 (konten) |
 | Wiktionary (lewat WikDict) | verifikasi lemma | CC BY-SA 4.0 |
+| [Wiktionary Jerman](https://de.wiktionary.org/) lewat dump [wiktextract/kaikki.org](https://kaikki.org/dewiktionary/) | IPA sumber cara baca (`readingId`), disimpan di `scripts/content/de-ipa.json` | CC BY-SA 4.0 |
 
 Kartu A1 yang dikurasi manual (`src/content/de/source/curated-a1.json`) ditulis
 untuk proyek ini dan mengikuti lisensi yang sama.

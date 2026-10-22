@@ -12,6 +12,8 @@ export type SeedCard = {
     wordType?: Card["wordType"];
     plural?: string | null;
     ipa?: string | null;
+    /** German: reading in Indonesian spelling. */
+    readingId?: string | null;
     /** Mandarin: tone-marked pinyin. */
     pinyin?: string | null;
     exampleDe?: string | null;
@@ -257,6 +259,7 @@ export async function loadContentCards(deckId: string): Promise<Card[]> {
         wordType: card.wordType ?? "other",
         plural: card.plural ?? null,
         ipa: card.ipa ?? null,
+        readingId: card.readingId ?? null,
         pinyin: card.pinyin ?? null,
         script: unit.script,
         exampleDe: card.exampleDe ?? null,

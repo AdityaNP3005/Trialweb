@@ -41,6 +41,9 @@ describe("reviewed German vocabulary", () => {
         }
         const hallo = cards.find((entry) => entry.front === "Hallo")!;
         expect(hallo.id).toBe("de-a1-greetings-0001");
+        expect(cards.filter((entry) => !entry.readingId)).toEqual([]);
+        expect(hallo.readingId).toBe("halo");
+        expect(cards.find((entry) => entry.front === "Tschüss")?.readingId).toBe("cis");
         expect(hallo.meaningId).not.toContain("saluir");
         const morgen = cards.find((entry) => entry.front === "morgen")!;
         expect(morgen.meaningId).toContain("besok");

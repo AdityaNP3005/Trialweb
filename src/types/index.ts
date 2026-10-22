@@ -41,6 +41,8 @@ export type Card = {
     wordType: WordType;
     plural: string | null;
     ipa: string | null;
+    /** German only: how to read the front using Indonesian letter values. */
+    readingId?: string | null;
     /** Mandarin only: tone-marked pinyin, shown after the card is revealed. */
     pinyin?: string | null;
     /** Script used on the front side; affects fonts and TTS locale. */

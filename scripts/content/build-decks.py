@@ -503,6 +503,8 @@ def main() -> int:
     review_decks()
     from reclassify_decks import reclassify_decks
     reclassify_decks()
+    import importlib
+    importlib.import_module("de-pronunciation").apply_pronunciation()
     return 0
 
 
